@@ -1,0 +1,47 @@
+{
+  "name": "@tsevdos/greek-in-tech",
+  "version": "1.2.1",
+  "description": "Learn which words used on modern computing and software engineering, come straight from the greek language/mythology.",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.mjs",
+  "exports": "./dist/index.modern.js",
+  "types": "./dist/src/index.d.ts",
+  "author": "John Tsevdos <tsevdosjohn@gmail.com> (http://tsevdos.me)",
+  "homepage": "http://greekintech.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsevdos/greek-in-tech/issues"
+  },
+  "scripts": {
+    "build": "rm -rf dist && microbundle --tsconfig ./tsconfig.json",
+    "release": "npx release-it",
+    "lint": "npm run lint:types && npm run lint:eslint && npm run prettier",
+    "lint:types": "tsc -p . --declaration",
+    "lint:eslint": "eslint src --ext .ts",
+    "prettier": "prettier --ignore-path .gitignore -c ./src/**",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsevdos/greek-in-tech"
+  },
+  "keywords": [
+    "greek",
+    "words",
+    "tech",
+    "names",
+    "list",
+    "data",
+    "random"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

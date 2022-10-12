@@ -1,0 +1,36 @@
+{
+  "name": "npm-packages",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "build": "turbo run build",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "dependencies": {
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.1.2",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint-config-custom": "*",
+    "jest": "^29.1.2",
+    "microbundle": "^0.15.1",
+    "prettier": "^2.7.1",
+    "release-it": "latest",
+    "ts-jest": "^29.0.3",
+    "turbo": "latest",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "npm@8.19.2"
+}
