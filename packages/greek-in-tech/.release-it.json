@@ -6,10 +6,10 @@
   },
   "git": {
     "requireCleanWorkingDir": true,
-    "commitMessage": "Release v${version}"
+    "commitMessage": "Greek in tech release v${version}"
   },
   "github": {
     "release": true,
-    "releaseName": "v${version}"
+    "releaseName": "Greek in tech v${version}"
   }
 }
