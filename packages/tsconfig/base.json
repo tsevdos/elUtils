@@ -25,5 +25,6 @@
     "resolveJsonModule": true,
     "noEmit": true,
     "inlineSources": false
-  }
+  },
+  "exclude": ["dist", "build", "node_modules", "**/*.test.ts"]
 }
