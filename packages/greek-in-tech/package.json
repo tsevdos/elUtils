@@ -1,6 +1,6 @@
 {
   "name": "@tsevdos/greek-in-tech",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Learn which words used on modern computing and software engineering, come straight from the greek language/mythology.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
