@@ -5,30 +5,30 @@
 ## Install
 
 ```shell
-npm install greek-in-tech
+npm install @tsevdos/greek-in-tech
 ```
 
 or
 
 ```shell
-yarn add greek-in-tech
+yarn add @tsevdos/greek-in-tech
 ```
 
 ## Usage
 
 ```js
-import GreekInTech, { all, random, getEntry } from "greek-in-tech";
+import GreekInTech, { all, random, getEntry } from "@tsevdos/greek-in-tech";
 
-### GreekInTech.all: object[]
-### all: object[]
+GreekInTech.all: object[]
+all: object[]
 //=> All entries.
 
-### GreekInTech.random(): object
-### random(): object
+GreekInTech.random(): object
+random(): object
 //=> Random entry.
 
-### GreekInTech.getEntry(id: number): object
-### getEntry(id: number): object
+GreekInTech.getEntry(id: number): object
+getEntry(id: number): object
 //=> Specific entry.
 ```
 
