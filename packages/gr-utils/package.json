@@ -1,0 +1,49 @@
+{
+  "name": "@tsevdos/gr-utils",
+  "version": "0.0.0",
+  "description": "Greek Utils is a library focused on solving problems that we face daily in applications development for Greek businesses.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "John Tsevdos <tsevdosjohn@gmail.com> (http://tsevdos.me)",
+  "homepage": "https://tsevdos.me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsevdos/npm-packages/issues"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "release": "npx release-it",
+    "lint": "npm run lint:types && npm run lint:eslint && npm run format",
+    "lint:types": "tsc -p . --declaration",
+    "lint:eslint": "eslint src --ext .ts",
+    "format": "prettier -c ./src/**",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsevdos/npm-packages"
+  },
+  "keywords": [
+    "greek",
+    "utilities",
+    "zip",
+    "code",
+    "validation"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
