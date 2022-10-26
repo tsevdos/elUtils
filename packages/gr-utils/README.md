@@ -19,9 +19,10 @@ yarn add @tsevdos/gr-utils
 To use one of the available utilities you just need to import the required function as in the example below:
 
 ```js
-import { validateZipCode } from "gr-utils";
+import { getRegions } from "gr-utils";
 
-TODO: example;
+getRegions();
+getRegions({ locale: "en", includeMountAthos: false }
 ```
 
 ## License
