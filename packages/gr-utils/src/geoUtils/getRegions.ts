@@ -1,12 +1,10 @@
-import { regions, regionsWithMountAthos } from "../data/regions";
+import { regions, regionsWithMountAthos, Language } from "../../data/geospatial";
 
-interface RegionsOptions {
-  locale?: "el" | "en";
+type RegionsOptions = {
+  locale?: Language;
   includeMountAthos?: boolean;
-}
+};
 
-export const getRegions = (options: RegionsOptions = {}) => {
-  const { locale, includeMountAthos } = { locale: "el", includeMountAthos: false, ...options };
-
+export const getRegions = ({ locale = "el", includeMountAthos = false }: RegionsOptions = {}) => {
   return includeMountAthos ? regionsWithMountAthos[locale] : regions[locale];
 };
