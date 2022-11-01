@@ -1,5 +1,6 @@
 type Region = {
   id: number;
+  iso31662: string;
   name: string;
   seat: string;
 };
@@ -14,10 +15,11 @@ type RegionsWithPrefectures = { [T in Language]: RegionWithPrefectures[] };
 type Regions = { [T in Language]: Region[] };
 type Prefectures = { [T in Language]: Prefecture[] };
 
-export const regionsWithPrefectures: RegionsWithPrefectures = {
+export const regionsWithPrefectures = {
   el: [
     {
       id: 1,
+      iso31662: "GR-I",
       name: "Αττική",
       seat: "Αθήνα",
       prefectures: [
@@ -45,6 +47,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 2,
+      iso31662: "GR-H",
       name: "Στερεά Ελλάδα",
       seat: "Λαμία",
       prefectures: [
@@ -77,6 +80,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 3,
+      iso31662: "GR-B",
       name: "Κεντρική Μακεδονία",
       seat: "Θεσσαλονίκη",
       prefectures: [
@@ -119,6 +123,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 4,
+      iso31662: "GR-M",
       name: "Κρήτη",
       seat: "Ηράκλειο",
       prefectures: [
@@ -146,6 +151,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 5,
+      iso31662: "GR-A",
       name: "Ανατολική Μακεδονία και Θράκη",
       seat: "Κομοτηνή",
       prefectures: [
@@ -178,6 +184,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 6,
+      iso31662: "GR-D",
       name: "Ήπειρος",
       seat: "Ιωάννινα",
       prefectures: [
@@ -205,6 +212,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 7,
+      iso31662: "GR-F",
       name: "Ιόνια νησιά",
       seat: "Κέρκυρα",
       prefectures: [
@@ -232,6 +240,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 8,
+      iso31662: "GR-K",
       name: "Βόρειο Αιγαίο",
       seat: "Μυτιλήνη",
       prefectures: [
@@ -254,6 +263,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 9,
+      iso31662: "GR-J",
       name: "Πελοπόννησος",
       seat: "Τρίπολη",
       prefectures: [
@@ -286,6 +296,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 10,
+      iso31662: "GR-L",
       name: "Νότιο Αιγαίο",
       seat: "Ερμούπολη",
       prefectures: [
@@ -303,6 +314,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 11,
+      iso31662: "GR-E",
       name: "Θεσσαλία",
       seat: "Λάρισα",
       prefectures: [
@@ -330,6 +342,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 12,
+      iso31662: "GR-G",
       name: "Δυτική Ελλάδα",
       seat: "Πάτρα",
       prefectures: [
@@ -352,6 +365,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 13,
+      iso31662: "GR-C",
       name: "Δυτική Μακεδονία",
       seat: "Κοζάνη",
       prefectures: [
@@ -381,6 +395,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
   en: [
     {
       id: 1,
+      iso31662: "GR-I",
       name: "Attica",
       seat: "Athens",
       prefectures: [
@@ -408,6 +423,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 2,
+      iso31662: "GR-H",
       name: "Central Greece",
       seat: "Lamia",
       prefectures: [
@@ -440,6 +456,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 3,
+      iso31662: "GR-B",
       name: "Central Macedonia",
       seat: "Thessaloniki",
       prefectures: [
@@ -482,6 +499,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 4,
+      iso31662: "GR-M",
       name: "Crete",
       seat: "Heraklion",
       prefectures: [
@@ -509,6 +527,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 5,
+      iso31662: "GR-A",
       name: "Eastern Macedonia and Thrace",
       seat: "Komotini",
       prefectures: [
@@ -541,6 +560,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 6,
+      iso31662: "GR-D",
       name: "Epirus",
       seat: "Ioannina",
       prefectures: [
@@ -568,6 +588,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 7,
+      iso31662: "GR-F",
       name: "Ionian Islands",
       seat: "Corfu",
       prefectures: [
@@ -595,6 +616,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 8,
+      iso31662: "GR-K",
       name: "North Aegean",
       seat: "Mytilene",
       prefectures: [
@@ -617,6 +639,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 9,
+      iso31662: "GR-J",
       name: "Peloponnese",
       seat: "Tripoli",
       prefectures: [
@@ -649,6 +672,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 10,
+      iso31662: "GR-L",
       name: "South Aegean",
       seat: "Ermoupoli",
       prefectures: [
@@ -666,6 +690,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 11,
+      iso31662: "GR-E",
       name: "Thessaly",
       seat: "Larissa",
       prefectures: [
@@ -693,6 +718,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 12,
+      iso31662: "GR-G",
       name: "Western Greece",
       seat: "Patras",
       prefectures: [
@@ -715,6 +741,7 @@ export const regionsWithPrefectures: RegionsWithPrefectures = {
     },
     {
       id: 13,
+      iso31662: "GR-C",
       name: "Western Macedonia",
       seat: "Kozani",
       prefectures: [
@@ -748,6 +775,7 @@ export const regionsWithPrefecturesAndMountAthos: RegionsWithPrefectures = {
     ...regionsWithPrefectures.el,
     {
       id: 14,
+      iso31662: "GR-69",
       name: "Άγιον Όρος",
       seat: "Καρυές",
       prefectures: [
@@ -763,6 +791,7 @@ export const regionsWithPrefecturesAndMountAthos: RegionsWithPrefectures = {
     ...regionsWithPrefectures.en,
     {
       id: 14,
+      iso31662: "GR-69",
       name: "Mount Athos",
       seat: "Karyes",
       prefectures: [
@@ -777,8 +806,8 @@ export const regionsWithPrefecturesAndMountAthos: RegionsWithPrefectures = {
 };
 
 export const regions: Regions = {
-  el: regionsWithPrefectures.el.map(({ id, name, seat }) => ({ id, name, seat })),
-  en: regionsWithPrefectures.en.map(({ id, name, seat }) => ({ id, name, seat })),
+  el: regionsWithPrefectures.el.map(({ id, name, seat, iso31662 }) => ({ id, name, seat, iso31662 })),
+  en: regionsWithPrefectures.en.map(({ id, name, seat, iso31662 }) => ({ id, name, seat, iso31662 })),
 };
 
 export const regionsWithMountAthos: Regions = {
@@ -786,6 +815,7 @@ export const regionsWithMountAthos: Regions = {
     ...regions.el,
     {
       id: 14,
+      iso31662: "GR-69",
       name: "Άγιον Όρος",
       seat: "Καρυές",
     },
@@ -794,6 +824,7 @@ export const regionsWithMountAthos: Regions = {
     ...regions.en,
     {
       id: 14,
+      iso31662: "GR-69",
       name: "Mount Athos",
       seat: "Karyes",
     },

@@ -1,3 +1,9 @@
-export { getRegionsWithPrefectures } from "./geoUtils/getRegionsWithPrefectures";
-export { getRegions } from "./geoUtils/getRegions";
+export {
+  getRegionsWithPrefectures,
+  getRegions,
+  getRegionWithPrefecturesById,
+  getRegionWithPrefecturesByIsoCode,
+  getRegionById,
+  getRegionByIsoCode,
+} from "./geoUtils/regions";
 export { getPrefectures } from "./geoUtils/getPrefectures";
