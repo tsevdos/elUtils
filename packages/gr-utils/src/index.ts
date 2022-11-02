@@ -6,4 +6,4 @@ export {
   getRegionById,
   getRegionByIsoCode,
 } from "./geoUtils/regions";
-export { getPrefectures } from "./geoUtils/getPrefectures";
+export { getPrefectures } from "./geoUtils/prefectures";

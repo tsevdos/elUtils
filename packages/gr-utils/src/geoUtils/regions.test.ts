@@ -72,21 +72,26 @@ describe("getRegions", () => {
 });
 
 describe("getRegionWithPrefecturesById", () => {
-  const regionIdsInGreek = regionsWithPrefectures.el.map(({ id }) => id);
-  const regionIdsInGreekIncludingMountAthos = regionsWithPrefecturesAndMountAthos.el.map(({ id }) => id);
-  const regionIdsInEnglish = regionsWithPrefectures.en.map(({ id }) => id);
-  const regionIdsInEnglishIncludingMountAthos = regionsWithPrefecturesAndMountAthos.en.map(({ id }) => id);
+  const regionIdsInGreek = getRegionsWithPrefectures().map(({ id }) => id);
+  const regionIdsInGreekIncludingMountAthos = getRegionsWithPrefectures({ includeMountAthos: true }).map(
+    ({ id }) => id,
+  );
+  const regionIdsInEnglish = getRegionsWithPrefectures({ locale: "en" }).map(({ id }) => id);
+  const regionIdsInEnglishIncludingMountAthos = getRegionsWithPrefectures({
+    locale: "en",
+    includeMountAthos: true,
+  }).map(({ id }) => id);
 
   test.each(regionIdsInGreek)("get region with id %i of Greece with its prefectures (in greek language)", (id) => {
-    expect(getRegionWithPrefecturesById({ id })).toBe(regionsWithPrefectures.el.find((region) => region.id === id));
+    expect(getRegionWithPrefecturesById({ id })).toBe(getRegionsWithPrefectures().find((region) => region.id === id));
     expect(getRegionWithPrefecturesById({ id, locale: "el" })).toBe(
-      regionsWithPrefectures.el.find((region) => region.id === id),
+      getRegionsWithPrefectures().find((region) => region.id === id),
     );
     expect(getRegionWithPrefecturesById({ id, includeMountAthos: false })).toBe(
-      regionsWithPrefectures.el.find((region) => region.id === id),
+      getRegionsWithPrefectures().find((region) => region.id === id),
     );
     expect(getRegionWithPrefecturesById({ id, locale: "el", includeMountAthos: false })).toBe(
-      regionsWithPrefectures.el.find((region) => region.id === id),
+      getRegionsWithPrefectures().find((region) => region.id === id),
     );
   });
 
@@ -94,20 +99,20 @@ describe("getRegionWithPrefecturesById", () => {
     "get region with id %i of Greece with its prefectures, including Mount Athos (in greek language)",
     (id) => {
       expect(getRegionWithPrefecturesById({ id, includeMountAthos: true })).toBe(
-        regionsWithPrefecturesAndMountAthos.el.find((region) => region.id === id),
+        getRegionsWithPrefectures({ includeMountAthos: true }).find((region) => region.id === id),
       );
       expect(getRegionWithPrefecturesById({ id, locale: "el", includeMountAthos: true })).toBe(
-        regionsWithPrefecturesAndMountAthos.el.find((region) => region.id === id),
+        getRegionsWithPrefectures({ includeMountAthos: true }).find((region) => region.id === id),
       );
     },
   );
 
   test.each(regionIdsInEnglish)("get region with id %i of Greece with its prefectures (in english language)", (id) => {
     expect(getRegionWithPrefecturesById({ id, locale: "en" })).toBe(
-      regionsWithPrefectures.en.find((region) => region.id === id),
+      getRegionsWithPrefectures({ locale: "en" }).find((region) => region.id === id),
     );
     expect(getRegionWithPrefecturesById({ id, locale: "en", includeMountAthos: false })).toBe(
-      regionsWithPrefectures.en.find((region) => region.id === id),
+      getRegionsWithPrefectures({ locale: "en" }).find((region) => region.id === id),
     );
   });
 
@@ -115,32 +120,36 @@ describe("getRegionWithPrefecturesById", () => {
     "get region with id %i of Greece with its prefectures, including Mount Athos (in english language)",
     (id) => {
       expect(getRegionWithPrefecturesById({ id, locale: "en", includeMountAthos: true })).toBe(
-        regionsWithPrefecturesAndMountAthos.en.find((region) => region.id === id),
+        getRegionsWithPrefectures({ locale: "en", includeMountAthos: true }).find((region) => region.id === id),
       );
     },
   );
 });
 
 describe("getRegionWithPrefecturesByIsoCode", () => {
-  const regionIsoCodesInGreek = regions.el.map(({ iso31662 }) => iso31662);
-  const regionIsoCodesInGreekIncludingMountAthos = regionsWithMountAthos.el.map(({ iso31662 }) => iso31662);
-  const regionIsoCodesInEnglish = regions.en.map(({ iso31662 }) => iso31662);
-  const regionIsoCodesInEnglishIncludingMountAthos = regionsWithMountAthos.en.map(({ iso31662 }) => iso31662);
+  const regionIsoCodesInGreek = getRegions().map(({ iso31662 }) => iso31662);
+  const regionIsoCodesInGreekIncludingMountAthos = getRegions({ includeMountAthos: true }).map(
+    ({ iso31662 }) => iso31662,
+  );
+  const regionIsoCodesInEnglish = getRegions({ locale: "en" }).map(({ iso31662 }) => iso31662);
+  const regionIsoCodesInEnglishIncludingMountAthos = getRegions({ locale: "en", includeMountAthos: true }).map(
+    ({ iso31662 }) => iso31662,
+  );
 
   test.each(regionIsoCodesInGreek)(
     "get region with iso31662 code %s of Greece with its prefectures (in greek language)",
     (isoCode) => {
       expect(getRegionWithPrefecturesByIsoCode({ isoCode })).toBe(
-        regionsWithPrefectures.el.find((region) => region.iso31662 === isoCode),
+        getRegionsWithPrefectures().find((region) => region.iso31662 === isoCode),
       );
       expect(getRegionWithPrefecturesByIsoCode({ isoCode, locale: "el" })).toBe(
-        regionsWithPrefectures.el.find((region) => region.iso31662 === isoCode),
+        getRegionsWithPrefectures().find((region) => region.iso31662 === isoCode),
       );
       expect(getRegionWithPrefecturesByIsoCode({ isoCode, includeMountAthos: false })).toBe(
-        regionsWithPrefectures.el.find((region) => region.iso31662 === isoCode),
+        getRegionsWithPrefectures().find((region) => region.iso31662 === isoCode),
       );
       expect(getRegionWithPrefecturesByIsoCode({ isoCode, locale: "el", includeMountAthos: false })).toBe(
-        regionsWithPrefectures.el.find((region) => region.iso31662 === isoCode),
+        getRegionsWithPrefectures().find((region) => region.iso31662 === isoCode),
       );
     },
   );
@@ -149,10 +158,10 @@ describe("getRegionWithPrefecturesByIsoCode", () => {
     "get region with iso31662 code %s of Greece with its prefectures, including Mount Athos (in greek language)",
     (isoCode) => {
       expect(getRegionWithPrefecturesByIsoCode({ isoCode, includeMountAthos: true })).toBe(
-        regionsWithPrefecturesAndMountAthos.el.find((region) => region.iso31662 === isoCode),
+        getRegionsWithPrefectures({ includeMountAthos: true }).find((region) => region.iso31662 === isoCode),
       );
       expect(getRegionWithPrefecturesByIsoCode({ isoCode, locale: "el", includeMountAthos: true })).toBe(
-        regionsWithPrefecturesAndMountAthos.el.find((region) => region.iso31662 === isoCode),
+        getRegionsWithPrefectures({ includeMountAthos: true }).find((region) => region.iso31662 === isoCode),
       );
     },
   );
@@ -161,10 +170,10 @@ describe("getRegionWithPrefecturesByIsoCode", () => {
     "get region with iso31662 code %s of Greece with its prefectures (in english language)",
     (isoCode) => {
       expect(getRegionWithPrefecturesByIsoCode({ isoCode, locale: "en" })).toBe(
-        regionsWithPrefectures.en.find((region) => region.iso31662 === isoCode),
+        getRegionsWithPrefectures({ locale: "en" }).find((region) => region.iso31662 === isoCode),
       );
       expect(getRegionWithPrefecturesByIsoCode({ isoCode, locale: "en", includeMountAthos: false })).toBe(
-        regionsWithPrefectures.en.find((region) => region.iso31662 === isoCode),
+        getRegionsWithPrefectures({ locale: "en" }).find((region) => region.iso31662 === isoCode),
       );
     },
   );
@@ -173,7 +182,9 @@ describe("getRegionWithPrefecturesByIsoCode", () => {
     "get region with iso31662 code %s of Greece with its prefectures, including Mount Athos (in english language)",
     (isoCode) => {
       expect(getRegionWithPrefecturesByIsoCode({ isoCode, locale: "en", includeMountAthos: true })).toBe(
-        regionsWithPrefecturesAndMountAthos.en.find((region) => region.iso31662 === isoCode),
+        getRegionsWithPrefectures({ locale: "en", includeMountAthos: true }).find(
+          (region) => region.iso31662 === isoCode,
+        ),
       );
     },
   );
