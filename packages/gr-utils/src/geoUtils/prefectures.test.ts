@@ -1,5 +1,8 @@
-import { prefectures, prefecturesWithMountAthos } from "../../data/geospatial";
+import { prefectures, prefecturesWithMountAthos, Prefecture } from "../../data/geospatial";
 import { getPrefectures, getPrefectureById, getPrefectureByIsoCode } from "./prefectures";
+
+// alias types (for les typing)
+type TP = Prefecture;
 
 describe("getPrefectures", () => {
   it("get all prefectures of Greece (in greek language)", () => {
@@ -37,43 +40,45 @@ describe("getPrefectureById", () => {
   );
 
   test.each(prefectureIdsInGreek)("get prefecture with id %i (in greek language)", (id) => {
-    expect(getPrefectureById({ id })).toBe(getPrefectures().find((prefecture) => prefecture.id === id));
-    expect(getPrefectureById({ id, locale: "el" })).toBe(getPrefectures().find((prefecture) => prefecture.id === id));
-    expect(getPrefectureById({ id, includeMountAthos: false })).toBe(
-      getPrefectures().find((region) => region.id === id),
-    );
-    expect(getPrefectureById({ id, locale: "el", includeMountAthos: false })).toBe(
-      getPrefectures().find((region) => region.id === id),
+    expect(getPrefectures().includes(getPrefectureById({ id }) as TP)).toBe(true);
+    expect(getPrefectures().includes(getPrefectureById({ id, locale: "el" }) as TP)).toBe(true);
+    expect(getPrefectures().includes(getPrefectureById({ id, includeMountAthos: false }) as TP)).toBe(true);
+    expect(getPrefectures().includes(getPrefectureById({ id, locale: "el", includeMountAthos: false }) as TP)).toBe(
+      true,
     );
   });
 
   test.each(prefectureIdsInGreekIncludingMountAthos)(
     "get prefecture with id %i, including Mount Athos (in greek language)",
     (id) => {
-      expect(getPrefectureById({ id, includeMountAthos: true })).toBe(
-        getPrefectures({ includeMountAthos: true }).find((region) => region.id === id),
-      );
-      expect(getPrefectureById({ id, locale: "el", includeMountAthos: true })).toBe(
-        getPrefectures({ includeMountAthos: true }).find((region) => region.id === id),
-      );
+      expect(
+        getPrefectures({ includeMountAthos: true }).includes(getPrefectureById({ id, includeMountAthos: true }) as TP),
+      ).toBe(true);
+      expect(
+        getPrefectures({ includeMountAthos: true }).includes(
+          getPrefectureById({ id, locale: "el", includeMountAthos: true }) as TP,
+        ),
+      ).toBe(true);
     },
   );
 
   test.each(prefectureIdsInEnglish)("get prefecture with id %i (in english language)", (id) => {
-    expect(getPrefectureById({ id, locale: "en" })).toBe(
-      getPrefectures({ locale: "en" }).find((region) => region.id === id),
-    );
-    expect(getPrefectureById({ id, locale: "en", includeMountAthos: false })).toBe(
-      getPrefectures({ locale: "en" }).find((region) => region.id === id),
-    );
+    expect(getPrefectures({ locale: "en" }).includes(getPrefectureById({ id, locale: "en" }) as TP)).toBe(true);
+    expect(
+      getPrefectures({ locale: "en" }).includes(
+        getPrefectureById({ id, locale: "en", includeMountAthos: false }) as TP,
+      ),
+    ).toBe(true);
   });
 
   test.each(prefectureIdsInEnglishIncludingMountAthos)(
     "get prefecture with id %i, including Mount Athos (in english language)",
     (id) => {
-      expect(getPrefectureById({ id, locale: "en", includeMountAthos: true })).toBe(
-        getPrefectures({ locale: "en", includeMountAthos: true }).find((region) => region.id === id),
-      );
+      expect(
+        getPrefectures({ locale: "en", includeMountAthos: true }).includes(
+          getPrefectureById({ id, locale: "en", includeMountAthos: true }) as TP,
+        ),
+      ).toBe(true);
     },
   );
 });
@@ -89,47 +94,49 @@ describe("getPrefectureByIsoCode", () => {
   );
 
   test.each(prefectureIsoCodesInGreek)("get prefecture with iso31662 code %s (in greek language)", (isoCode) => {
-    expect(getPrefectureByIsoCode({ isoCode })).toBe(
-      getPrefectures().find((prefecture) => prefecture.iso31662 === isoCode),
-    );
-    expect(getPrefectureByIsoCode({ isoCode, locale: "el" })).toBe(
-      getPrefectures().find((prefecture) => prefecture.iso31662 === isoCode),
-    );
-    expect(getPrefectureByIsoCode({ isoCode, includeMountAthos: false })).toBe(
-      getPrefectures().find((region) => region.iso31662 === isoCode),
-    );
-    expect(getPrefectureByIsoCode({ isoCode, locale: "el", includeMountAthos: false })).toBe(
-      getPrefectures().find((region) => region.iso31662 === isoCode),
-    );
+    expect(getPrefectures().includes(getPrefectureByIsoCode({ isoCode }) as TP)).toBe(true);
+    expect(getPrefectures().includes(getPrefectureByIsoCode({ isoCode, locale: "el" }) as TP)).toBe(true);
+    expect(getPrefectures().includes(getPrefectureByIsoCode({ isoCode, includeMountAthos: false }) as TP)).toBe(true);
+    expect(
+      getPrefectures().includes(getPrefectureByIsoCode({ isoCode, locale: "el", includeMountAthos: false }) as TP),
+    ).toBe(true);
   });
 
   test.each(prefectureIsoCodesInGreekIncludingMountAthos)(
     "get prefecture with iso31662 code %s, including Mount Athos (in greek language)",
     (isoCode) => {
-      expect(getPrefectureByIsoCode({ isoCode, includeMountAthos: true })).toBe(
-        getPrefectures({ includeMountAthos: true }).find((region) => region.iso31662 === isoCode),
-      );
-      expect(getPrefectureByIsoCode({ isoCode, locale: "el", includeMountAthos: true })).toBe(
-        getPrefectures({ includeMountAthos: true }).find((region) => region.iso31662 === isoCode),
-      );
+      expect(
+        getPrefectures({ includeMountAthos: true }).includes(
+          getPrefectureByIsoCode({ isoCode, includeMountAthos: true }) as TP,
+        ),
+      ).toBe(true);
+      expect(
+        getPrefectures({ includeMountAthos: true }).includes(
+          getPrefectureByIsoCode({ isoCode, locale: "el", includeMountAthos: true }) as TP,
+        ),
+      ).toBe(true);
     },
   );
 
   test.each(prefectureIsoCodesInEnglish)("get prefecture with iso31662 code %s (in english language)", (isoCode) => {
-    expect(getPrefectureByIsoCode({ isoCode, locale: "en" })).toBe(
-      getPrefectures({ locale: "en" }).find((region) => region.iso31662 === isoCode),
+    expect(getPrefectures({ locale: "en" }).includes(getPrefectureByIsoCode({ isoCode, locale: "en" }) as TP)).toBe(
+      true,
     );
-    expect(getPrefectureByIsoCode({ isoCode, locale: "en", includeMountAthos: false })).toBe(
-      getPrefectures({ locale: "en" }).find((region) => region.iso31662 === isoCode),
-    );
+    expect(
+      getPrefectures({ locale: "en" }).includes(
+        getPrefectureByIsoCode({ isoCode, locale: "en", includeMountAthos: false }) as TP,
+      ),
+    ).toBe(true);
   });
 
   test.each(prefectureIsoCodesInEnglishIncludingMountAthos)(
     "get prefecture with iso31662 code %s, including Mount Athos (in english language)",
     (isoCode) => {
-      expect(getPrefectureByIsoCode({ isoCode, locale: "en", includeMountAthos: true })).toBe(
-        getPrefectures({ locale: "en", includeMountAthos: true }).find((region) => region.iso31662 === isoCode),
-      );
+      expect(
+        getPrefectures({ locale: "en", includeMountAthos: true }).includes(
+          getPrefectureByIsoCode({ isoCode, locale: "en", includeMountAthos: true }) as TP,
+        ),
+      ).toBe(true);
     },
   );
 });

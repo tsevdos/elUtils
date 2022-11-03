@@ -1,16 +1,16 @@
-type Region = {
+export type Region = {
   id: number;
   iso31662: string;
   name: string;
   seat: string;
 };
-type Prefecture = {
+export type Prefecture = {
   id: number;
   iso31662: string;
   name: string;
   seat: string;
 };
-type RegionWithPrefectures = Region & { prefectures: Prefecture[] };
+export type RegionWithPrefectures = Region & { prefectures: Prefecture[] };
 export type Language = "el" | "en";
 type RegionsWithPrefectures = { [T in Language]: RegionWithPrefectures[] };
 type Regions = { [T in Language]: Region[] };
