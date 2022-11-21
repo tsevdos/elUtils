@@ -1,0 +1,4422 @@
+[
+  {
+    "id": 1,
+    "iso31662": "GR-A",
+    "name": "Ανατολικής Μακεδονίας και Θράκης",
+    "seat": "Κομοτηνή",
+    "units": [
+      {
+        "id": 1,
+        "name": "Δράμας",
+        "seat": "Δράμα",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["66xxx"],
+        "carPlatesPattern": ["PM*", "TO*"],
+        "municipalities": [
+          {
+            "id": 1,
+            "name": "Δοξάτου",
+            "seat": "Καλαμπάκι",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 2,
+            "name": "Δράμας",
+            "seat": "Δράμα",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 3,
+            "name": "Κάτω Νευροκοπίου",
+            "seat": "Κάτω Νευροκόπι",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 4,
+            "name": "Παρανεστίου",
+            "seat": "Παρανέστι",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 5,
+            "name": "Προσοτσάνης",
+            "seat": "Προσοτσάνη",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Έβρου",
+        "seat": "Αλεξανδρούπολη",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["68xxx"],
+        "carPlatesPattern": ["EB*", "MX*", "OP*"],
+        "municipalities": [
+          {
+            "id": 6,
+            "name": "Αλεξανδρούπολης",
+            "seat": "Αλεξανδρούπολη",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 6,
+            "name": "Διδυμοτείχου",
+            "seat": "Διδυμότειχο",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 7,
+            "name": "Ορεστιάδας",
+            "seat": "Ορεστιάδα",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 8,
+            "name": "Σαμοθράκης",
+            "seat": "Σαμοθράκη",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 9,
+            "name": "Σουφλίου",
+            "seat": "Σουφλί",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Καβάλας",
+        "seat": "Καβάλα",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["64xxx", "65xxx"],
+        "carPlatesPattern": ["KB*", "AB*"],
+        "municipalities": [
+          {
+            "id": 10,
+            "name": "Καβάλας",
+            "seat": "Καβάλα",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 3
+            }
+          },
+          {
+            "id": 11,
+            "name": "Νέστου",
+            "seat": "Χρυσούπολη",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 3
+            }
+          },
+          {
+            "id": 12,
+            "name": "Παγγαίου",
+            "seat": "Ελευθερούπολη",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Θάσου",
+        "seat": "Λιμένας",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["64004"],
+        "carPlatesPattern": ["KB*", "AB*"],
+        "municipalities": [
+          {
+            "id": 13,
+            "name": "Θάσου",
+            "seat": "Λιμένας",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 4
+            }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Ξάνθης",
+        "seat": "Ξάνθη",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["67xxx"],
+        "carPlatesPattern": ["AH*", "HO*", "HTK", "HTM", "HTN", "HTO", "HTP", "HTT", "HTY", "HTX"],
+        "municipalities": [
+          {
+            "id": 14,
+            "name": "Αβδήρων",
+            "seat": "Γενισέα",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 5
+            }
+          },
+          {
+            "id": 15,
+            "name": "Μύκης",
+            "seat": "Σμίνθη",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 5
+            }
+          },
+          {
+            "id": 16,
+            "name": "Ξάνθης",
+            "seat": "Ξάνθη",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 5
+            }
+          },
+          {
+            "id": 17,
+            "name": "Τοπείρου",
+            "seat": "Εύλαλο",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Ροδόπης",
+        "seat": "Κομοτηνή",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["69xxx"],
+        "carPlatesPattern": ["KO*", "KK*", "TT*"],
+        "municipalities": [
+          {
+            "id": 18,
+            "name": "Αρριανών",
+            "seat": "Φιλλύρα",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          },
+          {
+            "id": 19,
+            "name": "Ιάσμου",
+            "seat": "Ίασμος",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          },
+          {
+            "id": 20,
+            "name": "Κομοτηνής",
+            "seat": "Κομοτηνή",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          },
+          {
+            "id": 21,
+            "name": "Μαρωνείας - Σαπών",
+            "seat": "Σάπες",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "iso31662": "GR-B",
+    "name": "Κεντρικής Μακεδονίας",
+    "seat": "Θεσσαλονίκη",
+    "units": [
+      {
+        "id": 7,
+        "name": "Ημαθίας",
+        "seat": "Βέροια",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["59xxx"],
+        "carPlatesPattern": ["HM*", "HX*"],
+        "municipalities": [
+          {
+            "id": 22,
+            "name": "Αλεξάνδρειας",
+            "seat": "Αλεξάνδρεια",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 7
+            }
+          },
+          {
+            "id": 23,
+            "name": "Βέροιας",
+            "seat": "Βέροια",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 7
+            }
+          },
+          {
+            "id": 24,
+            "name": "Νάουσας",
+            "seat": "Νάουσα",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 7
+            }
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Θεσσαλονίκης",
+        "seat": "Θεσσαλονίκη",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["54xxx", "57xxx"],
+        "carPlatesPattern": ["N*"],
+        "municipalities": [
+          {
+            "id": 25,
+            "name": "Χαλκηδόνος",
+            "seat": "Κουφάλια",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 26,
+            "name": "Δέλτα",
+            "seat": "Σίνδος",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 27,
+            "name": "Ωραιοκάστρου",
+            "seat": "Ωραιόκαστρο",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 28,
+            "name": "Παύλου Μελά",
+            "seat": "Σταυρούπολη",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 29,
+            "name": "Αμπελοκήπων - Μενεμένης",
+            "seat": "Αμπελόκηποι",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 30,
+            "name": "Κορδελιού - Ευόσμου",
+            "seat": "Εύοσμος",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 31,
+            "name": "Νεάπολης - Συκεών",
+            "seat": "Συκιές",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 32,
+            "name": "Θεσσαλονίκης",
+            "seat": "Θεσσαλονίκη",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 33,
+            "name": "Καλαμαριάς",
+            "seat": "Καλαμαριά",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 34,
+            "name": "Θερμαϊκού",
+            "seat": "Περαία",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 35,
+            "name": "Θέρμης",
+            "seat": "Θέρμη",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 35,
+            "name": "Πυλαίας - Χορτιάτη",
+            "seat": "Χορτιάτης",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 36,
+            "name": "Λαγκαδά",
+            "seat": "Λαγκαδάς",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 37,
+            "name": "Βόλβης",
+            "seat": "Σταυρός",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Κιλκίς",
+        "seat": "Κιλκίς",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["61xxx"],
+        "carPlatesPattern": ["KI*", "EX*"],
+        "municipalities": [
+          {
+            "id": 38,
+            "name": "Κιλκίς",
+            "seat": "Κιλκίς",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 9
+            }
+          },
+          {
+            "id": 38,
+            "name": "Παιονίας",
+            "seat": "Πολύκαστρο",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 9
+            }
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Πέλλας",
+        "seat": "Έδεσσα",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["58xxx"],
+        "carPlatesPattern": ["EE*", "MM*"],
+        "municipalities": [
+          {
+            "id": 39,
+            "name": "Πέλλας",
+            "seat": "Γιαννιτσά",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          },
+          {
+            "id": 40,
+            "name": "Σκύδρας",
+            "seat": "Σκύδρα",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          },
+          {
+            "id": 41,
+            "name": "Έδεσσας",
+            "seat": "Έδεσσα",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          },
+          {
+            "id": 42,
+            "name": "Αλμωπίας",
+            "seat": "Αριδαία",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Πιερίας",
+        "seat": "Κατερίνη",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["60xxx"],
+        "carPlatesPattern": ["KN*", "TI*"],
+        "municipalities": [
+          {
+            "id": 43,
+            "name": "Δίου - Ολύμπου",
+            "seat": "Λιτόχωρο",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 11
+            }
+          },
+          {
+            "id": 44,
+            "name": "Κατερίνης",
+            "seat": "Κατερίνη",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 11
+            }
+          },
+          {
+            "id": 45,
+            "name": "Πύδνας - Κολινδρού",
+            "seat": "Αιγίνιο",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 11
+            }
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Σερρών",
+        "seat": "Σέρρες",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["62xxx"],
+        "carPlatesPattern": ["EP*", "IX*"],
+        "municipalities": [
+          {
+            "id": 46,
+            "name": "Νέας Ζίχνης",
+            "seat": "Νέα Ζίχνη",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 47,
+            "name": "Αμφίπολης",
+            "seat": "Ροδολίβος",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 48,
+            "name": "Βισαλτίας",
+            "seat": "Νιγρίτα",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 49,
+            "name": "Εμμανουήλ Παππά",
+            "seat": "Χρυσό",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "regionId": 10,
+            "regionIso31662": "GR-J",
+            "unitId": 50,
+            "name": "Σερρών",
+            "seat": "Σέρρες",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 51,
+            "name": "Σερρών",
+            "seat": "Σέρρες",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "regionId": 10,
+            "regionIso31662": "GR-J",
+            "unitId": 52,
+            "name": "Ηρακλείας",
+            "seat": "Ηράκλεια",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 53,
+            "name": "Σιντικής",
+            "seat": "Σιδηρόκαστρο",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Χαλκιδικής",
+        "seat": "Πολύγυρος",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["63xxx"],
+        "carPlatesPattern": ["XK*", "MA*"],
+        "municipalities": [
+          {
+            "id": 54,
+            "name": "Αριστοτέλη",
+            "seat": "Ιερισσός",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 55,
+            "name": "Σιθωνίας",
+            "seat": "Νικήτη",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 56,
+            "name": "Πολυγύρου",
+            "seat": "Πολύγυρος",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 57,
+            "name": "Κασσάνδρας",
+            "seat": "Κασσάνδρεια",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 58,
+            "name": "Νέας Προποντίδας",
+            "seat": "Νέα Μουδανιά",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "iso31662": "GR-C",
+    "name": "Δυτικής Μακεδονίας",
+    "seat": "Κοζάνη",
+    "units": [
+      {
+        "id": 14,
+        "name": "Γρεβενών",
+        "seat": "Γρεβενά",
+        "region": {
+          "id": 3,
+          "iso31662": "GR-C"
+        },
+        "postalCodePattern": ["51xxx"],
+        "carPlatesPattern": ["PN*"],
+        "municipalities": [
+          {
+            "id": 59,
+            "name": "Δεσκάτης",
+            "seat": "Δεσκάτη",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 14
+            }
+          },
+          {
+            "id": 60,
+            "name": "Γρεβενών",
+            "seat": "Γρεβενά",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 14
+            }
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Καστοριάς",
+        "seat": "Καστοριά",
+        "region": {
+          "id": 3,
+          "iso31662": "GR-C"
+        },
+        "postalCodePattern": ["52xxx"],
+        "carPlatesPattern": ["KT*"],
+        "municipalities": [
+          {
+            "id": 61,
+            "name": "Καστοριάς",
+            "seat": "Καστοριά",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 15
+            }
+          },
+          {
+            "id": 62,
+            "name": "Νεστορίου",
+            "seat": "Νεστόριο",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 15
+            }
+          },
+          {
+            "id": 63,
+            "name": "Άργους Ορεστικού",
+            "seat": "Άργος Ορεστικό",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 15
+            }
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Κοζάνης",
+        "seat": "Κοζάνη",
+        "region": {
+          "id": 3,
+          "iso31662": "GR-C"
+        },
+        "postalCodePattern": ["50xxx"],
+        "carPlatesPattern": ["KZ*", "MN*"],
+        "municipalities": [
+          {
+            "id": 64,
+            "name": "Εορδαίας",
+            "seat": "Πτολεμαΐδα",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 65,
+            "name": "Κοζάνης",
+            "seat": "Κοζάνη",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 66,
+            "name": "Βοΐου",
+            "seat": "Σιάτιστα",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 67,
+            "name": "Βελβεντού",
+            "seat": "Βελβεντός",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 68,
+            "name": "Σερβίων",
+            "seat": "Σέρβια",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Φλώρινας",
+        "seat": "Φλώρινα",
+        "region": {
+          "id": 3,
+          "iso31662": "GR-C"
+        },
+        "postalCodePattern": ["53xxx"],
+        "carPlatesPattern": ["PA*"],
+        "municipalities": [
+          {
+            "id": 69,
+            "name": "Αμυνταίου",
+            "seat": "Αμύνταιο",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 17
+            }
+          },
+          {
+            "id": 70,
+            "name": "Φλώρινας",
+            "seat": "Φλώρινα",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 17
+            }
+          },
+          {
+            "id": 71,
+            "name": "Πρεσπών",
+            "seat": "Λαιμός",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 17
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "iso31662": "GR-D",
+    "name": "Ηπείρου",
+    "seat": "Ιωάννινα",
+    "units": [
+      {
+        "id": 18,
+        "name": "Άρτας",
+        "seat": "Άρτα",
+        "region": {
+          "id": 4,
+          "iso31662": "GR-D"
+        },
+        "postalCodePattern": ["47xxx"],
+        "carPlatesPattern": ["AT*"],
+        "municipalities": [
+          {
+            "id": 72,
+            "name": "Αρταίων",
+            "seat": "Άρτα",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          },
+          {
+            "id": 73,
+            "name": "Νικολάου Σκουφά",
+            "seat": "Πέτα",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          },
+          {
+            "id": 74,
+            "name": "Γεωργίου Καραϊσκάκη",
+            "seat": "Άνω Καλεντίνη",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          },
+          {
+            "id": 75,
+            "name": "Κεντρικών Τζουμέρκων",
+            "seat": "Βουργαρέλι",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Θεσπρωτίας",
+        "seat": "Ηγουμενίτσα",
+        "region": {
+          "id": 4,
+          "iso31662": "GR-D"
+        },
+        "postalCodePattern": ["46xxx"],
+        "carPlatesPattern": ["HN*"],
+        "municipalities": [
+          {
+            "id": 76,
+            "name": "Σουλίου",
+            "seat": "Παραμυθιά",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 19
+            }
+          },
+          {
+            "id": 77,
+            "name": "Φιλιατών",
+            "seat": "Φιλιάτες",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 19
+            }
+          },
+          {
+            "id": 78,
+            "name": "Ηγουμενίτσας",
+            "seat": "Ηγουμενίτσα",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 19
+            }
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "name": "Ιωαννίνων",
+        "seat": "Ιωάννινα",
+        "region": {
+          "id": 4,
+          "iso31662": "GR-D"
+        },
+        "postalCodePattern": ["44xxx", "45xxx"],
+        "carPlatesPattern": ["IN*", "II*"],
+        "municipalities": [
+          {
+            "id": 79,
+            "name": "Κόνιτσας",
+            "seat": "Κόνιτσα",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 80,
+            "name": "Πωγωνίου",
+            "seat": "Καλπάκι",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 81,
+            "name": "Ζαγορίου",
+            "seat": "Ασπράγγελοι",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 82,
+            "name": "Ζίτσας",
+            "seat": "Ελεούσα",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 83,
+            "name": "Ιωαννιτών",
+            "seat": "Ιωάννινα",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 84,
+            "name": "Μετσόβου",
+            "seat": "Μέτσοβο",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 85,
+            "name": "Βορείων Τζουμέρκων",
+            "seat": "Πράμαντα",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 86,
+            "name": "Δωδώνης",
+            "seat": "Αγία Κυριακή",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "name": "Πρέβεζας",
+        "seat": "Πρέβεζα",
+        "region": {
+          "id": 4,
+          "iso31662": "GR-D"
+        },
+        "postalCodePattern": ["48xxx"],
+        "carPlatesPattern": ["PZ*", "TX*"],
+        "municipalities": [
+          {
+            "id": 87,
+            "name": "Πάργας",
+            "seat": "Καναλλάκι",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 21
+            }
+          },
+          {
+            "id": 88,
+            "name": "Πρέβεζας",
+            "seat": "Πρέβεζα",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 21
+            }
+          },
+          {
+            "id": 89,
+            "name": "Ζηρού",
+            "seat": "Φιλιππιάδα",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 21
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "iso31662": "GR-E",
+    "name": "Θεσσαλίας",
+    "seat": "Λάρισα",
+    "units": [
+      {
+        "id": 22,
+        "name": "Καρδίτσας",
+        "seat": "Καρδίτσα",
+        "region": {
+          "id": 5,
+          "iso31662": "GR-E"
+        },
+        "postalCodePattern": ["43xxx"],
+        "carPlatesPattern": ["KA*"],
+        "municipalities": [
+          {
+            "id": 90,
+            "name": "Παλαμά",
+            "seat": "Παλαμάς",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 91,
+            "name": "Μουζακίου",
+            "seat": "Μουζάκι",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 92,
+            "name": "Σοφάδων",
+            "seat": "Σοφάδες",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 93,
+            "name": "Αργιθέας",
+            "seat": "Ανθηρό",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 94,
+            "name": "Λίμνης Πλαστήρα",
+            "seat": "Μορφοβούνι",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 95,
+            "name": "Καρδίτσας",
+            "seat": "Καρδίτσα",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "name": "Λάρισας",
+        "seat": "Λάρισα",
+        "region": {
+          "id": 5,
+          "iso31662": "GR-E"
+        },
+        "postalCodePattern": ["40xxx", "41xxx"],
+        "carPlatesPattern": ["PI*", "PP*", "PT*"],
+        "municipalities": [
+          {
+            "id": 96,
+            "name": "Ελασσόνας",
+            "seat": "Ελασσόνα",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 97,
+            "name": "Τυρνάβου",
+            "seat": "Τύρναβος",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 98,
+            "name": "Τεμπών",
+            "seat": "Μακρυχώρι",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 99,
+            "name": "Λαρισαίων",
+            "seat": "Λάρισα",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 100,
+            "name": "Αγιάς",
+            "seat": "Αγιά",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 101,
+            "name": "Κιλελέρ",
+            "seat": "Νίκαια",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 102,
+            "name": "Φαρσάλων",
+            "seat": "Φάρσαλα",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "name": "Μαγνησίας",
+        "seat": "Βόλος",
+        "region": {
+          "id": 5,
+          "iso31662": "GR-E"
+        },
+        "postalCodePattern": ["37xxx", "38xxx"],
+        "carPlatesPattern": ["BO*", "BO*", "BB*", "BA*", "BT*"],
+        "municipalities": [
+          {
+            "id": 103,
+            "name": "Ρήγα Φεραίου",
+            "seat": "Βελεστίνο",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 104,
+            "name": "Αλμυρού",
+            "seat": "Αλμυρός",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 105,
+            "name": "Βόλου",
+            "seat": "Βόλος",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 106,
+            "name": "Ζαγοράς - Μουρεσίου",
+            "seat": "Ζαγορά",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 107,
+            "name": "Νοτίου Πηλίου",
+            "seat": "Αργαλαστή",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "name": "Σποράδων",
+        "seat": "Σκιάθος",
+        "region": {
+          "id": 5,
+          "iso31662": "GR-E"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 108,
+            "name": "Σκιάθου",
+            "seat": "Σκιάθος",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 25
+            }
+          },
+          {
+            "id": 109,
+            "name": "Σκοπέλου",
+            "seat": "Σκόπελος",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 25
+            }
+          },
+          {
+            "id": 110,
+            "name": "Αλοννήσου",
+            "seat": "Αλόννησος",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 25
+            }
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "name": "Τρικάλων",
+        "seat": "Τρίκαλα",
+        "region": {
+          "id": 5,
+          "iso31662": "GR-E"
+        },
+        "postalCodePattern": ["42xxx"],
+        "carPlatesPattern": ["TK*", "TN*"],
+        "municipalities": [
+          {
+            "id": 111,
+            "name": "Πύλης",
+            "seat": "Πύλη",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          },
+          {
+            "id": 112,
+            "name": "Μετεώρων",
+            "seat": "Καλαμπάκα",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          },
+          {
+            "id": 113,
+            "name": "Τρικκαίων",
+            "seat": "Τρίκαλα",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          },
+          {
+            "id": 114,
+            "name": "Φαρκαδόνας",
+            "seat": "Φαρκαδόνα",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "iso31662": "GR-F",
+    "name": "Ιονίων Νήσων",
+    "seat": "Κέρκυρα",
+    "units": [
+      {
+        "id": 27,
+        "name": "Ζακύνθου",
+        "seat": "Ζάκυνθος",
+        "region": {
+          "id": 6,
+          "iso31662": "GR-F"
+        },
+        "postalCodePattern": ["29xxx"],
+        "carPlatesPattern": ["ZA*"],
+        "municipalities": [
+          {
+            "id": 115,
+            "name": "Ζακύνθου",
+            "seat": "Ζάκυνθος",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 27
+            }
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "name": "Κέρκυρας",
+        "seat": "Κέρκυρα",
+        "region": {
+          "id": 6,
+          "iso31662": "GR-F"
+        },
+        "postalCodePattern": ["49xxx"],
+        "carPlatesPattern": ["KY*"],
+        "municipalities": [
+          {
+            "id": 116,
+            "name": "Κεντρικής Κέρκυρας και Διαποντίων Νήσων",
+            "seat": "Κέρκυρα",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          },
+          {
+            "id": 117,
+            "name": "Βόρειας Κέρκυρας",
+            "seat": "Αχαράβη",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          },
+          {
+            "id": 118,
+            "name": "Νότιας Κέρκυρας",
+            "seat": "Λευκίμμη",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          },
+          {
+            "id": 119,
+            "name": "Παξών",
+            "seat": "Γάιος",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "name": "Κεφαλληνίας",
+        "seat": "Αργοστόλι",
+        "region": {
+          "id": 6,
+          "iso31662": "GR-F"
+        },
+        "postalCodePattern": ["28xxx"],
+        "carPlatesPattern": ["KE*"],
+        "municipalities": [
+          {
+            "id": 120,
+            "name": "Αργοστολίου",
+            "seat": "Αργοστόλι",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 29
+            }
+          },
+          {
+            "id": 121,
+            "name": "Ληξουρίου",
+            "seat": "Ληξούρι",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 29
+            }
+          },
+          {
+            "id": 122,
+            "name": "Σάμης",
+            "seat": "Σάμη",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 29
+            }
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "name": "Ιθάκης",
+        "seat": "Βαθύ",
+        "region": {
+          "id": 6,
+          "iso31662": "GR-F"
+        },
+        "postalCodePattern": ["28xxx"],
+        "carPlatesPattern": ["KE*"],
+        "municipalities": [
+          {
+            "id": 123,
+            "name": "Ιθάκης",
+            "seat": "Βαθύ",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 30
+            }
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "name": "Λευκάδας",
+        "seat": "Λευκάδα",
+        "region": {
+          "id": 6,
+          "iso31662": "GR-F"
+        },
+        "postalCodePattern": ["31xxx"],
+        "carPlatesPattern": ["EY*"],
+        "municipalities": [
+          {
+            "id": 124,
+            "name": "Λευκάδας",
+            "seat": "Λευκάδα",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 31
+            }
+          },
+          {
+            "id": 125,
+            "name": "Μεγανησίου",
+            "seat": "Κατωμέρι",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 31
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "iso31662": "GR-G",
+    "name": "Δυτικής Ελλάδας",
+    "seat": "Πάτρα",
+    "units": [
+      {
+        "id": 32,
+        "name": "Αιτωλοακαρνανίας",
+        "seat": "Μεσολόγγι",
+        "region": {
+          "id": 7,
+          "iso31662": "GR-G"
+        },
+        "postalCodePattern": ["30xxx"],
+        "carPlatesPattern": ["AI*", "ME*"],
+        "municipalities": [
+          {
+            "id": 126,
+            "name": "Αμφιλοχίας",
+            "seat": "Αμφιλοχία",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 127,
+            "name": "Ακτίου - Βόνιτσας",
+            "seat": "Βόνιτσα",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 128,
+            "name": "Ξηρομέρου",
+            "seat": "Αστακός",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 129,
+            "name": "Ιεράς Πόλεως Μεσολογγίου",
+            "seat": "Μεσολόγγι",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 130,
+            "name": "Αγρινίου",
+            "seat": "Αγρίνιο",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 131,
+            "name": "Θέρμου",
+            "seat": "Θέρμο",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 132,
+            "name": "Ναυπακτίας",
+            "seat": "Ναύπακτος",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "name": "Αχαΐας",
+        "seat": "Πάτρα",
+        "region": {
+          "id": 7,
+          "iso31662": "GR-G"
+        },
+        "postalCodePattern": ["25xxx", "26xxx"],
+        "carPlatesPattern": ["AX*", "AZ*"],
+        "municipalities": [
+          {
+            "id": 133,
+            "name": "Πατρέων",
+            "seat": "Πάτρα",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 134,
+            "name": "Αιγιαλείας",
+            "seat": "Αίγιο",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 135,
+            "name": "Καλαβρύτων",
+            "seat": "Καλάβρυτα",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 136,
+            "name": "Ερυμάνθου",
+            "seat": "Χαλανδρίτσα",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 137,
+            "name": "Δυτικής Αχαΐας",
+            "seat": "Κάτω Αχαΐα",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "name": "Ηλείας",
+        "seat": "Πύργος",
+        "region": {
+          "id": 7,
+          "iso31662": "GR-G"
+        },
+        "postalCodePattern": ["27xxx"],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 137,
+            "name": "Ανδραβίδας - Κυλλήνης",
+            "seat": "Λεχαινά",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 138,
+            "name": "Πηνειού",
+            "seat": "Γαστούνη",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 139,
+            "name": "Ήλιδας",
+            "seat": "Αμαλιάδα",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 140,
+            "name": "Πύργου",
+            "seat": "Πύργος",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 141,
+            "name": "Αρχαίας Ολυμπίας",
+            "seat": "Αρχαία Ολυμπία",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 142,
+            "name": "Ανδρίτσαινας - Κρεστένων",
+            "seat": "Κρέστενα",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 143,
+            "name": "Ζαχάρως",
+            "seat": "Ζαχάρω",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "iso31662": "GR-H",
+    "name": "Στερεάς Ελλάδας",
+    "seat": "Λαμία",
+    "units": [
+      {
+        "id": 35,
+        "name": "Βοιωτίας",
+        "seat": "Λιβαδειά",
+        "region": {
+          "id": 8,
+          "iso31662": "GR-H"
+        },
+        "postalCodePattern": ["32xxx"],
+        "carPlatesPattern": ["BI*"],
+        "municipalities": [
+          {
+            "id": 144,
+            "name": "Τανάγρας",
+            "seat": "Σχηματάρι",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 145,
+            "name": "Θηβαίων",
+            "seat": "Θήβα",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 146,
+            "name": "Αλιάρτου",
+            "seat": "Αλίαρτος",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 147,
+            "name": "Ορχομενού",
+            "seat": "Ορχομενός",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 148,
+            "name": "Λεβαδέων",
+            "seat": "Λιβαδειά",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 149,
+            "name": "Διστόμου - Αράχοβας - Αντίκυρας",
+            "seat": "Δίστομο",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "name": "Ευβοίας",
+        "seat": "Χαλκίδα",
+        "region": {
+          "id": 8,
+          "iso31662": "GR-H"
+        },
+        "postalCodePattern": ["34xxx"],
+        "carPlatesPattern": ["XA*", "EH*"],
+        "municipalities": [
+          {
+            "id": 150,
+            "name": "Σκύρου",
+            "seat": "Σκύρος",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 151,
+            "name": "Ιστιαίας - Αιδηψού",
+            "seat": "Ιστιαία",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 152,
+            "name": "Μαντουδίου - Λίμνης - Αγίας Άννας",
+            "seat": "Μαντούδι",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 153,
+            "name": "Διρφύων - Μεσσαπίων",
+            "seat": "Ψαχνά",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 154,
+            "name": "Χαλκιδέων",
+            "seat": "Χαλκίδα",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 155,
+            "name": "Ερέτριας",
+            "seat": "Ερέτρια",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 156,
+            "name": "Κύμης - Αλιβερίου",
+            "seat": "Αλιβέρι",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 157,
+            "name": "Καρύστου",
+            "seat": "Κάρυστος",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "name": "Ευρυτανίας",
+        "seat": "Καρπενήσι",
+        "region": {
+          "id": 8,
+          "iso31662": "GR-H"
+        },
+        "postalCodePattern": ["36xxx"],
+        "carPlatesPattern": ["KH*"],
+        "municipalities": [
+          {
+            "id": 158,
+            "name": "Καρπενησίου",
+            "seat": "Καρπενήσι",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 37
+            }
+          },
+          {
+            "id": 159,
+            "name": "Αγράφων",
+            "seat": "Κερασοχώρι",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 37
+            }
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "name": "Φθιώτιδας",
+        "seat": "Λαμία",
+        "region": {
+          "id": 8,
+          "iso31662": "GR-H"
+        },
+        "postalCodePattern": ["35xxx"],
+        "carPlatesPattern": ["MI*"],
+        "municipalities": [
+          {
+            "id": 160,
+            "name": "Λοκρών",
+            "seat": "Αταλάντη",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 161,
+            "name": "Αμφίκλειας - Ελάτειας",
+            "seat": "Κάτω Τιθορέα",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 162,
+            "name": "Καμένων Βούρλων",
+            "seat": "Καμένα Βούρλα",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 163,
+            "name": "Λαμιέων",
+            "seat": "Λαμία",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 164,
+            "name": "Στυλίδας",
+            "seat": "Στυλίδα",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 165,
+            "name": "Μακρακώμης",
+            "seat": "Σπερχειάδα",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 166,
+            "name": "Δομοκού",
+            "seat": "Δομοκός",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "name": "Φωκίδας",
+        "seat": "Άμφισσα",
+        "region": {
+          "id": 8,
+          "iso31662": "GR-H"
+        },
+        "postalCodePattern": ["33xxx"],
+        "carPlatesPattern": ["AM*"],
+        "municipalities": [
+          {
+            "id": 167,
+            "name": "Δελφών",
+            "seat": "Άμφισσα",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 39
+            }
+          },
+          {
+            "id": 168,
+            "name": "Δωρίδος",
+            "seat": "Λιδωρίκι",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 39
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "iso31662": "GR-I",
+    "name": "Αττικής",
+    "seat": "Αθήνα",
+    "units": [
+      {
+        "id": 40,
+        "name": "Βορείου Τομέα Αθηνών",
+        "seat": "Κηφισιά",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 169,
+            "name": "Παπάγου - Χολαργού",
+            "seat": "Χολαργός",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 170,
+            "name": "Αγίας Παρασκευής",
+            "seat": "Αγία Παρασκευή",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 171,
+            "name": "Χαλανδρίου",
+            "seat": "Χαλάνδρι",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 172,
+            "name": "Βριλησσίων",
+            "seat": "Βριλήσσια",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 173,
+            "name": "Αμαρουσίου",
+            "seat": "Μαρούσι",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 174,
+            "name": "Φιλοθέης - Ψυχικού",
+            "seat": "Ψυχικό",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 175,
+            "name": "Νέας Ιωνίας",
+            "seat": "Νέα Ιωνία",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 176,
+            "name": "Μεταμορφώσεως",
+            "seat": "Μεταμόρφωση",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 177,
+            "name": "Ηρακλείου",
+            "seat": "Ηράκλειο (Αττικής)",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 178,
+            "name": "Λυκόβρυσης - Πεύκης",
+            "seat": "Πεύκη",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 179,
+            "name": "Κηφισιάς",
+            "seat": "Κηφισιά",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 180,
+            "name": "Πεντέλης",
+            "seat": "Πεντέλη",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "name": "Δυτικού Τομέα Αθηνών",
+        "seat": "Περιστέρι",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 181,
+            "name": "Αγίας Βαρβάρας",
+            "seat": "Αγία Βαρβάρα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 182,
+            "name": "Χαϊδαρίου",
+            "seat": "Χαϊδάρι",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 183,
+            "name": "Αιγάλεω",
+            "seat": "Αιγάλεω",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 184,
+            "name": "Περιστερίου",
+            "seat": "Περιστέρι",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 185,
+            "name": "Πετρούπολης",
+            "seat": "Πετρούπολη",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 186,
+            "name": "Ιλίου",
+            "seat": "Ίλιον",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 187,
+            "name": "Αγίων Αναργύρων - Καματερού",
+            "seat": "Άγιοι Ανάργυροι",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "name": "Κεντρικού Τομέα Αθηνών",
+        "seat": "Αθήνα",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 188,
+            "name": "Νέας Φιλαδέλφειας - Νέας Χαλκηδόνας",
+            "seat": "Νέας Φιλαδελφείας",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 189,
+            "name": "Γαλατσίου",
+            "seat": "Γαλάτσι",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 190,
+            "name": "Αθηναίων",
+            "seat": "Αθήνα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 191,
+            "name": "Δάφνης - Υμηττού",
+            "seat": "Δάφνη",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 192,
+            "name": "Ηλιούπολης",
+            "seat": "Ηλιούπολη",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 193,
+            "name": "Βύρωνος",
+            "seat": "Βύρωνας",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 194,
+            "name": "Καισαριανής",
+            "seat": "Καισαριανή",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 195,
+            "name": "Ζωγράφου",
+            "seat": "Ζωγράφου",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "name": "Νοτίου Τομέα Αθηνών",
+        "seat": "Γλυφάδα",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 196,
+            "name": "Μοσχάτου - Ταύρου",
+            "seat": "Μοσχάτο",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 197,
+            "name": "Καλλιθέας",
+            "seat": "Καλλιθέα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 198,
+            "name": "Νέας Σμύρνης",
+            "seat": "Νέα Σμύρνη",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 199,
+            "name": "Παλαιού Φαλήρου",
+            "seat": "Παλαιό Φάληρο",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 200,
+            "name": "Αγίου Δημητρίου",
+            "seat": "Άγιος Δημήτριος",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 201,
+            "name": "Αλίμου",
+            "seat": "Άλιμος",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 202,
+            "name": "Ελληνικού - Αργυρούπολης",
+            "seat": "Αργυρούπολη",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 203,
+            "name": "Γλυφάδας",
+            "seat": "Γλυφάδα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "name": "Πειραιώς",
+        "seat": "Πειραιάς",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 204,
+            "name": "Περάματος",
+            "seat": "Πέραμα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 205,
+            "name": "Κερατσινίου - Δραπετσώνας",
+            "seat": "Κερατσίνι",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 206,
+            "name": "Πειραιά",
+            "seat": "Πειραιάς",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 207,
+            "name": "Νίκαιας - Αγίου Ιωάννη Ρέντη",
+            "seat": "Νίκαια",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 208,
+            "name": "Κορυδαλλού",
+            "seat": "Κορυδαλλός",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "name": "Νήσων Αττικής",
+        "seat": "",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 209,
+            "name": "Κυθήρων",
+            "seat": "Κύθηρα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 210,
+            "name": "Σπετσών",
+            "seat": "Σπέτσες",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 211,
+            "name": "Ύδρας",
+            "seat": "Ύδρα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 212,
+            "name": "Τροιζηνίας - Μεθάνων",
+            "seat": "Γαλατάς",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 213,
+            "name": "Πόρου",
+            "seat": "Πόρος",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 214,
+            "name": "Αγκιστρίου",
+            "seat": "Αγκίστρι",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 215,
+            "name": "Αίγινας",
+            "seat": "Αίγινα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 216,
+            "name": "Σαλαμίνας",
+            "seat": "Σαλαμίνα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "name": "Ανατολικής Αττικής",
+        "seat": "Παλλήνη",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 217,
+            "name": "Βάρης - Βούλας - Βουλιαγμένης",
+            "seat": "Βούλα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 218,
+            "name": "Κρωπίας",
+            "seat": "Κορωπί",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 219,
+            "name": "Σαρωνικού",
+            "seat": "Καλύβια Θορικού",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 220,
+            "name": "Λαυρεωτικής",
+            "seat": "Λαύριο",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 221,
+            "name": "Μαρκόπουλου Μεσογαίας",
+            "seat": "Μαρκόπουλο",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 222,
+            "name": "Παιανίας",
+            "seat": "Παιανία",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 223,
+            "name": "Σπάτων - Αρτέμιδος",
+            "seat": "Σπάτα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 224,
+            "name": "Παλλήνης",
+            "seat": "Γέρακας",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 225,
+            "name": "Ραφήνας - Πικερμίου",
+            "seat": "Ραφήνα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 226,
+            "name": "Μαραθώνος",
+            "seat": "Μαραθώνας",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 227,
+            "name": "Διονύσου",
+            "seat": "Άγιος Στέφανος",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 228,
+            "name": "Ωρωπού",
+            "seat": "Ωρωπός",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 229,
+            "name": "Αχαρνών",
+            "seat": "Αχαρνές",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          }
+        ]
+      },
+      {
+        "id": 47,
+        "name": "Δυτικής Αττικής",
+        "seat": "",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 230,
+            "name": "Φυλής",
+            "seat": "Άνω Λιόσια",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 231,
+            "name": "Ασπροπύργου",
+            "seat": "Ασπρόπυργος",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 232,
+            "name": "Ελευσίνας",
+            "seat": "Ελευσίνα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 233,
+            "name": "Μάνδρας - Ειδυλλίας",
+            "seat": "Μάνδρα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 234,
+            "name": "Μεγαρέων",
+            "seat": "Μέγαρα",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "iso31662": "GR-J",
+    "name": "Πελοποννήσου",
+    "seat": "Τρίπολη",
+    "units": [
+      {
+        "id": 48,
+        "name": "Αργολίδας",
+        "seat": "Ναύπλιο",
+        "region": {
+          "id": 10,
+          "iso31662": "GR-J"
+        },
+        "postalCodePattern": ["21xxx"],
+        "carPlatesPattern": ["AP*"],
+        "municipalities": [
+          {
+            "id": 235,
+            "name": "Άργους - Μυκηνών",
+            "seat": "Άργος",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          },
+          {
+            "id": 236,
+            "name": "Ναυπλιέων",
+            "seat": "Ναύπλιο",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          },
+          {
+            "id": 237,
+            "name": "Επιδαύρου",
+            "seat": "Λυγουριό",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          },
+          {
+            "id": 238,
+            "name": "Ερμιονίδας",
+            "seat": "Κρανίδι",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          }
+        ]
+      },
+      {
+        "id": 49,
+        "name": "Αρκαδίας",
+        "seat": "Τρίπολη",
+        "region": {
+          "id": 10,
+          "iso31662": "GR-J"
+        },
+        "postalCodePattern": ["22xxx"],
+        "carPlatesPattern": ["TP*"],
+        "municipalities": [
+          {
+            "id": 239,
+            "name": "Νότιας Κυνουρίας",
+            "seat": "Λεωνίδιο",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 240,
+            "name": "Βόρειας Κυνουρίας",
+            "seat": "Άστρος",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 241,
+            "name": "Τρίπολης",
+            "seat": "Τρίπολη",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 242,
+            "name": "Γορτυνίας",
+            "seat": "Δημητσάνα",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 243,
+            "name": "Μεγαλόπολης",
+            "seat": "Μεγαλόπολη",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          }
+        ]
+      },
+      {
+        "unitId": 50,
+        "name": "Κορινθίας",
+        "seat": "Κόρινθος",
+        "region": {
+          "id": 10,
+          "iso31662": "GR-J"
+        },
+        "postalCodePattern": ["20xxx"],
+        "carPlatesPattern": ["KP*"],
+        "municipalities": [
+          {
+            "id": 244,
+            "name": "Λουτρακίου - Περαχώρας - Αγίων Θεοδώρων",
+            "seat": "Λουτράκι",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 245,
+            "name": "Κορινθίων",
+            "seat": "Κόρινθος",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 246,
+            "name": "Βέλου - Βόχας",
+            "seat": "Ζευγολατειό",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 247,
+            "name": "Σικυωνίων",
+            "seat": "Κιάτο",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 248,
+            "name": "Ξυλοκάστρου - Ευρωστίνης",
+            "seat": "Ξυλόκαστρο",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 249,
+            "name": "Νεμέας",
+            "seat": "Νεμέα",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": 51,
+        "name": "Λακωνίας",
+        "seat": "Σπάρτη",
+        "region": {
+          "id": 10,
+          "iso31662": "GR-J"
+        },
+        "postalCodePattern": ["23xxx"],
+        "carPlatesPattern": ["AK*"],
+        "municipalities": [
+          {
+            "id": 250,
+            "name": "Ανατολικής Μάνης",
+            "seat": "Γύθειο",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 251,
+            "name": "Σπάρτης",
+            "seat": "Σπάρτη",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 252,
+            "name": "Ευρώτα",
+            "seat": "Σκάλα",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 253,
+            "name": "Μονεμβασιάς",
+            "seat": "Μολάοι",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 254,
+            "name": "Ελαφονήσου",
+            "seat": "Ελαφόνησος",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "name": "Μεσσηνίας",
+        "seat": "Καλαμάτα",
+        "region": {
+          "id": 10,
+          "iso31662": "GR-J"
+        },
+        "postalCodePattern": ["24xxx"],
+        "carPlatesPattern": ["KM*", "MZ*"],
+        "municipalities": [
+          {
+            "id": 255,
+            "name": "Οιχαλίας",
+            "seat": "Μελιγαλάς",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 256,
+            "name": "Τριφυλίας",
+            "seat": "Κυπαρισσία",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 257,
+            "name": "Πύλου - Νέστορος",
+            "seat": "Πύλος",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 258,
+            "name": "Μεσσήνης",
+            "seat": "Μεσσήνη",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 259,
+            "name": "Καλαμάτας",
+            "seat": "Καλαμάτα",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 260,
+            "name": "Δυτικής Μάνης",
+            "seat": "Καρδαμύλη",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "iso31662": "GR-K",
+    "name": "Βορείου Αιγαίου",
+    "seat": "Μυτιλήνη",
+    "units": [
+      {
+        "id": 53,
+        "name": "Λέσβου",
+        "seat": "Μυτιλήνη",
+        "region": {
+          "id": 11,
+          "iso31662": "GR-K"
+        },
+        "postalCodePattern": ["81xxx", "69xxx"],
+        "carPlatesPattern": ["MI*", "MY*"],
+        "municipalities": [
+          {
+            "id": 261,
+            "name": "Δυτικής Λέσβου",
+            "seat": "Καλλονή",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 53
+            }
+          },
+          {
+            "id": 262,
+            "name": "Μυτιλήνης",
+            "seat": "Μυτιλήνη",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 53
+            }
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "name": "Ικαρίας",
+        "seat": "Άγιος Κήρυκος",
+        "region": {
+          "id": 11,
+          "iso31662": "GR-K"
+        },
+        "postalCodePattern": ["83xxx"],
+        "carPlatesPattern": ["MO*"],
+        "municipalities": [
+          {
+            "id": 263,
+            "name": "Φούρνων Κορσεών",
+            "seat": "Φούρνοι",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 54
+            }
+          },
+          {
+            "id": 264,
+            "name": "Ικαρίας",
+            "seat": "Άγιος Κήρυκος",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 54
+            }
+          }
+        ]
+      },
+      {
+        "id": 55,
+        "name": "Λήμνου",
+        "seat": "Μύρινα",
+        "region": {
+          "id": 11,
+          "iso31662": "GR-K"
+        },
+        "postalCodePattern": ["814xx"],
+        "carPlatesPattern": ["MH*"],
+        "municipalities": [
+          {
+            "id": 265,
+            "name": "Λήμνου",
+            "seat": "Μύρινα",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 55
+            }
+          },
+          {
+            "id": 266,
+            "name": "Αγίου Ευστρατίου",
+            "seat": "Άγιος Ευστράτιος",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 55
+            }
+          }
+        ]
+      },
+      {
+        "id": 56,
+        "name": "Σάμου",
+        "seat": "Σάμος",
+        "region": {
+          "id": 11,
+          "iso31662": "GR-K"
+        },
+        "postalCodePattern": ["227xx"],
+        "carPlatesPattern": ["MO*"],
+        "municipalities": [
+          {
+            "id": 267,
+            "name": "Ανατολικής Σάμου",
+            "seat": "Σάμος",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 56
+            }
+          },
+          {
+            "id": 268,
+            "name": "Δυτικής Σάμου",
+            "seat": "Νέο Καρλόβασι",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 56
+            }
+          }
+        ]
+      },
+      {
+        "id": 57,
+        "name": "Χίου",
+        "seat": "Χίος",
+        "region": {
+          "id": 11,
+          "iso31662": "GR-K"
+        },
+        "postalCodePattern": ["82xxx"],
+        "carPlatesPattern": ["XI*"],
+        "municipalities": [
+          {
+            "id": 269,
+            "name": "Ηρωικής Νήσου Ψαρών",
+            "seat": "Ψαρά",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 57
+            }
+          },
+          {
+            "id": 270,
+            "name": "Οινουσσών",
+            "seat": "Αιγνούσα",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 57
+            }
+          },
+          {
+            "id": 271,
+            "name": "Χίου",
+            "seat": "Χίος",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 57
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "iso31662": "GR-L",
+    "name": "Νοτίου Αιγαίου",
+    "seat": "Ερμούπολη",
+    "units": [
+      {
+        "id": 58,
+        "name": "Άνδρου",
+        "seat": "Άνδρος",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 272,
+            "name": "Άνδρου",
+            "seat": "Άνδρος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 58
+            }
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "name": "Μήλου",
+        "seat": "Μήλος",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 273,
+            "name": "Σερίφου",
+            "seat": "Σέριφος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          },
+          {
+            "id": 274,
+            "name": "Σίφνου",
+            "seat": "Απολλωνία",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          },
+          {
+            "id": 275,
+            "name": "Κιμώλου",
+            "seat": "Κίμωλος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          },
+          {
+            "id": 276,
+            "name": "Μήλου",
+            "seat": "Μήλος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "name": "Θήρας",
+        "seat": "Θήρα",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 277,
+            "name": "Ιητών",
+            "seat": "Ίος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 278,
+            "name": "Σικίνου",
+            "seat": "Σίκινος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 279,
+            "name": "Φολεγάνδρου",
+            "seat": "Φολέγανδρος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 280,
+            "name": "Θήρα",
+            "seat": "Φολέγανδρος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 281,
+            "name": "Ανάφης",
+            "seat": "Ανάφη",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          }
+        ]
+      },
+      {
+        "id": 61,
+        "name": "Κέας - Κύθνου",
+        "seat": "Ιουλίδα",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 282,
+            "name": "Κέας",
+            "seat": "Ιουλίδα",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 61
+            }
+          },
+          {
+            "id": 283,
+            "name": "Κύθνου",
+            "seat": "Κύθνος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 61
+            }
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "name": "Μυκόνου",
+        "seat": "Μύκονος",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 284,
+            "name": "Μυκόνου",
+            "seat": "Μύκονος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 62
+            }
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "name": "Νάξου",
+        "seat": "Νάξος",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 285,
+            "name": "Νάξου και Μικρών Κυκλάδων",
+            "seat": "Νάξος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 63
+            }
+          },
+          {
+            "id": 286,
+            "name": "Αμοργού",
+            "seat": "Αμοργός",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 63
+            }
+          }
+        ]
+      },
+      {
+        "id": 64,
+        "name": "Σύρου",
+        "seat": "Ερμούπολη",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 287,
+            "name": "Σύρου - Ερμούπολης",
+            "seat": "Ερμούπολη",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 64
+            }
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "name": "Τήνου",
+        "seat": "Τήνος",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 288,
+            "name": "Τήνου",
+            "seat": "Τήνος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 65
+            }
+          }
+        ]
+      },
+      {
+        "id": 66,
+        "name": "Πάρου",
+        "seat": "Πάρος",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 289,
+            "name": "Αντιπάρου",
+            "seat": "Αντίπαρος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 66
+            }
+          },
+          {
+            "id": 290,
+            "name": "Πάρου",
+            "seat": "Πάρος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 66
+            }
+          }
+        ]
+      },
+      {
+        "id": 67,
+        "name": "Καλύμνου",
+        "seat": "Πόθια",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 291,
+            "name": "Αγαθονησίου",
+            "seat": "Μεγάλο Χωριό",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 292,
+            "name": "Πάτμου",
+            "seat": "Πάτμος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 293,
+            "name": "Λειψών",
+            "seat": "Λειψοί",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 294,
+            "name": "Λέρου",
+            "seat": "Αγία Μαρίνα",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 295,
+            "name": "Καλυμνίων",
+            "seat": "Πόθια",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 296,
+            "name": "Αστυπάλαιας",
+            "seat": "Αστυπάλαια",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          }
+        ]
+      },
+      {
+        "id": 68,
+        "name": "Καρπάθου - Ηρωικής Νήσου Κάσου",
+        "seat": "Κάρπαθος",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 297,
+            "name": "Καρπάθου",
+            "seat": "Κάρπαθος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 68
+            }
+          },
+          {
+            "id": 298,
+            "name": "Ηρωικής Νήσου Κάσου",
+            "seat": "Φρυ",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 68
+            }
+          }
+        ]
+      },
+      {
+        "id": 69,
+        "name": "Κω",
+        "seat": "Κως",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 299,
+            "name": "Κω",
+            "seat": "Κως",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 69
+            }
+          },
+          {
+            "id": 300,
+            "name": "Νισύρου",
+            "seat": "Μανδράκι",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 69
+            }
+          }
+        ]
+      },
+      {
+        "id": 70,
+        "name": "Ρόδου",
+        "seat": "Ρόδος",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": [
+          {
+            "id": 301,
+            "name": "Τήλου",
+            "seat": "Μεγάλο Χωριό",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 302,
+            "name": "Σύμης",
+            "seat": "Σύμη",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 303,
+            "name": "Ρόδου",
+            "seat": "Ρόδος",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 304,
+            "name": "Χάλκης",
+            "seat": "Χάλκη",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 305,
+            "name": "Μεγίστης",
+            "seat": "Καστελλόριζο",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "iso31662": "GR-M",
+    "name": "Κρήτης",
+    "seat": "Ηράκλειο",
+    "units": [
+      {
+        "id": 71,
+        "name": "Ηρακλείου",
+        "seat": "Ηράκλειο",
+        "region": {
+          "id": 13,
+          "iso31662": "GR-M"
+        },
+        "postalCodePattern": ["70xxx", "71xxx"],
+        "carPlatesPattern": ["HK*", "HP*", "HKA*", "HKE*", "HPA*"],
+        "municipalities": [
+          {
+            "id": 306,
+            "name": "Βιάννου",
+            "seat": "Άνω Βιάννος",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 307,
+            "name": "Μινώα Πεδιάδας",
+            "seat": "Ευαγγελισμός",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 308,
+            "name": "Αρχανών - Αστερουσίων",
+            "seat": "Πεζά",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 309,
+            "name": "Χερσονήσου",
+            "seat": "Γούρνες",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 310,
+            "name": "Ηρακλείου",
+            "seat": "Ηράκλειο",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 311,
+            "name": "Μαλεβιζίου",
+            "seat": "Γάζι",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 312,
+            "name": "Γόρτυνας",
+            "seat": "Άγιοι Δέκα",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 313,
+            "name": "Φαιστού",
+            "seat": "Μοίρες",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          }
+        ]
+      },
+      {
+        "id": 72,
+        "name": "Λασιθίου",
+        "seat": "Άγιος Νικόλαος",
+        "region": {
+          "id": 13,
+          "iso31662": "GR-M"
+        },
+        "postalCodePattern": ["284xx"],
+        "carPlatesPattern": ["AN*"],
+        "municipalities": [
+          {
+            "id": 314,
+            "name": "Σητείας",
+            "seat": "Σητεία",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          },
+          {
+            "id": 315,
+            "name": "Ιεράπετρας",
+            "seat": "Ιεράπετρα",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          },
+          {
+            "id": 316,
+            "name": "Αγίου Νικολάου",
+            "seat": "Άγιος Νικόλαος",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          },
+          {
+            "id": 317,
+            "name": "Οροπεδίου Λασιθίου",
+            "seat": "Τζερμιάδο",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          }
+        ]
+      },
+      {
+        "id": 73,
+        "name": "Ρεθύμνης",
+        "seat": "Ρέθυμνο",
+        "region": {
+          "id": 13,
+          "iso31662": "GR-M"
+        },
+        "postalCodePattern": ["74xxx"],
+        "carPlatesPattern": ["PE*"],
+        "municipalities": [
+          {
+            "id": 318,
+            "name": "Ανωγείων",
+            "seat": "Ανώγεια",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 319,
+            "name": "Μυλοποτάμου",
+            "seat": "Πέραμα",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 320,
+            "name": "Αμαρίου",
+            "seat": "Αγία Φωτεινή",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 321,
+            "name": "Αγίου Βασιλείου",
+            "seat": "Σπήλι",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 322,
+            "name": "Ρεθύμνης",
+            "seat": "Ρέθυμνο",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          }
+        ]
+      },
+      {
+        "id": 74,
+        "name": "Χανίων",
+        "seat": "Χανιά",
+        "region": {
+          "id": 13,
+          "iso31662": "GR-M"
+        },
+        "postalCodePattern": ["73xxx"],
+        "carPlatesPattern": ["XN*"],
+        "municipalities": [
+          {
+            "id": 323,
+            "name": "Αποκορώνου",
+            "seat": "Βρύσες",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 324,
+            "name": "Χανίων",
+            "seat": "Χανιά",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 325,
+            "name": "Πλατανιά",
+            "seat": "Γεράνι",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 326,
+            "name": "Κισσάμου",
+            "seat": "Κίσσαμος",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 327,
+            "name": "Καντάνου - Σελίνου",
+            "seat": "Παλαιοχώρα",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 328,
+            "name": "Σφακίων",
+            "seat": "Χώρα Σφακίων",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 329,
+            "name": "Γαύδου",
+            "seat": "Καστρί",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "iso31662": "GR-69",
+    "name": "Άγιον Όρος",
+    "seat": "Καρυές",
+    "units": [
+      {
+        "id": 75,
+        "name": "Άγιον Όρος",
+        "seat": "Καρυές",
+        "region": {
+          "id": 14,
+          "iso31662": "GR-69"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      }
+    ]
+  }
+]
