@@ -1,0 +1,1014 @@
+[
+  {
+    "id": 1,
+    "iso31662": "GR-A",
+    "name": "Eastern Macedonia and Thrace",
+    "seat": "Komotini",
+    "units": [
+      {
+        "id": 1,
+        "name": "Drama",
+        "seat": "Drama",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["66xxx"],
+        "carPlatesPattern": ["PM*", "TO*"],
+        "municipalities": []
+      },
+      {
+        "id": 2,
+        "name": "Evros",
+        "seat": "Alexandroupolis",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["68xxx"],
+        "carPlatesPattern": ["EB*", "MX*", "OP*"],
+        "municipalities": []
+      },
+      {
+        "id": 3,
+        "name": "Kavala",
+        "seat": "Kavala",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["64xxx", "65xxx"],
+        "carPlatesPattern": ["KB*", "AB*"],
+        "municipalities": []
+      },
+      {
+        "id": 4,
+        "name": "Thasos",
+        "seat": "Limenas",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["64004"],
+        "carPlatesPattern": ["KB*", "AB*"],
+        "municipalities": []
+      },
+      {
+        "id": 5,
+        "name": "Xanthi",
+        "seat": "Xanthi",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["67xxx"],
+        "carPlatesPattern": ["AH*", "HO*", "HTK", "HTM", "HTN", "HTO", "HTP", "HTT", "HTY", "HTX"],
+        "municipalities": []
+      },
+      {
+        "id": 6,
+        "name": "Rhodope",
+        "seat": "Komotini",
+        "region": {
+          "id": 1,
+          "iso31662": "GR-A"
+        },
+        "postalCodePattern": ["69xxx"],
+        "carPlatesPattern": ["KO*", "KK*", "TT*"],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "iso31662": "GR-B",
+    "name": "Central Macedonia",
+    "seat": "Thessaloniki",
+    "units": [
+      {
+        "id": 7,
+        "name": "Imathia",
+        "seat": "Veroia",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["59xxx"],
+        "carPlatesPattern": ["HM*", "HX*"],
+        "municipalities": []
+      },
+      {
+        "id": 8,
+        "name": "Thessaloniki",
+        "seat": "Thessaloniki",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["54xxx", "57xxx"],
+        "carPlatesPattern": ["N*"],
+        "municipalities": []
+      },
+      {
+        "id": 9,
+        "name": "Kilkis",
+        "seat": "Kilkis",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["61xxx"],
+        "carPlatesPattern": ["KI*", "EX*"],
+        "municipalities": []
+      },
+      {
+        "id": 10,
+        "name": "Pella",
+        "seat": "Edessa",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["58xxx"],
+        "carPlatesPattern": ["EE*", "MM*"],
+        "municipalities": []
+      },
+      {
+        "id": 11,
+        "name": "Pieria",
+        "seat": "Katerini",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["60xxx"],
+        "carPlatesPattern": ["KN*", "TI*"],
+        "municipalities": []
+      },
+      {
+        "id": 12,
+        "name": "Serres",
+        "seat": "Serres",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["62xxx"],
+        "carPlatesPattern": ["EP*", "IX*"],
+        "municipalities": []
+      },
+      {
+        "id": 13,
+        "name": "Chalkidiki",
+        "seat": "Polygyros",
+        "region": {
+          "id": 2,
+          "iso31662": "GR-B"
+        },
+        "postalCodePattern": ["63xxx"],
+        "carPlatesPattern": ["XK*", "MA*"],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "iso31662": "GR-C",
+    "name": "Western Macedonia",
+    "seat": "Kozani",
+    "units": [
+      {
+        "id": 14,
+        "name": "Grevena",
+        "seat": "Grevena",
+        "region": {
+          "id": 3,
+          "iso31662": "GR-C"
+        },
+        "postalCodePattern": ["51xxx"],
+        "carPlatesPattern": ["PN*"],
+        "municipalities": []
+      },
+      {
+        "id": 15,
+        "name": "Kastoria",
+        "seat": "Kastoria",
+        "region": {
+          "id": 3,
+          "iso31662": "GR-C"
+        },
+        "postalCodePattern": ["52xxx"],
+        "carPlatesPattern": ["KT*"],
+        "municipalities": []
+      },
+      {
+        "id": 16,
+        "name": "Kozani",
+        "seat": "Kozani",
+        "region": {
+          "id": 3,
+          "iso31662": "GR-C"
+        },
+        "postalCodePattern": ["50xxx"],
+        "carPlatesPattern": ["KZ*", "MN*"],
+        "municipalities": []
+      },
+      {
+        "id": 17,
+        "name": "Florina",
+        "seat": "Florina",
+        "region": {
+          "id": 3,
+          "iso31662": "GR-C"
+        },
+        "postalCodePattern": ["53xxx"],
+        "carPlatesPattern": ["PA*"],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "iso31662": "GR-D",
+    "name": "Epirus",
+    "seat": "Ioannina",
+    "units": [
+      {
+        "id": 18,
+        "name": "Arta",
+        "seat": "Arta",
+        "region": {
+          "id": 4,
+          "iso31662": "GR-D"
+        },
+        "postalCodePattern": ["47xxx"],
+        "carPlatesPattern": ["AT*"],
+        "municipalities": []
+      },
+      {
+        "id": 19,
+        "name": "Thesprotia",
+        "seat": "Igoumenitsa",
+        "region": {
+          "id": 4,
+          "iso31662": "GR-D"
+        },
+        "postalCodePattern": ["46xxx"],
+        "carPlatesPattern": ["HN*"],
+        "municipalities": []
+      },
+      {
+        "id": 20,
+        "name": "Ioannina",
+        "seat": "Ioannina",
+        "region": {
+          "id": 4,
+          "iso31662": "GR-D"
+        },
+        "postalCodePattern": ["44xxx", "45xxx"],
+        "carPlatesPattern": ["IN*", "II*"],
+        "municipalities": []
+      },
+      {
+        "id": 21,
+        "name": "Preveza",
+        "seat": "Preveza",
+        "region": {
+          "id": 4,
+          "iso31662": "GR-D"
+        },
+        "postalCodePattern": ["48xxx"],
+        "carPlatesPattern": ["PZ*", "TX*"],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "iso31662": "GR-E",
+    "name": "Thessaly",
+    "seat": "Larissa",
+    "units": [
+      {
+        "id": 22,
+        "name": "Karditsa",
+        "seat": "Karditsa",
+        "region": {
+          "id": 5,
+          "iso31662": "GR-E"
+        },
+        "postalCodePattern": ["43xxx"],
+        "carPlatesPattern": ["KA*"],
+        "municipalities": []
+      },
+      {
+        "id": 23,
+        "name": "Larissa",
+        "seat": "Larissa",
+        "region": {
+          "id": 5,
+          "iso31662": "GR-E"
+        },
+        "postalCodePattern": ["40xxx", "41xxx"],
+        "carPlatesPattern": ["PI*", "PP*", "PT*"],
+        "municipalities": []
+      },
+      {
+        "id": 24,
+        "name": "Magnesia",
+        "seat": "Volos",
+        "region": {
+          "id": 5,
+          "iso31662": "GR-E"
+        },
+        "postalCodePattern": ["37xxx", "38xxx"],
+        "carPlatesPattern": ["BO*", "BO*", "BB*", "BA*", "BT*"],
+        "municipalities": []
+      },
+      {
+        "id": 25,
+        "name": "Sporades",
+        "seat": "Skiathos",
+        "region": {
+          "id": 5,
+          "iso31662": "GR-E"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 26,
+        "name": "Trikala",
+        "seat": "Trikala",
+        "region": {
+          "id": 5,
+          "iso31662": "GR-E"
+        },
+        "postalCodePattern": ["42xxx"],
+        "carPlatesPattern": ["TK*", "TN*"],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "iso31662": "GR-F",
+    "name": "Ionian Islands",
+    "seat": "Corfu",
+    "units": [
+      {
+        "id": 27,
+        "name": "Zakynthos",
+        "seat": "Zakynthos",
+        "region": {
+          "id": 6,
+          "iso31662": "GR-F"
+        },
+        "postalCodePattern": ["29xxx"],
+        "carPlatesPattern": ["ZA*"],
+        "municipalities": []
+      },
+      {
+        "id": 28,
+        "name": "Corfu",
+        "seat": "Corfu",
+        "region": {
+          "id": 6,
+          "iso31662": "GR-F"
+        },
+        "postalCodePattern": ["49xxx"],
+        "carPlatesPattern": ["KY*"],
+        "municipalities": []
+      },
+      {
+        "id": 29,
+        "name": "Cephalonia",
+        "seat": "Argostoli",
+        "region": {
+          "id": 6,
+          "iso31662": "GR-F"
+        },
+        "postalCodePattern": ["28xxx"],
+        "carPlatesPattern": ["KE*"],
+        "municipalities": []
+      },
+      {
+        "id": 30,
+        "name": "Ithaca",
+        "seat": "Vathy",
+        "region": {
+          "id": 6,
+          "iso31662": "GR-F"
+        },
+        "postalCodePattern": ["28xxx"],
+        "carPlatesPattern": ["KE*"],
+        "municipalities": []
+      },
+      {
+        "id": 31,
+        "name": "Lefkada",
+        "seat": "Lefkada",
+        "region": {
+          "id": 6,
+          "iso31662": "GR-F"
+        },
+        "postalCodePattern": ["31xxx"],
+        "carPlatesPattern": ["EY*"],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "iso31662": "GR-G",
+    "name": "Western Greece",
+    "seat": "Patras",
+    "units": [
+      {
+        "id": 32,
+        "name": "Aetolia-Acarnania",
+        "seat": "Messolonghi",
+        "region": {
+          "id": 7,
+          "iso31662": "GR-G"
+        },
+        "postalCodePattern": ["30xxx"],
+        "carPlatesPattern": ["AI*", "ME*"],
+        "municipalities": []
+      },
+      {
+        "id": 33,
+        "name": "Achaea",
+        "seat": "Patras",
+        "region": {
+          "id": 7,
+          "iso31662": "GR-G"
+        },
+        "postalCodePattern": ["25xxx", "26xxx"],
+        "carPlatesPattern": ["AX*", "AZ*"],
+        "municipalities": []
+      },
+      {
+        "id": 34,
+        "name": "Elis",
+        "seat": "Pyrgos",
+        "region": {
+          "id": 7,
+          "iso31662": "GR-G"
+        },
+        "postalCodePattern": ["27xxx"],
+        "carPlatesPattern": [],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "iso31662": "GR-H",
+    "name": "Central Greece",
+    "seat": "Livadeia",
+    "units": [
+      {
+        "id": 35,
+        "name": "Boeotia",
+        "seat": "Λιβαδειά",
+        "region": {
+          "id": 8,
+          "iso31662": "GR-H"
+        },
+        "postalCodePattern": ["32xxx"],
+        "carPlatesPattern": ["BI*"],
+        "municipalities": []
+      },
+      {
+        "id": 36,
+        "name": "Euboea",
+        "seat": "Chalcis",
+        "region": {
+          "id": 8,
+          "iso31662": "GR-H"
+        },
+        "postalCodePattern": ["34xxx"],
+        "carPlatesPattern": ["XA*", "EH*"],
+        "municipalities": []
+      },
+      {
+        "id": 37,
+        "name": "Evrytania",
+        "seat": "Karpenisi",
+        "region": {
+          "id": 8,
+          "iso31662": "GR-H"
+        },
+        "postalCodePattern": ["36xxx"],
+        "carPlatesPattern": ["KH*"],
+        "municipalities": []
+      },
+      {
+        "id": 38,
+        "name": "Phthiotis",
+        "seat": "Lamia",
+        "region": {
+          "id": 8,
+          "iso31662": "GR-H"
+        },
+        "postalCodePattern": ["35xxx"],
+        "carPlatesPattern": ["MI*"],
+        "municipalities": []
+      },
+      {
+        "id": 39,
+        "name": "Phocis",
+        "seat": "Amfissa",
+        "region": {
+          "id": 8,
+          "iso31662": "GR-H"
+        },
+        "postalCodePattern": ["33xxx"],
+        "carPlatesPattern": ["AM*"],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "iso31662": "GR-I",
+    "name": "Attica",
+    "seat": "Athens",
+    "units": [
+      {
+        "id": 40,
+        "name": "North Athens",
+        "seat": "Kifisia",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 41,
+        "name": "West Athens",
+        "seat": "Peristeri",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 42,
+        "name": "Central Athens",
+        "seat": "Athens",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 43,
+        "name": "South Athens",
+        "seat": "Glyfada",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 44,
+        "name": "Piraeus",
+        "seat": "Piraeus",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 45,
+        "name": "Islands",
+        "seat": "",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 46,
+        "name": "East Attica",
+        "seat": "Pallini",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 47,
+        "name": "West Attica",
+        "seat": "",
+        "region": {
+          "id": 9,
+          "iso31662": "GR-I"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "iso31662": "GR-J",
+    "name": "Peloponnese",
+    "seat": "Tripoli",
+    "units": [
+      {
+        "id": 48,
+        "name": "Argolis",
+        "seat": "Nafplio",
+        "region": {
+          "id": 10,
+          "iso31662": "GR-J"
+        },
+        "postalCodePattern": ["21xxx"],
+        "carPlatesPattern": ["AP*"],
+        "municipalities": []
+      },
+      {
+        "id": 49,
+        "name": "Arcadia",
+        "seat": "Tripoli",
+        "region": {
+          "id": 10,
+          "iso31662": "GR-J"
+        },
+        "postalCodePattern": ["22xxx"],
+        "carPlatesPattern": ["TP*"],
+        "municipalities": []
+      },
+      {
+        "id": 50,
+        "name": "Corinthia",
+        "seat": "Corinth",
+        "region": {
+          "id": 10,
+          "iso31662": "GR-J"
+        },
+        "postalCodePattern": ["20xxx"],
+        "carPlatesPattern": ["KP*"],
+        "municipalities": []
+      },
+      {
+        "id": 51,
+        "name": "Laconia",
+        "seat": "Sparta",
+        "region": {
+          "id": 10,
+          "iso31662": "GR-J"
+        },
+        "postalCodePattern": ["23xxx"],
+        "carPlatesPattern": ["AK*"],
+        "municipalities": []
+      },
+      {
+        "id": 52,
+        "name": "Messenia",
+        "seat": "Kalamata",
+        "region": {
+          "id": 10,
+          "iso31662": "GR-J"
+        },
+        "postalCodePattern": ["24xxx"],
+        "carPlatesPattern": ["KM*", "MZ*"],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "iso31662": "GR-K",
+    "name": "North Aegean",
+    "seat": "Mytilene",
+    "units": [
+      {
+        "id": 53,
+        "name": "Lesbos",
+        "seat": "Mytilene",
+        "region": {
+          "id": 11,
+          "iso31662": "GR-K"
+        },
+        "postalCodePattern": ["81xxx", "69xxx"],
+        "carPlatesPattern": ["MI*", "MY*"],
+        "municipalities": []
+      },
+      {
+        "id": 54,
+        "name": "Ikaria",
+        "seat": "Agios Kirykos",
+        "region": {
+          "id": 11,
+          "iso31662": "GR-K"
+        },
+        "postalCodePattern": ["83xxx"],
+        "carPlatesPattern": ["MO*"],
+        "municipalities": []
+      },
+      {
+        "id": 55,
+        "name": "Lemnos",
+        "seat": "Myrina",
+        "region": {
+          "id": 11,
+          "iso31662": "GR-K"
+        },
+        "postalCodePattern": ["814xx"],
+        "carPlatesPattern": ["MH*"],
+        "municipalities": []
+      },
+      {
+        "id": 56,
+        "name": "Samos",
+        "seat": "Samos",
+        "region": {
+          "id": 11,
+          "iso31662": "GR-K"
+        },
+        "postalCodePattern": ["227xx"],
+        "carPlatesPattern": ["MO*"],
+        "municipalities": []
+      },
+      {
+        "id": 57,
+        "name": "Chios",
+        "seat": "Chios",
+        "region": {
+          "id": 11,
+          "iso31662": "GR-K"
+        },
+        "postalCodePattern": ["82xxx"],
+        "carPlatesPattern": ["XI*"],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "iso31662": "GR-L",
+    "name": "South Aegean",
+    "seat": "Ermoupoli",
+    "units": [
+      {
+        "id": 58,
+        "name": "Andros",
+        "seat": "Andros",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 59,
+        "name": "Milos",
+        "seat": "Milos ",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 60,
+        "name": "Thira",
+        "seat": "Thira",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 61,
+        "name": "Kea - Kythnos",
+        "seat": "Ioulida",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 62,
+        "name": "Mykonos",
+        "seat": "Mykonos",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 63,
+        "name": "Naxos",
+        "seat": "Naxos",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 64,
+        "name": "Syros",
+        "seat": "Ermoupoli",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 65,
+        "name": "Tinos",
+        "seat": "Tinos",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 66,
+        "name": "Paros",
+        "seat": "Paros",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 67,
+        "name": "Kalymnos",
+        "seat": "Pothia",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 68,
+        "name": "Karpathos",
+        "seat": "Karpathos",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 69,
+        "name": "Kos",
+        "seat": "Kos",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      },
+      {
+        "id": 70,
+        "name": "Rhodes",
+        "seat": "Rhodes",
+        "region": {
+          "id": 12,
+          "iso31662": "GR-L"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "iso31662": "GR-M",
+    "name": "Crete",
+    "seat": "Heraklion",
+    "units": [
+      {
+        "id": 71,
+        "name": "Heraklion",
+        "seat": "Heraklion",
+        "region": {
+          "id": 13,
+          "iso31662": "GR-M"
+        },
+        "postalCodePattern": ["70xxx", "71xxx"],
+        "carPlatesPattern": ["HK*", "HP*", "HKA*", "HKE*", "HPA*"],
+        "municipalities": []
+      },
+      {
+        "id": 72,
+        "name": "Lasithi",
+        "seat": "Agios Nikolaos",
+        "region": {
+          "id": 13,
+          "iso31662": "GR-M"
+        },
+        "postalCodePattern": ["284xx"],
+        "carPlatesPattern": ["AN*"],
+        "municipalities": []
+      },
+      {
+        "id": 73,
+        "name": "Rethymno",
+        "seat": "Rethymno",
+        "region": {
+          "id": 13,
+          "iso31662": "GR-M"
+        },
+        "postalCodePattern": ["74xxx"],
+        "carPlatesPattern": ["PE*"],
+        "municipalities": []
+      },
+      {
+        "id": 74,
+        "name": "Chania",
+        "seat": "Chania",
+        "region": {
+          "id": 13,
+          "iso31662": "GR-M"
+        },
+        "postalCodePattern": ["73xxx"],
+        "carPlatesPattern": ["XN*"],
+        "municipalities": []
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "iso31662": "GR-69",
+    "name": "Mount Athos",
+    "seat": "Karyes",
+    "units": [
+      {
+        "id": 75,
+        "name": "Mount Athos",
+        "seat": "Karyes",
+        "region": {
+          "id": 14,
+          "iso31662": "GR-69"
+        },
+        "postalCodePattern": [],
+        "carPlatesPattern": [],
+        "municipalities": []
+      }
+    ]
+  }
+]
