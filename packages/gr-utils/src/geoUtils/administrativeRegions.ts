@@ -43,3 +43,33 @@ export const getAdministrativeRegions = ({
 
   return regionsData;
 };
+
+type AdministrativeRegionByIdOptions = AdministrativeRegionsOptions & {
+  id?: number;
+};
+
+export const getAdministrativeRegionById = ({
+  id = 1,
+  locale = "el",
+  includeMountAthos = false,
+  level = "municipality",
+}: AdministrativeRegionByIdOptions = {}) => {
+  const regionsData = getAdministrativeRegions({ locale, includeMountAthos, level });
+
+  return regionsData.find((region) => region.id === id);
+};
+
+type AdministrativeRegionByIsoCodeOptions = AdministrativeRegionsOptions & {
+  isocode?: string;
+};
+
+export const getAdministrativeRegionByIsoCode = ({
+  isocode = "GR-A",
+  locale = "el",
+  includeMountAthos = false,
+  level = "municipality",
+}: AdministrativeRegionByIsoCodeOptions = {}) => {
+  const regionsData = getAdministrativeRegions({ locale, includeMountAthos, level });
+
+  return regionsData.find((region) => region.iso31662 === isocode);
+};
