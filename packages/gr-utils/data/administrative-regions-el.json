@@ -90,7 +90,7 @@
             }
           },
           {
-            "id": 6,
+            "id": 7,
             "name": "Διδυμοτείχου",
             "seat": "Διδυμότειχο",
             "regionAndUnit": {
@@ -100,7 +100,7 @@
             }
           },
           {
-            "id": 7,
+            "id": 8,
             "name": "Ορεστιάδας",
             "seat": "Ορεστιάδα",
             "regionAndUnit": {
@@ -110,7 +110,7 @@
             }
           },
           {
-            "id": 8,
+            "id": 9,
             "name": "Σαμοθράκης",
             "seat": "Σαμοθράκη",
             "regionAndUnit": {
@@ -120,7 +120,7 @@
             }
           },
           {
-            "id": 9,
+            "id": 10,
             "name": "Σουφλίου",
             "seat": "Σουφλί",
             "regionAndUnit": {
@@ -143,7 +143,7 @@
         "carPlatesPattern": ["KB*", "AB*"],
         "municipalities": [
           {
-            "id": 10,
+            "id": 11,
             "name": "Καβάλας",
             "seat": "Καβάλα",
             "regionAndUnit": {
@@ -153,7 +153,7 @@
             }
           },
           {
-            "id": 11,
+            "id": 12,
             "name": "Νέστου",
             "seat": "Χρυσούπολη",
             "regionAndUnit": {
@@ -163,7 +163,7 @@
             }
           },
           {
-            "id": 12,
+            "id": 13,
             "name": "Παγγαίου",
             "seat": "Ελευθερούπολη",
             "regionAndUnit": {
@@ -186,7 +186,7 @@
         "carPlatesPattern": ["KB*", "AB*"],
         "municipalities": [
           {
-            "id": 13,
+            "id": 14,
             "name": "Θάσου",
             "seat": "Λιμένας",
             "regionAndUnit": {
@@ -209,7 +209,7 @@
         "carPlatesPattern": ["AH*", "HO*", "HTK", "HTM", "HTN", "HTO", "HTP", "HTT", "HTY", "HTX"],
         "municipalities": [
           {
-            "id": 14,
+            "id": 15,
             "name": "Αβδήρων",
             "seat": "Γενισέα",
             "regionAndUnit": {
@@ -219,7 +219,7 @@
             }
           },
           {
-            "id": 15,
+            "id": 16,
             "name": "Μύκης",
             "seat": "Σμίνθη",
             "regionAndUnit": {
@@ -229,7 +229,7 @@
             }
           },
           {
-            "id": 16,
+            "id": 17,
             "name": "Ξάνθης",
             "seat": "Ξάνθη",
             "regionAndUnit": {
@@ -239,7 +239,7 @@
             }
           },
           {
-            "id": 17,
+            "id": 18,
             "name": "Τοπείρου",
             "seat": "Εύλαλο",
             "regionAndUnit": {
@@ -262,7 +262,7 @@
         "carPlatesPattern": ["KO*", "KK*", "TT*"],
         "municipalities": [
           {
-            "id": 18,
+            "id": 19,
             "name": "Αρριανών",
             "seat": "Φιλλύρα",
             "regionAndUnit": {
@@ -272,7 +272,7 @@
             }
           },
           {
-            "id": 19,
+            "id": 20,
             "name": "Ιάσμου",
             "seat": "Ίασμος",
             "regionAndUnit": {
@@ -282,7 +282,7 @@
             }
           },
           {
-            "id": 20,
+            "id": 21,
             "name": "Κομοτηνής",
             "seat": "Κομοτηνή",
             "regionAndUnit": {
@@ -292,7 +292,7 @@
             }
           },
           {
-            "id": 21,
+            "id": 22,
             "name": "Μαρωνείας - Σαπών",
             "seat": "Σάπες",
             "regionAndUnit": {
@@ -323,7 +323,7 @@
         "carPlatesPattern": ["HM*", "HX*"],
         "municipalities": [
           {
-            "id": 22,
+            "id": 23,
             "name": "Αλεξάνδρειας",
             "seat": "Αλεξάνδρεια",
             "regionAndUnit": {
@@ -333,7 +333,7 @@
             }
           },
           {
-            "id": 23,
+            "id": 24,
             "name": "Βέροιας",
             "seat": "Βέροια",
             "regionAndUnit": {
@@ -343,7 +343,7 @@
             }
           },
           {
-            "id": 24,
+            "id": 25,
             "name": "Νάουσας",
             "seat": "Νάουσα",
             "regionAndUnit": {
@@ -366,7 +366,7 @@
         "carPlatesPattern": ["N*"],
         "municipalities": [
           {
-            "id": 25,
+            "id": 26,
             "name": "Χαλκηδόνος",
             "seat": "Κουφάλια",
             "regionAndUnit": {
@@ -376,7 +376,7 @@
             }
           },
           {
-            "id": 26,
+            "id": 27,
             "name": "Δέλτα",
             "seat": "Σίνδος",
             "regionAndUnit": {
@@ -386,7 +386,7 @@
             }
           },
           {
-            "id": 27,
+            "id": 28,
             "name": "Ωραιοκάστρου",
             "seat": "Ωραιόκαστρο",
             "regionAndUnit": {
@@ -396,7 +396,7 @@
             }
           },
           {
-            "id": 28,
+            "id": 29,
             "name": "Παύλου Μελά",
             "seat": "Σταυρούπολη",
             "regionAndUnit": {
@@ -406,7 +406,7 @@
             }
           },
           {
-            "id": 29,
+            "id": 30,
             "name": "Αμπελοκήπων - Μενεμένης",
             "seat": "Αμπελόκηποι",
             "regionAndUnit": {
@@ -416,7 +416,7 @@
             }
           },
           {
-            "id": 30,
+            "id": 31,
             "name": "Κορδελιού - Ευόσμου",
             "seat": "Εύοσμος",
             "regionAndUnit": {
@@ -426,7 +426,7 @@
             }
           },
           {
-            "id": 31,
+            "id": 32,
             "name": "Νεάπολης - Συκεών",
             "seat": "Συκιές",
             "regionAndUnit": {
@@ -436,7 +436,7 @@
             }
           },
           {
-            "id": 32,
+            "id": 33,
             "name": "Θεσσαλονίκης",
             "seat": "Θεσσαλονίκη",
             "regionAndUnit": {
@@ -446,7 +446,7 @@
             }
           },
           {
-            "id": 33,
+            "id": 34,
             "name": "Καλαμαριάς",
             "seat": "Καλαμαριά",
             "regionAndUnit": {
@@ -456,7 +456,7 @@
             }
           },
           {
-            "id": 34,
+            "id": 35,
             "name": "Θερμαϊκού",
             "seat": "Περαία",
             "regionAndUnit": {
@@ -466,7 +466,7 @@
             }
           },
           {
-            "id": 35,
+            "id": 36,
             "name": "Θέρμης",
             "seat": "Θέρμη",
             "regionAndUnit": {
@@ -476,7 +476,7 @@
             }
           },
           {
-            "id": 35,
+            "id": 37,
             "name": "Πυλαίας - Χορτιάτη",
             "seat": "Χορτιάτης",
             "regionAndUnit": {
@@ -486,7 +486,7 @@
             }
           },
           {
-            "id": 36,
+            "id": 38,
             "name": "Λαγκαδά",
             "seat": "Λαγκαδάς",
             "regionAndUnit": {
@@ -496,7 +496,7 @@
             }
           },
           {
-            "id": 37,
+            "id": 39,
             "name": "Βόλβης",
             "seat": "Σταυρός",
             "regionAndUnit": {
@@ -519,7 +519,7 @@
         "carPlatesPattern": ["KI*", "EX*"],
         "municipalities": [
           {
-            "id": 38,
+            "id": 40,
             "name": "Κιλκίς",
             "seat": "Κιλκίς",
             "regionAndUnit": {
@@ -529,7 +529,7 @@
             }
           },
           {
-            "id": 38,
+            "id": 41,
             "name": "Παιονίας",
             "seat": "Πολύκαστρο",
             "regionAndUnit": {
@@ -552,7 +552,7 @@
         "carPlatesPattern": ["EE*", "MM*"],
         "municipalities": [
           {
-            "id": 39,
+            "id": 42,
             "name": "Πέλλας",
             "seat": "Γιαννιτσά",
             "regionAndUnit": {
@@ -562,7 +562,7 @@
             }
           },
           {
-            "id": 40,
+            "id": 43,
             "name": "Σκύδρας",
             "seat": "Σκύδρα",
             "regionAndUnit": {
@@ -572,7 +572,7 @@
             }
           },
           {
-            "id": 41,
+            "id": 44,
             "name": "Έδεσσας",
             "seat": "Έδεσσα",
             "regionAndUnit": {
@@ -582,7 +582,7 @@
             }
           },
           {
-            "id": 42,
+            "id": 45,
             "name": "Αλμωπίας",
             "seat": "Αριδαία",
             "regionAndUnit": {
@@ -605,7 +605,7 @@
         "carPlatesPattern": ["KN*", "TI*"],
         "municipalities": [
           {
-            "id": 43,
+            "id": 46,
             "name": "Δίου - Ολύμπου",
             "seat": "Λιτόχωρο",
             "regionAndUnit": {
@@ -615,7 +615,7 @@
             }
           },
           {
-            "id": 44,
+            "id": 47,
             "name": "Κατερίνης",
             "seat": "Κατερίνη",
             "regionAndUnit": {
@@ -625,7 +625,7 @@
             }
           },
           {
-            "id": 45,
+            "id": 48,
             "name": "Πύδνας - Κολινδρού",
             "seat": "Αιγίνιο",
             "regionAndUnit": {
@@ -648,7 +648,7 @@
         "carPlatesPattern": ["EP*", "IX*"],
         "municipalities": [
           {
-            "id": 46,
+            "id": 49,
             "name": "Νέας Ζίχνης",
             "seat": "Νέα Ζίχνη",
             "regionAndUnit": {
@@ -658,7 +658,7 @@
             }
           },
           {
-            "id": 47,
+            "id": 50,
             "name": "Αμφίπολης",
             "seat": "Ροδολίβος",
             "regionAndUnit": {
@@ -668,7 +668,7 @@
             }
           },
           {
-            "id": 48,
+            "id": 51,
             "name": "Βισαλτίας",
             "seat": "Νιγρίτα",
             "regionAndUnit": {
@@ -678,7 +678,7 @@
             }
           },
           {
-            "id": 49,
+            "id": 52,
             "name": "Εμμανουήλ Παππά",
             "seat": "Χρυσό",
             "regionAndUnit": {
@@ -688,8 +688,7 @@
             }
           },
           {
-            "regionId": 10,
-            "regionIso31662": "GR-J",
+            "id": 53,
             "unitId": 50,
             "name": "Σερρών",
             "seat": "Σέρρες",
@@ -700,18 +699,7 @@
             }
           },
           {
-            "id": 51,
-            "name": "Σερρών",
-            "seat": "Σέρρες",
-            "regionAndUnit": {
-              "regionId": 2,
-              "regionIso31662": "GR-B",
-              "unitId": 12
-            }
-          },
-          {
-            "regionId": 10,
-            "regionIso31662": "GR-J",
+            "id": 54,
             "unitId": 52,
             "name": "Ηρακλείας",
             "seat": "Ηράκλεια",
@@ -722,7 +710,7 @@
             }
           },
           {
-            "id": 53,
+            "id": 55,
             "name": "Σιντικής",
             "seat": "Σιδηρόκαστρο",
             "regionAndUnit": {
@@ -745,7 +733,7 @@
         "carPlatesPattern": ["XK*", "MA*"],
         "municipalities": [
           {
-            "id": 54,
+            "id": 56,
             "name": "Αριστοτέλη",
             "seat": "Ιερισσός",
             "regionAndUnit": {
@@ -755,7 +743,7 @@
             }
           },
           {
-            "id": 55,
+            "id": 57,
             "name": "Σιθωνίας",
             "seat": "Νικήτη",
             "regionAndUnit": {
@@ -765,7 +753,7 @@
             }
           },
           {
-            "id": 56,
+            "id": 58,
             "name": "Πολυγύρου",
             "seat": "Πολύγυρος",
             "regionAndUnit": {
@@ -775,7 +763,7 @@
             }
           },
           {
-            "id": 57,
+            "id": 59,
             "name": "Κασσάνδρας",
             "seat": "Κασσάνδρεια",
             "regionAndUnit": {
@@ -785,7 +773,7 @@
             }
           },
           {
-            "id": 58,
+            "id": 60,
             "name": "Νέας Προποντίδας",
             "seat": "Νέα Μουδανιά",
             "regionAndUnit": {
@@ -816,7 +804,7 @@
         "carPlatesPattern": ["PN*"],
         "municipalities": [
           {
-            "id": 59,
+            "id": 61,
             "name": "Δεσκάτης",
             "seat": "Δεσκάτη",
             "regionAndUnit": {
@@ -826,7 +814,7 @@
             }
           },
           {
-            "id": 60,
+            "id": 62,
             "name": "Γρεβενών",
             "seat": "Γρεβενά",
             "regionAndUnit": {
@@ -849,7 +837,7 @@
         "carPlatesPattern": ["KT*"],
         "municipalities": [
           {
-            "id": 61,
+            "id": 63,
             "name": "Καστοριάς",
             "seat": "Καστοριά",
             "regionAndUnit": {
@@ -859,7 +847,7 @@
             }
           },
           {
-            "id": 62,
+            "id": 64,
             "name": "Νεστορίου",
             "seat": "Νεστόριο",
             "regionAndUnit": {
@@ -869,7 +857,7 @@
             }
           },
           {
-            "id": 63,
+            "id": 65,
             "name": "Άργους Ορεστικού",
             "seat": "Άργος Ορεστικό",
             "regionAndUnit": {
@@ -892,7 +880,7 @@
         "carPlatesPattern": ["KZ*", "MN*"],
         "municipalities": [
           {
-            "id": 64,
+            "id": 66,
             "name": "Εορδαίας",
             "seat": "Πτολεμαΐδα",
             "regionAndUnit": {
@@ -902,7 +890,7 @@
             }
           },
           {
-            "id": 65,
+            "id": 67,
             "name": "Κοζάνης",
             "seat": "Κοζάνη",
             "regionAndUnit": {
@@ -912,7 +900,7 @@
             }
           },
           {
-            "id": 66,
+            "id": 68,
             "name": "Βοΐου",
             "seat": "Σιάτιστα",
             "regionAndUnit": {
@@ -922,7 +910,7 @@
             }
           },
           {
-            "id": 67,
+            "id": 69,
             "name": "Βελβεντού",
             "seat": "Βελβεντός",
             "regionAndUnit": {
@@ -932,7 +920,7 @@
             }
           },
           {
-            "id": 68,
+            "id": 70,
             "name": "Σερβίων",
             "seat": "Σέρβια",
             "regionAndUnit": {
@@ -955,7 +943,7 @@
         "carPlatesPattern": ["PA*"],
         "municipalities": [
           {
-            "id": 69,
+            "id": 71,
             "name": "Αμυνταίου",
             "seat": "Αμύνταιο",
             "regionAndUnit": {
@@ -965,7 +953,7 @@
             }
           },
           {
-            "id": 70,
+            "id": 72,
             "name": "Φλώρινας",
             "seat": "Φλώρινα",
             "regionAndUnit": {
@@ -975,7 +963,7 @@
             }
           },
           {
-            "id": 71,
+            "id": 73,
             "name": "Πρεσπών",
             "seat": "Λαιμός",
             "regionAndUnit": {
@@ -1006,7 +994,7 @@
         "carPlatesPattern": ["AT*"],
         "municipalities": [
           {
-            "id": 72,
+            "id": 74,
             "name": "Αρταίων",
             "seat": "Άρτα",
             "regionAndUnit": {
@@ -1016,7 +1004,7 @@
             }
           },
           {
-            "id": 73,
+            "id": 75,
             "name": "Νικολάου Σκουφά",
             "seat": "Πέτα",
             "regionAndUnit": {
@@ -1026,7 +1014,7 @@
             }
           },
           {
-            "id": 74,
+            "id": 76,
             "name": "Γεωργίου Καραϊσκάκη",
             "seat": "Άνω Καλεντίνη",
             "regionAndUnit": {
@@ -1036,7 +1024,7 @@
             }
           },
           {
-            "id": 75,
+            "id": 77,
             "name": "Κεντρικών Τζουμέρκων",
             "seat": "Βουργαρέλι",
             "regionAndUnit": {
@@ -1059,7 +1047,7 @@
         "carPlatesPattern": ["HN*"],
         "municipalities": [
           {
-            "id": 76,
+            "id": 78,
             "name": "Σουλίου",
             "seat": "Παραμυθιά",
             "regionAndUnit": {
@@ -1069,7 +1057,7 @@
             }
           },
           {
-            "id": 77,
+            "id": 79,
             "name": "Φιλιατών",
             "seat": "Φιλιάτες",
             "regionAndUnit": {
@@ -1079,7 +1067,7 @@
             }
           },
           {
-            "id": 78,
+            "id": 80,
             "name": "Ηγουμενίτσας",
             "seat": "Ηγουμενίτσα",
             "regionAndUnit": {
@@ -1102,7 +1090,7 @@
         "carPlatesPattern": ["IN*", "II*"],
         "municipalities": [
           {
-            "id": 79,
+            "id": 81,
             "name": "Κόνιτσας",
             "seat": "Κόνιτσα",
             "regionAndUnit": {
@@ -1112,7 +1100,7 @@
             }
           },
           {
-            "id": 80,
+            "id": 82,
             "name": "Πωγωνίου",
             "seat": "Καλπάκι",
             "regionAndUnit": {
@@ -1122,7 +1110,7 @@
             }
           },
           {
-            "id": 81,
+            "id": 83,
             "name": "Ζαγορίου",
             "seat": "Ασπράγγελοι",
             "regionAndUnit": {
@@ -1132,7 +1120,7 @@
             }
           },
           {
-            "id": 82,
+            "id": 84,
             "name": "Ζίτσας",
             "seat": "Ελεούσα",
             "regionAndUnit": {
@@ -1142,7 +1130,7 @@
             }
           },
           {
-            "id": 83,
+            "id": 85,
             "name": "Ιωαννιτών",
             "seat": "Ιωάννινα",
             "regionAndUnit": {
@@ -1152,7 +1140,7 @@
             }
           },
           {
-            "id": 84,
+            "id": 86,
             "name": "Μετσόβου",
             "seat": "Μέτσοβο",
             "regionAndUnit": {
@@ -1162,7 +1150,7 @@
             }
           },
           {
-            "id": 85,
+            "id": 87,
             "name": "Βορείων Τζουμέρκων",
             "seat": "Πράμαντα",
             "regionAndUnit": {
@@ -1172,7 +1160,7 @@
             }
           },
           {
-            "id": 86,
+            "id": 88,
             "name": "Δωδώνης",
             "seat": "Αγία Κυριακή",
             "regionAndUnit": {
@@ -1195,7 +1183,7 @@
         "carPlatesPattern": ["PZ*", "TX*"],
         "municipalities": [
           {
-            "id": 87,
+            "id": 89,
             "name": "Πάργας",
             "seat": "Καναλλάκι",
             "regionAndUnit": {
@@ -1205,7 +1193,7 @@
             }
           },
           {
-            "id": 88,
+            "id": 90,
             "name": "Πρέβεζας",
             "seat": "Πρέβεζα",
             "regionAndUnit": {
@@ -1215,7 +1203,7 @@
             }
           },
           {
-            "id": 89,
+            "id": 91,
             "name": "Ζηρού",
             "seat": "Φιλιππιάδα",
             "regionAndUnit": {
@@ -1246,7 +1234,7 @@
         "carPlatesPattern": ["KA*"],
         "municipalities": [
           {
-            "id": 90,
+            "id": 92,
             "name": "Παλαμά",
             "seat": "Παλαμάς",
             "regionAndUnit": {
@@ -1256,7 +1244,7 @@
             }
           },
           {
-            "id": 91,
+            "id": 93,
             "name": "Μουζακίου",
             "seat": "Μουζάκι",
             "regionAndUnit": {
@@ -1266,7 +1254,7 @@
             }
           },
           {
-            "id": 92,
+            "id": 94,
             "name": "Σοφάδων",
             "seat": "Σοφάδες",
             "regionAndUnit": {
@@ -1276,7 +1264,7 @@
             }
           },
           {
-            "id": 93,
+            "id": 95,
             "name": "Αργιθέας",
             "seat": "Ανθηρό",
             "regionAndUnit": {
@@ -1286,7 +1274,7 @@
             }
           },
           {
-            "id": 94,
+            "id": 96,
             "name": "Λίμνης Πλαστήρα",
             "seat": "Μορφοβούνι",
             "regionAndUnit": {
@@ -1296,7 +1284,7 @@
             }
           },
           {
-            "id": 95,
+            "id": 97,
             "name": "Καρδίτσας",
             "seat": "Καρδίτσα",
             "regionAndUnit": {
@@ -1319,7 +1307,7 @@
         "carPlatesPattern": ["PI*", "PP*", "PT*"],
         "municipalities": [
           {
-            "id": 96,
+            "id": 98,
             "name": "Ελασσόνας",
             "seat": "Ελασσόνα",
             "regionAndUnit": {
@@ -1329,7 +1317,7 @@
             }
           },
           {
-            "id": 97,
+            "id": 99,
             "name": "Τυρνάβου",
             "seat": "Τύρναβος",
             "regionAndUnit": {
@@ -1339,7 +1327,7 @@
             }
           },
           {
-            "id": 98,
+            "id": 100,
             "name": "Τεμπών",
             "seat": "Μακρυχώρι",
             "regionAndUnit": {
@@ -1349,7 +1337,7 @@
             }
           },
           {
-            "id": 99,
+            "id": 101,
             "name": "Λαρισαίων",
             "seat": "Λάρισα",
             "regionAndUnit": {
@@ -1359,7 +1347,7 @@
             }
           },
           {
-            "id": 100,
+            "id": 102,
             "name": "Αγιάς",
             "seat": "Αγιά",
             "regionAndUnit": {
@@ -1369,7 +1357,7 @@
             }
           },
           {
-            "id": 101,
+            "id": 103,
             "name": "Κιλελέρ",
             "seat": "Νίκαια",
             "regionAndUnit": {
@@ -1379,7 +1367,7 @@
             }
           },
           {
-            "id": 102,
+            "id": 104,
             "name": "Φαρσάλων",
             "seat": "Φάρσαλα",
             "regionAndUnit": {
@@ -1402,7 +1390,7 @@
         "carPlatesPattern": ["BO*", "BO*", "BB*", "BA*", "BT*"],
         "municipalities": [
           {
-            "id": 103,
+            "id": 105,
             "name": "Ρήγα Φεραίου",
             "seat": "Βελεστίνο",
             "regionAndUnit": {
@@ -1412,7 +1400,7 @@
             }
           },
           {
-            "id": 104,
+            "id": 106,
             "name": "Αλμυρού",
             "seat": "Αλμυρός",
             "regionAndUnit": {
@@ -1422,7 +1410,7 @@
             }
           },
           {
-            "id": 105,
+            "id": 107,
             "name": "Βόλου",
             "seat": "Βόλος",
             "regionAndUnit": {
@@ -1432,7 +1420,7 @@
             }
           },
           {
-            "id": 106,
+            "id": 108,
             "name": "Ζαγοράς - Μουρεσίου",
             "seat": "Ζαγορά",
             "regionAndUnit": {
@@ -1442,7 +1430,7 @@
             }
           },
           {
-            "id": 107,
+            "id": 109,
             "name": "Νοτίου Πηλίου",
             "seat": "Αργαλαστή",
             "regionAndUnit": {
@@ -1465,7 +1453,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 108,
+            "id": 110,
             "name": "Σκιάθου",
             "seat": "Σκιάθος",
             "regionAndUnit": {
@@ -1475,7 +1463,7 @@
             }
           },
           {
-            "id": 109,
+            "id": 111,
             "name": "Σκοπέλου",
             "seat": "Σκόπελος",
             "regionAndUnit": {
@@ -1485,7 +1473,7 @@
             }
           },
           {
-            "id": 110,
+            "id": 112,
             "name": "Αλοννήσου",
             "seat": "Αλόννησος",
             "regionAndUnit": {
@@ -1508,7 +1496,7 @@
         "carPlatesPattern": ["TK*", "TN*"],
         "municipalities": [
           {
-            "id": 111,
+            "id": 113,
             "name": "Πύλης",
             "seat": "Πύλη",
             "regionAndUnit": {
@@ -1518,7 +1506,7 @@
             }
           },
           {
-            "id": 112,
+            "id": 114,
             "name": "Μετεώρων",
             "seat": "Καλαμπάκα",
             "regionAndUnit": {
@@ -1528,7 +1516,7 @@
             }
           },
           {
-            "id": 113,
+            "id": 115,
             "name": "Τρικκαίων",
             "seat": "Τρίκαλα",
             "regionAndUnit": {
@@ -1538,7 +1526,7 @@
             }
           },
           {
-            "id": 114,
+            "id": 116,
             "name": "Φαρκαδόνας",
             "seat": "Φαρκαδόνα",
             "regionAndUnit": {
@@ -1569,7 +1557,7 @@
         "carPlatesPattern": ["ZA*"],
         "municipalities": [
           {
-            "id": 115,
+            "id": 117,
             "name": "Ζακύνθου",
             "seat": "Ζάκυνθος",
             "regionAndUnit": {
@@ -1592,7 +1580,7 @@
         "carPlatesPattern": ["KY*"],
         "municipalities": [
           {
-            "id": 116,
+            "id": 118,
             "name": "Κεντρικής Κέρκυρας και Διαποντίων Νήσων",
             "seat": "Κέρκυρα",
             "regionAndUnit": {
@@ -1602,7 +1590,7 @@
             }
           },
           {
-            "id": 117,
+            "id": 119,
             "name": "Βόρειας Κέρκυρας",
             "seat": "Αχαράβη",
             "regionAndUnit": {
@@ -1612,7 +1600,7 @@
             }
           },
           {
-            "id": 118,
+            "id": 120,
             "name": "Νότιας Κέρκυρας",
             "seat": "Λευκίμμη",
             "regionAndUnit": {
@@ -1622,7 +1610,7 @@
             }
           },
           {
-            "id": 119,
+            "id": 121,
             "name": "Παξών",
             "seat": "Γάιος",
             "regionAndUnit": {
@@ -1645,7 +1633,7 @@
         "carPlatesPattern": ["KE*"],
         "municipalities": [
           {
-            "id": 120,
+            "id": 122,
             "name": "Αργοστολίου",
             "seat": "Αργοστόλι",
             "regionAndUnit": {
@@ -1655,7 +1643,7 @@
             }
           },
           {
-            "id": 121,
+            "id": 123,
             "name": "Ληξουρίου",
             "seat": "Ληξούρι",
             "regionAndUnit": {
@@ -1665,7 +1653,7 @@
             }
           },
           {
-            "id": 122,
+            "id": 124,
             "name": "Σάμης",
             "seat": "Σάμη",
             "regionAndUnit": {
@@ -1688,7 +1676,7 @@
         "carPlatesPattern": ["KE*"],
         "municipalities": [
           {
-            "id": 123,
+            "id": 125,
             "name": "Ιθάκης",
             "seat": "Βαθύ",
             "regionAndUnit": {
@@ -1711,7 +1699,7 @@
         "carPlatesPattern": ["EY*"],
         "municipalities": [
           {
-            "id": 124,
+            "id": 126,
             "name": "Λευκάδας",
             "seat": "Λευκάδα",
             "regionAndUnit": {
@@ -1721,7 +1709,7 @@
             }
           },
           {
-            "id": 125,
+            "id": 127,
             "name": "Μεγανησίου",
             "seat": "Κατωμέρι",
             "regionAndUnit": {
@@ -1752,7 +1740,7 @@
         "carPlatesPattern": ["AI*", "ME*"],
         "municipalities": [
           {
-            "id": 126,
+            "id": 128,
             "name": "Αμφιλοχίας",
             "seat": "Αμφιλοχία",
             "regionAndUnit": {
@@ -1762,7 +1750,7 @@
             }
           },
           {
-            "id": 127,
+            "id": 129,
             "name": "Ακτίου - Βόνιτσας",
             "seat": "Βόνιτσα",
             "regionAndUnit": {
@@ -1772,7 +1760,7 @@
             }
           },
           {
-            "id": 128,
+            "id": 130,
             "name": "Ξηρομέρου",
             "seat": "Αστακός",
             "regionAndUnit": {
@@ -1782,7 +1770,7 @@
             }
           },
           {
-            "id": 129,
+            "id": 131,
             "name": "Ιεράς Πόλεως Μεσολογγίου",
             "seat": "Μεσολόγγι",
             "regionAndUnit": {
@@ -1792,7 +1780,7 @@
             }
           },
           {
-            "id": 130,
+            "id": 132,
             "name": "Αγρινίου",
             "seat": "Αγρίνιο",
             "regionAndUnit": {
@@ -1802,7 +1790,7 @@
             }
           },
           {
-            "id": 131,
+            "id": 133,
             "name": "Θέρμου",
             "seat": "Θέρμο",
             "regionAndUnit": {
@@ -1812,7 +1800,7 @@
             }
           },
           {
-            "id": 132,
+            "id": 134,
             "name": "Ναυπακτίας",
             "seat": "Ναύπακτος",
             "regionAndUnit": {
@@ -1835,7 +1823,7 @@
         "carPlatesPattern": ["AX*", "AZ*"],
         "municipalities": [
           {
-            "id": 133,
+            "id": 135,
             "name": "Πατρέων",
             "seat": "Πάτρα",
             "regionAndUnit": {
@@ -1845,7 +1833,7 @@
             }
           },
           {
-            "id": 134,
+            "id": 136,
             "name": "Αιγιαλείας",
             "seat": "Αίγιο",
             "regionAndUnit": {
@@ -1855,7 +1843,7 @@
             }
           },
           {
-            "id": 135,
+            "id": 137,
             "name": "Καλαβρύτων",
             "seat": "Καλάβρυτα",
             "regionAndUnit": {
@@ -1865,7 +1853,7 @@
             }
           },
           {
-            "id": 136,
+            "id": 138,
             "name": "Ερυμάνθου",
             "seat": "Χαλανδρίτσα",
             "regionAndUnit": {
@@ -1875,7 +1863,7 @@
             }
           },
           {
-            "id": 137,
+            "id": 139,
             "name": "Δυτικής Αχαΐας",
             "seat": "Κάτω Αχαΐα",
             "regionAndUnit": {
@@ -1898,7 +1886,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 137,
+            "id": 140,
             "name": "Ανδραβίδας - Κυλλήνης",
             "seat": "Λεχαινά",
             "regionAndUnit": {
@@ -1908,7 +1896,7 @@
             }
           },
           {
-            "id": 138,
+            "id": 141,
             "name": "Πηνειού",
             "seat": "Γαστούνη",
             "regionAndUnit": {
@@ -1918,7 +1906,7 @@
             }
           },
           {
-            "id": 139,
+            "id": 142,
             "name": "Ήλιδας",
             "seat": "Αμαλιάδα",
             "regionAndUnit": {
@@ -1928,7 +1916,7 @@
             }
           },
           {
-            "id": 140,
+            "id": 143,
             "name": "Πύργου",
             "seat": "Πύργος",
             "regionAndUnit": {
@@ -1938,7 +1926,7 @@
             }
           },
           {
-            "id": 141,
+            "id": 144,
             "name": "Αρχαίας Ολυμπίας",
             "seat": "Αρχαία Ολυμπία",
             "regionAndUnit": {
@@ -1948,7 +1936,7 @@
             }
           },
           {
-            "id": 142,
+            "id": 145,
             "name": "Ανδρίτσαινας - Κρεστένων",
             "seat": "Κρέστενα",
             "regionAndUnit": {
@@ -1958,7 +1946,7 @@
             }
           },
           {
-            "id": 143,
+            "id": 146,
             "name": "Ζαχάρως",
             "seat": "Ζαχάρω",
             "regionAndUnit": {
@@ -1989,7 +1977,7 @@
         "carPlatesPattern": ["BI*"],
         "municipalities": [
           {
-            "id": 144,
+            "id": 147,
             "name": "Τανάγρας",
             "seat": "Σχηματάρι",
             "regionAndUnit": {
@@ -1999,7 +1987,7 @@
             }
           },
           {
-            "id": 145,
+            "id": 148,
             "name": "Θηβαίων",
             "seat": "Θήβα",
             "regionAndUnit": {
@@ -2009,7 +1997,7 @@
             }
           },
           {
-            "id": 146,
+            "id": 149,
             "name": "Αλιάρτου",
             "seat": "Αλίαρτος",
             "regionAndUnit": {
@@ -2019,7 +2007,7 @@
             }
           },
           {
-            "id": 147,
+            "id": 150,
             "name": "Ορχομενού",
             "seat": "Ορχομενός",
             "regionAndUnit": {
@@ -2029,7 +2017,7 @@
             }
           },
           {
-            "id": 148,
+            "id": 151,
             "name": "Λεβαδέων",
             "seat": "Λιβαδειά",
             "regionAndUnit": {
@@ -2039,7 +2027,7 @@
             }
           },
           {
-            "id": 149,
+            "id": 152,
             "name": "Διστόμου - Αράχοβας - Αντίκυρας",
             "seat": "Δίστομο",
             "regionAndUnit": {
@@ -2062,7 +2050,7 @@
         "carPlatesPattern": ["XA*", "EH*"],
         "municipalities": [
           {
-            "id": 150,
+            "id": 153,
             "name": "Σκύρου",
             "seat": "Σκύρος",
             "regionAndUnit": {
@@ -2072,7 +2060,7 @@
             }
           },
           {
-            "id": 151,
+            "id": 154,
             "name": "Ιστιαίας - Αιδηψού",
             "seat": "Ιστιαία",
             "regionAndUnit": {
@@ -2082,7 +2070,7 @@
             }
           },
           {
-            "id": 152,
+            "id": 155,
             "name": "Μαντουδίου - Λίμνης - Αγίας Άννας",
             "seat": "Μαντούδι",
             "regionAndUnit": {
@@ -2092,7 +2080,7 @@
             }
           },
           {
-            "id": 153,
+            "id": 156,
             "name": "Διρφύων - Μεσσαπίων",
             "seat": "Ψαχνά",
             "regionAndUnit": {
@@ -2102,7 +2090,7 @@
             }
           },
           {
-            "id": 154,
+            "id": 157,
             "name": "Χαλκιδέων",
             "seat": "Χαλκίδα",
             "regionAndUnit": {
@@ -2112,7 +2100,7 @@
             }
           },
           {
-            "id": 155,
+            "id": 158,
             "name": "Ερέτριας",
             "seat": "Ερέτρια",
             "regionAndUnit": {
@@ -2122,7 +2110,7 @@
             }
           },
           {
-            "id": 156,
+            "id": 159,
             "name": "Κύμης - Αλιβερίου",
             "seat": "Αλιβέρι",
             "regionAndUnit": {
@@ -2132,7 +2120,7 @@
             }
           },
           {
-            "id": 157,
+            "id": 160,
             "name": "Καρύστου",
             "seat": "Κάρυστος",
             "regionAndUnit": {
@@ -2155,7 +2143,7 @@
         "carPlatesPattern": ["KH*"],
         "municipalities": [
           {
-            "id": 158,
+            "id": 161,
             "name": "Καρπενησίου",
             "seat": "Καρπενήσι",
             "regionAndUnit": {
@@ -2165,7 +2153,7 @@
             }
           },
           {
-            "id": 159,
+            "id": 162,
             "name": "Αγράφων",
             "seat": "Κερασοχώρι",
             "regionAndUnit": {
@@ -2188,7 +2176,7 @@
         "carPlatesPattern": ["MI*"],
         "municipalities": [
           {
-            "id": 160,
+            "id": 163,
             "name": "Λοκρών",
             "seat": "Αταλάντη",
             "regionAndUnit": {
@@ -2198,7 +2186,7 @@
             }
           },
           {
-            "id": 161,
+            "id": 164,
             "name": "Αμφίκλειας - Ελάτειας",
             "seat": "Κάτω Τιθορέα",
             "regionAndUnit": {
@@ -2208,7 +2196,7 @@
             }
           },
           {
-            "id": 162,
+            "id": 165,
             "name": "Καμένων Βούρλων",
             "seat": "Καμένα Βούρλα",
             "regionAndUnit": {
@@ -2218,7 +2206,7 @@
             }
           },
           {
-            "id": 163,
+            "id": 166,
             "name": "Λαμιέων",
             "seat": "Λαμία",
             "regionAndUnit": {
@@ -2228,7 +2216,7 @@
             }
           },
           {
-            "id": 164,
+            "id": 167,
             "name": "Στυλίδας",
             "seat": "Στυλίδα",
             "regionAndUnit": {
@@ -2238,7 +2226,7 @@
             }
           },
           {
-            "id": 165,
+            "id": 168,
             "name": "Μακρακώμης",
             "seat": "Σπερχειάδα",
             "regionAndUnit": {
@@ -2248,7 +2236,7 @@
             }
           },
           {
-            "id": 166,
+            "id": 169,
             "name": "Δομοκού",
             "seat": "Δομοκός",
             "regionAndUnit": {
@@ -2271,7 +2259,7 @@
         "carPlatesPattern": ["AM*"],
         "municipalities": [
           {
-            "id": 167,
+            "id": 170,
             "name": "Δελφών",
             "seat": "Άμφισσα",
             "regionAndUnit": {
@@ -2281,7 +2269,7 @@
             }
           },
           {
-            "id": 168,
+            "id": 171,
             "name": "Δωρίδος",
             "seat": "Λιδωρίκι",
             "regionAndUnit": {
@@ -2312,7 +2300,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 169,
+            "id": 172,
             "name": "Παπάγου - Χολαργού",
             "seat": "Χολαργός",
             "regionAndUnit": {
@@ -2322,7 +2310,7 @@
             }
           },
           {
-            "id": 170,
+            "id": 173,
             "name": "Αγίας Παρασκευής",
             "seat": "Αγία Παρασκευή",
             "regionAndUnit": {
@@ -2332,7 +2320,7 @@
             }
           },
           {
-            "id": 171,
+            "id": 174,
             "name": "Χαλανδρίου",
             "seat": "Χαλάνδρι",
             "regionAndUnit": {
@@ -2342,7 +2330,7 @@
             }
           },
           {
-            "id": 172,
+            "id": 175,
             "name": "Βριλησσίων",
             "seat": "Βριλήσσια",
             "regionAndUnit": {
@@ -2352,7 +2340,7 @@
             }
           },
           {
-            "id": 173,
+            "id": 176,
             "name": "Αμαρουσίου",
             "seat": "Μαρούσι",
             "regionAndUnit": {
@@ -2362,7 +2350,7 @@
             }
           },
           {
-            "id": 174,
+            "id": 177,
             "name": "Φιλοθέης - Ψυχικού",
             "seat": "Ψυχικό",
             "regionAndUnit": {
@@ -2372,7 +2360,7 @@
             }
           },
           {
-            "id": 175,
+            "id": 178,
             "name": "Νέας Ιωνίας",
             "seat": "Νέα Ιωνία",
             "regionAndUnit": {
@@ -2382,7 +2370,7 @@
             }
           },
           {
-            "id": 176,
+            "id": 179,
             "name": "Μεταμορφώσεως",
             "seat": "Μεταμόρφωση",
             "regionAndUnit": {
@@ -2392,7 +2380,7 @@
             }
           },
           {
-            "id": 177,
+            "id": 180,
             "name": "Ηρακλείου",
             "seat": "Ηράκλειο (Αττικής)",
             "regionAndUnit": {
@@ -2402,7 +2390,7 @@
             }
           },
           {
-            "id": 178,
+            "id": 181,
             "name": "Λυκόβρυσης - Πεύκης",
             "seat": "Πεύκη",
             "regionAndUnit": {
@@ -2412,7 +2400,7 @@
             }
           },
           {
-            "id": 179,
+            "id": 182,
             "name": "Κηφισιάς",
             "seat": "Κηφισιά",
             "regionAndUnit": {
@@ -2422,7 +2410,7 @@
             }
           },
           {
-            "id": 180,
+            "id": 183,
             "name": "Πεντέλης",
             "seat": "Πεντέλη",
             "regionAndUnit": {
@@ -2445,7 +2433,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 181,
+            "id": 184,
             "name": "Αγίας Βαρβάρας",
             "seat": "Αγία Βαρβάρα",
             "regionAndUnit": {
@@ -2455,7 +2443,7 @@
             }
           },
           {
-            "id": 182,
+            "id": 185,
             "name": "Χαϊδαρίου",
             "seat": "Χαϊδάρι",
             "regionAndUnit": {
@@ -2465,7 +2453,7 @@
             }
           },
           {
-            "id": 183,
+            "id": 186,
             "name": "Αιγάλεω",
             "seat": "Αιγάλεω",
             "regionAndUnit": {
@@ -2475,7 +2463,7 @@
             }
           },
           {
-            "id": 184,
+            "id": 187,
             "name": "Περιστερίου",
             "seat": "Περιστέρι",
             "regionAndUnit": {
@@ -2485,7 +2473,7 @@
             }
           },
           {
-            "id": 185,
+            "id": 188,
             "name": "Πετρούπολης",
             "seat": "Πετρούπολη",
             "regionAndUnit": {
@@ -2495,7 +2483,7 @@
             }
           },
           {
-            "id": 186,
+            "id": 189,
             "name": "Ιλίου",
             "seat": "Ίλιον",
             "regionAndUnit": {
@@ -2505,7 +2493,7 @@
             }
           },
           {
-            "id": 187,
+            "id": 190,
             "name": "Αγίων Αναργύρων - Καματερού",
             "seat": "Άγιοι Ανάργυροι",
             "regionAndUnit": {
@@ -2528,7 +2516,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 188,
+            "id": 191,
             "name": "Νέας Φιλαδέλφειας - Νέας Χαλκηδόνας",
             "seat": "Νέας Φιλαδελφείας",
             "regionAndUnit": {
@@ -2538,7 +2526,7 @@
             }
           },
           {
-            "id": 189,
+            "id": 192,
             "name": "Γαλατσίου",
             "seat": "Γαλάτσι",
             "regionAndUnit": {
@@ -2548,7 +2536,7 @@
             }
           },
           {
-            "id": 190,
+            "id": 193,
             "name": "Αθηναίων",
             "seat": "Αθήνα",
             "regionAndUnit": {
@@ -2558,7 +2546,7 @@
             }
           },
           {
-            "id": 191,
+            "id": 194,
             "name": "Δάφνης - Υμηττού",
             "seat": "Δάφνη",
             "regionAndUnit": {
@@ -2568,7 +2556,7 @@
             }
           },
           {
-            "id": 192,
+            "id": 195,
             "name": "Ηλιούπολης",
             "seat": "Ηλιούπολη",
             "regionAndUnit": {
@@ -2578,7 +2566,7 @@
             }
           },
           {
-            "id": 193,
+            "id": 196,
             "name": "Βύρωνος",
             "seat": "Βύρωνας",
             "regionAndUnit": {
@@ -2588,7 +2576,7 @@
             }
           },
           {
-            "id": 194,
+            "id": 197,
             "name": "Καισαριανής",
             "seat": "Καισαριανή",
             "regionAndUnit": {
@@ -2598,7 +2586,7 @@
             }
           },
           {
-            "id": 195,
+            "id": 198,
             "name": "Ζωγράφου",
             "seat": "Ζωγράφου",
             "regionAndUnit": {
@@ -2621,7 +2609,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 196,
+            "id": 199,
             "name": "Μοσχάτου - Ταύρου",
             "seat": "Μοσχάτο",
             "regionAndUnit": {
@@ -2631,7 +2619,7 @@
             }
           },
           {
-            "id": 197,
+            "id": 200,
             "name": "Καλλιθέας",
             "seat": "Καλλιθέα",
             "regionAndUnit": {
@@ -2641,7 +2629,7 @@
             }
           },
           {
-            "id": 198,
+            "id": 201,
             "name": "Νέας Σμύρνης",
             "seat": "Νέα Σμύρνη",
             "regionAndUnit": {
@@ -2651,7 +2639,7 @@
             }
           },
           {
-            "id": 199,
+            "id": 202,
             "name": "Παλαιού Φαλήρου",
             "seat": "Παλαιό Φάληρο",
             "regionAndUnit": {
@@ -2661,7 +2649,7 @@
             }
           },
           {
-            "id": 200,
+            "id": 203,
             "name": "Αγίου Δημητρίου",
             "seat": "Άγιος Δημήτριος",
             "regionAndUnit": {
@@ -2671,7 +2659,7 @@
             }
           },
           {
-            "id": 201,
+            "id": 204,
             "name": "Αλίμου",
             "seat": "Άλιμος",
             "regionAndUnit": {
@@ -2681,7 +2669,7 @@
             }
           },
           {
-            "id": 202,
+            "id": 205,
             "name": "Ελληνικού - Αργυρούπολης",
             "seat": "Αργυρούπολη",
             "regionAndUnit": {
@@ -2691,7 +2679,7 @@
             }
           },
           {
-            "id": 203,
+            "id": 206,
             "name": "Γλυφάδας",
             "seat": "Γλυφάδα",
             "regionAndUnit": {
@@ -2714,7 +2702,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 204,
+            "id": 207,
             "name": "Περάματος",
             "seat": "Πέραμα",
             "regionAndUnit": {
@@ -2724,7 +2712,7 @@
             }
           },
           {
-            "id": 205,
+            "id": 208,
             "name": "Κερατσινίου - Δραπετσώνας",
             "seat": "Κερατσίνι",
             "regionAndUnit": {
@@ -2734,7 +2722,7 @@
             }
           },
           {
-            "id": 206,
+            "id": 209,
             "name": "Πειραιά",
             "seat": "Πειραιάς",
             "regionAndUnit": {
@@ -2744,7 +2732,7 @@
             }
           },
           {
-            "id": 207,
+            "id": 210,
             "name": "Νίκαιας - Αγίου Ιωάννη Ρέντη",
             "seat": "Νίκαια",
             "regionAndUnit": {
@@ -2754,7 +2742,7 @@
             }
           },
           {
-            "id": 208,
+            "id": 211,
             "name": "Κορυδαλλού",
             "seat": "Κορυδαλλός",
             "regionAndUnit": {
@@ -2777,7 +2765,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 209,
+            "id": 212,
             "name": "Κυθήρων",
             "seat": "Κύθηρα",
             "regionAndUnit": {
@@ -2787,7 +2775,7 @@
             }
           },
           {
-            "id": 210,
+            "id": 213,
             "name": "Σπετσών",
             "seat": "Σπέτσες",
             "regionAndUnit": {
@@ -2797,7 +2785,7 @@
             }
           },
           {
-            "id": 211,
+            "id": 214,
             "name": "Ύδρας",
             "seat": "Ύδρα",
             "regionAndUnit": {
@@ -2807,7 +2795,7 @@
             }
           },
           {
-            "id": 212,
+            "id": 215,
             "name": "Τροιζηνίας - Μεθάνων",
             "seat": "Γαλατάς",
             "regionAndUnit": {
@@ -2817,7 +2805,7 @@
             }
           },
           {
-            "id": 213,
+            "id": 216,
             "name": "Πόρου",
             "seat": "Πόρος",
             "regionAndUnit": {
@@ -2827,7 +2815,7 @@
             }
           },
           {
-            "id": 214,
+            "id": 217,
             "name": "Αγκιστρίου",
             "seat": "Αγκίστρι",
             "regionAndUnit": {
@@ -2837,7 +2825,7 @@
             }
           },
           {
-            "id": 215,
+            "id": 218,
             "name": "Αίγινας",
             "seat": "Αίγινα",
             "regionAndUnit": {
@@ -2847,7 +2835,7 @@
             }
           },
           {
-            "id": 216,
+            "id": 219,
             "name": "Σαλαμίνας",
             "seat": "Σαλαμίνα",
             "regionAndUnit": {
@@ -2870,7 +2858,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 217,
+            "id": 220,
             "name": "Βάρης - Βούλας - Βουλιαγμένης",
             "seat": "Βούλα",
             "regionAndUnit": {
@@ -2880,7 +2868,7 @@
             }
           },
           {
-            "id": 218,
+            "id": 221,
             "name": "Κρωπίας",
             "seat": "Κορωπί",
             "regionAndUnit": {
@@ -2890,7 +2878,7 @@
             }
           },
           {
-            "id": 219,
+            "id": 222,
             "name": "Σαρωνικού",
             "seat": "Καλύβια Θορικού",
             "regionAndUnit": {
@@ -2900,7 +2888,7 @@
             }
           },
           {
-            "id": 220,
+            "id": 223,
             "name": "Λαυρεωτικής",
             "seat": "Λαύριο",
             "regionAndUnit": {
@@ -2910,7 +2898,7 @@
             }
           },
           {
-            "id": 221,
+            "id": 224,
             "name": "Μαρκόπουλου Μεσογαίας",
             "seat": "Μαρκόπουλο",
             "regionAndUnit": {
@@ -2920,7 +2908,7 @@
             }
           },
           {
-            "id": 222,
+            "id": 225,
             "name": "Παιανίας",
             "seat": "Παιανία",
             "regionAndUnit": {
@@ -2930,7 +2918,7 @@
             }
           },
           {
-            "id": 223,
+            "id": 226,
             "name": "Σπάτων - Αρτέμιδος",
             "seat": "Σπάτα",
             "regionAndUnit": {
@@ -2940,7 +2928,7 @@
             }
           },
           {
-            "id": 224,
+            "id": 227,
             "name": "Παλλήνης",
             "seat": "Γέρακας",
             "regionAndUnit": {
@@ -2950,7 +2938,7 @@
             }
           },
           {
-            "id": 225,
+            "id": 228,
             "name": "Ραφήνας - Πικερμίου",
             "seat": "Ραφήνα",
             "regionAndUnit": {
@@ -2960,7 +2948,7 @@
             }
           },
           {
-            "id": 226,
+            "id": 229,
             "name": "Μαραθώνος",
             "seat": "Μαραθώνας",
             "regionAndUnit": {
@@ -2970,7 +2958,7 @@
             }
           },
           {
-            "id": 227,
+            "id": 230,
             "name": "Διονύσου",
             "seat": "Άγιος Στέφανος",
             "regionAndUnit": {
@@ -2980,7 +2968,7 @@
             }
           },
           {
-            "id": 228,
+            "id": 231,
             "name": "Ωρωπού",
             "seat": "Ωρωπός",
             "regionAndUnit": {
@@ -2990,7 +2978,7 @@
             }
           },
           {
-            "id": 229,
+            "id": 232,
             "name": "Αχαρνών",
             "seat": "Αχαρνές",
             "regionAndUnit": {
@@ -3013,7 +3001,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 230,
+            "id": 233,
             "name": "Φυλής",
             "seat": "Άνω Λιόσια",
             "regionAndUnit": {
@@ -3023,7 +3011,7 @@
             }
           },
           {
-            "id": 231,
+            "id": 234,
             "name": "Ασπροπύργου",
             "seat": "Ασπρόπυργος",
             "regionAndUnit": {
@@ -3033,7 +3021,7 @@
             }
           },
           {
-            "id": 232,
+            "id": 235,
             "name": "Ελευσίνας",
             "seat": "Ελευσίνα",
             "regionAndUnit": {
@@ -3043,7 +3031,7 @@
             }
           },
           {
-            "id": 233,
+            "id": 236,
             "name": "Μάνδρας - Ειδυλλίας",
             "seat": "Μάνδρα",
             "regionAndUnit": {
@@ -3053,7 +3041,7 @@
             }
           },
           {
-            "id": 234,
+            "id": 237,
             "name": "Μεγαρέων",
             "seat": "Μέγαρα",
             "regionAndUnit": {
@@ -3084,7 +3072,7 @@
         "carPlatesPattern": ["AP*"],
         "municipalities": [
           {
-            "id": 235,
+            "id": 238,
             "name": "Άργους - Μυκηνών",
             "seat": "Άργος",
             "regionAndUnit": {
@@ -3094,7 +3082,7 @@
             }
           },
           {
-            "id": 236,
+            "id": 239,
             "name": "Ναυπλιέων",
             "seat": "Ναύπλιο",
             "regionAndUnit": {
@@ -3104,7 +3092,7 @@
             }
           },
           {
-            "id": 237,
+            "id": 240,
             "name": "Επιδαύρου",
             "seat": "Λυγουριό",
             "regionAndUnit": {
@@ -3114,7 +3102,7 @@
             }
           },
           {
-            "id": 238,
+            "id": 241,
             "name": "Ερμιονίδας",
             "seat": "Κρανίδι",
             "regionAndUnit": {
@@ -3137,7 +3125,7 @@
         "carPlatesPattern": ["TP*"],
         "municipalities": [
           {
-            "id": 239,
+            "id": 242,
             "name": "Νότιας Κυνουρίας",
             "seat": "Λεωνίδιο",
             "regionAndUnit": {
@@ -3147,7 +3135,7 @@
             }
           },
           {
-            "id": 240,
+            "id": 243,
             "name": "Βόρειας Κυνουρίας",
             "seat": "Άστρος",
             "regionAndUnit": {
@@ -3157,7 +3145,7 @@
             }
           },
           {
-            "id": 241,
+            "id": 244,
             "name": "Τρίπολης",
             "seat": "Τρίπολη",
             "regionAndUnit": {
@@ -3167,7 +3155,7 @@
             }
           },
           {
-            "id": 242,
+            "id": 245,
             "name": "Γορτυνίας",
             "seat": "Δημητσάνα",
             "regionAndUnit": {
@@ -3177,7 +3165,7 @@
             }
           },
           {
-            "id": 243,
+            "id": 246,
             "name": "Μεγαλόπολης",
             "seat": "Μεγαλόπολη",
             "regionAndUnit": {
@@ -3200,7 +3188,7 @@
         "carPlatesPattern": ["KP*"],
         "municipalities": [
           {
-            "id": 244,
+            "id": 247,
             "name": "Λουτρακίου - Περαχώρας - Αγίων Θεοδώρων",
             "seat": "Λουτράκι",
             "regionAndUnit": {
@@ -3210,7 +3198,7 @@
             }
           },
           {
-            "id": 245,
+            "id": 248,
             "name": "Κορινθίων",
             "seat": "Κόρινθος",
             "regionAndUnit": {
@@ -3220,7 +3208,7 @@
             }
           },
           {
-            "id": 246,
+            "id": 249,
             "name": "Βέλου - Βόχας",
             "seat": "Ζευγολατειό",
             "regionAndUnit": {
@@ -3230,7 +3218,7 @@
             }
           },
           {
-            "id": 247,
+            "id": 250,
             "name": "Σικυωνίων",
             "seat": "Κιάτο",
             "regionAndUnit": {
@@ -3240,7 +3228,7 @@
             }
           },
           {
-            "id": 248,
+            "id": 251,
             "name": "Ξυλοκάστρου - Ευρωστίνης",
             "seat": "Ξυλόκαστρο",
             "regionAndUnit": {
@@ -3250,7 +3238,7 @@
             }
           },
           {
-            "id": 249,
+            "id": 252,
             "name": "Νεμέας",
             "seat": "Νεμέα",
             "regionAndUnit": {
@@ -3273,7 +3261,7 @@
         "carPlatesPattern": ["AK*"],
         "municipalities": [
           {
-            "id": 250,
+            "id": 253,
             "name": "Ανατολικής Μάνης",
             "seat": "Γύθειο",
             "regionAndUnit": {
@@ -3283,7 +3271,7 @@
             }
           },
           {
-            "id": 251,
+            "id": 254,
             "name": "Σπάρτης",
             "seat": "Σπάρτη",
             "regionAndUnit": {
@@ -3293,7 +3281,7 @@
             }
           },
           {
-            "id": 252,
+            "id": 255,
             "name": "Ευρώτα",
             "seat": "Σκάλα",
             "regionAndUnit": {
@@ -3303,7 +3291,7 @@
             }
           },
           {
-            "id": 253,
+            "id": 256,
             "name": "Μονεμβασιάς",
             "seat": "Μολάοι",
             "regionAndUnit": {
@@ -3313,7 +3301,7 @@
             }
           },
           {
-            "id": 254,
+            "id": 257,
             "name": "Ελαφονήσου",
             "seat": "Ελαφόνησος",
             "regionAndUnit": {
@@ -3336,7 +3324,7 @@
         "carPlatesPattern": ["KM*", "MZ*"],
         "municipalities": [
           {
-            "id": 255,
+            "id": 258,
             "name": "Οιχαλίας",
             "seat": "Μελιγαλάς",
             "regionAndUnit": {
@@ -3346,7 +3334,7 @@
             }
           },
           {
-            "id": 256,
+            "id": 259,
             "name": "Τριφυλίας",
             "seat": "Κυπαρισσία",
             "regionAndUnit": {
@@ -3356,7 +3344,7 @@
             }
           },
           {
-            "id": 257,
+            "id": 260,
             "name": "Πύλου - Νέστορος",
             "seat": "Πύλος",
             "regionAndUnit": {
@@ -3366,7 +3354,7 @@
             }
           },
           {
-            "id": 258,
+            "id": 261,
             "name": "Μεσσήνης",
             "seat": "Μεσσήνη",
             "regionAndUnit": {
@@ -3376,7 +3364,7 @@
             }
           },
           {
-            "id": 259,
+            "id": 262,
             "name": "Καλαμάτας",
             "seat": "Καλαμάτα",
             "regionAndUnit": {
@@ -3386,7 +3374,7 @@
             }
           },
           {
-            "id": 260,
+            "id": 263,
             "name": "Δυτικής Μάνης",
             "seat": "Καρδαμύλη",
             "regionAndUnit": {
@@ -3417,7 +3405,7 @@
         "carPlatesPattern": ["MI*", "MY*"],
         "municipalities": [
           {
-            "id": 261,
+            "id": 264,
             "name": "Δυτικής Λέσβου",
             "seat": "Καλλονή",
             "regionAndUnit": {
@@ -3427,7 +3415,7 @@
             }
           },
           {
-            "id": 262,
+            "id": 265,
             "name": "Μυτιλήνης",
             "seat": "Μυτιλήνη",
             "regionAndUnit": {
@@ -3450,7 +3438,7 @@
         "carPlatesPattern": ["MO*"],
         "municipalities": [
           {
-            "id": 263,
+            "id": 266,
             "name": "Φούρνων Κορσεών",
             "seat": "Φούρνοι",
             "regionAndUnit": {
@@ -3460,7 +3448,7 @@
             }
           },
           {
-            "id": 264,
+            "id": 267,
             "name": "Ικαρίας",
             "seat": "Άγιος Κήρυκος",
             "regionAndUnit": {
@@ -3483,7 +3471,7 @@
         "carPlatesPattern": ["MH*"],
         "municipalities": [
           {
-            "id": 265,
+            "id": 268,
             "name": "Λήμνου",
             "seat": "Μύρινα",
             "regionAndUnit": {
@@ -3493,7 +3481,7 @@
             }
           },
           {
-            "id": 266,
+            "id": 269,
             "name": "Αγίου Ευστρατίου",
             "seat": "Άγιος Ευστράτιος",
             "regionAndUnit": {
@@ -3516,7 +3504,7 @@
         "carPlatesPattern": ["MO*"],
         "municipalities": [
           {
-            "id": 267,
+            "id": 270,
             "name": "Ανατολικής Σάμου",
             "seat": "Σάμος",
             "regionAndUnit": {
@@ -3526,7 +3514,7 @@
             }
           },
           {
-            "id": 268,
+            "id": 271,
             "name": "Δυτικής Σάμου",
             "seat": "Νέο Καρλόβασι",
             "regionAndUnit": {
@@ -3549,7 +3537,7 @@
         "carPlatesPattern": ["XI*"],
         "municipalities": [
           {
-            "id": 269,
+            "id": 272,
             "name": "Ηρωικής Νήσου Ψαρών",
             "seat": "Ψαρά",
             "regionAndUnit": {
@@ -3559,7 +3547,7 @@
             }
           },
           {
-            "id": 270,
+            "id": 273,
             "name": "Οινουσσών",
             "seat": "Αιγνούσα",
             "regionAndUnit": {
@@ -3569,7 +3557,7 @@
             }
           },
           {
-            "id": 271,
+            "id": 274,
             "name": "Χίου",
             "seat": "Χίος",
             "regionAndUnit": {
@@ -3600,7 +3588,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 272,
+            "id": 275,
             "name": "Άνδρου",
             "seat": "Άνδρος",
             "regionAndUnit": {
@@ -3623,7 +3611,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 273,
+            "id": 276,
             "name": "Σερίφου",
             "seat": "Σέριφος",
             "regionAndUnit": {
@@ -3633,7 +3621,7 @@
             }
           },
           {
-            "id": 274,
+            "id": 277,
             "name": "Σίφνου",
             "seat": "Απολλωνία",
             "regionAndUnit": {
@@ -3643,7 +3631,7 @@
             }
           },
           {
-            "id": 275,
+            "id": 278,
             "name": "Κιμώλου",
             "seat": "Κίμωλος",
             "regionAndUnit": {
@@ -3653,7 +3641,7 @@
             }
           },
           {
-            "id": 276,
+            "id": 279,
             "name": "Μήλου",
             "seat": "Μήλος",
             "regionAndUnit": {
@@ -3676,7 +3664,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 277,
+            "id": 280,
             "name": "Ιητών",
             "seat": "Ίος",
             "regionAndUnit": {
@@ -3686,7 +3674,7 @@
             }
           },
           {
-            "id": 278,
+            "id": 281,
             "name": "Σικίνου",
             "seat": "Σίκινος",
             "regionAndUnit": {
@@ -3696,7 +3684,7 @@
             }
           },
           {
-            "id": 279,
+            "id": 282,
             "name": "Φολεγάνδρου",
             "seat": "Φολέγανδρος",
             "regionAndUnit": {
@@ -3706,7 +3694,7 @@
             }
           },
           {
-            "id": 280,
+            "id": 283,
             "name": "Θήρα",
             "seat": "Φολέγανδρος",
             "regionAndUnit": {
@@ -3716,7 +3704,7 @@
             }
           },
           {
-            "id": 281,
+            "id": 284,
             "name": "Ανάφης",
             "seat": "Ανάφη",
             "regionAndUnit": {
@@ -3739,7 +3727,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 282,
+            "id": 285,
             "name": "Κέας",
             "seat": "Ιουλίδα",
             "regionAndUnit": {
@@ -3749,7 +3737,7 @@
             }
           },
           {
-            "id": 283,
+            "id": 286,
             "name": "Κύθνου",
             "seat": "Κύθνος",
             "regionAndUnit": {
@@ -3772,7 +3760,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 284,
+            "id": 287,
             "name": "Μυκόνου",
             "seat": "Μύκονος",
             "regionAndUnit": {
@@ -3795,7 +3783,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 285,
+            "id": 288,
             "name": "Νάξου και Μικρών Κυκλάδων",
             "seat": "Νάξος",
             "regionAndUnit": {
@@ -3805,7 +3793,7 @@
             }
           },
           {
-            "id": 286,
+            "id": 289,
             "name": "Αμοργού",
             "seat": "Αμοργός",
             "regionAndUnit": {
@@ -3828,7 +3816,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 287,
+            "id": 290,
             "name": "Σύρου - Ερμούπολης",
             "seat": "Ερμούπολη",
             "regionAndUnit": {
@@ -3851,7 +3839,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 288,
+            "id": 291,
             "name": "Τήνου",
             "seat": "Τήνος",
             "regionAndUnit": {
@@ -3874,7 +3862,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 289,
+            "id": 292,
             "name": "Αντιπάρου",
             "seat": "Αντίπαρος",
             "regionAndUnit": {
@@ -3884,7 +3872,7 @@
             }
           },
           {
-            "id": 290,
+            "id": 293,
             "name": "Πάρου",
             "seat": "Πάρος",
             "regionAndUnit": {
@@ -3907,7 +3895,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 291,
+            "id": 294,
             "name": "Αγαθονησίου",
             "seat": "Μεγάλο Χωριό",
             "regionAndUnit": {
@@ -3917,7 +3905,7 @@
             }
           },
           {
-            "id": 292,
+            "id": 295,
             "name": "Πάτμου",
             "seat": "Πάτμος",
             "regionAndUnit": {
@@ -3927,7 +3915,7 @@
             }
           },
           {
-            "id": 293,
+            "id": 296,
             "name": "Λειψών",
             "seat": "Λειψοί",
             "regionAndUnit": {
@@ -3937,7 +3925,7 @@
             }
           },
           {
-            "id": 294,
+            "id": 297,
             "name": "Λέρου",
             "seat": "Αγία Μαρίνα",
             "regionAndUnit": {
@@ -3947,7 +3935,7 @@
             }
           },
           {
-            "id": 295,
+            "id": 298,
             "name": "Καλυμνίων",
             "seat": "Πόθια",
             "regionAndUnit": {
@@ -3957,7 +3945,7 @@
             }
           },
           {
-            "id": 296,
+            "id": 299,
             "name": "Αστυπάλαιας",
             "seat": "Αστυπάλαια",
             "regionAndUnit": {
@@ -3980,7 +3968,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 297,
+            "id": 300,
             "name": "Καρπάθου",
             "seat": "Κάρπαθος",
             "regionAndUnit": {
@@ -3990,7 +3978,7 @@
             }
           },
           {
-            "id": 298,
+            "id": 301,
             "name": "Ηρωικής Νήσου Κάσου",
             "seat": "Φρυ",
             "regionAndUnit": {
@@ -4013,7 +4001,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 299,
+            "id": 302,
             "name": "Κω",
             "seat": "Κως",
             "regionAndUnit": {
@@ -4023,7 +4011,7 @@
             }
           },
           {
-            "id": 300,
+            "id": 303,
             "name": "Νισύρου",
             "seat": "Μανδράκι",
             "regionAndUnit": {
@@ -4046,7 +4034,7 @@
         "carPlatesPattern": [],
         "municipalities": [
           {
-            "id": 301,
+            "id": 304,
             "name": "Τήλου",
             "seat": "Μεγάλο Χωριό",
             "regionAndUnit": {
@@ -4056,7 +4044,7 @@
             }
           },
           {
-            "id": 302,
+            "id": 305,
             "name": "Σύμης",
             "seat": "Σύμη",
             "regionAndUnit": {
@@ -4066,7 +4054,7 @@
             }
           },
           {
-            "id": 303,
+            "id": 306,
             "name": "Ρόδου",
             "seat": "Ρόδος",
             "regionAndUnit": {
@@ -4076,7 +4064,7 @@
             }
           },
           {
-            "id": 304,
+            "id": 307,
             "name": "Χάλκης",
             "seat": "Χάλκη",
             "regionAndUnit": {
@@ -4086,7 +4074,7 @@
             }
           },
           {
-            "id": 305,
+            "id": 308,
             "name": "Μεγίστης",
             "seat": "Καστελλόριζο",
             "regionAndUnit": {
@@ -4117,7 +4105,7 @@
         "carPlatesPattern": ["HK*", "HP*", "HKA*", "HKE*", "HPA*"],
         "municipalities": [
           {
-            "id": 306,
+            "id": 309,
             "name": "Βιάννου",
             "seat": "Άνω Βιάννος",
             "regionAndUnit": {
@@ -4127,7 +4115,7 @@
             }
           },
           {
-            "id": 307,
+            "id": 310,
             "name": "Μινώα Πεδιάδας",
             "seat": "Ευαγγελισμός",
             "regionAndUnit": {
@@ -4137,7 +4125,7 @@
             }
           },
           {
-            "id": 308,
+            "id": 311,
             "name": "Αρχανών - Αστερουσίων",
             "seat": "Πεζά",
             "regionAndUnit": {
@@ -4147,7 +4135,7 @@
             }
           },
           {
-            "id": 309,
+            "id": 312,
             "name": "Χερσονήσου",
             "seat": "Γούρνες",
             "regionAndUnit": {
@@ -4157,7 +4145,7 @@
             }
           },
           {
-            "id": 310,
+            "id": 313,
             "name": "Ηρακλείου",
             "seat": "Ηράκλειο",
             "regionAndUnit": {
@@ -4167,7 +4155,7 @@
             }
           },
           {
-            "id": 311,
+            "id": 314,
             "name": "Μαλεβιζίου",
             "seat": "Γάζι",
             "regionAndUnit": {
@@ -4177,7 +4165,7 @@
             }
           },
           {
-            "id": 312,
+            "id": 315,
             "name": "Γόρτυνας",
             "seat": "Άγιοι Δέκα",
             "regionAndUnit": {
@@ -4187,7 +4175,7 @@
             }
           },
           {
-            "id": 313,
+            "id": 316,
             "name": "Φαιστού",
             "seat": "Μοίρες",
             "regionAndUnit": {
@@ -4210,7 +4198,7 @@
         "carPlatesPattern": ["AN*"],
         "municipalities": [
           {
-            "id": 314,
+            "id": 317,
             "name": "Σητείας",
             "seat": "Σητεία",
             "regionAndUnit": {
@@ -4220,7 +4208,7 @@
             }
           },
           {
-            "id": 315,
+            "id": 318,
             "name": "Ιεράπετρας",
             "seat": "Ιεράπετρα",
             "regionAndUnit": {
@@ -4230,7 +4218,7 @@
             }
           },
           {
-            "id": 316,
+            "id": 319,
             "name": "Αγίου Νικολάου",
             "seat": "Άγιος Νικόλαος",
             "regionAndUnit": {
@@ -4240,7 +4228,7 @@
             }
           },
           {
-            "id": 317,
+            "id": 320,
             "name": "Οροπεδίου Λασιθίου",
             "seat": "Τζερμιάδο",
             "regionAndUnit": {
@@ -4263,7 +4251,7 @@
         "carPlatesPattern": ["PE*"],
         "municipalities": [
           {
-            "id": 318,
+            "id": 321,
             "name": "Ανωγείων",
             "seat": "Ανώγεια",
             "regionAndUnit": {
@@ -4273,7 +4261,7 @@
             }
           },
           {
-            "id": 319,
+            "id": 322,
             "name": "Μυλοποτάμου",
             "seat": "Πέραμα",
             "regionAndUnit": {
@@ -4283,7 +4271,7 @@
             }
           },
           {
-            "id": 320,
+            "id": 323,
             "name": "Αμαρίου",
             "seat": "Αγία Φωτεινή",
             "regionAndUnit": {
@@ -4293,7 +4281,7 @@
             }
           },
           {
-            "id": 321,
+            "id": 324,
             "name": "Αγίου Βασιλείου",
             "seat": "Σπήλι",
             "regionAndUnit": {
@@ -4303,7 +4291,7 @@
             }
           },
           {
-            "id": 322,
+            "id": 325,
             "name": "Ρεθύμνης",
             "seat": "Ρέθυμνο",
             "regionAndUnit": {
@@ -4326,7 +4314,7 @@
         "carPlatesPattern": ["XN*"],
         "municipalities": [
           {
-            "id": 323,
+            "id": 326,
             "name": "Αποκορώνου",
             "seat": "Βρύσες",
             "regionAndUnit": {
@@ -4336,7 +4324,7 @@
             }
           },
           {
-            "id": 324,
+            "id": 327,
             "name": "Χανίων",
             "seat": "Χανιά",
             "regionAndUnit": {
@@ -4346,7 +4334,7 @@
             }
           },
           {
-            "id": 325,
+            "id": 328,
             "name": "Πλατανιά",
             "seat": "Γεράνι",
             "regionAndUnit": {
@@ -4356,7 +4344,7 @@
             }
           },
           {
-            "id": 326,
+            "id": 329,
             "name": "Κισσάμου",
             "seat": "Κίσσαμος",
             "regionAndUnit": {
@@ -4366,7 +4354,7 @@
             }
           },
           {
-            "id": 327,
+            "id": 330,
             "name": "Καντάνου - Σελίνου",
             "seat": "Παλαιοχώρα",
             "regionAndUnit": {
@@ -4376,7 +4364,7 @@
             }
           },
           {
-            "id": 328,
+            "id": 331,
             "name": "Σφακίων",
             "seat": "Χώρα Σφακίων",
             "regionAndUnit": {
@@ -4386,7 +4374,7 @@
             }
           },
           {
-            "id": 329,
+            "id": 332,
             "name": "Γαύδου",
             "seat": "Καστρί",
             "regionAndUnit": {

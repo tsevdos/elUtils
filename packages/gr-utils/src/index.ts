@@ -3,4 +3,6 @@ export {
   getAdministrativeRegionById,
   getAdministrativeRegionByIsoCode,
   getAdministrativeUnits,
+  getAdministrativeUnitById,
+  getMunicipalities,
 } from "./geoUtils/administrativeRegions";

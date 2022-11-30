@@ -1,7 +1,7 @@
 import regionsEl from "../../data/administrative-regions-el.json";
 import regionsEn from "../../data/administrative-regions-en.json";
 
-export type Region = {
+type Region = {
   id: number;
   iso31662: string;
   name: string;
@@ -9,9 +9,9 @@ export type Region = {
   units: Unit[] | UnitWithoutMunicipalities[];
 };
 
-export type RegionWithoutUnits = Omit<Region, "units">;
+type RegionWithoutUnits = Omit<Region, "units">;
 
-export type Unit = {
+type Unit = {
   id: number;
   name: string;
   seat: string;
@@ -24,9 +24,9 @@ export type Unit = {
   municipalities: Municipality[];
 };
 
-export type UnitWithoutMunicipalities = Omit<Unit, "municipalities">;
+type UnitWithoutMunicipalities = Omit<Unit, "municipalities">;
 
-export type Municipality = {
+type Municipality = {
   id: number;
   name: string;
   seat: string;
@@ -80,31 +80,23 @@ export const getAdministrativeRegions = ({
   return regionsData;
 };
 
-type AdministrativeRegionByIdOptions = AdministrativeRegionsOptions & {
-  id?: number;
-};
+type AdministrativeRegionByIdOptions = { id: number } & AdministrativeRegionsOptions;
 
-export const getAdministrativeRegionById = ({
-  id = 1,
-  locale = "el",
-  includeMountAthos = false,
-  level = "municipality",
-}: AdministrativeRegionByIdOptions = {}): Region | RegionWithoutUnits | undefined => {
+export const getAdministrativeRegionById = (
+  options: AdministrativeRegionByIdOptions,
+): Region | RegionWithoutUnits | undefined => {
+  const { id, locale = "el", includeMountAthos = false, level = "municipality" } = options;
   const regionsData = getAdministrativeRegions({ locale, includeMountAthos, level });
 
   return regionsData.find((region) => region.id === id);
 };
 
-type AdministrativeRegionByIsoCodeOptions = AdministrativeRegionsOptions & {
-  isocode?: string;
-};
+type AdministrativeRegionByIsoCodeOptions = { isocode: string } & AdministrativeRegionsOptions;
 
-export const getAdministrativeRegionByIsoCode = ({
-  isocode = "GR-A",
-  locale = "el",
-  includeMountAthos = false,
-  level = "municipality",
-}: AdministrativeRegionByIsoCodeOptions = {}): Region | RegionWithoutUnits | undefined => {
+export const getAdministrativeRegionByIsoCode = (
+  options: AdministrativeRegionByIsoCodeOptions,
+): Region | RegionWithoutUnits | undefined => {
+  const { isocode, locale = "el", includeMountAthos = false, level = "municipality" } = options;
   const regionsData = getAdministrativeRegions({ locale, includeMountAthos, level });
 
   return regionsData.find((region) => region.iso31662 === isocode);
@@ -131,4 +123,27 @@ export const getAdministrativeUnits = ({
   }
 
   return administrativeUnits;
+};
+
+type AdministrativeUnitByIdOptions = { id: number } & AdministrativeUnitsOptions;
+
+export const getAdministrativeUnitById = (
+  options: AdministrativeUnitByIdOptions,
+): Unit | UnitWithoutMunicipalities | undefined => {
+  const { id, locale = "el", includeMountAthos = false, level = "municipality" } = options;
+  const unitsData = getAdministrativeUnits({ locale, includeMountAthos, level });
+
+  return unitsData.find((region) => region.id === id);
+};
+
+type MunicipalitiesOptions = {
+  locale?: "el" | "en";
+};
+
+export const getMunicipalities = ({ locale = "el" }: MunicipalitiesOptions = {}): Municipality[] => {
+  const municipalities = (getAdministrativeUnits({ locale }) as Unit[]).flatMap(({ municipalities }) => [
+    ...municipalities,
+  ]);
+
+  return municipalities;
 };
