@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Ήπειρος",
+    "seat": "Ιωάννινα",
+    "administrativeRegions": [
+      {
+        "id": 4,
+        "iso31662": "GR-D"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Θεσσαλία",
+    "seat": "Λάρισα",
+    "administrativeRegions": [
+      {
+        "id": 5,
+        "iso31662": "GR-E"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Θράκη",
+    "seat": "Κομοτηνή",
+    "administrativeRegions": [
+      {
+        "id": 1,
+        "iso31662": "GR-A"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Κρήτη",
+    "seat": "Ηράκλειο",
+    "administrativeRegions": [
+      {
+        "id": 13,
+        "iso31662": "GR-M"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Μακεδονία",
+    "seat": "Θεσσαλονίκη",
+    "administrativeRegions": [
+      {
+        "id": 1,
+        "iso31662": "GR-A"
+      },
+      {
+        "id": 3,
+        "iso31662": "GR-C"
+      },
+      {
+        "id": 2,
+        "iso31662": "GR-B"
+      },
+      {
+        "id": 14,
+        "iso31662": "GR-69"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Νήσοι Αιγαίου Πελάγους",
+    "seat": "Μυτιλήνη",
+    "administrativeRegions": [
+      {
+        "id": 11,
+        "iso31662": "GR-K"
+      },
+      {
+        "id": 12,
+        "iso31662": "GR-L"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Νήσοι Ιονίου Πελάγους / Επτάνησα",
+    "seat": "Κέρκυρα",
+    "administrativeRegions": [
+      {
+        "id": 9,
+        "iso31662": "GR-I"
+      },
+      {
+        "id": 6,
+        "iso31662": "GR-F"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Πελοπόννησος",
+    "seat": "Πάτρα",
+    "administrativeRegions": [
+      {
+        "id": 9,
+        "iso31662": "GR-I"
+      },
+      {
+        "id": 7,
+        "iso31662": "GR-G"
+      },
+      {
+        "id": 10,
+        "iso31662": "GR-J"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Στερεά Ελλάδα",
+    "seat": "Αθήνα",
+    "administrativeRegions": [
+      {
+        "id": 9,
+        "iso31662": "GR-I"
+      },
+      {
+        "id": 7,
+        "iso31662": "GR-G"
+      },
+      {
+        "id": 8,
+        "iso31662": "GR-H"
+      }
+    ]
+  }
+]

@@ -6,3 +6,5 @@ export {
   getAdministrativeUnitById,
   getMunicipalities,
 } from "./geoUtils/administrativeRegions";
+
+export { getGeographicRegions, getGeographicRegionById } from "./geoUtils/geographicRegions";

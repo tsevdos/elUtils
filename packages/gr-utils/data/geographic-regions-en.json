@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Epirus",
+    "seat": "Ioannina",
+    "administrativeRegions": [
+      {
+        "id": 4,
+        "iso31662": "GR-D"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Thessaly",
+    "seat": "Larissa",
+    "administrativeRegions": [
+      {
+        "id": 5,
+        "iso31662": "GR-E"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Thrace",
+    "seat": "Komotini",
+    "administrativeRegions": [
+      {
+        "id": 1,
+        "iso31662": "GR-A"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Crete",
+    "seat": "Heraklion",
+    "administrativeRegions": [
+      {
+        "id": 13,
+        "iso31662": "GR-M"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Macedonia",
+    "seat": "Thessaloniki",
+    "administrativeRegions": [
+      {
+        "id": 1,
+        "iso31662": "GR-A"
+      },
+      {
+        "id": 3,
+        "iso31662": "GR-C"
+      },
+      {
+        "id": 2,
+        "iso31662": "GR-B"
+      },
+      {
+        "id": 14,
+        "iso31662": "GR-69"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Aegean Islands",
+    "seat": "Mytilene",
+    "administrativeRegions": [
+      {
+        "id": 11,
+        "iso31662": "GR-K"
+      },
+      {
+        "id": 12,
+        "iso31662": "GR-L"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Ionian Islands",
+    "seat": "Corfu",
+    "administrativeRegions": [
+      {
+        "id": 9,
+        "iso31662": "GR-I"
+      },
+      {
+        "id": 6,
+        "iso31662": "GR-F"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Peloponnese",
+    "seat": "Patras",
+    "administrativeRegions": [
+      {
+        "id": 9,
+        "iso31662": "GR-I"
+      },
+      {
+        "id": 7,
+        "iso31662": "GR-G"
+      },
+      {
+        "id": 10,
+        "iso31662": "GR-J"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Central Greece",
+    "seat": "Athens",
+    "administrativeRegions": [
+      {
+        "id": 9,
+        "iso31662": "GR-I"
+      },
+      {
+        "id": 7,
+        "iso31662": "GR-G"
+      },
+      {
+        "id": 8,
+        "iso31662": "GR-H"
+      }
+    ]
+  }
+]
