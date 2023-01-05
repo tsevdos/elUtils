@@ -13,7 +13,6 @@
           "id": 1,
           "iso31662": "GR-A"
         },
-        "postalCodePattern": ["66xxx"],
         "carPlatesPattern": ["PM*", "TO*"],
         "municipalities": []
       },
@@ -25,7 +24,6 @@
           "id": 1,
           "iso31662": "GR-A"
         },
-        "postalCodePattern": ["68xxx"],
         "carPlatesPattern": ["EB*", "MX*", "OP*"],
         "municipalities": []
       },
@@ -37,7 +35,6 @@
           "id": 1,
           "iso31662": "GR-A"
         },
-        "postalCodePattern": ["64xxx", "65xxx"],
         "carPlatesPattern": ["KB*", "AB*"],
         "municipalities": []
       },
@@ -49,7 +46,6 @@
           "id": 1,
           "iso31662": "GR-A"
         },
-        "postalCodePattern": ["64004"],
         "carPlatesPattern": ["KB*", "AB*"],
         "municipalities": []
       },
@@ -61,7 +57,6 @@
           "id": 1,
           "iso31662": "GR-A"
         },
-        "postalCodePattern": ["67xxx"],
         "carPlatesPattern": ["AH*", "HO*", "HTK", "HTM", "HTN", "HTO", "HTP", "HTT", "HTY", "HTX"],
         "municipalities": []
       },
@@ -73,7 +68,6 @@
           "id": 1,
           "iso31662": "GR-A"
         },
-        "postalCodePattern": ["69xxx"],
         "carPlatesPattern": ["KO*", "KK*", "TT*"],
         "municipalities": []
       }
@@ -93,7 +87,6 @@
           "id": 2,
           "iso31662": "GR-B"
         },
-        "postalCodePattern": ["59xxx"],
         "carPlatesPattern": ["HM*", "HX*"],
         "municipalities": []
       },
@@ -105,7 +98,6 @@
           "id": 2,
           "iso31662": "GR-B"
         },
-        "postalCodePattern": ["54xxx", "57xxx"],
         "carPlatesPattern": ["N*"],
         "municipalities": []
       },
@@ -117,7 +109,6 @@
           "id": 2,
           "iso31662": "GR-B"
         },
-        "postalCodePattern": ["61xxx"],
         "carPlatesPattern": ["KI*", "EX*"],
         "municipalities": []
       },
@@ -129,7 +120,6 @@
           "id": 2,
           "iso31662": "GR-B"
         },
-        "postalCodePattern": ["58xxx"],
         "carPlatesPattern": ["EE*", "MM*"],
         "municipalities": []
       },
@@ -141,7 +131,6 @@
           "id": 2,
           "iso31662": "GR-B"
         },
-        "postalCodePattern": ["60xxx"],
         "carPlatesPattern": ["KN*", "TI*"],
         "municipalities": []
       },
@@ -153,7 +142,6 @@
           "id": 2,
           "iso31662": "GR-B"
         },
-        "postalCodePattern": ["62xxx"],
         "carPlatesPattern": ["EP*", "IX*"],
         "municipalities": []
       },
@@ -165,7 +153,6 @@
           "id": 2,
           "iso31662": "GR-B"
         },
-        "postalCodePattern": ["63xxx"],
         "carPlatesPattern": ["XK*", "MA*"],
         "municipalities": []
       }
@@ -185,7 +172,6 @@
           "id": 3,
           "iso31662": "GR-C"
         },
-        "postalCodePattern": ["51xxx"],
         "carPlatesPattern": ["PN*"],
         "municipalities": []
       },
@@ -197,7 +183,6 @@
           "id": 3,
           "iso31662": "GR-C"
         },
-        "postalCodePattern": ["52xxx"],
         "carPlatesPattern": ["KT*"],
         "municipalities": []
       },
@@ -209,7 +194,6 @@
           "id": 3,
           "iso31662": "GR-C"
         },
-        "postalCodePattern": ["50xxx"],
         "carPlatesPattern": ["KZ*", "MN*"],
         "municipalities": []
       },
@@ -221,7 +205,6 @@
           "id": 3,
           "iso31662": "GR-C"
         },
-        "postalCodePattern": ["53xxx"],
         "carPlatesPattern": ["PA*"],
         "municipalities": []
       }
@@ -241,7 +224,6 @@
           "id": 4,
           "iso31662": "GR-D"
         },
-        "postalCodePattern": ["47xxx"],
         "carPlatesPattern": ["AT*"],
         "municipalities": []
       },
@@ -253,7 +235,6 @@
           "id": 4,
           "iso31662": "GR-D"
         },
-        "postalCodePattern": ["46xxx"],
         "carPlatesPattern": ["HN*"],
         "municipalities": []
       },
@@ -265,7 +246,6 @@
           "id": 4,
           "iso31662": "GR-D"
         },
-        "postalCodePattern": ["44xxx", "45xxx"],
         "carPlatesPattern": ["IN*", "II*"],
         "municipalities": []
       },
@@ -277,7 +257,6 @@
           "id": 4,
           "iso31662": "GR-D"
         },
-        "postalCodePattern": ["48xxx"],
         "carPlatesPattern": ["PZ*", "TX*"],
         "municipalities": []
       }
@@ -297,7 +276,6 @@
           "id": 5,
           "iso31662": "GR-E"
         },
-        "postalCodePattern": ["43xxx"],
         "carPlatesPattern": ["KA*"],
         "municipalities": []
       },
@@ -309,7 +287,6 @@
           "id": 5,
           "iso31662": "GR-E"
         },
-        "postalCodePattern": ["40xxx", "41xxx"],
         "carPlatesPattern": ["PI*", "PP*", "PT*"],
         "municipalities": []
       },
@@ -321,7 +298,6 @@
           "id": 5,
           "iso31662": "GR-E"
         },
-        "postalCodePattern": ["37xxx", "38xxx"],
         "carPlatesPattern": ["BO*", "BO*", "BB*", "BA*", "BT*"],
         "municipalities": []
       },
@@ -333,7 +309,6 @@
           "id": 5,
           "iso31662": "GR-E"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -345,7 +320,6 @@
           "id": 5,
           "iso31662": "GR-E"
         },
-        "postalCodePattern": ["42xxx"],
         "carPlatesPattern": ["TK*", "TN*"],
         "municipalities": []
       }
@@ -365,7 +339,6 @@
           "id": 6,
           "iso31662": "GR-F"
         },
-        "postalCodePattern": ["29xxx"],
         "carPlatesPattern": ["ZA*"],
         "municipalities": []
       },
@@ -377,7 +350,6 @@
           "id": 6,
           "iso31662": "GR-F"
         },
-        "postalCodePattern": ["49xxx"],
         "carPlatesPattern": ["KY*"],
         "municipalities": []
       },
@@ -389,7 +361,6 @@
           "id": 6,
           "iso31662": "GR-F"
         },
-        "postalCodePattern": ["28xxx"],
         "carPlatesPattern": ["KE*"],
         "municipalities": []
       },
@@ -401,7 +372,6 @@
           "id": 6,
           "iso31662": "GR-F"
         },
-        "postalCodePattern": ["28xxx"],
         "carPlatesPattern": ["KE*"],
         "municipalities": []
       },
@@ -413,7 +383,6 @@
           "id": 6,
           "iso31662": "GR-F"
         },
-        "postalCodePattern": ["31xxx"],
         "carPlatesPattern": ["EY*"],
         "municipalities": []
       }
@@ -433,7 +402,6 @@
           "id": 7,
           "iso31662": "GR-G"
         },
-        "postalCodePattern": ["30xxx"],
         "carPlatesPattern": ["AI*", "ME*"],
         "municipalities": []
       },
@@ -445,7 +413,6 @@
           "id": 7,
           "iso31662": "GR-G"
         },
-        "postalCodePattern": ["25xxx", "26xxx"],
         "carPlatesPattern": ["AX*", "AZ*"],
         "municipalities": []
       },
@@ -457,7 +424,6 @@
           "id": 7,
           "iso31662": "GR-G"
         },
-        "postalCodePattern": ["27xxx"],
         "carPlatesPattern": [],
         "municipalities": []
       }
@@ -477,7 +443,6 @@
           "id": 8,
           "iso31662": "GR-H"
         },
-        "postalCodePattern": ["32xxx"],
         "carPlatesPattern": ["BI*"],
         "municipalities": []
       },
@@ -489,7 +454,6 @@
           "id": 8,
           "iso31662": "GR-H"
         },
-        "postalCodePattern": ["34xxx"],
         "carPlatesPattern": ["XA*", "EH*"],
         "municipalities": []
       },
@@ -501,7 +465,6 @@
           "id": 8,
           "iso31662": "GR-H"
         },
-        "postalCodePattern": ["36xxx"],
         "carPlatesPattern": ["KH*"],
         "municipalities": []
       },
@@ -513,7 +476,6 @@
           "id": 8,
           "iso31662": "GR-H"
         },
-        "postalCodePattern": ["35xxx"],
         "carPlatesPattern": ["MI*"],
         "municipalities": []
       },
@@ -525,7 +487,6 @@
           "id": 8,
           "iso31662": "GR-H"
         },
-        "postalCodePattern": ["33xxx"],
         "carPlatesPattern": ["AM*"],
         "municipalities": []
       }
@@ -545,7 +506,6 @@
           "id": 9,
           "iso31662": "GR-I"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -557,7 +517,6 @@
           "id": 9,
           "iso31662": "GR-I"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -569,7 +528,6 @@
           "id": 9,
           "iso31662": "GR-I"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -581,7 +539,6 @@
           "id": 9,
           "iso31662": "GR-I"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -593,7 +550,6 @@
           "id": 9,
           "iso31662": "GR-I"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -605,7 +561,6 @@
           "id": 9,
           "iso31662": "GR-I"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -617,7 +572,6 @@
           "id": 9,
           "iso31662": "GR-I"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -629,7 +583,6 @@
           "id": 9,
           "iso31662": "GR-I"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       }
@@ -649,7 +602,6 @@
           "id": 10,
           "iso31662": "GR-J"
         },
-        "postalCodePattern": ["21xxx"],
         "carPlatesPattern": ["AP*"],
         "municipalities": []
       },
@@ -661,7 +613,6 @@
           "id": 10,
           "iso31662": "GR-J"
         },
-        "postalCodePattern": ["22xxx"],
         "carPlatesPattern": ["TP*"],
         "municipalities": []
       },
@@ -673,7 +624,6 @@
           "id": 10,
           "iso31662": "GR-J"
         },
-        "postalCodePattern": ["20xxx"],
         "carPlatesPattern": ["KP*"],
         "municipalities": []
       },
@@ -685,7 +635,6 @@
           "id": 10,
           "iso31662": "GR-J"
         },
-        "postalCodePattern": ["23xxx"],
         "carPlatesPattern": ["AK*"],
         "municipalities": []
       },
@@ -697,7 +646,6 @@
           "id": 10,
           "iso31662": "GR-J"
         },
-        "postalCodePattern": ["24xxx"],
         "carPlatesPattern": ["KM*", "MZ*"],
         "municipalities": []
       }
@@ -717,7 +665,6 @@
           "id": 11,
           "iso31662": "GR-K"
         },
-        "postalCodePattern": ["81xxx", "69xxx"],
         "carPlatesPattern": ["MI*", "MY*"],
         "municipalities": []
       },
@@ -729,7 +676,6 @@
           "id": 11,
           "iso31662": "GR-K"
         },
-        "postalCodePattern": ["83xxx"],
         "carPlatesPattern": ["MO*"],
         "municipalities": []
       },
@@ -741,7 +687,6 @@
           "id": 11,
           "iso31662": "GR-K"
         },
-        "postalCodePattern": ["814xx"],
         "carPlatesPattern": ["MH*"],
         "municipalities": []
       },
@@ -753,7 +698,6 @@
           "id": 11,
           "iso31662": "GR-K"
         },
-        "postalCodePattern": ["227xx"],
         "carPlatesPattern": ["MO*"],
         "municipalities": []
       },
@@ -765,7 +709,6 @@
           "id": 11,
           "iso31662": "GR-K"
         },
-        "postalCodePattern": ["82xxx"],
         "carPlatesPattern": ["XI*"],
         "municipalities": []
       }
@@ -785,7 +728,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -797,7 +739,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -809,7 +750,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -821,7 +761,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -833,7 +772,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -845,7 +783,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -857,7 +794,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -869,7 +805,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -881,7 +816,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -893,7 +827,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -905,7 +838,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -917,7 +849,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       },
@@ -929,7 +860,6 @@
           "id": 12,
           "iso31662": "GR-L"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       }
@@ -949,7 +879,6 @@
           "id": 13,
           "iso31662": "GR-M"
         },
-        "postalCodePattern": ["70xxx", "71xxx"],
         "carPlatesPattern": ["HK*", "HP*", "HKA*", "HKE*", "HPA*"],
         "municipalities": []
       },
@@ -961,7 +890,6 @@
           "id": 13,
           "iso31662": "GR-M"
         },
-        "postalCodePattern": ["284xx"],
         "carPlatesPattern": ["AN*"],
         "municipalities": []
       },
@@ -973,7 +901,6 @@
           "id": 13,
           "iso31662": "GR-M"
         },
-        "postalCodePattern": ["74xxx"],
         "carPlatesPattern": ["PE*"],
         "municipalities": []
       },
@@ -985,7 +912,6 @@
           "id": 13,
           "iso31662": "GR-M"
         },
-        "postalCodePattern": ["73xxx"],
         "carPlatesPattern": ["XN*"],
         "municipalities": []
       }
@@ -1005,7 +931,6 @@
           "id": 14,
           "iso31662": "GR-69"
         },
-        "postalCodePattern": [],
         "carPlatesPattern": [],
         "municipalities": []
       }
