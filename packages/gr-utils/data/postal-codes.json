@@ -3,9 +3,10 @@
     "id": 1,
     "name": "Νομός Αιτωλοακαρνανίας",
     "seat": "Μεσολόγγι",
-    "administrativeRegion": {
-      "id": 7,
-      "iso31662": "GR-G"
+    "regionAndUnit": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 32
     },
     "postalCodes": [
       "30021",
@@ -50,9 +51,10 @@
     "id": 2,
     "name": "Νομός Αργολίδας",
     "seat": "Ναύπλιο",
-    "administrativeRegion": {
-      "id": 10,
-      "iso31662": "GR-J"
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 48
     },
     "postalCodes": [
       "21055",
@@ -75,9 +77,10 @@
     "id": 3,
     "name": "Νομός Αρκαδίας",
     "seat": "Τρίπολη",
-    "administrativeRegion": {
-      "id": 10,
-      "iso31662": "GR-J"
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 49
     },
     "postalCodes": [
       "22006",
@@ -120,9 +123,10 @@
     "id": 4,
     "name": "Νομός Άρτας",
     "seat": "Άρτα",
-    "administrativeRegion": {
-      "id": 4,
-      "iso31662": "GR-D"
+    "regionAndUnit": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 18
     },
     "postalCodes": [
       "47043",
@@ -144,9 +148,10 @@
     "id": 5,
     "name": "Νομός Αθηνών",
     "seat": "Αθήνα",
-    "administrativeRegion": {
-      "id": 9,
-      "iso31662": "GR-I"
+    "regionAndUnit": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 42
     },
     "postalCodes": [
       "12351",
@@ -474,9 +479,10 @@
     "id": 6,
     "name": "Νομός Αχαΐας",
     "seat": "Πάτρα",
-    "administrativeRegion": {
-      "id": 7,
-      "iso31662": "GR-G"
+    "regionAndUnit": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 33
     },
     "postalCodes": [
       "25010",
@@ -524,9 +530,10 @@
     "id": 7,
     "name": "Νομός Βοιωτίας",
     "seat": "Λιβαδειά",
-    "administrativeRegion": {
-      "id": 8,
-      "iso31662": "GR-H"
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 35
     },
     "postalCodes": [
       "32007",
@@ -552,9 +559,10 @@
     "id": 8,
     "name": "Νομός Γρεβενών",
     "seat": "Γρεβενά",
-    "administrativeRegion": {
-      "id": 3,
-      "iso31662": "GR-C"
+    "regionAndUnit": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 14
     },
     "postalCodes": ["51030", "50004", "51100", "51200", "51031", "50007", "51032"]
   },
@@ -562,9 +570,10 @@
     "id": 9,
     "name": "Νομός Δράμας",
     "seat": "Δράμα",
-    "administrativeRegion": {
-      "id": 1,
-      "iso31662": "GR-A"
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 1
     },
     "postalCodes": ["66300", "66100", "66031", "66033", "66032", "66036", "66037", "66035", "66200", "66038", "66034"]
   },
@@ -572,9 +581,10 @@
     "id": 10,
     "name": "Νομός Δωδεκανήσου",
     "seat": "Ρόδος",
-    "administrativeRegion": {
-      "id": 12,
-      "iso31662": "GR-L"
+    "regionAndUnit": {
+      "regionId": 12,
+      "regionIso31662": "GR-L",
+      "unitId": 70
     },
     "postalCodes": [
       "84008",
@@ -610,9 +620,10 @@
     "id": 11,
     "name": "Νομός Έβρου",
     "seat": "Αλεξανδρούπολη",
-    "administrativeRegion": {
-      "id": 1,
-      "iso31662": "GR-A"
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 2
     },
     "postalCodes": [
       "68011",
@@ -641,9 +652,10 @@
     "id": 12,
     "name": "Νομός Ευβοίας",
     "seat": "Χαλκίδα",
-    "administrativeRegion": {
-      "id": 8,
-      "iso31662": "GR-H"
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 36
     },
     "postalCodes": [
       "34010",
@@ -678,9 +690,10 @@
     "id": 13,
     "name": "Νομός Ευρυτανίας",
     "seat": "Καρπενήσι",
-    "administrativeRegion": {
-      "id": 8,
-      "iso31662": "GR-H"
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 37
     },
     "postalCodes": ["36081", "36073", "36072", "43100", "36100", "36071", "36076", "36075", "36074", "36070", "36080"]
   },
@@ -688,9 +701,10 @@
     "id": 14,
     "name": "Νομός Ζακύνθου",
     "seat": "Ζάκυνθος",
-    "administrativeRegion": {
-      "id": 6,
-      "iso31662": "GR-F"
+    "regionAndUnit": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 27
     },
     "postalCodes": ["29091", "29100", "29090", "29092"]
   },
@@ -698,9 +712,10 @@
     "id": 15,
     "name": "Νομός Ηλείας",
     "seat": "Πύργος",
-    "administrativeRegion": {
-      "id": 7,
-      "iso31662": "GR-G"
+    "regionAndUnit": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 34
     },
     "postalCodes": [
       "27200",
@@ -733,9 +748,10 @@
     "id": 16,
     "name": "Νομός Ημαθίας",
     "seat": "Βέροια",
-    "administrativeRegion": {
-      "id": 2,
-      "iso31662": "GR-B"
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 7
     },
     "postalCodes": ["59300", "59100", "59034", "59035", "59033", "59031", "59200", "59032"]
   },
@@ -743,9 +759,10 @@
     "id": 17,
     "name": "Νομός Ηρακλείου",
     "seat": "Ηράκλειο",
-    "administrativeRegion": {
-      "id": 9,
-      "iso31662": "GR-I"
+    "regionAndUnit": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 71
     },
     "postalCodes": [
       "70003",
@@ -789,9 +806,10 @@
     "id": 18,
     "name": "Νομός Θεσπρωτίας",
     "seat": "Ηγουμενίτσα",
-    "administrativeRegion": {
-      "id": 4,
-      "iso31662": "GR-D"
+    "regionAndUnit": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 19
     },
     "postalCodes": ["46032", "44017", "46031", "46100", "46033", "46030", "46200", "48060", "46300"]
   },
@@ -799,9 +817,10 @@
     "id": 19,
     "name": "Νομός Θεσσαλονίκης",
     "seat": "Θεσσαλονίκη",
-    "administrativeRegion": {
-      "id": 2,
-      "iso31662": "GR-B"
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 8
     },
     "postalCodes": [
       "57003",
@@ -899,9 +918,10 @@
     "id": 20,
     "name": "Νομός Ιωαννίνων",
     "seat": "Ιωάννινα",
-    "administrativeRegion": {
-      "id": 4,
-      "iso31662": "GR-D"
+    "regionAndUnit": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 20
     },
     "postalCodes": [
       "44008",
@@ -943,9 +963,10 @@
     "id": 21,
     "name": "Νομός Καβάλας",
     "seat": "Καβάλα",
-    "administrativeRegion": {
-      "id": 1,
-      "iso31662": "GR-A"
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 3
     },
     "postalCodes": [
       "64012",
@@ -975,9 +996,10 @@
     "id": 22,
     "name": "Νομός Καρδίτσας",
     "seat": "Καρδίτσα",
-    "administrativeRegion": {
-      "id": 5,
-      "iso31662": "GR-E"
+    "regionAndUnit": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 22
     },
     "postalCodes": [
       "43061",
@@ -1000,9 +1022,10 @@
     "id": 23,
     "name": "Νομός Καστοριάς",
     "seat": "Καστοριά",
-    "administrativeRegion": {
-      "id": 3,
-      "iso31662": "GR-C"
+    "regionAndUnit": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 15
     },
     "postalCodes": [
       "52058",
@@ -1024,9 +1047,10 @@
     "id": 24,
     "name": "Νομός Κέρκυρας",
     "seat": "Κέρκυρα",
-    "administrativeRegion": {
-      "id": 6,
-      "iso31662": "GR-F"
+    "regionAndUnit": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 28
     },
     "postalCodes": ["49082", "49081", "49084", "49100", "49080", "49083"]
   },
@@ -1034,9 +1058,10 @@
     "id": 25,
     "name": "Νομός Κεφαλληνίας",
     "seat": "Αργοστόλι",
-    "administrativeRegion": {
-      "id": 6,
-      "iso31662": "GR-F"
+    "regionAndUnit": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 29
     },
     "postalCodes": ["28081", "28100", "28085", "28300", "28083", "28200", "28086", "28080", "28301", "28084", "28082"]
   },
@@ -1044,9 +1069,10 @@
     "id": 26,
     "name": "Νομός Κιλκίς",
     "seat": "Κιλκίς",
-    "administrativeRegion": {
-      "id": 2,
-      "iso31662": "GR-B"
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 9
     },
     "postalCodes": [
       "61400",
@@ -1069,9 +1095,10 @@
     "id": 27,
     "name": "Νομός Κοζάνης",
     "seat": "Κοζάνη",
-    "administrativeRegion": {
-      "id": 3,
-      "iso31662": "GR-C"
+    "regionAndUnit": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 16
     },
     "postalCodes": [
       "50004",
@@ -1097,8 +1124,9 @@
     "name": "Νομός Κορινθίας",
     "seat": "Κόρινθος",
     "administrativeRegion": {
-      "id": 10,
-      "iso31662": "GR-J"
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 50
     },
     "postalCodes": [
       "20003",
@@ -1130,8 +1158,9 @@
     "name": "Νομός Κυκλάδων",
     "seat": "Ερμούπολη",
     "administrativeRegion": {
-      "id": 12,
-      "iso31662": "GR-L"
+      "regionId": 12,
+      "regionIso31662": "GR-L",
+      "unitId": 64
     },
     "postalCodes": [
       "84801",
@@ -1171,8 +1200,9 @@
     "name": "Νομός Λακωνίας",
     "seat": "Σπάρτη",
     "administrativeRegion": {
-      "id": 10,
-      "iso31662": "GR-J"
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 51
     },
     "postalCodes": [
       "23061",
@@ -1206,8 +1236,9 @@
     "name": "Νομός Λάρισας",
     "seat": "Λάρισα",
     "administrativeRegion": {
-      "id": 5,
-      "iso31662": "GR-E"
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 23
     },
     "postalCodes": [
       "40003",
@@ -1244,8 +1275,9 @@
     "name": "Νομός Λασιθίου",
     "seat": "Άγιος Νικόλαος",
     "administrativeRegion": {
-      "id": 13,
-      "iso31662": "GR-M"
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 72
     },
     "postalCodes": [
       "72100",
@@ -1269,8 +1301,9 @@
     "name": "Νομός Λέσβου",
     "seat": "Μυτιλήνη",
     "administrativeRegion": {
-      "id": 11,
-      "iso31662": "GR-K"
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 53
     },
     "postalCodes": [
       "81102",
@@ -1299,8 +1332,9 @@
     "name": "Νομός Λευκάδας",
     "seat": "Λευκάδα",
     "administrativeRegion": {
-      "id": 6,
-      "iso31662": "GR-F"
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 31
     },
     "postalCodes": ["31083", "31082", "31081", "31080", "31100"]
   },
@@ -1309,8 +1343,9 @@
     "name": "Νομός Μαγνησίας",
     "seat": "Βόλος",
     "administrativeRegion": {
-      "id": 5,
-      "iso31662": "GR-E"
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 24
     },
     "postalCodes": [
       "37200",
@@ -1352,8 +1387,9 @@
     "name": "Νομός Μεσσηνίας",
     "seat": "Καλαμάτα",
     "administrativeRegion": {
-      "id": 10,
-      "iso31662": "GR-J"
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 52
     },
     "postalCodes": [
       "24024",
@@ -1395,8 +1431,9 @@
     "name": "Νομός Ξάνθης",
     "seat": "Ξάνθη",
     "administrativeRegion": {
-      "id": 1,
-      "iso31662": "GR-A"
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 5
     },
     "postalCodes": ["67061", "67064", "67200", "67300", "67063", "66037", "67100", "66035", "67062"]
   },
@@ -1405,8 +1442,9 @@
     "name": "Νομός Πέλλας",
     "seat": "Έδεσσα",
     "administrativeRegion": {
-      "id": 2,
-      "iso31662": "GR-B"
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 10
     },
     "postalCodes": ["58400", "58002", "58100", "58200", "58004", "58001", "57100", "58300", "58005", "58500", "58003"]
   },
@@ -1415,8 +1453,9 @@
     "name": "Νομός Πιερίας",
     "seat": "Κατερίνη",
     "administrativeRegion": {
-      "id": 2,
-      "iso31662": "GR-B"
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 11
     },
     "postalCodes": ["60300", "60100", "60064", "60061", "60062", "60063", "60200", "60066", "60065"]
   },
@@ -1425,8 +1464,9 @@
     "name": "Νομός Πρέβεζας",
     "seat": "Πρέβεζα",
     "administrativeRegion": {
-      "id": 4,
-      "iso31662": "GR-D"
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 21
     },
     "postalCodes": ["44009", "48300", "48062", "48061", "48060", "48100", "48200"]
   },
@@ -1435,8 +1475,9 @@
     "name": "Νομός Ρεθύμνης",
     "seat": "Ρέθυμνο",
     "administrativeRegion": {
-      "id": 13,
-      "iso31662": "GR-M"
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 73
     },
     "postalCodes": [
       "74056",
@@ -1460,8 +1501,9 @@
     "name": "Νομός Ροδόπης",
     "seat": "Κομοτηνή",
     "administrativeRegion": {
-      "id": 1,
-      "iso31662": "GR-A"
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 6
     },
     "postalCodes": ["69200", "69100", "67063", "69400", "69500", "69300"]
   },
@@ -1470,8 +1512,9 @@
     "name": "Νομός Σάμου",
     "seat": "Σάμος",
     "administrativeRegion": {
-      "id": 11,
-      "iso31662": "GR-K"
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 56
     },
     "postalCodes": ["83300", "83302", "83200", "83102", "83101", "83103", "83103", "83104", "83301", "83100", "83400"]
   },
@@ -1480,8 +1523,9 @@
     "name": "Νομός Σερρών",
     "seat": "Σέρρες",
     "administrativeRegion": {
-      "id": 2,
-      "iso31662": "GR-B"
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 12
     },
     "postalCodes": [
       "62051",
@@ -1518,8 +1562,9 @@
     "name": "Νομός Τρικάλων",
     "seat": "Τρίκαλα",
     "administrativeRegion": {
-      "id": 5,
-      "iso31662": "GR-E"
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 26
     },
     "postalCodes": [
       "42034",
@@ -1541,8 +1586,9 @@
     "name": "Νομός Φθιώτιδας",
     "seat": "Λαμία",
     "administrativeRegion": {
-      "id": 8,
-      "iso31662": "GR-H"
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 38
     },
     "postalCodes": [
       "35017",
@@ -1574,8 +1620,9 @@
     "name": "Νομός Φλώρινας",
     "seat": "Φλώρινα",
     "administrativeRegion": {
-      "id": 3,
-      "iso31662": "GR-C"
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 17
     },
     "postalCodes": [
       "53077",
@@ -1598,8 +1645,9 @@
     "name": "Νομός Φωκίδας",
     "seat": "Άμφισσα",
     "administrativeRegion": {
-      "id": 8,
-      "iso31662": "GR-H"
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 39
     },
     "postalCodes": [
       "33100",
@@ -1625,8 +1673,9 @@
     "name": "Νομός Χαλκιδικής",
     "seat": "Πολύγυρος",
     "administrativeRegion": {
-      "id": 2,
-      "iso31662": "GR-B"
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 13
     },
     "postalCodes": [
       "63078",
@@ -1659,8 +1708,9 @@
     "name": "Νομός Χανίων",
     "seat": "Χανιά",
     "administrativeRegion": {
-      "id": 13,
-      "iso31662": "GR-M"
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 74
     },
     "postalCodes": [
       "73005",
@@ -1697,8 +1747,9 @@
     "name": "Νομός Χίου",
     "seat": "Χίος",
     "administrativeRegion": {
-      "id": 11,
-      "iso31662": "GR-K"
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 57
     },
     "postalCodes": ["82103", "82200", "82102", "82300", "82101", "82100", "82104"]
   }
