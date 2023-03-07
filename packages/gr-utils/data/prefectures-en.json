@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "name": "Athens Prefecture",
+    "seat": "Athens",
+    "regionAndUnit": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 42
+    }
+  },
+  {
+    "id": 2,
+    "name": "East Attica",
+    "seat": "Pallini",
+    "regionAndUnit": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 46
+    }
+  },
+  {
+    "id": 3,
+    "name": "West Attica",
+    "seat": "Elefsina",
+    "regionAndUnit": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 47
+    }
+  },
+  {
+    "id": 4,
+    "name": "Piraeus",
+    "seat": "Piraeus",
+    "regionAndUnit": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 44
+    }
+  },
+  {
+    "id": 5,
+    "name": "Euboea",
+    "seat": "Chalcis",
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 36
+    }
+  },
+  {
+    "id": 6,
+    "name": "Evrytania",
+    "seat": "Karpenisi",
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 37
+    }
+  },
+  {
+    "id": 7,
+    "name": "Phocis",
+    "seat": "Amfissa",
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 39
+    }
+  },
+  {
+    "id": 8,
+    "name": "Phthiotis",
+    "seat": "Lamia",
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 38
+    }
+  },
+  {
+    "id": 9,
+    "name": "Boeotia",
+    "seat": "Livadeia",
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 35
+    }
+  },
+  {
+    "id": 10,
+    "name": "Chalkidiki",
+    "seat": "Polygyros",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 13
+    }
+  },
+  {
+    "id": 11,
+    "name": "Imathia",
+    "seat": "Veroia",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 7
+    }
+  },
+  {
+    "id": 12,
+    "name": "Kilkis",
+    "seat": "Kilkis",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 9
+    }
+  },
+  {
+    "id": 13,
+    "name": "Pella",
+    "seat": "Edessa",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 10
+    }
+  },
+  {
+    "id": 14,
+    "name": "Pieria",
+    "seat": "Katerini",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 11
+    }
+  },
+  {
+    "id": 15,
+    "name": "Serres",
+    "seat": "Serres",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 12
+    }
+  },
+  {
+    "id": 16,
+    "name": "Thessaloniki",
+    "seat": "Thessaloniki",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 8
+    }
+  },
+  {
+    "id": 17,
+    "name": "Chania",
+    "seat": "Chania",
+    "regionAndUnit": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 74
+    }
+  },
+  {
+    "id": 18,
+    "name": "Heraklion",
+    "seat": "Heraklion",
+    "regionAndUnit": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 71
+    }
+  },
+  {
+    "id": 19,
+    "name": "Lasithi",
+    "seat": "Agios Nikolaos",
+    "regionAndUnit": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 72
+    }
+  },
+  {
+    "id": 20,
+    "name": "Rethymno",
+    "seat": "Rethymno",
+    "regionAndUnit": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 73
+    }
+  },
+  {
+    "id": 21,
+    "name": "Drama",
+    "seat": "Drama",
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 1
+    }
+  },
+  {
+    "id": 22,
+    "name": "Evros",
+    "seat": "Alexandroupolis",
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 2
+    }
+  },
+  {
+    "id": 23,
+    "name": "Kavala",
+    "seat": "Kavala",
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 3
+    }
+  },
+  {
+    "id": 24,
+    "name": "Rhodope",
+    "seat": "Komotini",
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 6
+    }
+  },
+  {
+    "id": 25,
+    "name": "Xanthi",
+    "seat": "Xanthi",
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 5
+    }
+  },
+  {
+    "id": 26,
+    "name": "Arta",
+    "seat": "Arta",
+    "regionAndUnit": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 18
+    }
+  },
+  {
+    "id": 27,
+    "name": "Ioannina",
+    "seat": "Ioannina",
+    "regionAndUnit": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 20
+    }
+  },
+  {
+    "id": 28,
+    "name": "Preveza",
+    "seat": "Preveza",
+    "regionAndUnit": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 21
+    }
+  },
+  {
+    "id": 29,
+    "name": "Thesprotia",
+    "seat": "Igoumenitsa",
+    "regionAndUnit": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 19
+    }
+  },
+  {
+    "id": 30,
+    "name": "Corfu",
+    "seat": "Corfu",
+    "regionAndUnit": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 28
+    }
+  },
+  {
+    "id": 31,
+    "name": "Cephalonia",
+    "seat": "Argostoli",
+    "regionAndUnit": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 29
+    }
+  },
+  {
+    "id": 32,
+    "name": "Lefkada",
+    "seat": "Lefkada",
+    "regionAndUnit": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 31
+    }
+  },
+  {
+    "id": 33,
+    "name": "Zakynthos",
+    "seat": "Zakynthos",
+    "regionAndUnit": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 27
+    }
+  },
+  {
+    "id": 34,
+    "name": "Chios",
+    "seat": "Chios",
+    "regionAndUnit": {
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 57
+    }
+  },
+  {
+    "id": 35,
+    "name": "Lesbos",
+    "seat": "Mytilene",
+    "regionAndUnit": {
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 53
+    }
+  },
+  {
+    "id": 36,
+    "name": "Samos",
+    "seat": "Samos",
+    "regionAndUnit": {
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 56
+    }
+  },
+  {
+    "id": 37,
+    "name": "Arcadia",
+    "seat": "Tripoli",
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 49
+    }
+  },
+  {
+    "id": 38,
+    "name": "Argolis",
+    "seat": "Nafplio",
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 48
+    }
+  },
+  {
+    "id": 39,
+    "name": "Corinthia",
+    "seat": "Corinth",
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 50
+    }
+  },
+  {
+    "id": 40,
+    "name": "Laconia",
+    "seat": "Sparta",
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 51
+    }
+  },
+  {
+    "id": 41,
+    "name": "Messenia",
+    "seat": "Kalamata",
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 52
+    }
+  },
+  {
+    "id": 42,
+    "name": "Cyclades",
+    "seat": "Ermoupoli",
+    "regionAndUnit": {
+      "regionId": 12,
+      "regionIso31662": "GR-L",
+      "unitId": 64
+    }
+  },
+  {
+    "id": 43,
+    "name": "Dodecanese",
+    "seat": "Rhodes",
+    "regionAndUnit": {
+      "regionId": 12,
+      "regionIso31662": "GR-L",
+      "unitId": 70
+    }
+  },
+  {
+    "id": 44,
+    "name": "Karditsa",
+    "seat": "Karditsa",
+    "regionAndUnit": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 22
+    }
+  },
+  {
+    "id": 45,
+    "name": "Larissa",
+    "seat": "Larissa",
+    "regionAndUnit": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 23
+    }
+  },
+  {
+    "id": 46,
+    "name": "Magnesia",
+    "seat": "Volos",
+    "regionAndUnit": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 24
+    }
+  },
+  {
+    "id": 47,
+    "name": "Trikala",
+    "seat": "Trikala",
+    "regionAndUnit": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 26
+    }
+  },
+  {
+    "id": 48,
+    "name": "Achaea",
+    "seat": "Patras",
+    "regionAndUnit": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 33
+    }
+  },
+  {
+    "id": 49,
+    "name": "Aetolia-Acarnania",
+    "seat": "Messolonghi",
+    "regionAndUnit": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 32
+    }
+  },
+  {
+    "id": 50,
+    "name": "Elis",
+    "seat": "Pyrgos",
+    "regionAndUnit": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 34
+    }
+  },
+  {
+    "id": 51,
+    "name": "Florina",
+    "seat": "Florina",
+    "regionAndUnit": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 17
+    }
+  },
+  {
+    "id": 52,
+    "name": "Grevena",
+    "seat": "Grevena",
+    "regionAndUnit": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 14
+    }
+  },
+  {
+    "id": 53,
+    "name": "Kastoria",
+    "seat": "Kastoria",
+    "regionAndUnit": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 15
+    }
+  },
+  {
+    "id": 54,
+    "name": "Kozani",
+    "seat": "Kozani",
+    "regionAndUnit": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 16
+    }
+  },
+  {
+    "id": 55,
+    "name": "Mount Athos",
+    "seat": "Karyes",
+    "regionAndUnit": {
+      "regionId": 14,
+      "regionIso31662": "GR-69",
+      "unitId": null
+    }
+  }
+]
