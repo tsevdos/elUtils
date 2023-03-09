@@ -9,4 +9,6 @@ export {
 
 export { getGeographicRegions, getGeographicRegionById } from "./geoUtils/geographicRegions";
 
+export { getPrefectures } from "./geoUtils/prefectures";
+
 export { getDays, getMonths, getQuarters, getEras } from "./dates/dates";
