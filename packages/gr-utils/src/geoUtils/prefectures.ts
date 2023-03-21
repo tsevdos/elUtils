@@ -34,3 +34,12 @@ export const getPrefectures = ({ locale = "el", includeMountAthos = false }: Pre
 
   return prefecturesData;
 };
+
+type PrefectureByIdOptions = { id: number } & PrefecturesOptions;
+
+export const getPrefectureById = (options: PrefectureByIdOptions): Prefecture | undefined => {
+  const { id, locale = "el", includeMountAthos = false } = options;
+  const regionsData = getPrefectures({ locale, includeMountAthos });
+
+  return regionsData.find((region) => region.id === id);
+};
