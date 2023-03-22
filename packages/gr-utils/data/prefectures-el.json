@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "name": "Νομός Αθηνών",
+    "seat": "Αθήνα",
+    "regionAndUnit": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 42
+    }
+  },
+  {
+    "id": 2,
+    "name": "Νομός Ανατολικής Αττικής",
+    "seat": "Παλλήνη",
+    "regionAndUnit": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 46
+    }
+  },
+  {
+    "id": 3,
+    "name": "Νομός Δυτικής Αττικής",
+    "seat": "Ελευσίνα",
+    "regionAndUnit": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 47
+    }
+  },
+  {
+    "id": 4,
+    "name": "Νομός Πειραιά",
+    "seat": "Πειραιάς",
+    "regionAndUnit": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 44
+    }
+  },
+  {
+    "id": 5,
+    "name": "Νομός Ευβοίας",
+    "seat": "Χαλκίδα",
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 36
+    }
+  },
+  {
+    "id": 6,
+    "name": "Νομός Ευρυτανίας",
+    "seat": "Καρπενήσι",
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 37
+    }
+  },
+  {
+    "id": 7,
+    "name": "Νομός Φωκίδας",
+    "seat": "Άμφισσα",
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 39
+    }
+  },
+  {
+    "id": 8,
+    "name": "Νομός Φθιώτιδας",
+    "seat": "Λαμία",
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 38
+    }
+  },
+  {
+    "id": 9,
+    "name": "Νομός Βοιωτίας",
+    "seat": "Λιβαδειά",
+    "regionAndUnit": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 35
+    }
+  },
+  {
+    "id": 10,
+    "name": "Νομός Χαλκιδικής",
+    "seat": "Πολύγυρος",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 13
+    }
+  },
+  {
+    "id": 11,
+    "name": "Νομός Ημαθίας",
+    "seat": "Βέροια",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 7
+    }
+  },
+  {
+    "id": 12,
+    "name": "Νομός Κιλκίς",
+    "seat": "Κιλκίς",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 9
+    }
+  },
+  {
+    "id": 13,
+    "name": "Νομός Πέλλας",
+    "seat": "Έδεσσα",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 10
+    }
+  },
+  {
+    "id": 14,
+    "name": "Νομός Πιερίας",
+    "seat": "Κατερίνη",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 11
+    }
+  },
+  {
+    "id": 15,
+    "name": "Νομός Σερρών",
+    "seat": "Σέρρες",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 12
+    }
+  },
+  {
+    "id": 16,
+    "name": "Νομός Θεσσαλονίκης",
+    "seat": "Θεσσαλονίκη",
+    "regionAndUnit": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 8
+    }
+  },
+  {
+    "id": 17,
+    "name": "Νομός Χανίων",
+    "seat": "Χανιά",
+    "regionAndUnit": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 74
+    }
+  },
+  {
+    "id": 18,
+    "name": "Νομός Ηρακλείου",
+    "seat": "Ηράκλειο",
+    "regionAndUnit": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 71
+    }
+  },
+  {
+    "id": 19,
+    "name": "Νομός Λασιθίου",
+    "seat": "Άγιος Νικόλαος",
+    "regionAndUnit": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 72
+    }
+  },
+  {
+    "id": 20,
+    "name": "Νομός Ρεθύμνης",
+    "seat": "Ρέθυμνο",
+    "regionAndUnit": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 73
+    }
+  },
+  {
+    "id": 21,
+    "name": "Νομός Δράμας",
+    "seat": "Δράμα",
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 1
+    }
+  },
+  {
+    "id": 22,
+    "name": "Νομός Έβρου",
+    "seat": "Αλεξανδρούπολη",
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 2
+    }
+  },
+  {
+    "id": 23,
+    "name": "Νομός Καβάλας",
+    "seat": "Καβάλα",
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 3
+    }
+  },
+  {
+    "id": 24,
+    "name": "Νομός Ροδόπης",
+    "seat": "Κομοτηνή",
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 6
+    }
+  },
+  {
+    "id": 25,
+    "name": "Νομός Ξάνθης",
+    "seat": "Ξάνθη",
+    "regionAndUnit": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 5
+    }
+  },
+  {
+    "id": 26,
+    "name": "Νομός Άρτας",
+    "seat": "Άρτα",
+    "regionAndUnit": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 18
+    }
+  },
+  {
+    "id": 27,
+    "name": "Νομός Ιωαννίνων",
+    "seat": "Ιωάννινα",
+    "regionAndUnit": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 20
+    }
+  },
+  {
+    "id": 28,
+    "name": "Νομός Πρέβεζας",
+    "seat": "Πρέβεζα",
+    "regionAndUnit": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 21
+    }
+  },
+  {
+    "id": 29,
+    "name": "Νομός Θεσπρωτίας",
+    "seat": "Ηγουμενίτσα",
+    "regionAndUnit": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 19
+    }
+  },
+  {
+    "id": 30,
+    "name": "Νομός Κέρκυρας",
+    "seat": "Κέρκυρα",
+    "regionAndUnit": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 28
+    }
+  },
+  {
+    "id": 31,
+    "name": "Νομός Κεφαλληνίας",
+    "seat": "Αργοστόλι",
+    "regionAndUnit": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 29
+    }
+  },
+  {
+    "id": 32,
+    "name": "Νομός Λευκάδας",
+    "seat": "Λευκάδα",
+    "regionAndUnit": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 31
+    }
+  },
+  {
+    "id": 33,
+    "name": "Νομός Ζακύνθου",
+    "seat": "Ζάκυνθος",
+    "regionAndUnit": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 27
+    }
+  },
+  {
+    "id": 34,
+    "name": "Νομός Χίου",
+    "seat": "Χίος",
+    "regionAndUnit": {
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 57
+    }
+  },
+  {
+    "id": 35,
+    "name": "Νομός Λέσβου",
+    "seat": "Μυτιλήνη",
+    "regionAndUnit": {
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 53
+    }
+  },
+  {
+    "id": 36,
+    "name": "Νομός Σάμου",
+    "seat": "Σάμος",
+    "regionAndUnit": {
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 56
+    }
+  },
+  {
+    "id": 37,
+    "name": "Νομός Αρκαδίας",
+    "seat": "Τρίπολη",
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 49
+    }
+  },
+  {
+    "id": 38,
+    "name": "Νομός Αργολίδας",
+    "seat": "Ναύπλιο",
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 48
+    }
+  },
+  {
+    "id": 39,
+    "name": "Νομός Κορινθίας",
+    "seat": "Κόρινθος",
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 50
+    }
+  },
+  {
+    "id": 40,
+    "name": "Νομός Λακωνίας",
+    "seat": "Σπάρτη",
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 51
+    }
+  },
+  {
+    "id": 41,
+    "name": "Νομός Μεσσηνίας",
+    "seat": "Καλαμάτα",
+    "regionAndUnit": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 52
+    }
+  },
+  {
+    "id": 42,
+    "name": "Νομός Κυκλάδων",
+    "seat": "Ερμούπολη",
+    "regionAndUnit": {
+      "regionId": 12,
+      "regionIso31662": "GR-L",
+      "unitId": 64
+    }
+  },
+  {
+    "id": 43,
+    "name": "Νομός Δωδεκανήσου",
+    "seat": "Ρόδος",
+    "regionAndUnit": {
+      "regionId": 12,
+      "regionIso31662": "GR-L",
+      "unitId": 70
+    }
+  },
+  {
+    "id": 44,
+    "name": "Νομός Καρδίτσας",
+    "seat": "Καρδίτσα",
+    "regionAndUnit": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 22
+    }
+  },
+  {
+    "id": 45,
+    "name": "Νομός Λάρισας",
+    "seat": "Λάρισα",
+    "regionAndUnit": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 23
+    }
+  },
+  {
+    "id": 46,
+    "name": "Νομός Μαγνησίας",
+    "seat": "Βόλος",
+    "regionAndUnit": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 24
+    }
+  },
+  {
+    "id": 47,
+    "name": "Νομός Τρικάλων",
+    "seat": "Τρίκαλα",
+    "regionAndUnit": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 26
+    }
+  },
+  {
+    "id": 48,
+    "name": "Νομός Αχαΐας",
+    "seat": "Πάτρα",
+    "regionAndUnit": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 33
+    }
+  },
+  {
+    "id": 49,
+    "name": "Νομός Αιτωλοακαρνανίας",
+    "seat": "Μεσολόγγι",
+    "regionAndUnit": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 32
+    }
+  },
+  {
+    "id": 50,
+    "name": "Νομός Ηλείας",
+    "seat": "Πύργος",
+    "regionAndUnit": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 34
+    }
+  },
+  {
+    "id": 51,
+    "name": "Νομός Φλώρινας",
+    "seat": "Φλώρινα",
+    "regionAndUnit": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 17
+    }
+  },
+  {
+    "id": 52,
+    "name": "Νομός Γρεβενών",
+    "seat": "Γρεβενά",
+    "regionAndUnit": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 14
+    }
+  },
+  {
+    "id": 53,
+    "name": "Νομός Καστοριάς",
+    "seat": "Καστοριά",
+    "regionAndUnit": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 15
+    }
+  },
+  {
+    "id": 54,
+    "name": "Νομός Κοζάνης",
+    "seat": "Κοζάνη",
+    "regionAndUnit": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 16
+    }
+  },
+  {
+    "id": 55,
+    "name": "Άγιο Όρος",
+    "seat": "Καρυές",
+    "regionAndUnit": {
+      "regionId": 14,
+      "regionIso31662": "GR-69",
+      "unitId": null
+    }
+  }
+]
