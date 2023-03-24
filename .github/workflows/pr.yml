@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [14, 16, 18]
-    name: Checking PR in node version ➡️ ❗️${{ matrix.node }}❗️
+        node: [16, 18]
+    name: Checking PR in node version ➡️ ${{ matrix.node }}❗️
     steps:
       - name: Checkout code 📥
         uses: actions/checkout@v3
