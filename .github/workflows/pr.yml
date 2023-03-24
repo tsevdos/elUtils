@@ -1,0 +1,29 @@
+name: Check pull request
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [16, 18]
+    name: Checking PR in node version ➡️ ${{ matrix.node }}❗️
+    steps:
+      - name: Checkout code 📥
+        uses: actions/checkout@v3
+
+      - name: Set up node 💻
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install dependencies 🔥
+        run: npm ci
+
+      - name: Lint apps 👌
+        run: npm run lint
+
+      - name: Test apps 🙏
+        run: npm test
