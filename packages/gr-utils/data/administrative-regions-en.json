@@ -14,7 +14,58 @@
           "iso31662": "GR-A"
         },
         "carPlatesPattern": ["PM*", "TO*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 1,
+            "name": "Doxato",
+            "seat": "Kalampaki",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 2,
+            "name": "Drama",
+            "seat": "Drama",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 3,
+            "name": "Kato Nevrokopi",
+            "seat": "Kato Nevrokopi",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 4,
+            "name": "Paranesti",
+            "seat": "Paranesti",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 5,
+            "name": "Prosotsani",
+            "seat": "Prosotsani",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          }
+        ]
       },
       {
         "id": 2,
