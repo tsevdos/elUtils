@@ -76,7 +76,58 @@
           "iso31662": "GR-A"
         },
         "carPlatesPattern": ["EB*", "MX*", "OP*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 6,
+            "name": "Alexandroupoli",
+            "seat": "Alexandroupoli",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 7,
+            "name": "Didymoteicho",
+            "seat": "Didymoteicho",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 8,
+            "name": "Orestiada",
+            "seat": "Orestiada",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 9,
+            "name": "Samothrace",
+            "seat": "Samothrace",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 10,
+            "name": "Soufli",
+            "seat": "Soufli",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          }
+        ]
       },
       {
         "id": 3,
