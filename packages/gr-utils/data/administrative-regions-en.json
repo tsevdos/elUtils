@@ -180,7 +180,18 @@
           "iso31662": "GR-A"
         },
         "carPlatesPattern": ["KB*", "AB*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 14,
+            "name": "Thasos",
+            "seat": "Thasos (town)",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 4
+            }
+          }
+        ]
       },
       {
         "id": 5,
