@@ -356,7 +356,148 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["N*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 26,
+            "name": "Chalkidona",
+            "seat": "Koufalia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 27,
+            "name": "Delta",
+            "seat": "Sindos",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 28,
+            "name": "Oraiokastro",
+            "seat": "Oreokastro",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 29,
+            "name": "Pavlos Melas",
+            "seat": "Stavroupoli",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 30,
+            "name": "Ampelokipoi-Menemeni",
+            "seat": "Ampelokipoi",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 31,
+            "name": "Kordelio-Evosmos",
+            "seat": "Evosmos",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 32,
+            "name": "Neapoli-Sykies",
+            "seat": "Sykies",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 33,
+            "name": "Thessaloniki",
+            "seat": "Thessaloniki",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 34,
+            "name": "Kalamaria",
+            "seat": "Kalamaria",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 35,
+            "name": "Thermaikos",
+            "seat": "Peraia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 36,
+            "name": "Thermi",
+            "seat": "Thermi",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 37,
+            "name": "Pylaia-Chortiatis",
+            "seat": "Panorama",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 38,
+            "name": "Langadas",
+            "seat": "Langadas",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 39,
+            "name": "Volvi",
+            "seat": "Stavros",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          }
+        ]
       },
       {
         "id": 9,
