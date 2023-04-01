@@ -254,7 +254,48 @@
           "iso31662": "GR-A"
         },
         "carPlatesPattern": ["KO*", "KK*", "TT*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 19,
+            "name": "Arriana",
+            "seat": "Fillyra",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          },
+          {
+            "id": 20,
+            "name": "Iasmos",
+            "seat": "Iasmos",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          },
+          {
+            "id": 21,
+            "name": "Komotini",
+            "seat": "Komotini",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          },
+          {
+            "id": 22,
+            "name": "Maroneia-Sapes",
+            "seat": "Sapes",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          }
+        ]
       }
     ]
   },
