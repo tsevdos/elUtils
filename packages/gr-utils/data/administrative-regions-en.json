@@ -314,7 +314,38 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["HM*", "HX*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 23,
+            "name": "Alexandreia",
+            "seat": "Alexandreia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 7
+            }
+          },
+          {
+            "id": 24,
+            "name": "Veria",
+            "seat": "Veria",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 7
+            }
+          },
+          {
+            "id": 25,
+            "name": "Naousa",
+            "seat": "Naousa",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 7
+            }
+          }
+        ]
       },
       {
         "id": 8,
