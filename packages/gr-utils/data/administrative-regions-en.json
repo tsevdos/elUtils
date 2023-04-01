@@ -508,7 +508,28 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["KI*", "EX*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 40,
+            "name": "Kilkis",
+            "seat": "Kilkis",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 9
+            }
+          },
+          {
+            "id": 41,
+            "name": "Paionia",
+            "seat": "Polykastro",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 9
+            }
+          }
+        ]
       },
       {
         "id": 10,
