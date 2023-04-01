@@ -540,7 +540,48 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["EE*", "MM*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 42,
+            "name": "Pella",
+            "seat": "Giannitsa",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          },
+          {
+            "id": 43,
+            "name": "Skydra",
+            "seat": "Skydra",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          },
+          {
+            "id": 44,
+            "name": "Edessa",
+            "seat": "Edessa",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          },
+          {
+            "id": 45,
+            "name": "Almopia",
+            "seat": "Aridaia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          }
+        ]
       },
       {
         "id": 11,
