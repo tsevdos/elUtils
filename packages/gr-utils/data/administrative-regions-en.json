@@ -3898,7 +3898,28 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 300,
+            "name": "Karpathos",
+            "seat": "Karpathos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 68
+            }
+          },
+          {
+            "id": 301,
+            "name": "Kasos",
+            "seat": "Kasos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 68
+            }
+          }
+        ]
       },
       {
         "id": 69,
