@@ -1788,7 +1788,58 @@
           "iso31662": "GR-G"
         },
         "carPlatesPattern": ["AX*", "AZ*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 135,
+            "name": "Patras",
+            "seat": "Patras",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 136,
+            "name": "Aigialeia",
+            "seat": "Aigio",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 137,
+            "name": "Kalavryta",
+            "seat": "Kalavryta",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 138,
+            "name": "Erymanthos",
+            "seat": "Chalandritsa",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 139,
+            "name": "West Achaea",
+            "seat": "Kato Achaia",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          }
+        ]
       },
       {
         "id": 34,
