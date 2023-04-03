@@ -788,7 +788,28 @@
           "iso31662": "GR-C"
         },
         "carPlatesPattern": ["PN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 61,
+            "name": "Deskati",
+            "seat": "Deskati",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 14
+            }
+          },
+          {
+            "id": 62,
+            "name": "Grevena",
+            "seat": "Grevena",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 14
+            }
+          }
+        ]
       },
       {
         "id": 15,
