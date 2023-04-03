@@ -2104,7 +2104,28 @@
           "iso31662": "GR-H"
         },
         "carPlatesPattern": ["KH*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 161,
+            "name": "Karpenisi",
+            "seat": "Karpenisi",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 37
+            }
+          },
+          {
+            "id": 162,
+            "name": "Agrafa",
+            "seat": "Kerasochori",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 37
+            }
+          }
+        ]
       },
       {
         "id": 38,
