@@ -2012,7 +2012,88 @@
           "iso31662": "GR-H"
         },
         "carPlatesPattern": ["XA*", "EH*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 153,
+            "name": "Skyros",
+            "seat": "Skyros",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 154,
+            "name": "Istiaia-Aidipsos",
+            "seat": "Istiaia",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 155,
+            "name": "Mantoudi-Limni-Agia Anna",
+            "seat": "Limni",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 156,
+            "name": "Dirfys-Messapia",
+            "seat": "Psachna",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 157,
+            "name": "Chalcis",
+            "seat": "Chalcis",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 158,
+            "name": "Eretria",
+            "seat": "Eretria",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 159,
+            "name": "Kymi-Aliveri",
+            "seat": "Aliveri",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 160,
+            "name": "Karystos",
+            "seat": "Karystos",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          }
+        ]
       },
       {
         "id": 37,
