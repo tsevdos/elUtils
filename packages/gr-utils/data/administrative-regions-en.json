@@ -1210,7 +1210,68 @@
           "iso31662": "GR-E"
         },
         "carPlatesPattern": ["KA*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 92,
+            "name": "Palamas",
+            "seat": "Palamas",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 93,
+            "name": "Mouzaki",
+            "seat": "Mouzaki",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 94,
+            "name": "Sofades",
+            "seat": "Sofades",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 95,
+            "name": "Argithea",
+            "seat": "Anthiro",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 96,
+            "name": "Lake Plastiras",
+            "seat": "Morfovouni",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 97,
+            "name": "Karditsa",
+            "seat": "Karditsa",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          }
+        ]
       },
       {
         "id": 23,
