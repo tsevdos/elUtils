@@ -862,7 +862,58 @@
           "iso31662": "GR-C"
         },
         "carPlatesPattern": ["KZ*", "MN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 66,
+            "name": "Eordaia",
+            "seat": "Ptolemaida",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 67,
+            "name": "Kozani",
+            "seat": "Kozani",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 68,
+            "name": "Voio",
+            "seat": "Siatista",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 69,
+            "name": "Velventos",
+            "seat": "Velventos",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 70,
+            "name": "Servia",
+            "seat": "Servia",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          }
+        ]
       },
       {
         "id": 17,
