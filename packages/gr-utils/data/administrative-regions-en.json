@@ -3696,7 +3696,18 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 287,
+            "name": "Mykonos",
+            "seat": "Mykonos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 62
+            }
+          }
+        ]
       },
       {
         "id": 63,
