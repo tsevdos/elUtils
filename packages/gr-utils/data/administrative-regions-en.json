@@ -2218,7 +2218,28 @@
           "iso31662": "GR-H"
         },
         "carPlatesPattern": ["AM*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 170,
+            "name": "Delphi",
+            "seat": "Amfissa",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 39
+            }
+          },
+          {
+            "id": 171,
+            "name": "Dorida",
+            "seat": "Lidoriki",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 39
+            }
+          }
+        ]
       }
     ]
   },
