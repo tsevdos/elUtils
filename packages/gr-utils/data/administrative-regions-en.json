@@ -2952,7 +2952,58 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 233,
+            "name": "Fyli",
+            "seat": "Ano Liosia",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 234,
+            "name": "Aspropyrgos",
+            "seat": "Aspropyrgos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 235,
+            "name": "Elefsina",
+            "seat": "Elefsina",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 236,
+            "name": "Mandra-Eidyllia",
+            "seat": "Mandra",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 237,
+            "name": "Megara",
+            "seat": "Megara",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          }
+        ]
       }
     ]
   },
