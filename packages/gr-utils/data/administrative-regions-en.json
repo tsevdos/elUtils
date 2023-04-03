@@ -4238,7 +4238,78 @@
           "iso31662": "GR-M"
         },
         "carPlatesPattern": ["XN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 326,
+            "name": "Apokoronas",
+            "seat": "Vryses",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 327,
+            "name": "Chania",
+            "seat": "Chania",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 328,
+            "name": "Platanias",
+            "seat": "Gerani",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 329,
+            "name": "Kissamos",
+            "seat": "Kissamos",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 330,
+            "name": "Kantanos-Selino",
+            "seat": "Palaiochora",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 331,
+            "name": "Sfakia",
+            "seat": "Chora Sfakion",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 332,
+            "name": "Gavdos",
+            "seat": "Gavdos",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          }
+        ]
       }
     ]
   },
