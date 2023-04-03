@@ -3602,7 +3602,58 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 280,
+            "name": "Ios",
+            "seat": "Ios",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 281,
+            "name": "Sikinos",
+            "seat": "Sikinos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 282,
+            "name": "Folegandros",
+            "seat": "Folegandros",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 283,
+            "name": "Santorini",
+            "seat": "Fira",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 284,
+            "name": "Anafi",
+            "seat": "Anafi",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          }
+        ]
       },
       {
         "id": 61,
