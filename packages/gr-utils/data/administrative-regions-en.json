@@ -974,7 +974,48 @@
           "iso31662": "GR-D"
         },
         "carPlatesPattern": ["AT*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 74,
+            "name": "Arta",
+            "seat": "Arta",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          },
+          {
+            "id": 75,
+            "name": "Nikolaos Skoufas",
+            "seat": "Peta",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          },
+          {
+            "id": 76,
+            "name": "Georgios Karaiskakis",
+            "seat": "Ano Kalentini",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          },
+          {
+            "id": 77,
+            "name": "Central Tzoumerka",
+            "seat": "Vourgareli",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          }
+        ]
       },
       {
         "id": 19,
