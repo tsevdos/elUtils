@@ -3930,7 +3930,28 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 302,
+            "name": "Kos",
+            "seat": "Kos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 69
+            }
+          },
+          {
+            "id": 303,
+            "name": "Nisyros",
+            "seat": "Mandraki",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 69
+            }
+          }
+        ]
       },
       {
         "id": 70,
