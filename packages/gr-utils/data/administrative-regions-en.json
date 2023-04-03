@@ -1282,7 +1282,78 @@
           "iso31662": "GR-E"
         },
         "carPlatesPattern": ["PI*", "PP*", "PT*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 98,
+            "name": "Elassona",
+            "seat": "Elassona",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 99,
+            "name": "Tyrnavos",
+            "seat": "Tyrnavos",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 100,
+            "name": "Tempi",
+            "seat": "Makrychori",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 101,
+            "name": "Larissa",
+            "seat": "Larissa",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 102,
+            "name": "Agia",
+            "seat": "Agia",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 103,
+            "name": "Kileler",
+            "seat": "Nikaia",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 104,
+            "name": "Farsala",
+            "seat": "Farsala",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          }
+        ]
       },
       {
         "id": 24,
