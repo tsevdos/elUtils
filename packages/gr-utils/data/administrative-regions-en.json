@@ -1364,7 +1364,58 @@
           "iso31662": "GR-E"
         },
         "carPlatesPattern": ["BO*", "BO*", "BB*", "BA*", "BT*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 105,
+            "name": "Rigas Feraios",
+            "seat": "Velestino",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 106,
+            "name": "Almyros",
+            "seat": "Almyros",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 107,
+            "name": "Volos",
+            "seat": "Volos",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 108,
+            "name": "Zagora-Mouresi",
+            "seat": "Zagora",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 109,
+            "name": "South Pelion",
+            "seat": "Argalasti",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          }
+        ]
       },
       {
         "id": 25,
