@@ -3718,7 +3718,28 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 288,
+            "name": "Naxos and Lesser Cyclades",
+            "seat": "Naxos (city)",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 63
+            }
+          },
+          {
+            "id": 289,
+            "name": "Amorgos",
+            "seat": "Amorgos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 63
+            }
+          }
+        ]
       },
       {
         "id": 64,
