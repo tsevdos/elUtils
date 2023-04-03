@@ -2136,7 +2136,78 @@
           "iso31662": "GR-H"
         },
         "carPlatesPattern": ["MI*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 163,
+            "name": "Lokroi",
+            "seat": "Atalanti",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 164,
+            "name": "Amfikleia-Elateia",
+            "seat": "Kato Tithorea",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 165,
+            "name": "Kamena Vourla",
+            "seat": "Kamena Vourla",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 166,
+            "name": "Lamia",
+            "seat": "Lamia",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 167,
+            "name": "Stylida",
+            "seat": "Stylida",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 168,
+            "name": "Makrakomi",
+            "seat": "Sperchiada",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 169,
+            "name": "Domokos",
+            "seat": "Domokos",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          }
+        ]
       },
       {
         "id": 39,
