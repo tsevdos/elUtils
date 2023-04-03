@@ -1706,7 +1706,78 @@
           "iso31662": "GR-G"
         },
         "carPlatesPattern": ["AI*", "ME*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 128,
+            "name": "Amfilochia",
+            "seat": "Amfilochia",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 129,
+            "name": "Aktio-Vonitsa",
+            "seat": "Vonitsa",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 130,
+            "name": "Xiromero",
+            "seat": "Astakos",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 131,
+            "name": "Missolonghi",
+            "seat": "Missolonghi",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 132,
+            "name": "Agrinio",
+            "seat": "Agrinio",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 133,
+            "name": "Thermo",
+            "seat": "Thermo",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 134,
+            "name": "Nafpaktia",
+            "seat": "Nafpaktos",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          }
+        ]
       },
       {
         "id": 33,
