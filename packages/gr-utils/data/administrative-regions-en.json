@@ -2564,7 +2564,88 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 199,
+            "name": "Moschato-Tavros",
+            "seat": "Moschato",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 200,
+            "name": "Kallithea",
+            "seat": "Kallithea",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 201,
+            "name": "Nea Smyrni",
+            "seat": "Nea Smyrni ",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 202,
+            "name": "Palaio Faliro",
+            "seat": "Palaio Faliro",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 203,
+            "name": "Agios Dimitrios",
+            "seat": "Agios Dimitrios",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 204,
+            "name": "Alimos",
+            "seat": "Alimos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 205,
+            "name": "Elliniko-Argyroupoli",
+            "seat": "Argyroupoli",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 206,
+            "name": "Glyfada",
+            "seat": "Glyfada",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          }
+        ]
       },
       {
         "id": 44,
