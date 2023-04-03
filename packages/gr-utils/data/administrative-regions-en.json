@@ -592,7 +592,38 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["KN*", "TI*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 46,
+            "name": "Dion-Olympos",
+            "seat": "Litochoro",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 11
+            }
+          },
+          {
+            "id": 47,
+            "name": "Katerini",
+            "seat": "Katerini",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 11
+            }
+          },
+          {
+            "id": 48,
+            "name": "Pydna-Kolindros",
+            "seat": "Aiginio",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 11
+            }
+          }
+        ]
       },
       {
         "id": 12,
