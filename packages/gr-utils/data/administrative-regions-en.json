@@ -3074,7 +3074,58 @@
           "iso31662": "GR-J"
         },
         "carPlatesPattern": ["TP*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 242,
+            "name": "South Kynouria",
+            "seat": "Leonidio",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 243,
+            "name": "North Kynouria",
+            "seat": "Astros",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 244,
+            "name": "Tripoli",
+            "seat": "Tripoli",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 245,
+            "name": "Gortynia",
+            "seat": "Dimitsana",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 246,
+            "name": "Megalopoli",
+            "seat": "Megalopoli",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          }
+        ]
       },
       {
         "id": 50,
