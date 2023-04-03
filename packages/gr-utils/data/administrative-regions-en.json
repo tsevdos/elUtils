@@ -2718,7 +2718,88 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 212,
+            "name": "Cythera",
+            "seat": "Cythera",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 213,
+            "name": "Spetses",
+            "seat": "Spetses",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 214,
+            "name": "Hydra",
+            "seat": "Hydra",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 215,
+            "name": "Troizinia-Methana",
+            "seat": "Galatas",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 216,
+            "name": "Poros",
+            "seat": "Poros",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 217,
+            "name": "Agistri",
+            "seat": "Agistri",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 218,
+            "name": "Aegina",
+            "seat": "Aegina",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 219,
+            "name": "Salamis Island",
+            "seat": "Salamina",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          }
+        ]
       },
       {
         "id": 46,
