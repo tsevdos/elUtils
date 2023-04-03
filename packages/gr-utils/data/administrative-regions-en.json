@@ -2390,7 +2390,78 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 184,
+            "name": "Agia Varvara",
+            "seat": "Agia Varvara",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 185,
+            "name": "Chaidari",
+            "seat": "Chaidari",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 186,
+            "name": "Aigaleo",
+            "seat": "Aigaleo",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 187,
+            "name": "Peristeri",
+            "seat": "Peristeri",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 188,
+            "name": "Petroupoli",
+            "seat": "Petroupoli",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 189,
+            "name": "Ilio",
+            "seat": "Ilio",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 190,
+            "name": "Agioi Anargyroi-Kamatero",
+            "seat": "Agioi Anargyroi",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          }
+        ]
       },
       {
         "id": 42,
