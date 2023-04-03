@@ -3772,7 +3772,18 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 291,
+            "name": "Tinos",
+            "seat": "Tinos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 65
+            }
+          }
+        ]
       },
       {
         "id": 66,
