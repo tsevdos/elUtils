@@ -634,7 +634,80 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["EP*", "IX*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 49,
+            "name": "Nea Zichni",
+            "seat": "Nea Zichni ",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 50,
+            "name": "Amphipolis",
+            "seat": "Rodolivos",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 51,
+            "name": "Visaltia",
+            "seat": "Nigrita",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 52,
+            "name": "Emmanouil Pappas",
+            "seat": "Chryso",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 53,
+            "unitId": 50,
+            "name": "Serres",
+            "seat": "Serres",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 54,
+            "unitId": 52,
+            "name": "Irakleia",
+            "seat": "Irakleia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 55,
+            "name": "Sintiki",
+            "seat": "Sidirokastro",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          }
+        ]
       },
       {
         "id": 13,
