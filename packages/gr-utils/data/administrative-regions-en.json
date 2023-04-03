@@ -3550,7 +3550,48 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 276,
+            "name": "Serifos",
+            "seat": "Serifos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          },
+          {
+            "id": 277,
+            "name": "Sifnos",
+            "seat": "Sifnos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          },
+          {
+            "id": 278,
+            "name": "Kimolos",
+            "seat": "Kimolos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          },
+          {
+            "id": 279,
+            "name": "Milos",
+            "seat": "Milos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          }
+        ]
       },
       {
         "id": 60,
