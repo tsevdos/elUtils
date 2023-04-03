@@ -1528,7 +1528,18 @@
           "iso31662": "GR-F"
         },
         "carPlatesPattern": ["ZA*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 117,
+            "name": "Zakynthos",
+            "seat": "Zakynthos (city)",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 27
+            }
+          }
+        ]
       },
       {
         "id": 28,
