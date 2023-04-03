@@ -2472,7 +2472,88 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 191,
+            "name": "Filadelfeia-Chalkidona",
+            "seat": "Nea Filadelfia ",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 192,
+            "name": "Galatsi",
+            "seat": "Galatsi",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 193,
+            "name": "Athens",
+            "seat": "Athens",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 194,
+            "name": "Dafni-Ymittos",
+            "seat": "Dafni",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 195,
+            "name": "Ilioupoli",
+            "seat": "Ilioupoli",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 196,
+            "name": "Vyronas",
+            "seat": "Vyronas",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 197,
+            "name": "Kaisariani",
+            "seat": "Kaisariani",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 198,
+            "name": "Zografou",
+            "seat": "Zografou",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          }
+        ]
       },
       {
         "id": 43,
