@@ -4124,7 +4124,48 @@
           "iso31662": "GR-M"
         },
         "carPlatesPattern": ["AN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 317,
+            "name": "Sitia",
+            "seat": "Sitia",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          },
+          {
+            "id": 318,
+            "name": "Ierapetra",
+            "seat": "Ierapetra",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          },
+          {
+            "id": 319,
+            "name": "Agios Nikolaos",
+            "seat": "Agios Nikolaos ",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          },
+          {
+            "id": 320,
+            "name": "Oropedio Lasithiou",
+            "seat": "Tzermiado",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          }
+        ]
       },
       {
         "id": 73,
