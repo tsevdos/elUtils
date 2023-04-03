@@ -3270,7 +3270,68 @@
           "iso31662": "GR-J"
         },
         "carPlatesPattern": ["KM*", "MZ*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 258,
+            "name": "Oichalia",
+            "seat": "Meligalas",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 259,
+            "name": "Trifylia",
+            "seat": "Kyparissia",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 260,
+            "name": "Pylos-Nestor",
+            "seat": "Pylos",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 261,
+            "name": "Messini",
+            "seat": "Messini",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 262,
+            "name": "Kalamata",
+            "seat": "Kalamata",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 263,
+            "name": "West Mani",
+            "seat": "Kardamyli",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          }
+        ]
       }
     ]
   },
