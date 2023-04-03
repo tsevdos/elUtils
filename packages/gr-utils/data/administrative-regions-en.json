@@ -1602,7 +1602,38 @@
           "iso31662": "GR-F"
         },
         "carPlatesPattern": ["KE*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 122,
+            "name": "Argostoli",
+            "seat": "Argostoli",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 29
+            }
+          },
+          {
+            "id": 123,
+            "name": "Lixouri",
+            "seat": "Lixouri",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 29
+            }
+          },
+          {
+            "id": 124,
+            "name": "Sami",
+            "seat": "Sami",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 29
+            }
+          }
+        ]
       },
       {
         "id": 30,
