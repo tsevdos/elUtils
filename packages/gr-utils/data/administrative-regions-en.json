@@ -3794,7 +3794,28 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 292,
+            "name": "Antiparos",
+            "seat": "Antiparos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 66
+            }
+          },
+          {
+            "id": 293,
+            "name": "Paros",
+            "seat": "Paros",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 66
+            }
+          }
+        ]
       },
       {
         "id": 67,
