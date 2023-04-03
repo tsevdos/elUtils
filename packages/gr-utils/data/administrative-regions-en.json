@@ -3350,7 +3350,28 @@
           "iso31662": "GR-K"
         },
         "carPlatesPattern": ["MI*", "MY*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 264,
+            "name": "West Lesbos",
+            "seat": "Kalloni",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 53
+            }
+          },
+          {
+            "id": 265,
+            "name": "Mytilini",
+            "seat": "Mytilini",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 53
+            }
+          }
+        ]
       },
       {
         "id": 54,
