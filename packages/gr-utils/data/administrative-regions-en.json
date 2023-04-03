@@ -1550,7 +1550,48 @@
           "iso31662": "GR-F"
         },
         "carPlatesPattern": ["KY*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 118,
+            "name": "Central Corfu and Diapontia Islands",
+            "seat": "Corfu (city)",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          },
+          {
+            "id": 119,
+            "name": "North Corfu",
+            "seat": "Acharavi",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          },
+          {
+            "id": 120,
+            "name": "South Corfu",
+            "seat": "Lefkimmi",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          },
+          {
+            "id": 121,
+            "name": "Paxi",
+            "seat": "Gaios",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          }
+        ]
       },
       {
         "id": 29,
