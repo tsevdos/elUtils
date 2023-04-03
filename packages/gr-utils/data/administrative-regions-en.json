@@ -718,7 +718,58 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["XK*", "MA*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 56,
+            "name": "Aristotelis",
+            "seat": "Ierissos",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 57,
+            "name": "Sithonia",
+            "seat": "Nikiti",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 58,
+            "name": "Polygyros",
+            "seat": "Polygyros",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 59,
+            "name": "Kassandra",
+            "seat": "Kassandreia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 60,
+            "name": "Nea Propontida",
+            "seat": "Nea Moudania",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          }
+        ]
       }
     ]
   },
