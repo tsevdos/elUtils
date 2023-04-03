@@ -924,7 +924,38 @@
           "iso31662": "GR-C"
         },
         "carPlatesPattern": ["PA*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 71,
+            "name": "Amyntaio",
+            "seat": "Amyntaio",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 17
+            }
+          },
+          {
+            "id": 72,
+            "name": "Florina",
+            "seat": "Florina",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 17
+            }
+          },
+          {
+            "id": 73,
+            "name": "Prespes",
+            "seat": "Laimos",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 17
+            }
+          }
+        ]
       }
     ]
   },
