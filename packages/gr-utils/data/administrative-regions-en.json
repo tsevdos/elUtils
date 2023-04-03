@@ -3136,7 +3136,68 @@
           "iso31662": "GR-J"
         },
         "carPlatesPattern": ["KP*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 247,
+            "name": "Loutraki-Perachora-Agioi Theodoroi",
+            "seat": "Loutraki",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 248,
+            "name": "Corinth",
+            "seat": "Corinth",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 249,
+            "name": "Velo-Vocha",
+            "seat": "Zevgolateio",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 250,
+            "name": "Sikyona",
+            "seat": "Kiato",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 251,
+            "name": "Xylokastro-Evrostina",
+            "seat": "Xylokastro",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 252,
+            "name": "Nemea",
+            "seat": "Nemea",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          }
+        ]
       },
       {
         "id": 51,
