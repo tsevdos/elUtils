@@ -3478,7 +3478,38 @@
           "iso31662": "GR-K"
         },
         "carPlatesPattern": ["XI*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 272,
+            "name": "Psara",
+            "seat": "Psara",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 57
+            }
+          },
+          {
+            "id": 273,
+            "name": "Oinousses",
+            "seat": "Oinousses",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 57
+            }
+          },
+          {
+            "id": 274,
+            "name": "Chios",
+            "seat": "Chios (town)",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 57
+            }
+          }
+        ]
       }
     ]
   },
