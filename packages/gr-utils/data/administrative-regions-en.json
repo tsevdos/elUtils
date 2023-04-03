@@ -3396,7 +3396,7 @@
           {
             "id": 267,
             "name": "Icaria",
-            "seat": "Agios Kirykos ",
+            "seat": "Agios Kirykos",
             "regionAndUnit": {
               "regionId": 11,
               "regionIso31662": "GR-K",
@@ -3414,7 +3414,28 @@
           "iso31662": "GR-K"
         },
         "carPlatesPattern": ["MH*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 268,
+            "name": "Lemnos",
+            "seat": "Myrina",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 55
+            }
+          },
+          {
+            "id": 269,
+            "name": "Agios Efstratios",
+            "seat": "Agios Efstratios",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 55
+            }
+          }
+        ]
       },
       {
         "id": 56,
