@@ -3826,7 +3826,68 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 294,
+            "name": "Agathonisi",
+            "seat": "Megalo Chorio",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 295,
+            "name": "Patmos",
+            "seat": "Patmos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 296,
+            "name": "Leipsoi",
+            "seat": "Leipsoi",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 297,
+            "name": "Leros",
+            "seat": "Agia Marina ",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 298,
+            "name": "Kalymnos",
+            "seat": "Pothia (Kalymnos)",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 299,
+            "name": "Astypalaia",
+            "seat": "Astypalaia",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          }
+        ]
       },
       {
         "id": 68,
