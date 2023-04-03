@@ -1468,7 +1468,48 @@
           "iso31662": "GR-E"
         },
         "carPlatesPattern": ["TK*", "TN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 113,
+            "name": "Pyli",
+            "seat": "Pyli",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          },
+          {
+            "id": 114,
+            "name": "Kalambaka",
+            "seat": "Kalambaka",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          },
+          {
+            "id": 115,
+            "name": "Trikala",
+            "seat": "Trikala",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          },
+          {
+            "id": 116,
+            "name": "Farkadona",
+            "seat": "Farkadona",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          }
+        ]
       }
     ]
   },
