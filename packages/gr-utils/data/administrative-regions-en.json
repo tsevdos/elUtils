@@ -3446,7 +3446,28 @@
           "iso31662": "GR-K"
         },
         "carPlatesPattern": ["MO*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 270,
+            "name": "East Samos",
+            "seat": "Samos",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 56
+            }
+          },
+          {
+            "id": 271,
+            "name": "West Samos",
+            "seat": "Karlovasi",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 56
+            }
+          }
+        ]
       },
       {
         "id": 57,
