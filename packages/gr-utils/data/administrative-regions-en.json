@@ -3664,7 +3664,28 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 285,
+            "name": "Kea",
+            "seat": "Kea",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 61
+            }
+          },
+          {
+            "id": 286,
+            "name": "Kythnos",
+            "seat": "Kythnos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 61
+            }
+          }
+        ]
       },
       {
         "id": 62,
