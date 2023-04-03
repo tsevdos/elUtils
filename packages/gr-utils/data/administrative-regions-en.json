@@ -3208,7 +3208,58 @@
           "iso31662": "GR-J"
         },
         "carPlatesPattern": ["AK*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 253,
+            "name": "East Mani",
+            "seat": "Gytheio",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 254,
+            "name": "Sparta",
+            "seat": "Sparta",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 255,
+            "name": "Evrotas",
+            "seat": "Skala",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 256,
+            "name": "Monemvasia",
+            "seat": "Molaoi",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 257,
+            "name": "Elafonisos",
+            "seat": "Elafonisos",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          }
+        ]
       },
       {
         "id": 52,
