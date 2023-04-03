@@ -1068,7 +1068,88 @@
           "iso31662": "GR-D"
         },
         "carPlatesPattern": ["IN*", "II*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 81,
+            "name": "Konitsa",
+            "seat": "Konitsa",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 82,
+            "name": "Pogoni",
+            "seat": "Kalpaki",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 83,
+            "name": "Zagori",
+            "seat": "Asprangeloi",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 84,
+            "name": "Zitsa",
+            "seat": "Eleousa",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 85,
+            "name": "Ioannina",
+            "seat": "Ioannina",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 86,
+            "name": "Metsovo",
+            "seat": "Metsovo",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 87,
+            "name": "North Tzoumerka",
+            "seat": "Pramanta",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 88,
+            "name": "Dodoni",
+            "seat": "Agia Kyriaki",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          }
+        ]
       },
       {
         "id": 21,
