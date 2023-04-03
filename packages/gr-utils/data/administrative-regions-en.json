@@ -3528,7 +3528,18 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 275,
+            "name": "Andros",
+            "seat": "Andros",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 58
+            }
+          }
+        ]
       },
       {
         "id": 59,
