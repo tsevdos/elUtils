@@ -4176,7 +4176,58 @@
           "iso31662": "GR-M"
         },
         "carPlatesPattern": ["PE*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 321,
+            "name": "Anogeia",
+            "seat": "Anogeia",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 322,
+            "name": "Mylopotamos",
+            "seat": "Perama",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 323,
+            "name": "Amari",
+            "seat": "Agia Foteini",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 324,
+            "name": "Agios Vasileios",
+            "seat": "Spili",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 325,
+            "name": "Rethymno",
+            "seat": "Rethymno",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          }
+        ]
       },
       {
         "id": 74,
