@@ -1644,7 +1644,18 @@
           "iso31662": "GR-F"
         },
         "carPlatesPattern": ["KE*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 125,
+            "name": "Ithaca",
+            "seat": "Vathy",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 30
+            }
+          }
+        ]
       },
       {
         "id": 31,
