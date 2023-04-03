@@ -820,7 +820,38 @@
           "iso31662": "GR-C"
         },
         "carPlatesPattern": ["KT*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 63,
+            "name": "Kastoria",
+            "seat": "Kastoria",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 15
+            }
+          },
+          {
+            "id": 64,
+            "name": "Nestorio",
+            "seat": "Nestorio",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 15
+            }
+          },
+          {
+            "id": 65,
+            "name": "Orestida",
+            "seat": "Argos Orestiko",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 15
+            }
+          }
+        ]
       },
       {
         "id": 16,
