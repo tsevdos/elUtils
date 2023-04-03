@@ -1666,7 +1666,28 @@
           "iso31662": "GR-F"
         },
         "carPlatesPattern": ["EY*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 126,
+            "name": "Lefkada",
+            "seat": "Lefkada (city)",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 31
+            }
+          },
+          {
+            "id": 127,
+            "name": "Meganisi",
+            "seat": "Meganisi",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 31
+            }
+          }
+        ]
       }
     ]
   },
