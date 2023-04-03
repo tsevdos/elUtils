@@ -4032,7 +4032,88 @@
           "iso31662": "GR-M"
         },
         "carPlatesPattern": ["HK*", "HP*", "HKA*", "HKE*", "HPA*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 309,
+            "name": "Viannos",
+            "seat": "Ano Viannos",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 310,
+            "name": "Minoa Pediada",
+            "seat": "Evangelismos",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 311,
+            "name": "Archanes-Asterousia",
+            "seat": "Peza",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 312,
+            "name": "Chersonisos",
+            "seat": "Gournes",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 313,
+            "name": "Heraklion",
+            "seat": "Heraklion",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 314,
+            "name": "Malevizi",
+            "seat": "Gazi",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 315,
+            "name": "Gortyna",
+            "seat": "Agioi Deka",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 316,
+            "name": "Faistos",
+            "seat": "Moires",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          }
+        ]
       },
       {
         "id": 72,
