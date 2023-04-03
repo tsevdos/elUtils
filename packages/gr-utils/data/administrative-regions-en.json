@@ -2258,7 +2258,128 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 172,
+            "name": "Papagou-Cholargos",
+            "seat": "Cholargos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 173,
+            "name": "Agia Paraskevi",
+            "seat": "Agia Paraskevi ",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 174,
+            "name": "Chalandri",
+            "seat": "Chalandri",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 175,
+            "name": "Vrilissia",
+            "seat": "Vrilissia",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 176,
+            "name": "Marousi",
+            "seat": "Marousi",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 177,
+            "name": "Filothei-Psychiko",
+            "seat": "Psychiko",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 178,
+            "name": "Nea Ionia",
+            "seat": "Nea Ionia ",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 179,
+            "name": "Metamorfosi",
+            "seat": "Metamorfosi",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 180,
+            "name": "Irakleio",
+            "seat": "Irakleio",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 181,
+            "name": "Lykovrysi-Pefki",
+            "seat": "Pefki",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 182,
+            "name": "Kifisia",
+            "seat": "Kifisia",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 183,
+            "name": "Penteli",
+            "seat": "Melissia",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          }
+        ]
       },
       {
         "id": 41,
