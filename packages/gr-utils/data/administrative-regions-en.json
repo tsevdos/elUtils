@@ -3022,7 +3022,48 @@
           "iso31662": "GR-J"
         },
         "carPlatesPattern": ["AP*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 238,
+            "name": "Argos-Mykines",
+            "seat": "Argos",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          },
+          {
+            "id": 239,
+            "name": "Nafplio",
+            "seat": "Nafplio",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          },
+          {
+            "id": 240,
+            "name": "Epidaurus",
+            "seat": "Asklipieio",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          },
+          {
+            "id": 241,
+            "name": "Ermionida",
+            "seat": "Kranidi",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          }
+        ]
       },
       {
         "id": 49,
