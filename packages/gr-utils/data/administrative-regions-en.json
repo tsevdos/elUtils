@@ -3750,7 +3750,18 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 290,
+            "name": "Syros-Ermoupoli",
+            "seat": "Ermoupoli",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 64
+            }
+          }
+        ]
       },
       {
         "id": 65,
