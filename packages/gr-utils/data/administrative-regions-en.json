@@ -1426,7 +1426,38 @@
           "iso31662": "GR-E"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 110,
+            "name": "Skiathos",
+            "seat": "Skiathos",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 25
+            }
+          },
+          {
+            "id": 111,
+            "name": "Skopelos",
+            "seat": "Skopelos",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 25
+            }
+          },
+          {
+            "id": 112,
+            "name": "Alonnisos",
+            "seat": "Alonnisos",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 25
+            }
+          }
+        ]
       },
       {
         "id": 26,
