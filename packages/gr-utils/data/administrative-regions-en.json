@@ -3962,7 +3962,58 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 304,
+            "name": "Tilos",
+            "seat": "Megalo Chorio",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 305,
+            "name": "Symi",
+            "seat": "Symi",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 306,
+            "name": "Rhodes",
+            "seat": "Rhodes",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 307,
+            "name": "Chalki",
+            "seat": "Chalki",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 308,
+            "name": "Kastellorizo",
+            "seat": "Kastellorizo",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          }
+        ]
       }
     ]
   },
