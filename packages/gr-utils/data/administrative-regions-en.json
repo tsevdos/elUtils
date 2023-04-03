@@ -1940,7 +1940,68 @@
           "iso31662": "GR-H"
         },
         "carPlatesPattern": ["BI*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 147,
+            "name": "Tanagra",
+            "seat": "Schimatari",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 148,
+            "name": "Thebes",
+            "seat": "Thebes",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 149,
+            "name": "Aliartos",
+            "seat": "Aliartos",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 150,
+            "name": "Orchomenos",
+            "seat": "Orchomenos",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 151,
+            "name": "Livadeia",
+            "seat": "Livadeia",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 152,
+            "name": "Distomo-Arachova-Antikyra",
+            "seat": "Distomo",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          }
+        ]
       },
       {
         "id": 36,
