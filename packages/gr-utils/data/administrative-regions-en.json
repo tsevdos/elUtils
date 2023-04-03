@@ -2810,7 +2810,138 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 220,
+            "name": "Vari-Voula-Vouliagmeni",
+            "seat": "Voula",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 221,
+            "name": "Kropia",
+            "seat": "Koropi",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 222,
+            "name": "Saronikos",
+            "seat": "Kalyvia Thorikou",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 223,
+            "name": "Lavreotiki",
+            "seat": "Laurium",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 224,
+            "name": "Markopoulo Mesogaias",
+            "seat": "Markopoulo",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 225,
+            "name": "Paiania",
+            "seat": "Paiania",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 226,
+            "name": "Spata-Artemida",
+            "seat": "Spata",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 227,
+            "name": "Pallini",
+            "seat": "Gerakas",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 228,
+            "name": "Rafina-Pikermi",
+            "seat": "Rafina",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 229,
+            "name": "Marathon",
+            "seat": "Marathon",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 230,
+            "name": "Dionysos",
+            "seat": "Agios Stefanos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 231,
+            "name": "Oropos",
+            "seat": "Oropos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 232,
+            "name": "Acharnes",
+            "seat": "Acharnes",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          }
+        ]
       },
       {
         "id": 47,
