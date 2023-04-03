@@ -2656,7 +2656,58 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 207,
+            "name": "Perama",
+            "seat": "Perama",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 208,
+            "name": "Keratsini-Drapetsona",
+            "seat": "Keratsini",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 209,
+            "name": "Piraeus",
+            "seat": "Piraeus",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 210,
+            "name": "Nikaia-Agios Ioannis Rentis",
+            "seat": "Nikaia",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 211,
+            "name": "Korydallos",
+            "seat": "Korydallos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          }
+        ]
       },
       {
         "id": 45,
