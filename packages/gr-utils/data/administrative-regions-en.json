@@ -1026,7 +1026,38 @@
           "iso31662": "GR-D"
         },
         "carPlatesPattern": ["HN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 78,
+            "name": "Souli",
+            "seat": "Paramythia",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 19
+            }
+          },
+          {
+            "id": 79,
+            "name": "Filiates",
+            "seat": "Filiates",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 19
+            }
+          },
+          {
+            "id": 80,
+            "name": "Igoumenitsa",
+            "seat": "Igoumenitsa",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 19
+            }
+          }
+        ]
       },
       {
         "id": 20,
