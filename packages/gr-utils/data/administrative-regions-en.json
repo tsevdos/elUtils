@@ -70,7 +70,7 @@
       {
         "id": 2,
         "name": "Evros",
-        "seat": "Alexandroupolis",
+        "seat": "Alexandroupoli",
         "region": {
           "id": 1,
           "iso31662": "GR-A"
@@ -174,7 +174,7 @@
       {
         "id": 4,
         "name": "Thasos",
-        "seat": "Limenas",
+        "seat": "Thasos (Limenas Thasou)",
         "region": {
           "id": 1,
           "iso31662": "GR-A"
@@ -184,7 +184,7 @@
           {
             "id": 14,
             "name": "Thasos",
-            "seat": "Thasos (town)",
+            "seat": "Thasos (Limenas Thasou)",
             "regionAndUnit": {
               "regionId": 1,
               "regionIso31662": "GR-A",
@@ -287,7 +287,7 @@
           },
           {
             "id": 22,
-            "name": "Maroneia-Sapes",
+            "name": "Maroneia - Sapes",
             "seat": "Sapes",
             "regionAndUnit": {
               "regionId": 1,
@@ -380,7 +380,7 @@
           {
             "id": 28,
             "name": "Oraiokastro",
-            "seat": "Oreokastro",
+            "seat": "Oraiokastro",
             "regionAndUnit": {
               "regionId": 2,
               "regionIso31662": "GR-B",
@@ -399,7 +399,7 @@
           },
           {
             "id": 30,
-            "name": "Ampelokipoi-Menemeni",
+            "name": "Ampelokipoi - Menemeni",
             "seat": "Ampelokipoi",
             "regionAndUnit": {
               "regionId": 2,
@@ -409,7 +409,7 @@
           },
           {
             "id": 31,
-            "name": "Kordelio-Evosmos",
+            "name": "Kordelio - Evosmos",
             "seat": "Evosmos",
             "regionAndUnit": {
               "regionId": 2,
@@ -419,7 +419,7 @@
           },
           {
             "id": 32,
-            "name": "Neapoli-Sykies",
+            "name": "Neapoli - Sykies",
             "seat": "Sykies",
             "regionAndUnit": {
               "regionId": 2,
@@ -469,7 +469,7 @@
           },
           {
             "id": 37,
-            "name": "Pylaia-Chortiatis",
+            "name": "Pylaia - Chortiatis",
             "seat": "Panorama",
             "regionAndUnit": {
               "regionId": 2,
@@ -595,7 +595,7 @@
         "municipalities": [
           {
             "id": 46,
-            "name": "Dion-Olympos",
+            "name": "Dion - Olympos",
             "seat": "Litochoro",
             "regionAndUnit": {
               "regionId": 2,
@@ -615,7 +615,7 @@
           },
           {
             "id": 48,
-            "name": "Pydna-Kolindros",
+            "name": "Pydna - Kolindros",
             "seat": "Aiginio",
             "regionAndUnit": {
               "regionId": 2,
@@ -1397,7 +1397,7 @@
           },
           {
             "id": 108,
-            "name": "Zagora-Mouresi",
+            "name": "Zagora - Mouresi",
             "seat": "Zagora",
             "regionAndUnit": {
               "regionId": 5,
@@ -1481,7 +1481,7 @@
           },
           {
             "id": 114,
-            "name": "Kalambaka",
+            "name": "Meteora",
             "seat": "Kalambaka",
             "regionAndUnit": {
               "regionId": 5,
@@ -1680,7 +1680,7 @@
           {
             "id": 127,
             "name": "Meganisi",
-            "seat": "Meganisi",
+            "seat": "Katomeri",
             "regionAndUnit": {
               "regionId": 6,
               "regionIso31662": "GR-F",
@@ -1699,7 +1699,7 @@
     "units": [
       {
         "id": 32,
-        "name": "Aetolia-Acarnania",
+        "name": "Aetolia - Acarnania",
         "seat": "Messolonghi",
         "region": {
           "id": 7,
@@ -1719,7 +1719,7 @@
           },
           {
             "id": 129,
-            "name": "Aktio-Vonitsa",
+            "name": "Aktio - Vonitsa",
             "seat": "Vonitsa",
             "regionAndUnit": {
               "regionId": 7,
@@ -1853,7 +1853,7 @@
         "municipalities": [
           {
             "id": 140,
-            "name": "Andravida-Kyllini",
+            "name": "Andravida - Kyllini",
             "seat": "Lechaina",
             "regionAndUnit": {
               "regionId": 7,
@@ -1903,7 +1903,7 @@
           },
           {
             "id": 145,
-            "name": "Andritsaina-Krestena",
+            "name": "Andritsaina - Krestena",
             "seat": "Krestena",
             "regionAndUnit": {
               "regionId": 7,
@@ -1993,7 +1993,7 @@
           },
           {
             "id": 152,
-            "name": "Distomo-Arachova-Antikyra",
+            "name": "Distomo - Arachova - Antikyra",
             "seat": "Distomo",
             "regionAndUnit": {
               "regionId": 8,
@@ -2025,7 +2025,7 @@
           },
           {
             "id": 154,
-            "name": "Istiaia-Aidipsos",
+            "name": "Istiaia - Aidipsos",
             "seat": "Istiaia",
             "regionAndUnit": {
               "regionId": 8,
@@ -2035,7 +2035,7 @@
           },
           {
             "id": 155,
-            "name": "Mantoudi-Limni-Agia Anna",
+            "name": "Mantoudi - Limni - Agia Anna",
             "seat": "Limni",
             "regionAndUnit": {
               "regionId": 8,
@@ -2045,7 +2045,7 @@
           },
           {
             "id": 156,
-            "name": "Dirfys-Messapia",
+            "name": "Dirfys - Messapia",
             "seat": "Psachna",
             "regionAndUnit": {
               "regionId": 8,
@@ -2075,7 +2075,7 @@
           },
           {
             "id": 159,
-            "name": "Kymi-Aliveri",
+            "name": "Kymi - Aliveri",
             "seat": "Aliveri",
             "regionAndUnit": {
               "regionId": 8,
@@ -2149,7 +2149,7 @@
           },
           {
             "id": 164,
-            "name": "Amfikleia-Elateia",
+            "name": "Amfikleia - Elateia",
             "seat": "Kato Tithorea",
             "regionAndUnit": {
               "regionId": 8,
@@ -2261,7 +2261,7 @@
         "municipalities": [
           {
             "id": 172,
-            "name": "Papagou-Cholargos",
+            "name": "Papagou - Cholargos",
             "seat": "Cholargos",
             "regionAndUnit": {
               "regionId": 9,
@@ -2311,7 +2311,7 @@
           },
           {
             "id": 177,
-            "name": "Filothei-Psychiko",
+            "name": "Filothei - Psychiko",
             "seat": "Psychiko",
             "regionAndUnit": {
               "regionId": 9,
@@ -2351,7 +2351,7 @@
           },
           {
             "id": 181,
-            "name": "Lykovrysi-Pefki",
+            "name": "Lykovrysi - Pefki",
             "seat": "Pefki",
             "regionAndUnit": {
               "regionId": 9,
@@ -2453,7 +2453,7 @@
           },
           {
             "id": 190,
-            "name": "Agioi Anargyroi-Kamatero",
+            "name": "Agioi Anargyroi - Kamatero",
             "seat": "Agioi Anargyroi",
             "regionAndUnit": {
               "regionId": 9,
@@ -2475,8 +2475,8 @@
         "municipalities": [
           {
             "id": 191,
-            "name": "Filadelfeia-Chalkidona",
-            "seat": "Nea Filadelfia ",
+            "name": "Nea Filadelfia - Nea Chalkidona",
+            "seat": "Nea Filadelfia",
             "regionAndUnit": {
               "regionId": 9,
               "regionIso31662": "GR-I",
@@ -2505,7 +2505,7 @@
           },
           {
             "id": 194,
-            "name": "Dafni-Ymittos",
+            "name": "Dafni - Ymittos",
             "seat": "Dafni",
             "regionAndUnit": {
               "regionId": 9,
@@ -2567,7 +2567,7 @@
         "municipalities": [
           {
             "id": 199,
-            "name": "Moschato-Tavros",
+            "name": "Moschato - Tavros",
             "seat": "Moschato",
             "regionAndUnit": {
               "regionId": 9,
@@ -2627,7 +2627,7 @@
           },
           {
             "id": 205,
-            "name": "Elliniko-Argyroupoli",
+            "name": "Elliniko - Argyroupoli",
             "seat": "Argyroupoli",
             "regionAndUnit": {
               "regionId": 9,
@@ -2669,7 +2669,7 @@
           },
           {
             "id": 208,
-            "name": "Keratsini-Drapetsona",
+            "name": "Keratsini - Drapetsona",
             "seat": "Keratsini",
             "regionAndUnit": {
               "regionId": 9,
@@ -2689,7 +2689,7 @@
           },
           {
             "id": 210,
-            "name": "Nikaia-Agios Ioannis Rentis",
+            "name": "Nikaia - Agios Ioannis Rentis",
             "seat": "Nikaia",
             "regionAndUnit": {
               "regionId": 9,
@@ -2751,7 +2751,7 @@
           },
           {
             "id": 215,
-            "name": "Troizinia-Methana",
+            "name": "Troizinia - Methana",
             "seat": "Galatas",
             "regionAndUnit": {
               "regionId": 9,
@@ -2791,7 +2791,7 @@
           },
           {
             "id": 219,
-            "name": "Salamis Island",
+            "name": "Salamina",
             "seat": "Salamina",
             "regionAndUnit": {
               "regionId": 9,
@@ -2813,7 +2813,7 @@
         "municipalities": [
           {
             "id": 220,
-            "name": "Vari-Voula-Vouliagmeni",
+            "name": "Vari - Voula - Vouliagmeni",
             "seat": "Voula",
             "regionAndUnit": {
               "regionId": 9,
@@ -2873,7 +2873,7 @@
           },
           {
             "id": 226,
-            "name": "Spata-Artemida",
+            "name": "Spata - Artemida",
             "seat": "Spata",
             "regionAndUnit": {
               "regionId": 9,
@@ -2893,7 +2893,7 @@
           },
           {
             "id": 228,
-            "name": "Rafina-Pikermi",
+            "name": "Rafina - Pikermi",
             "seat": "Rafina",
             "regionAndUnit": {
               "regionId": 9,
@@ -2985,7 +2985,7 @@
           },
           {
             "id": 236,
-            "name": "Mandra-Eidyllia",
+            "name": "Mandra - Eidyllia",
             "seat": "Mandra",
             "regionAndUnit": {
               "regionId": 9,
@@ -3025,7 +3025,7 @@
         "municipalities": [
           {
             "id": 238,
-            "name": "Argos-Mykines",
+            "name": "Argos - Mykines",
             "seat": "Argos",
             "regionAndUnit": {
               "regionId": 10,
@@ -3046,7 +3046,7 @@
           {
             "id": 240,
             "name": "Epidaurus",
-            "seat": "Asklipieio",
+            "seat": "Lygourio",
             "regionAndUnit": {
               "regionId": 10,
               "regionIso31662": "GR-J",
@@ -3139,7 +3139,7 @@
         "municipalities": [
           {
             "id": 247,
-            "name": "Loutraki-Perachora-Agioi Theodoroi",
+            "name": "Loutraki - Perachora - Agioi Theodoroi",
             "seat": "Loutraki",
             "regionAndUnit": {
               "regionId": 10,
@@ -3159,7 +3159,7 @@
           },
           {
             "id": 249,
-            "name": "Velo-Vocha",
+            "name": "Velo - Vocha",
             "seat": "Zevgolateio",
             "regionAndUnit": {
               "regionId": 10,
@@ -3179,7 +3179,7 @@
           },
           {
             "id": 251,
-            "name": "Xylokastro-Evrostina",
+            "name": "Xylokastro - Evrostina",
             "seat": "Xylokastro",
             "regionAndUnit": {
               "regionId": 10,
@@ -3293,7 +3293,7 @@
           },
           {
             "id": 260,
-            "name": "Pylos-Nestor",
+            "name": "Pylos - Nestor",
             "seat": "Pylos",
             "regionAndUnit": {
               "regionId": 10,
@@ -3564,7 +3564,7 @@
           {
             "id": 277,
             "name": "Sifnos",
-            "seat": "Sifnos",
+            "seat": "Apollonia",
             "regionAndUnit": {
               "regionId": 12,
               "regionIso31662": "GR-L",
@@ -3753,7 +3753,7 @@
         "municipalities": [
           {
             "id": 290,
-            "name": "Syros-Ermoupoli",
+            "name": "Syros - Ermoupoli",
             "seat": "Ermoupoli",
             "regionAndUnit": {
               "regionId": 12,
@@ -3870,7 +3870,7 @@
           {
             "id": 298,
             "name": "Kalymnos",
-            "seat": "Pothia (Kalymnos)",
+            "seat": "Pothia",
             "regionAndUnit": {
               "regionId": 12,
               "regionIso31662": "GR-L",
@@ -4055,7 +4055,7 @@
           },
           {
             "id": 311,
-            "name": "Archanes-Asterousia",
+            "name": "Archanes - Asterousia",
             "seat": "Peza",
             "regionAndUnit": {
               "regionId": 13,
@@ -4281,7 +4281,7 @@
           },
           {
             "id": 330,
-            "name": "Kantanos-Selino",
+            "name": "Kantanos - Selino",
             "seat": "Palaiochora",
             "regionAndUnit": {
               "regionId": 13,
