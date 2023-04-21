@@ -470,7 +470,7 @@
           {
             "id": 37,
             "name": "Πυλαίας - Χορτιάτη",
-            "seat": "Χορτιάτης",
+            "seat": "Πανόραμα",
             "regionAndUnit": {
               "regionId": 2,
               "regionIso31662": "GR-B",
@@ -3635,8 +3635,8 @@
           },
           {
             "id": 283,
-            "name": "Θήρα",
-            "seat": "Φολέγανδρος",
+            "name": "Θήρας",
+            "seat": "Θήρα",
             "regionAndUnit": {
               "regionId": 12,
               "regionIso31662": "GR-L",

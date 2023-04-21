@@ -14,18 +14,120 @@
           "iso31662": "GR-A"
         },
         "carPlatesPattern": ["PM*", "TO*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 1,
+            "name": "Doxato",
+            "seat": "Kalampaki",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 2,
+            "name": "Drama",
+            "seat": "Drama",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 3,
+            "name": "Kato Nevrokopi",
+            "seat": "Kato Nevrokopi",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 4,
+            "name": "Paranesti",
+            "seat": "Paranesti",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          },
+          {
+            "id": 5,
+            "name": "Prosotsani",
+            "seat": "Prosotsani",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 1
+            }
+          }
+        ]
       },
       {
         "id": 2,
         "name": "Evros",
-        "seat": "Alexandroupolis",
+        "seat": "Alexandroupoli",
         "region": {
           "id": 1,
           "iso31662": "GR-A"
         },
         "carPlatesPattern": ["EB*", "MX*", "OP*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 6,
+            "name": "Alexandroupoli",
+            "seat": "Alexandroupoli",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 7,
+            "name": "Didymoteicho",
+            "seat": "Didymoteicho",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 8,
+            "name": "Orestiada",
+            "seat": "Orestiada",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 9,
+            "name": "Samothrace",
+            "seat": "Samothrace",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          },
+          {
+            "id": 10,
+            "name": "Soufli",
+            "seat": "Soufli",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 2
+            }
+          }
+        ]
       },
       {
         "id": 3,
@@ -36,18 +138,60 @@
           "iso31662": "GR-A"
         },
         "carPlatesPattern": ["KB*", "AB*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 11,
+            "name": "Kavala",
+            "seat": "Kavala",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 3
+            }
+          },
+          {
+            "id": 12,
+            "name": "Nestos",
+            "seat": "Chrysoupoli",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 3
+            }
+          },
+          {
+            "id": 13,
+            "name": "Pangaio",
+            "seat": "Eleftheroupoli",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 3
+            }
+          }
+        ]
       },
       {
         "id": 4,
         "name": "Thasos",
-        "seat": "Limenas",
+        "seat": "Thasos (Limenas Thasou)",
         "region": {
           "id": 1,
           "iso31662": "GR-A"
         },
         "carPlatesPattern": ["KB*", "AB*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 14,
+            "name": "Thasos",
+            "seat": "Thasos (Limenas Thasou)",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 4
+            }
+          }
+        ]
       },
       {
         "id": 5,
@@ -58,7 +202,48 @@
           "iso31662": "GR-A"
         },
         "carPlatesPattern": ["AH*", "HO*", "HTK", "HTM", "HTN", "HTO", "HTP", "HTT", "HTY", "HTX"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 15,
+            "name": "Abdera",
+            "seat": "Genissea",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 5
+            }
+          },
+          {
+            "id": 16,
+            "name": "Myki",
+            "seat": "Sminthi",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 5
+            }
+          },
+          {
+            "id": 17,
+            "name": "Xanthi",
+            "seat": "Xanthi ",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 5
+            }
+          },
+          {
+            "id": 18,
+            "name": "Topeiros",
+            "seat": "Evlalo",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 5
+            }
+          }
+        ]
       },
       {
         "id": 6,
@@ -69,7 +254,48 @@
           "iso31662": "GR-A"
         },
         "carPlatesPattern": ["KO*", "KK*", "TT*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 19,
+            "name": "Arriana",
+            "seat": "Fillyra",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          },
+          {
+            "id": 20,
+            "name": "Iasmos",
+            "seat": "Iasmos",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          },
+          {
+            "id": 21,
+            "name": "Komotini",
+            "seat": "Komotini",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          },
+          {
+            "id": 22,
+            "name": "Maroneia - Sapes",
+            "seat": "Sapes",
+            "regionAndUnit": {
+              "regionId": 1,
+              "regionIso31662": "GR-A",
+              "unitId": 6
+            }
+          }
+        ]
       }
     ]
   },
@@ -88,7 +314,38 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["HM*", "HX*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 23,
+            "name": "Alexandreia",
+            "seat": "Alexandreia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 7
+            }
+          },
+          {
+            "id": 24,
+            "name": "Veria",
+            "seat": "Veria",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 7
+            }
+          },
+          {
+            "id": 25,
+            "name": "Naousa",
+            "seat": "Naousa",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 7
+            }
+          }
+        ]
       },
       {
         "id": 8,
@@ -99,7 +356,148 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["N*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 26,
+            "name": "Chalkidona",
+            "seat": "Koufalia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 27,
+            "name": "Delta",
+            "seat": "Sindos",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 28,
+            "name": "Oraiokastro",
+            "seat": "Oraiokastro",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 29,
+            "name": "Pavlos Melas",
+            "seat": "Stavroupoli",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 30,
+            "name": "Ampelokipoi - Menemeni",
+            "seat": "Ampelokipoi",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 31,
+            "name": "Kordelio - Evosmos",
+            "seat": "Evosmos",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 32,
+            "name": "Neapoli - Sykies",
+            "seat": "Sykies",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 33,
+            "name": "Thessaloniki",
+            "seat": "Thessaloniki",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 34,
+            "name": "Kalamaria",
+            "seat": "Kalamaria",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 35,
+            "name": "Thermaikos",
+            "seat": "Peraia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 36,
+            "name": "Thermi",
+            "seat": "Thermi",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 37,
+            "name": "Pylaia - Chortiatis",
+            "seat": "Panorama",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 38,
+            "name": "Langadas",
+            "seat": "Langadas",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          },
+          {
+            "id": 39,
+            "name": "Volvi",
+            "seat": "Stavros",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 8
+            }
+          }
+        ]
       },
       {
         "id": 9,
@@ -110,7 +508,28 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["KI*", "EX*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 40,
+            "name": "Kilkis",
+            "seat": "Kilkis",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 9
+            }
+          },
+          {
+            "id": 41,
+            "name": "Paionia",
+            "seat": "Polykastro",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 9
+            }
+          }
+        ]
       },
       {
         "id": 10,
@@ -121,7 +540,48 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["EE*", "MM*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 42,
+            "name": "Pella",
+            "seat": "Giannitsa",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          },
+          {
+            "id": 43,
+            "name": "Skydra",
+            "seat": "Skydra",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          },
+          {
+            "id": 44,
+            "name": "Edessa",
+            "seat": "Edessa",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          },
+          {
+            "id": 45,
+            "name": "Almopia",
+            "seat": "Aridaia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 10
+            }
+          }
+        ]
       },
       {
         "id": 11,
@@ -132,7 +592,38 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["KN*", "TI*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 46,
+            "name": "Dion - Olympos",
+            "seat": "Litochoro",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 11
+            }
+          },
+          {
+            "id": 47,
+            "name": "Katerini",
+            "seat": "Katerini",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 11
+            }
+          },
+          {
+            "id": 48,
+            "name": "Pydna - Kolindros",
+            "seat": "Aiginio",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 11
+            }
+          }
+        ]
       },
       {
         "id": 12,
@@ -143,7 +634,80 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["EP*", "IX*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 49,
+            "name": "Nea Zichni",
+            "seat": "Nea Zichni ",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 50,
+            "name": "Amphipolis",
+            "seat": "Rodolivos",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 51,
+            "name": "Visaltia",
+            "seat": "Nigrita",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 52,
+            "name": "Emmanouil Pappas",
+            "seat": "Chryso",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 53,
+            "unitId": 50,
+            "name": "Serres",
+            "seat": "Serres",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 54,
+            "unitId": 52,
+            "name": "Irakleia",
+            "seat": "Irakleia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          },
+          {
+            "id": 55,
+            "name": "Sintiki",
+            "seat": "Sidirokastro",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 12
+            }
+          }
+        ]
       },
       {
         "id": 13,
@@ -154,7 +718,58 @@
           "iso31662": "GR-B"
         },
         "carPlatesPattern": ["XK*", "MA*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 56,
+            "name": "Aristotelis",
+            "seat": "Ierissos",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 57,
+            "name": "Sithonia",
+            "seat": "Nikiti",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 58,
+            "name": "Polygyros",
+            "seat": "Polygyros",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 59,
+            "name": "Kassandra",
+            "seat": "Kassandreia",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          },
+          {
+            "id": 60,
+            "name": "Nea Propontida",
+            "seat": "Nea Moudania",
+            "regionAndUnit": {
+              "regionId": 2,
+              "regionIso31662": "GR-B",
+              "unitId": 13
+            }
+          }
+        ]
       }
     ]
   },
@@ -173,7 +788,28 @@
           "iso31662": "GR-C"
         },
         "carPlatesPattern": ["PN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 61,
+            "name": "Deskati",
+            "seat": "Deskati",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 14
+            }
+          },
+          {
+            "id": 62,
+            "name": "Grevena",
+            "seat": "Grevena",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 14
+            }
+          }
+        ]
       },
       {
         "id": 15,
@@ -184,7 +820,38 @@
           "iso31662": "GR-C"
         },
         "carPlatesPattern": ["KT*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 63,
+            "name": "Kastoria",
+            "seat": "Kastoria",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 15
+            }
+          },
+          {
+            "id": 64,
+            "name": "Nestorio",
+            "seat": "Nestorio",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 15
+            }
+          },
+          {
+            "id": 65,
+            "name": "Orestida",
+            "seat": "Argos Orestiko",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 15
+            }
+          }
+        ]
       },
       {
         "id": 16,
@@ -195,7 +862,58 @@
           "iso31662": "GR-C"
         },
         "carPlatesPattern": ["KZ*", "MN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 66,
+            "name": "Eordaia",
+            "seat": "Ptolemaida",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 67,
+            "name": "Kozani",
+            "seat": "Kozani",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 68,
+            "name": "Voio",
+            "seat": "Siatista",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 69,
+            "name": "Velventos",
+            "seat": "Velventos",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          },
+          {
+            "id": 70,
+            "name": "Servia",
+            "seat": "Servia",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 16
+            }
+          }
+        ]
       },
       {
         "id": 17,
@@ -206,7 +924,38 @@
           "iso31662": "GR-C"
         },
         "carPlatesPattern": ["PA*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 71,
+            "name": "Amyntaio",
+            "seat": "Amyntaio",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 17
+            }
+          },
+          {
+            "id": 72,
+            "name": "Florina",
+            "seat": "Florina",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 17
+            }
+          },
+          {
+            "id": 73,
+            "name": "Prespes",
+            "seat": "Laimos",
+            "regionAndUnit": {
+              "regionId": 3,
+              "regionIso31662": "GR-C",
+              "unitId": 17
+            }
+          }
+        ]
       }
     ]
   },
@@ -225,7 +974,48 @@
           "iso31662": "GR-D"
         },
         "carPlatesPattern": ["AT*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 74,
+            "name": "Arta",
+            "seat": "Arta",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          },
+          {
+            "id": 75,
+            "name": "Nikolaos Skoufas",
+            "seat": "Peta",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          },
+          {
+            "id": 76,
+            "name": "Georgios Karaiskakis",
+            "seat": "Ano Kalentini",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          },
+          {
+            "id": 77,
+            "name": "Central Tzoumerka",
+            "seat": "Vourgareli",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 18
+            }
+          }
+        ]
       },
       {
         "id": 19,
@@ -236,7 +1026,38 @@
           "iso31662": "GR-D"
         },
         "carPlatesPattern": ["HN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 78,
+            "name": "Souli",
+            "seat": "Paramythia",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 19
+            }
+          },
+          {
+            "id": 79,
+            "name": "Filiates",
+            "seat": "Filiates",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 19
+            }
+          },
+          {
+            "id": 80,
+            "name": "Igoumenitsa",
+            "seat": "Igoumenitsa",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 19
+            }
+          }
+        ]
       },
       {
         "id": 20,
@@ -247,7 +1068,88 @@
           "iso31662": "GR-D"
         },
         "carPlatesPattern": ["IN*", "II*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 81,
+            "name": "Konitsa",
+            "seat": "Konitsa",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 82,
+            "name": "Pogoni",
+            "seat": "Kalpaki",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 83,
+            "name": "Zagori",
+            "seat": "Asprangeloi",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 84,
+            "name": "Zitsa",
+            "seat": "Eleousa",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 85,
+            "name": "Ioannina",
+            "seat": "Ioannina",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 86,
+            "name": "Metsovo",
+            "seat": "Metsovo",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 87,
+            "name": "North Tzoumerka",
+            "seat": "Pramanta",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          },
+          {
+            "id": 88,
+            "name": "Dodoni",
+            "seat": "Agia Kyriaki",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 20
+            }
+          }
+        ]
       },
       {
         "id": 21,
@@ -258,7 +1160,38 @@
           "iso31662": "GR-D"
         },
         "carPlatesPattern": ["PZ*", "TX*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 89,
+            "name": "Parga",
+            "seat": "Kanallaki",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 21
+            }
+          },
+          {
+            "id": 90,
+            "name": "Preveza",
+            "seat": "Preveza",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 21
+            }
+          },
+          {
+            "id": 91,
+            "name": "Ziros",
+            "seat": "Filippiada",
+            "regionAndUnit": {
+              "regionId": 4,
+              "regionIso31662": "GR-D",
+              "unitId": 21
+            }
+          }
+        ]
       }
     ]
   },
@@ -277,7 +1210,68 @@
           "iso31662": "GR-E"
         },
         "carPlatesPattern": ["KA*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 92,
+            "name": "Palamas",
+            "seat": "Palamas",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 93,
+            "name": "Mouzaki",
+            "seat": "Mouzaki",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 94,
+            "name": "Sofades",
+            "seat": "Sofades",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 95,
+            "name": "Argithea",
+            "seat": "Anthiro",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 96,
+            "name": "Lake Plastiras",
+            "seat": "Morfovouni",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          },
+          {
+            "id": 97,
+            "name": "Karditsa",
+            "seat": "Karditsa",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 22
+            }
+          }
+        ]
       },
       {
         "id": 23,
@@ -288,7 +1282,78 @@
           "iso31662": "GR-E"
         },
         "carPlatesPattern": ["PI*", "PP*", "PT*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 98,
+            "name": "Elassona",
+            "seat": "Elassona",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 99,
+            "name": "Tyrnavos",
+            "seat": "Tyrnavos",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 100,
+            "name": "Tempi",
+            "seat": "Makrychori",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 101,
+            "name": "Larissa",
+            "seat": "Larissa",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 102,
+            "name": "Agia",
+            "seat": "Agia",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 103,
+            "name": "Kileler",
+            "seat": "Nikaia",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          },
+          {
+            "id": 104,
+            "name": "Farsala",
+            "seat": "Farsala",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 23
+            }
+          }
+        ]
       },
       {
         "id": 24,
@@ -299,7 +1364,58 @@
           "iso31662": "GR-E"
         },
         "carPlatesPattern": ["BO*", "BO*", "BB*", "BA*", "BT*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 105,
+            "name": "Rigas Feraios",
+            "seat": "Velestino",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 106,
+            "name": "Almyros",
+            "seat": "Almyros",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 107,
+            "name": "Volos",
+            "seat": "Volos",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 108,
+            "name": "Zagora - Mouresi",
+            "seat": "Zagora",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          },
+          {
+            "id": 109,
+            "name": "South Pelion",
+            "seat": "Argalasti",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 24
+            }
+          }
+        ]
       },
       {
         "id": 25,
@@ -310,7 +1426,38 @@
           "iso31662": "GR-E"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 110,
+            "name": "Skiathos",
+            "seat": "Skiathos",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 25
+            }
+          },
+          {
+            "id": 111,
+            "name": "Skopelos",
+            "seat": "Skopelos",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 25
+            }
+          },
+          {
+            "id": 112,
+            "name": "Alonnisos",
+            "seat": "Alonnisos",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 25
+            }
+          }
+        ]
       },
       {
         "id": 26,
@@ -321,7 +1468,48 @@
           "iso31662": "GR-E"
         },
         "carPlatesPattern": ["TK*", "TN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 113,
+            "name": "Pyli",
+            "seat": "Pyli",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          },
+          {
+            "id": 114,
+            "name": "Meteora",
+            "seat": "Kalambaka",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          },
+          {
+            "id": 115,
+            "name": "Trikala",
+            "seat": "Trikala",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          },
+          {
+            "id": 116,
+            "name": "Farkadona",
+            "seat": "Farkadona",
+            "regionAndUnit": {
+              "regionId": 5,
+              "regionIso31662": "GR-E",
+              "unitId": 26
+            }
+          }
+        ]
       }
     ]
   },
@@ -340,7 +1528,18 @@
           "iso31662": "GR-F"
         },
         "carPlatesPattern": ["ZA*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 117,
+            "name": "Zakynthos",
+            "seat": "Zakynthos (city)",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 27
+            }
+          }
+        ]
       },
       {
         "id": 28,
@@ -351,7 +1550,48 @@
           "iso31662": "GR-F"
         },
         "carPlatesPattern": ["KY*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 118,
+            "name": "Central Corfu and Diapontia Islands",
+            "seat": "Corfu (city)",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          },
+          {
+            "id": 119,
+            "name": "North Corfu",
+            "seat": "Acharavi",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          },
+          {
+            "id": 120,
+            "name": "South Corfu",
+            "seat": "Lefkimmi",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          },
+          {
+            "id": 121,
+            "name": "Paxi",
+            "seat": "Gaios",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 28
+            }
+          }
+        ]
       },
       {
         "id": 29,
@@ -362,7 +1602,38 @@
           "iso31662": "GR-F"
         },
         "carPlatesPattern": ["KE*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 122,
+            "name": "Argostoli",
+            "seat": "Argostoli",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 29
+            }
+          },
+          {
+            "id": 123,
+            "name": "Lixouri",
+            "seat": "Lixouri",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 29
+            }
+          },
+          {
+            "id": 124,
+            "name": "Sami",
+            "seat": "Sami",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 29
+            }
+          }
+        ]
       },
       {
         "id": 30,
@@ -373,7 +1644,18 @@
           "iso31662": "GR-F"
         },
         "carPlatesPattern": ["KE*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 125,
+            "name": "Ithaca",
+            "seat": "Vathy",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 30
+            }
+          }
+        ]
       },
       {
         "id": 31,
@@ -384,7 +1666,28 @@
           "iso31662": "GR-F"
         },
         "carPlatesPattern": ["EY*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 126,
+            "name": "Lefkada",
+            "seat": "Lefkada (city)",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 31
+            }
+          },
+          {
+            "id": 127,
+            "name": "Meganisi",
+            "seat": "Katomeri",
+            "regionAndUnit": {
+              "regionId": 6,
+              "regionIso31662": "GR-F",
+              "unitId": 31
+            }
+          }
+        ]
       }
     ]
   },
@@ -396,14 +1699,85 @@
     "units": [
       {
         "id": 32,
-        "name": "Aetolia-Acarnania",
+        "name": "Aetolia - Acarnania",
         "seat": "Messolonghi",
         "region": {
           "id": 7,
           "iso31662": "GR-G"
         },
         "carPlatesPattern": ["AI*", "ME*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 128,
+            "name": "Amfilochia",
+            "seat": "Amfilochia",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 129,
+            "name": "Aktio - Vonitsa",
+            "seat": "Vonitsa",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 130,
+            "name": "Xiromero",
+            "seat": "Astakos",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 131,
+            "name": "Missolonghi",
+            "seat": "Missolonghi",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 132,
+            "name": "Agrinio",
+            "seat": "Agrinio",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 133,
+            "name": "Thermo",
+            "seat": "Thermo",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          },
+          {
+            "id": 134,
+            "name": "Nafpaktia",
+            "seat": "Nafpaktos",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 32
+            }
+          }
+        ]
       },
       {
         "id": 33,
@@ -414,7 +1788,58 @@
           "iso31662": "GR-G"
         },
         "carPlatesPattern": ["AX*", "AZ*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 135,
+            "name": "Patras",
+            "seat": "Patras",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 136,
+            "name": "Aigialeia",
+            "seat": "Aigio",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 137,
+            "name": "Kalavryta",
+            "seat": "Kalavryta",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 138,
+            "name": "Erymanthos",
+            "seat": "Chalandritsa",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          },
+          {
+            "id": 139,
+            "name": "West Achaea",
+            "seat": "Kato Achaia",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 33
+            }
+          }
+        ]
       },
       {
         "id": 34,
@@ -425,7 +1850,78 @@
           "iso31662": "GR-G"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 140,
+            "name": "Andravida - Kyllini",
+            "seat": "Lechaina",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 141,
+            "name": "Pineios",
+            "seat": "Gastouni",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 142,
+            "name": "Ilida",
+            "seat": "Amaliada",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 143,
+            "name": "Pyrgos",
+            "seat": "Pyrgos",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 144,
+            "name": "Archaia Olympia",
+            "seat": "Archaia Olympia",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 145,
+            "name": "Andritsaina - Krestena",
+            "seat": "Krestena",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          },
+          {
+            "id": 146,
+            "name": "Zacharo",
+            "seat": "Zacharo",
+            "regionAndUnit": {
+              "regionId": 7,
+              "regionIso31662": "GR-G",
+              "unitId": 34
+            }
+          }
+        ]
       }
     ]
   },
@@ -444,7 +1940,68 @@
           "iso31662": "GR-H"
         },
         "carPlatesPattern": ["BI*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 147,
+            "name": "Tanagra",
+            "seat": "Schimatari",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 148,
+            "name": "Thebes",
+            "seat": "Thebes",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 149,
+            "name": "Aliartos",
+            "seat": "Aliartos",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 150,
+            "name": "Orchomenos",
+            "seat": "Orchomenos",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 151,
+            "name": "Livadeia",
+            "seat": "Livadeia",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          },
+          {
+            "id": 152,
+            "name": "Distomo - Arachova - Antikyra",
+            "seat": "Distomo",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 35
+            }
+          }
+        ]
       },
       {
         "id": 36,
@@ -455,7 +2012,88 @@
           "iso31662": "GR-H"
         },
         "carPlatesPattern": ["XA*", "EH*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 153,
+            "name": "Skyros",
+            "seat": "Skyros",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 154,
+            "name": "Istiaia - Aidipsos",
+            "seat": "Istiaia",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 155,
+            "name": "Mantoudi - Limni - Agia Anna",
+            "seat": "Limni",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 156,
+            "name": "Dirfys - Messapia",
+            "seat": "Psachna",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 157,
+            "name": "Chalcis",
+            "seat": "Chalcis",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 158,
+            "name": "Eretria",
+            "seat": "Eretria",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 159,
+            "name": "Kymi - Aliveri",
+            "seat": "Aliveri",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          },
+          {
+            "id": 160,
+            "name": "Karystos",
+            "seat": "Karystos",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 36
+            }
+          }
+        ]
       },
       {
         "id": 37,
@@ -466,7 +2104,28 @@
           "iso31662": "GR-H"
         },
         "carPlatesPattern": ["KH*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 161,
+            "name": "Karpenisi",
+            "seat": "Karpenisi",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 37
+            }
+          },
+          {
+            "id": 162,
+            "name": "Agrafa",
+            "seat": "Kerasochori",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 37
+            }
+          }
+        ]
       },
       {
         "id": 38,
@@ -477,7 +2136,78 @@
           "iso31662": "GR-H"
         },
         "carPlatesPattern": ["MI*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 163,
+            "name": "Lokroi",
+            "seat": "Atalanti",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 164,
+            "name": "Amfikleia - Elateia",
+            "seat": "Kato Tithorea",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 165,
+            "name": "Kamena Vourla",
+            "seat": "Kamena Vourla",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 166,
+            "name": "Lamia",
+            "seat": "Lamia",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 167,
+            "name": "Stylida",
+            "seat": "Stylida",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 168,
+            "name": "Makrakomi",
+            "seat": "Sperchiada",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          },
+          {
+            "id": 169,
+            "name": "Domokos",
+            "seat": "Domokos",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 38
+            }
+          }
+        ]
       },
       {
         "id": 39,
@@ -488,7 +2218,28 @@
           "iso31662": "GR-H"
         },
         "carPlatesPattern": ["AM*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 170,
+            "name": "Delphi",
+            "seat": "Amfissa",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 39
+            }
+          },
+          {
+            "id": 171,
+            "name": "Dorida",
+            "seat": "Lidoriki",
+            "regionAndUnit": {
+              "regionId": 8,
+              "regionIso31662": "GR-H",
+              "unitId": 39
+            }
+          }
+        ]
       }
     ]
   },
@@ -507,7 +2258,128 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 172,
+            "name": "Papagou - Cholargos",
+            "seat": "Cholargos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 173,
+            "name": "Agia Paraskevi",
+            "seat": "Agia Paraskevi ",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 174,
+            "name": "Chalandri",
+            "seat": "Chalandri",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 175,
+            "name": "Vrilissia",
+            "seat": "Vrilissia",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 176,
+            "name": "Marousi",
+            "seat": "Marousi",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 177,
+            "name": "Filothei - Psychiko",
+            "seat": "Psychiko",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 178,
+            "name": "Nea Ionia",
+            "seat": "Nea Ionia ",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 179,
+            "name": "Metamorfosi",
+            "seat": "Metamorfosi",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 180,
+            "name": "Irakleio",
+            "seat": "Irakleio",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 181,
+            "name": "Lykovrysi - Pefki",
+            "seat": "Pefki",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 182,
+            "name": "Kifisia",
+            "seat": "Kifisia",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          },
+          {
+            "id": 183,
+            "name": "Penteli",
+            "seat": "Melissia",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 40
+            }
+          }
+        ]
       },
       {
         "id": 41,
@@ -518,7 +2390,78 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 184,
+            "name": "Agia Varvara",
+            "seat": "Agia Varvara",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 185,
+            "name": "Chaidari",
+            "seat": "Chaidari",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 186,
+            "name": "Aigaleo",
+            "seat": "Aigaleo",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 187,
+            "name": "Peristeri",
+            "seat": "Peristeri",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 188,
+            "name": "Petroupoli",
+            "seat": "Petroupoli",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 189,
+            "name": "Ilio",
+            "seat": "Ilio",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          },
+          {
+            "id": 190,
+            "name": "Agioi Anargyroi - Kamatero",
+            "seat": "Agioi Anargyroi",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 41
+            }
+          }
+        ]
       },
       {
         "id": 42,
@@ -529,7 +2472,88 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 191,
+            "name": "Nea Filadelfia - Nea Chalkidona",
+            "seat": "Nea Filadelfia",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 192,
+            "name": "Galatsi",
+            "seat": "Galatsi",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 193,
+            "name": "Athens",
+            "seat": "Athens",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 194,
+            "name": "Dafni - Ymittos",
+            "seat": "Dafni",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 195,
+            "name": "Ilioupoli",
+            "seat": "Ilioupoli",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 196,
+            "name": "Vyronas",
+            "seat": "Vyronas",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 197,
+            "name": "Kaisariani",
+            "seat": "Kaisariani",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          },
+          {
+            "id": 198,
+            "name": "Zografou",
+            "seat": "Zografou",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 42
+            }
+          }
+        ]
       },
       {
         "id": 43,
@@ -540,7 +2564,88 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 199,
+            "name": "Moschato - Tavros",
+            "seat": "Moschato",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 200,
+            "name": "Kallithea",
+            "seat": "Kallithea",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 201,
+            "name": "Nea Smyrni",
+            "seat": "Nea Smyrni ",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 202,
+            "name": "Palaio Faliro",
+            "seat": "Palaio Faliro",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 203,
+            "name": "Agios Dimitrios",
+            "seat": "Agios Dimitrios",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 204,
+            "name": "Alimos",
+            "seat": "Alimos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 205,
+            "name": "Elliniko - Argyroupoli",
+            "seat": "Argyroupoli",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          },
+          {
+            "id": 206,
+            "name": "Glyfada",
+            "seat": "Glyfada",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 43
+            }
+          }
+        ]
       },
       {
         "id": 44,
@@ -551,7 +2656,58 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 207,
+            "name": "Perama",
+            "seat": "Perama",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 208,
+            "name": "Keratsini - Drapetsona",
+            "seat": "Keratsini",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 209,
+            "name": "Piraeus",
+            "seat": "Piraeus",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 210,
+            "name": "Nikaia - Agios Ioannis Rentis",
+            "seat": "Nikaia",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          },
+          {
+            "id": 211,
+            "name": "Korydallos",
+            "seat": "Korydallos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 44
+            }
+          }
+        ]
       },
       {
         "id": 45,
@@ -562,7 +2718,88 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 212,
+            "name": "Cythera",
+            "seat": "Cythera",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 213,
+            "name": "Spetses",
+            "seat": "Spetses",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 214,
+            "name": "Hydra",
+            "seat": "Hydra",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 215,
+            "name": "Troizinia - Methana",
+            "seat": "Galatas",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 216,
+            "name": "Poros",
+            "seat": "Poros",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 217,
+            "name": "Agistri",
+            "seat": "Agistri",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 218,
+            "name": "Aegina",
+            "seat": "Aegina",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          },
+          {
+            "id": 219,
+            "name": "Salamina",
+            "seat": "Salamina",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 45
+            }
+          }
+        ]
       },
       {
         "id": 46,
@@ -573,7 +2810,138 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 220,
+            "name": "Vari - Voula - Vouliagmeni",
+            "seat": "Voula",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 221,
+            "name": "Kropia",
+            "seat": "Koropi",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 222,
+            "name": "Saronikos",
+            "seat": "Kalyvia Thorikou",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 223,
+            "name": "Lavreotiki",
+            "seat": "Laurium",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 224,
+            "name": "Markopoulo Mesogaias",
+            "seat": "Markopoulo",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 225,
+            "name": "Paiania",
+            "seat": "Paiania",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 226,
+            "name": "Spata - Artemida",
+            "seat": "Spata",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 227,
+            "name": "Pallini",
+            "seat": "Gerakas",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 228,
+            "name": "Rafina - Pikermi",
+            "seat": "Rafina",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 229,
+            "name": "Marathon",
+            "seat": "Marathon",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 230,
+            "name": "Dionysos",
+            "seat": "Agios Stefanos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 231,
+            "name": "Oropos",
+            "seat": "Oropos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          },
+          {
+            "id": 232,
+            "name": "Acharnes",
+            "seat": "Acharnes",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 46
+            }
+          }
+        ]
       },
       {
         "id": 47,
@@ -584,7 +2952,58 @@
           "iso31662": "GR-I"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 233,
+            "name": "Fyli",
+            "seat": "Ano Liosia",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 234,
+            "name": "Aspropyrgos",
+            "seat": "Aspropyrgos",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 235,
+            "name": "Elefsina",
+            "seat": "Elefsina",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 236,
+            "name": "Mandra - Eidyllia",
+            "seat": "Mandra",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          },
+          {
+            "id": 237,
+            "name": "Megara",
+            "seat": "Megara",
+            "regionAndUnit": {
+              "regionId": 9,
+              "regionIso31662": "GR-I",
+              "unitId": 47
+            }
+          }
+        ]
       }
     ]
   },
@@ -603,7 +3022,48 @@
           "iso31662": "GR-J"
         },
         "carPlatesPattern": ["AP*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 238,
+            "name": "Argos - Mykines",
+            "seat": "Argos",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          },
+          {
+            "id": 239,
+            "name": "Nafplio",
+            "seat": "Nafplio",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          },
+          {
+            "id": 240,
+            "name": "Epidaurus",
+            "seat": "Lygourio",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          },
+          {
+            "id": 241,
+            "name": "Ermionida",
+            "seat": "Kranidi",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 48
+            }
+          }
+        ]
       },
       {
         "id": 49,
@@ -614,7 +3074,58 @@
           "iso31662": "GR-J"
         },
         "carPlatesPattern": ["TP*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 242,
+            "name": "South Kynouria",
+            "seat": "Leonidio",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 243,
+            "name": "North Kynouria",
+            "seat": "Astros",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 244,
+            "name": "Tripoli",
+            "seat": "Tripoli",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 245,
+            "name": "Gortynia",
+            "seat": "Dimitsana",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          },
+          {
+            "id": 246,
+            "name": "Megalopoli",
+            "seat": "Megalopoli",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 49
+            }
+          }
+        ]
       },
       {
         "id": 50,
@@ -625,7 +3136,68 @@
           "iso31662": "GR-J"
         },
         "carPlatesPattern": ["KP*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 247,
+            "name": "Loutraki - Perachora - Agioi Theodoroi",
+            "seat": "Loutraki",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 248,
+            "name": "Corinth",
+            "seat": "Corinth",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 249,
+            "name": "Velo - Vocha",
+            "seat": "Zevgolateio",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 250,
+            "name": "Sikyona",
+            "seat": "Kiato",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 251,
+            "name": "Xylokastro - Evrostina",
+            "seat": "Xylokastro",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          },
+          {
+            "id": 252,
+            "name": "Nemea",
+            "seat": "Nemea",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 50
+            }
+          }
+        ]
       },
       {
         "id": 51,
@@ -636,7 +3208,58 @@
           "iso31662": "GR-J"
         },
         "carPlatesPattern": ["AK*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 253,
+            "name": "East Mani",
+            "seat": "Gytheio",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 254,
+            "name": "Sparta",
+            "seat": "Sparta",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 255,
+            "name": "Evrotas",
+            "seat": "Skala",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 256,
+            "name": "Monemvasia",
+            "seat": "Molaoi",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          },
+          {
+            "id": 257,
+            "name": "Elafonisos",
+            "seat": "Elafonisos",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 51
+            }
+          }
+        ]
       },
       {
         "id": 52,
@@ -647,7 +3270,68 @@
           "iso31662": "GR-J"
         },
         "carPlatesPattern": ["KM*", "MZ*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 258,
+            "name": "Oichalia",
+            "seat": "Meligalas",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 259,
+            "name": "Trifylia",
+            "seat": "Kyparissia",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 260,
+            "name": "Pylos - Nestor",
+            "seat": "Pylos",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 261,
+            "name": "Messini",
+            "seat": "Messini",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 262,
+            "name": "Kalamata",
+            "seat": "Kalamata",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          },
+          {
+            "id": 263,
+            "name": "West Mani",
+            "seat": "Kardamyli",
+            "regionAndUnit": {
+              "regionId": 10,
+              "regionIso31662": "GR-J",
+              "unitId": 52
+            }
+          }
+        ]
       }
     ]
   },
@@ -666,7 +3350,28 @@
           "iso31662": "GR-K"
         },
         "carPlatesPattern": ["MI*", "MY*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 264,
+            "name": "West Lesbos",
+            "seat": "Kalloni",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 53
+            }
+          },
+          {
+            "id": 265,
+            "name": "Mytilini",
+            "seat": "Mytilini",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 53
+            }
+          }
+        ]
       },
       {
         "id": 54,
@@ -677,7 +3382,28 @@
           "iso31662": "GR-K"
         },
         "carPlatesPattern": ["MO*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 266,
+            "name": "Fournoi Korseon",
+            "seat": "Fournoi",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 54
+            }
+          },
+          {
+            "id": 267,
+            "name": "Icaria",
+            "seat": "Agios Kirykos",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 54
+            }
+          }
+        ]
       },
       {
         "id": 55,
@@ -688,7 +3414,28 @@
           "iso31662": "GR-K"
         },
         "carPlatesPattern": ["MH*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 268,
+            "name": "Lemnos",
+            "seat": "Myrina",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 55
+            }
+          },
+          {
+            "id": 269,
+            "name": "Agios Efstratios",
+            "seat": "Agios Efstratios",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 55
+            }
+          }
+        ]
       },
       {
         "id": 56,
@@ -699,7 +3446,28 @@
           "iso31662": "GR-K"
         },
         "carPlatesPattern": ["MO*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 270,
+            "name": "East Samos",
+            "seat": "Samos",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 56
+            }
+          },
+          {
+            "id": 271,
+            "name": "West Samos",
+            "seat": "Karlovasi",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 56
+            }
+          }
+        ]
       },
       {
         "id": 57,
@@ -710,7 +3478,38 @@
           "iso31662": "GR-K"
         },
         "carPlatesPattern": ["XI*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 272,
+            "name": "Psara",
+            "seat": "Psara",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 57
+            }
+          },
+          {
+            "id": 273,
+            "name": "Oinousses",
+            "seat": "Oinousses",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 57
+            }
+          },
+          {
+            "id": 274,
+            "name": "Chios",
+            "seat": "Chios (town)",
+            "regionAndUnit": {
+              "regionId": 11,
+              "regionIso31662": "GR-K",
+              "unitId": 57
+            }
+          }
+        ]
       }
     ]
   },
@@ -729,7 +3528,18 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 275,
+            "name": "Andros",
+            "seat": "Andros",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 58
+            }
+          }
+        ]
       },
       {
         "id": 59,
@@ -740,7 +3550,48 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 276,
+            "name": "Serifos",
+            "seat": "Serifos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          },
+          {
+            "id": 277,
+            "name": "Sifnos",
+            "seat": "Apollonia",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          },
+          {
+            "id": 278,
+            "name": "Kimolos",
+            "seat": "Kimolos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          },
+          {
+            "id": 279,
+            "name": "Milos",
+            "seat": "Milos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 59
+            }
+          }
+        ]
       },
       {
         "id": 60,
@@ -751,7 +3602,58 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 280,
+            "name": "Ios",
+            "seat": "Ios",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 281,
+            "name": "Sikinos",
+            "seat": "Sikinos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 282,
+            "name": "Folegandros",
+            "seat": "Folegandros",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 283,
+            "name": "Santorini",
+            "seat": "Fira",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          },
+          {
+            "id": 284,
+            "name": "Anafi",
+            "seat": "Anafi",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 60
+            }
+          }
+        ]
       },
       {
         "id": 61,
@@ -762,7 +3664,28 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 285,
+            "name": "Kea",
+            "seat": "Kea",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 61
+            }
+          },
+          {
+            "id": 286,
+            "name": "Kythnos",
+            "seat": "Kythnos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 61
+            }
+          }
+        ]
       },
       {
         "id": 62,
@@ -773,7 +3696,18 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 287,
+            "name": "Mykonos",
+            "seat": "Mykonos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 62
+            }
+          }
+        ]
       },
       {
         "id": 63,
@@ -784,7 +3718,28 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 288,
+            "name": "Naxos and Lesser Cyclades",
+            "seat": "Naxos (city)",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 63
+            }
+          },
+          {
+            "id": 289,
+            "name": "Amorgos",
+            "seat": "Amorgos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 63
+            }
+          }
+        ]
       },
       {
         "id": 64,
@@ -795,7 +3750,18 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 290,
+            "name": "Syros - Ermoupoli",
+            "seat": "Ermoupoli",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 64
+            }
+          }
+        ]
       },
       {
         "id": 65,
@@ -806,7 +3772,18 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 291,
+            "name": "Tinos",
+            "seat": "Tinos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 65
+            }
+          }
+        ]
       },
       {
         "id": 66,
@@ -817,7 +3794,28 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 292,
+            "name": "Antiparos",
+            "seat": "Antiparos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 66
+            }
+          },
+          {
+            "id": 293,
+            "name": "Paros",
+            "seat": "Paros",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 66
+            }
+          }
+        ]
       },
       {
         "id": 67,
@@ -828,7 +3826,68 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 294,
+            "name": "Agathonisi",
+            "seat": "Megalo Chorio",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 295,
+            "name": "Patmos",
+            "seat": "Patmos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 296,
+            "name": "Leipsoi",
+            "seat": "Leipsoi",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 297,
+            "name": "Leros",
+            "seat": "Agia Marina ",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 298,
+            "name": "Kalymnos",
+            "seat": "Pothia",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          },
+          {
+            "id": 299,
+            "name": "Astypalaia",
+            "seat": "Astypalaia",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 67
+            }
+          }
+        ]
       },
       {
         "id": 68,
@@ -839,7 +3898,28 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 300,
+            "name": "Karpathos",
+            "seat": "Karpathos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 68
+            }
+          },
+          {
+            "id": 301,
+            "name": "Kasos",
+            "seat": "Kasos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 68
+            }
+          }
+        ]
       },
       {
         "id": 69,
@@ -850,7 +3930,28 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 302,
+            "name": "Kos",
+            "seat": "Kos",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 69
+            }
+          },
+          {
+            "id": 303,
+            "name": "Nisyros",
+            "seat": "Mandraki",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 69
+            }
+          }
+        ]
       },
       {
         "id": 70,
@@ -861,7 +3962,58 @@
           "iso31662": "GR-L"
         },
         "carPlatesPattern": [],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 304,
+            "name": "Tilos",
+            "seat": "Megalo Chorio",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 305,
+            "name": "Symi",
+            "seat": "Symi",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 306,
+            "name": "Rhodes",
+            "seat": "Rhodes",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 307,
+            "name": "Chalki",
+            "seat": "Chalki",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          },
+          {
+            "id": 308,
+            "name": "Kastellorizo",
+            "seat": "Kastellorizo",
+            "regionAndUnit": {
+              "regionId": 12,
+              "regionIso31662": "GR-L",
+              "unitId": 70
+            }
+          }
+        ]
       }
     ]
   },
@@ -880,7 +4032,88 @@
           "iso31662": "GR-M"
         },
         "carPlatesPattern": ["HK*", "HP*", "HKA*", "HKE*", "HPA*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 309,
+            "name": "Viannos",
+            "seat": "Ano Viannos",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 310,
+            "name": "Minoa Pediada",
+            "seat": "Evangelismos",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 311,
+            "name": "Archanes - Asterousia",
+            "seat": "Peza",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 312,
+            "name": "Chersonisos",
+            "seat": "Gournes",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 313,
+            "name": "Heraklion",
+            "seat": "Heraklion",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 314,
+            "name": "Malevizi",
+            "seat": "Gazi",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 315,
+            "name": "Gortyna",
+            "seat": "Agioi Deka",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          },
+          {
+            "id": 316,
+            "name": "Faistos",
+            "seat": "Moires",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 71
+            }
+          }
+        ]
       },
       {
         "id": 72,
@@ -891,7 +4124,48 @@
           "iso31662": "GR-M"
         },
         "carPlatesPattern": ["AN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 317,
+            "name": "Sitia",
+            "seat": "Sitia",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          },
+          {
+            "id": 318,
+            "name": "Ierapetra",
+            "seat": "Ierapetra",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          },
+          {
+            "id": 319,
+            "name": "Agios Nikolaos",
+            "seat": "Agios Nikolaos ",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          },
+          {
+            "id": 320,
+            "name": "Oropedio Lasithiou",
+            "seat": "Tzermiado",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 72
+            }
+          }
+        ]
       },
       {
         "id": 73,
@@ -902,7 +4176,58 @@
           "iso31662": "GR-M"
         },
         "carPlatesPattern": ["PE*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 321,
+            "name": "Anogeia",
+            "seat": "Anogeia",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 322,
+            "name": "Mylopotamos",
+            "seat": "Perama",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 323,
+            "name": "Amari",
+            "seat": "Agia Foteini",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 324,
+            "name": "Agios Vasileios",
+            "seat": "Spili",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          },
+          {
+            "id": 325,
+            "name": "Rethymno",
+            "seat": "Rethymno",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 73
+            }
+          }
+        ]
       },
       {
         "id": 74,
@@ -913,7 +4238,78 @@
           "iso31662": "GR-M"
         },
         "carPlatesPattern": ["XN*"],
-        "municipalities": []
+        "municipalities": [
+          {
+            "id": 326,
+            "name": "Apokoronas",
+            "seat": "Vryses",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 327,
+            "name": "Chania",
+            "seat": "Chania",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 328,
+            "name": "Platanias",
+            "seat": "Gerani",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 329,
+            "name": "Kissamos",
+            "seat": "Kissamos",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 330,
+            "name": "Kantanos - Selino",
+            "seat": "Palaiochora",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 331,
+            "name": "Sfakia",
+            "seat": "Chora Sfakion",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          },
+          {
+            "id": 332,
+            "name": "Gavdos",
+            "seat": "Gavdos",
+            "regionAndUnit": {
+              "regionId": 13,
+              "regionIso31662": "GR-M",
+              "unitId": 74
+            }
+          }
+        ]
       }
     ]
   },

@@ -435,6 +435,6 @@ describe("getMunicipalities", () => {
       .flatMap(({ municipalities }) => [...municipalities]);
 
     expect(getMunicipalities({ locale: "en" })).toStrictEqual(expectedData);
-    expect(getMunicipalities({ locale: "en" }).length).toBe(0);
+    expect(getMunicipalities({ locale: "en" }).length).toBe(332);
   });
 });
