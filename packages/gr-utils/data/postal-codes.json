@@ -8,6 +8,7 @@
       "regionIso31662": "GR-G",
       "unitId": 32
     },
+    "prefecture": 49,
     "postalCodes": [
       "30021",
       "30027",
@@ -56,6 +57,7 @@
       "regionIso31662": "GR-J",
       "unitId": 48
     },
+    "prefecture": 38,
     "postalCodes": [
       "21055",
       "21200",
@@ -82,6 +84,7 @@
       "regionIso31662": "GR-J",
       "unitId": 49
     },
+    "prefecture": 37,
     "postalCodes": [
       "22006",
       "22009",
@@ -128,6 +131,7 @@
       "regionIso31662": "GR-D",
       "unitId": 18
     },
+    "prefecture": 26,
     "postalCodes": [
       "47043",
       "47044",
@@ -153,6 +157,7 @@
       "regionIso31662": "GR-I",
       "unitId": 42
     },
+    "prefecture": 1,
     "postalCodes": [
       "12351",
       "15341",
@@ -484,6 +489,7 @@
       "regionIso31662": "GR-G",
       "unitId": 33
     },
+    "prefecture": 48,
     "postalCodes": [
       "25010",
       "25100",
@@ -535,6 +541,7 @@
       "regionIso31662": "GR-H",
       "unitId": 35
     },
+    "prefecture": 9,
     "postalCodes": [
       "32007",
       "32001",
@@ -564,6 +571,7 @@
       "regionIso31662": "GR-C",
       "unitId": 14
     },
+    "prefecture": 52,
     "postalCodes": ["51030", "50004", "51100", "51200", "51031", "50007", "51032"]
   },
   {
@@ -575,6 +583,7 @@
       "regionIso31662": "GR-A",
       "unitId": 1
     },
+    "prefecture": 21,
     "postalCodes": ["66300", "66100", "66031", "66033", "66032", "66036", "66037", "66035", "66200", "66038", "66034"]
   },
   {
@@ -586,6 +595,7 @@
       "regionIso31662": "GR-L",
       "unitId": 70
     },
+    "prefecture": 43,
     "postalCodes": [
       "84008",
       "85302",
@@ -625,6 +635,7 @@
       "regionIso31662": "GR-A",
       "unitId": 2
     },
+    "prefecture": 22,
     "postalCodes": [
       "68011",
       "68100",
@@ -657,6 +668,7 @@
       "regionIso31662": "GR-H",
       "unitId": 36
     },
+    "prefecture": 5,
     "postalCodes": [
       "34010",
       "34500",
@@ -695,6 +707,7 @@
       "regionIso31662": "GR-H",
       "unitId": 37
     },
+    "prefecture": 6,
     "postalCodes": ["36081", "36073", "36072", "43100", "36100", "36071", "36076", "36075", "36074", "36070", "36080"]
   },
   {
@@ -706,6 +719,7 @@
       "regionIso31662": "GR-F",
       "unitId": 27
     },
+    "prefecture": 33,
     "postalCodes": ["29091", "29100", "29090", "29092"]
   },
   {
@@ -717,6 +731,7 @@
       "regionIso31662": "GR-G",
       "unitId": 34
     },
+    "prefecture": 50,
     "postalCodes": [
       "27200",
       "27051",
@@ -753,6 +768,7 @@
       "regionIso31662": "GR-B",
       "unitId": 7
     },
+    "prefecture": 11,
     "postalCodes": ["59300", "59100", "59034", "59035", "59033", "59031", "59200", "59032"]
   },
   {
@@ -764,6 +780,7 @@
       "regionIso31662": "GR-M",
       "unitId": 71
     },
+    "prefecture": 18,
     "postalCodes": [
       "70003",
       "70012",
@@ -811,6 +828,7 @@
       "regionIso31662": "GR-D",
       "unitId": 19
     },
+    "prefecture": 29,
     "postalCodes": ["46032", "44017", "46031", "46100", "46033", "46030", "46200", "48060", "46300"]
   },
   {
@@ -822,6 +840,7 @@
       "regionIso31662": "GR-B",
       "unitId": 8
     },
+    "prefecture": 16,
     "postalCodes": [
       "57003",
       "55438",
@@ -923,6 +942,7 @@
       "regionIso31662": "GR-D",
       "unitId": 20
     },
+    "prefecture": 27,
     "postalCodes": [
       "44008",
       "47043",
@@ -968,6 +988,7 @@
       "regionIso31662": "GR-A",
       "unitId": 3
     },
+    "prefecture": 23,
     "postalCodes": [
       "64012",
       "64100",
@@ -1001,6 +1022,7 @@
       "regionIso31662": "GR-E",
       "unitId": 22
     },
+    "prefecture": 44,
     "postalCodes": [
       "43061",
       "43065",
@@ -1027,6 +1049,7 @@
       "regionIso31662": "GR-C",
       "unitId": 15
     },
+    "prefecture": 53,
     "postalCodes": [
       "52058",
       "52200",
@@ -1052,6 +1075,7 @@
       "regionIso31662": "GR-F",
       "unitId": 28
     },
+    "prefecture": 30,
     "postalCodes": ["49082", "49081", "49084", "49100", "49080", "49083"]
   },
   {
@@ -1063,6 +1087,7 @@
       "regionIso31662": "GR-F",
       "unitId": 29
     },
+    "prefecture": 31,
     "postalCodes": ["28081", "28100", "28085", "28300", "28083", "28200", "28086", "28080", "28301", "28084", "28082"]
   },
   {
@@ -1074,6 +1099,7 @@
       "regionIso31662": "GR-B",
       "unitId": 9
     },
+    "prefecture": 12,
     "postalCodes": [
       "61400",
       "61006",
@@ -1100,6 +1126,7 @@
       "regionIso31662": "GR-C",
       "unitId": 16
     },
+    "prefecture": 54,
     "postalCodes": [
       "50004",
       "52200",
@@ -1128,6 +1155,7 @@
       "regionIso31662": "GR-J",
       "unitId": 50
     },
+    "prefecture": 39,
     "postalCodes": [
       "20003",
       "20005",
@@ -1162,6 +1190,7 @@
       "regionIso31662": "GR-L",
       "unitId": 64
     },
+    "prefecture": 42,
     "postalCodes": [
       "84801",
       "84008",
@@ -1204,6 +1233,7 @@
       "regionIso31662": "GR-J",
       "unitId": 51
     },
+    "prefecture": 40,
     "postalCodes": [
       "23061",
       "23062",
@@ -1240,6 +1270,7 @@
       "regionIso31662": "GR-E",
       "unitId": 23
     },
+    "prefecture": 45,
     "postalCodes": [
       "40003",
       "40400",
@@ -1279,6 +1310,7 @@
       "regionIso31662": "GR-M",
       "unitId": 72
     },
+    "prefecture": 19,
     "postalCodes": [
       "72100",
       "70004",
@@ -1305,6 +1337,7 @@
       "regionIso31662": "GR-K",
       "unitId": 53
     },
+    "prefecture": 35,
     "postalCodes": [
       "81102",
       "81101",
@@ -1336,6 +1369,7 @@
       "regionIso31662": "GR-F",
       "unitId": 31
     },
+    "prefecture": 32,
     "postalCodes": ["31083", "31082", "31081", "31080", "31100"]
   },
   {
@@ -1347,6 +1381,7 @@
       "regionIso31662": "GR-E",
       "unitId": 24
     },
+    "prefecture": 46,
     "postalCodes": [
       "37200",
       "37300",
@@ -1391,6 +1426,7 @@
       "regionIso31662": "GR-J",
       "unitId": 52
     },
+    "prefecture": 41,
     "postalCodes": [
       "24024",
       "24017",
@@ -1435,6 +1471,7 @@
       "regionIso31662": "GR-A",
       "unitId": 5
     },
+    "prefecture": 25,
     "postalCodes": ["67061", "67064", "67200", "67300", "67063", "66037", "67100", "66035", "67062"]
   },
   {
@@ -1446,6 +1483,7 @@
       "regionIso31662": "GR-B",
       "unitId": 10
     },
+    "prefecture": 13,
     "postalCodes": ["58400", "58002", "58100", "58200", "58004", "58001", "57100", "58300", "58005", "58500", "58003"]
   },
   {
@@ -1457,6 +1495,7 @@
       "regionIso31662": "GR-B",
       "unitId": 11
     },
+    "prefecture": 14,
     "postalCodes": ["60300", "60100", "60064", "60061", "60062", "60063", "60200", "60066", "60065"]
   },
   {
@@ -1468,6 +1507,7 @@
       "regionIso31662": "GR-D",
       "unitId": 21
     },
+    "prefecture": 28,
     "postalCodes": ["44009", "48300", "48062", "48061", "48060", "48100", "48200"]
   },
   {
@@ -1479,6 +1519,7 @@
       "regionIso31662": "GR-M",
       "unitId": 73
     },
+    "prefecture": 20,
     "postalCodes": [
       "74056",
       "74061",
@@ -1505,6 +1546,7 @@
       "regionIso31662": "GR-A",
       "unitId": 6
     },
+    "prefecture": 24,
     "postalCodes": ["69200", "69100", "67063", "69400", "69500", "69300"]
   },
   {
@@ -1516,6 +1558,7 @@
       "regionIso31662": "GR-K",
       "unitId": 56
     },
+    "prefecture": 36,
     "postalCodes": ["83300", "83302", "83200", "83102", "83101", "83103", "83103", "83104", "83301", "83100", "83400"]
   },
   {
@@ -1527,6 +1570,7 @@
       "regionIso31662": "GR-B",
       "unitId": 12
     },
+    "prefecture": 15,
     "postalCodes": [
       "62051",
       "62045",
@@ -1566,6 +1610,7 @@
       "regionIso31662": "GR-E",
       "unitId": 26
     },
+    "prefecture": 47,
     "postalCodes": [
       "42034",
       "43061",
@@ -1590,6 +1635,7 @@
       "regionIso31662": "GR-H",
       "unitId": 38
     },
+    "prefecture": 8,
     "postalCodes": [
       "35017",
       "35006",
@@ -1624,6 +1670,7 @@
       "regionIso31662": "GR-C",
       "unitId": 17
     },
+    "prefecture": 51,
     "postalCodes": [
       "53077",
       "53200",
@@ -1649,6 +1696,7 @@
       "regionIso31662": "GR-H",
       "unitId": 39
     },
+    "prefecture": 7,
     "postalCodes": [
       "33100",
       "33059",
@@ -1677,6 +1725,7 @@
       "regionIso31662": "GR-B",
       "unitId": 13
     },
+    "prefecture": 10,
     "postalCodes": [
       "63078",
       "63074",
@@ -1712,6 +1761,7 @@
       "regionIso31662": "GR-M",
       "unitId": 74
     },
+    "prefecture": 17,
     "postalCodes": [
       "73005",
       "73013",
@@ -1751,6 +1801,7 @@
       "regionIso31662": "GR-K",
       "unitId": 57
     },
+    "prefecture": 34,
     "postalCodes": ["82103", "82200", "82102", "82300", "82101", "82100", "82104"]
   }
 ]
