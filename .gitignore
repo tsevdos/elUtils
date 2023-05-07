@@ -34,3 +34,5 @@ yarn-error.log*
 
 # dist
 dist
+
+.todo.md

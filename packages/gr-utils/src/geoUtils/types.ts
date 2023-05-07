@@ -33,9 +33,3 @@ export type Municipality = {
     unitId: number;
   };
 };
-
-export type AdministrativeRegionsOptions = {
-  locale?: "el" | "en";
-  includeMountAthos?: boolean;
-  level?: "region" | "unit" | "municipality";
-};
