@@ -33,3 +33,13 @@ export type Municipality = {
     unitId: number;
   };
 };
+
+export type GeographicRegion = {
+  id: number;
+  name: string;
+  seat: string;
+  administrativeRegions: {
+    id: number;
+    iso31662: string;
+  }[];
+};

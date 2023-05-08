@@ -1,13 +1,15 @@
-import regionsEl from "../../data/administrative-regions-el.json";
-import regionsEn from "../../data/administrative-regions-en.json";
+import administrativeRegionsEl from "../../data/administrative-regions-el.json";
+import administrativeRegionsEn from "../../data/administrative-regions-en.json";
+import geographicRegionsEl from "../../data/geographic-regions-el.json";
+import geographicRegionsEn from "../../data/geographic-regions-en.json";
 import { Geo } from "./Geo";
 
-const administrativeRegions = { el: regionsEl, en: regionsEn };
-
+const administrativeRegions = { el: administrativeRegionsEl, en: administrativeRegionsEn };
 const administrativeRegionsWithoutMountAthos = {
   el: administrativeRegions.el.filter(({ id }) => id !== Geo.MOUNT_ATHOS_REGION_ID),
   en: administrativeRegions.en.filter(({ id }) => id !== Geo.MOUNT_ATHOS_REGION_ID),
 };
+const geographicRegions = { el: geographicRegionsEl, en: geographicRegionsEn };
 
 describe("Geo singleton object", () => {
   describe("getAdministrativeRegions:", () => {
@@ -459,6 +461,38 @@ describe("Geo singleton object", () => {
 
       expect(Geo.getMunicipalities({ locale: "en" })).toStrictEqual(expectedData);
       expect(Geo.getMunicipalities({ locale: "en" }).length).toBe(0);
+    });
+  });
+
+  describe("getGeographicRegions:", () => {
+    it("correctly returns all geographic regions in greek language", () => {
+      const expectedData = geographicRegions.el;
+
+      expect(Geo.getGeographicRegions()).toBe(expectedData);
+      expect(Geo.getGeographicRegions({ locale: "el" })).toBe(expectedData);
+      expect(Geo.getGeographicRegions().length).toBe(9);
+    });
+
+    it("correctly returns all geographic regions in english language", () => {
+      const expectedData = geographicRegions.en;
+
+      expect(Geo.getGeographicRegions({ locale: "en" })).toBe(expectedData);
+      expect(Geo.getGeographicRegions().length).toBe(9);
+    });
+  });
+
+  describe("getGeographicRegionById:", () => {
+    it("correctly returns geographic region by id (in greek language)", () => {
+      const expectedData = geographicRegions.el[4];
+
+      expect(Geo.getGeographicRegionById({ id: 5 })).toBe(expectedData);
+      expect(Geo.getGeographicRegionById({ id: 5, locale: "el" })).toBe(expectedData);
+    });
+
+    it("correctly returns geographic region by id (in english language)", () => {
+      const expectedData = geographicRegions.en[4];
+
+      expect(Geo.getGeographicRegionById({ id: 5, locale: "en" })).toBe(expectedData);
     });
   });
 });

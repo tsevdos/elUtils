@@ -1,6 +1,8 @@
-import regionsEl from "../../data/administrative-regions-el.json";
-import regionsEn from "../../data/administrative-regions-en.json";
-import { Region, RegionWithoutUnits, Unit, UnitWithoutMunicipalities, Municipality } from "./types";
+import administrativeRegionsEl from "../../data/administrative-regions-el.json";
+import administrativeRegionsEn from "../../data/administrative-regions-en.json";
+import geographicRegionsEl from "../../data/geographic-regions-el.json";
+import geographicRegionsEn from "../../data/geographic-regions-en.json";
+import { Region, RegionWithoutUnits, Unit, UnitWithoutMunicipalities, Municipality, GeographicRegion } from "./types";
 
 type AdministrativeRegionsOptions = {
   locale?: "el" | "en";
@@ -16,17 +18,17 @@ type AdministrativeUnitsOptions = {
 };
 type AdministrativeUnitByIdOptions = { id: number } & AdministrativeUnitsOptions;
 type MunicipalitiesOptions = { locale?: "el" | "en" };
+type GeographicRegionOptions = { locale?: "el" | "en" };
+type GeographicRegionByIdOptions = { id: number } & GeographicRegionOptions;
 
 class GeoUtils {
   MOUNT_ATHOS_REGION_ID = 14;
-  private administrativeRegions = {
-    el: regionsEl,
-    en: regionsEn,
-  };
+  private administrativeRegions = { el: administrativeRegionsEl, en: administrativeRegionsEn };
   private administrativeRegionsWithoutMountAthos = {
     el: this.administrativeRegions.el.filter(({ id }) => id !== this.MOUNT_ATHOS_REGION_ID),
     en: this.administrativeRegions.en.filter(({ id }) => id !== this.MOUNT_ATHOS_REGION_ID),
   };
+  private geographicRegions = { el: geographicRegionsEl, en: geographicRegionsEn };
 
   getAdministrativeRegions({
     locale = "el",
@@ -97,6 +99,16 @@ class GeoUtils {
 
     return municipalities;
   }
+
+  getGeographicRegions({ locale = "el" }: GeographicRegionOptions = {}): GeographicRegion[] {
+    return this.geographicRegions[locale];
+  }
+
+  getGeographicRegionById = (options: GeographicRegionByIdOptions): GeographicRegion | undefined => {
+    const { id, locale = "el" } = options;
+
+    return this.geographicRegions[locale].find((region) => region.id === id);
+  };
 }
 
 export const Geo = new GeoUtils();
