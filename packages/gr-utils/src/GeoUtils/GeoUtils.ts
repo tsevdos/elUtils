@@ -35,7 +35,7 @@ type GeographicRegionByIdOptions = { id: number } & GeographicRegionOptions;
 type PrefecturesOptions = { locale?: Locale; includeMountAthos?: boolean };
 type PrefectureByIdOptions = { id: number } & PrefecturesOptions;
 
-class GeoUtils {
+class GeoUtilities {
   MOUNT_ATHOS_REGION_ID = 14;
   MOUNT_ATHOS_PREFECTURE_ID = 55;
   private administrativeRegions = {
@@ -150,4 +150,4 @@ class GeoUtils {
   }
 }
 
-export const Geo = new GeoUtils();
+export const GeoUtils = new GeoUtilities();
