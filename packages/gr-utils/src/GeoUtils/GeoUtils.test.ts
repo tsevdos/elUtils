@@ -19,7 +19,7 @@ export const prefecturesWithoutMountAthos = {
 };
 
 describe("Geo singleton object", () => {
-  describe("getAdministrativeRegions:", () => {
+  describe("getAdministrativeRegions", () => {
     it("correctly returns data with default values (in greek language)", () => {
       const expectedData = administrativeRegionsWithoutMountAthos.el;
 
@@ -96,7 +96,7 @@ describe("Geo singleton object", () => {
     });
   });
 
-  describe("getAdministrativeRegionById:", () => {
+  describe("getAdministrativeRegionById", () => {
     it("correctly returns region with default values (in greek language)", () => {
       const expectedData = administrativeRegionsWithoutMountAthos.el[0];
 
@@ -186,7 +186,7 @@ describe("Geo singleton object", () => {
     });
   });
 
-  describe("getAdministrativeRegionByIsoCode:", () => {
+  describe("getAdministrativeRegionByIsoCode", () => {
     it("correctly returns region with default values (in greek language)", () => {
       const expectedData = administrativeRegionsWithoutMountAthos.el[0];
 
@@ -306,7 +306,7 @@ describe("Geo singleton object", () => {
     });
   });
 
-  describe("getAdministrativeUnits:", () => {
+  describe("getAdministrativeUnits", () => {
     it("correctly returns data with default values (in greek language)", () => {
       const expectedData = administrativeRegionsWithoutMountAthos.el.flatMap(({ units }) => [...units]);
 
@@ -382,7 +382,7 @@ describe("Geo singleton object", () => {
     });
   });
 
-  describe("getAdministrativeUnitById:", () => {
+  describe("getAdministrativeUnitById", () => {
     it("correctly returns region with default values (in greek language)", () => {
       const expectedData = administrativeRegionsWithoutMountAthos.el.flatMap(({ units }) => [...units])[0];
 
@@ -458,7 +458,7 @@ describe("Geo singleton object", () => {
     });
   });
 
-  describe("getMunicipalities:", () => {
+  describe("getMunicipalities", () => {
     it("correctly returns data with default values (in greek language)", () => {
       const expectedData = administrativeRegionsWithoutMountAthos.el
         .flatMap(({ units }) => [...units])
@@ -477,7 +477,7 @@ describe("Geo singleton object", () => {
         .flatMap(({ municipalities }) => [...municipalities]);
 
       expect(GeoUtils.getMunicipalities({ locale: "en" })).toStrictEqual(expectedData);
-      expect(GeoUtils.getMunicipalities({ locale: "en" }).length).toBe(0);
+      expect(GeoUtils.getMunicipalities({ locale: "en" }).length).toBe(332);
     });
   });
 
@@ -513,7 +513,7 @@ describe("Geo singleton object", () => {
     });
   });
 
-  describe("getPrefectures:", () => {
+  describe("getPrefectures", () => {
     it("correctly returns data with default values (in greek language)", () => {
       const expectedData = prefecturesWithoutMountAthos.el;
 
@@ -548,7 +548,7 @@ describe("Geo singleton object", () => {
     });
   });
 
-  describe("getPrefectureById:", () => {
+  describe("getPrefectureById", () => {
     it("correctly returns prefecture with default values (in greek language)", () => {
       const expectedData = prefecturesWithoutMountAthos.el[0];
 
