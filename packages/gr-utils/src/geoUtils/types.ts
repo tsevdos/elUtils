@@ -30,7 +30,7 @@ export type Municipality = {
   regionAndUnit: {
     regionId: number;
     regionIso31662: string;
-    unitId: number;
+    unitId: number | null; // Null is  only in Mount Athos
   };
 };
 
@@ -42,4 +42,15 @@ export type GeographicRegion = {
     id: number;
     iso31662: string;
   }[];
+};
+
+export type Prefecture = {
+  id: number;
+  name: string;
+  seat: string;
+  regionAndUnit: {
+    regionId: number;
+    regionIso31662: string;
+    unitId: number | null; // Null is  only in Mount Athos
+  };
 };

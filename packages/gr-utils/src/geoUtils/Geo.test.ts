@@ -2,6 +2,8 @@ import administrativeRegionsEl from "../../data/administrative-regions-el.json";
 import administrativeRegionsEn from "../../data/administrative-regions-en.json";
 import geographicRegionsEl from "../../data/geographic-regions-el.json";
 import geographicRegionsEn from "../../data/geographic-regions-en.json";
+import prefecturesEl from "../../data/prefectures-el.json";
+import prefecturesEn from "../../data/prefectures-en.json";
 import { Geo } from "./Geo";
 
 const administrativeRegions = { el: administrativeRegionsEl, en: administrativeRegionsEn };
@@ -10,6 +12,11 @@ const administrativeRegionsWithoutMountAthos = {
   en: administrativeRegions.en.filter(({ id }) => id !== Geo.MOUNT_ATHOS_REGION_ID),
 };
 const geographicRegions = { el: geographicRegionsEl, en: geographicRegionsEn };
+const prefectures = { el: prefecturesEl, en: prefecturesEn };
+export const prefecturesWithoutMountAthos = {
+  el: prefectures.el.filter(({ id }) => id !== Geo.MOUNT_ATHOS_PREFECTURE_ID),
+  en: prefectures.en.filter(({ id }) => id !== Geo.MOUNT_ATHOS_PREFECTURE_ID),
+};
 
 describe("Geo singleton object", () => {
   describe("getAdministrativeRegions:", () => {
@@ -493,6 +500,73 @@ describe("Geo singleton object", () => {
       const expectedData = geographicRegions.en[4];
 
       expect(Geo.getGeographicRegionById({ id: 5, locale: "en" })).toBe(expectedData);
+    });
+  });
+
+  describe("getPrefectures:", () => {
+    it("correctly returns data with default values (in greek language)", () => {
+      const expectedData = prefecturesWithoutMountAthos.el;
+
+      expect(Geo.getPrefectures()).toEqual(expectedData);
+      expect(Geo.getPrefectures({ locale: "el" })).toEqual(expectedData);
+      expect(Geo.getPrefectures({ includeMountAthos: false })).toEqual(expectedData);
+      expect(Geo.getPrefectures({ locale: "el", includeMountAthos: false })).toEqual(expectedData);
+      expect(Geo.getPrefectures().length).toBe(54);
+    });
+
+    it("correctly returns data including Mount Athos (in greek language)", () => {
+      const expectedData = prefectures.el;
+
+      expect(Geo.getPrefectures({ includeMountAthos: true })).toEqual(expectedData);
+      expect(Geo.getPrefectures({ locale: "el", includeMountAthos: true })).toEqual(expectedData);
+      expect(Geo.getPrefectures({ includeMountAthos: true }).length).toBe(55);
+    });
+
+    it("correctly returns data (in english language)", () => {
+      const expectedData = prefecturesWithoutMountAthos.en;
+
+      expect(Geo.getPrefectures({ locale: "en" })).toEqual(expectedData);
+      expect(Geo.getPrefectures({ locale: "en", includeMountAthos: false })).toEqual(expectedData);
+      expect(Geo.getPrefectures().length).toBe(54);
+    });
+
+    it("correctly returns data including Mount Athos (in english language)", () => {
+      const expectedData = prefectures.en;
+
+      expect(Geo.getPrefectures({ locale: "en", includeMountAthos: true })).toEqual(expectedData);
+      expect(Geo.getPrefectures({ locale: "en", includeMountAthos: true }).length).toBe(55);
+    });
+  });
+
+  describe("getPrefectureById:", () => {
+    it("correctly returns prefecture with default values (in greek language)", () => {
+      const expectedData = prefecturesWithoutMountAthos.el[0];
+
+      expect(Geo.getPrefectureById({ id: 1 })).toBe(expectedData);
+      expect(Geo.getPrefectureById({ id: 1, locale: "el" })).toBe(expectedData);
+      expect(Geo.getPrefectureById({ id: 1, includeMountAthos: false })).toBe(expectedData);
+      // all default options
+      expect(Geo.getPrefectureById({ id: 1, locale: "el", includeMountAthos: false })).toBe(expectedData);
+    });
+
+    it("correctly returns Mount Athos prefecture (in greek language)", () => {
+      const expectedData = prefectures.el[54];
+
+      expect(Geo.getPrefectureById({ id: 55, includeMountAthos: true })).toBe(expectedData);
+      expect(Geo.getPrefectureById({ id: 55, locale: "el", includeMountAthos: true })).toBe(expectedData);
+    });
+
+    it("correctly returns prefecture (in english language)", () => {
+      const expectedData = prefecturesWithoutMountAthos.en[33];
+
+      expect(Geo.getPrefectureById({ id: 34, locale: "en" })).toBe(expectedData);
+      expect(Geo.getPrefectureById({ id: 34, locale: "en", includeMountAthos: false })).toBe(expectedData);
+    });
+
+    it("correctly returns Mount Athos prefecture (in english language)", () => {
+      const expectedData = prefectures.en[54];
+
+      expect(Geo.getPrefectureById({ id: 55, locale: "en", includeMountAthos: true })).toBe(expectedData);
     });
   });
 });

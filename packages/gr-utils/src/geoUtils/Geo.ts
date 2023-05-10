@@ -2,33 +2,59 @@ import administrativeRegionsEl from "../../data/administrative-regions-el.json";
 import administrativeRegionsEn from "../../data/administrative-regions-en.json";
 import geographicRegionsEl from "../../data/geographic-regions-el.json";
 import geographicRegionsEn from "../../data/geographic-regions-en.json";
-import { Region, RegionWithoutUnits, Unit, UnitWithoutMunicipalities, Municipality, GeographicRegion } from "./types";
+import prefecturesEl from "../../data/prefectures-el.json";
+import prefecturesEn from "../../data/prefectures-en.json";
+import {
+  Region,
+  RegionWithoutUnits,
+  Unit,
+  UnitWithoutMunicipalities,
+  Municipality,
+  GeographicRegion,
+  Prefecture,
+} from "./types";
 
+// GeoUtils method Options
+type Locale = "el" | "en";
 type AdministrativeRegionsOptions = {
-  locale?: "el" | "en";
+  locale?: Locale;
   includeMountAthos?: boolean;
   level?: "region" | "unit" | "municipality";
 };
 type AdministrativeRegionByIdOptions = { id: number } & AdministrativeRegionsOptions;
 type AdministrativeRegionByIsoCodeOptions = { isocode: string } & AdministrativeRegionsOptions;
 type AdministrativeUnitsOptions = {
-  locale?: "el" | "en";
+  locale?: Locale;
   includeMountAthos?: boolean;
   level?: "unit" | "municipality";
 };
 type AdministrativeUnitByIdOptions = { id: number } & AdministrativeUnitsOptions;
-type MunicipalitiesOptions = { locale?: "el" | "en" };
-type GeographicRegionOptions = { locale?: "el" | "en" };
+type MunicipalitiesOptions = { locale?: Locale };
+type GeographicRegionOptions = { locale?: Locale };
 type GeographicRegionByIdOptions = { id: number } & GeographicRegionOptions;
+type PrefecturesOptions = { locale?: Locale; includeMountAthos?: boolean };
+type PrefectureByIdOptions = { id: number } & PrefecturesOptions;
 
 class GeoUtils {
   MOUNT_ATHOS_REGION_ID = 14;
-  private administrativeRegions = { el: administrativeRegionsEl, en: administrativeRegionsEn };
+  MOUNT_ATHOS_PREFECTURE_ID = 55;
+  private administrativeRegions = {
+    el: administrativeRegionsEl,
+    en: administrativeRegionsEn,
+  } as const;
   private administrativeRegionsWithoutMountAthos = {
     el: this.administrativeRegions.el.filter(({ id }) => id !== this.MOUNT_ATHOS_REGION_ID),
     en: this.administrativeRegions.en.filter(({ id }) => id !== this.MOUNT_ATHOS_REGION_ID),
   };
-  private geographicRegions = { el: geographicRegionsEl, en: geographicRegionsEn };
+  private geographicRegions = {
+    el: geographicRegionsEl,
+    en: geographicRegionsEn,
+  } as const;
+  private prefectures = { el: prefecturesEl, en: prefecturesEn } as const;
+  private prefecturesWithoutMountAthos = {
+    el: this.prefectures.el.filter(({ id }) => id !== this.MOUNT_ATHOS_PREFECTURE_ID),
+    en: this.prefectures.en.filter(({ id }) => id !== this.MOUNT_ATHOS_PREFECTURE_ID),
+  };
 
   getAdministrativeRegions({
     locale = "el",
@@ -109,6 +135,19 @@ class GeoUtils {
 
     return this.geographicRegions[locale].find((region) => region.id === id);
   };
+
+  getPrefectures({ locale = "el", includeMountAthos = false }: PrefecturesOptions = {}): Prefecture[] {
+    const prefectures = includeMountAthos ? this.prefectures[locale] : this.prefecturesWithoutMountAthos[locale];
+
+    return prefectures;
+  }
+
+  getPrefectureById(options: PrefectureByIdOptions): Prefecture | undefined {
+    const { id, locale = "el", includeMountAthos = false } = options;
+    const regionsData = this.getPrefectures({ locale, includeMountAthos });
+
+    return regionsData.find((region) => region.id === id);
+  }
 }
 
 export const Geo = new GeoUtils();
