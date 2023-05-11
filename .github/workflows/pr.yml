@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [16, 18]
+        node: [16, 18, 20]
     name: Checking PR in node version ➡️ ${{ matrix.node }}❗️
     steps:
       - name: Checkout code 📥
