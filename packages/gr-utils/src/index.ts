@@ -1,3 +1,2 @@
 export { GeoUtils } from "./GeoUtils/GeoUtils";
-
-export { getDays, getMonths, getQuarters, getEras } from "./dates/dates";
+export { DateUtils } from "./DateUtils/DateUtils";
