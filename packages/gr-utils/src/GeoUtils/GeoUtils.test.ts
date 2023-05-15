@@ -579,4 +579,25 @@ describe("Geo singleton object", () => {
       expect(GeoUtils.getPrefectureById({ id: 55, locale: "en", includeMountAthos: true })).toBe(expectedData);
     });
   });
+
+  describe("validatePostalCode", () => {
+    it("returns true on existing postal codes", () => {
+      expect(GeoUtils.validatePostalCode("30005")).toBe(true);
+      expect(GeoUtils.validatePostalCode("17562")).toBe(true);
+      expect(GeoUtils.validatePostalCode("17122")).toBe(true);
+      expect(GeoUtils.validatePostalCode("25008")).toBe(true);
+      expect(GeoUtils.validatePostalCode("68014")).toBe(true);
+      expect(GeoUtils.validatePostalCode("27066")).toBe(true);
+      expect(GeoUtils.validatePostalCode("54250")).toBe(true);
+    });
+
+    it("returns false on not existing postal codes", () => {
+      expect(GeoUtils.validatePostalCode("12345")).toBe(false);
+      expect(GeoUtils.validatePostalCode("11111")).toBe(false);
+      expect(GeoUtils.validatePostalCode("22222")).toBe(false);
+      expect(GeoUtils.validatePostalCode("99999")).toBe(false);
+      expect(GeoUtils.validatePostalCode("98765")).toBe(false);
+      expect(GeoUtils.validatePostalCode("56789")).toBe(false);
+    });
+  });
 });

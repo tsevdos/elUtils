@@ -4,6 +4,7 @@ import geographicRegionsEl from "../../data/geographic-regions-el.json";
 import geographicRegionsEn from "../../data/geographic-regions-en.json";
 import prefecturesEl from "../../data/prefectures-el.json";
 import prefecturesEn from "../../data/prefectures-en.json";
+import postalCodesData from "../../data/postal-codes.json";
 import {
   Region,
   RegionWithoutUnits,
@@ -55,6 +56,7 @@ class GeoUtilities {
     el: this.prefectures.el.filter(({ id }) => id !== this.MOUNT_ATHOS_PREFECTURE_ID),
     en: this.prefectures.en.filter(({ id }) => id !== this.MOUNT_ATHOS_PREFECTURE_ID),
   };
+  private postalCodes = postalCodesData;
 
   getAdministrativeRegions({
     locale = "el",
@@ -147,6 +149,12 @@ class GeoUtilities {
     const regionsData = this.getPrefectures({ locale, includeMountAthos });
 
     return regionsData.find((region) => region.id === id);
+  }
+
+  validatePostalCode(postalCode: string): boolean {
+    const validPostalCodes = this.postalCodes.flatMap(({ postalCodes }) => [...postalCodes]);
+
+    return validPostalCodes.includes(postalCode);
   }
 }
 
