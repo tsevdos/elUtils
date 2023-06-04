@@ -35,6 +35,10 @@ type GeographicRegionOptions = { locale?: Locale };
 type GeographicRegionByIdOptions = { id: number } & GeographicRegionOptions;
 type PrefecturesOptions = { locale?: Locale; includeMountAthos?: boolean };
 type PrefectureByIdOptions = { id: number } & PrefecturesOptions;
+type FindByPostalCodeOptions = {
+  locale: Locale;
+  entity: "prefecture" | "region" | "unit";
+};
 
 class GeoUtilities {
   MOUNT_ATHOS_REGION_ID = 14;
@@ -117,7 +121,7 @@ class GeoUtilities {
     const { id, locale = "el", includeMountAthos = false, level = "municipality" } = options;
     const unitsData = this.getAdministrativeUnits({ locale, includeMountAthos, level });
 
-    return unitsData.find((region) => region.id === id);
+    return unitsData.find((unit) => unit.id === id);
   }
 
   getMunicipalities({ locale = "el" }: MunicipalitiesOptions = {}): Municipality[] {
@@ -146,15 +150,45 @@ class GeoUtilities {
 
   getPrefectureById(options: PrefectureByIdOptions): Prefecture | undefined {
     const { id, locale = "el", includeMountAthos = false } = options;
-    const regionsData = this.getPrefectures({ locale, includeMountAthos });
+    const prefecturesData = this.getPrefectures({ locale, includeMountAthos });
 
-    return regionsData.find((region) => region.id === id);
+    return prefecturesData.find((region) => region.id === id);
   }
 
   validatePostalCode(postalCode: string): boolean {
     const validPostalCodes = this.postalCodes.flatMap(({ postalCodes }) => [...postalCodes]);
 
     return validPostalCodes.includes(postalCode);
+  }
+
+  findByPostalCode(
+    postalCode: string,
+    options?: Partial<FindByPostalCodeOptions>,
+  ): Prefecture | Region | Unit | undefined {
+    const { locale, entity } = { locale: "el", entity: "prefecture", ...options } as FindByPostalCodeOptions;
+    const includeMountAthos = false; // never include Mount Athos. No postal codes there.
+    const postalCodeData = this.postalCodes.find((entry) => entry.postalCodes.includes(postalCode));
+
+    if (!postalCodeData) {
+      return undefined;
+    }
+
+    if (entity === "prefecture") {
+      const id = postalCodeData.prefectureId;
+      return this.getPrefectureById({ id, locale, includeMountAthos });
+    }
+
+    if (entity === "region") {
+      const id = postalCodeData.regionAndUnit.regionId;
+      return this.getAdministrativeRegionById({ id, locale, level: "region", includeMountAthos }) as Region;
+    }
+
+    if (entity === "unit") {
+      const id = postalCodeData.regionAndUnit.unitId;
+      return this.getAdministrativeUnitById({ id, locale, level: "unit", includeMountAthos }) as Unit;
+    }
+
+    return undefined;
   }
 }
 

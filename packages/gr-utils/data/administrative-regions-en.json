@@ -2712,7 +2712,7 @@
       {
         "id": 45,
         "name": "Islands",
-        "seat": "",
+        "seat": "Salamina",
         "region": {
           "id": 9,
           "iso31662": "GR-I"
@@ -2946,7 +2946,7 @@
       {
         "id": 47,
         "name": "West Attica",
-        "seat": "",
+        "seat": "Elefsina",
         "region": {
           "id": 9,
           "iso31662": "GR-I"
