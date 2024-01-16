@@ -1,10 +1,10 @@
-import administrativeRegionsEl from "../../data/administrative-regions-el.json";
-import administrativeRegionsEn from "../../data/administrative-regions-en.json";
-import geographicRegionsEl from "../../data/geographic-regions-el.json";
-import geographicRegionsEn from "../../data/geographic-regions-en.json";
-import prefecturesEl from "../../data/prefectures-el.json";
-import prefecturesEn from "../../data/prefectures-en.json";
-import postalCodesData from "../../data/postal-codes.json";
+import administrativeRegionsEl from "../data/administrative-regions-el.json";
+import administrativeRegionsEn from "../data/administrative-regions-en.json";
+import geographicRegionsEl from "../data/geographic-regions-el.json";
+import geographicRegionsEn from "../data/geographic-regions-en.json";
+import prefecturesEl from "../data/prefectures-el.json";
+import prefecturesEn from "../data/prefectures-en.json";
+import postalCodesData from "../data/postal-codes.json";
 import {
   Region,
   RegionWithoutUnits,

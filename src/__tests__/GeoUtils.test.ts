@@ -4,7 +4,7 @@ import geographicRegionsEl from "../../data/geographic-regions-el.json";
 import geographicRegionsEn from "../../data/geographic-regions-en.json";
 import prefecturesEl from "../../data/prefectures-el.json";
 import prefecturesEn from "../../data/prefectures-en.json";
-import { GeoUtils } from "./GeoUtils";
+import { GeoUtils } from "../GeoUtils";
 
 const administrativeRegions = { el: administrativeRegionsEl, en: administrativeRegionsEn };
 const administrativeRegionsWithoutMountAthos = {

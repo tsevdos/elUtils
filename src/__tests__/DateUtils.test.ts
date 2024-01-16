@@ -1,5 +1,5 @@
 import datesData from "../../data/dates.json";
-import { DateUtils } from "./DateUtils";
+import { DateUtils } from "../DateUtils";
 
 describe("Date singleton object", () => {
   describe("getDays", () => {
