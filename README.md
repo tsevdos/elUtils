@@ -1,10 +1,39 @@
-# Monorepo of [my npm packages](https://www.npmjs.com/~tsevdos)
+todo
 
-## Gr-utils (@tsevdos/gr-utils)
+# Greek utils
 
-- [README and Source Code](https://github.com/tsevdos/npm-packages/tree/main/packages/gr-utils)
+> Greek Utils is a library focused on solving problems that we face daily in applications development for Greek businesses.
 
-## Greek in tech (@tsevdos/greek-in-tech)
+## Installation
 
-- [README and Source Code](https://github.com/tsevdos/npm-packages/tree/main/packages/greek-in-tech)
-- [NPM package](https://www.npmjs.com/package/@tsevdos/greek-in-tech)
+```shell
+# NPM
+npm install @tsevdos/el-utils
+# or Yarn
+yarn add @tsevdos/el-utils
+# or PNPM
+pnpm add @tsevdos/el-utils
+```
+
+## Usage
+
+To use one of the available utilities you just need to import the required function as in the example below:
+
+```js
+// CommonJS
+const DateUtils = require("@tsevdos/el-utils").DateUtils;
+const GeoUtils = require("@tsevdos/el-utils").GeoUtils;
+
+// ESM
+import { DateUtils, GeoUtils } from "@tsevdos/el-utils";
+```
+
+After that you can use any method / property of the improted object like this:
+
+```js
+GeoUtils.getAdministrativeRegions();
+```
+
+## License
+
+MIT© [John Tsevdos](http://tsevdos.me)

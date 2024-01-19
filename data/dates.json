@@ -59,6 +59,7 @@
         "November",
         "December"
       ],
+      "alternative": [],
       "short": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
       "min": ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
     }
