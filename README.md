@@ -34,6 +34,11 @@ After that you can use any method / property of the improted object like this:
 GeoUtils.getAdministrativeRegions();
 ```
 
+## API
+
+1. [**`GeoUtils`**](#todo)
+2. [**`DateUtils`**](#todo)
+
 ## License
 
 MIT© [John Tsevdos](http://tsevdos.me)
