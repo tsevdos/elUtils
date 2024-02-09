@@ -17,27 +17,18 @@ pnpm add @tsevdos/el-utils
 
 ## Usage
 
-To use one of the available utilities you just need to import the required function as in the example below:
+To use one of the available utility functions you just need to import (example below) :
 
 ```js
-// CommonJS
-const DateUtils = require("@tsevdos/el-utils").DateUtils;
-const GeoUtils = require("@tsevdos/el-utils").GeoUtils;
+import { getAdministrativeRegions, getDays } from "@tsevdos/el-utils";
 
-// ESM
-import { DateUtils, GeoUtils } from "@tsevdos/el-utils";
-```
-
-After that you can use any method / property of the improted object like this:
-
-```js
-GeoUtils.getAdministrativeRegions();
+console.log(getAdministrativeRegions());
 ```
 
 ## API
 
-1. [**`GeoUtils`**](#todo)
-2. [**`DateUtils`**](#todo)
+1. [**`GeoUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/GeoUtils.md)
+2. [**`dateUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md)
 
 ## License
 
