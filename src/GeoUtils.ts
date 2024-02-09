@@ -155,12 +155,6 @@ class GeoUtilities {
     return prefecturesData.find((region) => region.id === id);
   }
 
-  validatePostalCode(postalCode: string): boolean {
-    const validPostalCodes = this.postalCodes.flatMap(({ postalCodes }) => [...postalCodes]);
-
-    return validPostalCodes.includes(postalCode);
-  }
-
   findByPostalCode(
     postalCode: string,
     options?: Partial<FindByPostalCodeOptions>,
