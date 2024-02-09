@@ -1,15 +1,15 @@
 # DateUtils
 
-> The **`DateUtils`** singleton object provides methods for retrieving date-related data such as days, months, quarters, and eras.
+> The **`dateUtils`** module provides functions for retrieving date-related data such as days, months, quarters, and eras.
 
 ## Table of Contents
 
-- [**DateUtils.getDays()**](#getDays)
-- [**DateUtils.getMonths()**](#getMonths)
-- [**DateUtils.getQuarters()**](#getQuarters)
-- [**DateUtils.getEras()**](#getEras)
+- [**getDays()**](#getDays)
+- [**getMonths()**](#getMonths)
+- [**getQuarters()**](#getQuarters)
+- [**getEras()**](#getEras)
 
-### DateUtils.getDays()<a id='getDays'></a>
+### getDays()<a id='getDays'></a>
 
 **Description**: Retrieves an array of localized day names.
 
@@ -24,7 +24,7 @@
 
 ---
 
-### DateUtils.getMonths()<a id='getMonths'></a>
+### getMonths()<a id='getMonths'></a>
 
 **Description**: Retrieves an array of localized month names.
 
@@ -39,7 +39,7 @@
 
 ---
 
-### DateUtils.getQuarters()<a id='getQuarters'></a>
+### getQuarters()<a id='getQuarters'></a>
 
 **Description**: Retrieves an array of localized quarter names.
 
@@ -54,7 +54,7 @@
 
 ---
 
-### DateUtils.getEras()<a id='getEras'></a>
+### getEras()<a id='getEras'></a>
 
 **Description**: Retrieves an array of localized era names.
 
