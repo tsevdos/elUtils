@@ -167,6 +167,10 @@ export function getPrefectureById(options: PrefectureByIdOptions): Prefecture | 
   return prefecturesData.find((region) => region.id === id);
 }
 
+export function getAllPostalCodes(): string[] {
+  return postalCodes.flatMap(({ postalCodes }) => postalCodes);
+}
+
 type FindByPostalCodeOptions = {
   locale: Locale;
   entity: "prefecture" | "region" | "unit";

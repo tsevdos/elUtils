@@ -127,6 +127,7 @@ For `schema` information please find information above.
 
 The functions dealing with postal codes is listed below:
 
+- [**getAllPostalCodes()**](#getAllPostalCodes)
 - [**findByPostalCode()**](#findByPostalCode)
 
 ## API
@@ -287,6 +288,18 @@ The functions dealing with postal codes is listed below:
 - **`includeMountAthos`** (optional, default: false): Whether to include Mount Athos prefecture.
 
 **Return Type**: A `Prefecture` object.
+
+---
+
+### getAllPostalCodes()<a id='getAllPostalCodes'></a>
+
+**Description**: Retrieves all valid postal codes.
+
+**Parameters:**
+
+none
+
+**Return Type**: An array of strings.
 
 ---
 

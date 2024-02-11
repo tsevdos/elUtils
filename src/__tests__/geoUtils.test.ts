@@ -4,6 +4,7 @@ import geographicRegionsEl from "../../data/geographic-regions-el.json";
 import geographicRegionsEn from "../../data/geographic-regions-en.json";
 import prefecturesEl from "../../data/prefectures-el.json";
 import prefecturesEn from "../../data/prefectures-en.json";
+import postalCodes from "../../data/postal-codes.json";
 import {
   MOUNT_ATHOS_REGION_ID,
   MOUNT_ATHOS_PREFECTURE_ID,
@@ -17,6 +18,7 @@ import {
   getGeographicRegionById,
   getPrefectures,
   getPrefectureById,
+  getAllPostalCodes,
   findByPostalCode,
 } from "../geoUtils";
 
@@ -565,6 +567,15 @@ describe("getPrefectureById", () => {
     const expectedData = prefectures.en[54];
 
     expect(getPrefectureById({ id: 55, locale: "en", includeMountAthos: true })).toEqual(expectedData);
+  });
+});
+
+describe("getAllPostalCodes", () => {
+  it("correctly returns all available postal codes", () => {
+    const expectedResult = postalCodes.flatMap(({ postalCodes }) => postalCodes);
+
+    expect(getAllPostalCodes()).toEqual(expectedResult);
+    expect(getAllPostalCodes().length).toBe(1290);
   });
 });
 
