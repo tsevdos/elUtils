@@ -1,15 +1,15 @@
 # GeoUtils
 
-> The **`GeoUtils`** singleton object provides a set of methods for accessing geographic and administrative data. All these data are available **both in greek and english languages**.
+> The **`geoUtils`** module provides functions for accessing geographic and administrative data. All these data are available **both in greek and english languages**.
 
-GeoUtils object is the most data-rich object of the package. It can provide various geo located data, so please first take a quick look on the type of data it provides. The 3 major categories you can get geographic data from are the below:
+The geoUtils functions are the most data-rich functions of the package. They can provide various geo located data, so please first take a quick look on the available type of data. The 3 major categories you can get geographic data from are the below:
 
-1. [**Administrative regions (περιφέρειες) of Greece**](#administrative-regions). Use these methods if you want to work with the current administrative regions and their sub-divisions.
-2. [**Geographic regions of Greece**](#geographic-regions). Use these methods to get the geographic regions.
-3. [**Prefectures (νομοί ή νομαρχίες) of Greece**](#prefectures). Use these methods to access Greece old administrative division.
-4. [**Postal codes**](#postal-codes)
+1. [**Administrative regions (περιφέρειες) of Greece**](#administrative-regions). Use these functions if you want to work with the current administrative regions and their sub-divisions.
+2. [**Geographic regions of Greece**](#geographic-regions). Use these functions to get the geographic regions.
+3. [**Prefectures (νομοί ή νομαρχίες) of Greece**](#prefectures). Use these functions to access Greece old administrative division system.
+4. [**Postal codes**](#postal-codes).
 
-Below you can learn more details regarding geo data and which methods is about each section.
+Below you can learn more details regarding all these available geo data.
 
 ## [Administrative regions (περιφέρειες) of Greece](https://en.wikipedia.org/wiki/Regions_of_Greece)<a id='administrative-regions'></a>
 
@@ -61,14 +61,14 @@ Each region, regional unit and municipality will have the below `schema`. Keep i
   },
 ```
 
-The methods dealing with the administrative regions (περιφέρειες) are listed below:
+The functions dealing with the administrative regions (περιφέρειες) are listed below:
 
-- [**GeoUtils.getAdministrativeRegions()**](#getAdministrativeRegions)
-- [**GeoUtils.getAdministrativeRegionById()**](#getAdministrativeRegionById)
-- [**GeoUtils.getAdministrativeRegionByIsoCode()**](#getAdministrativeRegionByIsoCode)
-- [**GeoUtils.getAdministrativeUnits()**](#getAdministrativeUnits)
-- [**GeoUtils.getAdministrativeUnitById()**](#getAdministrativeUnitById)
-- [**GeoUtils.getMunicipalities()**](#getMunicipalities)
+- [**getAdministrativeRegions()**](#getAdministrativeRegions)
+- [**getAdministrativeRegionById()**](#getAdministrativeRegionById)
+- [**getAdministrativeRegionByIsoCode()**](#getAdministrativeRegionByIsoCode)
+- [**getAdministrativeUnits()**](#getAdministrativeUnits)
+- [**getAdministrativeUnitById()**](#getAdministrativeUnitById)
+- [**getMunicipalities()**](#getMunicipalities)
 
 ## [Geographic regions of Greece](https://en.wikipedia.org/wiki/Geographic_regions_of_Greece)<a id='geographic-regions'></a>
 
@@ -90,14 +90,14 @@ Each region has the below `schema`.
   }
 ```
 
-The methods dealing with the geographic regions are listed below:
+The functions dealing with the geographic regions are listed below:
 
-- [**GeoUtils.getGeographicRegions()**](#getGeographicRegions)
-- [**GeoUtils.getGeographicRegionById()**](#getGeographicRegionById)
+- [**getGeographicRegions()**](#getGeographicRegions)
+- [**getGeographicRegionById()**](#getGeographicRegionById)
 
 ## [Prefectures (νομοί ή νομαρχίες) of Greece](https://en.wikipedia.org/wiki/Prefectures_of_Greece)<a id='prefectures'></a>
 
-Before [**Kallikratis reform**](https://en.wikipedia.org/wiki/Kallikratis_Programme), which entered into force on 1 January 2011, prefectures were the main administrative division. Prefectures were dividing Greece in 54 units (55 including Mount Athos). Keep in mind that "Attica" was a huge / big "prefecture" (υπερ-νομαρχία) that consistent from 4 completely indident prefectures ("Athens Prefecture" / "Νομός Αθηνών", "East Attica" / "Νομός Ανατολικής Αττικής", "West Attica" / "Νομός Δυτικής Αττικής" and "Piraeus" / "Νομός Πειραιά").
+Before [**Kallikratis reform**](https://en.wikipedia.org/wiki/Kallikratis_Programme), which entered into force on 1 January 2011, prefectures were the main administrative division. Prefectures were dividing Greece in 54 units (55 including Mount Athos). Keep in mind that "Attica" was a huge / big "prefecture" (υπερ-νομαρχία) that consistent from 4 independent prefectures ("Athens Prefecture" / "Νομός Αθηνών", "East Attica" / "Νομός Ανατολικής Αττικής", "West Attica" / "Νομός Δυτικής Αττικής" and "Piraeus" / "Νομός Πειραιά").
 
 Each prefecture has the below `schema`.
 
@@ -114,24 +114,24 @@ Each prefecture has the below `schema`.
 },
 ```
 
-The methods dealing with the prefectures are listed below:
+The functions dealing with the prefectures are listed below:
 
-- [**GeoUtils.getPrefectures()**](#getPrefectures)
-- [**GeoUtils.getPrefectureById()**](#getPrefectureById)
+- [**getPrefectures()**](#getPrefectures)
+- [**getPrefectureById()**](#getPrefectureById)
 
 ## [Postal codes](https://en.wikipedia.org/wiki/Postal_codes_in_Greece)<a id='postal-codes'></a>
 
-Finally you can fetch data about any administrative region, regional unit and prefecture, by providing a valid postal code. Keep in mind that postal codes better matched with `prefectures` entities, mostly because there are more official data available, but I have tried to include data for the administrative regions and regional units as well (after [Kallikratis reform](https://en.wikipedia.org/wiki/Kallikratis_Programme)), so if you find any mistakes feel free to contribute either with a PR and / or with an issue.
+Finally you can fetch data about any administrative region, regional unit and prefecture, by providing a valid postal code. Keep in mind that postal codes better matched with `prefectures` entities, because there were available before Kallikratis reform. This package is trying to include data both for the administrative regions and regional units as well, so if you find any mistakes feel free to contribute either with a PR and / or with an issue.
 
 For `schema` information please find information above.
 
-The method dealing with the Postal codes is listed below:
+The functions dealing with postal codes is listed below:
 
-- [**GeoUtils.findByPostalCode()**](#findByPostalCode)
+- [**findByPostalCode()**](#findByPostalCode)
 
 ## API
 
-### GeoUtils.getAdministrativeRegions()<a id='getAdministrativeRegions'></a>
+### getAdministrativeRegions()<a id='getAdministrativeRegions'></a>
 
 **Description**: Retrieves administrative regions data.
 
@@ -147,7 +147,7 @@ The method dealing with the Postal codes is listed below:
 
 ---
 
-### GeoUtils.getAdministrativeRegionById()<a id='getAdministrativeRegionById'></a>
+### getAdministrativeRegionById()<a id='getAdministrativeRegionById'></a>
 
 **Description**: Retrieves a single administrative region's data.
 
@@ -164,7 +164,7 @@ The method dealing with the Postal codes is listed below:
 
 ---
 
-### GeoUtils.getAdministrativeRegionByIsoCode()<a id='getAdministrativeRegionByIsoCode'></a>
+### getAdministrativeRegionByIsoCode()<a id='getAdministrativeRegionByIsoCode'></a>
 
 **Description**: Retrieves an administrative region by its ISO code.
 
@@ -183,7 +183,7 @@ The method dealing with the Postal codes is listed below:
 
 ---
 
-### GeoUtils.getAdministrativeUnits()<a id='getAdministrativeUnits'></a>
+### getAdministrativeUnits()<a id='getAdministrativeUnits'></a>
 
 **Description**: Retrieves regional units data.
 
@@ -199,7 +199,7 @@ The method dealing with the Postal codes is listed below:
 
 ---
 
-### GeoUtils.getAdministrativeUnitById()<a id='getAdministrativeUnitById'></a>
+### getAdministrativeUnitById()<a id='getAdministrativeUnitById'></a>
 
 **Description**: Retrieves a regional unit (`Unit`) by its ID.
 
@@ -216,7 +216,7 @@ The method dealing with the Postal codes is listed below:
 
 ---
 
-### GeoUtils.getMunicipalities()<a id='getMunicipalities'></a>
+### getMunicipalities()<a id='getMunicipalities'></a>
 
 **Description**: Retrieves municipality data.
 
@@ -230,7 +230,7 @@ The method dealing with the Postal codes is listed below:
 
 ---
 
-### GeoUtils.getGeographicRegions()<a id='getGeographicRegions'></a>
+### getGeographicRegions()<a id='getGeographicRegions'></a>
 
 **Description**: Retrieves geographic regions data.
 
@@ -244,7 +244,7 @@ The method dealing with the Postal codes is listed below:
 
 ---
 
-### GeoUtils.getGeographicRegionById()<a id='getGeographicRegionById'></a>
+### getGeographicRegionById()<a id='getGeographicRegionById'></a>
 
 **Description**: Retrieves a geographic region by its ID.
 
@@ -259,7 +259,7 @@ The method dealing with the Postal codes is listed below:
 
 ---
 
-### GeoUtils.getPrefectures()<a id='getPrefectures'></a>
+### getPrefectures()<a id='getPrefectures'></a>
 
 **Description**: Retrieves prefectures data.
 
@@ -274,7 +274,7 @@ The method dealing with the Postal codes is listed below:
 
 ---
 
-### GeoUtils.getPrefectureById()<a id='getPrefectureById'></a>
+### getPrefectureById()<a id='getPrefectureById'></a>
 
 **Description**: Retrieves a prefecture by its ID.
 
@@ -290,7 +290,7 @@ The method dealing with the Postal codes is listed below:
 
 ---
 
-### GeoUtils.findByPostalCode()<a id='findByPostalCode'></a>
+### findByPostalCode()<a id='findByPostalCode'></a>
 
 **Description**: Finds geographic entities (prefecture, region, or unit) by postal code.
 

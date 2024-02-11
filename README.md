@@ -27,7 +27,7 @@ console.log(getAdministrativeRegions());
 
 ## API
 
-1. [**`GeoUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/GeoUtils.md)
+1. [**`geoUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md)
 2. [**`dateUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md)
 
 ## License
