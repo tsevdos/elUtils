@@ -9,6 +9,8 @@
 - [**getQuarters()**](#getQuarters)
 - [**getEras()**](#getEras)
 
+---
+
 ### getDays()<a id='getDays'></a>
 
 **Description**: Retrieves an array of localized day names.
