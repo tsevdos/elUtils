@@ -1,7 +1,8 @@
-name: Check pull request
+name: CI 🕵
 on:
-  pull_request:
-    branches: [main]
+  push:
+    branches:
+      - "**"
 
 jobs:
   build:
@@ -9,7 +10,7 @@ jobs:
     strategy:
       matrix:
         node: [16, 18, 20]
-    name: Checking PR in node version ➡️ ${{ matrix.node }}❗️
+    name: Checking PR in node version ➡️ ${{ matrix.node }} 💯
     steps:
       - name: Checkout code 📥
         uses: actions/checkout@v3
@@ -22,8 +23,17 @@ jobs:
       - name: Install dependencies 🔥
         run: npm ci
 
-      - name: Lint apps 👌
+      - name: Check app types ⚠️
+        run: npm run tsc
+
+      - name: Lint app 👌
         run: npm run lint
 
-      - name: Test apps 🙏
+      - name: Format app ☑️
+        run: npm run prettier
+
+      - name: Test app 🙏
         run: npm test
+
+      - name: Build app 👷
+        run: npm run build
