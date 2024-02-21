@@ -26,7 +26,10 @@ pnpm add @tsevdos/el-utils
 To use one of the available utility functions, you just need to import it (example below):
 
 ```js
-import { getAdministrativeRegions, getDays } from "@tsevdos/el-utils";
+// esm
+import { getAdministrativeRegions, getDays, ... } from "@tsevdos/el-utils";
+// cjs
+const { getAdministrativeRegions, getDays, ... } = require("@tsevdos/el-utils");
 
 console.log(getAdministrativeRegions());
 ```
