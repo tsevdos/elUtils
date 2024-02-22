@@ -1,4 +1,4 @@
-name: CI 🕵
+name: CI
 on:
   push:
     branches:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [16, 18, 20]
+        node: [18, 20]
     name: Checking PR in node version ➡️ ${{ matrix.node }} 💯
     steps:
       - name: Checkout code 📥
