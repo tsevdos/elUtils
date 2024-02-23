@@ -1,4 +1,4 @@
-import { validatePostalCode } from "../validationUtils";
+import { validatePostalCode, validateAFM } from "../validationUtils";
 
 describe("validatePostalCode", () => {
   it("returns true on existing postal codes", () => {
@@ -18,5 +18,21 @@ describe("validatePostalCode", () => {
     expect(validatePostalCode("99999")).toBe(false);
     expect(validatePostalCode("98765")).toBe(false);
     expect(validatePostalCode("56789")).toBe(false);
+  });
+});
+
+describe("validateAFM", () => {
+  it("returns false for invalid afms", () => {
+    expect(validateAFM("12345678")).toBe(false);
+    expect(validateAFM("xxxxxxxx")).toBe(false);
+    expect(validateAFM("141212176")).toBe(false);
+    expect(validateAFM("111111111")).toBe(false);
+  });
+  it("returns false for valid afms", () => {
+    expect(validateAFM("011111111")).toBe(true);
+    expect(validateAFM("150892297")).toBe(true);
+    expect(validateAFM("126668921")).toBe(true);
+    expect(validateAFM("234893562")).toBe(true);
+    expect(validateAFM("126668921")).toBe(true);
   });
 });
