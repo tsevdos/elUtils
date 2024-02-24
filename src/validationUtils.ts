@@ -6,7 +6,7 @@ export function validatePostalCode(postalCode: string): boolean {
   return validPostalCodes.includes(postalCode);
 }
 
-export function validateAMKA(amka: string | string): boolean {
+export function validateAMKA(amka: string | number): boolean {
   // AMKA should be 11 digits long
   const strAmka = amka.toString();
   if (!strAmka.match(/^\d{11}$/) || strAmka == "00000000000") {

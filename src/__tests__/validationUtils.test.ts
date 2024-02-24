@@ -23,8 +23,10 @@ describe("validatePostalCode", () => {
 
 describe("validateAMKA", () => {
   it("returns true on valid AMKA", () => {
-    expect(validateAMKA("12121212125")).toBe(true);
     expect(validateAMKA("01012488886")).toBe(true);
+    expect(validateAMKA("12121212125")).toBe(true);
+    // Allow integer AMKA
+    expect(validateAMKA(12121212125)).toBe(true);
   });
 
   it("returns false on invalid AMKA", () => {
