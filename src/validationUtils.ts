@@ -36,6 +36,5 @@ export function validateAMKA(amka: string | string): boolean {
     checksum = parseInt(checksum.toString().charAt(0)) + parseInt(checksum.toString().charAt(1));
   }
 
-  console.log(strAmka, checksum, strAmka.charAt(10));
   return checksum == parseInt(strAmka.charAt(10));
 }
