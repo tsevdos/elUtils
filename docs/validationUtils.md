@@ -5,6 +5,7 @@
 ## Table of Contents
 
 - [**validatePostalCode()**](#validatePostalCode)
+- [**validateAMKA()**](#validateAMKA)
 
 ---
 
@@ -17,3 +18,13 @@
 **`postalCode`**: The postal code to validate.
 
 **Return Type**: Boolean indicating whether the postal code is valid.
+
+### validateAMKA()<a id='validateAMKA'></a>
+
+**Description**: Validates an AMKA number.
+
+**Parameters:**
+
+**`amka`**: The AMKA number to validate.
+
+**Return Type**: Boolean indicating whether the AMKA nubmer is valid.
