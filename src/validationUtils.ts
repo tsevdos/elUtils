@@ -5,7 +5,7 @@ export function validatePostalCode(postalCode: string): boolean {
   return validPostalCodes.includes(postalCode);
 }
 
-export function validateAFM(afm: string | string): boolean {
+export function validateAFM(afm: string | number): boolean {
   const strAfm = afm.toString();
   if (!strAfm.match(/^\d{9}$/) || strAfm == "000000000") {
     return false;

@@ -28,11 +28,27 @@ describe("validateAFM", () => {
     expect(validateAFM("141212176")).toBe(false);
     expect(validateAFM("111111111")).toBe(false);
   });
-  it("returns false for valid afms", () => {
+  it("returns true for valid afms", () => {
     expect(validateAFM("011111111")).toBe(true);
     expect(validateAFM("150892297")).toBe(true);
     expect(validateAFM("126668921")).toBe(true);
     expect(validateAFM("234893562")).toBe(true);
     expect(validateAFM("126668921")).toBe(true);
+  });
+
+  it("works with int or string values", () => {
+    expect(validateAFM(111111111)).toBe(false);
+    expect(validateAFM(1111111111111)).toBe(false);
+    expect(validateAFM(1.1)).toBe(false);
+    expect(validateAFM(1.11111111)).toBe(false);
+    expect(validateAFM("xxxxxxxx")).toBe(false);
+    expect(validateAFM("141212176")).toBe(false);
+
+    expect(validateAFM("150892297")).toBe(true);
+    expect(validateAFM(150892297)).toBe(true);
+    expect(validateAFM(126668921)).toBe(true);
+    expect(validateAFM("126668921")).toBe(true);
+    expect(validateAFM(234893562)).toBe(true);
+    expect(validateAFM("234893562")).toBe(true);
   });
 });
