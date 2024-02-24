@@ -13,10 +13,24 @@ export function validateAMKA(amka: string | number): boolean {
     return false;
   }
   // The first 6 digits is the date-of-birth in DDMMYY format
-  if (parseInt(strAmka.substring(0, 2)) > 31) {
+  const day = parseInt(strAmka.substring(0, 2));
+  const month = parseInt(strAmka.substring(2, 4));
+  const year = parseInt(strAmka.substring(4, 6));
+
+  // Obvious checks
+  if (day > 31) {
     return false;
   }
-  if (parseInt(strAmka.substring(2, 4)) > 12) {
+  if (month > 12) {
+    return false;
+  }
+  const dateObj = new Date(Date.UTC(year, month - 1, day));
+
+  // The code above can provide false positives
+  // For example, JS will translate 30/02/2024 to 01/03/2024 :S
+  // To prevent this, we make sure that the month of the Date object
+  // is the same as the input month
+  if (parseInt(("0" + (dateObj.getUTCMonth() + 1)).slice(-2)) != month) {
     return false;
   }
 
