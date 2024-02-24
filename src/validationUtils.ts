@@ -9,7 +9,8 @@ export function validatePostalCode(postalCode: string): boolean {
 export function validateAMKA(amka: string | number): boolean {
   // AMKA should be 11 digits long
   const strAmka = amka.toString();
-  if (!strAmka.match(/^\d{11}$/) || strAmka == "00000000000") {
+  const regex = RegExp("^\\d{11}$");
+  if (regex.exec(strAmka) === null || strAmka == "00000000000") {
     return false;
   }
   // The first 6 digits is the date-of-birth in DDMMYY format
