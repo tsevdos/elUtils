@@ -5,6 +5,7 @@
 ## Table of Contents
 
 - [**validatePostalCode()**](#validatePostalCode)
+- [**validateAFM()**](#validateAFM)
 
 ---
 
@@ -17,3 +18,14 @@
 **`postalCode`**: The postal code to validate.
 
 **Return Type**: Boolean indicating whether the postal code is valid.
+
+
+### validateAFM()<a id='validateAFM'></a>
+
+**Description**: Validates an a greek tax id / AFM (ΑΦΜ) .
+
+**Parameters:**
+
+**`afm`**: The AFM to validate.
+
+**Return Type**: Boolean indicating whether the AFM is valid.
