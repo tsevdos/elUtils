@@ -30,6 +30,7 @@ describe("validateAMKA", () => {
   });
 
   it("returns false on invalid AMKA", () => {
+    expect(validateAMKA("a0000000000")).toBe(false);
     expect(validateAMKA("00000000000")).toBe(false);
     // Incorrect length
     expect(validateAMKA("1234567890")).toBe(false);
