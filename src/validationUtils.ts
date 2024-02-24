@@ -20,7 +20,7 @@ export function validateAMKA(amka: string | number): boolean {
     return false;
   }
 
-  // The last digit is a check digit cimputed using the Luhn algorithm
+  // The last digit is a check digit computed using the Luhn algorithm
   // (https://en.wikipedia.org/wiki/Luhn_algorithm)
   let sum = 0;
   for (let i = 9; i >= 0; i--) {
