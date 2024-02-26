@@ -36,19 +36,13 @@ export function validateAMKA(amka: string | number): boolean {
 
   // The last digit is a check digit computed using the Luhn algorithm
   // (https://en.wikipedia.org/wiki/Luhn_algorithm)
-  let sum = 0;
-  for (let i = 9; i >= 0; i--) {
-    const multiplier = (i % 2) + 1;
-    let d = parseInt(strAmka.charAt(i)) * multiplier;
+  const sum = strAmka.split('').reduce((a, c, i) => {
+    let d = parseInt(c) * ((i % 2) + 1)
     if (d > 9) {
-      d = parseInt(d.toString().charAt(0)) + parseInt(d.toString().charAt(1));
+      d = d - 9
     }
-    sum += d;
-  }
-  let checksum = 10 - (sum % 10);
-  if (checksum > 9) {
-    checksum = parseInt(checksum.toString().charAt(0)) + parseInt(checksum.toString().charAt(1));
-  }
+    return a + d
+  }, 0)
 
-  return checksum === parseInt(strAmka.charAt(10));
+  return sum % 10 === 0
 }
