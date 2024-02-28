@@ -37,17 +37,17 @@ export function validateAMKA(amka: string | number): boolean {
   // The last digit is a check digit computed using the Luhn algorithm
   // (https://en.wikipedia.org/wiki/Luhn_algorithm):
   // Go through every digit of the AMKA number
-  const sum = strAmka.split('').reduce((a, c, i) => {
+  const sum = strAmka.split("").reduce((a, c, i) => {
     // Multiply every other digit by 2
-    let d = parseInt(c) * ((i % 2) + 1)
+    let d = parseInt(c) * ((i % 2) + 1);
     // If it's a 2-digit number, sum its digits
     if (d > 9) {
-      d = d - 9
+      d = d - 9;
     }
     // Add the result to the sum
-    return a + d
-  }, 0)
+    return a + d;
+  }, 0);
 
   // The sum should be divisible by 10
-  return sum % 10 === 0
+  return sum % 10 === 0;
 }
