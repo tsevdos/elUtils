@@ -56,6 +56,7 @@ todo: The library is currently split into specific modules
 - [**`validationUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/validationUtils.md)
 
   - [validatePostalCode()](https://github.com/tsevdos/elUtils/blob/main/docs/validationUtils.md#validatePostalCode)
+  - [validateAMKA()](https://github.com/tsevdos/elUtils/blob/main/docs/validationUtils.md#validateAMKA)
 
 - [**`dateUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md)
 

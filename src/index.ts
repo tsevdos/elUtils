@@ -13,4 +13,4 @@ export {
   findByPostalCode,
 } from "./geoUtils";
 export { getDays, getMonths, getQuarters, getEras } from "./dateUtils";
-export { validatePostalCode } from "./validationUtils";
+export { validatePostalCode, validateAMKA } from "./validationUtils";
