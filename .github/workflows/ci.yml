@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         node: [16, 18, 20, "latest"]
-    name: Checking PR in node version ➡️ ${{ matrix.node }} 💯
+    name: Checking code changes in node version ➡️ ${{ matrix.node }} 💯
     steps:
       - name: Checkout code 📥
         uses: actions/checkout@v3
@@ -46,6 +46,7 @@ jobs:
     strategy:
       matrix:
         bun: [1, "latest"]
+    name: Checking code changes in bun version ➡️ ${{ matrix.bun }} 💯
     steps:
       - name: Checkout code 📥
         uses: actions/checkout@v3
