@@ -1,0 +1,19 @@
+{
+  "tasks": {
+    "tsc": {
+      "cmd": ["deno", "tsc"]
+    },
+    "lint": {
+      "cmd": ["deno", "lint"]
+    },
+    "prettier": {
+      "cmd": ["deno", "prettier"]
+    },
+    "test": {
+      "cmd": ["deno", "test"]
+    },
+    "build": {
+      "cmd": ["deno", "build"]
+    }
+  }
+}

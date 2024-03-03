@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         node: [16, 18, 20, "latest"]
-    name: Checking code changes in node version ➡️ ${{ matrix.node }} 💯
+    name: Checking code changes in node version ➡️ ${{ matrix.node }} 💻
     steps:
       - name: Checkout code 📥
         uses: actions/checkout@v3
@@ -46,7 +46,7 @@ jobs:
     strategy:
       matrix:
         bun: [1, "latest"]
-    name: Checking code changes in bun version ➡️ ${{ matrix.bun }} 💯
+    name: Checking code changes in bun version ➡️ ${{ matrix.bun }} 🍙
     steps:
       - name: Checkout code 📥
         uses: actions/checkout@v3
@@ -74,34 +74,35 @@ jobs:
       - name: Build app 👷
         run: bun run build
 
-  # deno-test:
-  #   runs-on: ubuntu-latest
-  #   strategy:
-  #     matrix:
-  #       deno: [1, "latest"]
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v3
+  deno-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        deno: [1, "latest"]
+    name: Checking code changes in deno version ➡️ ${{ matrix.deno }} 🦕
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-  #     - name: Install deno 🦕
-  #       uses: denoland/setup-deno@v1
-  #       with:
-  #         deno-version: ${{ matrix.deno }}
+      - name: Install deno 🦕
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: ${{ matrix.deno }}
 
-  #     - name: Install dependencies 🔥
-  #       run: deno cache .
+      - name: Install dependencies 🔥
+        run: deno cache .
 
-  #     - name: Check app types ⚠️
-  #       run: npm run tsc
+      - name: Check app types ⚠️
+        run: deno task tsc
 
-  #     - name: Lint app 👌
-  #       run: npm run lint
+      - name: Lint app 👌
+        run: deno task lint
 
-  #     - name: Format app ☑️
-  #       run: npm run prettier
+      - name: Format app ☑️
+        run: deno task prettier
 
-  #     - name: Test app 🙏
-  #       run: npm test
+      - name: Test app 🙏
+        run: deno task test
 
-  #     - name: Build app 👷
-  #       run: npm run build
+      - name: Build app 👷
+        run: deno task build
