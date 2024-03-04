@@ -78,7 +78,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        deno: [1, "latest"]
+        deno: [1]
     name: Checking code changes in deno version ➡️ ${{ matrix.deno }} 🦕
     steps:
       - name: Checkout code
