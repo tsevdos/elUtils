@@ -84,6 +84,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Install node 💻
+        uses: actions/setup-node@v3
+
+      - name: Install dependencies 🔥
+        run: npm ci
+
       - name: Install deno 🦕
         uses: denoland/setup-deno@v1
         with:
