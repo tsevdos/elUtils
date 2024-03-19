@@ -1,0 +1,2137 @@
+[
+    {
+        "id": 1,
+        "name": "ΞΑΝΘΗΣ",
+        "officialName": "ΔΟΥ ΞΑΝΘΗΣ",
+        "relations": {
+            "regionId": 1,
+            "regionIso": "GR-A",
+            "unitIds": [
+                5
+            ],
+            "municipalityIds": [
+                15,
+                16,
+                17,
+                18
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "ΚΩ",
+        "officialName": "ΔΟΥ ΚΩ",
+        "relations": {
+            "regionId": 12,
+            "regionIso": "GR-L",
+            "unitIds": [
+                67,
+                69
+            ],
+            "municipalityIds": [
+                294,
+                295,
+                296,
+                297,
+                298,
+                299,
+                302,
+                303
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "ΛΑΡΙΣΑΣ",
+        "officialName": "ΔΟΥ ΛΑΡΙΣΑΣ",
+        "relations": {
+            "regionId": 5,
+            "regionIso": "GR-E",
+            "unitIds": [
+                23
+            ],
+            "municipalityIds": [
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "ΝΙΚΑΙΑΣ",
+        "officialName": "ΔΟΥ ΝΙΚΑΙΑΣ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                41,
+                44
+            ],
+            "municipalityIds": [
+                184,
+                185,
+                186,
+                187,
+                188,
+                189,
+                190,
+                207,
+                208,
+                209,
+                210,
+                211
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "ΧΟΛΑΡΓΟΥ",
+        "officialName": "ΔΟΥ ΧΟΛΑΡΓΟΥ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                40
+            ],
+            "municipalityIds": [
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "name": "ΠΟΛΥΓΥΡΟΥ",
+        "officialName": "ΔΟΥ ΠΟΛΥΓΥΡΟΥ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                13,
+                8
+            ],
+            "municipalityIds": [
+                56,
+                57,
+                58,
+                59,
+                60,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "name": "ΡΕΘΥΜΝΟΥ",
+        "officialName": "ΔΟΥ ΡΕΘΥΜΝΟΥ",
+        "relations": {
+            "regionId": 13,
+            "regionIso": "GR-M",
+            "unitIds": [
+                73
+            ],
+            "municipalityIds": [
+                321,
+                322,
+                323,
+                324,
+                325
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "name": "ΗΛΙΟΥΠΟΛΗΣ",
+        "officialName": "ΔΟΥ ΗΛΙΟΥΠΟΛΗΣ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                43,
+                42,
+                46
+            ],
+            "municipalityIds": [
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198,
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229,
+                230,
+                231,
+                232
+            ]
+        }
+    },
+    {
+        "id": 9,
+        "name": "ΜΥΤΙΛΗΝΗΣ",
+        "officialName": "ΔΟΥ ΜΥΤΙΛΗΝΗΣ",
+        "relations": {
+            "regionId": 11,
+            "regionIso": "GR-K",
+            "unitIds": [
+                55,
+                53
+            ],
+            "municipalityIds": [
+                268,
+                269,
+                264,
+                265
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "name": "ΑΓΙΟΥ ΝΙΚΟΛΑΟΥ",
+        "officialName": "ΔΟΥ ΑΓΙΟΥ ΝΙΚΟΛΑΟΥ",
+        "relations": {
+            "regionId": 13,
+            "regionIso": "GR-M",
+            "unitIds": [
+                72
+            ],
+            "municipalityIds": [
+                317,
+                318,
+                319,
+                320
+            ]
+        }
+    },
+    {
+        "id": 11,
+        "name": "ΑΓΙΩΝ ΑΝΑΡΓΥΡΩΝ",
+        "officialName": "ΔΟΥ ΑΓΙΩΝ ΑΝΑΡΓΥΡΩΝ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                41,
+                46,
+                53,
+                47
+            ],
+            "municipalityIds": [
+                184,
+                185,
+                186,
+                187,
+                188,
+                189,
+                190,
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229,
+                230,
+                231,
+                232,
+                264,
+                265,
+                233,
+                234,
+                235,
+                236,
+                237
+            ]
+        }
+    },
+    {
+        "id": 12,
+        "name": "Α' ΠΕΙΡΑΙΑ",
+        "officialName": "ΔΟΥ Α' ΠΕΙΡΑΙΑ",
+        "relations": {
+            "regionId": 12,
+            "regionIso": "GR-L",
+            "unitIds": [
+                59,
+                44
+            ],
+            "municipalityIds": [
+                276,
+                277,
+                278,
+                279,
+                207,
+                208,
+                209,
+                210,
+                211
+            ]
+        }
+    },
+    {
+        "id": 13,
+        "name": "ΚΑΡΠΕΝΗΣΙΟΥ",
+        "officialName": "ΔΟΥ ΚΑΡΠΕΝΗΣΙΟΥ",
+        "relations": {
+            "regionId": 8,
+            "regionIso": "GR-H",
+            "unitIds": [
+                37
+            ],
+            "municipalityIds": [
+                161,
+                162
+            ]
+        }
+    },
+    {
+        "id": 14,
+        "name": "ΑΓΡΙΝΙΟΥ",
+        "officialName": "ΔΟΥ ΑΓΡΙΝΙΟΥ",
+        "relations": {
+            "regionId": 7,
+            "regionIso": "GR-G",
+            "unitIds": [
+                32
+            ],
+            "municipalityIds": [
+                128,
+                129,
+                130,
+                131,
+                132,
+                133,
+                134
+            ]
+        }
+    },
+    {
+        "id": 15,
+        "name": "ΜΕΣΟΛΟΓΓΙΟΥ",
+        "officialName": "ΔΟΥ ΜΕΣΟΛΟΓΓΙΟΥ",
+        "relations": {
+            "regionId": 7,
+            "regionIso": "GR-G",
+            "unitIds": [
+                32
+            ],
+            "municipalityIds": [
+                128,
+                129,
+                130,
+                131,
+                132,
+                133,
+                134
+            ]
+        }
+    },
+    {
+        "id": 16,
+        "name": "Α' ΑΘΗΝΩΝ",
+        "officialName": "ΔΟΥ Α' ΑΘΗΝΩΝ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                42,
+                43,
+                41
+            ],
+            "municipalityIds": [
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198,
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                184,
+                185,
+                186,
+                187,
+                188,
+                189,
+                190
+            ]
+        }
+    },
+    {
+        "id": 17,
+        "name": "Δ' ΑΘΗΝΩΝ",
+        "officialName": "ΔΟΥ Δ' ΑΘΗΝΩΝ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                42
+            ],
+            "municipalityIds": [
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198
+            ]
+        }
+    },
+    {
+        "id": 18,
+        "name": "ΙΓ' ΑΘΗΝΩΝ",
+        "officialName": "ΔΟΥ ΙΓ' ΑΘΗΝΩΝ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                42
+            ],
+            "municipalityIds": [
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198
+            ]
+        }
+    },
+    {
+        "id": 19,
+        "name": "ΙΖ' ΑΘΗΝΩΝ",
+        "officialName": "ΔΟΥ ΙΖ' ΑΘΗΝΩΝ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                42
+            ],
+            "municipalityIds": [
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198
+            ]
+        }
+    },
+    {
+        "id": 20,
+        "name": "ΨΥΧΙΚΟΥ",
+        "officialName": "ΔΟΥ ΨΥΧΙΚΟΥ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                42,
+                40
+            ],
+            "municipalityIds": [
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198,
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183
+            ]
+        }
+    },
+    {
+        "id": 21,
+        "name": "ΙΒ' ΑΘΗΝΩΝ",
+        "officialName": "ΔΟΥ ΙΒ' ΑΘΗΝΩΝ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                42
+            ],
+            "municipalityIds": [
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198
+            ]
+        }
+    },
+    {
+        "id": 22,
+        "name": "ΑΙΓΑΛΕΩ",
+        "officialName": "ΔΟΥ ΑΙΓΑΛΕΩ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                41
+            ],
+            "municipalityIds": [
+                184,
+                185,
+                186,
+                187,
+                188,
+                189,
+                190
+            ]
+        }
+    },
+    {
+        "id": 23,
+        "name": "ΑΙΓΙΟΥ",
+        "officialName": "ΔΟΥ ΑΙΓΙΟΥ",
+        "relations": {
+            "regionId": 7,
+            "regionIso": "GR-G",
+            "unitIds": [
+                33
+            ],
+            "municipalityIds": [
+                135,
+                136,
+                137,
+                138,
+                139
+            ]
+        }
+    },
+    {
+        "id": 24,
+        "name": "ΚΑΛΑΜΑΤΑΣ",
+        "officialName": "ΔΟΥ ΚΑΛΑΜΑΤΑΣ",
+        "relations": {
+            "regionId": 10,
+            "regionIso": "GR-J",
+            "unitIds": [
+                52
+            ],
+            "municipalityIds": [
+                258,
+                259,
+                260,
+                261,
+                262,
+                263
+            ]
+        }
+    },
+    {
+        "id": 25,
+        "name": "ΛΕΥΚΑΔΑΣ",
+        "officialName": "ΔΟΥ ΛΕΥΚΑΔΑΣ",
+        "relations": {
+            "regionId": 6,
+            "regionIso": "GR-F",
+            "unitIds": [
+                31
+            ],
+            "municipalityIds": [
+                126,
+                127
+            ]
+        }
+    },
+    {
+        "id": 26,
+        "name": "ΒΕΡΟΙΑΣ",
+        "officialName": "ΔΟΥ ΒΕΡΟΙΑΣ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                7
+            ],
+            "municipalityIds": [
+                23,
+                24,
+                25
+            ]
+        }
+    },
+    {
+        "id": 27,
+        "name": "ΑΛΕΞΑΝΔΡΟΥΠΟΛΗΣ",
+        "officialName": "ΔΟΥ ΑΛΕΞΑΝΔΡΟΥΠΟΛΗΣ",
+        "relations": {
+            "regionId": 1,
+            "regionIso": "GR-A",
+            "unitIds": [
+                2
+            ],
+            "municipalityIds": [
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        }
+    },
+    {
+        "id": 28,
+        "name": "ΛΕΙΒΑΔΙΑΣ",
+        "officialName": "ΔΟΥ ΛΕΙΒΑΔΙΑΣ",
+        "relations": {
+            "regionId": 8,
+            "regionIso": "GR-H",
+            "unitIds": [
+                35
+            ],
+            "municipalityIds": [
+                147,
+                148,
+                149,
+                150,
+                151,
+                152
+            ]
+        }
+    },
+    {
+        "id": 29,
+        "name": "ΘΗΒΩΝ",
+        "officialName": "ΔΟΥ ΘΗΒΩΝ",
+        "relations": {
+            "regionId": 8,
+            "regionIso": "GR-H",
+            "unitIds": [
+                35,
+                36
+            ],
+            "municipalityIds": [
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158,
+                159,
+                160
+            ]
+        }
+    },
+    {
+        "id": 30,
+        "name": "ΓΛΥΦΑΔΑΣ",
+        "officialName": "ΔΟΥ ΓΛΥΦΑΔΑΣ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                43,
+                46,
+                53
+            ],
+            "municipalityIds": [
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229,
+                230,
+                231,
+                232,
+                264,
+                265
+            ]
+        }
+    },
+    {
+        "id": 31,
+        "name": "ΒΟΛΟΥ",
+        "officialName": "ΔΟΥ ΒΟΛΟΥ",
+        "relations": {
+            "regionId": 5,
+            "regionIso": "GR-E",
+            "unitIds": [
+                24,
+                25
+            ],
+            "municipalityIds": [
+                105,
+                106,
+                107,
+                108,
+                109,
+                110,
+                111,
+                112
+            ]
+        }
+    },
+    {
+        "id": 32,
+        "name": "ΕΔΕΣΣΑΣ",
+        "officialName": "ΔΟΥ ΕΔΕΣΣΑΣ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                10
+            ],
+            "municipalityIds": [
+                42,
+                43,
+                44,
+                45
+            ]
+        }
+    },
+    {
+        "id": 33,
+        "name": "ΑΜΑΡΟΥΣΙΟΥ",
+        "officialName": "ΔΟΥ ΑΜΑΡΟΥΣΙΟΥ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                40
+            ],
+            "municipalityIds": [
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183
+            ]
+        }
+    },
+    {
+        "id": 34,
+        "name": "ΝΑΞΟΥ",
+        "officialName": "ΔΟΥ ΝΑΞΟΥ",
+        "relations": {
+            "regionId": 12,
+            "regionIso": "GR-L",
+            "unitIds": [
+                63
+            ],
+            "municipalityIds": [
+                288,
+                289
+            ]
+        }
+    },
+    {
+        "id": 35,
+        "name": "ΑΜΠΕΛΟΚΗΠΩΝ",
+        "officialName": "ΔΟΥ ΑΜΠΕΛΟΚΗΠΩΝ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                8
+            ],
+            "municipalityIds": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "id": 36,
+        "name": "ΦΛΩΡΙΝΑΣ",
+        "officialName": "ΔΟΥ ΦΛΩΡΙΝΑΣ",
+        "relations": {
+            "regionId": 3,
+            "regionIso": "GR-C",
+            "unitIds": [
+                17
+            ],
+            "municipalityIds": [
+                71,
+                72,
+                73
+            ]
+        }
+    },
+    {
+        "id": 37,
+        "name": "ΛΑΜΙΑΣ",
+        "officialName": "ΔΟΥ ΛΑΜΙΑΣ",
+        "relations": {
+            "regionId": 8,
+            "regionIso": "GR-H",
+            "unitIds": [
+                38
+            ],
+            "municipalityIds": [
+                163,
+                164,
+                165,
+                166,
+                167,
+                168,
+                169
+            ]
+        }
+    },
+    {
+        "id": 38,
+        "name": "ΣΕΡΡΩΝ",
+        "officialName": "ΔΟΥ ΣΕΡΡΩΝ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                12,
+                8
+            ],
+            "municipalityIds": [
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "id": 39,
+        "name": "ΣΠΑΡΤΗΣ",
+        "officialName": "ΔΟΥ ΣΠΑΡΤΗΣ",
+        "relations": {
+            "regionId": 10,
+            "regionIso": "GR-J",
+            "unitIds": [
+                51
+            ],
+            "municipalityIds": [
+                253,
+                254,
+                255,
+                256,
+                257
+            ]
+        }
+    },
+    {
+        "id": 40,
+        "name": "ΣΑΜΟΥ",
+        "officialName": "ΔΟΥ ΣΑΜΟΥ",
+        "relations": {
+            "regionId": 11,
+            "regionIso": "GR-K",
+            "unitIds": [
+                56,
+                54
+            ],
+            "municipalityIds": [
+                270,
+                271,
+                266,
+                267
+            ]
+        }
+    },
+    {
+        "id": 41,
+        "name": "ΘΗΡΑΣ",
+        "officialName": "ΔΟΥ ΘΗΡΑΣ",
+        "relations": {
+            "regionId": 12,
+            "regionIso": "GR-L",
+            "unitIds": [
+                60
+            ],
+            "municipalityIds": [
+                280,
+                281,
+                282,
+                283,
+                284
+            ]
+        }
+    },
+    {
+        "id": 42,
+        "name": "ΑΜΑΛΙΑΔΑΣ",
+        "officialName": "ΔΟΥ ΑΜΑΛΙΑΔΑΣ",
+        "relations": {
+            "regionId": 7,
+            "regionIso": "GR-G",
+            "unitIds": [
+                34,
+                33
+            ],
+            "municipalityIds": [
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                135,
+                136,
+                137,
+                138,
+                139
+            ]
+        }
+    },
+    {
+        "id": 43,
+        "name": "ΠΥΡΓΟΥ",
+        "officialName": "ΔΟΥ ΠΥΡΓΟΥ",
+        "relations": {
+            "regionId": 7,
+            "regionIso": "GR-G",
+            "unitIds": [
+                34
+            ],
+            "municipalityIds": [
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146
+            ]
+        }
+    },
+    {
+        "id": 44,
+        "name": "ΠΑΛΛΗΝΗΣ",
+        "officialName": "ΔΟΥ ΠΑΛΛΗΝΗΣ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                58,
+                46,
+                40
+            ],
+            "municipalityIds": [
+                275,
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229,
+                230,
+                231,
+                232,
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183
+            ]
+        }
+    },
+    {
+        "id": 45,
+        "name": "ΠΑΡΟΥ",
+        "officialName": "ΔΟΥ ΠΑΡΟΥ",
+        "relations": {
+            "regionId": 12,
+            "regionIso": "GR-L",
+            "unitIds": [
+                66
+            ],
+            "municipalityIds": [
+                292,
+                293
+            ]
+        }
+    },
+    {
+        "id": 46,
+        "name": "ΧΑΝΙΩΝ",
+        "officialName": "ΔΟΥ ΧΑΝΙΩΝ",
+        "relations": {
+            "regionId": 13,
+            "regionIso": "GR-M",
+            "unitIds": [
+                74
+            ],
+            "municipalityIds": [
+                326,
+                327,
+                328,
+                329,
+                330,
+                331,
+                332
+            ]
+        }
+    },
+    {
+        "id": 47,
+        "name": "ΚΑΡΔΙΤΣΑΣ",
+        "officialName": "ΔΟΥ ΚΑΡΔΙΤΣΑΣ",
+        "relations": {
+            "regionId": 5,
+            "regionIso": "GR-E",
+            "unitIds": [
+                22
+            ],
+            "municipalityIds": [
+                92,
+                93,
+                94,
+                95,
+                96,
+                97
+            ]
+        }
+    },
+    {
+        "id": 48,
+        "name": "ΑΡΓΟΣΤΟΛΙΟΥ",
+        "officialName": "ΔΟΥ ΑΡΓΟΣΤΟΛΙΟΥ",
+        "relations": {
+            "regionId": 6,
+            "regionIso": "GR-F",
+            "unitIds": [
+                29,
+                30
+            ],
+            "municipalityIds": [
+                122,
+                123,
+                124,
+                125
+            ]
+        }
+    },
+    {
+        "id": 49,
+        "name": "ΑΡΓΟΥΣ",
+        "officialName": "ΔΟΥ ΑΡΓΟΥΣ",
+        "relations": {
+            "regionId": 10,
+            "regionIso": "GR-J",
+            "unitIds": [
+                48
+            ],
+            "municipalityIds": [
+                238,
+                239,
+                240,
+                241
+            ]
+        }
+    },
+    {
+        "id": 50,
+        "name": "ΚΟΜΟΤΗΝΗΣ",
+        "officialName": "ΔΟΥ ΚΟΜΟΤΗΝΗΣ",
+        "relations": {
+            "regionId": 1,
+            "regionIso": "GR-A",
+            "unitIds": [
+                6
+            ],
+            "municipalityIds": [
+                19,
+                20,
+                21,
+                22
+            ]
+        }
+    },
+    {
+        "id": 51,
+        "name": "ΑΡΤΑΣ",
+        "officialName": "ΔΟΥ ΑΡΤΑΣ",
+        "relations": {
+            "regionId": 4,
+            "regionIso": "GR-D",
+            "unitIds": [
+                18
+            ],
+            "municipalityIds": [
+                74,
+                75,
+                76,
+                77
+            ]
+        }
+    },
+    {
+        "id": 52,
+        "name": "ΗΡΑΚΛΕΙΟΥ",
+        "officialName": "ΔΟΥ ΗΡΑΚΛΕΙΟΥ",
+        "relations": {
+            "regionId": 13,
+            "regionIso": "GR-M",
+            "unitIds": [
+                71
+            ],
+            "municipalityIds": [
+                309,
+                310,
+                311,
+                312,
+                313,
+                314,
+                315,
+                316
+            ]
+        }
+    },
+    {
+        "id": 53,
+        "name": "ΕΛΕΥΣΙΝΑΣ",
+        "officialName": "ΔΟΥ ΕΛΕΥΣΙΝΑΣ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                47,
+                46
+            ],
+            "municipalityIds": [
+                233,
+                234,
+                235,
+                236,
+                237,
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229,
+                230,
+                231,
+                232
+            ]
+        }
+    },
+    {
+        "id": 54,
+        "name": "ΚΟΖΑΝΗΣ",
+        "officialName": "ΔΟΥ ΚΟΖΑΝΗΣ",
+        "relations": {
+            "regionId": 3,
+            "regionIso": "GR-C",
+            "unitIds": [
+                16
+            ],
+            "municipalityIds": [
+                66,
+                67,
+                68,
+                69,
+                70
+            ]
+        }
+    },
+    {
+        "id": 55,
+        "name": "ΚΟΡΙΝΘΟΥ",
+        "officialName": "ΔΟΥ ΚΟΡΙΝΘΟΥ",
+        "relations": {
+            "regionId": 10,
+            "regionIso": "GR-J",
+            "unitIds": [
+                50
+            ],
+            "municipalityIds": [
+                247,
+                248,
+                249,
+                250,
+                251,
+                252
+            ]
+        }
+    },
+    {
+        "id": 56,
+        "name": "ΛΑΓΚΑΔΑ",
+        "officialName": "ΔΟΥ ΛΑΓΚΑΔΑ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                8
+            ],
+            "municipalityIds": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "id": 57,
+        "name": "ΚΕΡΚΥΡΑΣ",
+        "officialName": "ΔΟΥ ΚΕΡΚΥΡΑΣ",
+        "relations": {
+            "regionId": 6,
+            "regionIso": "GR-F",
+            "unitIds": [
+                28
+            ],
+            "municipalityIds": [
+                118,
+                119,
+                120,
+                121
+            ]
+        }
+    },
+    {
+        "id": 58,
+        "name": "ΤΡΙΠΟΛΗΣ",
+        "officialName": "ΔΟΥ ΤΡΙΠΟΛΗΣ",
+        "relations": {
+            "regionId": 10,
+            "regionIso": "GR-J",
+            "unitIds": [
+                49,
+                33
+            ],
+            "municipalityIds": [
+                242,
+                243,
+                244,
+                245,
+                246,
+                135,
+                136,
+                137,
+                138,
+                139
+            ]
+        }
+    },
+    {
+        "id": 59,
+        "name": "ΙΩΑΝΝΙΝΩΝ",
+        "officialName": "ΔΟΥ ΙΩΑΝΝΙΝΩΝ",
+        "relations": {
+            "regionId": 4,
+            "regionIso": "GR-D",
+            "unitIds": [
+                20
+            ],
+            "municipalityIds": [
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88
+            ]
+        }
+    },
+    {
+        "id": 60,
+        "name": "ΓΡΕΒΕΝΩΝ",
+        "officialName": "ΔΟΥ ΓΡΕΒΕΝΩΝ",
+        "relations": {
+            "regionId": 3,
+            "regionIso": "GR-C",
+            "unitIds": [
+                14
+            ],
+            "municipalityIds": [
+                61,
+                62
+            ]
+        }
+    },
+    {
+        "id": 61,
+        "name": "ΙΩΝΙΑΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+        "officialName": "ΔΟΥ ΙΩΝΙΑΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                8
+            ],
+            "municipalityIds": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "id": 62,
+        "name": "ΑΜΦΙΣΣΑΣ",
+        "officialName": "ΔΟΥ ΑΜΦΙΣΣΑΣ",
+        "relations": {
+            "regionId": 8,
+            "regionIso": "GR-H",
+            "unitIds": [
+                39
+            ],
+            "municipalityIds": [
+                170,
+                171
+            ]
+        }
+    },
+    {
+        "id": 63,
+        "name": "ΟΡΕΣΤΙΑΔΑΣ",
+        "officialName": "ΔΟΥ ΟΡΕΣΤΙΑΔΑΣ",
+        "relations": {
+            "regionId": 1,
+            "regionIso": "GR-A",
+            "unitIds": [
+                2
+            ],
+            "municipalityIds": [
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        }
+    },
+    {
+        "id": 64,
+        "name": "ΚΗΦΙΣΙΑΣ",
+        "officialName": "ΔΟΥ ΚΗΦΙΣΙΑΣ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                46,
+                40
+            ],
+            "municipalityIds": [
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229,
+                230,
+                231,
+                232,
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183
+            ]
+        }
+    },
+    {
+        "id": 65,
+        "name": "ΚΑΤΕΡΙΝΗΣ",
+        "officialName": "ΔΟΥ ΚΑΤΕΡΙΝΗΣ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                11
+            ],
+            "municipalityIds": [
+                46,
+                47,
+                48
+            ]
+        }
+    },
+    {
+        "id": 66,
+        "name": "ΧΑΛΚΙΔΑΣ",
+        "officialName": "ΔΟΥ ΧΑΛΚΙΔΑΣ",
+        "relations": {
+            "regionId": 8,
+            "regionIso": "GR-H",
+            "unitIds": [
+                36
+            ],
+            "municipalityIds": [
+                153,
+                154,
+                155,
+                156,
+                157,
+                158,
+                159,
+                160
+            ]
+        }
+    },
+    {
+        "id": 67,
+        "name": "ΔΡΑΜΑΣ",
+        "officialName": "ΔΟΥ ΔΡΑΜΑΣ",
+        "relations": {
+            "regionId": 1,
+            "regionIso": "GR-A",
+            "unitIds": [
+                1
+            ],
+            "municipalityIds": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        }
+    },
+    {
+        "id": 68,
+        "name": "ΠΑΤΡΩΝ",
+        "officialName": "ΔΟΥ ΠΑΤΡΩΝ",
+        "relations": {
+            "regionId": 7,
+            "regionIso": "GR-G",
+            "unitIds": [
+                33
+            ],
+            "municipalityIds": [
+                135,
+                136,
+                137,
+                138,
+                139
+            ]
+        }
+    },
+    {
+        "id": 69,
+        "name": "ΠΤΟΛΕΜΑΪΔΑΣ",
+        "officialName": "ΔΟΥ ΠΤΟΛΕΜΑΪΔΑΣ",
+        "relations": {
+            "regionId": 3,
+            "regionIso": "GR-C",
+            "unitIds": [
+                16
+            ],
+            "municipalityIds": [
+                66,
+                67,
+                68,
+                69,
+                70
+            ]
+        }
+    },
+    {
+        "id": 70,
+        "name": "ΝΑΥΠΛΙΟΥ",
+        "officialName": "ΔΟΥ ΝΑΥΠΛΙΟΥ",
+        "relations": {
+            "regionId": 10,
+            "regionIso": "GR-J",
+            "unitIds": [
+                48
+            ],
+            "municipalityIds": [
+                238,
+                239,
+                240,
+                241
+            ]
+        }
+    },
+    {
+        "id": 71,
+        "name": "ΖΑΚΥΝΘΟΥ",
+        "officialName": "ΔΟΥ ΖΑΚΥΝΘΟΥ",
+        "relations": {
+            "regionId": 6,
+            "regionIso": "GR-F",
+            "unitIds": [
+                27
+            ],
+            "municipalityIds": [
+                117
+            ]
+        }
+    },
+    {
+        "id": 72,
+        "name": "ΠΡΕΒΕΖΑΣ",
+        "officialName": "ΔΟΥ ΠΡΕΒΕΖΑΣ",
+        "relations": {
+            "regionId": 4,
+            "regionIso": "GR-D",
+            "unitIds": [
+                21
+            ],
+            "municipalityIds": [
+                89,
+                90,
+                91
+            ]
+        }
+    },
+    {
+        "id": 73,
+        "name": "ΗΓΟΥΜΕΝΙΤΣΑΣ",
+        "officialName": "ΔΟΥ ΗΓΟΥΜΕΝΙΤΣΑΣ",
+        "relations": {
+            "regionId": 4,
+            "regionIso": "GR-D",
+            "unitIds": [
+                19
+            ],
+            "municipalityIds": [
+                78,
+                79,
+                80
+            ]
+        }
+    },
+    {
+        "id": 74,
+        "name": "ΝΕΑΣ ΙΩΝΙΑΣ",
+        "officialName": "ΔΟΥ ΝΕΑΣ ΙΩΝΙΑΣ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                40,
+                42
+            ],
+            "municipalityIds": [
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198
+            ]
+        }
+    },
+    {
+        "id": 75,
+        "name": "ΚΑΒΑΛΑΣ",
+        "officialName": "ΔΟΥ ΚΑΒΑΛΑΣ",
+        "relations": {
+            "regionId": 1,
+            "regionIso": "GR-A",
+            "unitIds": [
+                4,
+                3
+            ],
+            "municipalityIds": [
+                14,
+                11,
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "id": 76,
+        "name": "ΚΑΛΑΜΑΡΙΑΣ",
+        "officialName": "ΔΟΥ ΚΑΛΑΜΑΡΙΑΣ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                8
+            ],
+            "municipalityIds": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "id": 77,
+        "name": "Ζ' ΘΕΣΣΑΛΟΝΙΚΗΣ",
+        "officialName": "ΔΟΥ Ζ' ΘΕΣΣΑΛΟΝΙΚΗΣ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                8
+            ],
+            "municipalityIds": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "id": 78,
+        "name": "Δ' ΘΕΣΣΑΛΟΝΙΚΗΣ",
+        "officialName": "ΔΟΥ Δ' ΘΕΣΣΑΛΟΝΙΚΗΣ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                8
+            ],
+            "municipalityIds": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "id": 79,
+        "name": "Ε' ΘΕΣΣΑΛΟΝΙΚΗΣ",
+        "officialName": "ΔΟΥ Ε' ΘΕΣΣΑΛΟΝΙΚΗΣ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                8
+            ],
+            "municipalityIds": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "id": 80,
+        "name": "ΤΡΙΚΑΛΩΝ",
+        "officialName": "ΔΟΥ ΤΡΙΚΑΛΩΝ",
+        "relations": {
+            "regionId": 5,
+            "regionIso": "GR-E",
+            "unitIds": [
+                26
+            ],
+            "municipalityIds": [
+                113,
+                114,
+                115,
+                116
+            ]
+        }
+    },
+    {
+        "id": 81,
+        "name": "ΚΑΛΛΙΘΕΑΣ",
+        "officialName": "ΔΟΥ ΚΑΛΛΙΘΕΑΣ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                43,
+                44
+            ],
+            "municipalityIds": [
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208,
+                209,
+                210,
+                211
+            ]
+        }
+    },
+    {
+        "id": 82,
+        "name": "ΡΟΔΟΥ",
+        "officialName": "ΔΟΥ ΡΟΔΟΥ",
+        "relations": {
+            "regionId": 12,
+            "regionIso": "GR-L",
+            "unitIds": [
+                68,
+                70
+            ],
+            "municipalityIds": [
+                300,
+                301,
+                304,
+                305,
+                306,
+                307,
+                308
+            ]
+        }
+    },
+    {
+        "id": 83,
+        "name": "ΚΥΜΗΣ",
+        "officialName": "ΔΟΥ ΚΥΜΗΣ",
+        "relations": {
+            "regionId": 8,
+            "regionIso": "GR-H",
+            "unitIds": [
+                36
+            ],
+            "municipalityIds": [
+                153,
+                154,
+                155,
+                156,
+                157,
+                158,
+                159,
+                160
+            ]
+        }
+    },
+    {
+        "id": 84,
+        "name": "ΝΕΩΝ ΜΟΥΔΑΝΙΩΝ",
+        "officialName": "ΔΟΥ ΝΕΩΝ ΜΟΥΔΑΝΙΩΝ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                13
+            ],
+            "municipalityIds": [
+                56,
+                57,
+                58,
+                59,
+                60
+            ]
+        }
+    },
+    {
+        "id": 85,
+        "name": "ΚΑΣΤΟΡΙΑΣ",
+        "officialName": "ΔΟΥ ΚΑΣΤΟΡΙΑΣ",
+        "relations": {
+            "regionId": 3,
+            "regionIso": "GR-C",
+            "unitIds": [
+                15,
+                16
+            ],
+            "municipalityIds": [
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70
+            ]
+        }
+    },
+    {
+        "id": 86,
+        "name": "ΚΟΡΩΠΙΟΥ",
+        "officialName": "ΔΟΥ ΚΟΡΩΠΙΟΥ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                61,
+                46
+            ],
+            "municipalityIds": [
+                285,
+                286,
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229,
+                230,
+                231,
+                232
+            ]
+        }
+    },
+    {
+        "id": 87,
+        "name": "Ε' ΠΕΙΡΑΙΑ",
+        "officialName": "ΔΟΥ Ε' ΠΕΙΡΑΙΑ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                44
+            ],
+            "municipalityIds": [
+                207,
+                208,
+                209,
+                210,
+                211
+            ]
+        }
+    },
+    {
+        "id": 88,
+        "name": "ΚΙΛΚΙΣ",
+        "officialName": "ΔΟΥ ΚΙΛΚΙΣ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                9,
+                8
+            ],
+            "municipalityIds": [
+                40,
+                41,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
+            ]
+        }
+    },
+    {
+        "id": 89,
+        "name": "ΜΥΚΟΝΟΥ",
+        "officialName": "ΔΟΥ ΜΥΚΟΝΟΥ",
+        "relations": {
+            "regionId": 12,
+            "regionIso": "GR-L",
+            "unitIds": [
+                62
+            ],
+            "municipalityIds": [
+                287
+            ]
+        }
+    },
+    {
+        "id": 90,
+        "name": "ΧΙΟΥ",
+        "officialName": "ΔΟΥ ΧΙΟΥ",
+        "relations": {
+            "regionId": 11,
+            "regionIso": "GR-K",
+            "unitIds": [
+                57
+            ],
+            "municipalityIds": [
+                272,
+                273,
+                274
+            ]
+        }
+    },
+    {
+        "id": 91,
+        "name": "ΓΙΑΝΝΙΤΣΩΝ",
+        "officialName": "ΔΟΥ ΓΙΑΝΝΙΤΣΩΝ",
+        "relations": {
+            "regionId": 2,
+            "regionIso": "GR-B",
+            "unitIds": [
+                10
+            ],
+            "municipalityIds": [
+                42,
+                43,
+                44,
+                45
+            ]
+        }
+    },
+    {
+        "id": 92,
+        "name": "ΠΕΡΙΣΤΕΡΙΟΥ",
+        "officialName": "ΔΟΥ ΠΕΡΙΣΤΕΡΙΟΥ",
+        "relations": {
+            "regionId": 9,
+            "regionIso": "GR-I",
+            "unitIds": [
+                41
+            ],
+            "municipalityIds": [
+                184,
+                185,
+                186,
+                187,
+                188,
+                189,
+                190
+            ]
+        }
+    },
+    {
+        "id": 93,
+        "name": "ΣΥΡΟΥ",
+        "officialName": "ΔΟΥ ΣΥΡΟΥ",
+        "relations": {
+            "regionId": 12,
+            "regionIso": "GR-L",
+            "unitIds": [
+                64,
+                65
+            ],
+            "municipalityIds": [
+                290,
+                291
+            ]
+        }
+    }
+]
