@@ -88,18 +88,10 @@ function calculateMovableGreekHolidays(year: number): Holiday[] {
   const m = 3 + Math.floor((p + 26) / 30) - 1;
   const oneDay = 60 * 1000 * 60 * 24;
   const pascha = new Date(Date.UTC(year, m, d));
-  const katharaDeftera = new Date(pascha.getTime() + oneDay * -48)
-    .toISOString()
-    .split("T")[0];
-  const megParaskevi = new Date(pascha.getTime() + oneDay * -2)
-    .toISOString()
-    .split("T")[0];
-  const deftPascha = new Date(pascha.getTime() + oneDay)
-    .toISOString()
-    .split("T")[0];
-  const agiouPnefmatos = new Date(pascha.getTime() + oneDay * 50)
-    .toISOString()
-    .split("T")[0];
+  const katharaDeftera = new Date(pascha.getTime() + oneDay * -48).toISOString().split("T")[0];
+  const megParaskevi = new Date(pascha.getTime() + oneDay * -2).toISOString().split("T")[0];
+  const deftPascha = new Date(pascha.getTime() + oneDay).toISOString().split("T")[0];
+  const agiouPnefmatos = new Date(pascha.getTime() + oneDay * 50).toISOString().split("T")[0];
 
   return [
     { date: katharaDeftera!, name: "Καθαρά Δευτέρα" },
@@ -130,15 +122,11 @@ export function getHolidays(year: string): Holiday[] {
   ];
 
   const movableHolidays: Holiday[] = calculateMovableGreekHolidays(y);
-  const holidays = [...fixedHolidays, ...movableHolidays].sort((a, b) =>
-    a.date.localeCompare(b.date)
-  );
+  const holidays = [...fixedHolidays, ...movableHolidays].sort((a, b) => a.date.localeCompare(b.date));
   const firstMay = holidays.find((h) => h.name === `Εργατική Πρωτομαγιά`);
 
   if (firstMay) {
-    const firstMayCount = holidays.filter(
-      (h) => h.date === `${year}-05-01`
-    ).length;
+    const firstMayCount = holidays.filter((h) => h.date === `${year}-05-01`).length;
 
     if (firstMayCount > 1) {
       holidays.splice(holidays.indexOf(firstMay), 1);

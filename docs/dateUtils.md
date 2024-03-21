@@ -80,5 +80,6 @@
 **`year`**: A string representing the year for which to fetch Greek holidays.
 
 **Return Type**: An array of `Holiday` objects where each `Holiday` object includes:
+
 - `date`: A string representing the date of the holiday in the format `YYYY-MM-DD`.
 - `name`: The name of the holiday in Greek.
