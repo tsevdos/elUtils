@@ -67,6 +67,7 @@ The library is currently split into the following modules:
   - [getMonths()](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md#getMonths)
   - [getQuarters()](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md#getQuarters)
   - [getEras()](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md#getEras)
+  - [getHolidays()](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md#getHolidays)
 
 ## Contribute
 
