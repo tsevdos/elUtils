@@ -11,55 +11,43 @@ type LocaleOption = {
   locale?: "el" | "en";
 };
 
-const holidayNameTranslations: { [key: string]: { el: string; en: string } } = {
+const holidayNameTranslations: { [key: string]: { en: string } } = {
   "Πρωτοχρονιά": {
-    el: "Πρωτοχρονιά",
     en: "New Year's Day"
   },
   "Θεοφάνεια": {
-    el: "Θεοφάνεια",
     en: "Epiphany"
   },
   "Ευαγγελισμός της Θεοτόκου": {
-    el: "Ευαγγελισμός της Θεοτόκου",
     en: "Annunciation"
   },
   "Εργατική Πρωτομαγιά": {
-    el: "Εργατική Πρωτομαγιά",
     en: "Labour Day"
   },
   "Κοίμηση της Θεοτόκου": {
-    el: "Κοίμηση της Θεοτόκου",
     en: "Assumption of Mary"
   },
   "Ημέρα του Όχι": {
-    el: "Ημέρα του Όχι",
     en: "Ohi Day"
   },
   "Χριστούγεννα": {
-    el: "Χριστούγεννα",
     en: "Christmas Day"
   },
   "Επόμενη των Χριστουγέννων": {
-    el: "Επόμενη των Χριστουγέννων",
     en: "Boxing Day"
   },
   "Καθαρά Δευτέρα": {
-    el: "Καθαρά Δευτέρα",
     en: "Clean Monday"
   },
   "Μεγάλη Παρασκευή": {
-    el: "Μεγάλη Παρασκευή",
     en: "Good Friday"
   },
   "Δευτέρα του Πάσχα": {
-    el: "Δευτέρα του Πάσχα",
     en: "Easter Monday"
   },
   "Αγίου Πνεύματος": {
-    el: "Αγίου Πνεύματος",
     en: "Pentecost"
-  }
+  },
 };
 
 /**
@@ -193,10 +181,12 @@ export function getHolidays(year: string, options: LocaleOption = {}): Holiday[]
       holidays.splice(holidays.indexOf(firstMay), 1);
     }
   }
-
-  holidays.forEach((h) => {
-    h.name = holidayNameTranslations[h.name]![locale];
-  });
+  // Translate holiday names to the locale if it's not Greek
+  if (locale !== "el") {
+    holidays.forEach((h) => {
+      h.name = holidayNameTranslations[h.name]![locale];
+    });
+  }
 
   return holidays;
 }
