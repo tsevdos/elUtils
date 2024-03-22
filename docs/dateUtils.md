@@ -78,8 +78,11 @@
 
 **Parameters:**
 **`year`**: A string representing the year for which to fetch Greek holidays.
+**`options`**: An object specifying the options for retrieval.
+
+- **`locale`** (optional, default: "el"): The locale for the Holiday names ("el" for Greek, "en" for English).
 
 **Return Type**: An array of `Holiday` objects where each `Holiday` object includes:
 
 - `date`: A string representing the date of the holiday in the format `YYYY-MM-DD`.
-- `name`: The name of the holiday in Greek.
+- `name`: The name of the holiday in Greek or English based on the specified locale.

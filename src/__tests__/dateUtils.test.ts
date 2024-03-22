@@ -182,9 +182,36 @@ describe("getHolidays", () => {
 
     expect(holidays).toEqual(expect.arrayContaining(expectedHolidays));
   });
-
-  // Additional tests can be designed to cover edge cases, such as:
-  // - Leap years
-  // - Years where Labor Day coincides with Easter or falls on a weekend
-  // - Future or past years with different holiday dates
 });
+
+describe("getHolidays in English", () => {
+  // Test for a year with known fixed and movable holiday dates
+  it("returns correct Greek holidays for a specific year", () => {
+    const year = "2023";
+    const holidays = getHolidays(year, { locale: "en" });
+
+    // Expected holidays for the year 2023 - this is a sample and might need adjustments based on accurate holiday dates
+    const expectedHolidays = [
+      { date: "2023-01-01", name: "New Year's Day" },
+      { date: "2023-01-06", name: "Epiphany" },
+      { date: "2023-02-27", name: "Clean Monday" },
+      { date: "2023-03-25", name: "Annunciation" },
+      { date: "2023-04-14", name: "Good Friday" },
+      { date: "2023-04-17", name: "Easter Monday" },
+      { date: "2023-05-01", name: "Labour Day" },
+      { date: "2023-06-05", name: "Pentecost" },
+      { date: "2023-08-15", name: "Assumption of Mary" },
+      { date: "2023-10-28", name: "Ohi Day" },
+      { date: "2023-12-25", name: "Christmas Day" },
+      { date: "2023-12-26", name: "Boxing Day" },
+    ];
+
+    expect(holidays).toEqual(expect.arrayContaining(expectedHolidays));
+  });
+});
+
+// Additional tests can be designed to cover edge cases, such as:
+// - Leap years
+// - Years where Labor Day coincides with Easter or falls on a weekend
+// - Future or past years with different holiday dates
+
