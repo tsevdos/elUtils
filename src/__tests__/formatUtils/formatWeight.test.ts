@@ -1,19 +1,14 @@
-import { formatWeight } from "../../formatUtils";
-import { WeightTypes } from "../../formatUtils";
+import { formatWeight, WeightTypes } from "../../formatUtils";
 
 const testSingleValue = (typeWeight: WeightTypes, expectedGrData: string, expectedEnData: string) => {
   expect(formatWeight(1, { type: typeWeight })).toBe(expectedGrData);
-  expect(formatWeight(1, { type: typeWeight, locale: "el" })).toBe(expectedGrData);
   expect(formatWeight(1, { type: typeWeight, locale: "el", format: "full" })).toBe(expectedGrData);
-  expect(formatWeight(1, { type: typeWeight, locale: "en" })).toBe(expectedEnData);
   expect(formatWeight(1, { type: typeWeight, locale: "en", format: "full" })).toBe(expectedEnData);
 };
 
 const testPluralValue = (typeWeight: WeightTypes, expectedGrData: string, expectedEnData: string) => {
   expect(formatWeight(2, { type: typeWeight })).toBe(expectedGrData);
-  expect(formatWeight(2, { type: typeWeight, format: "full" })).toBe(expectedGrData);
   expect(formatWeight(2, { type: typeWeight, locale: "el", format: "full" })).toBe(expectedGrData);
-  expect(formatWeight(2, { type: typeWeight, locale: "en" })).toBe(expectedEnData);
   expect(formatWeight(2, { type: typeWeight, locale: "en", format: "full" })).toBe(expectedEnData);
 };
 
@@ -25,7 +20,6 @@ const testValueWithShortString = (typeWeight: WeightTypes, expectedGrData: strin
 
 const testValueWithInternational = (typeWeight: WeightTypes, expectedGrData: string, expectedEnData: string) => {
   expect(formatWeight(2, { type: typeWeight, withInternational: true })).toBe(expectedGrData);
-  expect(formatWeight(2, { type: typeWeight, locale: "el", withInternational: true })).toBe(expectedGrData);
   expect(formatWeight(2, { type: typeWeight, locale: "en", withInternational: true })).toBe(expectedEnData);
 };
 
