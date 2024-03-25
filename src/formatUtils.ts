@@ -1,6 +1,6 @@
 import weightsData from "../data/weights.json";
 
-type WeightTypes =
+export type WeightTypes =
   | "pound"
   | "kilogram"
   | "centigram"
