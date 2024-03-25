@@ -68,6 +68,10 @@ The library is currently split into the following modules:
   - [getQuarters()](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md#getQuarters)
   - [getEras()](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md#getEras)
 
+- [**`formatUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/formatUtils.md)
+
+  - [formatWeight()](https://github.com/tsevdos/elUtils/blob/main/docs/formatUtils.md#formatWeight)
+
 ## Contribute
 
 See the [Contributing guide](https://github.com/tsevdos/elUtils/blob/main/CONTRIBUTING.md).
