@@ -166,18 +166,18 @@ describe("getHolidays", () => {
 
     // Expected holidays for the year 2023 - this is a sample and might need adjustments based on accurate holiday dates
     const expectedHolidays = [
-      { date: "2023-01-01", name: "Πρωτοχρονιά" },
-      { date: "2023-01-06", name: "Θεοφάνεια" },
-      { date: "2023-02-27", name: "Καθαρά Δευτέρα" },
-      { date: "2023-03-25", name: "Ευαγγελισμός της Θεοτόκου" },
-      { date: "2023-04-14", name: "Μεγάλη Παρασκευή" },
-      { date: "2023-04-17", name: "Δευτέρα του Πάσχα" },
-      { date: "2023-05-01", name: "Εργατική Πρωτομαγιά" },
-      { date: "2023-06-05", name: "Αγίου Πνεύματος" },
-      { date: "2023-08-15", name: "Κοίμηση της Θεοτόκου" },
-      { date: "2023-10-28", name: "Ημέρα του Όχι" },
-      { date: "2023-12-25", name: "Χριστούγεννα" },
-      { date: "2023-12-26", name: "Επόμενη των Χριστουγέννων" },
+      { date: "01-01", name: "Πρωτοχρονιά" },
+      { date: "06-01", name: "Θεοφάνεια" },
+      { date: "27-02", name: "Καθαρά Δευτέρα" },
+      { date: "25-03", name: "Ευαγγελισμός της Θεοτόκου" },
+      { date: "14-04", name: "Μεγάλη Παρασκευή" },
+      { date: "17-04", name: "Δευτέρα του Πάσχα" },
+      { date: "01-05", name: "Εργατική Πρωτομαγιά" },
+      { date: "05-06", name: "Αγίου Πνεύματος" },
+      { date: "15-08", name: "Κοίμηση της Θεοτόκου" },
+      { date: "28-10", name: "Ημέρα του Όχι" },
+      { date: "25-12", name: "Χριστούγεννα" },
+      { date: "26-12", name: "Επόμενη των Χριστουγέννων" },
     ];
 
     expect(holidays).toEqual(expect.arrayContaining(expectedHolidays));
@@ -192,18 +192,18 @@ describe("getHolidays in English", () => {
 
     // Expected holidays for the year 2023 - this is a sample and might need adjustments based on accurate holiday dates
     const expectedHolidays = [
-      { date: "2023-01-01", name: "New Year's Day" },
-      { date: "2023-01-06", name: "Epiphany" },
-      { date: "2023-02-27", name: "Clean Monday" },
-      { date: "2023-03-25", name: "Annunciation" },
-      { date: "2023-04-14", name: "Good Friday" },
-      { date: "2023-04-17", name: "Easter Monday" },
-      { date: "2023-05-01", name: "Labour Day" },
-      { date: "2023-06-05", name: "Pentecost" },
-      { date: "2023-08-15", name: "Assumption of Mary" },
-      { date: "2023-10-28", name: "Ohi Day" },
-      { date: "2023-12-25", name: "Christmas Day" },
-      { date: "2023-12-26", name: "Boxing Day" },
+      { date: "01-01", name: "New Year's Day" },
+      { date: "06-01", name: "Epiphany" },
+      { date: "27-02", name: "Clean Monday" },
+      { date: "25-03", name: "Annunciation" },
+      { date: "14-04", name: "Good Friday" },
+      { date: "17-04", name: "Easter Monday" },
+      { date: "01-05", name: "Labour Day" },
+      { date: "05-06", name: "Pentecost" },
+      { date: "15-08", name: "Assumption of Mary" },
+      { date: "28-10", name: "Ohi Day" },
+      { date: "25-12", name: "Christmas Day" },
+      { date: "26-12", name: "Boxing Day" },
     ];
 
     expect(holidays).toEqual(expect.arrayContaining(expectedHolidays));
@@ -214,4 +214,3 @@ describe("getHolidays in English", () => {
 // - Leap years
 // - Years where Labor Day coincides with Easter or falls on a weekend
 // - Future or past years with different holiday dates
-

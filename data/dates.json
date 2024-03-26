@@ -83,5 +83,35 @@
       "full": ["Before Christ", "Anno Domini"],
       "short": ["BC", "AD"]
     }
+  },
+  "holidays": {
+    "el": [
+      { "date": "01-01", "name": "Πρωτοχρονιά", "moveable": false },
+      { "date": "06-01", "name": "Θεοφάνεια", "moveable": false },
+      { "date": "25-03", "name": "Ευαγγελισμός της Θεοτόκου", "moveable": false },
+      { "date": "01-05", "name": "Εργατική Πρωτομαγιά", "moveable": false },
+      { "date": "15-08", "name": "Κοίμηση της Θεοτόκου", "moveable": false },
+      { "date": "28-10", "name": "Ημέρα του Όχι", "moveable": false },
+      { "date": "25-12", "name": "Χριστούγεννα", "moveable": false },
+      { "date": "26-12", "name": "Επόμενη των Χριστουγέννων", "moveable": false },
+      { "date": "cleanMonday", "name": "Καθαρά Δευτέρα", "moveable": true },
+      { "date": "goodFriday", "name": "Μεγάλη Παρασκευή", "moveable": true },
+      { "date": "easterMonday", "name": "Δευτέρα του Πάσχα", "moveable": true },
+      { "date": "pentecost", "name": "Αγίου Πνεύματος", "moveable": true }
+    ],
+    "en": [
+      { "date": "01-01", "name": "New Year's Day", "moveable": false },
+      { "date": "06-01", "name": "Epiphany", "moveable": false },
+      { "date": "25-03", "name": "Annunciation", "moveable": false },
+      { "date": "01-05", "name": "Labour Day", "moveable": false },
+      { "date": "15-08", "name": "Assumption of Mary", "moveable": false },
+      { "date": "28-10", "name": "Ohi Day", "moveable": false },
+      { "date": "25-12", "name": "Christmas Day", "moveable": false },
+      { "date": "26-12", "name": "Boxing Day", "moveable": false },
+      { "date": "cleanMonday", "name": "Clean Monday", "moveable": true },
+      { "date": "goodFriday", "name": "Good Friday", "moveable": true },
+      { "date": "easterMonday", "name": "Easter Monday", "moveable": true },
+      { "date": "pentecost", "name": "Pentecost", "moveable": true }
+    ]
   }
 }
