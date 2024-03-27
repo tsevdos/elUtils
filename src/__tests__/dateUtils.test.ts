@@ -203,9 +203,7 @@ describe("getHolidays", () => {
       { date: "2023-12-26", name: "Boxing Day" },
     ];
 
-    expect(holidays[0]).toEqual(expectedHolidays[0]);
-
-    // expect(holidays).toEqual(expectedHolidays);
+    expect(holidays).toEqual(expectedHolidays);
   });
 
   // Add more tests
