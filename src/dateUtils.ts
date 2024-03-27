@@ -7,10 +7,6 @@ type BaseDateTimeOptions = {
   format?: Format;
 };
 
-type LocaleOption = {
-  locale?: "el" | "en";
-};
-
 /**
  * Returns the days based on the provided options.
  * @param {BaseDateTimeOptions} options - The options for locale and format.
@@ -100,10 +96,10 @@ function calculateMovableGreekHolidays(year: number, locale: "el" | "en"): Holid
   const easterMonday = new Date(easter.getTime() + oneDay).toISOString();
   const pentecost = new Date(easter.getTime() + oneDay * 50).toISOString();
   const movableGreekHolidaysDates = {
-    cleanMonday: `${cleanMonday.substring(8, 10)}-${cleanMonday.substring(5, 7)}`,
-    goodFriday: `${goodFriday.substring(8, 10)}-${goodFriday.substring(5, 7)}`,
-    easterMonday: `${easterMonday.substring(8, 10)}-${easterMonday.substring(5, 7)}`,
-    pentecost: `${pentecost.substring(8, 10)}-${pentecost.substring(5, 7)}`,
+    cleanMonday: `${year}-${cleanMonday.substring(5, 7)}-${cleanMonday.substring(8, 10)}`,
+    goodFriday: `${year}-${goodFriday.substring(5, 7)}-${goodFriday.substring(8, 10)}`,
+    easterMonday: `${year}-${easterMonday.substring(5, 7)}-${easterMonday.substring(8, 10)}`,
+    pentecost: `${year}-${pentecost.substring(5, 7)}-${pentecost.substring(8, 10)}`,
   };
 
   return datesData.holidays[locale]
@@ -114,33 +110,23 @@ function calculateMovableGreekHolidays(year: number, locale: "el" | "en"): Holid
     }));
 }
 
+type GetHolidaysOptions = {
+  locale?: "el" | "en";
+};
+
 /**
  * Gets Greek holidays for the given year, including both fixed and movable.
  * @param {string} year - The year for which to fetch the holidays.
  * @returns {Holiday[]} An array of holiday objects.
  */
-export function getHolidays(year: string, options: LocaleOption = {}): Holiday[] {
+export function getHolidays(year: string, options: GetHolidaysOptions = {}): Holiday[] {
   const { locale = "el" } = options;
   const y = parseInt(year);
-  const nonMovableHolidays = datesData.holidays[locale].filter(({ moveable }) => !moveable);
+  const nonMovableHolidays = datesData.holidays[locale]
+    .filter(({ moveable }) => !moveable)
+    .map(({ date, name }) => ({ date: `${year}-${date}`, name }));
   const movableHolidays: Holiday[] = calculateMovableGreekHolidays(y, locale);
-  const holidays = [...nonMovableHolidays, ...movableHolidays]; //.sort((a, b) => a.date.localeCompare(b.date));
-
-  // TODO: Can we write it cleaner / simpler?
-  const firstMay = holidays.find((h) => h.name === `Εργατική Πρωτομαγιά`);
-
-  if (firstMay) {
-    const firstMayCount = holidays.filter((h) => h.date === `${year}-05-01`).length;
-
-    if (firstMayCount > 1) {
-      holidays.splice(holidays.indexOf(firstMay), 1);
-    }
-    const firstMayDate = new Date(firstMay.date);
-    const day = firstMayDate.getDay();
-    if (day === 0 || day === 6) {
-      holidays.splice(holidays.indexOf(firstMay), 1);
-    }
-  }
+  const holidays = [...nonMovableHolidays, ...movableHolidays].sort((a, b) => a.date.localeCompare(b.date));
 
   return holidays;
 }
