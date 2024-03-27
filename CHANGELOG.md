@@ -1,5 +1,11 @@
 # @tsevdos/el-utils
 
+## 0.3.0
+
+### Minor Changes
+
+- [#67](https://github.com/tsevdos/elUtils/pull/67) [`fbb08a2`](https://github.com/tsevdos/elUtils/commit/fbb08a2019df68fbbd1ebed3f9603ac7685e2230) Thanks [@raptisj](https://github.com/raptisj)! - Create a formatUtils module and add a formatWeight util
+
 ## 0.2.0
 
 ### Minor Changes
