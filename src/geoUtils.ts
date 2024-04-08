@@ -5,6 +5,9 @@ import geographicRegionsEn from "../data/geographic-regions-en.json";
 import prefecturesEl from "../data/prefectures-el.json";
 import prefecturesEn from "../data/prefectures-en.json";
 import postalCodes from "../data/postal-codes.json";
+import taxOfficesEl from "../data/taxOffices-el.json";
+import taxOfficesEn from "../data/taxOffices-en.json";
+
 import {
   Region,
   RegionWithoutUnits,
@@ -13,6 +16,7 @@ import {
   Municipality,
   GeographicRegion,
   Prefecture,
+  TaxOffice,
 } from "./types";
 
 export const MOUNT_ATHOS_REGION_ID = 14;
@@ -39,6 +43,8 @@ const prefecturesWithoutMountAthos = {
   el: allPrefectures.el.filter(({ id }) => id !== MOUNT_ATHOS_PREFECTURE_ID),
   en: allPrefectures.en.filter(({ id }) => id !== MOUNT_ATHOS_PREFECTURE_ID),
 };
+
+const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
 
 type Locale = "el" | "en";
 
@@ -264,4 +270,102 @@ export function findByPostalCode(
   }
 
   return undefined;
+}
+
+type TaxOfficeOptions = { locale?: Locale; type?: "all" | "taxOffice" };
+
+export function getAllTaxOffices({ locale = "el", type = "all" }: TaxOfficeOptions = {}): string[] | TaxOffice[] {
+  switch (type) {
+    case "all":
+      return allTaxOffices[locale];
+    case "taxOffice":
+      return allTaxOffices[locale].map((taxOffice) => taxOffice.officialName);
+  }
+}
+
+type TaxOfficeOptionsById = {
+  id: number;
+  by?: "taxOfficeId" | "region" | "unit" | "municipality" | "postalCode";
+} & TaxOfficeOptions;
+
+export function getTaxOfficeBy(options: TaxOfficeOptionsById): TaxOffice | TaxOffice[] | undefined {
+  const { id, by = "taxOfficeId", locale = "el" } = options;
+  if (by === ("taxOfficeId" || "postalCode")) {
+    return allTaxOffices[locale].find((taxOffice) => {
+      if (by === "taxOfficeId" && id === taxOffice.id) {
+        return taxOffice;
+      }
+      if (taxOffice.postalCodes?.includes(id)) {
+        return taxOffice;
+      }
+      return;
+    });
+  } else {
+    return allTaxOffices[locale].filter((taxOffice) => {
+      if (by === "region" && taxOffice.relations.regionId === id) {
+        return taxOffice;
+      }
+      if (by === "unit" && taxOffice.relations.unitIds?.includes(id)) {
+        return taxOffice;
+      }
+      if (by === "municipality" && taxOffice.relations.municipalityIds?.includes(id)) {
+        return taxOffice;
+      }
+      return;
+    });
+  }
+}
+
+type TaxOfficeOptionsByTerm = { searchTerm?: string } & TaxOfficeOptions;
+
+export function searchTaxOffice(options: TaxOfficeOptionsByTerm = {}): TaxOffice[] | TaxOffice {
+  const { searchTerm, locale = "el" } = options;
+  if (!searchTerm) {
+    return allTaxOffices[locale];
+  }
+  // if ((locale === "el" && isGreekLatinMixed(searchTerm) !== "greek") || (locale === "en" && isGreekLatinMixed(searchTerm) !== "latin")) {
+  //   throw new Error('Search term and localization missmatch');
+  // }
+  const normalizedTerm = normalizeString(searchTerm);
+  return allTaxOffices[locale].filter((taxOffice) => {
+    return normalizeString(taxOffice.name).includes(normalizedTerm) ? taxOffice : "";
+  });
+}
+
+//Removes accents,spaces and special chars from the string
+export function normalizeString(input: string): string {
+  const accentChars = /[άέήίόύώΆΈΉΊΌΎΏϊΐΪϋΰΫ]/g;
+  const accentReplacements: { [key: string]: string } = {
+    ά: "α",
+    έ: "ε",
+    ή: "η",
+    ί: "ι",
+    ό: "ο",
+    ύ: "υ",
+    ώ: "ω",
+    Ά: "Α",
+    Έ: "Ε",
+    Ή: "Η",
+    Ί: "Ι",
+    Ό: "Ο",
+    Ύ: "Υ",
+    Ώ: "Ω",
+    ϊ: "ι",
+    ΐ: "ι",
+    Ϊ: "Ι",
+    ϋ: "υ",
+    ΰ: "υ",
+    Ϋ: "Υ",
+  };
+  let normalized = input.replace(accentChars, (match) => accentReplacements[match] || match);
+  normalized = normalized.replace(/[ \-_!@#$%^&*()]/g, ""); // Remove spaces and special characters
+  return normalized.toLocaleUpperCase(); // Convert to uppercase
+}
+
+//Compare greek words
+export function compareGreekStrings(stringA: string, stringB: string): boolean {
+  if (normalizeString(stringA) === normalizeString(stringB)) {
+    return true;
+  }
+  return false;
 }

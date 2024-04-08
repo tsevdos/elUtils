@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "Ξάνθης",
-    "officialName": "ΔΟΥ Ξάνθης",
+    "name": "Xanthi",
+    "officialName": "TAX OFFICE Xanthi",
     "relations": {
       "regionId": 1,
       "regionIso": "GR-A",
@@ -13,8 +13,8 @@
   },
   {
     "id": 2,
-    "name": "Κω",
-    "officialName": "ΔΟΥ Κω",
+    "name": "Ko",
+    "officialName": "TAX OFFICE Ko",
     "relations": {
       "regionId": 12,
       "regionIso": "GR-L",
@@ -25,8 +25,8 @@
   },
   {
     "id": 3,
-    "name": "Λάρισας",
-    "officialName": "ΔΟΥ Λάρισας",
+    "name": "Larissa",
+    "officialName": "TAX OFFICE Larissa",
     "relations": {
       "regionId": 5,
       "regionIso": "GR-E",
@@ -40,8 +40,8 @@
   },
   {
     "id": 4,
-    "name": "Νίκαιας (Α-Β)",
-    "officialName": "ΔΟΥ Νίκαιας (Α-Β)",
+    "name": "Nicaea (A-B)",
+    "officialName": "TAX OFFICE Nicaea (A-B)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -52,8 +52,8 @@
   },
   {
     "id": 5,
-    "name": "Χολαργού (Α1)",
-    "officialName": "ΔΟΥ Χολαργού (Α1)",
+    "name": "Holargos (A1)",
+    "officialName": "TAX OFFICE Holargos (A1)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -66,8 +66,8 @@
   },
   {
     "id": 6,
-    "name": "Πολυγύρου",
-    "officialName": "ΔΟΥ Πολυγύρου",
+    "name": "Polygyros",
+    "officialName": "TAX OFFICE Polygyros",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -78,8 +78,8 @@
   },
   {
     "id": 7,
-    "name": "Ρεθύμνου",
-    "officialName": "ΔΟΥ Ρεθύμνου",
+    "name": "Rethymnon",
+    "officialName": "TAX OFFICE Rethymnon",
     "relations": {
       "regionId": 13,
       "regionIso": "GR-M",
@@ -90,8 +90,8 @@
   },
   {
     "id": 8,
-    "name": "Ηλιούπολης (Α1)",
-    "officialName": "ΔΟΥ Ηλιούπολης (Α1)",
+    "name": "Ilioupolis (A1)",
+    "officialName": "TAX OFFICE Ilioupolis (A1)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -104,8 +104,8 @@
   },
   {
     "id": 9,
-    "name": "Μυτιλήνης",
-    "officialName": "ΔΟΥ Μυτιλήνης",
+    "name": "Mytilini",
+    "officialName": "TAX OFFICE Mytilini",
     "relations": {
       "regionId": 11,
       "regionIso": "GR-K",
@@ -119,8 +119,8 @@
   },
   {
     "id": 10,
-    "name": "Αγίου Νικολάου",
-    "officialName": "ΔΟΥ Αγίου Νικολάου",
+    "name": "Agios Nikolaos",
+    "officialName": "TAX OFFICE Agios Nikolaos",
     "relations": {
       "regionId": 13,
       "regionIso": "GR-M",
@@ -131,8 +131,8 @@
   },
   {
     "id": 11,
-    "name": "Αγίων Αναργύρων (Α1)",
-    "officialName": "ΔΟΥ Αγίων Αναργύρων (Α1)",
+    "name": "Agion Anargyron (A1)",
+    "officialName": "TAX OFFICE Agion Anargyron (A1)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -146,8 +146,8 @@
   },
   {
     "id": 12,
-    "name": "Α' Πειραιά (Α1)",
-    "officialName": "ΔΟΥ Α' Πειραιά (Α1)",
+    "name": "A' Piraeus (A1)",
+    "officialName": "TAX OFFICE A' Piraeus (A1)",
     "relations": {
       "regionId": 12,
       "regionIso": "GR-L",
@@ -161,8 +161,8 @@
   },
   {
     "id": 13,
-    "name": "Καρπενησίου (Α-Β)",
-    "officialName": "ΔΟΥ Καρπενησίου (Α-Β)",
+    "name": "Karpenisiou (A-B)",
+    "officialName": "TAX OFFICE Karpenisiou (A-B)",
     "relations": {
       "regionId": 8,
       "regionIso": "GR-H",
@@ -173,8 +173,8 @@
   },
   {
     "id": 14,
-    "name": "Αγρινίου",
-    "officialName": "ΔΟΥ Αγρινίου",
+    "name": "Agriniou",
+    "officialName": "TAX OFFICE Agriniou",
     "relations": {
       "regionId": 7,
       "regionIso": "GR-G",
@@ -188,8 +188,8 @@
   },
   {
     "id": 15,
-    "name": "Μεσολογγίου",
-    "officialName": "ΔΟΥ Μεσολογγίου",
+    "name": "Mesolongiou",
+    "officialName": "TAX OFFICE Mesolongiou",
     "relations": {
       "regionId": 7,
       "regionIso": "GR-G",
@@ -200,8 +200,8 @@
   },
   {
     "id": 16,
-    "name": "Α' Αθηνών",
-    "officialName": "ΔΟΥ Α' Αθηνών",
+    "name": "A' Athens",
+    "officialName": "TAX OFFICE A' Athens",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -216,8 +216,8 @@
   },
   {
     "id": 17,
-    "name": "Δ' Αθηνών",
-    "officialName": "ΔΟΥ Δ' Αθηνών",
+    "name": "D' Athens",
+    "officialName": "TAX OFFICE D' Athens",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -231,8 +231,8 @@
   },
   {
     "id": 18,
-    "name": "ΙΓ' Αθηνών",
-    "officialName": "ΔΟΥ ΙΓ' Αθηνών",
+    "name": "ΙC' Athens",
+    "officialName": "TAX OFFICE IC' Athens",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -246,8 +246,8 @@
   },
   {
     "id": 19,
-    "name": "ΙΖ' Αθηνών",
-    "officialName": "ΔΟΥ ΙΖ' Αθηνών",
+    "name": "IZ' Athens",
+    "officialName": "TAX OFFICE IZ' Athens",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -258,8 +258,8 @@
   },
   {
     "id": 20,
-    "name": "Ψυχικού (Α-Β)",
-    "officialName": "ΔΟΥ Ψυχικού (Α-Β)",
+    "name": "Psychiko (A-B)",
+    "officialName": "TAX OFFICE Psychiko (A-B)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -270,8 +270,8 @@
   },
   {
     "id": 21,
-    "name": "ΙΒ' Αθηνών",
-    "officialName": "ΔΟΥ ΙΒ' Αθηνών",
+    "name": "IB' Athens",
+    "officialName": "TAX OFFICE IB' Athens",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -282,8 +282,8 @@
   },
   {
     "id": 22,
-    "name": "Αιγάλεω (Α-Β)",
-    "officialName": "ΔΟΥ Αιγάλεω (Α-Β)",
+    "name": "Aigaleo (A-B)",
+    "officialName": "TAX OFFICE Aigaleo (A-B)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -294,8 +294,8 @@
   },
   {
     "id": 23,
-    "name": "Αιγίου",
-    "officialName": "ΔΟΥ Αιγίου",
+    "name": "Aigio",
+    "officialName": "TAX OFFICE Aigio",
     "relations": {
       "regionId": 7,
       "regionIso": "GR-G",
@@ -306,8 +306,8 @@
   },
   {
     "id": 24,
-    "name": "Καλαμάτας",
-    "officialName": "ΔΟΥ Καλαμάτας",
+    "name": "Kalamatas",
+    "officialName": "TAX OFFICE Kalamatas",
     "relations": {
       "regionId": 10,
       "regionIso": "GR-J",
@@ -321,8 +321,8 @@
   },
   {
     "id": 25,
-    "name": "Λευκάδας",
-    "officialName": "ΔΟΥ Λευκάδας",
+    "name": "Lefkada",
+    "officialName": "TAX OFFICE Lefkada",
     "relations": {
       "regionId": 6,
       "regionIso": "GR-F",
@@ -333,8 +333,8 @@
   },
   {
     "id": 26,
-    "name": "Βέροιας",
-    "officialName": "ΔΟΥ Βέροιας",
+    "name": "Veria",
+    "officialName": "TAX OFFICE Veria",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -345,8 +345,8 @@
   },
   {
     "id": 27,
-    "name": "Αλεξανδρούπολης ",
-    "officialName": "ΔΟΥ Αλεξανδρούπολης ",
+    "name": "Alexandroupoli ",
+    "officialName": "TAX OFFICE Alexandroupoli ",
     "relations": {
       "regionId": 1,
       "regionIso": "GR-A",
@@ -357,8 +357,8 @@
   },
   {
     "id": 28,
-    "name": "Λειβαδιάς (Α)",
-    "officialName": "ΔΟΥ Λειβαδιάς (Α)",
+    "name": "Livadias (A)",
+    "officialName": "TAX OFFICE Livadias (A)",
     "relations": {
       "regionId": 8,
       "regionIso": "GR-H",
@@ -369,8 +369,8 @@
   },
   {
     "id": 29,
-    "name": "Θηβών (Α-Β)",
-    "officialName": "ΔΟΥ Θηβών (Α-Β)",
+    "name": "Thebes (A-B)",
+    "officialName": "TAX OFFICE Thebes (A-B)",
     "relations": {
       "regionId": 8,
       "regionIso": "GR-H",
@@ -381,8 +381,8 @@
   },
   {
     "id": 30,
-    "name": "Γλυφάδας (Α1)",
-    "officialName": "ΔΟΥ Γλυφάδας (Α1)",
+    "name": "Glyfada (A1)",
+    "officialName": "TAX OFFICE Glyfada (A1)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -393,8 +393,8 @@
   },
   {
     "id": 31,
-    "name": "Βόλου",
-    "officialName": "ΔΟΥ Βόλου",
+    "name": "Volos",
+    "officialName": "TAX OFFICE Volos",
     "relations": {
       "regionId": 5,
       "regionIso": "GR-E",
@@ -408,8 +408,8 @@
   },
   {
     "id": 32,
-    "name": " Έδεσσας",
-    "officialName": "ΔΟΥ  Έδεσσας",
+    "name": "Edessa",
+    "officialName": "TAX OFFICE Edessa",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -420,8 +420,8 @@
   },
   {
     "id": 33,
-    "name": "Αμαρουσίου (Α-Β)",
-    "officialName": "ΔΟΥ Αμαρουσίου (Α-Β)",
+    "name": "Amarousiou (A-B)",
+    "officialName": "TAX OFFICE Amarousiou (A-B)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -432,8 +432,8 @@
   },
   {
     "id": 34,
-    "name": "Νάξου",
-    "officialName": "ΔΟΥ Νάξου",
+    "name": "Naxos",
+    "officialName": "TAX OFFICE Naxos",
     "relations": {
       "regionId": 12,
       "regionIso": "GR-L",
@@ -444,8 +444,8 @@
   },
   {
     "id": 35,
-    "name": "Αμπελοκήπων",
-    "officialName": "ΔΟΥ Αμπελοκήπων",
+    "name": "Ampelokipoi",
+    "officialName": "TAX OFFICE Ampelokipoi",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -456,8 +456,8 @@
   },
   {
     "id": 36,
-    "name": "Φλώρινας",
-    "officialName": "ΔΟΥ Φλώρινας",
+    "name": "Florinas",
+    "officialName": "TAX OFFICE Florinas",
     "relations": {
       "regionId": 3,
       "regionIso": "GR-C",
@@ -468,8 +468,8 @@
   },
   {
     "id": 37,
-    "name": "Λαμίας (Α)",
-    "officialName": "ΔΟΥ Λαμίας (Α)",
+    "name": "Lamias (A)",
+    "officialName": "TAX OFFICE Lamias (A)",
     "relations": {
       "regionId": 8,
       "regionIso": "GR-H",
@@ -483,8 +483,8 @@
   },
   {
     "id": 38,
-    "name": "Σερρών",
-    "officialName": "ΔΟΥ Σερρών",
+    "name": "Serres",
+    "officialName": "TAX OFFICE Serres",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -495,8 +495,8 @@
   },
   {
     "id": 39,
-    "name": "Σπάρτης",
-    "officialName": "ΔΟΥ Σπάρτης",
+    "name": "Sparti",
+    "officialName": "TAX OFFICE Sparti",
     "relations": {
       "regionId": 10,
       "regionIso": "GR-J",
@@ -507,8 +507,8 @@
   },
   {
     "id": 40,
-    "name": "Σάμου",
-    "officialName": "ΔΟΥ Σάμου",
+    "name": "Samos",
+    "officialName": "TAX OFFICE Samos",
     "relations": {
       "regionId": 11,
       "regionIso": "GR-K",
@@ -519,8 +519,8 @@
   },
   {
     "id": 41,
-    "name": "Θήρας",
-    "officialName": "ΔΟΥ Θήρας",
+    "name": "Thiras",
+    "officialName": "TAX OFFICE Thiras",
     "relations": {
       "regionId": 12,
       "regionIso": "GR-L",
@@ -531,8 +531,8 @@
   },
   {
     "id": 42,
-    "name": "Αμαλιάδας",
-    "officialName": "ΔΟΥ Αμαλιάδας",
+    "name": "Amaliadas",
+    "officialName": "TAX OFFICE Amaliadas",
     "relations": {
       "regionId": 7,
       "regionIso": "GR-G",
@@ -543,8 +543,8 @@
   },
   {
     "id": 43,
-    "name": "Πύργου",
-    "officialName": "ΔΟΥ Πύργου",
+    "name": "Pyrgos",
+    "officialName": "TAX OFFICE Pyrgos",
     "relations": {
       "regionId": 7,
       "regionIso": "GR-G",
@@ -555,8 +555,8 @@
   },
   {
     "id": 44,
-    "name": "Παλλήνης (Α1)",
-    "officialName": "ΔΟΥ Παλλήνης (Α1)",
+    "name": "Pallini (A1)",
+    "officialName": "TAX OFFICE Pallini (A1)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -567,8 +567,8 @@
   },
   {
     "id": 45,
-    "name": "Πάρου",
-    "officialName": "ΔΟΥ Πάρου",
+    "name": "Paros",
+    "officialName": "TAX OFFICE Paros",
     "relations": {
       "regionId": 12,
       "regionIso": "GR-L",
@@ -579,8 +579,8 @@
   },
   {
     "id": 46,
-    "name": "Χανίων",
-    "officialName": "ΔΟΥ Χανίων",
+    "name": "Chania",
+    "officialName": "TAX OFFICE Chania",
     "relations": {
       "regionId": 13,
       "regionIso": "GR-M",
@@ -594,8 +594,8 @@
   },
   {
     "id": 47,
-    "name": "Καρδίτσας",
-    "officialName": "ΔΟΥ Καρδίτσας",
+    "name": "Karditsas",
+    "officialName": "TAX OFFICE Karditsa",
     "relations": {
       "regionId": 5,
       "regionIso": "GR-E",
@@ -606,8 +606,8 @@
   },
   {
     "id": 48,
-    "name": "Αργοστολίου",
-    "officialName": "ΔΟΥ Αργοστολίου",
+    "name": "Argostoli",
+    "officialName": "TAX OFFICE Argostoli",
     "relations": {
       "regionId": 6,
       "regionIso": "GR-F",
@@ -618,8 +618,8 @@
   },
   {
     "id": 49,
-    "name": "Άργους",
-    "officialName": "ΔΟΥ Άργους",
+    "name": "Argos",
+    "officialName": "TAX OFFICE Argos",
     "relations": {
       "regionId": 10,
       "regionIso": "GR-J",
@@ -630,8 +630,8 @@
   },
   {
     "id": 50,
-    "name": "Κομοτηνής",
-    "officialName": "ΔΟΥ Κομοτηνής",
+    "name": "Komotini",
+    "officialName": "TAX OFFICE Komotini",
     "relations": {
       "regionId": 1,
       "regionIso": "GR-A",
@@ -642,8 +642,8 @@
   },
   {
     "id": 51,
-    "name": "Άρτας",
-    "officialName": "ΔΟΥ Άρτας",
+    "name": "Artas",
+    "officialName": "TAX OFFICE Arta",
     "relations": {
       "regionId": 4,
       "regionIso": "GR-D",
@@ -654,8 +654,8 @@
   },
   {
     "id": 52,
-    "name": "Ηρακλείου",
-    "officialName": "ΔΟΥ Ηρακλείου",
+    "name": "Heraklion",
+    "officialName": "TAX OFFICE Heraklion",
     "relations": {
       "regionId": 13,
       "regionIso": "GR-M",
@@ -669,8 +669,8 @@
   },
   {
     "id": 53,
-    "name": "Ελευσίνας (Α1)",
-    "officialName": "ΔΟΥ Ελευσίνας (Α1)",
+    "name": "Elefsina (A1)",
+    "officialName": "TAX OFFICE Elefsina (A1)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -681,8 +681,8 @@
   },
   {
     "id": 54,
-    "name": "Κοζάνης",
-    "officialName": "ΔΟΥ Κοζάνης",
+    "name": "Kozani",
+    "officialName": "TAX OFFICE Kozani",
     "relations": {
       "regionId": 3,
       "regionIso": "GR-C",
@@ -693,8 +693,8 @@
   },
   {
     "id": 55,
-    "name": "Κορίνθου",
-    "officialName": "ΔΟΥ Κορίνθου",
+    "name": "Corinth",
+    "officialName": "TAX OFFICE Corinth",
     "relations": {
       "regionId": 10,
       "regionIso": "GR-J",
@@ -705,8 +705,8 @@
   },
   {
     "id": 56,
-    "name": "Λαγκαδά",
-    "officialName": "ΔΟΥ Λαγκαδά",
+    "name": "Lagada",
+    "officialName": "TAX OFFICE Lagada",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -717,8 +717,8 @@
   },
   {
     "id": 57,
-    "name": "Κέρκυρας",
-    "officialName": "ΔΟΥ Κέρκυρας",
+    "name": "Corfu",
+    "officialName": "TAX OFFICE Corfu",
     "relations": {
       "regionId": 6,
       "regionIso": "GR-F",
@@ -729,8 +729,8 @@
   },
   {
     "id": 58,
-    "name": "Τρίπολης",
-    "officialName": "ΔΟΥ Τρίπολης",
+    "name": "Tripoli",
+    "officialName": "TAX OFFICE Tripoli",
     "relations": {
       "regionId": 10,
       "regionIso": "GR-J",
@@ -744,8 +744,8 @@
   },
   {
     "id": 59,
-    "name": "Ιωαννίνων",
-    "officialName": "ΔΟΥ Ιωαννίνων",
+    "name": "Ioannina",
+    "officialName": "TAX OFFICE Ioannina",
     "relations": {
       "regionId": 4,
       "regionIso": "GR-D",
@@ -759,8 +759,8 @@
   },
   {
     "id": 60,
-    "name": "Γρεβενών",
-    "officialName": "ΔΟΥ Γρεβενών",
+    "name": "Grevena",
+    "officialName": "TAX OFFICE Grevena",
     "relations": {
       "regionId": 3,
       "regionIso": "GR-C",
@@ -771,8 +771,8 @@
   },
   {
     "id": 61,
-    "name": "Ιωνίας Θεσσαλονίκης",
-    "officialName": "ΔΟΥ Ιωνίας Θεσσαλονίκης",
+    "name": "Ionias Thessaloniki",
+    "officialName": "TAX OFFICE Ionias Thessaloniki",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -783,8 +783,8 @@
   },
   {
     "id": 62,
-    "name": "Άμφισσας (Α-Β)",
-    "officialName": "ΔΟΥ Άμφισσας (Α-Β)",
+    "name": "Amfissa (A-B)",
+    "officialName": "TAX OFFICE Amfissa (A-B)",
     "relations": {
       "regionId": 8,
       "regionIso": "GR-H",
@@ -795,8 +795,8 @@
   },
   {
     "id": 63,
-    "name": "Ορεστιάδας",
-    "officialName": "ΔΟΥ Ορεστιάδας",
+    "name": "Orestiada",
+    "officialName": "TAX OFFICE Orestiada",
     "relations": {
       "regionId": 1,
       "regionIso": "GR-A",
@@ -807,8 +807,8 @@
   },
   {
     "id": 64,
-    "name": "Κηφισίας (Α1)",
-    "officialName": "ΔΟΥ Κηφισίας (Α1)",
+    "name": "Kifisia (A1)",
+    "officialName": "TAX OFFICE Kifisia (A1)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -821,8 +821,8 @@
   },
   {
     "id": 65,
-    "name": "Κατερίνης",
-    "officialName": "ΔΟΥ Κατερίνης",
+    "name": "Katerini",
+    "officialName": "TAX OFFICE Katerini",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -833,8 +833,8 @@
   },
   {
     "id": 66,
-    "name": "Χαλκίδας (Α)",
-    "officialName": "ΔΟΥ Χαλκίδας (Α)",
+    "name": "Chalkida (A)",
+    "officialName": "TAX OFFICE Chalkida (A)",
     "relations": {
       "regionId": 8,
       "regionIso": "GR-H",
@@ -847,8 +847,8 @@
   },
   {
     "id": 67,
-    "name": "Δράμας",
-    "officialName": "ΔΟΥ Δράμας",
+    "name": "Drama",
+    "officialName": "TAX OFFICE Drama",
     "relations": {
       "regionId": 1,
       "regionIso": "GR-A",
@@ -859,8 +859,8 @@
   },
   {
     "id": 68,
-    "name": "ΠΑΤΡΩΝ",
-    "officialName": "ΔΟΥ ΠΑΤΡΩΝ",
+    "name": "Patra",
+    "officialName": "TAX OFFICE Patra",
     "relations": {
       "regionId": 7,
       "regionIso": "GR-G",
@@ -874,8 +874,8 @@
   },
   {
     "id": 69,
-    "name": "Πτολεμαΐδας",
-    "officialName": "ΔΟΥ Πτολεμαΐδας",
+    "name": "Ptolemaida",
+    "officialName": "TAX OFFICE Ptolemaida",
     "relations": {
       "regionId": 3,
       "regionIso": "GR-C",
@@ -886,8 +886,8 @@
   },
   {
     "id": 70,
-    "name": "Ναυπλίου",
-    "officialName": "ΔΟΥ Ναυπλίου",
+    "name": "Nafplio",
+    "officialName": "TAX OFFICE Nafplio",
     "relations": {
       "regionId": 10,
       "regionIso": "GR-J",
@@ -898,8 +898,8 @@
   },
   {
     "id": 71,
-    "name": "Ζακύνθου",
-    "officialName": "ΔΟΥ Ζακύνθου",
+    "name": "Zakynthos",
+    "officialName": "TAX OFFICE Zakynthos",
     "relations": {
       "regionId": 6,
       "regionIso": "GR-F",
@@ -910,8 +910,8 @@
   },
   {
     "id": 72,
-    "name": "Πρέβεζας",
-    "officialName": "ΔΟΥ Πρέβεζας",
+    "name": "Preveza",
+    "officialName": "TAX OFFICE Preveza",
     "relations": {
       "regionId": 4,
       "regionIso": "GR-D",
@@ -922,8 +922,8 @@
   },
   {
     "id": 73,
-    "name": "Ηγουμενίτσας",
-    "officialName": "ΔΟΥ Ηγουμενίτσας",
+    "name": "Igoumenitsa",
+    "officialName": "TAX OFFICE Igoumenitsa",
     "relations": {
       "regionId": 4,
       "regionIso": "GR-D",
@@ -934,8 +934,8 @@
   },
   {
     "id": 74,
-    "name": "Νέας Ιωνίας (Α1)",
-    "officialName": "ΔΟΥ Νέας Ιωνίας (Α1)",
+    "name": "Nea Ionia (A1)",
+    "officialName": "TAX OFFICE Nea Ionia (A1)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -946,8 +946,8 @@
   },
   {
     "id": 75,
-    "name": "Καβάλας",
-    "officialName": "ΔΟΥ Καβάλας",
+    "name": "Kavala",
+    "officialName": "TAX OFFICE Kavala",
     "relations": {
       "regionId": 1,
       "regionIso": "GR-A",
@@ -960,8 +960,8 @@
   },
   {
     "id": 76,
-    "name": "Καλαμαριάς",
-    "officialName": "ΔΟΥ Καλαμαριάς",
+    "name": "Kalamaria",
+    "officialName": "TAX OFFICE Kalamaria",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -972,8 +972,8 @@
   },
   {
     "id": 77,
-    "name": "Ζ' Θεσσαλονίκης",
-    "officialName": "ΔΟΥ Ζ' Θεσσαλονίκης",
+    "name": "Z' Thessaloniki",
+    "officialName": "TAX OFFICE Z' Thessaloniki",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -984,8 +984,8 @@
   },
   {
     "id": 78,
-    "name": "Δ' Θεσσαλονίκης",
-    "officialName": "ΔΟΥ Δ' Θεσσαλονίκης",
+    "name": "D' Thessaloniki",
+    "officialName": "TAX OFFICE D' Thessaloniki",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -999,8 +999,8 @@
   },
   {
     "id": 79,
-    "name": "Ε' Θεσσαλονίκης",
-    "officialName": "ΔΟΥ Ε' Θεσσαλονίκης",
+    "name": "E' Thessaloniki",
+    "officialName": "TAX OFFICE E' Thessaloniki",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -1014,8 +1014,8 @@
   },
   {
     "id": 80,
-    "name": "Τρικάλων",
-    "officialName": "ΔΟΥ Τρικάλων",
+    "name": "Trikala",
+    "officialName": "TAX OFFICE Trikala",
     "relations": {
       "regionId": 5,
       "regionIso": "GR-E",
@@ -1026,8 +1026,8 @@
   },
   {
     "id": 81,
-    "name": "Καλλιθέας (Α1)",
-    "officialName": "ΔΟΥ Καλλιθέας (Α1)",
+    "name": "Kallithea (A1)",
+    "officialName": "TAX OFFICE Kallithea (A1)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -1038,8 +1038,8 @@
   },
   {
     "id": 82,
-    "name": "Ρόδου",
-    "officialName": "ΔΟΥ Ρόδου",
+    "name": "Rhodes",
+    "officialName": "TAX OFFICE Rhodes",
     "relations": {
       "regionId": 12,
       "regionIso": "GR-L",
@@ -1053,8 +1053,8 @@
   },
   {
     "id": 83,
-    "name": "Κύμης (Β)",
-    "officialName": "ΔΟΥ Κύμης (Β)",
+    "name": "Kimi (B)",
+    "officialName": "TAX OFFICE Kymi (B)",
     "relations": {
       "regionId": 8,
       "regionIso": "GR-H",
@@ -1065,8 +1065,8 @@
   },
   {
     "id": 84,
-    "name": "Νέων Μουδανιών",
-    "officialName": "ΔΟΥ Νέων Μουδανιών",
+    "name": "Nea Moudania",
+    "officialName": "TAX OFFICE Nea Moudania",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -1077,8 +1077,8 @@
   },
   {
     "id": 85,
-    "name": "Καστοριάς",
-    "officialName": "ΔΟΥ Καστοριάς",
+    "name": "Kastoria",
+    "officialName": "TAX OFFICE Kastoria",
     "relations": {
       "regionId": 3,
       "regionIso": "GR-C",
@@ -1089,8 +1089,8 @@
   },
   {
     "id": 86,
-    "name": "Κορωπίου (Α-Β)",
-    "officialName": "ΔΟΥ Κορωπίου (Α-Β)",
+    "name": "Koropi (A-B)",
+    "officialName": "TAX OFFICE Koropi (A-B)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -1101,8 +1101,8 @@
   },
   {
     "id": 87,
-    "name": "Ε' Πειραιά (Α1)",
-    "officialName": "ΔΟΥ Ε' Πειραιά (Α1)",
+    "name": "E' Piraeus (A1)",
+    "officialName": "TAX OFFICE E' Piraeus (A1)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -1115,8 +1115,8 @@
   },
   {
     "id": 88,
-    "name": "Κιλκίς",
-    "officialName": "ΔΟΥ Κιλκίς",
+    "name": "Kilkis",
+    "officialName": "TAX OFFICE Kilkis",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -1127,8 +1127,8 @@
   },
   {
     "id": 89,
-    "name": "Μυκόνου",
-    "officialName": "ΔΟΥ Μυκόνου",
+    "name": "Mykonos",
+    "officialName": "TAX OFFICE Mykonos",
     "relations": {
       "regionId": 12,
       "regionIso": "GR-L",
@@ -1139,8 +1139,8 @@
   },
   {
     "id": 90,
-    "name": "Χίου",
-    "officialName": "ΔΟΥ Χίου",
+    "name": "Chios",
+    "officialName": "TAX OFFICE Chios",
     "relations": {
       "regionId": 11,
       "regionIso": "GR-K",
@@ -1151,8 +1151,8 @@
   },
   {
     "id": 91,
-    "name": "Γιαννιτσών",
-    "officialName": "ΔΟΥ Γιαννιτσών",
+    "name": "Giannitssa",
+    "officialName": "TAX OFFICE Giannitssa",
     "relations": {
       "regionId": 2,
       "regionIso": "GR-B",
@@ -1163,8 +1163,8 @@
   },
   {
     "id": 92,
-    "name": "Περιστερίου (Α1)",
-    "officialName": "ΔΟΥ Περιστερίου (Α1)",
+    "name": "Peristeri (A1)",
+    "officialName": "TAX OFFICE Peristeri (A1)",
     "relations": {
       "regionId": 9,
       "regionIso": "GR-I",
@@ -1175,8 +1175,8 @@
   },
   {
     "id": 93,
-    "name": "Σύρου",
-    "officialName": "ΔΟΥ Σύρου",
+    "name": "Syros",
+    "officialName": "TAX OFFICE Syros",
     "relations": {
       "regionId": 12,
       "regionIso": "GR-L",
@@ -1187,44 +1187,44 @@
   },
   {
     "id": 94,
-    "name": "Kατοίκων Εξωτερικού & Εναλλακτικής Φορολόγησης Φορολογικών Κατοίκων Ημεδαπής",
-    "officialName": "ΔOY Kατοίκων Εξωτερικού & Εναλλακτικής Φορολόγησης Φορολογικών Κατοίκων Ημεδαπής",
+    "name": "Foreign Residents & Alternative Taxation of Tax Residents",
+    "officialName": "TAX OFFICE of Foreign Residents & Alternative Taxation of Tax Residents",
     "relations": {}
   },
   {
     "id": 95,
-    "name": "ΦAE Αθηνών (Α1)",
-    "officialName": "ΔΟΥ ΦAE Αθηνών (Α1)",
+    "name": "FAE Athens (A1)",
+    "officialName": "TAX OFFICE FAE Athens (A1)",
     "relations": {}
   },
   {
     "id": 96,
-    "name": "Πλοίων Πειραιά (Α1)",
-    "officialName": "ΔΟΥ Πλοίων Πειραιά (Α1)",
+    "name": "Ships Piraeus (A1)",
+    "officialName": "TAX OFFICE Ships Piraeus (A1)",
     "relations": {}
   },
   {
     "id": 97,
-    "name": "ΦΑΕ Πειραιά (Α1)",
-    "officialName": "ΔΟΥ ΦΑΕ Πειραιά (Α1)",
+    "name": "FAE Piraeus (A1)",
+    "officialName": "TAX OFFICE FAE Piraeus (A1)",
     "relations": {}
   },
   {
     "id": 98,
-    "name": "ΦΑΕ Θεσσαλονίκης",
-    "officialName": "ΦΑΕ Θεσσαλονίκης",
+    "name": "FAE Thessaloniki",
+    "officialName": "TAX OFFICE FAE Thessaloniki",
     "relations": {}
   },
   {
     "id": 99,
-    "name": "Α' Πατρών",
-    "officialName": "ΔΟΥ Α Πατρών",
+    "name": "A' Patra",
+    "officialName": "TAX OFFICE A Patron",
     "relations": {}
   },
   {
     "id": 100,
-    "name": "Γ' Πατρών",
-    "officialName": "ΔΟΥ Γ Πατρών",
+    "name": "C' Patra",
+    "officialName": "TAX OFFICE C Patra",
     "relations": {}
   }
 ]

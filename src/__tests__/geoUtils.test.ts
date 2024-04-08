@@ -5,6 +5,8 @@ import geographicRegionsEn from "../../data/geographic-regions-en.json";
 import prefecturesEl from "../../data/prefectures-el.json";
 import prefecturesEn from "../../data/prefectures-en.json";
 import postalCodes from "../../data/postal-codes.json";
+import taxOfficesEl from "../../data/taxOffices-el.json";
+import taxOfficesEn from "../../data/taxOffices-en.json";
 import {
   MOUNT_ATHOS_REGION_ID,
   MOUNT_ATHOS_PREFECTURE_ID,
@@ -20,6 +22,10 @@ import {
   getPrefectureById,
   getAllPostalCodes,
   findByPostalCode,
+  getAllTaxOffices,
+  getTaxOfficeBy,
+  compareGreekStrings,
+  searchTaxOffice,
 } from "../geoUtils";
 
 const administrativeRegions = { el: administrativeRegionsEl, en: administrativeRegionsEn };
@@ -766,5 +772,178 @@ describe("findByPostalCode", () => {
       },
       carPlatesPattern: ["N*"],
     });
+  });
+});
+
+describe("getAllTaxOffices", () => {
+  it("return all tax offices data", () => {
+    expect(getAllTaxOffices()).toEqual(taxOfficesEl);
+    expect(getAllTaxOffices({ locale: "en", type: "all" })).toEqual(taxOfficesEn);
+  });
+});
+
+describe("Get tax office by id", () => {
+  it("return tax office by tax office ID ", () => {
+    expect(getTaxOfficeBy({ id: 1 })).toEqual({
+      id: 1,
+      name: "Ξάνθης",
+      officialName: "ΔΟΥ Ξάνθης",
+      relations: {
+        regionId: 1,
+        regionIso: "GR-A",
+        unitIds: [5],
+        municipalityIds: [15, 16, 17, 18],
+      },
+      postalCodes: [67064, 67150, 67300, 67131, 67133, 67132, 67062, 66035, 66150, 69200, 67200],
+    });
+  });
+});
+describe("Search tax office  ", () => {
+  it("return all tax offices in greek if no params are provided", () => {
+    expect(searchTaxOffice()).toEqual(taxOfficesEl);
+  });
+  it("return all tax offices in english if no params are provided", () => {
+    expect(searchTaxOffice({ locale: "en" })).toEqual(taxOfficesEn);
+  });
+
+  // it("throw error if there is a missmatch in searchterm and localization", () => { expect(searchTaxOffice({ searchTerm: "Σ", locale: "en" })).toThrow(); });
+
+  it("return tax office that has ΑΘ in their names", () => {
+    expect(searchTaxOffice({ searchTerm: "ΑΘ" })).toEqual([
+      {
+        id: 16,
+        name: "Α' Αθηνών",
+        officialName: "ΔΟΥ Α' Αθηνών",
+        postalCodes: [
+          10431, 10432, 10677, 11851, 10443, 10551, 10554, 11854, 11853, 11852, 11742, 10442, 11855, 10435, 10436,
+          10437, 10444, 10556, 10560, 11741, 10447, 10438, 10555, 10553, 10440, 10558, 10552, 10441, 10559, 10564,
+          10678, 10679, 10439, 17778,
+        ],
+        relations: { municipalityIds: [193, 199, 187], regionId: 9, regionIso: "GR-I", unitIds: [42, 43, 41] },
+      },
+      {
+        id: 17,
+        name: "Δ' Αθηνών",
+        officialName: "ΔΟΥ Δ' Αθηνών",
+        postalCodes: [
+          10433, 10434, 10682, 11472, 11473, 11471, 10563, 10671, 10672, 10683, 10675, 10676, 10557, 10673, 10674,
+          10680, 10681, 10562, 10561,
+        ],
+        relations: { municipalityIds: [193], regionId: 9, regionIso: "GR-I", unitIds: [42] },
+      },
+      {
+        id: 18,
+        name: "ΙΓ' Αθηνών",
+        officialName: "ΔΟΥ ΙΓ' Αθηνών",
+        postalCodes: [
+          11251, 11257, 11476, 11142, 10446, 11252, 11474, 10445, 11255, 11256, 11361, 11364, 11141, 11144, 11253,
+          11254, 11363, 11145, 11362, 11475, 11143, 11146, 11147,
+        ],
+        relations: { municipalityIds: [193, 192], regionId: 9, regionIso: "GR-I", unitIds: [42] },
+      },
+      {
+        id: 19,
+        name: "ΙΖ' Αθηνών",
+        officialName: "ΔΟΥ ΙΖ' Αθηνών",
+        postalCodes: [11631, 11632, 11744, 11635, 11633, 11636, 11743, 11634, 11745, 16121, 16233, 16231, 16232, 16122],
+        relations: { municipalityIds: [193, 196, 197], regionId: 9, regionIso: "GR-I", unitIds: [42] },
+      },
+      {
+        id: 21,
+        name: "ΙΒ' Αθηνών",
+        officialName: "ΔΟΥ ΙΒ' Αθηνών",
+        postalCodes: [11527, 11526, 11528, 15772, 15773, 15771],
+        relations: { municipalityIds: [193, 198], regionId: 9, regionIso: "GR-I", unitIds: [42] },
+      },
+      { id: 95, name: "ΦAE Αθηνών (Α1)", officialName: "ΔΟΥ ΦAE Αθηνών (Α1)", relations: {} },
+    ]);
+  });
+  it("return tax office that has ATH in their names", () => {
+    expect(searchTaxOffice({ searchTerm: "ATH", locale: "en" })).toEqual([
+      {
+        id: 16,
+        name: "A' Athens",
+        officialName: "TAX OFFICE A' Athens",
+        postalCodes: [
+          10431, 10432, 10677, 11851, 10443, 10551, 10554, 11854, 11853, 11852, 11742, 10442, 11855, 10435, 10436,
+          10437, 10444, 10556, 10560, 11741, 10447, 10438, 10555, 10553, 10440, 10558, 10552, 10441, 10559, 10564,
+          10678, 10679, 10439, 17778,
+        ],
+        relations: { municipalityIds: [193, 199, 187], regionId: 9, regionIso: "GR-I", unitIds: [42, 43, 41] },
+      },
+      {
+        id: 17,
+        name: "D' Athens",
+        officialName: "TAX OFFICE D' Athens",
+        postalCodes: [
+          10433, 10434, 10682, 11472, 11473, 11471, 10563, 10671, 10672, 10683, 10675, 10676, 10557, 10673, 10674,
+          10680, 10681, 10562, 10561,
+        ],
+        relations: { municipalityIds: [193], regionId: 9, regionIso: "GR-I", unitIds: [42] },
+      },
+      {
+        id: 18,
+        name: "ΙC' Athens",
+        officialName: "TAX OFFICE IC' Athens",
+        postalCodes: [
+          11251, 11257, 11476, 11142, 10446, 11252, 11474, 10445, 11255, 11256, 11361, 11364, 11141, 11144, 11253,
+          11254, 11363, 11145, 11362, 11475, 11143, 11146, 11147,
+        ],
+        relations: { municipalityIds: [193, 192], regionId: 9, regionIso: "GR-I", unitIds: [42] },
+      },
+      {
+        id: 19,
+        name: "IZ' Athens",
+        officialName: "TAX OFFICE IZ' Athens",
+        postalCodes: [11631, 11632, 11744, 11635, 11633, 11636, 11743, 11634, 11745, 16121, 16233, 16231, 16232, 16122],
+        relations: { municipalityIds: [193, 196, 197], regionId: 9, regionIso: "GR-I", unitIds: [42] },
+      },
+      {
+        id: 21,
+        name: "IB' Athens",
+        officialName: "TAX OFFICE IB' Athens",
+        postalCodes: [11527, 11526, 11528, 15772, 15773, 15771],
+        relations: { municipalityIds: [193, 198], regionId: 9, regionIso: "GR-I", unitIds: [42] },
+      },
+      { id: 95, name: "FAE Athens (A1)", officialName: "TAX OFFICE FAE Athens (A1)", relations: {} },
+    ]);
+  });
+});
+
+describe("Compare Greek works", () => {
+  test("Sanity equality", () => {
+    expect(compareGreekStrings("Α", "Α")).toBe(true);
+  });
+
+  test("Caps equality", () => {
+    expect(compareGreekStrings("α", "Α")).toBe(true);
+  });
+
+  test("Hyphen equility", () => {
+    expect(compareGreekStrings("Ά", "Α")).toBe(true);
+  });
+
+  test("Caps and Hyphen", () => {
+    expect(compareGreekStrings("ά", "Α")).toBe(true);
+  });
+
+  test("A,B sanity", () => {
+    expect(compareGreekStrings("Α", "B")).toBe(false);
+  });
+
+  test("Latin Greek sanity", () => {
+    expect(compareGreekStrings("Α", "A")).toBe(false); //eng and greek
+  });
+
+  test("With spaces", () => {
+    expect(compareGreekStrings(" Η πρόταση αυτή είναι ίδια ", "Ηπρότασηαυτήείναιίδια")).toBe(true);
+  });
+
+  test("With Multiple hyphens", () => {
+    expect(compareGreekStrings("Η πρόταση αυτή είναι ίδια", "Η ΠΡΟΤΑΣΗ ΑΥΤΗ ΕΙΝΑΙ ΙΔΙΑ")).toBe(true);
+  });
+
+  test("With Special character", () => {
+    expect(compareGreekStrings("Η-πρόταση_αυτή-είναι-ίδια", "Η ΠΡΟΤΑΣΗ ΑΥΤΗ ΕΙΝΑΙ ΙΔΙΑ")).toBe(true);
   });
 });
