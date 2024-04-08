@@ -59,10 +59,11 @@ export type TaxOffice = {
   id: number;
   name: string;
   officialName: string;
-  relations: {
-    regionId: number;
-    regionIso: string;
-    unitIds: number[];
-    municipalityIds: number[];
+  relations?: {
+    regionId?: number;
+    regionIso?: string;
+    unitIds?: number[];
+    municipalityIds?: number[];
   };
+  postalCodes?: number[];
 };
