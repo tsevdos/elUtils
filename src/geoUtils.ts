@@ -54,6 +54,11 @@ type AdministrativeRegionsOptions = {
   level?: "region" | "unit" | "municipality";
 };
 
+/**
+ * Returns the administrative regions based on the provided options.
+ * @param {AdministrativeRegionsOptions} options - The options for locale, whether to include Mount Athos and the level area ("region" | "unit" | "municipality") to retrieve
+ * @returns {Region[] | RegionWithoutUnits[]} The administrative regions in the specified locale and the level area to retrieve.
+ */
 export function getAdministrativeRegions({
   locale = "el",
   includeMountAthos = false,
@@ -79,6 +84,11 @@ export function getAdministrativeRegions({
 
 type AdministrativeRegionByIdOptions = { id: number } & AdministrativeRegionsOptions;
 
+/**
+ * Returns the administrative region with the provided ID.
+ * @param {AdministrativeRegionByIdOptions} options - The options for ID, locale, whether to include Mount Athos and the level area ("region" | "unit" | "municipality") to retrieve
+ * @returns {Region | RegionWithoutUnits | undefined} The administrative region with the specified ID, or `undefined` if no such region exists.
+ */
 export function getAdministrativeRegionById(
   options: AdministrativeRegionByIdOptions,
 ): Region | RegionWithoutUnits | undefined {
@@ -90,6 +100,11 @@ export function getAdministrativeRegionById(
 
 type AdministrativeRegionByIsoCodeOptions = { isocode: string } & AdministrativeRegionsOptions;
 
+/**
+ * Returns the administrative region with the provided ISO code.
+ * @param {AdministrativeRegionByIsoCodeOptions} options - The options for ISO code, locale, whether to include Mount Athos and the level area ("region" | "unit" | "municipality") to retrieve
+ * @returns {Region | RegionWithoutUnits | undefined} The administrative region with the specified ISO code, or `undefined` if no such region exists.
+ */
 export function getAdministrativeRegionByIsoCode(
   options: AdministrativeRegionByIsoCodeOptions,
 ): Region | RegionWithoutUnits | undefined {
@@ -105,6 +120,11 @@ type AdministrativeUnitsOptions = {
   level?: "unit" | "municipality";
 };
 
+/**
+ * Returns the administrative units based on the provided options.
+ * @param {AdministrativeUnitsOptions} options - The options for locale, whether to include Mount Athos, and the level area ("unit" | "municipality") to retrieve
+ * @returns {Unit[] | UnitWithoutMunicipalities[]} The administrative units in the specified locale and level.
+ */
 export function getAdministrativeUnits({
   locale = "el",
   includeMountAthos = false,
@@ -123,6 +143,11 @@ export function getAdministrativeUnits({
 
 type AdministrativeUnitByIdOptions = { id: number } & AdministrativeUnitsOptions;
 
+/**
+ * Returns the administrative unit with the provided ID.
+ * @param {AdministrativeUnitByIdOptions} options - The options for ID, locale, whether to include Mount Athos, and the level area ("unit" | "municipality") to retrieve
+ * @returns {Unit | UnitWithoutMunicipalities | undefined} The administrative unit with the specified ID, or `undefined` if no such unit exists.
+ */
 export function getAdministrativeUnitById(
   options: AdministrativeUnitByIdOptions,
 ): Unit | UnitWithoutMunicipalities | undefined {
@@ -134,6 +159,11 @@ export function getAdministrativeUnitById(
 
 type MunicipalitiesOptions = { locale?: Locale };
 
+/**
+ * Returns the municipalities in the provided locale.
+ * @param {MunicipalitiesOptions} options - The options for locale.
+ * @returns {Municipality[]} The municipalities in the specified locale.
+ */
 export function getMunicipalities({ locale = "el" }: MunicipalitiesOptions = {}): Municipality[] {
   const municipalities = (getAdministrativeUnits({ locale }) as Unit[]).flatMap(({ municipalities }) => [
     ...municipalities,
@@ -144,12 +174,22 @@ export function getMunicipalities({ locale = "el" }: MunicipalitiesOptions = {})
 
 type GeographicRegionOptions = { locale?: Locale };
 
+/**
+ * Returns the geographic regions in the provided locale.
+ * @param {GeographicRegionOptions} options - The options for locale.
+ * @returns {GeographicRegion[]} The geographic regions in the specified locale.
+ */
 export function getGeographicRegions({ locale = "el" }: GeographicRegionOptions = {}): GeographicRegion[] {
   return geographicRegions[locale];
 }
 
 type GeographicRegionByIdOptions = { id: number } & GeographicRegionOptions;
 
+/**
+ * Returns the geographic region with the specific ID.
+ * @param {GeographicRegionByIdOptions} options - The options for ID and locale.
+ * @returns {GeographicRegion | undefined} The geographic region with the specified ID, or `undefined` if no such region exists.
+ */
 export function getGeographicRegionById(options: GeographicRegionByIdOptions): GeographicRegion | undefined {
   const { id, locale = "el" } = options;
 
@@ -158,6 +198,11 @@ export function getGeographicRegionById(options: GeographicRegionByIdOptions): G
 
 type PrefecturesOptions = { locale?: Locale; includeMountAthos?: boolean };
 
+/**
+ * Returns the prefectures based on the provided options.
+ * @param {PrefecturesOptions} options - The options for locale and whether to include Mount Athos.
+ * @returns {Prefecture[]} The prefectures in the specified locale.
+ */
 export function getPrefectures({ locale = "el", includeMountAthos = false }: PrefecturesOptions = {}): Prefecture[] {
   const prefectures = includeMountAthos ? allPrefectures[locale] : prefecturesWithoutMountAthos[locale];
 
@@ -166,6 +211,11 @@ export function getPrefectures({ locale = "el", includeMountAthos = false }: Pre
 
 type PrefectureByIdOptions = { id: number } & PrefecturesOptions;
 
+/**
+ * Returns the prefecture with the provided ID.
+ * @param {PrefectureByIdOptions} options - The options for ID, locale, and whether to include Mount Athos.
+ * @returns {Prefecture | undefined} The prefecture with the specified ID, or `undefined` if no such prefecture exists.
+ */
 export function getPrefectureById(options: PrefectureByIdOptions): Prefecture | undefined {
   const { id, locale = "el", includeMountAthos = false } = options;
   const prefecturesData = getPrefectures({ locale, includeMountAthos });
@@ -173,6 +223,10 @@ export function getPrefectureById(options: PrefectureByIdOptions): Prefecture | 
   return prefecturesData.find((region) => region.id === id);
 }
 
+/**
+ * Returns all postal codes.
+ * @returns {string[]} An array of all postal codes.
+ */
 export function getAllPostalCodes(): string[] {
   return postalCodes.flatMap(({ postalCodes }) => postalCodes);
 }
@@ -182,6 +236,12 @@ type FindByPostalCodeOptions = {
   entity: "prefecture" | "region" | "unit";
 };
 
+/**
+ * Returns the prefecture, region, or unit associated with the provided postal code.
+ * @param {string} postalCode - The postal code to search for.
+ * @param {FindByPostalCodeOptions} options - The options for locale and entity type.
+ * @returns {Prefecture | Region | Unit | undefined} The prefecture, region, or unit associated with the postal code, or `undefined` if no such entity exists.
+ */
 export function findByPostalCode(
   postalCode: string,
   options?: Partial<FindByPostalCodeOptions>,

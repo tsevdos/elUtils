@@ -2,20 +2,23 @@ name: CI
 on:
   push:
     branches:
-      - "**"
+      - "main"
+  pull_request:
+    branches:
+      - "main"
 
 jobs:
-  build:
+  node-test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [18, 20]
-    name: Checking PR in node version ➡️ ${{ matrix.node }} 💯
+        node: [16, 18, 20, "latest"]
+    name: Checking code changes in node version ➡️ ${{ matrix.node }} 💻
     steps:
       - name: Checkout code 📥
         uses: actions/checkout@v3
 
-      - name: Set up node 💻
+      - name: Install node 💻
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
@@ -37,3 +40,36 @@ jobs:
 
       - name: Build app 👷
         run: npm run build
+
+  bun-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        bun: [1, "latest"]
+    name: Checking code changes in bun version ➡️ ${{ matrix.bun }} 🍙
+    steps:
+      - name: Checkout code 📥
+        uses: actions/checkout@v3
+
+      - name: Install bun 🍙
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: ${{ matrix.bun }}
+
+      - name: Install dependencies 🔥
+        run: bun install
+
+      - name: Check app types ⚠️
+        run: bun run tsc
+
+      - name: Lint app 👌
+        run: bun run lint
+
+      - name: Format app ☑️
+        run: bun run prettier
+
+      - name: Test app 🙏
+        run: bun run test
+
+      - name: Build app 👷
+        run: bun run build

@@ -4,11 +4,14 @@
 
 ## Description
 
-elUtils is a **zero-dependency** modern package, written in TypeScript, fully typed, that solves various geolocation, validation, and date-related issues by providing a broad collection of easy to use functions.
+elUtils is a **zero-dependency** modern package, written in TypeScript, strongly-typed, that solves various geolocation, validation, and date-related issues by providing a broad collection of easy to use functions.
 
 Check all the [available functions here](#api) (by module category).
 
-<!-- todo: runs on many JavaScript runtimes (such as node, deno and bun) -->
+<!--
+todo: runs on many JavaScript runtimes (such as node, deno and bun)
+https://paka.dev/npm/@tsevdos/el-utils@0.2.0/api
+-->
 
 ## Installation
 
@@ -36,7 +39,7 @@ console.log(getAdministrativeRegions());
 
 ## API<a id='api'></a>
 
-todo: The library is currently split into specific modules
+The library is currently split into the following modules:
 
 - [**`geoUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md)
 
@@ -64,6 +67,10 @@ todo: The library is currently split into specific modules
   - [getMonths()](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md#getMonths)
   - [getQuarters()](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md#getQuarters)
   - [getEras()](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md#getEras)
+
+- [**`formatUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/formatUtils.md)
+
+  - [formatWeight()](https://github.com/tsevdos/elUtils/blob/main/docs/formatUtils.md#formatWeight)
 
 ## Contribute
 
