@@ -23,8 +23,7 @@ import {
   getAllPostalCodes,
   findByPostalCode,
   getAllTaxOffices,
-  getTaxOfficeBy,
-  compareGreekStrings,
+  getTaxOfficeById,
   searchTaxOffice,
 } from "../geoUtils";
 
@@ -778,13 +777,13 @@ describe("findByPostalCode", () => {
 describe("getAllTaxOffices", () => {
   it("return all tax offices data", () => {
     expect(getAllTaxOffices()).toEqual(taxOfficesEl);
-    expect(getAllTaxOffices({ locale: "en", type: "all" })).toEqual(taxOfficesEn);
+    expect(getAllTaxOffices({ locale: "en" })).toEqual(taxOfficesEn);
   });
 });
 
 describe("Get tax office by id", () => {
   it("return tax office by tax office ID ", () => {
-    expect(getTaxOfficeBy({ id: 1 })).toEqual({
+    expect(getTaxOfficeById({ id: 1 })).toEqual({
       id: 1,
       name: "Ξάνθης",
       officialName: "ΔΟΥ Ξάνθης",
@@ -798,6 +797,7 @@ describe("Get tax office by id", () => {
     });
   });
 });
+
 describe("Search tax office  ", () => {
   it("return all tax offices in greek if no params are provided", () => {
     expect(searchTaxOffice()).toEqual(taxOfficesEl);
@@ -907,43 +907,5 @@ describe("Search tax office  ", () => {
       },
       { id: 95, name: "FAE Athens (A1)", officialName: "TAX OFFICE FAE Athens (A1)", relations: {} },
     ]);
-  });
-});
-
-describe("Compare Greek works", () => {
-  test("Sanity equality", () => {
-    expect(compareGreekStrings("Α", "Α")).toBe(true);
-  });
-
-  test("Caps equality", () => {
-    expect(compareGreekStrings("α", "Α")).toBe(true);
-  });
-
-  test("Hyphen equility", () => {
-    expect(compareGreekStrings("Ά", "Α")).toBe(true);
-  });
-
-  test("Caps and Hyphen", () => {
-    expect(compareGreekStrings("ά", "Α")).toBe(true);
-  });
-
-  test("A,B sanity", () => {
-    expect(compareGreekStrings("Α", "B")).toBe(false);
-  });
-
-  test("Latin Greek sanity", () => {
-    expect(compareGreekStrings("Α", "A")).toBe(false); //eng and greek
-  });
-
-  test("With spaces", () => {
-    expect(compareGreekStrings(" Η πρόταση αυτή είναι ίδια ", "Ηπρότασηαυτήείναιίδια")).toBe(true);
-  });
-
-  test("With Multiple hyphens", () => {
-    expect(compareGreekStrings("Η πρόταση αυτή είναι ίδια", "Η ΠΡΟΤΑΣΗ ΑΥΤΗ ΕΙΝΑΙ ΙΔΙΑ")).toBe(true);
-  });
-
-  test("With Special character", () => {
-    expect(compareGreekStrings("Η-πρόταση_αυτή-είναι-ίδια", "Η ΠΡΟΤΑΣΗ ΑΥΤΗ ΕΙΝΑΙ ΙΔΙΑ")).toBe(true);
   });
 });
