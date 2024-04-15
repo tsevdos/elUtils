@@ -160,7 +160,7 @@ describe("getEras", () => {
 
 describe("getHolidays", () => {
   // Test for a year with known fixed and movable holiday dates
-  it("returns correct Greek holidays for a specific year", () => {
+  it("returns correct Greek holidays for a specific year (greek language)", () => {
     const year = "2023";
     const holidays = getHolidays(year);
 
@@ -180,13 +180,10 @@ describe("getHolidays", () => {
       { date: "2023-12-26", name: "Επόμενη των Χριστουγέννων" },
     ];
 
-    expect(holidays).toEqual(expect.arrayContaining(expectedHolidays));
+    expect(holidays).toEqual(expectedHolidays);
   });
-});
 
-describe("getHolidays in English", () => {
-  // Test for a year with known fixed and movable holiday dates
-  it("returns correct Greek holidays for a specific year", () => {
+  it("returns correct Greek holidays for a specific year (english language)", () => {
     const year = "2023";
     const holidays = getHolidays(year, { locale: "en" });
 
@@ -206,12 +203,12 @@ describe("getHolidays in English", () => {
       { date: "2023-12-26", name: "Boxing Day" },
     ];
 
-    expect(holidays).toEqual(expect.arrayContaining(expectedHolidays));
+    expect(holidays).toEqual(expectedHolidays);
   });
+
+  // Add more tests
+  // Additional tests can be designed to cover edge cases, such as:
+  // - Leap years
+  // - Years where Labor Day coincides with Easter or falls on a weekend
+  // - Future or past years with different holiday dates
 });
-
-// Additional tests can be designed to cover edge cases, such as:
-// - Leap years
-// - Years where Labor Day coincides with Easter or falls on a weekend
-// - Future or past years with different holiday dates
-

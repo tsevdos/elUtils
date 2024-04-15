@@ -7,49 +7,6 @@ type BaseDateTimeOptions = {
   format?: Format;
 };
 
-type LocaleOption = {
-  locale?: "el" | "en";
-};
-
-const holidayNameTranslations: { [key: string]: { en: string } } = {
-  "Πρωτοχρονιά": {
-    en: "New Year's Day"
-  },
-  "Θεοφάνεια": {
-    en: "Epiphany"
-  },
-  "Ευαγγελισμός της Θεοτόκου": {
-    en: "Annunciation"
-  },
-  "Εργατική Πρωτομαγιά": {
-    en: "Labour Day"
-  },
-  "Κοίμηση της Θεοτόκου": {
-    en: "Assumption of Mary"
-  },
-  "Ημέρα του Όχι": {
-    en: "Ohi Day"
-  },
-  "Χριστούγεννα": {
-    en: "Christmas Day"
-  },
-  "Επόμενη των Χριστουγέννων": {
-    en: "Boxing Day"
-  },
-  "Καθαρά Δευτέρα": {
-    en: "Clean Monday"
-  },
-  "Μεγάλη Παρασκευή": {
-    en: "Good Friday"
-  },
-  "Δευτέρα του Πάσχα": {
-    en: "Easter Monday"
-  },
-  "Αγίου Πνεύματος": {
-    en: "Pentecost"
-  },
-};
-
 /**
  * Returns the days based on the provided options.
  * @param {BaseDateTimeOptions} options - The options for locale and format.
@@ -112,16 +69,19 @@ type Holiday = {
  * @param {number} year - The year for which to calculate the holidays.
  * @returns {Holiday[]} An array of movable holiday objects.
  */
-function calculateMovableGreekHolidays(year: number): Holiday[] {
+function calculateMovableGreekHolidays(year: number, locale: "el" | "en"): Holiday[] {
+  // TODO: better naming
   let e = 10;
 
   if (year > 1600) {
     const year2 = Math.floor(year / 100);
     e = 10 + year2 - 16 - Math.floor((year2 - 16) / 4);
   }
+
   if (year < 1583) {
     e = 0;
   }
+
   const a = year % 19;
   const b = (19 * a + 15) % 30;
   const c = (year + Math.floor(year / 4) + b) % 7;
@@ -130,63 +90,43 @@ function calculateMovableGreekHolidays(year: number): Holiday[] {
   const d = 1 + ((p + 27 + Math.floor((p + 6) / 40)) % 31);
   const m = 3 + Math.floor((p + 26) / 30) - 1;
   const oneDay = 60 * 1000 * 60 * 24;
-  const pascha = new Date(Date.UTC(year, m, d));
-  const katharaDeftera = new Date(pascha.getTime() + oneDay * -48).toISOString().split("T")[0];
-  const megParaskevi = new Date(pascha.getTime() + oneDay * -2).toISOString().split("T")[0];
-  const deftPascha = new Date(pascha.getTime() + oneDay).toISOString().split("T")[0];
-  const agiouPnefmatos = new Date(pascha.getTime() + oneDay * 50).toISOString().split("T")[0];
+  const easter = new Date(Date.UTC(year, m, d));
+  const cleanMonday = new Date(easter.getTime() + oneDay * -48).toISOString();
+  const goodFriday = new Date(easter.getTime() + oneDay * -2).toISOString();
+  const easterMonday = new Date(easter.getTime() + oneDay).toISOString();
+  const pentecost = new Date(easter.getTime() + oneDay * 50).toISOString();
+  const movableGreekHolidaysDates = {
+    cleanMonday: `${year}-${cleanMonday.substring(5, 7)}-${cleanMonday.substring(8, 10)}`,
+    goodFriday: `${year}-${goodFriday.substring(5, 7)}-${goodFriday.substring(8, 10)}`,
+    easterMonday: `${year}-${easterMonday.substring(5, 7)}-${easterMonday.substring(8, 10)}`,
+    pentecost: `${year}-${pentecost.substring(5, 7)}-${pentecost.substring(8, 10)}`,
+  };
 
-  return [
-    { date: katharaDeftera!, name: "Καθαρά Δευτέρα" },
-    { date: megParaskevi!, name: "Μεγάλη Παρασκευή" },
-    { date: deftPascha!, name: "Δευτέρα του Πάσχα" },
-    { date: agiouPnefmatos!, name: "Αγίου Πνεύματος" },
-  ];
+  return datesData.holidays[locale]
+    .filter(({ moveable }) => moveable)
+    .map(({ date, name }) => ({
+      date: movableGreekHolidaysDates[date as keyof typeof movableGreekHolidaysDates],
+      name,
+    }));
 }
+
+type GetHolidaysOptions = {
+  locale?: "el" | "en";
+};
 
 /**
  * Gets Greek holidays for the given year, including both fixed and movable.
  * @param {string} year - The year for which to fetch the holidays.
  * @returns {Holiday[]} An array of holiday objects.
  */
-export function getHolidays(year: string, options: LocaleOption = {}): Holiday[] {
+export function getHolidays(year: string, options: GetHolidaysOptions = {}): Holiday[] {
   const { locale = "el" } = options;
   const y = parseInt(year);
-
-  // Fixed Date Holidays
-  const fixedHolidays: Holiday[] = [
-    { date: `${year}-01-01`, name: "Πρωτοχρονιά" },
-    { date: `${year}-01-06`, name: "Θεοφάνεια" },
-    { date: `${year}-03-25`, name: "Ευαγγελισμός της Θεοτόκου" },
-    { date: `${year}-05-01`, name: "Εργατική Πρωτομαγιά" },
-    { date: `${year}-08-15`, name: "Κοίμηση της Θεοτόκου" },
-    { date: `${year}-10-28`, name: "Ημέρα του Όχι" },
-    { date: `${year}-12-25`, name: "Χριστούγεννα" },
-    { date: `${year}-12-26`, name: "Επόμενη των Χριστουγέννων" },
-  ];
-
-  const movableHolidays: Holiday[] = calculateMovableGreekHolidays(y);
-  const holidays = [...fixedHolidays, ...movableHolidays].sort((a, b) => a.date.localeCompare(b.date))
-  const firstMay = holidays.find((h) => h.name === `Εργατική Πρωτομαγιά`);
-
-  if (firstMay) {
-    const firstMayCount = holidays.filter((h) => h.date === `${year}-05-01`).length;
-
-    if (firstMayCount > 1) {
-      holidays.splice(holidays.indexOf(firstMay), 1);
-    }
-    const firstMayDate = new Date(firstMay.date);
-    const day = firstMayDate.getDay();
-    if (day === 0 || day === 6) {
-      holidays.splice(holidays.indexOf(firstMay), 1);
-    }
-  }
-  // Translate holiday names to the locale if it's not Greek
-  if (locale !== "el") {
-    holidays.forEach((h) => {
-      h.name = holidayNameTranslations[h.name]![locale];
-    });
-  }
+  const nonMovableHolidays = datesData.holidays[locale]
+    .filter(({ moveable }) => !moveable)
+    .map(({ date, name }) => ({ date: `${year}-${date}`, name }));
+  const movableHolidays: Holiday[] = calculateMovableGreekHolidays(y, locale);
+  const holidays = [...nonMovableHolidays, ...movableHolidays].sort((a, b) => a.date.localeCompare(b.date));
 
   return holidays;
 }
