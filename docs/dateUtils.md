@@ -1,6 +1,6 @@
 # DateUtils
 
-> The **`dateUtils`** module provides functions for retrieving date-related data such as days, months, quarters, and eras.
+> The **`dateUtils`** module provides functions for retrieving date-related data such as days, months, quarters, and eras. It also includes a function for fetching Greek holidays for a specific year.
 
 ## Table of Contents
 
@@ -8,6 +8,7 @@
 - [**getMonths()**](#getMonths)
 - [**getQuarters()**](#getQuarters)
 - [**getEras()**](#getEras)
+- [**getHolidays()**](#getHolidays)
 
 ---
 
@@ -68,3 +69,20 @@
 - **`format`** (optional, default: "full"): The format of the era names ("full", "short", or "min").
 
 **Return Type**: Array of era names based on the specified format.
+
+---
+
+### getHolidays()<a id='getHolidays'></a>
+
+**Description**: Retrieves an array of Greek holidays.
+
+**Parameters:**
+**`year`**: A string representing the year for which to fetch Greek holidays.
+**`options`**: An object specifying the options for retrieval.
+
+- **`locale`** (optional, default: "el"): The locale for the Holiday names ("el" for Greek, "en" for English).
+
+**Return Type**: An array of `Holiday` objects where each `Holiday` object includes:
+
+- `date`: A string representing the date of the holiday in the format `YYYY-MM-DD`.
+- `name`: The name of the holiday in Greek or English based on the specified locale.
