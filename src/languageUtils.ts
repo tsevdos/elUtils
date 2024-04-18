@@ -26,7 +26,7 @@ export function convertsGreekTextToComparableUpperCase(input: string): string {
   const accentChars = /[άέήίόύώΆΈΉΊΌΎΏϊΐΪϋΰΫ]/g;
   const normalized = input
     .replace(accentChars, (match) => GREEK_ACCENTED_CHARACTERS_REPLACEMENTS[match] || match) // Replace accented characters
-    .replace(/[ \-_!@#$%^&*()]/g, ""); // Remove spaces and special characters
+    .replace(/[ /\-_!@#$%^&*()]/g, ""); // Remove spaces and special characters
 
   return normalized.toUpperCase();
 }

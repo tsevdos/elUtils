@@ -355,8 +355,16 @@ export function getTaxOfficesByMunicipalityId(options: GetTaxOfficesByMunicipali
 
 type TaxOfficeOptionsByTerm = { searchTerm?: string } & TaxOfficeOptions;
 
-// TODO:
-// getTaxOfficesByPostalCode
+type GetTaxOfficesByPostalCodeOptions = {
+  postalCode: number;
+} & TaxOfficeOptions;
+
+export function getTaxOfficesByPostalCode(options: GetTaxOfficesByPostalCodeOptions): TaxOffice[] {
+  const { postalCode, locale = "el" } = options;
+  const allTaxOffices = getAllTaxOffices({ locale });
+
+  return allTaxOffices.filter((taxOffice) => taxOffice.postalCodes?.includes(postalCode));
+}
 
 export function searchTaxOffice(options: TaxOfficeOptionsByTerm = {}): TaxOffice[] | TaxOffice {
   const { searchTerm, locale = "el" } = options;

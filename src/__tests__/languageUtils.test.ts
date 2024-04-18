@@ -52,9 +52,22 @@ describe("compareGreekStrings", () => {
     expect(compareGreekStrings("ΔΟΥ Ξάνθης", "ΔΟΥ ΞΑΝΘΗΣ")).toBeTruthy();
     expect(compareGreekStrings("Νομός Αθηνών", "%Νομός Αθηνών%")).toBeTruthy();
 
+    expect(compareGreekStrings("ΞΑ ΝΘΗΣ", "ΞΑΝΘΗΣ")).toBeTruthy();
+
+    expect(compareGreekStrings(" Ξ Α Ν Θ Η Σ ", "ξάνθης")).toBeTruthy();
+    expect(compareGreekStrings("/$Δήμος Χ@αλκίδας!", "ΔΗΜΟΣ ΧΑΛΚΙΔΑΣ")).toBeTruthy();
+
+    expect(compareGreekStrings("!Δ#ή$μ%ο^ς& Χ*α(λκίδας!", "Δ)Η-Μ_ΟΣ ΧΑΛΚΙΔΑΣ")).toBeTruthy();
+
+    expect(compareGreekStrings("", "")).toBeTruthy();
+
     // False
     expect(compareGreekStrings("Νομός Αθηνών", "Αθηνών")).toBeFalsy();
+    expect(compareGreekStrings("ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣ Α1", "ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣ Α2")).toBeFalsy();
+    expect(compareGreekStrings("ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣ Α'", "ΔΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣ Α")).toBeFalsy();
 
-    // please add more tests
+    expect(compareGreekStrings("Νομός ΞAΝθης", "Νομός Ξάνθης")).toBeFalsy(); //A is latin
+
+    expect(compareGreekStrings("Νομός Ξάνθης", "")).toBeFalsy();
   });
 });
