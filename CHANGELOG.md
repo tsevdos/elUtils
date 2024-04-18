@@ -1,5 +1,11 @@
 # @tsevdos/el-utils
 
+## 0.4.0
+
+### Minor Changes
+
+- [#65](https://github.com/tsevdos/elUtils/pull/65) [`1916f62`](https://github.com/tsevdos/elUtils/commit/1916f62b21ad0bc6b5d811d79e00ce0afd6724f3) Thanks [@imertz](https://github.com/imertz)! - feat(dateUtils): Add getHolidays function for fetching Greek holidays
+
 ## 0.3.0
 
 ### Minor Changes
