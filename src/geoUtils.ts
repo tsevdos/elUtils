@@ -353,12 +353,19 @@ export function getTaxOfficesByMunicipalityId(options: GetTaxOfficesByMunicipali
   return allTaxOffices.filter((taxOffice) => taxOffice.relations.municipalityIds?.includes(id));
 }
 
-type TaxOfficeOptionsByTerm = { searchTerm?: string } & TaxOfficeOptions;
-
 type GetTaxOfficesByPostalCodeOptions = {
   postalCode: number;
 } & TaxOfficeOptions;
 
+/**
+ * This function returns the tax offices that match the given postal code.
+ *
+ * @param {GetTaxOfficesByPostalCodeOptions} options - The options for getting tax offices.
+ * @param {string} options.postalCode - The postal code to match.
+ * @param {string} [options.locale="el"] - The locale to use. Default is "el".
+ *
+ * @returns {TaxOffice[]} The tax offices that match the given postal code.
+ */
 export function getTaxOfficesByPostalCode(options: GetTaxOfficesByPostalCodeOptions): TaxOffice[] {
   const { postalCode, locale = "el" } = options;
   const allTaxOffices = getAllTaxOffices({ locale });
@@ -366,16 +373,23 @@ export function getTaxOfficesByPostalCode(options: GetTaxOfficesByPostalCodeOpti
   return allTaxOffices.filter((taxOffice) => taxOffice.postalCodes?.includes(postalCode));
 }
 
-export function searchTaxOffice(options: TaxOfficeOptionsByTerm = {}): TaxOffice[] | TaxOffice {
+type TaxOfficeOptionsByTerm = { searchTerm: string } & TaxOfficeOptions;
+
+/**
+ * This function returns the tax offices that match the given search term.
+ *
+ * @param {TaxOfficeOptionsByTerm} [options={}] - The options for searching tax offices.
+ * @param {string} options.searchTerm - The search term to match.
+ * @param {string} [options.locale="el"] - The locale to use. Default is "el".
+ *
+ * @returns {TaxOffice[] | TaxOffice} The tax offices that match the given search term, or all tax offices if no search term is provided.
+ */
+export function searchTaxOffice(options: TaxOfficeOptionsByTerm): TaxOffice[] {
   const { searchTerm, locale = "el" } = options;
-  if (!searchTerm) {
-    return allTaxOffices[locale];
-  }
-  // if ((locale === "el" && isGreekLatinMixed(searchTerm) !== "greek") || (locale === "en" && isGreekLatinMixed(searchTerm) !== "latin")) {
-  //   throw new Error('Search term and localization missmatch');
-  // }
+  if (searchTerm.trim() === "") return [];
   const normalizedTerm = convertsGreekTextToComparableUpperCase(searchTerm);
-  return allTaxOffices[locale].filter((taxOffice) => {
-    return convertsGreekTextToComparableUpperCase(taxOffice.name).includes(normalizedTerm) ? taxOffice : "";
-  });
+
+  return allTaxOffices[locale].filter(({ name }) =>
+    convertsGreekTextToComparableUpperCase(name).includes(normalizedTerm),
+  );
 }
