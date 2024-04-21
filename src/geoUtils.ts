@@ -1,3 +1,4 @@
+import { convertsGreekTextToComparableUpperCase } from "./languageUtils";
 import administrativeRegionsEl from "../data/administrative-regions-el.json";
 import administrativeRegionsEn from "../data/administrative-regions-en.json";
 import geographicRegionsEl from "../data/geographic-regions-el.json";
@@ -5,6 +6,8 @@ import geographicRegionsEn from "../data/geographic-regions-en.json";
 import prefecturesEl from "../data/prefectures-el.json";
 import prefecturesEn from "../data/prefectures-en.json";
 import postalCodes from "../data/postal-codes.json";
+import taxOfficesEl from "../data/taxOffices-el.json";
+import taxOfficesEn from "../data/taxOffices-en.json";
 import {
   Region,
   RegionWithoutUnits,
@@ -13,6 +16,7 @@ import {
   Municipality,
   GeographicRegion,
   Prefecture,
+  TaxOffice,
 } from "./types";
 
 export const MOUNT_ATHOS_REGION_ID = 14;
@@ -39,6 +43,8 @@ const prefecturesWithoutMountAthos = {
   el: allPrefectures.el.filter(({ id }) => id !== MOUNT_ATHOS_PREFECTURE_ID),
   en: allPrefectures.en.filter(({ id }) => id !== MOUNT_ATHOS_PREFECTURE_ID),
 };
+
+const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
 
 type Locale = "el" | "en";
 
@@ -264,4 +270,126 @@ export function findByPostalCode(
   }
 
   return undefined;
+}
+
+type TaxOfficeOptions = { locale?: Locale };
+
+/**
+ * This function returns all tax offices based on the provided locale.
+ * @param {TaxOfficeOptions} [options={}] - An object that contains the locale option.
+ * @param {string} [options.locale="el"] - The locale based on which the tax offices are returned. Default is "el".
+ * @returns {TaxOffice[]} - An array of tax offices for the specified locale.
+ */
+export function getAllTaxOffices({ locale = "el" }: TaxOfficeOptions = {}): TaxOffice[] {
+  return allTaxOffices[locale];
+}
+
+type GetTaxOfficeByIdOptions = { id: number } & TaxOfficeOptions;
+
+/**
+ * This function returns a tax office based on the provided id and locale.
+ * @param {GetTaxOfficeByIdOptions} options - An object that contains the id and locale options.
+ * @param {string} options.id - The id of the tax office to be returned.
+ * @param {string} [options.locale="el"] - The locale based on which the tax office is returned. Default is "el".
+ * @returns {TaxOffice | undefined} - The tax office with the specified id for the specified locale, or undefined if no such tax office exists.
+ */
+export function getTaxOfficeById(options: GetTaxOfficeByIdOptions): TaxOffice | undefined {
+  const { id, locale = "el" } = options;
+
+  return allTaxOffices[locale].find((taxOffice) => taxOffice.id === id);
+}
+
+type GetTaxOfficesByRegionIdOptions = {
+  id: number;
+} & TaxOfficeOptions;
+
+/**
+ * This function returns all tax offices in a specific region based on the provided region id and locale.
+ * @param {GetTaxOfficesByRegionIdOptions} options - An object that contains the region id and locale options.
+ * @param {string} options.id - The id of the region for which tax offices are to be returned.
+ * @param {string} [options.locale="el"] - The locale based on which the tax offices are returned. Default is "el".
+ * @returns {TaxOffice[]} - An array of tax offices in the specified region for the specified locale.
+ */
+export function getTaxOfficesByRegionId(options: GetTaxOfficesByRegionIdOptions): TaxOffice[] {
+  const { id, locale = "el" } = options;
+  const allTaxOffices = getAllTaxOffices({ locale });
+
+  return allTaxOffices.filter((taxOffice) => taxOffice.relations.regionId === id);
+}
+
+type GetTaxOfficesByUnitIdOptions = {
+  id: number;
+} & TaxOfficeOptions;
+
+/**
+ * This function returns all tax offices associated with a specific regional unit based on the provided unit id and locale.
+ * @param {GetTaxOfficesByUnitIdOptions} options - An object that contains the unit id and locale options.
+ * @param {string} options.id - The id of the unit for which tax offices are to be returned.
+ * @param {string} [options.locale="el"] - The locale based on which the tax offices are returned. Default is "el".
+ * @returns {TaxOffice[]} - An array of tax offices associated with the specified unit for the specified locale.
+ */
+export function getTaxOfficesByUnitId(options: GetTaxOfficesByUnitIdOptions): TaxOffice[] {
+  const { id, locale = "el" } = options;
+  const allTaxOffices = getAllTaxOffices({ locale });
+
+  return allTaxOffices.filter((taxOffice) => taxOffice.relations.unitIds?.includes(id));
+}
+
+type GetTaxOfficesByMunicipalityIdOptions = {
+  id: number;
+} & TaxOfficeOptions;
+
+/**
+ * This function returns all tax offices associated with a specific municipality based on the provided municipality id and locale.
+ * @param {GetTaxOfficesByMunicipalityIdOptions} options - An object that contains the municipality id and locale options.
+ * @param {string} options.id - The id of the municipality for which tax offices are to be returned.
+ * @param {string} [options.locale="el"] - The locale based on which the tax offices are returned. Default is "el".
+ * @returns {TaxOffice[]} - An array of tax offices associated with the specified municipality for the specified locale.
+ */
+export function getTaxOfficesByMunicipalityId(options: GetTaxOfficesByMunicipalityIdOptions): TaxOffice[] {
+  const { id, locale = "el" } = options;
+  const allTaxOffices = getAllTaxOffices({ locale });
+
+  return allTaxOffices.filter((taxOffice) => taxOffice.relations.municipalityIds?.includes(id));
+}
+
+type GetTaxOfficesByPostalCodeOptions = {
+  postalCode: number;
+} & TaxOfficeOptions;
+
+/**
+ * This function returns the tax offices that match the given postal code.
+ *
+ * @param {GetTaxOfficesByPostalCodeOptions} options - The options for getting tax offices.
+ * @param {string} options.postalCode - The postal code to match.
+ * @param {string} [options.locale="el"] - The locale to use. Default is "el".
+ *
+ * @returns {TaxOffice[]} The tax offices that match the given postal code.
+ */
+export function getTaxOfficesByPostalCode(options: GetTaxOfficesByPostalCodeOptions): TaxOffice[] {
+  const { postalCode, locale = "el" } = options;
+  const allTaxOffices = getAllTaxOffices({ locale });
+
+  return allTaxOffices.filter((taxOffice) => taxOffice.postalCodes?.includes(postalCode));
+}
+
+type TaxOfficeOptionsByTerm = { searchTerm: string } & TaxOfficeOptions;
+
+/**
+ * This function returns the tax offices that match the given search term.
+ *
+ * @param {TaxOfficeOptionsByTerm} [options={}] - The options for searching tax offices.
+ * @param {string} options.searchTerm - The search term to match.
+ * @param {string} [options.locale="el"] - The locale to use. Default is "el".
+ *
+ * @returns {TaxOffice[] | TaxOffice} The tax offices that match the given search term, or all tax offices if no search term is provided.
+ */
+export function searchTaxOffice(options: TaxOfficeOptionsByTerm): TaxOffice[] {
+  const { searchTerm, locale = "el" } = options;
+  if (searchTerm.trim() === "") return [];
+  const normalizedTerm = convertsGreekTextToComparableUpperCase(searchTerm);
+
+  return allTaxOffices[locale].filter(({ name }) =>
+    convertsGreekTextToComparableUpperCase(name).includes(normalizedTerm),
+  );
 }

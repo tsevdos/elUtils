@@ -2,6 +2,30 @@
 
 > The **`geoUtils`** module provides functions for accessing geographic and administrative data. All these data are available **both in greek and english languages**.
 
+## Table of Contents
+
+- [**getAdministrativeRegions()**](#getAdministrativeRegions)
+- [**getAdministrativeRegionById()**](#getAdministrativeRegionById)
+- [**getAdministrativeRegionByIsoCode()**](#getAdministrativeRegionByIsoCode)
+- [**getAdministrativeUnits()**](#getAdministrativeUnits)
+- [**getAdministrativeUnitById()**](#getAdministrativeUnitById)
+- [**getMunicipalities()**](#getMunicipalities)
+- [**getGeographicRegions()**](#getGeographicRegions)
+- [**getGeographicRegionById()**](#getGeographicRegionById)
+- [**getPrefectures()**](#getPrefectures)
+- [**getPrefectureById()**](#getPrefectureById)
+- [**getAllPostalCodes()**](#getAllPostalCodes)
+- [**findByPostalCode()**](#findByPostalCode)
+- [**getAllTaxOffices()**](#getAllTaxOffices)
+- [**getTaxOfficeById()**](#getTaxOfficeById)
+- [**getTaxOfficesByRegionId()**](#getTaxOfficesByRegionId)
+- [**getTaxOfficesByUnitId()**](#getTaxOfficesByUnitId)
+- [**getTaxOfficesByMunicipalityId()**](#getTaxOfficesByMunicipalityId)
+- [**getTaxOfficesByPostalCode()**](#getTaxOfficesByPostalCode)
+- [**searchTaxOffice()**](#searchTaxOffice)
+
+## Regions explanation
+
 The geoUtils functions are the most data-rich functions of the package. They can provide various geo located data, so please first take a quick look on the available type of data. The 3 major categories you can get geographic data from are the below:
 
 1. [**Administrative regions (περιφέρειες) of Greece**](#administrative-regions). Use these functions if you want to work with the current administrative regions and their sub-divisions.
@@ -317,3 +341,107 @@ none
 - **`entity`** (default: "prefecture"): The type of entity to retrieve ("prefecture", "region", or "unit").
 
 **Return Type**: The corresponding geographic entity (`Prefecture`, `Region`, or `Unit`) or undefined if not found.
+
+---
+
+### getAllTaxOffices()<a id='getAllTaxOffices'></a>
+
+**Description**: Retrieves all tax offices.
+
+**Parameters:**
+
+**`options`** (optional): An object specifying additional options for retrieval.
+
+- **`locale`** (default: "el"): The locale for the retrieved tax offices.
+
+**Return Type**: An array of `TaxOffice` objects.
+
+---
+
+### getTaxOfficeById()<a id='getTaxOfficeById'></a>
+
+**Description**: Retrieves a tax office by its ID.
+
+**Parameters:**
+
+**`options`** (required): An object specifying options for retrieval.
+
+- **`id`** (required): The ID of the tax office to retrieve.
+- **`locale`** (default: "el"): The locale for the retrieved tax office.
+
+**Return Type**: The `TaxOffice` object corresponding to the given ID, or undefined if not found.
+
+---
+
+### getTaxOfficesByRegionId()<a id='getTaxOfficesByRegionId'></a>
+
+**Description**: Retrieves tax offices by their region ID.
+
+**Parameters:**
+
+**`options`** (required): An object specifying options for retrieval.
+
+- **`regionId`** (required): The region ID to match.
+- **`locale`** (default: "el"): The locale for the retrieved tax offices.
+
+**Return Type**: An array of `TaxOffice` objects that match the given region ID.
+
+---
+
+### getTaxOfficesByUnitId()<a id='getTaxOfficesByUnitId'></a>
+
+**Description**: Retrieves tax offices by their unit ID.
+
+**Parameters:**
+
+**`options`** (required): An object specifying options for retrieval.
+
+- **`unitId`** (required): The unit ID to match.
+- **`locale`** (default: "el"): The locale for the retrieved tax offices.
+
+**Return Type**: An array of `TaxOffice` objects that match the given unit ID.
+
+---
+
+### getTaxOfficesByMunicipalityId()<a id='getTaxOfficesByMunicipalityId'></a>
+
+**Description**: Retrieves tax offices by their municipality ID.
+
+**Parameters:**
+
+**`options`** (required): An object specifying options for retrieval.
+
+- **`municipalityId`** (required): The municipality ID to match.
+- **`locale`** (default: "el"): The locale for the retrieved tax offices.
+
+**Return Type**: An array of `TaxOffice` objects that match the given municipality ID.
+
+---
+
+### getTaxOfficesByPostalCode()<a id='getTaxOfficesByPostalCode'></a>
+
+**Description**: Retrieves tax offices that match the given postal code.
+
+**Parameters:**
+
+**`options`** (required): An object specifying options for retrieval.
+
+- **`postalCode`** (required): The postal code to match.
+- **`locale`** (default: "el"): The locale for the retrieved tax offices.
+
+**Return Type**: An array of `TaxOffice` objects that match the given postal code.
+
+---
+
+### searchTaxOffice()<a id='searchTaxOffice'></a>
+
+**Description**: Retrieves tax offices that match the given search term.
+
+**Parameters:**
+
+**`options`** (optional): An object specifying options for retrieval.
+
+- **`searchTerm`** (optional): The search term to match.
+- **`locale`** (default: "el"): The locale for the retrieved tax offices.
+
+**Return Type**: An array of `TaxOffice` objects that match the given search term, or an empty array if nothing matches.
