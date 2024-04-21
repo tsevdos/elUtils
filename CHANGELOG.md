@@ -1,5 +1,11 @@
 # @tsevdos/el-utils
 
+## 0.5.0
+
+### Minor Changes
+
+- [`0a0e7e5`](https://github.com/tsevdos/elUtils/commit/0a0e7e59e927d7bbbd0f5369686261682abf838f) Thanks [@DionisisChris](https://github.com/DionisisChris)! - feat(geoUtils): add greek tax offices data and functions
+
 ## 0.4.0
 
 ### Minor Changes
