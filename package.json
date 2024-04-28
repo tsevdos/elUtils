@@ -55,5 +55,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@tsevdos/el-utils": "^0.5.0"
   }
 }
