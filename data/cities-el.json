@@ -1,0 +1,608 @@
+[
+  {
+    "id": 1,
+    "name": "Αθήνα",
+    "coordinates": [23.726247807017884, 37.97521056577561],
+    "relations": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 42,
+      "municipalityId": 193,
+      "prefectureId": 1
+    }
+  },
+  {
+    "id": "2",
+    "name": "Μεσολόγγι",
+    "coordinates": [21.42923025680387, 38.36912222421677],
+    "relations": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 32,
+      "municipalityId": 131,
+      "prefectureId": 49
+    }
+  },
+  {
+    "id": "3",
+    "name": "Χαλκίδα",
+    "coordinates": [23.60159302348853, 38.46534874238841],
+    "relations": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 36,
+      "municipalityId": 157,
+      "prefectureId": 5
+    }
+  },
+  {
+    "id": "4",
+    "name": "Καρπενήσι",
+    "coordinates": [21.794596657123087, 38.91725355802198],
+    "relations": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 37,
+      "municipalityId": 161,
+      "prefectureId": 6
+    }
+  },
+  {
+    "id": "5",
+    "ONOMA": "Λαμία",
+    "coordinates": [22.429473128603995, 38.90402406186525],
+    "relations": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 38,
+      "municipalityId": 166,
+      "prefectureId": 8
+    }
+  },
+  {
+    "id": "6",
+    "name": "Άμφισσα",
+    "coordinates": [22.377853553635617, 38.52888611217963],
+    "relations": {
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 39,
+      "municipalityId": 170,
+      "prefectureId": 7
+    }
+  },
+  {
+    "id": "7",
+    "name": "Τρίπολη",
+    "coordinates": [22.373097659208483, 37.50979512133838],
+    "relations": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 49,
+      "municipalityId": 244,
+      "prefectureId": 37
+    }
+  },
+  {
+    "id": "8",
+    "name": "Πάτρα",
+    "coordinates": [21.736220633220288, 38.248962500370936],
+    "relations": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 33,
+      "municipalityId": 135,
+      "prefectureId": 48
+    }
+  },
+  {
+    "id": "9",
+    "name": "Πύργος",
+    "coordinates": [21.442708340507092, 37.672543519754875],
+    "regionAndUnit": {
+      "regionId": 7,
+      "regionIso31662": "GR-G",
+      "unitId": 34,
+      "municipalityId": 143,
+      "prefectureId": 50
+    }
+  },
+  {
+    "id": "10",
+    "name": "Κόρινθος",
+    "coordinates": [22.929678443624432, 37.93909792434953],
+    "relations": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 50,
+      "municipalityId": 248,
+      "prefectureId": 39
+    }
+  },
+  {
+    "id": "11",
+    "name": "Σπάρτη",
+    "coordinates": [22.432810599871917, 37.074299460422154],
+    "relations": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 51,
+      "municipalityId": 254,
+      "prefectureId": 40
+    }
+  },
+  {
+    "id": "12",
+    "name": "Καλαμάτα",
+    "coordinates": [22.1129804653203, 37.04129565165131],
+    "relations": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 52,
+      "municipalityId": 262,
+      "prefectureId": 41
+    }
+  },
+  {
+    "id": "13",
+    "name": "Ζάκυνθος",
+    "coordinates": [20.89750593167611, 37.78816913748807],
+    "relations": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 27,
+      "municipalityId": 117,
+      "prefectureId": 33
+    }
+  },
+  {
+    "id": "14",
+    "name": "Κέρκυρα Kerkyra",
+    "coordinates": [19.919799905488073, 39.619310765198634],
+    "relations": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 28,
+      "municipalityId": 118,
+      "prefectureId": 30
+    }
+  },
+  {
+    "id": "15",
+    "name": "Argostoli",
+    "coordinates": [20.4858289731687, 38.17813591215673],
+    "relations": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 29,
+      "municipalityId": 122,
+      "prefectureId": 31
+    }
+  },
+  {
+    "id": "16",
+    "name": "Λευκάδα",
+    "coordinates": [20.70758437318744, 38.83360169781747],
+    "relations": {
+      "regionId": 6,
+      "regionIso31662": "GR-F",
+      "unitId": 31,
+      "municipalityId": 126,
+      "prefectureId": 32
+    }
+  },
+  {
+    "id": "17",
+    "name": "Άρτα",
+    "coordinates": [20.985991894917362, 39.16076114536581],
+    "relations": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 18,
+      "municipalityId": 74,
+      "prefectureId": 26
+    }
+  },
+  {
+    "id": "18",
+    "name": "Πρέβεζα",
+    "coordinates": [20.753369865280817, 38.96071349078567],
+    "relations": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 21,
+      "municipalityId": 90,
+      "prefectureId": 28
+    }
+  },
+  {
+    "id": "19",
+    "name": "Καρδίτσα",
+    "coordinates": [21.920872357457895, 39.36679426347685],
+    "relations": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 22,
+      "municipalityId": 97,
+      "prefectureId": 44
+    }
+  },
+  {
+    "id": "20",
+    "name": "Λάρισα",
+    "coordinates": [22.420773619150975, 39.63812943853051],
+    "relations": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 23,
+      "municipalityId": 101,
+      "prefectureId": 45
+    }
+  },
+  {
+    "id": "21",
+    "name": "Βόλος",
+    "coordinates": [22.934181911197264, 39.36398741290451],
+    "relations": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 24,
+      "municipalityId": 107,
+      "prefectureId": 46
+    }
+  },
+  {
+    "id": "22",
+    "name": "Τρίκαλα",
+    "coordinates": [21.775763681041404, 39.555458068865214],
+    "relations": {
+      "regionId": 5,
+      "regionIso31662": "GR-E",
+      "unitId": 26,
+      "municipalityId": 115,
+      "prefectureId": 47
+    }
+  },
+  {
+    "id": "23",
+    "name": "Γρεβενά",
+    "coordinates": [21.4264227563289, 40.083602920661896],
+    "relations": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 14,
+      "municipalityId": 62,
+      "prefectureId": 52
+    }
+  },
+  {
+    "id": "24",
+    "name": "Δράμα",
+    "coordinates": [24.152508201268184, 41.15045774800999],
+    "relations": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 1,
+      "municipalityId": 2,
+      "prefectureId": 21
+    }
+  },
+  {
+    "id": "25",
+    "name": "Βέροια",
+    "coordinates": [22.20175033249484, 40.524307388102734],
+    "relations": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 7,
+      "municipalityId": 24,
+      "prefectureId": 11
+    }
+  },
+  {
+    "id": "26",
+    "name": "Θεσσαλονίκη",
+    "coordinates": [22.950040104323186, 40.63795873975089],
+    "relations": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 8,
+      "municipalityId": 33,
+      "prefectureId": 16
+    }
+  },
+  {
+    "id": "27",
+    "name": "Καβάλα",
+    "coordinates": [24.415793192159132, 40.938866354408894],
+    "relations": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 3,
+      "municipalityId": 11,
+      "prefectureId": 23
+    }
+  },
+  {
+    "id": "28",
+    "name": "Καστοριά",
+    "coordinates": [21.268399692423102, 40.51923687732499],
+    "relations": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 15,
+      "municipalityId": 63,
+      "prefectureId": 53
+    }
+  },
+  {
+    "id": "29",
+    "name": "Κιλκίς",
+    "coordinates": [22.876529269007218, 40.9937847643826],
+    "relations": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 9,
+      "municipalityId": 40,
+      "prefectureId": 12
+    }
+  },
+  {
+    "id": "30",
+    "name": "Κοζάνη",
+    "coordinates": [21.78885165609711, 40.3017150023636],
+    "relations": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 16,
+      "municipalityId": 67,
+      "prefectureId": 54
+    }
+  },
+  {
+    "id": "31",
+    "name": "Έδεσσα Edessa",
+    "coordinates": [22.04607038705497, 40.79962791910399],
+    "relations": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 10,
+      "municipalityId": 44,
+      "prefectureId": 13
+    }
+  },
+  {
+    "id": "32",
+    "name": "Κατερίνη",
+    "coordinates": [22.503720945648556, 40.27190803509639],
+    "relations": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 11,
+      "municipalityId": 47,
+      "prefectureId": 14
+    }
+  },
+  {
+    "id": "33",
+    "name": "Σέρρες",
+    "coordinates": [23.549800370976698, 41.090235576229304],
+    "relations": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 12,
+      "municipalityId": 53,
+      "prefectureId": 15
+    }
+  },
+  {
+    "id": "34",
+    "name": "Φλώρινα",
+    "coordinates": [21.405523016188692, 40.780143166088784],
+    "relations": {
+      "regionId": 3,
+      "regionIso31662": "GR-C",
+      "unitId": 17,
+      "municipalityId": 72,
+      "prefectureId": 51
+    }
+  },
+  {
+    "id": "35",
+    "name": "Πολύγυρος",
+    "coordinates": [23.440219134217067, 40.37701865884807],
+    "relations": {
+      "regionId": 2,
+      "regionIso31662": "GR-B",
+      "unitId": 13,
+      "municipalityId": 58,
+      "prefectureId": 10
+    }
+  },
+  {
+    "id": "36",
+    "name": "Αλεξανδρούπολη",
+    "coordinates": [25.87239676796922, 40.84840593655441],
+    "relations": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 2,
+      "municipalityId": 6,
+      "prefectureId": 22
+    }
+  },
+  {
+    "id": "37",
+    "name": "Ξάνθη",
+    "coordinates": [24.884252414262342, 41.135941180664034],
+    "relations": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 5,
+      "municipalityId": 17,
+      "prefectureId": 25
+    }
+  },
+  {
+    "id": "38",
+    "name": "Κομοτηνή",
+    "coordinates": [25.405785901119835, 41.11888509738841],
+    "relations": {
+      "regionId": 1,
+      "regionIso31662": "GR-A",
+      "unitId": 6,
+      "municipalityId": 21,
+      "prefectureId": 24
+    }
+  },
+  {
+    "id": "39",
+    "name": "Ρόδος",
+    "coordinates": [28.227254271691837, 36.44321498471273],
+    "relations": {
+      "regionId": 12,
+      "regionIso31662": "GR-L",
+      "unitId": 70,
+      "municipalityId": 306,
+      "prefectureId": 43
+    }
+  },
+  {
+    "id": "40",
+    "name": "Ερμούπολη",
+    "coordinates": [24.940125388382246, 37.442430072377526],
+    "relations": {
+      "regionId": 12,
+      "regionIso31662": "GR-L",
+      "unitId": 64,
+      "municipalityId": 290,
+      "prefectureId": 42
+    }
+  },
+  {
+    "id": "41",
+    "name": "Μυτιλήνη",
+    "coordinates": [26.555629295812867, 39.10789238161734],
+    "relations": {
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 53,
+      "municipalityId": 265,
+      "prefectureId": 35
+    }
+  },
+  {
+    "id": "42",
+    "name": "Σάμος",
+    "coordinates": [26.97515562881134, 37.7590107428132],
+    "relations": {
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 56,
+      "municipalityId": 270,
+      "prefectureId": 36
+    }
+  },
+  {
+    "id": "43",
+    "name": "Χίος",
+    "coordinates": [26.137369911811266, 38.36388010460335],
+    "relations": {
+      "regionId": 11,
+      "regionIso31662": "GR-K",
+      "unitId": 57,
+      "municipalityId": 274,
+      "prefectureId": 34
+    }
+  },
+  {
+    "id": "44",
+    "name": "Ηράκλειο",
+    "coordinates": [25.131309775605438, 35.33868503220863],
+    "relations": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 71,
+      "municipalityId": 313,
+      "prefectureId": 18
+    }
+  },
+  {
+    "id": "45",
+    "name": "Άγιος Νικόλαος",
+    "coordinates": [25.716137398247188, 35.18997128171788],
+    "relations": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 72,
+      "municipalityId": 319,
+      "prefectureId": 19
+    }
+  },
+  {
+    "id": "46",
+    "name": "Ρέθυμνο",
+    "coordinates": [24.474609551116995, 35.36806864367153],
+    "relations": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 73,
+      "municipalityId": 325,
+      "prefectureId": 20
+    }
+  },
+  {
+    "id": "47",
+    "name": "Χανιά",
+    "coordinates": [24.01903666307378, 35.51622463589852],
+    "relations": {
+      "regionId": 13,
+      "regionIso31662": "GR-M",
+      "unitId": 74,
+      "municipalityId": 327,
+      "prefectureId": 17
+    }
+  },
+  {
+    "id": "48",
+    "name": "Ιωάννινα",
+    "coordinates": [20.857298044324477, 39.66874345847763],
+    "relations": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 20,
+      "municipalityId": 85,
+      "prefectureId": 27
+    }
+  },
+  {
+    "id": "49",
+    "name": "Ηγουμενίτσα",
+    "coordinates": [20.267969570356573, 39.50396721960765],
+    "relations": {
+      "regionId": 4,
+      "regionIso31662": "GR-D",
+      "unitId": 19,
+      "municipalityId": 80,
+      "prefectureId": 29
+    }
+  },
+  {
+    "id": "50",
+    "name": "Λειβαδιά",
+    "coordinates": [22.877740551285445, 38.43495841393173],
+    "relations": {}
+  },
+  {
+    "id": "51",
+    "name": "Ναύπλιον",
+    "coordinates": [22.8088947355679, 37.568180397752386],
+    "relations": {
+      "regionId": 10,
+      "regionIso31662": "GR-J",
+      "unitId": 48,
+      "municipalityId": 239,
+      "prefectureId": 38
+    }
+  }
+]
