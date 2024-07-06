@@ -49,7 +49,7 @@
   },
   {
     "id": "5",
-    "ONOMA": "Lamia",
+    "name": "Lamia",
     "coordinates": [22.429473128603995, 38.90402406186525],
     "relations": {
       "regionId": 8,
