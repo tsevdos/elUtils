@@ -22,8 +22,8 @@ import {
   getAllPostalCodes,
   getAllTaxOffices,
   getCities,
+  getCityAdministrativeDivision,
   getCityById,
-  getCityRelations,
   getGeographicRegionById,
   getGeographicRegions,
   getMunicipalities,
@@ -518,7 +518,7 @@ describe("getCityById", () => {
   });
 });
 
-describe("getCityRelations", () => {
+describe("getCityAdministrativeDivision", () => {
   const locale = "el";
 
   it("should return a Region when entity is region", () => {
@@ -530,7 +530,7 @@ describe("getCityRelations", () => {
       seat: "Αθήνα",
     };
 
-    expect(getCityRelations(options)).toEqual(expectedData);
+    expect(getCityAdministrativeDivision(options)).toEqual(expectedData);
   });
 
   it('should return a Unit when entity is "unit"', () => {
@@ -543,7 +543,7 @@ describe("getCityRelations", () => {
       carPlatesPattern: [],
     };
 
-    expect(getCityRelations(options)).toEqual(expectedData);
+    expect(getCityAdministrativeDivision(options)).toEqual(expectedData);
   });
 
   it.skip('should return a RegionWithoutUnits when entity is "municipality"', () => {
@@ -559,7 +559,7 @@ describe("getCityRelations", () => {
       },
     };
 
-    expect(getCityRelations(options)).toEqual(expectedData);
+    expect(getCityAdministrativeDivision(options)).toEqual(expectedData);
   });
 
   it('should return a Prefecture when entity is "prefecture"', () => {
@@ -575,14 +575,14 @@ describe("getCityRelations", () => {
       },
     };
 
-    expect(getCityRelations(options)).toEqual(expectedData);
+    expect(getCityAdministrativeDivision(options)).toEqual(expectedData);
   });
 
   it("should return undefined when entity is not recognized", () => {
     const options = { id: 1, locale, entity: "asdf" };
     const expectedData = undefined;
 
-    expect(getCityRelations(options as FindByCityRelationsOptions)).toEqual(expectedData);
+    expect(getCityAdministrativeDivision(options as FindByCityRelationsOptions)).toEqual(expectedData);
   });
 
   it("should return undefined when id has no relations", () => {
@@ -593,10 +593,10 @@ describe("getCityRelations", () => {
     const options4: FindByCityRelationsOptions = { id: 50, locale, entity: "prefecture" };
     const expectedData = undefined;
 
-    expect(getCityRelations(options1)).toEqual(expectedData);
-    expect(getCityRelations(options2)).toEqual(expectedData);
-    expect(getCityRelations(options3)).toEqual(expectedData);
-    expect(getCityRelations(options4)).toEqual(expectedData);
+    expect(getCityAdministrativeDivision(options1)).toEqual(expectedData);
+    expect(getCityAdministrativeDivision(options2)).toEqual(expectedData);
+    expect(getCityAdministrativeDivision(options3)).toEqual(expectedData);
+    expect(getCityAdministrativeDivision(options4)).toEqual(expectedData);
   });
 });
 

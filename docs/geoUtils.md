@@ -12,7 +12,7 @@
 - [**getMunicipalities()**](#getMunicipalities)
 - [**getCities()**](#getCities)
 - [**getCityById()**](#getCityById)
-- [**getCityRelations()**](#getCityRelations)
+- [**getCityAdministrativeDivision()**](#getCityAdministrativeDivision)
 - [**getGeographicRegions()**](#getGeographicRegions)
 - [**getGeographicRegionById()**](#getGeographicRegionById)
 - [**getPrefectures()**](#getPrefectures)
@@ -313,7 +313,7 @@ The functions dealing with postal codes is listed below:
 
 ---
 
-### getCityRelations()<a id='getCityRelations'></a>
+### getCityAdministrativeDivision()<a id='getCityAdministrativeDivision'></a>
 
 **Description**: Retrieves city relations by its ID and entity.
 

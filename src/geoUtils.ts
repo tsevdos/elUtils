@@ -227,7 +227,7 @@ type CityRelations = Region | Unit | Municipality | Prefecture | undefined;
  * @param {("region"|"unit"|"municipality"|"prefecture")} options.entity - The type of related entity to retrieve.
  * @returns {Region|Unit|RegionWithoutUnits|Prefecture|undefined} - The related entity based on the specified type, or `undefined` if not found.
  */
-export function getCityRelations(options: FindByCityRelationsOptions): CityRelations {
+export function getCityAdministrativeDivision(options: FindByCityRelationsOptions): CityRelations {
   const { id, locale = "el", entity } = options;
   const city = getCityById({ id, locale });
 
