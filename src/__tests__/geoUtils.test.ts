@@ -21,6 +21,7 @@ import {
   getAllPostalCodes,
   getAllTaxOffices,
   getCities,
+  getCityById,
   getGeographicRegionById,
   getGeographicRegions,
   getMunicipalities,
@@ -497,6 +498,21 @@ describe("getCities", () => {
     const expectedData = cities.en;
     expect(getCities({ locale: "en" })).toStrictEqual(expectedData);
     expect(getCities({ locale: "en" }).length).toBe(51);
+  });
+});
+
+describe("getCityById", () => {
+  it("correctly returns city by id (in greek language)", () => {
+    const expectedData = cities.el[23];
+
+    expect(getCityById({ id: 24 })).toEqual(expectedData);
+    expect(getCityById({ id: 24, locale: "el" })).toEqual(expectedData);
+  });
+
+  it("correctly returns city by id (in english language)", () => {
+    const expectedData = cities.en[23];
+
+    expect(getCityById({ id: 24, locale: "en" })).toEqual(expectedData);
   });
 });
 

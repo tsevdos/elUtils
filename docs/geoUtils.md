@@ -11,6 +11,7 @@
 - [**getAdministrativeUnitById()**](#getAdministrativeUnitById)
 - [**getMunicipalities()**](#getMunicipalities)
 - [**getCities()**](#getCities)
+- [**getCityById()**](#getCityById)
 - [**getGeographicRegions()**](#getGeographicRegions)
 - [**getGeographicRegionById()**](#getGeographicRegionById)
 - [**getPrefectures()**](#getPrefectures)
@@ -119,6 +120,7 @@ Each city has the below `schema`.
 The functions dealing with the cities are listed below:
 
 - [**getCities()**](#getCities)
+- [**getCityById()**](#getCityById)
 
 ## [Geographic regions of Greece](https://en.wikipedia.org/wiki/Geographic_regions_of_Greece)<a id='geographic-regions'></a>
 
@@ -292,6 +294,21 @@ The functions dealing with postal codes is listed below:
 - **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
 
 **Return Type**: Array of `City` objects.
+
+---
+
+### getCityById()<a id='getCityById'></a>
+
+**Description**: Retrieves city by its ID.
+
+**Parameters:**
+
+**`options`**: An object specifying the options for retrieval.
+
+- **`id`**: The ID of the city.
+- **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
+
+**Return Type**: A `City` object.
 
 ---
 
