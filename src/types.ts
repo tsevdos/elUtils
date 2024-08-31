@@ -75,10 +75,10 @@ export type City = {
   name: string;
   coordinates: number[];
   relations: {
-    regionId?: number;
-    regionIso31662?: string;
-    unitId?: number;
-    municipalityId?: number;
-    prefectureId?: number;
+    regionId: number;
+    regionIso31662: string;
+    unitId: number;
+    municipalityId: number;
+    prefectureId: number;
   };
 };

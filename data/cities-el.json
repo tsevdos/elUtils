@@ -591,7 +591,13 @@
     "id": 50,
     "name": "Λειβαδιά",
     "coordinates": [22.877740551285445, 38.43495841393173],
-    "relations": {}
+    "relations": {
+      "regionId": -1,
+      "regionIso31662": "NONE",
+      "unitId": -1,
+      "municipalityId": -1,
+      "prefectureId": -1
+    }
   },
   {
     "id": 51,

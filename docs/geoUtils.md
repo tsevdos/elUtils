@@ -12,6 +12,7 @@
 - [**getMunicipalities()**](#getMunicipalities)
 - [**getCities()**](#getCities)
 - [**getCityById()**](#getCityById)
+- [**getCityRelations()**](#getCityRelations)
 - [**getGeographicRegions()**](#getGeographicRegions)
 - [**getGeographicRegionById()**](#getGeographicRegionById)
 - [**getPrefectures()**](#getPrefectures)
@@ -309,6 +310,22 @@ The functions dealing with postal codes is listed below:
 - **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
 
 **Return Type**: A `City` object.
+
+---
+
+### getCityRelations()<a id='getCityRelations'></a>
+
+**Description**: Retrieves city relations by its ID and entity.
+
+**Parameters:**
+
+**`options`**: An object specifying the options for retrieval.
+
+- **`id`**: The ID of the city.
+- **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
+- **`entity`**: The entity for the city relations data ("region" or "unit" or "municipality" or "prefecture").
+
+**Return Type**: A `Region | Unit | Municipality | Prefecture` object.
 
 ---
 

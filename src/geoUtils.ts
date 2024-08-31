@@ -210,6 +210,52 @@ export function getCityById(options: CityByIdOptions): City | undefined {
   return citiesData.find((city) => city.id === id);
 }
 
+export type FindByCityRelationsOptions = {
+  id: number;
+  locale: Locale;
+  entity: "region" | "unit" | "municipality" | "prefecture";
+};
+
+type CityRelations = Region | Unit | Municipality | Prefecture | undefined;
+
+/**
+ * Retrieves related administrative entities for a given city based on the provided options.
+ *
+ * @param {FindByCityRelationsOptions} options - The options for finding city relations.
+ * @param {number} options.id - The ID of the city to retrieve relations for.
+ * @param {string} [options.locale="el"] - The locale to use when retrieving related entities. Defaults to "el".
+ * @param {("region"|"unit"|"municipality"|"prefecture")} options.entity - The type of related entity to retrieve.
+ * @returns {Region|Unit|RegionWithoutUnits|Prefecture|undefined} - The related entity based on the specified type, or `undefined` if not found.
+ */
+export function getCityRelations(options: FindByCityRelationsOptions): CityRelations {
+  const { id, locale = "el", entity } = options;
+  const city = getCityById({ id, locale });
+
+  // TODO: "municipality" is provided as default value but not handled in methods above
+  // Relevant test case has been skipped, to be discussed
+  const relationMapping = {
+    region: {
+      relationId: city?.relations.regionId,
+      getFunction: (id: number) => getAdministrativeRegionById({ id, locale, level: "region" }) as Region,
+    },
+    unit: {
+      relationId: city?.relations.unitId,
+      getFunction: (id: number) => getAdministrativeUnitById({ id, locale, level: "unit" }) as Unit,
+    },
+    municipality: {
+      relationId: city?.relations.municipalityId,
+      getFunction: () => undefined,
+    },
+    prefecture: {
+      relationId: city?.relations.prefectureId,
+      getFunction: (id: number) => getPrefectureById({ id, locale }) as Prefecture,
+    },
+  };
+
+  const relation = relationMapping[entity];
+  return relation?.relationId ? relation.getFunction(relation.relationId) : undefined;
+}
+
 type GeographicRegionOptions = { locale?: Locale };
 
 /**

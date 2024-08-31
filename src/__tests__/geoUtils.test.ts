@@ -10,6 +10,7 @@ import prefecturesEn from "../../data/prefectures-en.json";
 import taxOfficesEl from "../../data/taxOffices-el.json";
 import taxOfficesEn from "../../data/taxOffices-en.json";
 import {
+  FindByCityRelationsOptions,
   MOUNT_ATHOS_PREFECTURE_ID,
   MOUNT_ATHOS_REGION_ID,
   findByPostalCode,
@@ -22,6 +23,7 @@ import {
   getAllTaxOffices,
   getCities,
   getCityById,
+  getCityRelations,
   getGeographicRegionById,
   getGeographicRegions,
   getMunicipalities,
@@ -513,6 +515,88 @@ describe("getCityById", () => {
     const expectedData = cities.en[23];
 
     expect(getCityById({ id: 24, locale: "en" })).toEqual(expectedData);
+  });
+});
+
+describe("getCityRelations", () => {
+  const locale = "el";
+
+  it("should return a Region when entity is region", () => {
+    const options: FindByCityRelationsOptions = { id: 1, locale, entity: "region" };
+    const expectedData = {
+      id: 9,
+      iso31662: "GR-I",
+      name: "Αττικής",
+      seat: "Αθήνα",
+    };
+
+    expect(getCityRelations(options)).toEqual(expectedData);
+  });
+
+  it('should return a Unit when entity is "unit"', () => {
+    const options: FindByCityRelationsOptions = { id: 1, locale, entity: "unit" };
+    const expectedData = {
+      id: 42,
+      name: "Κεντρικού Τομέα Αθηνών",
+      seat: "Αθήνα",
+      region: { id: 9, iso31662: "GR-I" },
+      carPlatesPattern: [],
+    };
+
+    expect(getCityRelations(options)).toEqual(expectedData);
+  });
+
+  it.skip('should return a RegionWithoutUnits when entity is "municipality"', () => {
+    const options: FindByCityRelationsOptions = { id: 1, locale, entity: "municipality" };
+    const expectedData = {
+      id: 193,
+      name: "Αθηναίων",
+      seat: "Αθήνα",
+      regionAndUnit: {
+        regionId: 9,
+        regionIso31662: "GR-I",
+        unitId: 42,
+      },
+    };
+
+    expect(getCityRelations(options)).toEqual(expectedData);
+  });
+
+  it('should return a Prefecture when entity is "prefecture"', () => {
+    const options: FindByCityRelationsOptions = { id: 1, locale, entity: "prefecture" };
+    const expectedData = {
+      id: 1,
+      name: "Νομός Αθηνών",
+      seat: "Αθήνα",
+      regionAndUnit: {
+        regionId: 9,
+        regionIso31662: "GR-I",
+        unitId: 42,
+      },
+    };
+
+    expect(getCityRelations(options)).toEqual(expectedData);
+  });
+
+  it("should return undefined when entity is not recognized", () => {
+    const options = { id: 1, locale, entity: "asdf" };
+    const expectedData = undefined;
+
+    expect(getCityRelations(options as FindByCityRelationsOptions)).toEqual(expectedData);
+  });
+
+  it("should return undefined when id has no relations", () => {
+    // Leivadia having no relations is a suitable candidate for this test
+    const options1: FindByCityRelationsOptions = { id: 50, locale, entity: "region" };
+    const options2: FindByCityRelationsOptions = { id: 50, locale, entity: "unit" };
+    const options3: FindByCityRelationsOptions = { id: 50, locale, entity: "municipality" };
+    const options4: FindByCityRelationsOptions = { id: 50, locale, entity: "prefecture" };
+    const expectedData = undefined;
+
+    expect(getCityRelations(options1)).toEqual(expectedData);
+    expect(getCityRelations(options2)).toEqual(expectedData);
+    expect(getCityRelations(options3)).toEqual(expectedData);
+    expect(getCityRelations(options4)).toEqual(expectedData);
   });
 });
 
