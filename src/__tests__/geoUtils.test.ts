@@ -1,34 +1,37 @@
 import administrativeRegionsEl from "../../data/administrative-regions-el.json";
 import administrativeRegionsEn from "../../data/administrative-regions-en.json";
+import citiesEl from "../../data/cities-el.json";
+import citiesEn from "../../data/cities-en.json";
 import geographicRegionsEl from "../../data/geographic-regions-el.json";
 import geographicRegionsEn from "../../data/geographic-regions-en.json";
+import postalCodes from "../../data/postal-codes.json";
 import prefecturesEl from "../../data/prefectures-el.json";
 import prefecturesEn from "../../data/prefectures-en.json";
-import postalCodes from "../../data/postal-codes.json";
 import taxOfficesEl from "../../data/taxOffices-el.json";
 import taxOfficesEn from "../../data/taxOffices-en.json";
 import {
-  MOUNT_ATHOS_REGION_ID,
   MOUNT_ATHOS_PREFECTURE_ID,
-  getAdministrativeRegions,
+  MOUNT_ATHOS_REGION_ID,
+  findByPostalCode,
   getAdministrativeRegionById,
   getAdministrativeRegionByIsoCode,
-  getAdministrativeUnits,
+  getAdministrativeRegions,
   getAdministrativeUnitById,
-  getMunicipalities,
-  getGeographicRegions,
-  getGeographicRegionById,
-  getPrefectures,
-  getPrefectureById,
+  getAdministrativeUnits,
   getAllPostalCodes,
-  findByPostalCode,
   getAllTaxOffices,
+  getCities,
+  getGeographicRegionById,
+  getGeographicRegions,
+  getMunicipalities,
+  getPrefectureById,
+  getPrefectures,
   getTaxOfficeById,
-  searchTaxOffice,
   getTaxOfficesByMunicipalityId,
+  getTaxOfficesByPostalCode,
   getTaxOfficesByRegionId,
   getTaxOfficesByUnitId,
-  getTaxOfficesByPostalCode,
+  searchTaxOffice,
 } from "../geoUtils";
 
 const administrativeRegions = { el: administrativeRegionsEl, en: administrativeRegionsEn };
@@ -36,6 +39,7 @@ const administrativeRegionsWithoutMountAthos = {
   el: administrativeRegions.el.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
   en: administrativeRegions.en.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
 };
+const cities = { el: citiesEl, en: citiesEn };
 const geographicRegions = { el: geographicRegionsEl, en: geographicRegionsEn };
 const prefectures = { el: prefecturesEl, en: prefecturesEn };
 export const prefecturesWithoutMountAthos = {
@@ -477,6 +481,22 @@ describe("getMunicipalities", () => {
 
     expect(getMunicipalities({ locale: "en" })).toStrictEqual(expectedData);
     expect(getMunicipalities({ locale: "en" }).length).toBe(332);
+  });
+});
+
+describe("getCities", () => {
+  it("correctly returns data with default values (in greek language)", () => {
+    const expectedData = cities.el;
+    expect(getCities()).toStrictEqual(expectedData);
+    // all default options
+    expect(getCities({ locale: "el" })).toStrictEqual(expectedData);
+    expect(getCities().length).toBe(51);
+  });
+
+  it("correctly returns data (in english language)", () => {
+    const expectedData = cities.en;
+    expect(getCities({ locale: "en" })).toStrictEqual(expectedData);
+    expect(getCities({ locale: "en" }).length).toBe(51);
   });
 });
 

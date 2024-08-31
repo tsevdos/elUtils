@@ -67,3 +67,18 @@ export type TaxOffice = {
   };
   postalCodes?: number[];
 };
+
+// TODO: Leivadia's relations object is empty that is why TS is complaining about
+// and made these properties optional
+export type City = {
+  id: number;
+  name: string;
+  coordinates: number[];
+  relations: {
+    regionId?: number;
+    regionIso31662?: string;
+    unitId?: number;
+    municipalityId?: number;
+    prefectureId?: number;
+  };
+};

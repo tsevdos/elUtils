@@ -1,22 +1,25 @@
-import { convertsGreekTextToComparableUpperCase } from "./languageUtils";
 import administrativeRegionsEl from "../data/administrative-regions-el.json";
 import administrativeRegionsEn from "../data/administrative-regions-en.json";
+import citiesEl from "../data/cities-el.json";
+import citiesEn from "../data/cities-en.json";
 import geographicRegionsEl from "../data/geographic-regions-el.json";
 import geographicRegionsEn from "../data/geographic-regions-en.json";
+import postalCodes from "../data/postal-codes.json";
 import prefecturesEl from "../data/prefectures-el.json";
 import prefecturesEn from "../data/prefectures-en.json";
-import postalCodes from "../data/postal-codes.json";
 import taxOfficesEl from "../data/taxOffices-el.json";
 import taxOfficesEn from "../data/taxOffices-en.json";
+import { convertsGreekTextToComparableUpperCase } from "./languageUtils";
 import {
+  City,
+  GeographicRegion,
+  Municipality,
+  Prefecture,
   Region,
   RegionWithoutUnits,
+  TaxOffice,
   Unit,
   UnitWithoutMunicipalities,
-  Municipality,
-  GeographicRegion,
-  Prefecture,
-  TaxOffice,
 } from "./types";
 
 export const MOUNT_ATHOS_REGION_ID = 14;
@@ -31,6 +34,11 @@ const administrativeRegionsWithoutMountAthos = {
   el: administrativeRegions.el.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
   en: administrativeRegions.en.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
 };
+
+const cities = {
+  el: citiesEl,
+  en: citiesEn,
+} as const;
 
 const geographicRegions = {
   el: geographicRegionsEl,
@@ -170,6 +178,19 @@ export function getMunicipalities({ locale = "el" }: MunicipalitiesOptions = {})
   ]);
 
   return municipalities;
+}
+
+type CitiesOptions = { locale?: Locale };
+
+/**
+ * Retrieves a list of cities based on the provided locale.
+ *
+ * @param {CitiesOptions} [options={}] - Options for fetching cities.
+ * @param {string} [options.locale="el"] - The locale to use when retrieving cities. Defaults to "el".
+ * @returns {City[]} - An array of cities for the specified locale.
+ */
+export function getCities({ locale = "el" }: CitiesOptions = {}): City[] {
+  return cities[locale];
 }
 
 type GeographicRegionOptions = { locale?: Locale };

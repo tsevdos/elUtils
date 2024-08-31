@@ -10,6 +10,7 @@
 - [**getAdministrativeUnits()**](#getAdministrativeUnits)
 - [**getAdministrativeUnitById()**](#getAdministrativeUnitById)
 - [**getMunicipalities()**](#getMunicipalities)
+- [**getCities()**](#getCities)
 - [**getGeographicRegions()**](#getGeographicRegions)
 - [**getGeographicRegionById()**](#getGeographicRegionById)
 - [**getPrefectures()**](#getPrefectures)
@@ -93,6 +94,31 @@ The functions dealing with the administrative regions (περιφέρειες) a
 - [**getAdministrativeUnits()**](#getAdministrativeUnits)
 - [**getAdministrativeUnitById()**](#getAdministrativeUnitById)
 - [**getMunicipalities()**](#getMunicipalities)
+
+## [Cities of Greece](https://en.wikipedia.org/wiki/Geographic_regions_of_Greece)<a id='cities'></a>
+
+Currently we have included 51 cities in total. The `relations` property links the old prefectures system and the current [**Kallikratis Programme**](https://en.wikipedia.org/wiki/Kallikratis_Programme).
+
+Each city has the below `schema`.
+
+```js
+ {
+    "id": 1,
+    "name": "Athens",
+    "coordinates": [23.726247807017884, 37.97521056577561],
+    "relations": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 42,
+      "municipalityId": 193,
+      "prefectureId": 1
+    }
+  }
+```
+
+The functions dealing with the cities are listed below:
+
+- [**getCities()**](#getCities)
 
 ## [Geographic regions of Greece](https://en.wikipedia.org/wiki/Geographic_regions_of_Greece)<a id='geographic-regions'></a>
 
@@ -252,6 +278,20 @@ The functions dealing with postal codes is listed below:
 - **`locale`** (optional, default: "el"): The locale for the municipality data ("el" for Greek, "en" for English).
 
 **Return Type**: Array of `Municipality` objects.
+
+---
+
+### getCities()<a id='getCities'></a>
+
+**Description**: Retrieves cities data.
+
+**Parameters:**
+
+**`options`**: An object specifying the options for retrieval.
+
+- **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
+
+**Return Type**: Array of `City` objects.
 
 ---
 
