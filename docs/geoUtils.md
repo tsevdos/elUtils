@@ -11,6 +11,7 @@
 - [**getAdministrativeUnitById()**](#getAdministrativeUnitById)
 - [**getMunicipalities()**](#getMunicipalities)
 - [**getCities()**](#getCities)
+- [**searchCityByName()**](#searchCityByName)
 - [**getCityById()**](#getCityById)
 - [**getCityAdministrativeDivision()**](#getCityAdministrativeDivision)
 - [**getGeographicRegions()**](#getGeographicRegions)
@@ -295,6 +296,21 @@ The functions dealing with postal codes is listed below:
 - **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
 
 **Return Type**: Array of `City` objects.
+
+---
+
+### searchCityByName()<a id='searchCityByName'></a>
+
+**Description**: Searches for cities by searchTerm in a specified locale.
+
+**Parameters:**
+
+**`options`**: An object specifying the options for retrieval.
+
+- **`searchTerm`**: The searchTerm with which we search through cities data.
+- **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
+
+**Return Type**: Array of `City` objects or null if nothing matches.
 
 ---
 

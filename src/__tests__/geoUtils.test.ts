@@ -34,6 +34,7 @@ import {
   getTaxOfficesByPostalCode,
   getTaxOfficesByRegionId,
   getTaxOfficesByUnitId,
+  searchCityByName,
   searchTaxOffice,
 } from "../geoUtils";
 
@@ -500,6 +501,216 @@ describe("getCities", () => {
     const expectedData = cities.en;
     expect(getCities({ locale: "en" })).toStrictEqual(expectedData);
     expect(getCities({ locale: "en" }).length).toBe(51);
+  });
+});
+
+describe("searchCityByName", () => {
+  it("should return 1 city that matches the search term 'Αθήνα' in Greek locale", () => {
+    // Call the method
+    const result = searchCityByName({ searchTerm: "Αθήνα", locale: "el" });
+    const expectedData = {
+      id: 1,
+      name: "Αθήνα",
+      coordinates: [23.726247807017884, 37.97521056577561],
+      relations: {
+        regionId: 9,
+        regionIso31662: "GR-I",
+        unitId: 42,
+        municipalityId: 193,
+        prefectureId: 1,
+      },
+    };
+
+    // Assertions
+    expect(result).toEqual([expectedData]);
+  });
+
+  it("should return 1 city that matches the search term 'athens' in English locale", () => {
+    // Call the method
+    const result = searchCityByName({ searchTerm: "athens", locale: "en" });
+    const expectedData = [
+      {
+        id: 1,
+        name: "Athens",
+        coordinates: [23.726247807017884, 37.97521056577561],
+        relations: {
+          regionId: 9,
+          regionIso31662: "GR-I",
+          unitId: 42,
+          municipalityId: 193,
+          prefectureId: 1,
+        },
+      },
+    ];
+
+    // Assertions
+    expect(result).toEqual(expectedData);
+  });
+
+  it("should return null when no cities match the search term 'Spartacus'", () => {
+    // Call the method with a non-matching search term
+    const result = searchCityByName({ searchTerm: "Spartacus", locale: "en" });
+
+    // Assertions
+    expect(result).toBeNull();
+  });
+
+  it("should return all 10 matching cities when there are multiple matches for search term 'os'", () => {
+    // Call the method
+    const result = searchCityByName({ searchTerm: "os", locale: "en" });
+    const expectedData = [
+      {
+        coordinates: [21.442708340507092, 37.672543519754875],
+        id: 9,
+        name: "Pyrgos",
+        relations: {
+          municipalityId: 143,
+          prefectureId: 50,
+          regionId: 7,
+          regionIso31662: "GR-G",
+          unitId: 34,
+        },
+      },
+      {
+        coordinates: [22.929678443624432, 37.93909792434953],
+        id: 10,
+        name: "Korinthos",
+        relations: {
+          municipalityId: 248,
+          prefectureId: 39,
+          regionId: 10,
+          regionIso31662: "GR-J",
+          unitId: 50,
+        },
+      },
+      {
+        coordinates: [20.89750593167611, 37.78816913748807],
+        id: 13,
+        name: "Zakynthos",
+        relations: {
+          municipalityId: 117,
+          prefectureId: 33,
+          regionId: 6,
+          regionIso31662: "GR-F",
+          unitId: 27,
+        },
+      },
+      {
+        coordinates: [20.4858289731687, 38.17813591215673],
+        id: 15,
+        name: "Argostoli",
+        relations: {
+          municipalityId: 122,
+          prefectureId: 31,
+          regionId: 6,
+          regionIso31662: "GR-F",
+          unitId: 29,
+        },
+      },
+      {
+        coordinates: [22.934181911197264, 39.36398741290451],
+        id: 21,
+        name: "Bolos",
+        relations: {
+          municipalityId: 107,
+          prefectureId: 46,
+          regionId: 5,
+          regionIso31662: "GR-E",
+          unitId: 24,
+        },
+      },
+      {
+        coordinates: [23.440219134217067, 40.37701865884807],
+        id: 35,
+        name: "Polygyros",
+        relations: {
+          municipalityId: 58,
+          prefectureId: 10,
+          regionId: 2,
+          regionIso31662: "GR-B",
+          unitId: 13,
+        },
+      },
+      {
+        coordinates: [28.227254271691837, 36.44321498471273],
+        id: 39,
+        name: "Rodos",
+        relations: {
+          municipalityId: 306,
+          prefectureId: 43,
+          regionId: 12,
+          regionIso31662: "GR-L",
+          unitId: 70,
+        },
+      },
+      {
+        coordinates: [26.97515562881134, 37.7590107428132],
+        id: 42,
+        name: "Samos",
+        relations: {
+          municipalityId: 270,
+          prefectureId: 36,
+          regionId: 11,
+          regionIso31662: "GR-K",
+          unitId: 56,
+        },
+      },
+      {
+        coordinates: [26.137369911811266, 38.36388010460335],
+        id: 43,
+        name: "Xios",
+        relations: {
+          municipalityId: 274,
+          prefectureId: 34,
+          regionId: 11,
+          regionIso31662: "GR-K",
+          unitId: 57,
+        },
+      },
+      {
+        coordinates: [25.716137398247188, 35.18997128171788],
+        id: 45,
+        name: "Agios Nikolaos",
+        relations: {
+          municipalityId: 319,
+          prefectureId: 19,
+          regionId: 13,
+          regionIso31662: "GR-M",
+          unitId: 72,
+        },
+      },
+    ];
+
+    // Assertions
+    expect(result).toEqual(expectedData);
+  });
+
+  it("should return all 3 matching cities when there are multiple matches for search term 'πολη'", () => {
+    // Call the method
+    const result = searchCityByName({ searchTerm: "πολη", locale: "el" });
+    const expectedData = [
+      {
+        coordinates: [22.373097659208483, 37.50979512133838],
+        id: 7,
+        name: "Τρίπολη",
+        relations: { municipalityId: 244, prefectureId: 37, regionId: 10, regionIso31662: "GR-J", unitId: 49 },
+      },
+      {
+        coordinates: [25.87239676796922, 40.84840593655441],
+        id: 36,
+        name: "Αλεξανδρούπολη",
+        relations: { municipalityId: 6, prefectureId: 22, regionId: 1, regionIso31662: "GR-A", unitId: 2 },
+      },
+      {
+        coordinates: [24.940125388382246, 37.442430072377526],
+        id: 40,
+        name: "Ερμούπολη",
+        relations: { municipalityId: 290, prefectureId: 42, regionId: 12, regionIso31662: "GR-L", unitId: 64 },
+      },
+    ];
+
+    // Assertions
+    expect(result).toEqual(expectedData);
   });
 });
 
