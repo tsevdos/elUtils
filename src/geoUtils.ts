@@ -210,17 +210,19 @@ type CityBySearchTermOptions = { searchTerm: string } & CitiesOptions;
  */
 export function searchCityByName({ searchTerm, locale = "el" }: CityBySearchTermOptions): City[] | null {
   const cities = getCities({ locale });
-  let citiesByName: City[];
+  let citiesByName: City[] = [];
 
   if (locale === "el") {
     citiesByName = cities.filter((city) =>
       convertsGreekTextToComparableUpperCase(city.name).includes(convertsGreekTextToComparableUpperCase(searchTerm)),
     );
-  } else {
+  }
+
+  if (locale === "en") {
     citiesByName = cities.filter((city) => city.name.toUpperCase().includes(searchTerm.toUpperCase()));
   }
 
-  return citiesByName.length === 0 ? null : citiesByName;
+  return citiesByName?.length ? citiesByName : null;
 }
 
 type CityByIdOptions = { id: number } & CitiesOptions;
@@ -241,12 +243,10 @@ export function getCityById(options: CityByIdOptions): City | undefined {
 }
 
 export type FindByCityRelationsOptions = {
-  id: number;
+  cityId: number;
   locale: Locale;
-  entity: "region" | "unit" | "municipality" | "prefecture";
+  entity: "region" | "unit" | "prefecture";
 };
-
-type CityRelations = Region | Unit | Municipality | Prefecture | undefined;
 
 /**
  * Retrieves related administrative entities for a given city based on the provided options.
@@ -257,33 +257,25 @@ type CityRelations = Region | Unit | Municipality | Prefecture | undefined;
  * @param {("region"|"unit"|"municipality"|"prefecture")} options.entity - The type of related entity to retrieve.
  * @returns {Region|Unit|RegionWithoutUnits|Prefecture|undefined} - The related entity based on the specified type, or `undefined` if not found.
  */
-export function getCityAdministrativeDivision(options: FindByCityRelationsOptions): CityRelations {
-  const { id, locale = "el", entity } = options;
-  const city = getCityById({ id, locale });
+export function getCityAdministrativeDivision(
+  options: FindByCityRelationsOptions,
+): Region | RegionWithoutUnits | Unit | UnitWithoutMunicipalities | Prefecture | undefined {
+  const { cityId, locale = "el", entity } = options;
+  const city = getCityById({ id: cityId, locale });
 
-  // TODO: "municipality" is provided as default value but not handled in methods above
-  // Relevant test case has been skipped, to be discussed
-  const relationMapping = {
-    region: {
-      relationId: city?.relations.regionId,
-      getFunction: (id: number) => getAdministrativeRegionById({ id, locale, level: "region" }) as Region,
-    },
-    unit: {
-      relationId: city?.relations.unitId,
-      getFunction: (id: number) => getAdministrativeUnitById({ id, locale, level: "unit" }) as Unit,
-    },
-    municipality: {
-      relationId: city?.relations.municipalityId,
-      getFunction: () => undefined,
-    },
-    prefecture: {
-      relationId: city?.relations.prefectureId,
-      getFunction: (id: number) => getPrefectureById({ id, locale }) as Prefecture,
-    },
-  };
+  if (entity === "region" && city) {
+    return getAdministrativeRegionById({ id: city.relations.regionId, locale, level: entity });
+  }
 
-  const relation = relationMapping[entity];
-  return relation?.relationId ? relation.getFunction(relation.relationId) : undefined;
+  if (entity === "unit" && city) {
+    return getAdministrativeUnitById({ id: city.relations.unitId, locale, level: entity });
+  }
+
+  if (entity === "prefecture" && city) {
+    return getPrefectureById({ id: city.relations.prefectureId, locale });
+  }
+
+  return undefined;
 }
 
 type GeographicRegionOptions = { locale?: Locale };

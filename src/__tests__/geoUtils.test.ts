@@ -10,7 +10,6 @@ import prefecturesEn from "../../data/prefectures-en.json";
 import taxOfficesEl from "../../data/taxOffices-el.json";
 import taxOfficesEn from "../../data/taxOffices-en.json";
 import {
-  FindByCityRelationsOptions,
   MOUNT_ATHOS_PREFECTURE_ID,
   MOUNT_ATHOS_REGION_ID,
   findByPostalCode,
@@ -490,45 +489,37 @@ describe("getMunicipalities", () => {
 
 describe("getCities", () => {
   it("correctly returns data with default values (in greek language)", () => {
-    const expectedData = cities.el;
-    expect(getCities()).toStrictEqual(expectedData);
-    // all default options
-    expect(getCities({ locale: "el" })).toStrictEqual(expectedData);
+    expect(getCities()).toStrictEqual(cities.el);
+    expect(getCities({ locale: "el" })).toStrictEqual(cities.el);
     expect(getCities().length).toBe(51);
   });
 
   it("correctly returns data (in english language)", () => {
-    const expectedData = cities.en;
-    expect(getCities({ locale: "en" })).toStrictEqual(expectedData);
+    expect(getCities({ locale: "en" })).toStrictEqual(cities.en);
     expect(getCities({ locale: "en" }).length).toBe(51);
   });
 });
 
 describe("searchCityByName", () => {
   it("should return 1 city that matches the search term 'Αθήνα' in Greek locale", () => {
-    // Call the method
-    const result = searchCityByName({ searchTerm: "Αθήνα", locale: "el" });
-    const expectedData = {
-      id: 1,
-      name: "Αθήνα",
-      coordinates: [23.726247807017884, 37.97521056577561],
-      relations: {
-        regionId: 9,
-        regionIso31662: "GR-I",
-        unitId: 42,
-        municipalityId: 193,
-        prefectureId: 1,
+    expect(searchCityByName({ searchTerm: "Αθήνα", locale: "el" })).toEqual([
+      {
+        id: 1,
+        name: "Αθήνα",
+        coordinates: [23.726247807017884, 37.97521056577561],
+        relations: {
+          regionId: 9,
+          regionIso31662: "GR-I",
+          unitId: 42,
+          municipalityId: 193,
+          prefectureId: 1,
+        },
       },
-    };
-
-    // Assertions
-    expect(result).toEqual([expectedData]);
+    ]);
   });
 
   it("should return 1 city that matches the search term 'athens' in English locale", () => {
-    // Call the method
-    const result = searchCityByName({ searchTerm: "athens", locale: "en" });
-    const expectedData = [
+    expect(searchCityByName({ searchTerm: "athens", locale: "en" })).toEqual([
       {
         id: 1,
         name: "Athens",
@@ -541,23 +532,14 @@ describe("searchCityByName", () => {
           prefectureId: 1,
         },
       },
-    ];
-
-    // Assertions
-    expect(result).toEqual(expectedData);
+    ]);
   });
 
   it("should return null when no cities match the search term 'Spartacus'", () => {
-    // Call the method with a non-matching search term
-    const result = searchCityByName({ searchTerm: "Spartacus", locale: "en" });
-
-    // Assertions
-    expect(result).toBeNull();
+    expect(searchCityByName({ searchTerm: "Spartacus", locale: "en" })).toBeNull();
   });
 
   it("should return all 10 matching cities when there are multiple matches for search term 'os'", () => {
-    // Call the method
-    const result = searchCityByName({ searchTerm: "os", locale: "en" });
     const expectedData = [
       {
         coordinates: [21.442708340507092, 37.672543519754875],
@@ -682,12 +664,10 @@ describe("searchCityByName", () => {
     ];
 
     // Assertions
-    expect(result).toEqual(expectedData);
+    expect(searchCityByName({ searchTerm: "os", locale: "en" })).toEqual(expectedData);
   });
 
   it("should return all 3 matching cities when there are multiple matches for search term 'πολη'", () => {
-    // Call the method
-    const result = searchCityByName({ searchTerm: "πολη", locale: "el" });
     const expectedData = [
       {
         coordinates: [22.373097659208483, 37.50979512133838],
@@ -710,22 +690,18 @@ describe("searchCityByName", () => {
     ];
 
     // Assertions
-    expect(result).toEqual(expectedData);
+    expect(searchCityByName({ searchTerm: "πολη", locale: "el" })).toEqual(expectedData);
   });
 });
 
 describe("getCityById", () => {
   it("correctly returns city by id (in greek language)", () => {
-    const expectedData = cities.el[23];
-
-    expect(getCityById({ id: 24 })).toEqual(expectedData);
-    expect(getCityById({ id: 24, locale: "el" })).toEqual(expectedData);
+    expect(getCityById({ id: 24 })).toEqual(cities.el[23]);
+    expect(getCityById({ id: 24, locale: "el" })).toEqual(cities.el[23]);
   });
 
   it("correctly returns city by id (in english language)", () => {
-    const expectedData = cities.en[23];
-
-    expect(getCityById({ id: 24, locale: "en" })).toEqual(expectedData);
+    expect(getCityById({ id: 24, locale: "en" })).toEqual(cities.en[23]);
   });
 });
 
@@ -733,49 +709,26 @@ describe("getCityAdministrativeDivision", () => {
   const locale = "el";
 
   it("should return a Region when entity is region", () => {
-    const options: FindByCityRelationsOptions = { id: 1, locale, entity: "region" };
-    const expectedData = {
+    expect(getCityAdministrativeDivision({ cityId: 1, locale, entity: "region" })).toEqual({
       id: 9,
       iso31662: "GR-I",
       name: "Αττικής",
       seat: "Αθήνα",
-    };
-
-    expect(getCityAdministrativeDivision(options)).toEqual(expectedData);
+    });
   });
 
   it('should return a Unit when entity is "unit"', () => {
-    const options: FindByCityRelationsOptions = { id: 1, locale, entity: "unit" };
-    const expectedData = {
+    expect(getCityAdministrativeDivision({ cityId: 1, locale, entity: "unit" })).toEqual({
       id: 42,
       name: "Κεντρικού Τομέα Αθηνών",
       seat: "Αθήνα",
       region: { id: 9, iso31662: "GR-I" },
       carPlatesPattern: [],
-    };
-
-    expect(getCityAdministrativeDivision(options)).toEqual(expectedData);
-  });
-
-  it.skip('should return a RegionWithoutUnits when entity is "municipality"', () => {
-    const options: FindByCityRelationsOptions = { id: 1, locale, entity: "municipality" };
-    const expectedData = {
-      id: 193,
-      name: "Αθηναίων",
-      seat: "Αθήνα",
-      regionAndUnit: {
-        regionId: 9,
-        regionIso31662: "GR-I",
-        unitId: 42,
-      },
-    };
-
-    expect(getCityAdministrativeDivision(options)).toEqual(expectedData);
+    });
   });
 
   it('should return a Prefecture when entity is "prefecture"', () => {
-    const options: FindByCityRelationsOptions = { id: 1, locale, entity: "prefecture" };
-    const expectedData = {
+    expect(getCityAdministrativeDivision({ cityId: 1, locale, entity: "prefecture" })).toEqual({
       id: 1,
       name: "Νομός Αθηνών",
       seat: "Αθήνα",
@@ -784,30 +737,11 @@ describe("getCityAdministrativeDivision", () => {
         regionIso31662: "GR-I",
         unitId: 42,
       },
-    };
-
-    expect(getCityAdministrativeDivision(options)).toEqual(expectedData);
+    });
   });
 
   it("should return undefined when entity is not recognized", () => {
-    const options = { id: 1, locale, entity: "asdf" };
-    const expectedData = undefined;
-
-    expect(getCityAdministrativeDivision(options as FindByCityRelationsOptions)).toEqual(expectedData);
-  });
-
-  it("should return undefined when id has no relations", () => {
-    // Leivadia having no relations is a suitable candidate for this test
-    const options1: FindByCityRelationsOptions = { id: 50, locale, entity: "region" };
-    const options2: FindByCityRelationsOptions = { id: 50, locale, entity: "unit" };
-    const options3: FindByCityRelationsOptions = { id: 50, locale, entity: "municipality" };
-    const options4: FindByCityRelationsOptions = { id: 50, locale, entity: "prefecture" };
-    const expectedData = undefined;
-
-    expect(getCityAdministrativeDivision(options1)).toEqual(expectedData);
-    expect(getCityAdministrativeDivision(options2)).toEqual(expectedData);
-    expect(getCityAdministrativeDivision(options3)).toEqual(expectedData);
-    expect(getCityAdministrativeDivision(options4)).toEqual(expectedData);
+    expect(getCityAdministrativeDivision({ cityId: 538, locale, entity: "region" })).toEqual(undefined);
   });
 });
 

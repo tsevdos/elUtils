@@ -592,11 +592,11 @@
     "name": "Λειβαδιά",
     "coordinates": [22.877740551285445, 38.43495841393173],
     "relations": {
-      "regionId": -1,
-      "regionIso31662": "NONE",
-      "unitId": -1,
-      "municipalityId": -1,
-      "prefectureId": -1
+      "regionId": 8,
+      "regionIso31662": "GR-H",
+      "unitId": 35,
+      "municipalityId": 151,
+      "prefectureId": 9
     }
   },
   {
