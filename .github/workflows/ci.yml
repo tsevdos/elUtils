@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [16, 18, 20, "latest"]
+        node: [18, 20, "latest"]
     name: Checking code changes in node version ➡️ ${{ matrix.node }} 💻
     steps:
       - name: Checkout code 📥
@@ -39,14 +39,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        bun: [1, "latest"]
+        bun: ["latest"]
     name: Checking code changes in bun version ➡️ ${{ matrix.bun }} 🍙
     steps:
       - name: Checkout code 📥
         uses: actions/checkout@v3
 
       - name: Install bun 🍙
-        uses: oven-sh/setup-bun@v1
+        uses: oven-sh/setup-bun@v2
         with:
           bun-version: ${{ matrix.bun }}
 
