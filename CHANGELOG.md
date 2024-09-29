@@ -1,5 +1,15 @@
 # @tsevdos/el-utils
 
+## 0.6.0
+
+### Minor Changes
+
+- [#83](https://github.com/tsevdos/elUtils/pull/83) [`e08601c`](https://github.com/tsevdos/elUtils/commit/e08601c8ccd6d0aee84ecb67349a407e762f61f3) Thanks [@arisGio](https://github.com/arisGio)! - feat(geoUtils): add greek cities functions
+
+### Patch Changes
+
+- [#85](https://github.com/tsevdos/elUtils/pull/85) [`d9903ae`](https://github.com/tsevdos/elUtils/commit/d9903ae26a0cabe094c636ef51c8907fb7a4ae95) Thanks [@tsevdos](https://github.com/tsevdos)! - update dependencies and fix bun github action
+
 ## 0.5.0
 
 ### Minor Changes
