@@ -1,22 +1,25 @@
-import { convertsGreekTextToComparableUpperCase } from "./languageUtils";
 import administrativeRegionsEl from "../data/administrative-regions-el.json";
 import administrativeRegionsEn from "../data/administrative-regions-en.json";
+import citiesEl from "../data/cities-el.json";
+import citiesEn from "../data/cities-en.json";
 import geographicRegionsEl from "../data/geographic-regions-el.json";
 import geographicRegionsEn from "../data/geographic-regions-en.json";
+import postalCodes from "../data/postal-codes.json";
 import prefecturesEl from "../data/prefectures-el.json";
 import prefecturesEn from "../data/prefectures-en.json";
-import postalCodes from "../data/postal-codes.json";
 import taxOfficesEl from "../data/taxOffices-el.json";
 import taxOfficesEn from "../data/taxOffices-en.json";
+import { convertsGreekTextToComparableUpperCase } from "./languageUtils";
 import {
+  City,
+  GeographicRegion,
+  Municipality,
+  Prefecture,
   Region,
   RegionWithoutUnits,
+  TaxOffice,
   Unit,
   UnitWithoutMunicipalities,
-  Municipality,
-  GeographicRegion,
-  Prefecture,
-  TaxOffice,
 } from "./types";
 
 export const MOUNT_ATHOS_REGION_ID = 14;
@@ -31,6 +34,11 @@ const administrativeRegionsWithoutMountAthos = {
   el: administrativeRegions.el.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
   en: administrativeRegions.en.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
 };
+
+const cities = {
+  el: citiesEl,
+  en: citiesEn,
+} as const;
 
 const geographicRegions = {
   el: geographicRegionsEl,
@@ -170,6 +178,104 @@ export function getMunicipalities({ locale = "el" }: MunicipalitiesOptions = {})
   ]);
 
   return municipalities;
+}
+
+type CitiesOptions = { locale?: Locale };
+
+/**
+ * Returns a list of cities based on the provided locale.
+ *
+ * @param {CitiesOptions} [options={}] - Options for fetching cities.
+ * @param {string} [options.locale="el"] - The locale to use when retrieving cities. Defaults to "el".
+ * @returns {City[]} - An array of cities for the specified locale.
+ */
+export function getCities({ locale = "el" }: CitiesOptions = {}): City[] {
+  return cities[locale];
+}
+
+type CityBySearchTermOptions = { searchTerm: string } & CitiesOptions;
+
+/**
+ * Searches for cities by name in a specified locale.
+ *
+ * This function filters cities based on the provided search term. For the Greek locale (`"el"`),
+ * it uses a specialized string comparison function to handle Greek-specific comparisons.
+ * For other locales, it performs a case-insensitive comparison.
+ *
+ * @param {CityBySearchTermOptions} options - The options for the search.
+ * @param {string} options.searchTerm - The term to search for in the city names.
+ * @param {string} [options.locale="el"] - The locale to search in (default is `"el"` for Greek).
+ *
+ * @returns {City[]|null} A list of cities that match the search term, or `null` if no matches are found.
+ */
+export function searchCityByName({ searchTerm, locale = "el" }: CityBySearchTermOptions): City[] | null {
+  const cities = getCities({ locale });
+  let citiesByName: City[] = [];
+
+  if (locale === "el") {
+    citiesByName = cities.filter((city) =>
+      convertsGreekTextToComparableUpperCase(city.name).includes(convertsGreekTextToComparableUpperCase(searchTerm)),
+    );
+  }
+
+  if (locale === "en") {
+    citiesByName = cities.filter((city) => city.name.toUpperCase().includes(searchTerm.toUpperCase()));
+  }
+
+  return citiesByName?.length ? citiesByName : null;
+}
+
+type CityByIdOptions = { id: number } & CitiesOptions;
+
+/**
+ * Returns a city by its ID based on the provided options.
+ *
+ * @param {CityByIdOptions} options - The options for fetching the city by ID.
+ * @param {number} options.id - The ID of the city to retrieve.
+ * @param {string} [options.locale="el"] - The locale to use when retrieving cities. Defaults to "el".
+ * @returns {City|undefined} - The city with the specified ID, or `undefined` if not found.
+ */
+export function getCityById(options: CityByIdOptions): City | undefined {
+  const { id, locale = "el" } = options;
+  const citiesData = getCities({ locale });
+
+  return citiesData.find((city) => city.id === id);
+}
+
+export type FindByCityRelationsOptions = {
+  cityId: number;
+  locale: Locale;
+  entity: "region" | "unit" | "prefecture";
+};
+
+/**
+ * Retrieves related administrative entities for a given city based on the provided options.
+ *
+ * @param {FindByCityRelationsOptions} options - The options for finding city relations.
+ * @param {number} options.id - The ID of the city to retrieve relations for.
+ * @param {string} [options.locale="el"] - The locale to use when retrieving related entities. Defaults to "el".
+ * @param {("region"|"unit"|"municipality"|"prefecture")} options.entity - The type of related entity to retrieve.
+ * @returns {Region|Unit|RegionWithoutUnits|Prefecture|undefined} - The related entity based on the specified type, or `undefined` if not found.
+ */
+export function getCityAdministrativeDivision(
+  options: FindByCityRelationsOptions,
+): Region | RegionWithoutUnits | Unit | UnitWithoutMunicipalities | Prefecture | undefined {
+  const { cityId, locale = "el", entity } = options;
+  const city = getCityById({ id: cityId, locale });
+
+  if (entity === "region" && city) {
+    return getAdministrativeRegionById({ id: city.relations.regionId, locale, level: entity });
+  }
+
+  if (entity === "unit" && city) {
+    return getAdministrativeUnitById({ id: city.relations.unitId, locale, level: entity });
+  }
+
+  if (entity === "prefecture" && city) {
+    return getPrefectureById({ id: city.relations.prefectureId, locale });
+  }
+
+  return undefined;
 }
 
 type GeographicRegionOptions = { locale?: Locale };

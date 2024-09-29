@@ -1,34 +1,40 @@
 import administrativeRegionsEl from "../../data/administrative-regions-el.json";
 import administrativeRegionsEn from "../../data/administrative-regions-en.json";
+import citiesEl from "../../data/cities-el.json";
+import citiesEn from "../../data/cities-en.json";
 import geographicRegionsEl from "../../data/geographic-regions-el.json";
 import geographicRegionsEn from "../../data/geographic-regions-en.json";
+import postalCodes from "../../data/postal-codes.json";
 import prefecturesEl from "../../data/prefectures-el.json";
 import prefecturesEn from "../../data/prefectures-en.json";
-import postalCodes from "../../data/postal-codes.json";
 import taxOfficesEl from "../../data/taxOffices-el.json";
 import taxOfficesEn from "../../data/taxOffices-en.json";
 import {
-  MOUNT_ATHOS_REGION_ID,
   MOUNT_ATHOS_PREFECTURE_ID,
-  getAdministrativeRegions,
+  MOUNT_ATHOS_REGION_ID,
+  findByPostalCode,
   getAdministrativeRegionById,
   getAdministrativeRegionByIsoCode,
-  getAdministrativeUnits,
+  getAdministrativeRegions,
   getAdministrativeUnitById,
-  getMunicipalities,
-  getGeographicRegions,
-  getGeographicRegionById,
-  getPrefectures,
-  getPrefectureById,
+  getAdministrativeUnits,
   getAllPostalCodes,
-  findByPostalCode,
   getAllTaxOffices,
+  getCities,
+  getCityAdministrativeDivision,
+  getCityById,
+  getGeographicRegionById,
+  getGeographicRegions,
+  getMunicipalities,
+  getPrefectureById,
+  getPrefectures,
   getTaxOfficeById,
-  searchTaxOffice,
   getTaxOfficesByMunicipalityId,
+  getTaxOfficesByPostalCode,
   getTaxOfficesByRegionId,
   getTaxOfficesByUnitId,
-  getTaxOfficesByPostalCode,
+  searchCityByName,
+  searchTaxOffice,
 } from "../geoUtils";
 
 const administrativeRegions = { el: administrativeRegionsEl, en: administrativeRegionsEn };
@@ -36,6 +42,7 @@ const administrativeRegionsWithoutMountAthos = {
   el: administrativeRegions.el.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
   en: administrativeRegions.en.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
 };
+const cities = { el: citiesEl, en: citiesEn };
 const geographicRegions = { el: geographicRegionsEl, en: geographicRegionsEn };
 const prefectures = { el: prefecturesEl, en: prefecturesEn };
 export const prefecturesWithoutMountAthos = {
@@ -477,6 +484,264 @@ describe("getMunicipalities", () => {
 
     expect(getMunicipalities({ locale: "en" })).toStrictEqual(expectedData);
     expect(getMunicipalities({ locale: "en" }).length).toBe(332);
+  });
+});
+
+describe("getCities", () => {
+  it("correctly returns data with default values (in greek language)", () => {
+    expect(getCities()).toStrictEqual(cities.el);
+    expect(getCities({ locale: "el" })).toStrictEqual(cities.el);
+    expect(getCities().length).toBe(51);
+  });
+
+  it("correctly returns data (in english language)", () => {
+    expect(getCities({ locale: "en" })).toStrictEqual(cities.en);
+    expect(getCities({ locale: "en" }).length).toBe(51);
+  });
+});
+
+describe("searchCityByName", () => {
+  it("should return 1 city that matches the search term 'Αθήνα' in Greek locale", () => {
+    expect(searchCityByName({ searchTerm: "Αθήνα", locale: "el" })).toEqual([
+      {
+        id: 1,
+        name: "Αθήνα",
+        coordinates: [23.726247807017884, 37.97521056577561],
+        relations: {
+          regionId: 9,
+          regionIso31662: "GR-I",
+          unitId: 42,
+          municipalityId: 193,
+          prefectureId: 1,
+        },
+      },
+    ]);
+  });
+
+  it("should return 1 city that matches the search term 'athens' in English locale", () => {
+    expect(searchCityByName({ searchTerm: "athens", locale: "en" })).toEqual([
+      {
+        id: 1,
+        name: "Athens",
+        coordinates: [23.726247807017884, 37.97521056577561],
+        relations: {
+          regionId: 9,
+          regionIso31662: "GR-I",
+          unitId: 42,
+          municipalityId: 193,
+          prefectureId: 1,
+        },
+      },
+    ]);
+  });
+
+  it("should return null when no cities match the search term 'Spartacus'", () => {
+    expect(searchCityByName({ searchTerm: "Spartacus", locale: "en" })).toBeNull();
+  });
+
+  it("should return all 10 matching cities when there are multiple matches for search term 'os'", () => {
+    const expectedData = [
+      {
+        coordinates: [21.442708340507092, 37.672543519754875],
+        id: 9,
+        name: "Pyrgos",
+        relations: {
+          municipalityId: 143,
+          prefectureId: 50,
+          regionId: 7,
+          regionIso31662: "GR-G",
+          unitId: 34,
+        },
+      },
+      {
+        coordinates: [22.929678443624432, 37.93909792434953],
+        id: 10,
+        name: "Korinthos",
+        relations: {
+          municipalityId: 248,
+          prefectureId: 39,
+          regionId: 10,
+          regionIso31662: "GR-J",
+          unitId: 50,
+        },
+      },
+      {
+        coordinates: [20.89750593167611, 37.78816913748807],
+        id: 13,
+        name: "Zakynthos",
+        relations: {
+          municipalityId: 117,
+          prefectureId: 33,
+          regionId: 6,
+          regionIso31662: "GR-F",
+          unitId: 27,
+        },
+      },
+      {
+        coordinates: [20.4858289731687, 38.17813591215673],
+        id: 15,
+        name: "Argostoli",
+        relations: {
+          municipalityId: 122,
+          prefectureId: 31,
+          regionId: 6,
+          regionIso31662: "GR-F",
+          unitId: 29,
+        },
+      },
+      {
+        coordinates: [22.934181911197264, 39.36398741290451],
+        id: 21,
+        name: "Bolos",
+        relations: {
+          municipalityId: 107,
+          prefectureId: 46,
+          regionId: 5,
+          regionIso31662: "GR-E",
+          unitId: 24,
+        },
+      },
+      {
+        coordinates: [23.440219134217067, 40.37701865884807],
+        id: 35,
+        name: "Polygyros",
+        relations: {
+          municipalityId: 58,
+          prefectureId: 10,
+          regionId: 2,
+          regionIso31662: "GR-B",
+          unitId: 13,
+        },
+      },
+      {
+        coordinates: [28.227254271691837, 36.44321498471273],
+        id: 39,
+        name: "Rodos",
+        relations: {
+          municipalityId: 306,
+          prefectureId: 43,
+          regionId: 12,
+          regionIso31662: "GR-L",
+          unitId: 70,
+        },
+      },
+      {
+        coordinates: [26.97515562881134, 37.7590107428132],
+        id: 42,
+        name: "Samos",
+        relations: {
+          municipalityId: 270,
+          prefectureId: 36,
+          regionId: 11,
+          regionIso31662: "GR-K",
+          unitId: 56,
+        },
+      },
+      {
+        coordinates: [26.137369911811266, 38.36388010460335],
+        id: 43,
+        name: "Xios",
+        relations: {
+          municipalityId: 274,
+          prefectureId: 34,
+          regionId: 11,
+          regionIso31662: "GR-K",
+          unitId: 57,
+        },
+      },
+      {
+        coordinates: [25.716137398247188, 35.18997128171788],
+        id: 45,
+        name: "Agios Nikolaos",
+        relations: {
+          municipalityId: 319,
+          prefectureId: 19,
+          regionId: 13,
+          regionIso31662: "GR-M",
+          unitId: 72,
+        },
+      },
+    ];
+
+    // Assertions
+    expect(searchCityByName({ searchTerm: "os", locale: "en" })).toEqual(expectedData);
+  });
+
+  it("should return all 3 matching cities when there are multiple matches for search term 'πολη'", () => {
+    const expectedData = [
+      {
+        coordinates: [22.373097659208483, 37.50979512133838],
+        id: 7,
+        name: "Τρίπολη",
+        relations: { municipalityId: 244, prefectureId: 37, regionId: 10, regionIso31662: "GR-J", unitId: 49 },
+      },
+      {
+        coordinates: [25.87239676796922, 40.84840593655441],
+        id: 36,
+        name: "Αλεξανδρούπολη",
+        relations: { municipalityId: 6, prefectureId: 22, regionId: 1, regionIso31662: "GR-A", unitId: 2 },
+      },
+      {
+        coordinates: [24.940125388382246, 37.442430072377526],
+        id: 40,
+        name: "Ερμούπολη",
+        relations: { municipalityId: 290, prefectureId: 42, regionId: 12, regionIso31662: "GR-L", unitId: 64 },
+      },
+    ];
+
+    // Assertions
+    expect(searchCityByName({ searchTerm: "πολη", locale: "el" })).toEqual(expectedData);
+  });
+});
+
+describe("getCityById", () => {
+  it("correctly returns city by id (in greek language)", () => {
+    expect(getCityById({ id: 24 })).toEqual(cities.el[23]);
+    expect(getCityById({ id: 24, locale: "el" })).toEqual(cities.el[23]);
+  });
+
+  it("correctly returns city by id (in english language)", () => {
+    expect(getCityById({ id: 24, locale: "en" })).toEqual(cities.en[23]);
+  });
+});
+
+describe("getCityAdministrativeDivision", () => {
+  const locale = "el";
+
+  it("should return a Region when entity is region", () => {
+    expect(getCityAdministrativeDivision({ cityId: 1, locale, entity: "region" })).toEqual({
+      id: 9,
+      iso31662: "GR-I",
+      name: "Αττικής",
+      seat: "Αθήνα",
+    });
+  });
+
+  it('should return a Unit when entity is "unit"', () => {
+    expect(getCityAdministrativeDivision({ cityId: 1, locale, entity: "unit" })).toEqual({
+      id: 42,
+      name: "Κεντρικού Τομέα Αθηνών",
+      seat: "Αθήνα",
+      region: { id: 9, iso31662: "GR-I" },
+      carPlatesPattern: [],
+    });
+  });
+
+  it('should return a Prefecture when entity is "prefecture"', () => {
+    expect(getCityAdministrativeDivision({ cityId: 1, locale, entity: "prefecture" })).toEqual({
+      id: 1,
+      name: "Νομός Αθηνών",
+      seat: "Αθήνα",
+      regionAndUnit: {
+        regionId: 9,
+        regionIso31662: "GR-I",
+        unitId: 42,
+      },
+    });
+  });
+
+  it("should return undefined when entity is not recognized", () => {
+    expect(getCityAdministrativeDivision({ cityId: 538, locale, entity: "region" })).toEqual(undefined);
   });
 });
 

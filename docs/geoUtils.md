@@ -10,6 +10,10 @@
 - [**getAdministrativeUnits()**](#getAdministrativeUnits)
 - [**getAdministrativeUnitById()**](#getAdministrativeUnitById)
 - [**getMunicipalities()**](#getMunicipalities)
+- [**getCities()**](#getCities)
+- [**searchCityByName()**](#searchCityByName)
+- [**getCityById()**](#getCityById)
+- [**getCityAdministrativeDivision()**](#getCityAdministrativeDivision)
 - [**getGeographicRegions()**](#getGeographicRegions)
 - [**getGeographicRegionById()**](#getGeographicRegionById)
 - [**getPrefectures()**](#getPrefectures)
@@ -93,6 +97,32 @@ The functions dealing with the administrative regions (περιφέρειες) a
 - [**getAdministrativeUnits()**](#getAdministrativeUnits)
 - [**getAdministrativeUnitById()**](#getAdministrativeUnitById)
 - [**getMunicipalities()**](#getMunicipalities)
+
+## [Cities of Greece](https://en.wikipedia.org/wiki/Geographic_regions_of_Greece)<a id='cities'></a>
+
+Currently we have included 51 cities in total. The `relations` property links the old prefectures system and the current [**Kallikratis Programme**](https://en.wikipedia.org/wiki/Kallikratis_Programme).
+
+Each city has the below `schema`.
+
+```js
+ {
+    "id": 1,
+    "name": "Athens",
+    "coordinates": [23.726247807017884, 37.97521056577561],
+    "relations": {
+      "regionId": 9,
+      "regionIso31662": "GR-I",
+      "unitId": 42,
+      "municipalityId": 193,
+      "prefectureId": 1
+    }
+  }
+```
+
+The functions dealing with the cities are listed below:
+
+- [**getCities()**](#getCities)
+- [**getCityById()**](#getCityById)
 
 ## [Geographic regions of Greece](https://en.wikipedia.org/wiki/Geographic_regions_of_Greece)<a id='geographic-regions'></a>
 
@@ -252,6 +282,66 @@ The functions dealing with postal codes is listed below:
 - **`locale`** (optional, default: "el"): The locale for the municipality data ("el" for Greek, "en" for English).
 
 **Return Type**: Array of `Municipality` objects.
+
+---
+
+### getCities()<a id='getCities'></a>
+
+**Description**: Retrieves cities data.
+
+**Parameters:**
+
+**`options`**: An object specifying the options for retrieval.
+
+- **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
+
+**Return Type**: Array of `City` objects.
+
+---
+
+### searchCityByName()<a id='searchCityByName'></a>
+
+**Description**: Searches for cities by searchTerm in a specified locale.
+
+**Parameters:**
+
+**`options`**: An object specifying the options for retrieval.
+
+- **`searchTerm`**: The searchTerm with which we search through cities data.
+- **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
+
+**Return Type**: Array of `City` objects or null if nothing matches.
+
+---
+
+### getCityById()<a id='getCityById'></a>
+
+**Description**: Retrieves city by its ID.
+
+**Parameters:**
+
+**`options`**: An object specifying the options for retrieval.
+
+- **`id`**: The ID of the city.
+- **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
+
+**Return Type**: A `City` object.
+
+---
+
+### getCityAdministrativeDivision()<a id='getCityAdministrativeDivision'></a>
+
+**Description**: Retrieves city relations by its ID and entity.
+
+**Parameters:**
+
+**`options`**: An object specifying the options for retrieval.
+
+- **`id`**: The ID of the city.
+- **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
+- **`entity`**: The entity for the city relations data ("region" or "unit" or "municipality" or "prefecture").
+
+**Return Type**: A `Region | Unit | Municipality | Prefecture` object.
 
 ---
 

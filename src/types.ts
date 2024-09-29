@@ -67,3 +67,16 @@ export type TaxOffice = {
   };
   postalCodes?: number[];
 };
+
+export type City = {
+  id: number;
+  name: string;
+  coordinates: number[];
+  relations: {
+    regionId: number;
+    regionIso31662: string;
+    unitId: number;
+    municipalityId: number;
+    prefectureId: number;
+  };
+};
