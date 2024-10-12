@@ -1,6 +1,6 @@
 import weightsData from "../data/weights.json";
 
-export type WeightTypes =
+type WeightTypes =
   | "pound"
   | "kilogram"
   | "centigram"
@@ -44,6 +44,18 @@ const withInternationalSymbol = (value: string, options: WithInternationalOption
   return value;
 };
 
+/**
+ * Formats a weight value based on the provided options.
+ *
+ * @param {number} value - The weight value to format.
+ * @param {FormatWeightsOptions} [options={}] - The options for formatting the weight.
+ * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
+ * @param {WeightTypes} [options.type="pound"] - The type of weight to format. Default is "pound".
+ * @param {"full" | "full_single" | "short"} [options.format="full"] - The format to use. Default is "full".
+ * @param {boolean} [options.withInternational=false] - Whether to include the international symbol. Default is false.
+ *
+ * @returns {string} - The formatted weight string.
+ */
 export const formatWeight = (value: number, options: FormatWeightsOptions = {}): string => {
   const { locale = "el", format = "full", type = "pound", withInternational = false } = options;
   let getFormat = format;

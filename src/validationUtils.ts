@@ -2,7 +2,9 @@ import postalCodes from "../data/postal-codes.json";
 
 /**
  * Validates the given postal code.
+ *
  * @param {string} postalCode - The postal code to validate.
+ *
  * @returns {boolean} `true` if the postal code is valid, `false` otherwise.
  */
 export function validatePostalCode(postalCode: string): boolean {
@@ -13,7 +15,9 @@ export function validatePostalCode(postalCode: string): boolean {
 
 /**
  * Validates the given AMKA (Social Security Number in Greece).
+ *
  * @param {string | number} amka - The AMKA to validate.
+ *
  * @returns {boolean} `true` if the AMKA number is valid, `false` otherwise.
  */
 export function validateAMKA(amka: string | number): boolean {
