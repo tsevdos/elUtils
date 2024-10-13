@@ -5,6 +5,10 @@ export {
   getAdministrativeUnits,
   getAdministrativeUnitById,
   getMunicipalities,
+  getCities,
+  searchCityByName,
+  getCityById,
+  getCityAdministrativeDivision,
   getGeographicRegions,
   getGeographicRegionById,
   getPrefectures,
@@ -22,3 +26,4 @@ export {
 export { getDays, getMonths, getQuarters, getEras, getHolidays } from "./dateUtils";
 export { validatePostalCode, validateAMKA } from "./validationUtils";
 export { formatWeight } from "./formatUtils";
+export { convertsGreekTextToComparableUpperCase, compareGreekStrings } from "./languageUtils";

@@ -9,7 +9,11 @@ type BaseDateTimeOptions = {
 
 /**
  * Returns the days based on the provided options.
- * @param {BaseDateTimeOptions} options - The options for locale and format.
+ *
+ * @param {BaseDateTimeOptions} [options={}] - The options for locale and format.
+ * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
+ * @param {Format} [options.format="full"] - The format to use. Default is "full".
+ *
  * @returns {string[]} The days in the specified locale and format.
  */
 export function getDays(options: BaseDateTimeOptions = {}) {
@@ -24,7 +28,11 @@ type MonthsBaseDateTimeOptions = Omit<BaseDateTimeOptions, "format"> & {
 
 /**
  * Returns the months based on the provided options.
- * @param {MonthsBaseDateTimeOptions} options - The options for locale and format.
+ *
+ * @param {MonthsBaseDateTimeOptions} [options={}] - The options for locale and format.
+ * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
+ * @param {Format | "alternative"} [options.format="full"] - The format to use. Default is "full".
+ *
  * @returns {string[]} The months in the specified locale and format.
  */
 export function getMonths(options: MonthsBaseDateTimeOptions = {}) {
@@ -39,7 +47,11 @@ type DateTimeOptionsWithoutMin = Omit<BaseDateTimeOptions, "format"> & {
 
 /**
  * Returns the quarters based on the provided options.
- * @param {DateTimeOptionsWithoutMin} options - The options for locale and format.
+ *
+ * @param {DateTimeOptionsWithoutMin} [options={}] - The options for locale and format.
+ * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
+ * @param {Exclude<Format, "min">} [options.format="full"] - The format to use. Default is "full".
+ *
  * @returns {string[]} The quarters in the specified locale and format.
  */
 export function getQuarters(options: DateTimeOptionsWithoutMin = {}) {
@@ -50,7 +62,11 @@ export function getQuarters(options: DateTimeOptionsWithoutMin = {}) {
 
 /**
  * Returns the eras based on the provided options.
- * @param {DateTimeOptionsWithoutMin} options - The options for locale and format.
+ *
+ * @param {DateTimeOptionsWithoutMin} [options={}] - The options for locale and format.
+ * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
+ * @param {Exclude<Format, "min">} [options.format="full"] - The format to use. Default is "full".
+ *
  * @returns {string[]} The eras in the specified locale and format.
  */
 export function getEras(options: DateTimeOptionsWithoutMin = {}) {
@@ -65,12 +81,14 @@ type Holiday = {
 };
 
 /**
- * Calculates movable Greek holidays based on the given year.
+ * Calculates movable Greek holidays based on the given year and locale.
+ *
  * @param {number} year - The year for which to calculate the holidays.
- * @returns {Holiday[]} An array of movable holiday objects.
+ * @param {string} [locale="el"] - The locale to use for holiday names. Default is "el".
+ *
+ * @returns {Holiday[]} An array of objects representing the movable holidays for the specified year and locale.
  */
 function calculateMovableGreekHolidays(year: number, locale: "el" | "en"): Holiday[] {
-  // TODO: better naming
   let e = 10;
 
   if (year > 1600) {
@@ -116,7 +134,11 @@ type GetHolidaysOptions = {
 
 /**
  * Gets Greek holidays for the given year, including both fixed and movable.
+ *
  * @param {string} year - The year for which to fetch the holidays.
+ * @param {GetHolidaysOptions} [options={}] - The options for locale.
+ * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
+ *
  * @returns {Holiday[]} An array of holiday objects.
  */
 export function getHolidays(year: string, options: GetHolidaysOptions = {}): Holiday[] {

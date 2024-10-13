@@ -122,7 +122,9 @@ Each city has the below `schema`.
 The functions dealing with the cities are listed below:
 
 - [**getCities()**](#getCities)
+- [**searchCityByName()**](#searchCityByName)
 - [**getCityById()**](#getCityById)
+- [**getCityAdministrativeDivision()**](#getCityAdministrativeDivision)
 
 ## [Geographic regions of Greece](https://en.wikipedia.org/wiki/Geographic_regions_of_Greece)<a id='geographic-regions'></a>
 

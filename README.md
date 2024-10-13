@@ -8,11 +8,6 @@ elUtils is a **zero-dependency** modern package, written in TypeScript, strongly
 
 Check all the [available functions here](#api) (by module category).
 
-<!--
-todo: runs on many JavaScript runtimes (such as node, deno and bun)
-https://paka.dev/npm/@tsevdos/el-utils@0.2.0/api
--->
-
 ## Installation
 
 ```shell
@@ -37,6 +32,10 @@ const { getAdministrativeRegions, getDays, ... } = require("@tsevdos/el-utils");
 console.log(getAdministrativeRegions());
 ```
 
+## Demo
+
+Check **all the available functions** on this [**code sandbox**](https://codesandbox.io/p/sandbox/elutils-demo-r8sphg).
+
 ## API<a id='api'></a>
 
 The library is currently split into the following modules:
@@ -49,12 +48,23 @@ The library is currently split into the following modules:
   - [getAdministrativeUnits()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getAdministrativeUnits)
   - [getAdministrativeUnitById()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getAdministrativeUnitById)
   - [getMunicipalities()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getMunicipalities)
+  - [getCities()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getCities)
+  - [searchCityByName()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#searchCityByName)
+  - [getCityById()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getCityById)
+  - [getCityAdministrativeDivision()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getCityAdministrativeDivision)
   - [getGeographicRegions()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getGeographicRegions)
   - [getGeographicRegionById()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getGeographicRegionById)
   - [getPrefectures()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getPrefectures)
   - [getPrefectureById()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getPrefectureById)
   - [getAllPostalCodes()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getAllPostalCodes)
   - [findByPostalCode()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#findByPostalCode)
+  - [getAllTaxOffices()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getAllTaxOffices)
+  - [getTaxOfficeById()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getTaxOfficeById)
+  - [getTaxOfficesByRegionId()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getTaxOfficesByRegionId)
+  - [getTaxOfficesByUnitId()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getTaxOfficesByUnitId)
+  - [getTaxOfficesByMunicipalityId()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getTaxOfficesByMunicipalityId)
+  - [getTaxOfficesByPostalCode()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getTaxOfficesByPostalCode)
+  - [searchTaxOffice()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#searchTaxOffice)
 
 - [**`validationUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/validationUtils.md)
 
@@ -86,4 +96,4 @@ If you like the project but just don't have time to contribute, that's fine. The
 
 ## License
 
-MIT© [John Tsevdos](http://tsevdos.me)
+MIT© [John Tsevdos](https://tsevdos.me)

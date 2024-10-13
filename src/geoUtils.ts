@@ -64,7 +64,9 @@ type AdministrativeRegionsOptions = {
 
 /**
  * Returns the administrative regions based on the provided options.
+ *
  * @param {AdministrativeRegionsOptions} options - The options for locale, whether to include Mount Athos and the level area ("region" | "unit" | "municipality") to retrieve
+ *
  * @returns {Region[] | RegionWithoutUnits[]} The administrative regions in the specified locale and the level area to retrieve.
  */
 export function getAdministrativeRegions({
@@ -94,7 +96,9 @@ type AdministrativeRegionByIdOptions = { id: number } & AdministrativeRegionsOpt
 
 /**
  * Returns the administrative region with the provided ID.
+ *
  * @param {AdministrativeRegionByIdOptions} options - The options for ID, locale, whether to include Mount Athos and the level area ("region" | "unit" | "municipality") to retrieve
+ *
  * @returns {Region | RegionWithoutUnits | undefined} The administrative region with the specified ID, or `undefined` if no such region exists.
  */
 export function getAdministrativeRegionById(
@@ -110,7 +114,9 @@ type AdministrativeRegionByIsoCodeOptions = { isocode: string } & Administrative
 
 /**
  * Returns the administrative region with the provided ISO code.
+ *
  * @param {AdministrativeRegionByIsoCodeOptions} options - The options for ISO code, locale, whether to include Mount Athos and the level area ("region" | "unit" | "municipality") to retrieve
+ *
  * @returns {Region | RegionWithoutUnits | undefined} The administrative region with the specified ISO code, or `undefined` if no such region exists.
  */
 export function getAdministrativeRegionByIsoCode(
@@ -130,7 +136,9 @@ type AdministrativeUnitsOptions = {
 
 /**
  * Returns the administrative units based on the provided options.
+ *
  * @param {AdministrativeUnitsOptions} options - The options for locale, whether to include Mount Athos, and the level area ("unit" | "municipality") to retrieve
+ *
  * @returns {Unit[] | UnitWithoutMunicipalities[]} The administrative units in the specified locale and level.
  */
 export function getAdministrativeUnits({
@@ -153,7 +161,9 @@ type AdministrativeUnitByIdOptions = { id: number } & AdministrativeUnitsOptions
 
 /**
  * Returns the administrative unit with the provided ID.
+ *
  * @param {AdministrativeUnitByIdOptions} options - The options for ID, locale, whether to include Mount Athos, and the level area ("unit" | "municipality") to retrieve
+ *
  * @returns {Unit | UnitWithoutMunicipalities | undefined} The administrative unit with the specified ID, or `undefined` if no such unit exists.
  */
 export function getAdministrativeUnitById(
@@ -169,7 +179,9 @@ type MunicipalitiesOptions = { locale?: Locale };
 
 /**
  * Returns the municipalities in the provided locale.
+ *
  * @param {MunicipalitiesOptions} options - The options for locale.
+ *
  * @returns {Municipality[]} The municipalities in the specified locale.
  */
 export function getMunicipalities({ locale = "el" }: MunicipalitiesOptions = {}): Municipality[] {
@@ -187,6 +199,7 @@ type CitiesOptions = { locale?: Locale };
  *
  * @param {CitiesOptions} [options={}] - Options for fetching cities.
  * @param {string} [options.locale="el"] - The locale to use when retrieving cities. Defaults to "el".
+ *
  * @returns {City[]} - An array of cities for the specified locale.
  */
 export function getCities({ locale = "el" }: CitiesOptions = {}): City[] {
@@ -233,6 +246,7 @@ type CityByIdOptions = { id: number } & CitiesOptions;
  * @param {CityByIdOptions} options - The options for fetching the city by ID.
  * @param {number} options.id - The ID of the city to retrieve.
  * @param {string} [options.locale="el"] - The locale to use when retrieving cities. Defaults to "el".
+ *
  * @returns {City|undefined} - The city with the specified ID, or `undefined` if not found.
  */
 export function getCityById(options: CityByIdOptions): City | undefined {
@@ -255,6 +269,7 @@ export type FindByCityRelationsOptions = {
  * @param {number} options.id - The ID of the city to retrieve relations for.
  * @param {string} [options.locale="el"] - The locale to use when retrieving related entities. Defaults to "el".
  * @param {("region"|"unit"|"municipality"|"prefecture")} options.entity - The type of related entity to retrieve.
+ *
  * @returns {Region|Unit|RegionWithoutUnits|Prefecture|undefined} - The related entity based on the specified type, or `undefined` if not found.
  */
 export function getCityAdministrativeDivision(
@@ -282,7 +297,9 @@ type GeographicRegionOptions = { locale?: Locale };
 
 /**
  * Returns the geographic regions in the provided locale.
+ *
  * @param {GeographicRegionOptions} options - The options for locale.
+ *
  * @returns {GeographicRegion[]} The geographic regions in the specified locale.
  */
 export function getGeographicRegions({ locale = "el" }: GeographicRegionOptions = {}): GeographicRegion[] {
@@ -293,7 +310,9 @@ type GeographicRegionByIdOptions = { id: number } & GeographicRegionOptions;
 
 /**
  * Returns the geographic region with the specific ID.
+ *
  * @param {GeographicRegionByIdOptions} options - The options for ID and locale.
+ *
  * @returns {GeographicRegion | undefined} The geographic region with the specified ID, or `undefined` if no such region exists.
  */
 export function getGeographicRegionById(options: GeographicRegionByIdOptions): GeographicRegion | undefined {
@@ -306,7 +325,9 @@ type PrefecturesOptions = { locale?: Locale; includeMountAthos?: boolean };
 
 /**
  * Returns the prefectures based on the provided options.
+ *
  * @param {PrefecturesOptions} options - The options for locale and whether to include Mount Athos.
+ *
  * @returns {Prefecture[]} The prefectures in the specified locale.
  */
 export function getPrefectures({ locale = "el", includeMountAthos = false }: PrefecturesOptions = {}): Prefecture[] {
@@ -319,7 +340,9 @@ type PrefectureByIdOptions = { id: number } & PrefecturesOptions;
 
 /**
  * Returns the prefecture with the provided ID.
+ *
  * @param {PrefectureByIdOptions} options - The options for ID, locale, and whether to include Mount Athos.
+ *
  * @returns {Prefecture | undefined} The prefecture with the specified ID, or `undefined` if no such prefecture exists.
  */
 export function getPrefectureById(options: PrefectureByIdOptions): Prefecture | undefined {
@@ -331,6 +354,7 @@ export function getPrefectureById(options: PrefectureByIdOptions): Prefecture | 
 
 /**
  * Returns all postal codes.
+ *
  * @returns {string[]} An array of all postal codes.
  */
 export function getAllPostalCodes(): string[] {
@@ -344,8 +368,10 @@ type FindByPostalCodeOptions = {
 
 /**
  * Returns the prefecture, region, or unit associated with the provided postal code.
+ *
  * @param {string} postalCode - The postal code to search for.
  * @param {FindByPostalCodeOptions} options - The options for locale and entity type.
+ *
  * @returns {Prefecture | Region | Unit | undefined} The prefecture, region, or unit associated with the postal code, or `undefined` if no such entity exists.
  */
 export function findByPostalCode(
@@ -382,8 +408,10 @@ type TaxOfficeOptions = { locale?: Locale };
 
 /**
  * This function returns all tax offices based on the provided locale.
+ *
  * @param {TaxOfficeOptions} [options={}] - An object that contains the locale option.
  * @param {string} [options.locale="el"] - The locale based on which the tax offices are returned. Default is "el".
+ *
  * @returns {TaxOffice[]} - An array of tax offices for the specified locale.
  */
 export function getAllTaxOffices({ locale = "el" }: TaxOfficeOptions = {}): TaxOffice[] {
@@ -394,9 +422,11 @@ type GetTaxOfficeByIdOptions = { id: number } & TaxOfficeOptions;
 
 /**
  * This function returns a tax office based on the provided id and locale.
+ *
  * @param {GetTaxOfficeByIdOptions} options - An object that contains the id and locale options.
  * @param {string} options.id - The id of the tax office to be returned.
  * @param {string} [options.locale="el"] - The locale based on which the tax office is returned. Default is "el".
+ *
  * @returns {TaxOffice | undefined} - The tax office with the specified id for the specified locale, or undefined if no such tax office exists.
  */
 export function getTaxOfficeById(options: GetTaxOfficeByIdOptions): TaxOffice | undefined {
@@ -411,9 +441,11 @@ type GetTaxOfficesByRegionIdOptions = {
 
 /**
  * This function returns all tax offices in a specific region based on the provided region id and locale.
+ *
  * @param {GetTaxOfficesByRegionIdOptions} options - An object that contains the region id and locale options.
  * @param {string} options.id - The id of the region for which tax offices are to be returned.
  * @param {string} [options.locale="el"] - The locale based on which the tax offices are returned. Default is "el".
+ *
  * @returns {TaxOffice[]} - An array of tax offices in the specified region for the specified locale.
  */
 export function getTaxOfficesByRegionId(options: GetTaxOfficesByRegionIdOptions): TaxOffice[] {
@@ -429,9 +461,11 @@ type GetTaxOfficesByUnitIdOptions = {
 
 /**
  * This function returns all tax offices associated with a specific regional unit based on the provided unit id and locale.
+ *
  * @param {GetTaxOfficesByUnitIdOptions} options - An object that contains the unit id and locale options.
  * @param {string} options.id - The id of the unit for which tax offices are to be returned.
  * @param {string} [options.locale="el"] - The locale based on which the tax offices are returned. Default is "el".
+ *
  * @returns {TaxOffice[]} - An array of tax offices associated with the specified unit for the specified locale.
  */
 export function getTaxOfficesByUnitId(options: GetTaxOfficesByUnitIdOptions): TaxOffice[] {
@@ -447,9 +481,11 @@ type GetTaxOfficesByMunicipalityIdOptions = {
 
 /**
  * This function returns all tax offices associated with a specific municipality based on the provided municipality id and locale.
+ *
  * @param {GetTaxOfficesByMunicipalityIdOptions} options - An object that contains the municipality id and locale options.
  * @param {string} options.id - The id of the municipality for which tax offices are to be returned.
  * @param {string} [options.locale="el"] - The locale based on which the tax offices are returned. Default is "el".
+ *
  * @returns {TaxOffice[]} - An array of tax offices associated with the specified municipality for the specified locale.
  */
 export function getTaxOfficesByMunicipalityId(options: GetTaxOfficesByMunicipalityIdOptions): TaxOffice[] {
