@@ -16,7 +16,7 @@ type BaseDateTimeOptions = {
  *
  * @returns {string[]} The days in the specified locale and format.
  */
-export function getDays(options: BaseDateTimeOptions = {}): string[] {
+export function getDays(options: BaseDateTimeOptions = {}) {
   const { locale = "el", format = "full" } = options;
 
   return datesData.days[locale][format];
@@ -35,7 +35,7 @@ type MonthsBaseDateTimeOptions = Omit<BaseDateTimeOptions, "format"> & {
  *
  * @returns {string[]} The months in the specified locale and format.
  */
-export function getMonths(options: MonthsBaseDateTimeOptions = {}): string[] {
+export function getMonths(options: MonthsBaseDateTimeOptions = {}) {
   const { locale = "el", format = "full" } = options;
 
   return datesData.months[locale][format];
@@ -54,7 +54,7 @@ type DateTimeOptionsWithoutMin = Omit<BaseDateTimeOptions, "format"> & {
  *
  * @returns {string[]} The quarters in the specified locale and format.
  */
-export function getQuarters(options: DateTimeOptionsWithoutMin = {}): string[] {
+export function getQuarters(options: DateTimeOptionsWithoutMin = {}) {
   const { locale = "el", format = "full" } = options;
 
   return datesData.quarters[locale][format];
@@ -69,7 +69,7 @@ export function getQuarters(options: DateTimeOptionsWithoutMin = {}): string[] {
  *
  * @returns {string[]} The eras in the specified locale and format.
  */
-export function getEras(options: DateTimeOptionsWithoutMin = {}): string[] {
+export function getEras(options: DateTimeOptionsWithoutMin = {}) {
   const { locale = "el", format = "full" } = options;
 
   return datesData.eras[locale][format];
@@ -80,6 +80,14 @@ type Holiday = {
   name: string;
 };
 
+/**
+ * Calculates movable Greek holidays based on the given year and locale.
+ *
+ * @param {number} year - The year for which to calculate the holidays.
+ * @param {string} [locale="el"] - The locale to use for holiday names. Default is "el".
+ *
+ * @returns {Holiday[]} An array of objects representing the movable holidays for the specified year and locale.
+ */
 function calculateMovableGreekHolidays(year: number, locale: "el" | "en"): Holiday[] {
   let e = 10;
 
