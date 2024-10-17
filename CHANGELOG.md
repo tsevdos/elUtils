@@ -1,5 +1,12 @@
 # @tsevdos/el-utils
 
+## 0.7.0
+
+### Minor Changes
+
+- [#87](https://github.com/tsevdos/elUtils/pull/87) [`45c0a9e`](https://github.com/tsevdos/elUtils/commit/45c0a9e9728018f368b3fcdfacfda70adf532106) Thanks [@tsevdos](https://github.com/tsevdos)! - - released functions: getCities, searchCityByName, getCityById, getCityAdministrativeDivision, convertsGreekTextToComparableUpperCase and compareGreekStrings.
+  - improved documentation and JSDoc.
+
 ## 0.6.0
 
 ### Minor Changes
