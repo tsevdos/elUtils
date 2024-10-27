@@ -1,4 +1,4 @@
-import { validatePostalCode, validateAMKA } from "../validationUtils";
+import { validateAMKA, validatePostalCode, validateVATNumber } from "../validationUtils";
 
 describe("validatePostalCode", () => {
   it("returns true on existing postal codes", () => {
@@ -50,5 +50,37 @@ describe("validateAMKA", () => {
     expect(validateAMKA("29022355553")).toBe(false);
     // 30th of February on non-leap years
     expect(validateAMKA("30022455551")).toBe(false);
+  });
+});
+
+describe("validateVATNumber", () => {
+  it("returns false for invalid afms", () => {
+    expect(validateVATNumber("12345678")).toBe(false);
+    expect(validateVATNumber("xxxxxxxx")).toBe(false);
+    expect(validateVATNumber("141212176")).toBe(false);
+    expect(validateVATNumber("111111111")).toBe(false);
+  });
+  it("returns true for valid afms", () => {
+    expect(validateVATNumber("011111111")).toBe(true);
+    expect(validateVATNumber("150892297")).toBe(true);
+    expect(validateVATNumber("126668921")).toBe(true);
+    expect(validateVATNumber("234893562")).toBe(true);
+    expect(validateVATNumber("126668921")).toBe(true);
+  });
+
+  it("works with int or string values", () => {
+    expect(validateVATNumber(111111111)).toBe(false);
+    expect(validateVATNumber(1111111111111)).toBe(false);
+    expect(validateVATNumber(1.1)).toBe(false);
+    expect(validateVATNumber(1.11111111)).toBe(false);
+    expect(validateVATNumber("xxxxxxxx")).toBe(false);
+    expect(validateVATNumber("141212176")).toBe(false);
+
+    expect(validateVATNumber("150892297")).toBe(true);
+    expect(validateVATNumber(150892297)).toBe(true);
+    expect(validateVATNumber(126668921)).toBe(true);
+    expect(validateVATNumber("126668921")).toBe(true);
+    expect(validateVATNumber(234893562)).toBe(true);
+    expect(validateVATNumber("234893562")).toBe(true);
   });
 });
