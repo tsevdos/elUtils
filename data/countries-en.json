@@ -51,7 +51,7 @@
     "id": "016",
     "name": "American Samoa",
     "complete name": "American Samoa",
-    "officialName": "The Territory of American Samoa",
+    "officialName": "American Samoa",
     "sovereignty": "United States",
     "iso31661": {
       "A2": "AS",
@@ -314,7 +314,7 @@
   {
     "id": "086",
     "name": "British Indian Ocean Territory",
-    "completeName": "British Indian Ocean Territory",
+    "completeName": "The British Indian Ocean Territory",
     "officialName": "The British Indian Ocean Territory",
     "sovereignty": "United Kingdom",
     "iso31661": {
@@ -477,7 +477,7 @@
       "A2": "CF",
       "A3": "CAF"
     },
-    "tld": ".kf"
+    "tld": ".cf"
   },
   {
     "id": "144",
@@ -570,8 +570,8 @@
     "officialName": "the Republic of Colombia",
     "sovereignty": "UN member",
     "iso31661": {
-      "A2": "CC",
-      "A3": "CCK"
+      "A2": "CO",
+      "A3": "COL"
     },
     "tld": ".co"
   },
@@ -625,15 +625,15 @@
   },
   {
     "id": "184",
-    "name": "Cook Islands (the)",
+    "name": "Cook Islands",
     "completeName": "The Cook Islands",
     "officialName": "The Democratic Republic of the Congo",
     "sovereignty": "UN member",
     "iso31661": {
-      "A2": "CD",
-      "A3": "COD"
+      "A2": "CK",
+      "A3": "COK"
     },
-    "tld": ".cd"
+    "tld": ".ck"
   },
   {
     "id": "188",
@@ -829,7 +829,7 @@
   },
   {
     "id": "238",
-    "name": "Falkland Islands (the) [Malvinas]",
+    "name": "Falkland Islands",
     "completeName": "The Malvinas Falkland Islands",
     "officialName": "The Falkland Islands",
     "sovereignty": "United Kingdom",
@@ -915,7 +915,7 @@
     "id": "258",
     "name": "French Polynesia",
     "completeName": "French Polynesia",
-    "officialName": "French Polynesia",
+    "officialName": "Overseas Lands of French Polynesia",
     "sovereignty": "France",
     "iso31661": {
       "A2": "PF",
@@ -926,7 +926,7 @@
   {
     "id": "260",
     "name": "French Southern Territories",
-    "completeName": "TheFrench Southern Territories",
+    "completeName": "The French Southern Territories",
     "officialName": "The French Southern and Antarctic Lands",
     "sovereignty": "France",
     "iso31661": {
@@ -1072,7 +1072,7 @@
     "name": "Grenada",
     "completeName": "Grenada",
     "officialName": "Grenada",
-    "sovereignty": "Denmark",
+    "sovereignty": "UN member",
     "iso31661": {
       "A2": "GD",
       "A3": "GRD"
@@ -1095,7 +1095,7 @@
     "id": "316",
     "name": "Guam",
     "completeName": "Guam",
-    "officialName": "The Territory of Guam",
+    "officialName": "Guam",
     "sovereignty": "United States",
     "iso31661": {
       "A2": "GU",
@@ -1110,10 +1110,10 @@
     "officialName": "The Republic of Guatemala",
     "sovereignty": "UN member",
     "iso31661": {
-      "A2": "GU",
-      "A3": "GUM"
+      "A2": "GT",
+      "A3": "GTM"
     },
-    "tld": ".gu"
+    "tld": ".gt"
   },
   {
     "id": "324",
@@ -1165,7 +1165,7 @@
   },
   {
     "id": "336",
-    "name": "Holy See (the)",
+    "name": "Holy See",
     "completeName": "The Holy See",
     "officialName": "The Holy See",
     "sovereignty": "UN observer",
@@ -1180,7 +1180,7 @@
     "name": "Honduras",
     "completeName": "Honduras",
     "officialName": "The Republic of Honduras",
-    "sovereignty": "UN observer",
+    "sovereignty": "UN member",
     "iso31661": {
       "A2": "HN",
       "A3": "HND"
@@ -1250,7 +1250,7 @@
   {
     "id": "364",
     "name": " Iran",
-    "completeName": "The Islamic Republic of Iran",
+    "completeName": "Islamic Republic of Iran",
     "officialName": "The Islamic Republic of Iran",
     "sovereignty": "UN member",
     "iso31661": {
@@ -1362,8 +1362,8 @@
     "officialName": "The Hashemite Kingdom of Jordan",
     "sovereignty": "UN member",
     "iso31661": {
-      "A2": "KZ",
-      "A3": "KAZ"
+      "A2": "JO",
+      "A3": "JOR"
     },
     "tld": ".jo"
   },
@@ -1381,7 +1381,7 @@
   },
   {
     "id": "408",
-    "name": "Korea (the Democratic People's Republic of)",
+    "name": "Korea",
     "completeName": "The Democratic People's Republic of Korea",
     "officialName": "The Democratic People's Republic of Korea",
     "sovereignty": "UN member",
@@ -1693,7 +1693,7 @@
   },
   {
     "id": "498",
-    "name": " Moldova (the Republic of)",
+    "name": " Moldova",
     "completeName": "The Republic of Moldova",
     "officialName": "The Republic of Moldova",
     "sovereignty": "UN member",
@@ -1815,7 +1815,7 @@
     "id": "531",
     "name": "Curacao",
     "completeName": "Curacao",
-    "officialName": "Country of Curacao",
+    "officialName": "The country of Curacao",
     "sovereignty": "Netherlands",
     "iso31661": {
       "A2": "CW",
@@ -1827,7 +1827,7 @@
     "id": "533",
     "name": "Aruba",
     "completeName": "Aruba",
-    "officialName": "Aruba",
+    "officialName": "The Country of Aruba",
     "sovereignty": "Netherlands",
     "iso31661": {
       "A2": "AW",
@@ -1909,7 +1909,7 @@
   },
   {
     "id": "562",
-    "name": "Niger (The)",
+    "name": "Niger",
     "completeName": "The Niger",
     "officialName": "The Republic of the Niger",
     "sovereignty": "UN member",
@@ -1983,7 +1983,7 @@
     "id": "581",
     "name": "United States Minor Outlying Islands",
     "completeName": "The United States Minor Outlying Islands",
-    "officialName": "Baker Island, Howland Island, Jarvis Island, Johnston Atoll, Kingman Reef, Midway Atoll, Navassa Island, Palmyra Atoll, and Wake Island[13]",
+    "officialName": "United States Pacific Island Wildlife Refuges, Navassa Island, and Wake Island",
     "sovereignty": "United States",
     "iso31661": {
       "A2": "UM",
@@ -1993,7 +1993,7 @@
   },
   {
     "id": "583",
-    "name": "Micronesia (Federated States of)",
+    "name": "Micronesia",
     "completeName": "Federated States of Micronesia",
     "officialName": "Federated States of Micronesia",
     "sovereignty": "UN member",
@@ -2055,7 +2055,7 @@
     "id": "598",
     "name": "Papua New Guinea",
     "completeName": "Papua New Guinea",
-    "officialName": "Independent State of Papua New Guinea",
+    "officialName": "The Independent State of Papua New Guinea",
     "sovereignty": "UN member",
     "iso31661": {
       "A2": "PG",
@@ -2089,7 +2089,7 @@
   },
   {
     "id": "608",
-    "name": "Philippines (the)",
+    "name": "Philippines",
     "completeName": "The Philippines",
     "officialName": "The Republic of the Philippines",
     "sovereignty": "UN member",
@@ -2115,7 +2115,7 @@
     "id": "616",
     "name": "Poland",
     "completeName": "Poland",
-    "officialName": "Republic of Poland",
+    "officialName": "The Republic of Poland",
     "sovereignty": "UN member",
     "iso31661": {
       "A2": "PL",
@@ -2211,7 +2211,7 @@
     "id": "643",
     "name": "Russian Federation",
     "completeName": "The Russian Federation",
-    "officialName": "Russian Federation",
+    "officialName": "The Russian Federation",
     "sovereignty": "UN member",
     "iso31661": {
       "A2": "RU",
@@ -2259,7 +2259,7 @@
     "id": "659",
     "name": "Saint Kitts and Nevis",
     "completeName": "Saint Kitts and Nevis",
-    "officialName": "Saint Kitts and Nevis",
+    "officialName": "The Federation of Saint Kitts and Nevis",
     "sovereignty": "UN member",
     "iso31661": {
       "A2": "KN",
@@ -2294,7 +2294,7 @@
   {
     "id": "663",
     "name": "Saint Martin",
-    "completeName": "Saint Martin",
+    "completeName": "Saint Martin(French part)",
     "officialName": "The Collectivity of Saint-Martin",
     "sovereignty": "France",
     "iso31661": {
@@ -2419,9 +2419,9 @@
     "sovereignty": "UN member",
     "iso31661": {
       "A2": "SG",
-      "A3": "SLE"
+      "A3": "SGP"
     },
-    "tld": ".sl"
+    "tld": ".sg"
   },
   {
     "id": "703",
@@ -2437,7 +2437,7 @@
   },
   {
     "id": "704",
-    "name": "Vietnam ",
+    "name": "Vietnam",
     "completeName": "Vietnam",
     "officialName": "The Socialist Republic of Vietnam",
     "sovereignty": "UN member",
@@ -2511,7 +2511,7 @@
     "id": "728",
     "name": "South Sudan",
     "completeName": "South Sudan",
-    "officialName": "the Republic of South Sudan",
+    "officialName": "The Republic of South Sudan",
     "sovereignty": "UN member",
     "iso31661": {
       "A2": "SS",
@@ -2529,7 +2529,7 @@
       "A2": "SD",
       "A3": "SDN"
     },
-    "tld": ".sdn"
+    "tld": ".sd"
   },
   {
     "id": "732",
@@ -2557,7 +2557,7 @@
   },
   {
     "id": "744",
-    "name": "Svalbard,Jan Mayen ",
+    "name": "Svalbard,Jan Mayen",
     "completeName": "Svalbard,Jan Mayen",
     "officialName": "Svalbard and Jan Mayen",
     "sovereignty": "Norway",
@@ -2634,16 +2634,16 @@
     "officialName": "The Kingdom of Thailand",
     "sovereignty": "UN member",
     "iso31661": {
-      "A2": "TJ",
-      "A3": "TJK"
+      "A2": "TH",
+      "A3": "THA"
     },
-    "tld": ".tj"
+    "tld": ".th"
   },
   {
     "id": "768",
     "name": "Togo",
     "completeName": "Togo",
-    "officialName": "the Togolese Republic",
+    "officialName": "The Togolese Republic",
     "sovereignty": "UN member",
     "iso31661": {
       "A2": "TG",
@@ -2979,7 +2979,7 @@
     "id": "894",
     "name": "Zambia",
     "completeName": "Zambia",
-    "officialName": "the Republic of Zambia",
+    "officialName": "The Republic of Zambia",
     "sovereignty": "Un member",
     "iso31661": {
       "A2": "ZM",
