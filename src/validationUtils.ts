@@ -76,11 +76,13 @@ export function validateAMKA(amka: string | number): boolean {
  *
  * @param {string | number} vatNumber - The VAT number to validate, provided as a string or a number.
  * @returns {boolean} - Returns `true` if the VAT number is valid according to the specified rules; otherwise, `false`.
+ *
+ * Reference:{@link https://lytrax.io/blog/projects/greek-tin-validator-generator  Greek TIN Validator Generator}
  */
-export function validateVATNumber(vatNumber: string | number): boolean {
-  vatNumber = String(vatNumber);
+export function validateVATNumber(vatNumberInput: string | number): boolean {
+  const vatNumber = String(vatNumberInput);
 
-  if (vatNumber.length != 9 || !/^\d+$/.test(vatNumber) || vatNumber === "0".repeat(9)) {
+  if (vatNumber.length !== 9 || !/^\d+$/.test(vatNumber) || vatNumber === "0".repeat(9)) {
     return false;
   }
 
