@@ -5,6 +5,7 @@
 ## Table of Contents
 
 - [**validatePostalCode()**](#validatePostalCode)
+- [**validateVATNumber()**](#validateVATNumber)
 - [**validateAMKA()**](#validateAMKA)
 
 ---
@@ -18,6 +19,16 @@
 **`postalCode`**: The postal code to validate.
 
 **Return Type**: Boolean indicating whether the postal code is valid.
+
+### validateVATNumber()<a id='validateVATNumber'></a>
+
+**Description**: Validates an a greek tax id / AFM (ΑΦΜ) .
+
+**Parameters:**
+
+**`VATNumber`**: The VAT Number to validate.
+
+**Return Type**: Boolean indicating whether the VAT Number is valid.
 
 ### validateAMKA()<a id='validateAMKA'></a>
 
