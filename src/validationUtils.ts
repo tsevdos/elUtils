@@ -114,7 +114,7 @@ export function validateVATNumber(vatNumberInput: string | number): boolean {
 export function isValidMobilePhone(mobilePhone: string): boolean {
   const mobilePhoneRegex = RegExp(/^(\+30|0030)?69\d{8}$/);
 
-  return mobilePhoneRegex.test(mobilePhone.replace(/[\s\-()\.]/g, ""));
+  return mobilePhoneRegex.test(mobilePhone.replace(/[\s\-().]/g, ""));
 }
 
 /**
@@ -136,7 +136,7 @@ export function isValidLandlinePhone(landLinePhone: string, withPrefix: boolean 
     ? new RegExp(`^(\\+30|0030)?(${areaCodePattern})\\d{7}$`)
     : new RegExp(`^(${areaCodePattern})\\d{7}$`);
 
-  const cleanedPhone = landLinePhone.replace(/[\s\-()\.]/g, "");
+  const cleanedPhone = landLinePhone.replace(/[\s\-().]/g, "");
 
   return landLinePhoneRegex.test(cleanedPhone);
 }
