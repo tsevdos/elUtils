@@ -7,6 +7,9 @@
 - [**validatePostalCode()**](#validatePostalCode)
 - [**validateVATNumber()**](#validateVATNumber)
 - [**validateAMKA()**](#validateAMKA)
+- [**isValidMobilePhone()**](#isValidMobilePhone)
+- [**isValidLandlinePhone()**](#isValidLandlinePhone)
+- [**isValidPhone()**](#isValidPhone)
 
 ---
 
