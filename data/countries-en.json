@@ -2,7 +2,7 @@
   {
     "id": "004",
     "name": "Afghanistan",
-    "complete name": "Afghanistan",
+    "completeName": "Afghanistan",
     "officialName": "The Islamic Republic of Afghanistan",
     "sovereignty": "UN member",
     "iso31661": {
@@ -14,7 +14,7 @@
   {
     "id": "008",
     "name": "Albania",
-    "complete name": "Albania",
+    "completeName": "Albania",
     "officialName": "The Republic of Albania",
     "sovereignty": "UN member",
     "iso31661": {
@@ -26,7 +26,7 @@
   {
     "id": "010",
     "name": "Antarctica",
-    "complete name": "Antarctica",
+    "completeName": "Antarctica",
     "officialName": "Antarctica",
     "sovereignty": "Antarctic Treaty",
     "iso31661": {
@@ -38,7 +38,7 @@
   {
     "id": "012",
     "name": "Algeria",
-    "complete name": "Algeria",
+    "completeName": "Algeria",
     "officialName": "The People's Democratic Republic of Algeria",
     "sovereignty": "UN member",
     "iso31661": {
@@ -50,7 +50,7 @@
   {
     "id": "016",
     "name": "American Samoa",
-    "complete name": "American Samoa",
+    "completeName": "American Samoa",
     "officialName": "American Samoa",
     "sovereignty": "United States",
     "iso31661": {
@@ -62,7 +62,7 @@
   {
     "id": "020",
     "name": "Andorra",
-    "complete name": "Andorra",
+    "completeName": "Andorra",
     "officialName": "The Principality of Andorra",
     "sovereignty": "UN member",
     "iso31661": {
@@ -74,7 +74,7 @@
   {
     "id": "024",
     "name": "Angola",
-    "complete name": "Angola",
+    "completeName": "Angola",
     "officialName": "The Republic of Angola",
     "sovereignty": "UN member",
     "iso31661": {
@@ -86,7 +86,7 @@
   {
     "id": "028",
     "name": "Antigua and Barbuda",
-    "complete name": "Antigua and Barbuda",
+    "completeName": "Antigua and Barbuda",
     "officialName": "Antigua and Barbuda",
     "sovereignty": "UN member",
     "iso31661": {
@@ -98,7 +98,7 @@
   {
     "id": "031",
     "name": "Azerbaijan",
-    "complete name": "Azerbaijan",
+    "completeName": "Azerbaijan",
     "officialName": "The Republic of Azerbaijan",
     "sovereignty": "UN member",
     "iso31661": {
@@ -110,7 +110,7 @@
   {
     "id": "032",
     "name": "Argentina",
-    "complete name": "Argentina",
+    "completeName": "Argentina",
     "officialName": "The Argentine Republic",
     "sovereignty": "UN member",
     "iso31661": {
@@ -122,7 +122,7 @@
   {
     "id": "036",
     "name": "Australia",
-    "complete name": "Australia",
+    "completeName": "Australia",
     "officialName": "The Commonwealth of Australia",
     "sovereignty": "UN member",
     "iso31661": {
@@ -134,7 +134,7 @@
   {
     "id": "040",
     "name": "Austria",
-    "complete name": "Austria",
+    "completeName": "Austria",
     "officialName": "The Republic of Austria",
     "sovereignty": "UN member",
     "iso31661": {
