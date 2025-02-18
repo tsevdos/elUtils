@@ -104,23 +104,37 @@ export function validateVATNumber(vatNumberInput: string | number): boolean {
 }
 
 /**
+ * Regex used to remove any special characters when filling in a phone number
+ */
+const PHONE_SANITIZE_REGEX = /[\s\-().]/g;
+
+/**
  * Validates if a given phone number is a Greek mobile phone number.
  *
- * @param {string} mobilePhone - The mobile phone number to validate.
+ * @param {string | number} mobilePhone - The mobile phone number to validate.
  * It may include special characters like spaces, dashes, parentheses, or dots, which will be ignored during validation.
  *
  * @returns {boolean} - Returns `true` if the phone number is a valid Greek mobile number; otherwise, `false`.
  */
-export function isValidMobilePhone(mobilePhone: string): boolean {
+export function isValidMobilePhone(mobilePhone: string | number): boolean {
+  let mobilePhoneStr: string;
   const mobilePhoneRegex = RegExp(/^(\+30|0030)?69\d{8}$/);
 
-  return mobilePhoneRegex.test(mobilePhone.replace(/[\s\-().]/g, ""));
+  if (typeof mobilePhone === "number") {
+    mobilePhoneStr = String(mobilePhone);
+  } else {
+    mobilePhoneStr = mobilePhone;
+  }
+
+  const mobilePhoneSanitized = mobilePhoneStr.replace(PHONE_SANITIZE_REGEX, "");
+
+  return mobilePhoneRegex.test(mobilePhoneSanitized);
 }
 
 /**
  * Validates if a given phone number is a Greek landline number.
  *
- * @param {string} landLinePhone - The landline phone number to validate.
+ * @param {string | number} landLinePhone - The landline phone number to validate.
  * It may include special characters like spaces, dashes, parentheses, or dots, which will be ignored during validation.
  *
  * @param {boolean} [withPrefix=true] - Indicates whether the phone number should include the country prefix (`+30` or `0030`).
@@ -129,16 +143,21 @@ export function isValidMobilePhone(mobilePhone: string): boolean {
  *
  * @returns {boolean} - Returns `true` if the phone number is a valid Greek landline number; otherwise, `false`.
  */
-export function isValidLandlinePhone(landLinePhone: string, withPrefix: boolean = true): boolean {
+export function isValidLandlinePhone(landLinePhone: string | number, withPrefix: boolean = true): boolean {
+  let landLinePhoneStr: string;
   const areaCodePattern = Object.values(areaCodes).join("|");
 
-  const landLinePhoneRegex = withPrefix
-    ? new RegExp(`^(\\+30|0030)?(${areaCodePattern})\\d{7}$`)
-    : new RegExp(`^(${areaCodePattern})\\d{7}$`);
+  if (typeof landLinePhone === "number") {
+    landLinePhoneStr = String(landLinePhone);
+  } else {
+    landLinePhoneStr = landLinePhone;
+  }
 
-  const cleanedPhone = landLinePhone.replace(/[\s\-().]/g, "");
+  const prefix = withPrefix ? "(\\+30|0030)?" : "";
+  const landLinePhoneRegex = RegExp(`^${prefix}(${areaCodePattern})\\d{7}$`);
+  const landlinePhoneSanitized = landLinePhoneStr.replace(PHONE_SANITIZE_REGEX, "");
 
-  return landLinePhoneRegex.test(cleanedPhone);
+  return landLinePhoneRegex.test(landlinePhoneSanitized);
 }
 
 /**
@@ -149,6 +168,6 @@ export function isValidLandlinePhone(landLinePhone: string, withPrefix: boolean 
  *
  * @returns {boolean} - Returns `true` if the phone number is a valid Greek mobile or landline number; otherwise, `false`.
  */
-export function isValidPhone(phone: string): boolean {
+export function isValidPhone(phone: string | number): boolean {
   return isValidMobilePhone(phone) || isValidLandlinePhone(phone);
 }
