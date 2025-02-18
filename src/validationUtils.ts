@@ -117,14 +117,8 @@ const PHONE_SANITIZE_REGEX = /[\s\-().]/g;
  * @returns {boolean} - Returns `true` if the phone number is a valid Greek mobile number; otherwise, `false`.
  */
 export function isValidMobilePhone(mobilePhone: string | number): boolean {
-  let mobilePhoneStr: string;
-  const mobilePhoneRegex = RegExp(/^(\+30|0030)?69\d{8}$/);
-
-  if (typeof mobilePhone === "number") {
-    mobilePhoneStr = String(mobilePhone);
-  } else {
-    mobilePhoneStr = mobilePhone;
-  }
+  const mobilePhoneStr = String(mobilePhone);
+  const mobilePhoneRegex = /^(\+30|0030)?69\d{8}$/;
 
   const mobilePhoneSanitized = mobilePhoneStr.replace(PHONE_SANITIZE_REGEX, "");
 
@@ -144,14 +138,8 @@ export function isValidMobilePhone(mobilePhone: string | number): boolean {
  * @returns {boolean} - Returns `true` if the phone number is a valid Greek landline number; otherwise, `false`.
  */
 export function isValidLandlinePhone(landLinePhone: string | number, withPrefix: boolean = true): boolean {
-  let landLinePhoneStr: string;
+  const landLinePhoneStr = String(landLinePhone);
   const areaCodePattern = Object.values(areaCodes).join("|");
-
-  if (typeof landLinePhone === "number") {
-    landLinePhoneStr = String(landLinePhone);
-  } else {
-    landLinePhoneStr = landLinePhone;
-  }
 
   const prefix = withPrefix ? "(\\+30|0030)?" : "";
   const landLinePhoneRegex = RegExp(`^${prefix}(${areaCodePattern})\\d{7}$`);
