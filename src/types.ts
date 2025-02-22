@@ -80,3 +80,16 @@ export type City = {
     prefectureId: number;
   };
 };
+
+export type Country = {
+  id: string;
+  name: string;
+  completeName: string;
+  officialName: string;
+  sovereignty: string;
+  iso31661: {
+    A2: string;
+    A3: string;
+  };
+  tld: string;
+};

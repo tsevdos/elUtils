@@ -10,8 +10,11 @@ import prefecturesEn from "../data/prefectures-en.json";
 import taxOfficesEl from "../data/taxOffices-el.json";
 import taxOfficesEn from "../data/taxOffices-en.json";
 import { convertsGreekTextToComparableUpperCase } from "./languageUtils";
+import countriesEl from "../data/countries-el.json";
+import countriesEn from "../data/countries-en.json";
 import {
   City,
+  Country,
   GeographicRegion,
   Municipality,
   Prefecture,
@@ -53,6 +56,8 @@ const prefecturesWithoutMountAthos = {
 };
 
 const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
+
+const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 type Locale = "el" | "en";
 
@@ -256,7 +261,7 @@ export function getCityById(options: CityByIdOptions): City | undefined {
   return citiesData.find((city) => city.id === id);
 }
 
-export type FindByCityRelationsOptions = {
+type CityAdministrativeDivisionOptions = {
   cityId: number;
   locale: Locale;
   entity: "region" | "unit" | "prefecture";
@@ -265,7 +270,7 @@ export type FindByCityRelationsOptions = {
 /**
  * Retrieves related administrative entities for a given city based on the provided options.
  *
- * @param {FindByCityRelationsOptions} options - The options for finding city relations.
+ * @param {CityAdministrativeDivisionOptions} options - The options for finding city relations.
  * @param {number} options.id - The ID of the city to retrieve relations for.
  * @param {string} [options.locale="el"] - The locale to use when retrieving related entities. Defaults to "el".
  * @param {("region"|"unit"|"municipality"|"prefecture")} options.entity - The type of related entity to retrieve.
@@ -273,7 +278,7 @@ export type FindByCityRelationsOptions = {
  * @returns {Region|Unit|RegionWithoutUnits|Prefecture|undefined} - The related entity based on the specified type, or `undefined` if not found.
  */
 export function getCityAdministrativeDivision(
-  options: FindByCityRelationsOptions,
+  options: CityAdministrativeDivisionOptions,
 ): Region | RegionWithoutUnits | Unit | UnitWithoutMunicipalities | Prefecture | undefined {
   const { cityId, locale = "el", entity } = options;
   const city = getCityById({ id: cityId, locale });
@@ -528,10 +533,96 @@ type TaxOfficeOptionsByTerm = { searchTerm: string } & TaxOfficeOptions;
  */
 export function searchTaxOffice(options: TaxOfficeOptionsByTerm): TaxOffice[] {
   const { searchTerm, locale = "el" } = options;
+
   if (searchTerm.trim() === "") return [];
+
   const normalizedTerm = convertsGreekTextToComparableUpperCase(searchTerm);
 
   return allTaxOffices[locale].filter(({ name }) =>
     convertsGreekTextToComparableUpperCase(name).includes(normalizedTerm),
   );
+}
+
+type CountriesOptions = {
+  locale?: Locale;
+};
+
+/**
+ * This function returns all the countries based on the provided options.
+ *
+ * @param {CountriesOptions} [options={}] - The options for the countries.
+ * @param {string} [options.locale="el"] - The locale to use. Default is "el".
+ *
+ * @returns {Country[]} The countries that match the given options, or all countries if no options are provided.
+ */
+export function getCountries({ locale = "el" }: CountriesOptions = {}): Country[] {
+  return allCountries[locale];
+}
+
+type SearchCountryByNameOptions = {
+  locale?: Locale;
+  searchTerm: string;
+};
+
+/**
+ * This function searches for countries by name based on the provided options.
+ *
+ * @param {SearchCountryByNameOptions} options - The options for searching countries by name.
+ * @param {string} [options.locale="el"] - The locale to use. Default is "el".
+ * @param {string} options.searchTerm - The term to search for in country names.
+ *
+ * @returns {Country[] | null} The countries that match the search term, or null if no matches are found.
+ */
+export function searchCountryByName({ locale = "el", searchTerm }: SearchCountryByNameOptions): Country[] | null {
+  const countries = getCountries({ locale });
+  let countriesByName: Country[] = [];
+
+  if (locale === "el") {
+    countriesByName = countries.filter(({ name, completeName, officialName }) => {
+      return (
+        convertsGreekTextToComparableUpperCase(name).includes(convertsGreekTextToComparableUpperCase(searchTerm)) ||
+        convertsGreekTextToComparableUpperCase(completeName).includes(
+          convertsGreekTextToComparableUpperCase(searchTerm),
+        ) ||
+        convertsGreekTextToComparableUpperCase(officialName).includes(
+          convertsGreekTextToComparableUpperCase(searchTerm),
+        )
+      );
+    });
+  }
+
+  if (locale === "en") {
+    countriesByName = countries.filter(({ name, completeName, officialName }) => {
+      return (
+        name.toUpperCase().includes(searchTerm.toUpperCase()) ||
+        completeName.toUpperCase().includes(searchTerm.toUpperCase()) ||
+        officialName.toUpperCase().includes(searchTerm.toUpperCase())
+      );
+    });
+  }
+
+  return countriesByName?.length ? countriesByName : null;
+}
+
+type GetCountryOptions = {
+  locale?: Locale;
+  type: "id" | "iso31661-a2" | "iso31661-a3" | "tld";
+  value: string;
+};
+
+export function getCountry({ locale = "el", type = "id", value = "" }: GetCountryOptions): Country | null {
+  const countries = getCountries({ locale });
+
+  switch (type) {
+    case "id":
+      return countries.find((country) => country.id === value) ?? null;
+    case "iso31661-a2":
+      return countries.find((country) => country.iso31661.A2 === value) ?? null;
+    case "iso31661-a3":
+      return countries.find((country) => country.iso31661.A3 === value) ?? null;
+    case "tld":
+      return countries.find((country) => country.tld === value) ?? null;
+    default:
+      return null;
+  }
 }
