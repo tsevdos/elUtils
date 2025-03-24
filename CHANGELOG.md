@@ -1,5 +1,15 @@
 # @tsevdos/el-utils
 
+## 0.8.0
+
+### Minor Changes
+
+- [#98](https://github.com/tsevdos/elUtils/pull/98) [`de007af`](https://github.com/tsevdos/elUtils/commit/de007af94f1c95e4797d20c4b76ce935cf7e889b) Thanks [@tsevdos](https://github.com/tsevdos)! - add phone validation function (isValidMobilePhone, isValidLandlinePhone and isValidPhone)
+
+- [#98](https://github.com/tsevdos/elUtils/pull/98) [`de007af`](https://github.com/tsevdos/elUtils/commit/de007af94f1c95e4797d20c4b76ce935cf7e889b) Thanks [@tsevdos](https://github.com/tsevdos)! - add validateVATNumber function
+
+- [#98](https://github.com/tsevdos/elUtils/pull/98) [`de007af`](https://github.com/tsevdos/elUtils/commit/de007af94f1c95e4797d20c4b76ce935cf7e889b) Thanks [@tsevdos](https://github.com/tsevdos)! - add countries-related functions (getCountries, searchCountryByName and getCountry)
+
 ## 0.7.0
 
 ### Minor Changes
