@@ -2,4 +2,4 @@
 "@tsevdos/el-utils": minor
 ---
 
-add contries-related functions (getCountries, searchCountryByName and getCountry)
+add countries-related functions (getCountries, searchCountryByName and getCountry)
