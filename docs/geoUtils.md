@@ -27,6 +27,9 @@
 - [**getTaxOfficesByMunicipalityId()**](#getTaxOfficesByMunicipalityId)
 - [**getTaxOfficesByPostalCode()**](#getTaxOfficesByPostalCode)
 - [**searchTaxOffice()**](#searchTaxOffice)
+- [**getCountries()**](#getCountries)
+- [**searchCountryByName()**](#searchCountryByName)
+- [**getCountry()**](#getCountry)
 
 ## Regions explanation
 
@@ -537,3 +540,52 @@ none
 - **`locale`** (default: "el"): The locale for the retrieved tax offices.
 
 **Return Type**: An array of `TaxOffice` objects that match the given search term, or an empty array if nothing matches.
+
+---
+
+### getCountries()<a id='getCountries'></a>
+
+**Description**: Retrieves countries data.
+
+**Parameters:**
+
+**`options`** (optional): An object specifying options for retrieval.
+
+- **`locale`** (default: "el"): The locale for the retrieved countries.
+
+**Return Type**: An array of `Country` objects.
+
+---
+
+### searchCountryByName()<a id='searchCountryByName'></a>
+
+**Description**: Searches for countries by name based on a search term.
+
+**Parameters:**
+
+**`options`** (required): An object specifying options for the search.
+
+- **`searchTerm`** (required): The term to search for in country names.
+- **`locale`** (default: "el"): The locale for the search.
+
+**Return Type**: An array of `Country` objects or null if no matches are found.
+
+---
+
+### getCountry()<a id='getCountry'></a>
+
+**Description**: Retrieves a specific country based on the provided identifier type and value.
+
+**Parameters:**
+
+**`options`** (required): An object specifying options for retrieval.
+
+- **`locale`** (default: "el"): The locale for the retrieved country.
+- **`type`** (required): The type of identifier to use. Valid options are:
+  - `"id"`: Match by country ID
+  - `"iso31661-a2"`: Match by ISO 3166-1 alpha-2 code
+  - `"iso31661-a3"`: Match by ISO 3166-1 alpha-3 code
+  - `"tld"`: Match by top-level domain
+- **`value`** (required): The value to match with the specified identifier type.
+
+**Return Type**: A `Country` object if a match is found, or null if not found.

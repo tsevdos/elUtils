@@ -52,6 +52,9 @@ The library is currently split into the following modules:
   - [searchCityByName()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#searchCityByName)
   - [getCityById()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getCityById)
   - [getCityAdministrativeDivision()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getCityAdministrativeDivision)
+  - [getCountries()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getCountries)
+  - [getCountry()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getCountry)
+  - [searchCountryByName()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#searchCountryByName)
   - [getGeographicRegions()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getGeographicRegions)
   - [getGeographicRegionById()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getGeographicRegionById)
   - [getPrefectures()](https://github.com/tsevdos/elUtils/blob/main/docs/geoUtils.md#getPrefectures)
@@ -69,7 +72,11 @@ The library is currently split into the following modules:
 - [**`validationUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/validationUtils.md)
 
   - [validatePostalCode()](https://github.com/tsevdos/elUtils/blob/main/docs/validationUtils.md#validatePostalCode)
+  - [validateVATNumber()](https://github.com/tsevdos/elUtils/blob/main/docs/validationUtils.md#validateVATNumber)
   - [validateAMKA()](https://github.com/tsevdos/elUtils/blob/main/docs/validationUtils.md#validateAMKA)
+  - [isValidMobilePhone()](https://github.com/tsevdos/elUtils/blob/main/docs/validationUtils.md#isValidMobilePhone)
+  - [isValidLandlinePhone()](https://github.com/tsevdos/elUtils/blob/main/docs/validationUtils.md#isValidLandlinePhone)
+  - [isValidPhone()](https://github.com/tsevdos/elUtils/blob/main/docs/validationUtils.md#isValidPhone)
 
 - [**`dateUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/dateUtils.md)
 
@@ -82,6 +89,11 @@ The library is currently split into the following modules:
 - [**`formatUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/formatUtils.md)
 
   - [formatWeight()](https://github.com/tsevdos/elUtils/blob/main/docs/formatUtils.md#formatWeight)
+
+- [**`languageUtils`**](https://github.com/tsevdos/elUtils/blob/main/docs/languageUtils.md)
+
+  - [convertsGreekTextToComparableUpperCase()](https://github.com/tsevdos/elUtils/blob/main/docs/languageUtils.md#convertsGreekTextToComparableUpperCase)
+  - [compareGreekStrings()](https://github.com/tsevdos/elUtils/blob/main/docs/languageUtils.md#compareGreekStrings)
 
 ## Contribute
 
