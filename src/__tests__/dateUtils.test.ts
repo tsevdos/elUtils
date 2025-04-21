@@ -1,5 +1,18 @@
 import datesData from "../../data/dates.json";
-import { getDays, getMonths, getQuarters, getEras, getHolidays } from "../dateUtils";
+import {
+  DAY_IN_MS,
+  getDays,
+  getEras,
+  getHolidays,
+  getMonths,
+  getQuarters,
+  HOUR_IN_MS,
+  MINUTE_IN_MS,
+  MONTH_IN_MS,
+  relativeTimeFormat,
+  WEEK_IN_MS,
+  YEAR_IN_MS,
+} from "../dateUtils";
 
 describe("getDays", () => {
   it("in full format (greek language)", () => {
@@ -211,4 +224,133 @@ describe("getHolidays", () => {
   // - Leap years
   // - Years where Labor Day coincides with Easter or falls on a weekend
   // - Future or past years with different holiday dates
+});
+
+describe("relativeTimeFormat", () => {
+  it("SECONDS", () => {
+    const a = new Date(0);
+    const b = new Date(2000);
+    const c = new Date(6000);
+    const d = new Date(7000);
+
+    const present = relativeTimeFormat(a, b);
+    const future = relativeTimeFormat(d, a);
+    const past = relativeTimeFormat(a, c);
+
+    const outputPresent = "molis tora";
+    const outputFuture = "se 7 deuterolepta";
+    const outputPast = "prin apo 6 deuterolepta";
+
+    expect(present).toEqual(outputPresent);
+    expect(future).toEqual(outputFuture);
+    expect(past).toEqual(outputPast);
+  });
+  it("MINUTES", () => {
+    const a = new Date(0);
+    const b = new Date(2 * MINUTE_IN_MS);
+    const c = new Date(6 * MINUTE_IN_MS);
+    const d = new Date(7 * MINUTE_IN_MS);
+
+    const present = relativeTimeFormat(a, b);
+    const future = relativeTimeFormat(d, a);
+    const past = relativeTimeFormat(a, c);
+
+    const outputPresent = "2 lepta prin";
+    const outputFuture = "se 7 lepta";
+    const outputPast = "6 lepta prin";
+
+    expect(present).toEqual(outputPresent);
+    expect(future).toEqual(outputFuture);
+    expect(past).toEqual(outputPast);
+  });
+  it("HOURS", () => {
+    const a = new Date(0);
+    const b = new Date(2 * HOUR_IN_MS);
+    const c = new Date(6 * HOUR_IN_MS);
+    const d = new Date(7 * HOUR_IN_MS);
+
+    const present = relativeTimeFormat(a, b);
+    const future = relativeTimeFormat(d, a);
+    const past = relativeTimeFormat(a, c);
+
+    const outputPresent = "2 ores prin";
+    const outputFuture = "se 7 ores";
+    const outputPast = "6 ores prin";
+
+    expect(present).toEqual(outputPresent);
+    expect(future).toEqual(outputFuture);
+    expect(past).toEqual(outputPast);
+  });
+  it("DAYS", () => {
+    const a = new Date(0);
+    const b = new Date(2 * DAY_IN_MS);
+    const c = new Date(6 * DAY_IN_MS);
+    // const d = new Date(7 * DAY_IN_MS);
+
+    const present = relativeTimeFormat(a, b);
+    // const future = relativeTimeFormat(d, a);
+    const past = relativeTimeFormat(a, c);
+
+    const outputPresent = "2 meres prin";
+    // const outputFuture = "se 7 meres";
+    const outputPast = "6 meres prin";
+
+    expect(present).toEqual(outputPresent);
+    // expect(future).toEqual(outputFuture);
+    expect(past).toEqual(outputPast);
+  });
+  it("WEEKS", () => {
+    const a = new Date(0);
+    const b = new Date(1 * WEEK_IN_MS);
+    const c = new Date(2 * WEEK_IN_MS);
+    const d = new Date(3 * WEEK_IN_MS);
+
+    const present = relativeTimeFormat(a, b);
+    const future = relativeTimeFormat(d, a);
+    const past = relativeTimeFormat(a, c);
+
+    const outputPresent = "1 evdomada prin";
+    const outputFuture = "se 3 evdomades";
+    const outputPast = "2 evdomades prin";
+
+    expect(present).toEqual(outputPresent);
+    expect(future).toEqual(outputFuture);
+    expect(past).toEqual(outputPast);
+  });
+  it("MONTHS", () => {
+    const a = new Date(0);
+    const b = new Date(1 * MONTH_IN_MS);
+    const c = new Date(2 * MONTH_IN_MS);
+    const d = new Date(3 * MONTH_IN_MS);
+
+    const present = relativeTimeFormat(a, b);
+    const future = relativeTimeFormat(d, a);
+    const past = relativeTimeFormat(a, c);
+
+    const outputPresent = "1 mina prin";
+    const outputFuture = "se 3 mines";
+    const outputPast = "2 mines prin";
+
+    expect(present).toEqual(outputPresent);
+    expect(future).toEqual(outputFuture);
+    expect(past).toEqual(outputPast);
+  });
+  it("YEARS", () => {
+    const a = new Date(0);
+    const b = new Date(1 * YEAR_IN_MS);
+    const c = new Date(2 * YEAR_IN_MS);
+    const d = new Date(3 * YEAR_IN_MS);
+
+    const present = relativeTimeFormat(a, b);
+    const future = relativeTimeFormat(d, a);
+    const past = relativeTimeFormat(a, c);
+
+    const outputPresent = "1 xrono prin";
+    const outputFuture = "se 3 xronia";
+    const outputPast = "2 xronia prin";
+
+    expect(present).toEqual(outputPresent);
+    expect(future).toEqual(outputFuture);
+    expect(past).toEqual(outputPast);
+  });
 });

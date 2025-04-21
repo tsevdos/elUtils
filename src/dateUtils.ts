@@ -152,3 +152,153 @@ export function getHolidays(year: string, options: GetHolidaysOptions = {}): Hol
 
   return holidays;
 }
+
+export const MINUTE_IN_MS = 60 * 1000;
+export const HOUR_IN_MS = 60 * MINUTE_IN_MS;
+export const DAY_IN_MS = 24 * HOUR_IN_MS;
+export const WEEK_IN_MS = 7 * DAY_IN_MS;
+export const MONTH_IN_MS = 4 * WEEK_IN_MS;
+export const YEAR_IN_MS = MONTH_IN_MS * 12;
+
+type Tense = "past" | "present" | "future";
+
+export function getTense(duration: number): Tense {
+  const tense = Math.sign(duration);
+  if (tense > 0) return "future";
+  // eslint-disable-next-line no-compare-neg-zero
+  if (tense === 0 || tense === -0) return "present";
+  return "past";
+}
+
+type Unit = "second" | "minute" | "hour" | "day" | "week" | "month" | "year";
+
+/**
+ * Determines the unit by which we want to apply
+ * our localized relative timing
+ * @param duration time in milliseconds
+ * @returns type of unit, eg "minute", "year" etc
+ */
+export function getTimeUnit(duration: number): Unit {
+  if (duration >= YEAR_IN_MS) return "year";
+  if (duration >= MONTH_IN_MS) return "month";
+  if (duration >= WEEK_IN_MS) return "week";
+  if (duration >= DAY_IN_MS) return "day";
+  if (duration >= HOUR_IN_MS) return "hour";
+  if (duration >= MINUTE_IN_MS) return "minute";
+
+  return "second";
+}
+
+export function getSecondsText(duration: number, tense: Tense): string {
+  const durationInMS = duration / 1000;
+  if (duration <= 5 * 1000) {
+    return "molis tora";
+  }
+  if (tense === "past") {
+    return `prin apo ${durationInMS} deuterolepta`;
+  }
+  return `se ${durationInMS} deuterolepta`;
+}
+
+export function getMinutesText(duration: number, tense: Tense): string {
+  const durationInMinutes = duration / MINUTE_IN_MS;
+  const minutesNoun = duration > MINUTE_IN_MS ? "lepta" : "lepto";
+  if (tense === "past") {
+    return `${durationInMinutes} ${minutesNoun} prin`;
+  }
+  return `se ${durationInMinutes} ${minutesNoun}`;
+}
+
+export function getHoursText(duration: number, tense: Tense): string {
+  const durationInHours = duration / HOUR_IN_MS;
+  const hoursNoun = duration > HOUR_IN_MS ? "ores" : "ora";
+  if (tense === "past") {
+    return `${durationInHours} ${hoursNoun} prin`;
+  }
+  return `se ${durationInHours} ${hoursNoun}`;
+}
+
+export function getDaysText(duration: number, tense: Tense): string {
+  const durationInDays = duration / DAY_IN_MS;
+  const daysNoun = duration > DAY_IN_MS ? "meres" : "mera";
+  if (tense === "past") {
+    return `${durationInDays} ${daysNoun} prin`;
+  }
+  return `se ${durationInDays} ${daysNoun}`;
+}
+
+export function getWeeksText(duration: number, tense: Tense): string {
+  const durationInWeeks = duration / WEEK_IN_MS;
+  const weeksNoun = duration > WEEK_IN_MS ? "evdomades" : "evdomada";
+  if (tense === "past") {
+    return `${durationInWeeks} ${weeksNoun} prin`;
+  }
+  return `se ${durationInWeeks} ${weeksNoun}`;
+}
+
+export function getMonthsText(duration: number, tense: Tense): string {
+  const durationInMonths = duration / MONTH_IN_MS;
+  const monthsNoun = duration > MONTH_IN_MS ? "mines" : "mina";
+  if (tense === "past") {
+    return `${durationInMonths} ${monthsNoun} prin`;
+  }
+  return `se ${durationInMonths} ${monthsNoun}`;
+}
+
+export function getYearsText(duration: number, tense: Tense): string {
+  const durationInYears = duration / YEAR_IN_MS;
+  const yearsNoun = duration > YEAR_IN_MS ? "xronia" : "xrono";
+  if (tense === "past") {
+    return `${durationInYears} ${yearsNoun} prin`;
+  }
+  return `se ${durationInYears} ${yearsNoun}`;
+}
+
+export function getRelativeTimeText(unit: Unit, duration: number, tense: Tense): string | null {
+  if (unit === "second") {
+    return getSecondsText(duration, tense);
+  }
+  if (unit === "minute") {
+    return getMinutesText(duration, tense);
+  }
+  if (unit === "hour") {
+    return getHoursText(duration, tense);
+  }
+  if (unit === "day") {
+    return getDaysText(duration, tense);
+  }
+  if (unit === "week") {
+    return getWeeksText(duration, tense);
+  }
+  if (unit === "month") {
+    return getMonthsText(duration, tense);
+  }
+  if (unit === "year") {
+    return getYearsText(duration, tense);
+  }
+  return null;
+}
+
+type RelativeTimeFormatOptions = { locale: string; style: "formal" | "informal" | "long" | "short" };
+
+/**
+ * We are doing all this because we cannot use the relevant Intl.Duration namespace,
+ * since it is not yet supported in TypeScript.
+ * When it will get supported then we need to use this instead.
+ */
+export function relativeTimeFormat(d1: Date, d2: Date, options?: RelativeTimeFormatOptions): string | null {
+  // const { locale, style } = options;
+  console.log("foo", options);
+
+  // this is needed to calculate 1) past or future 2) time unit
+  const duration = d1.getTime() - d2.getTime();
+  const tense = getTense(duration);
+  const absoluteTimeDifference = Math.abs(duration);
+
+  // this is needed for the text that we should render to the user
+  // based on the options.style we can choose the rendering style
+  const unit = getTimeUnit(absoluteTimeDifference);
+
+  // we also need to calculate how many of these units we have
+  return getRelativeTimeText(unit, absoluteTimeDifference, tense);
+}
