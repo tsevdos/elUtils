@@ -227,130 +227,270 @@ describe("getHolidays", () => {
 });
 
 describe("relativeTimeFormat", () => {
-  it("SECONDS", () => {
-    const a = new Date(0);
-    const b = new Date(2000);
-    const c = new Date(6000);
-    const d = new Date(7000);
+  describe("seconds", () => {
+    it("greek", () => {
+      const a = new Date(0);
+      const b = new Date(2000);
+      const c = new Date(6000);
+      const d = new Date(7000);
 
-    const present = relativeTimeFormat(a, b);
-    const future = relativeTimeFormat(d, a);
-    const past = relativeTimeFormat(a, c);
+      const present = relativeTimeFormat(a, b);
+      const future = relativeTimeFormat(d, a);
+      const past = relativeTimeFormat(a, c);
 
-    const outputPresent = "molis tora";
-    const outputFuture = "se 7 deuterolepta";
-    const outputPast = "prin apo 6 deuterolepta";
+      const outputPresent = "μόλις τώρα";
+      const outputFuture = "σε 7 δευτερόλεπτα";
+      const outputPast = "6 δευτερόλεπτα πριν";
 
-    expect(present).toEqual(outputPresent);
-    expect(future).toEqual(outputFuture);
-    expect(past).toEqual(outputPast);
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
+    it("english", () => {
+      const a = new Date(0);
+      const b = new Date(2000);
+      const c = new Date(6000);
+      const d = new Date(7000);
+
+      const present = relativeTimeFormat(a, b, { locale: "en" });
+      const future = relativeTimeFormat(d, a, { locale: "en" });
+      const past = relativeTimeFormat(a, c, { locale: "en" });
+
+      const outputPresent = "just now";
+      const outputFuture = "in 7 seconds";
+      const outputPast = "6 seconds ago";
+
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
   });
-  it("MINUTES", () => {
-    const a = new Date(0);
-    const b = new Date(2 * MINUTE_IN_MS);
-    const c = new Date(6 * MINUTE_IN_MS);
-    const d = new Date(7 * MINUTE_IN_MS);
+  describe("minutes", () => {
+    it("greek", () => {
+      const a = new Date(0);
+      const b = new Date(2 * MINUTE_IN_MS);
+      const c = new Date(6 * MINUTE_IN_MS);
+      const d = new Date(7 * MINUTE_IN_MS);
 
-    const present = relativeTimeFormat(a, b);
-    const future = relativeTimeFormat(d, a);
-    const past = relativeTimeFormat(a, c);
+      const present = relativeTimeFormat(a, b);
+      const future = relativeTimeFormat(d, a);
+      const past = relativeTimeFormat(a, c);
 
-    const outputPresent = "2 lepta prin";
-    const outputFuture = "se 7 lepta";
-    const outputPast = "6 lepta prin";
+      const outputPresent = "2 λεπτά πριν";
+      const outputFuture = "σε 7 λεπτά";
+      const outputPast = "6 λεπτά πριν";
 
-    expect(present).toEqual(outputPresent);
-    expect(future).toEqual(outputFuture);
-    expect(past).toEqual(outputPast);
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
+    it("english", () => {
+      const a = new Date(0);
+      const b = new Date(2 * MINUTE_IN_MS);
+      const c = new Date(6 * MINUTE_IN_MS);
+      const d = new Date(7 * MINUTE_IN_MS);
+
+      const present = relativeTimeFormat(a, b, { locale: "en" });
+      const future = relativeTimeFormat(d, a, { locale: "en" });
+      const past = relativeTimeFormat(a, c, { locale: "en" });
+
+      const outputPresent = "2 minutes ago";
+      const outputFuture = "in 7 minutes";
+      const outputPast = "6 minutes ago";
+
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
   });
-  it("HOURS", () => {
-    const a = new Date(0);
-    const b = new Date(2 * HOUR_IN_MS);
-    const c = new Date(6 * HOUR_IN_MS);
-    const d = new Date(7 * HOUR_IN_MS);
+  describe("hours", () => {
+    it("greek", () => {
+      const a = new Date(0);
+      const b = new Date(2 * HOUR_IN_MS);
+      const c = new Date(6 * HOUR_IN_MS);
+      const d = new Date(7 * HOUR_IN_MS);
 
-    const present = relativeTimeFormat(a, b);
-    const future = relativeTimeFormat(d, a);
-    const past = relativeTimeFormat(a, c);
+      const present = relativeTimeFormat(a, b);
+      const future = relativeTimeFormat(d, a);
+      const past = relativeTimeFormat(a, c);
 
-    const outputPresent = "2 ores prin";
-    const outputFuture = "se 7 ores";
-    const outputPast = "6 ores prin";
+      const outputPresent = "2 ώρες πριν";
+      const outputFuture = "σε 7 ώρες";
+      const outputPast = "6 ώρες πριν";
 
-    expect(present).toEqual(outputPresent);
-    expect(future).toEqual(outputFuture);
-    expect(past).toEqual(outputPast);
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
+    it("english", () => {
+      const a = new Date(0);
+      const b = new Date(2 * HOUR_IN_MS);
+      const c = new Date(6 * HOUR_IN_MS);
+      const d = new Date(7 * HOUR_IN_MS);
+
+      const present = relativeTimeFormat(a, b, { locale: "en" });
+      const future = relativeTimeFormat(d, a, { locale: "en" });
+      const past = relativeTimeFormat(a, c, { locale: "en" });
+
+      const outputPresent = "2 hours ago";
+      const outputFuture = "in 7 hours";
+      const outputPast = "6 hours ago";
+
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
   });
-  it("DAYS", () => {
-    const a = new Date(0);
-    const b = new Date(2 * DAY_IN_MS);
-    const c = new Date(6 * DAY_IN_MS);
-    // const d = new Date(7 * DAY_IN_MS);
+  describe("days", () => {
+    it("greek", () => {
+      const a = new Date(0);
+      const b = new Date(2 * DAY_IN_MS);
+      const c = new Date(6 * DAY_IN_MS);
+      // const d = new Date(7 * DAY_IN_MS);
 
-    const present = relativeTimeFormat(a, b);
-    // const future = relativeTimeFormat(d, a);
-    const past = relativeTimeFormat(a, c);
+      const present = relativeTimeFormat(a, b);
+      // const future = relativeTimeFormat(d, a);
+      const past = relativeTimeFormat(a, c);
 
-    const outputPresent = "2 meres prin";
-    // const outputFuture = "se 7 meres";
-    const outputPast = "6 meres prin";
+      const outputPresent = "2 μέρες πριν";
+      // const outputFuture = "se 7 meres";
+      const outputPast = "6 μέρες πριν";
 
-    expect(present).toEqual(outputPresent);
-    // expect(future).toEqual(outputFuture);
-    expect(past).toEqual(outputPast);
+      expect(present).toEqual(outputPresent);
+      // expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
+    it("english", () => {
+      const a = new Date(0);
+      const b = new Date(2 * DAY_IN_MS);
+      const c = new Date(6 * DAY_IN_MS);
+      // const d = new Date(7 * DAY_IN_MS);
+
+      const present = relativeTimeFormat(a, b, { locale: "en" });
+      // const future = relativeTimeFormat(d, a, {locale: 'en'});
+      const past = relativeTimeFormat(a, c, { locale: "en" });
+
+      const outputPresent = "2 days ago"; //
+      // const outputFuture = "se 7 meres";
+      const outputPast = "6 days ago"; //
+
+      expect(present).toEqual(outputPresent);
+      // expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
   });
-  it("WEEKS", () => {
-    const a = new Date(0);
-    const b = new Date(1 * WEEK_IN_MS);
-    const c = new Date(2 * WEEK_IN_MS);
-    const d = new Date(3 * WEEK_IN_MS);
+  describe("weeks", () => {
+    it("greek", () => {
+      const a = new Date(0);
+      const b = new Date(1 * WEEK_IN_MS);
+      const c = new Date(2 * WEEK_IN_MS);
+      const d = new Date(3 * WEEK_IN_MS);
 
-    const present = relativeTimeFormat(a, b);
-    const future = relativeTimeFormat(d, a);
-    const past = relativeTimeFormat(a, c);
+      const present = relativeTimeFormat(a, b);
+      const future = relativeTimeFormat(d, a);
+      const past = relativeTimeFormat(a, c);
 
-    const outputPresent = "1 evdomada prin";
-    const outputFuture = "se 3 evdomades";
-    const outputPast = "2 evdomades prin";
+      const outputPresent = "1 εβδομάδα πριν";
+      const outputFuture = "σε 3 εβδομάδες";
+      const outputPast = "2 εβδομάδες πριν";
 
-    expect(present).toEqual(outputPresent);
-    expect(future).toEqual(outputFuture);
-    expect(past).toEqual(outputPast);
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
+    it("english", () => {
+      const a = new Date(0);
+      const b = new Date(1 * WEEK_IN_MS);
+      const c = new Date(2 * WEEK_IN_MS);
+      const d = new Date(3 * WEEK_IN_MS);
+
+      const present = relativeTimeFormat(a, b, { locale: "en" });
+      const future = relativeTimeFormat(d, a, { locale: "en" });
+      const past = relativeTimeFormat(a, c, { locale: "en" });
+
+      const outputPresent = "1 week ago";
+      const outputFuture = "in 3 weeks";
+      const outputPast = "2 weeks ago";
+
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
   });
-  it("MONTHS", () => {
-    const a = new Date(0);
-    const b = new Date(1 * MONTH_IN_MS);
-    const c = new Date(2 * MONTH_IN_MS);
-    const d = new Date(3 * MONTH_IN_MS);
+  describe("months", () => {
+    it("greek", () => {
+      const a = new Date(0);
+      const b = new Date(1 * MONTH_IN_MS);
+      const c = new Date(2 * MONTH_IN_MS);
+      const d = new Date(3 * MONTH_IN_MS);
 
-    const present = relativeTimeFormat(a, b);
-    const future = relativeTimeFormat(d, a);
-    const past = relativeTimeFormat(a, c);
+      const present = relativeTimeFormat(a, b);
+      const future = relativeTimeFormat(d, a);
+      const past = relativeTimeFormat(a, c);
 
-    const outputPresent = "1 mina prin";
-    const outputFuture = "se 3 mines";
-    const outputPast = "2 mines prin";
+      const outputPresent = "1 μήνα πριν";
+      const outputFuture = "σε 3 μήνες";
+      const outputPast = "2 μήνες πριν";
 
-    expect(present).toEqual(outputPresent);
-    expect(future).toEqual(outputFuture);
-    expect(past).toEqual(outputPast);
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
+    it("english", () => {
+      const a = new Date(0);
+      const b = new Date(1 * MONTH_IN_MS);
+      const c = new Date(2 * MONTH_IN_MS);
+      const d = new Date(3 * MONTH_IN_MS);
+
+      const present = relativeTimeFormat(a, b, { locale: "en" });
+      const future = relativeTimeFormat(d, a, { locale: "en" });
+      const past = relativeTimeFormat(a, c, { locale: "en" });
+
+      const outputPresent = "1 month ago";
+      const outputFuture = "in 3 months";
+      const outputPast = "2 months ago";
+
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
   });
-  it("YEARS", () => {
-    const a = new Date(0);
-    const b = new Date(1 * YEAR_IN_MS);
-    const c = new Date(2 * YEAR_IN_MS);
-    const d = new Date(3 * YEAR_IN_MS);
+  describe("years", () => {
+    it("greek", () => {
+      const a = new Date(0);
+      const b = new Date(1 * YEAR_IN_MS);
+      const c = new Date(2 * YEAR_IN_MS);
+      const d = new Date(3 * YEAR_IN_MS);
 
-    const present = relativeTimeFormat(a, b);
-    const future = relativeTimeFormat(d, a);
-    const past = relativeTimeFormat(a, c);
+      const present = relativeTimeFormat(a, b);
+      const future = relativeTimeFormat(d, a);
+      const past = relativeTimeFormat(a, c);
 
-    const outputPresent = "1 xrono prin";
-    const outputFuture = "se 3 xronia";
-    const outputPast = "2 xronia prin";
+      const outputPresent = "1 χρόνο πριν";
+      const outputFuture = "σε 3 χρόνια";
+      const outputPast = "2 χρόνια πριν";
 
-    expect(present).toEqual(outputPresent);
-    expect(future).toEqual(outputFuture);
-    expect(past).toEqual(outputPast);
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
+    it("english", () => {
+      const a = new Date(0);
+      const b = new Date(1 * YEAR_IN_MS);
+      const c = new Date(2 * YEAR_IN_MS);
+      const d = new Date(3 * YEAR_IN_MS);
+
+      const present = relativeTimeFormat(a, b, { locale: "en" });
+      const future = relativeTimeFormat(d, a, { locale: "en" });
+      const past = relativeTimeFormat(a, c, { locale: "en" });
+
+      const outputPresent = "1 year ago";
+      const outputFuture = "in 3 years";
+      const outputPast = "2 years ago";
+
+      expect(present).toEqual(outputPresent);
+      expect(future).toEqual(outputFuture);
+      expect(past).toEqual(outputPast);
+    });
   });
 });
