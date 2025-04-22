@@ -1,4 +1,6 @@
 import datesData from "../data/dates.json";
+import greekRelativeTimeTranslations from "../data/relative-time-translations-el.json";
+import englishRelativeTimeTranslations from "../data/relative-time-translations-en.json";
 
 type Format = "full" | "short" | "min";
 
@@ -199,70 +201,8 @@ type TranslationsMap = {
 };
 
 const translationsMap: TranslationsMap = {
-  gr: {
-    in: "σε",
-    ago: "πριν",
-    seconds: {
-      singular: "μόλις τώρα",
-      plural: "δευτερόλεπτα",
-    },
-    minutes: {
-      singular: "λεπτό",
-      plural: "λεπτά",
-    },
-    hours: {
-      singular: "ώρα",
-      plural: "ώρες",
-    },
-    days: {
-      singular: "μέρα",
-      plural: "μέρες",
-    },
-    weeks: {
-      singular: "εβδομάδα",
-      plural: "εβδομάδες",
-    },
-    months: {
-      singular: "μήνα",
-      plural: "μήνες",
-    },
-    years: {
-      singular: "χρόνο",
-      plural: "χρόνια",
-    },
-  },
-  en: {
-    in: "in",
-    ago: "ago",
-    seconds: {
-      singular: "just now",
-      plural: "seconds",
-    },
-    minutes: {
-      singular: "minute",
-      plural: "minutes",
-    },
-    hours: {
-      singular: "hour",
-      plural: "hours",
-    },
-    days: {
-      singular: "day",
-      plural: "days",
-    },
-    weeks: {
-      singular: "week",
-      plural: "weeks",
-    },
-    months: {
-      singular: "month",
-      plural: "months",
-    },
-    years: {
-      singular: "year",
-      plural: "years",
-    },
-  },
+  gr: { ...greekRelativeTimeTranslations },
+  en: { ...englishRelativeTimeTranslations },
 };
 
 export function getSecondsText(duration: number, tense: Tense, locale: Locale): string {
