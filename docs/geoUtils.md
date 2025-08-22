@@ -205,6 +205,20 @@ The functions dealing with postal codes is listed below:
 
 **`Return Type`**: Array of `Region` objects.
 
+**Example:**
+
+```javascript
+// Get all regions in Greek (default)
+const regions = getAdministrativeRegions();
+
+// Get all regions in English with Mount Athos
+const regionsEN = getAdministrativeRegions({
+  locale: "en",
+  includeMountAthos: true,
+  level: "region",
+});
+```
+
 ---
 
 ### getAdministrativeRegionById()<a id='getAdministrativeRegionById'></a>
@@ -221,6 +235,20 @@ The functions dealing with postal codes is listed below:
 - **`level`** (optional, default: "municipality"): The level of detail to retrieve ("region", "unit", or "municipality").
 
 **`Return Type`**: A `Region` object.
+
+**Example:**
+
+```javascript
+// Get region with id 2 in Greek
+const region = getAdministrativeRegionById({ id: 2 });
+
+// Get region with id 2 in English with municipalities
+const regionEN = getAdministrativeRegionById({
+  id: 2,
+  locale: "en",
+  level: "municipality",
+});
+```
 
 ---
 
@@ -241,6 +269,22 @@ The functions dealing with postal codes is listed below:
 
 > On this [**table**](https://en.wikipedia.org/wiki/ISO_316-2:GR) you can find **ALL** the available `ISO_3166-2` region codes.
 
+**Example:**
+
+```javascript
+// Get region by ISO code in Greek (default)
+const region = getAdministrativeRegionByIsoCode({ isocode: "GR-A" });
+// Returns: { id: 1, name: "Ανατολική Μακεδονία και Θράκη", ... }
+
+// Get region by ISO code in English with municipalities
+const regionEN = getAdministrativeRegionByIsoCode({
+  isocode: "GR-A",
+  locale: "en",
+  level: "municipality",
+});
+// Returns: { id: 1, name: "East Macedonia and Thrace", ... }
+```
+
 ---
 
 ### getAdministrativeUnits()<a id='getAdministrativeUnits'></a>
@@ -256,6 +300,22 @@ The functions dealing with postal codes is listed below:
 - **`level`** (optional, default: "municipality"): The level of detail to retrieve ("unit" or "municipality").
 
 **`Return Type`**: Array of `Unit` objects.
+
+**Example:**
+
+```javascript
+// Get all units in Greek (default)
+const units = getAdministrativeUnits();
+// Returns: [{ id: 1, name: "Δράμα", ... }]
+
+// Get units in English without Mount Athos
+const unitsEN = getAdministrativeUnits({
+  locale: "en",
+  includeMountAthos: false,
+  level: "unit",
+});
+// Returns: [{ id: 1, name: "Drama", ... }]
+```
 
 ---
 
@@ -274,6 +334,22 @@ The functions dealing with postal codes is listed below:
 
 **Return Type**: A `Unit` object.
 
+**Example:**
+
+```javascript
+// Get unit by id in Greek (default)
+const unit = getAdministrativeUnitById({ id: 13 });
+// Returns: { id: 13, name: "Χαλκιδική", ... }
+
+// Get unit in English with municipalities
+const unitEN = getAdministrativeUnitById({
+  id: 13,
+  locale: "en",
+  level: "municipality",
+});
+// Returns: { id: 13, name: "Chalkidiki", ... }
+```
+
 ---
 
 ### getMunicipalities()<a id='getMunicipalities'></a>
@@ -288,6 +364,18 @@ The functions dealing with postal codes is listed below:
 
 **Return Type**: Array of `Municipality` objects.
 
+**Example:**
+
+```javascript
+// Get all municipalities in Greek (default)
+const municipalities = getMunicipalities();
+// Returns: [{ id: 1, name: "Αβδήρων", ... }]
+
+// Get municipalities in English
+const municipalitiesEN = getMunicipalities({ locale: "en" });
+// Returns: [{ id: 1, name: "Avdira", ... }]
+```
+
 ---
 
 ### getCities()<a id='getCities'></a>
@@ -301,6 +389,18 @@ The functions dealing with postal codes is listed below:
 - **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
 
 **Return Type**: Array of `City` objects.
+
+**Example:**
+
+```javascript
+// Get all cities in Greek (default)
+const cities = getCities();
+// Returns: [{ id: 1, name: "Αθήνα", ... }]
+
+// Get cities in English
+const citiesEN = getCities({ locale: "en" });
+// Returns: [{ id: 1, name: "Athens", ... }]
+```
 
 ---
 
@@ -317,6 +417,18 @@ The functions dealing with postal codes is listed below:
 
 **Return Type**: Array of `City` objects or null if nothing matches.
 
+**Example:**
+
+```javascript
+// Search cities in Greek (default)
+const cities = searchCityByName({ searchTerm: "Αθήνα" });
+// Returns: [{ id: 1, name: "Αθήνα", coordinates: [23.72, 37.97], ... }]
+
+// Search cities in English
+const citiesEN = searchCityByName({ searchTerm: "Athens", locale: "en" });
+// Returns: [{ id: 1, name: "Athens", coordinates: [23.72, 37.97], ... }]
+```
+
 ---
 
 ### getCityById()<a id='getCityById'></a>
@@ -331,6 +443,18 @@ The functions dealing with postal codes is listed below:
 - **`locale`** (optional, default: "el"): The locale for the city data ("el" for Greek, "en" for English).
 
 **Return Type**: A `City` object.
+
+**Example:**
+
+```javascript
+// Get city by id in Greek (default)
+const city = getCityById({ id: 1 });
+// Returns: { id: 1, name: "Αθήνα", coordinates: [23.72, 37.97], ... }
+
+// Get city in English
+const cityEN = getCityById({ id: 1, locale: "en" });
+// Returns: { id: 1, name: "Athens", coordinates: [23.72, 37.97], ... }
+```
 
 ---
 
@@ -348,6 +472,22 @@ The functions dealing with postal codes is listed below:
 
 **Return Type**: A `Region | Unit | Municipality | Prefecture` object.
 
+**Example:**
+
+```javascript
+// Get city's region data in Greek (default)
+const cityRegion = getCityAdministrativeDivision({ id: 1, entity: "region" });
+// Returns: { id: 9, name: "Αττική", ... }
+
+// Get city's municipality data in English
+const cityMunicipalityEN = getCityAdministrativeDivision({
+  id: 1,
+  locale: "en",
+  entity: "municipality",
+});
+// Returns: { id: 193, name: "Athens", ... }
+```
+
 ---
 
 ### getGeographicRegions()<a id='getGeographicRegions'></a>
@@ -361,6 +501,18 @@ The functions dealing with postal codes is listed below:
 - **`locale`** (optional, default: "el"): The locale for the geographic regions data ("el" for Greek, "en" for English).
 
 **Return Type**: Array of `GeographicRegion` objects.
+
+**Example:**
+
+```javascript
+// Get all geographic regions in Greek (default)
+const regions = getGeographicRegions();
+// Returns: [{ id: 1, name: "Ήπειρος", ... }]
+
+// Get geographic regions in English
+const regionsEN = getGeographicRegions({ locale: "en" });
+// Returns: [{ id: 1, name: "Epirus", ... }]
+```
 
 ---
 
@@ -377,6 +529,18 @@ The functions dealing with postal codes is listed below:
 
 **Return Type**: A `GeographicRegion` object.
 
+**Example:**
+
+```javascript
+// Get geographic region by id in Greek (default)
+const region = getGeographicRegionById({ id: 1 });
+// Returns: { id: 1, name: "Ήπειρος", seat: "Ιωάννινα", ... }
+
+// Get geographic region in English
+const regionEN = getGeographicRegionById({ id: 1, locale: "en" });
+// Returns: { id: 1, name: "Epirus", seat: "Ioannina", ... }
+```
+
 ---
 
 ### getPrefectures()<a id='getPrefectures'></a>
@@ -391,6 +555,21 @@ The functions dealing with postal codes is listed below:
 - **`includeMountAthos`** (optional, default: false): Whether to include Mount Athos prefecture.
 
 **Return Type**: Array of `Prefecture` objects.
+
+**Example:**
+
+```javascript
+// Get all prefectures in Greek (default)
+const prefectures = getPrefectures();
+// Returns: [{ id: 1, name: "Αθηνών", ... }]
+
+// Get prefectures in English including Mount Athos
+const prefecturesEN = getPrefectures({
+  locale: "en",
+  includeMountAthos: true,
+});
+// Returns: [{ id: 1, name: "Athens", ... }]
+```
 
 ---
 
@@ -408,6 +587,18 @@ The functions dealing with postal codes is listed below:
 
 **Return Type**: A `Prefecture` object.
 
+**Example:**
+
+```javascript
+// Get prefecture by id in Greek (default)
+const prefecture = getPrefectureById({ id: 1 });
+// Returns: { id: 1, name: "Αθηνών", ... }
+
+// Get prefecture in English
+const prefectureEN = getPrefectureById({ id: 1, locale: "en" });
+// Returns: { id: 1, name: "Athens", ... }
+```
+
 ---
 
 ### getAllPostalCodes()<a id='getAllPostalCodes'></a>
@@ -419,6 +610,14 @@ The functions dealing with postal codes is listed below:
 none
 
 **Return Type**: An array of strings.
+
+**Example:**
+
+```javascript
+// Get all postal codes
+const postalCodes = getAllPostalCodes();
+// Returns: ["10431", "10432", "10433", ...]
+```
 
 ---
 
@@ -437,6 +636,18 @@ none
 
 **Return Type**: The corresponding geographic entity (`Prefecture`, `Region`, or `Unit`) or undefined if not found.
 
+**Example:**
+
+```javascript
+// Find prefecture by postal code in Greek (default)
+const result = findByPostalCode("10432");
+// Returns: { id: 1, name: "Αθηνών", ... }
+
+// Find region by postal code in English
+const resultEN = findByPostalCode("10432", { locale: "en", entity: "region" });
+// Returns: { id: 9, name: "Attica", ... }
+```
+
 ---
 
 ### getAllTaxOffices()<a id='getAllTaxOffices'></a>
@@ -450,6 +661,18 @@ none
 - **`locale`** (default: "el"): The locale for the retrieved tax offices.
 
 **Return Type**: An array of `TaxOffice` objects.
+
+**Example:**
+
+```javascript
+// Get all tax offices in Greek (default)
+const taxOffices = getAllTaxOffices();
+// Returns: [{ id: "1101", name: "Δ.Ο.Υ. Α' Αθηνών", ... }]
+
+// Get all tax offices in English
+const taxOfficesEN = getAllTaxOffices({ locale: "en" });
+// Returns: [{ id: "1101", name: "Athens A' Tax Office", ... }]
+```
 
 ---
 
@@ -466,6 +689,18 @@ none
 
 **Return Type**: The `TaxOffice` object corresponding to the given ID, or undefined if not found.
 
+**Example:**
+
+```javascript
+// Get tax office by id in Greek (default)
+const taxOffice = getTaxOfficeById({ id: "1101" });
+// Returns: { id: "1101", name: "Δ.Ο.Υ. Α' Αθηνών", ... }
+
+// Get tax office in English
+const taxOfficeEN = getTaxOfficeById({ id: "1101", locale: "en" });
+// Returns: { id: "1101", name: "Athens A' Tax Office", ... }
+```
+
 ---
 
 ### getTaxOfficesByRegionId()<a id='getTaxOfficesByRegionId'></a>
@@ -480,6 +715,18 @@ none
 - **`locale`** (default: "el"): The locale for the retrieved tax offices.
 
 **Return Type**: An array of `TaxOffice` objects that match the given region ID.
+
+**Example:**
+
+```javascript
+// Get tax offices by region id in Greek (default)
+const taxOffices = getTaxOfficesByRegionId({ regionId: 9 });
+// Returns: [{ id: "1101", name: "Δ.Ο.Υ. Α' Αθηνών", ... }, ...]
+
+// Get tax offices in English
+const taxOfficesEN = getTaxOfficesByRegionId({ regionId: 9, locale: "en" });
+// Returns: [{ id: "1101", name: "Athens A' Tax Office", ... }, ...]
+```
 
 ---
 
@@ -496,6 +743,18 @@ none
 
 **Return Type**: An array of `TaxOffice` objects that match the given unit ID.
 
+**Example:**
+
+```javascript
+// Get tax offices by unit id in Greek (default)
+const taxOffices = getTaxOfficesByUnitId({ unitId: 42 });
+// Returns: [{ id: "1101", name: "Δ.Ο.Υ. Α' Αθηνών", ... }, ...]
+
+// Get tax offices in English
+const taxOfficesEN = getTaxOfficesByUnitId({ unitId: 42, locale: "en" });
+// Returns: [{ id: "1101", name: "Athens A' Tax Office", ... }, ...]
+```
+
 ---
 
 ### getTaxOfficesByMunicipalityId()<a id='getTaxOfficesByMunicipalityId'></a>
@@ -510,6 +769,21 @@ none
 - **`locale`** (default: "el"): The locale for the retrieved tax offices.
 
 **Return Type**: An array of `TaxOffice` objects that match the given municipality ID.
+
+**Example:**
+
+```javascript
+// Get tax offices by municipality id in Greek (default)
+const taxOffices = getTaxOfficesByMunicipalityId({ municipalityId: 193 });
+// Returns: [{ id: "1101", name: "Δ.Ο.Υ. Α' Αθηνών", ... }, ...]
+
+// Get tax offices in English
+const taxOfficesEN = getTaxOfficesByMunicipalityId({
+  municipalityId: 193,
+  locale: "en",
+});
+// Returns: [{ id: "1101", name: "Athens A' Tax Office", ... }, ...]
+```
 
 ---
 
@@ -526,6 +800,21 @@ none
 
 **Return Type**: An array of `TaxOffice` objects that match the given postal code.
 
+**Example:**
+
+```javascript
+// Get tax offices for postal code in Greek (default)
+const taxOffices = getTaxOfficesByPostalCode({ postalCode: "10432" });
+// Returns: [{ id: "1101", name: "Δ.Ο.Υ. Α' Αθηνών", ... }]
+
+// Get tax offices in English
+const taxOfficesEN = getTaxOfficesByPostalCode({
+  postalCode: "10432",
+  locale: "en",
+});
+// Returns: [{ id: "1101", name: "Athens A' Tax Office", ... }]
+```
+
 ---
 
 ### searchTaxOffice()<a id='searchTaxOffice'></a>
@@ -541,51 +830,108 @@ none
 
 **Return Type**: An array of `TaxOffice` objects that match the given search term, or an empty array if nothing matches.
 
+**Example:**
+
+```javascript
+// Search tax offices in Greek (default)
+const results = searchTaxOffice({ searchTerm: "Αθηνών" });
+// Returns: [{ id: "1101", name: "Δ.Ο.Υ. Α' Αθηνών", ... }]
+
+// Search in English
+const resultsEN = searchTaxOffice({
+  searchTerm: "Athens",
+  locale: "en",
+});
+// Returns: [{ id: "1101", name: "Athens A' Tax Office", ... }]
+```
+
 ---
 
 ### getCountries()<a id='getCountries'></a>
 
-**Description**: Retrieves countries data.
+**Description**: Returns all the countries based on the provided options.
 
 **Parameters:**
 
-**`options`** (optional): An object specifying options for retrieval.
+**`options`** (optional): An object containing the following properties:
 
-- **`locale`** (default: "el"): The locale for the retrieved countries.
+- **`locale`** (default: "el"): The locale of the countries to return. Possible values: "el" | "en"
 
-**Return Type**: An array of `Country` objects.
+**Return Type**: An array of country objects containing details like name, ISO codes, etc.
+
+**Example:**
+
+```javascript
+// Get all countries in Greek (default)
+const countries = getCountries();
+
+// Get all countries in English
+const countriesEN = getCountries({ locale: "en" });
+```
 
 ---
 
 ### searchCountryByName()<a id='searchCountryByName'></a>
 
-**Description**: Searches for countries by name based on a search term.
+**Description**: Searches for countries by name based on the provided search term. The search is performed on name, completeName, and officialName fields.
 
 **Parameters:**
 
-**`options`** (required): An object specifying options for the search.
+**`options`** (required): An object containing:
 
 - **`searchTerm`** (required): The term to search for in country names.
-- **`locale`** (default: "el"): The locale for the search.
+- **`locale`** (optional, default: "el"): The locale for the country data ("el" for Greek, "en" for English).
 
-**Return Type**: An array of `Country` objects or null if no matches are found.
+**Return Type**: Array of `Country` objects that match the search term, or null if no matches are found.
+
+**Example:**
+
+```javascript
+// Search countries in Greek (default)
+const countries = searchCountryByName({ searchTerm: "Ελλάδα" });
+// Returns: [{ id: "GR", name: "Ελλάδα", completeName: "Ελληνική Δημοκρατία", ... }]
+
+// Search countries in English
+const countriesEN = searchCountryByName({ searchTerm: "Greece", locale: "en" });
+// Returns: [{ id: "GR", name: "Greece", completeName: "Hellenic Republic", ... }]
+```
 
 ---
 
 ### getCountry()<a id='getCountry'></a>
 
-**Description**: Retrieves a specific country based on the provided identifier type and value.
+**Description**: Retrieves a country by various identifiers (ID, ISO codes, or TLD).
 
 **Parameters:**
 
-**`options`** (required): An object specifying options for retrieval.
+**`options`** (required): An object containing:
 
-- **`locale`** (default: "el"): The locale for the retrieved country.
-- **`type`** (required): The type of identifier to use. Valid options are:
-  - `"id"`: Match by country ID
-  - `"iso31661-a2"`: Match by ISO 3166-1 alpha-2 code
-  - `"iso31661-a3"`: Match by ISO 3166-1 alpha-3 code
-  - `"tld"`: Match by top-level domain
-- **`value`** (required): The value to match with the specified identifier type.
+- **`type`** (required): The type of identifier to use. One of:
+  - "id": Country ID
+  - "iso31661-a2": ISO 3166-1 alpha-2 code
+  - "iso31661-a3": ISO 3166-1 alpha-3 code
+  - "tld": Top Level Domain
+- **`value`** (required): The value to search for (e.g., "GR" for Greece)
+- **`locale`** (optional, default: "el"): The locale for the country data ("el" for Greek, "en" for English)
 
-**Return Type**: A `Country` object if a match is found, or null if not found.
+**Return Type**: A `Country` object or null if not found.
+
+**Example:**
+
+```javascript
+// Get country by ISO alpha-2 code in Greek (default)
+const country = getCountry({ type: "iso31661-a2", value: "GR" });
+// Returns: { id: "GR", name: "Ελλάδα", ... }
+
+// Get country by ISO alpha-3 code in English
+const countryEN = getCountry({
+  type: "iso31661-a3",
+  value: "GRC",
+  locale: "en",
+});
+// Returns: { id: "GR", name: "Greece", ... }
+
+// Get country by TLD
+const countryByTLD = getCountry({ type: "tld", value: ".gr" });
+// Returns: { id: "GR", name: "Ελλάδα", ... }
+```
