@@ -1,5 +1,13 @@
 # @tsevdos/el-utils
 
+## 0.8.1
+
+### Patch Changes
+
+- [#102](https://github.com/tsevdos/elUtils/pull/102) [`3f25506`](https://github.com/tsevdos/elUtils/commit/3f25506e2f144c0d5b2b54ad40b6f254b506497d) Thanks [@tsevdos](https://github.com/tsevdos)! - **Patch Changes**
+
+  - add examples to geoUtils documentation
+
 ## 0.8.0
 
 ### Minor Changes
