@@ -1,9 +1,7 @@
 ---
-"@tsevdos/el-utils": minor
+"@tsevdos/el-utils": patch
 ---
 
-**Minor Changes**
+**Patch Changes**
 
-- export countries related functions
-- export VAT validation function
-- add examples to documentation
+- add examples to geoUtils documentation
