@@ -1,6 +1,6 @@
 {
   "name": "@tsevdos/el-utils",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "elUtils is a utility library with a handful of greek utility functions, such as validations, geolocations zip codes and many more.",
   "source": "src/index.ts",
   "main": "dist/index.js",
