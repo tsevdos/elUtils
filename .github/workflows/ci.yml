@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [18, 20, "latest"]
+        node: [18, 20, 22, "latest"]
     name: Checking code changes in node version ➡️ ${{ matrix.node }} 💻
     steps:
       - name: Checkout code 📥
