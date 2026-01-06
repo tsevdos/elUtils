@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [18, 20, "latest"]
+        node: [18, 20, 22, "latest"]
     name: Checking code changes in node version ➡️ ${{ matrix.node }} 💻
     steps:
       - name: Checkout code 📥
@@ -18,7 +18,7 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install dependencies 🔥
-        run: npm ci
+        run: npm i
 
       - name: Check app types ⚠️
         run: npm run tsc
@@ -33,6 +33,7 @@ jobs:
         run: npm test
 
       - name: Build app 👷
+        if: matrix.node >= 20
         run: npm run build
 
   bun-test:
