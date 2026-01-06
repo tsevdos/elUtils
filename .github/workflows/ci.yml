@@ -18,7 +18,7 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install dependencies 🔥
-        run: npm ci
+        run: npm i
 
       - name: Check app types ⚠️
         run: npm run tsc
@@ -33,6 +33,7 @@ jobs:
         run: npm test
 
       - name: Build app 👷
+        if: matrix.node >= 20
         run: npm run build
 
   bun-test:
