@@ -27,7 +27,7 @@ jobs:
         run: npm run lint
 
       - name: Format app ☑️
-        run: npm run prettier
+        run: npm run format
 
       - name: Test app 🙏
         run: npm test
@@ -61,7 +61,7 @@ jobs:
         run: bun run lint
 
       - name: Format app ☑️
-        run: bun run prettier
+        run: bun run format
 
       - name: Test app 🙏
         run: bun run test

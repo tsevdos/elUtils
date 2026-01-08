@@ -66,7 +66,7 @@ npm run test:watch
 npm run check
 
 # fix formatting
-npm run prettier:fix
+npm run format:fix
 ```
 
 ## How do I submit a good pull request?
