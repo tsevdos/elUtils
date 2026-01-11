@@ -1,4 +1,6 @@
 import datesData from "../data/dates.json";
+import greekRelativeTimeTranslations from "../data/relative-time-translations-el.json";
+import englishRelativeTimeTranslations from "../data/relative-time-translations-en.json";
 
 type Format = "full" | "short" | "min";
 
@@ -151,4 +153,173 @@ export function getHolidays(year: string, options: GetHolidaysOptions = {}): Hol
   const holidays = [...nonMovableHolidays, ...movableHolidays].sort((a, b) => a.date.localeCompare(b.date));
 
   return holidays;
+}
+
+type Locale = "gr" | "en";
+
+export const MINUTE_IN_MS = 60 * 1000;
+export const HOUR_IN_MS = 60 * MINUTE_IN_MS;
+export const DAY_IN_MS = 24 * HOUR_IN_MS;
+export const WEEK_IN_MS = 7 * DAY_IN_MS;
+export const MONTH_IN_MS = 4 * WEEK_IN_MS;
+export const YEAR_IN_MS = MONTH_IN_MS * 12;
+
+type Tense = "past" | "present" | "future";
+
+export function getTense(duration: number): Tense {
+  const tense = Math.sign(duration);
+  if (tense > 0) return "future";
+  // eslint-disable-next-line no-compare-neg-zero
+  if (tense === 0 || tense === -0) return "present";
+  return "past";
+}
+
+type Unit = "second" | "minute" | "hour" | "day" | "week" | "month" | "year";
+type RelativeTimeTexts = "in" | "ago" | "seconds" | "minutes" | "hours" | "days" | "weeks" | "months" | "years";
+
+/**
+ * Determines the unit by which we want to apply
+ * our localized relative timing
+ * @param duration time in milliseconds
+ * @returns type of unit, eg "minute", "year" etc
+ */
+export function getTimeUnit(duration: number): Unit {
+  if (duration >= YEAR_IN_MS) return "year";
+  if (duration >= MONTH_IN_MS) return "month";
+  if (duration >= WEEK_IN_MS) return "week";
+  if (duration >= DAY_IN_MS) return "day";
+  if (duration >= HOUR_IN_MS) return "hour";
+  if (duration >= MINUTE_IN_MS) return "minute";
+
+  return "second";
+}
+
+type TranslationsMap = {
+  [K in Locale]: {
+    [T in RelativeTimeTexts]: T extends "in" | "ago" ? string : { singular: string; plural: string };
+  };
+};
+
+const translationsMap: TranslationsMap = {
+  gr: { ...greekRelativeTimeTranslations },
+  en: { ...englishRelativeTimeTranslations },
+};
+
+export function getSecondsText(duration: number, tense: Tense, locale: Locale): string {
+  const durationInMS = duration / 1000;
+  if (duration <= 5 * 1000) {
+    return translationsMap[locale].seconds.singular;
+  }
+  if (tense === "past") {
+    return `${durationInMS} ${translationsMap[locale].seconds.plural} ${translationsMap[locale].ago}`;
+  }
+  return `${translationsMap[locale].in} ${durationInMS} ${translationsMap[locale].seconds.plural}`;
+}
+
+export function getMinutesText(duration: number, tense: Tense, locale: Locale): string {
+  const durationInMinutes = duration / MINUTE_IN_MS;
+  const minutesNoun =
+    duration > MINUTE_IN_MS ? translationsMap[locale].minutes.plural : translationsMap[locale].minutes.singular;
+  if (tense === "past") {
+    return `${durationInMinutes} ${minutesNoun} ${translationsMap[locale].ago}`;
+  }
+  return `${translationsMap[locale].in} ${durationInMinutes} ${minutesNoun}`;
+}
+
+export function getHoursText(duration: number, tense: Tense, locale: Locale): string {
+  const durationInHours = duration / HOUR_IN_MS;
+  const hoursNoun =
+    duration > HOUR_IN_MS ? translationsMap[locale].hours.plural : translationsMap[locale].hours.singular;
+  if (tense === "past") {
+    return `${durationInHours} ${hoursNoun} ${translationsMap[locale].ago}`;
+  }
+  return `${translationsMap[locale].in} ${durationInHours} ${hoursNoun}`;
+}
+
+export function getDaysText(duration: number, tense: Tense, locale: Locale): string {
+  const durationInDays = duration / DAY_IN_MS;
+  const daysNoun = duration > DAY_IN_MS ? translationsMap[locale].days.plural : translationsMap[locale].days.singular;
+  if (tense === "past") {
+    return `${durationInDays} ${daysNoun} ${translationsMap[locale].ago}`;
+  }
+  return `${translationsMap[locale].in} ${durationInDays} ${daysNoun}`;
+}
+
+export function getWeeksText(duration: number, tense: Tense, locale: Locale): string {
+  const durationInWeeks = duration / WEEK_IN_MS;
+  const weeksNoun =
+    duration > WEEK_IN_MS ? translationsMap[locale].weeks.plural : translationsMap[locale].weeks.singular;
+  if (tense === "past") {
+    return `${durationInWeeks} ${weeksNoun} ${translationsMap[locale].ago}`;
+  }
+  return `${translationsMap[locale].in} ${durationInWeeks} ${weeksNoun}`;
+}
+
+export function getMonthsText(duration: number, tense: Tense, locale: Locale): string {
+  const durationInMonths = duration / MONTH_IN_MS;
+  const monthsNoun =
+    duration > MONTH_IN_MS ? translationsMap[locale].months.plural : translationsMap[locale].months.singular;
+  if (tense === "past") {
+    return `${durationInMonths} ${monthsNoun} ${translationsMap[locale].ago}`;
+  }
+  return `${translationsMap[locale].in} ${durationInMonths} ${monthsNoun}`;
+}
+
+export function getYearsText(duration: number, tense: Tense, locale: Locale): string {
+  const durationInYears = duration / YEAR_IN_MS;
+  const yearsNoun =
+    duration > YEAR_IN_MS ? translationsMap[locale].years.plural : translationsMap[locale].years.singular;
+  if (tense === "past") {
+    return `${durationInYears} ${yearsNoun} ${translationsMap[locale].ago}`;
+  }
+  return `${translationsMap[locale].in} ${durationInYears} ${yearsNoun}`;
+}
+
+export function getRelativeTimeText(unit: Unit, duration: number, tense: Tense, locale: Locale): string | null {
+  if (unit === "second") {
+    return getSecondsText(duration, tense, locale);
+  }
+  if (unit === "minute") {
+    return getMinutesText(duration, tense, locale);
+  }
+  if (unit === "hour") {
+    return getHoursText(duration, tense, locale);
+  }
+  if (unit === "day") {
+    return getDaysText(duration, tense, locale);
+  }
+  if (unit === "week") {
+    return getWeeksText(duration, tense, locale);
+  }
+  if (unit === "month") {
+    return getMonthsText(duration, tense, locale);
+  }
+  if (unit === "year") {
+    return getYearsText(duration, tense, locale);
+  }
+  return null;
+}
+
+type RelativeTimeFormatOptions = { locale: Locale; style?: "formal" | "informal" | "long" | "short" | undefined };
+
+/**
+ * We are doing all this because we cannot use the relevant Intl.Duration namespace,
+ * since it is not yet supported in TypeScript.
+ * When it will get supported then we need to use this instead.
+ */
+export function relativeTimeFormat(d1: Date, d2: Date, options?: RelativeTimeFormatOptions): string | null {
+  const { locale, style } = options !== undefined ? options : { locale: "gr" as Locale, style: "informal" };
+  console.log("foo", { locale, style });
+
+  // this is needed to calculate 1) past or future 2) time unit
+  const duration = d1.getTime() - d2.getTime();
+  const tense = getTense(duration);
+  const absoluteTimeDifference = Math.abs(duration);
+
+  // this is needed for the text that we should render to the user
+  // based on the options.style we can choose the rendering style
+  const unit = getTimeUnit(absoluteTimeDifference);
+
+  // we also need to calculate how many of these units we have
+  return getRelativeTimeText(unit, absoluteTimeDifference, tense, locale);
 }
