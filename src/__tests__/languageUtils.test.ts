@@ -1,4 +1,3 @@
-import { describe, it, expect } from "vitest";
 import { convertsGreekTextToComparableUpperCase, compareGreekStrings } from "../languageUtils";
 
 describe("convertsGreekTextToComparableUpperCase", () => {

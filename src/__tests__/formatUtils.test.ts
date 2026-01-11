@@ -1,4 +1,3 @@
-import { describe, it, expect } from "vitest";
 import { formatWeight } from "../formatUtils";
 
 describe("formatWeight", () => {
@@ -35,7 +34,9 @@ describe("formatWeight", () => {
     const expectedEnData = "2 pounds (lb)";
 
     expect(formatWeight(2, { type: "pound", withInternational: true })).toBe(expectedGrData);
-    expect(formatWeight(2, { type: "pound", locale: "en", withInternational: true })).toBe(expectedEnData);
+    expect(formatWeight(2, { type: "pound", locale: "en", withInternational: true })).toBe(
+      expectedEnData
+    );
   });
 
   // Centigrams
@@ -44,8 +45,12 @@ describe("formatWeight", () => {
     const expectedEnData = "1 centigram";
 
     expect(formatWeight(1, { type: "centigram" })).toBe(expectedGrData);
-    expect(formatWeight(1, { type: "centigram", locale: "el", format: "full" })).toBe(expectedGrData);
-    expect(formatWeight(1, { type: "centigram", locale: "en", format: "full" })).toBe(expectedEnData);
+    expect(formatWeight(1, { type: "centigram", locale: "el", format: "full" })).toBe(
+      expectedGrData
+    );
+    expect(formatWeight(1, { type: "centigram", locale: "en", format: "full" })).toBe(
+      expectedEnData
+    );
   });
 
   it("returns multiple centigrams string", () => {
@@ -53,8 +58,12 @@ describe("formatWeight", () => {
     const expectedEnData = "2 centigrams";
 
     expect(formatWeight(2, { type: "centigram" })).toBe(expectedGrData);
-    expect(formatWeight(2, { type: "centigram", locale: "el", format: "full" })).toBe(expectedGrData);
-    expect(formatWeight(2, { type: "centigram", locale: "en", format: "full" })).toBe(expectedEnData);
+    expect(formatWeight(2, { type: "centigram", locale: "el", format: "full" })).toBe(
+      expectedGrData
+    );
+    expect(formatWeight(2, { type: "centigram", locale: "en", format: "full" })).toBe(
+      expectedEnData
+    );
   });
 
   it("returns multiple centigrams with short string", () => {
@@ -62,8 +71,12 @@ describe("formatWeight", () => {
     const expectedEnData = "2 cg";
 
     expect(formatWeight(2, { type: "centigram", format: "short" })).toBe(expectedGrData);
-    expect(formatWeight(2, { type: "centigram", locale: "el", format: "short" })).toBe(expectedGrData);
-    expect(formatWeight(2, { type: "centigram", format: "short", locale: "en" })).toBe(expectedEnData);
+    expect(formatWeight(2, { type: "centigram", locale: "el", format: "short" })).toBe(
+      expectedGrData
+    );
+    expect(formatWeight(2, { type: "centigram", format: "short", locale: "en" })).toBe(
+      expectedEnData
+    );
   });
 
   it("returns multiple centigrams string with international symbol appended", () => {
@@ -71,6 +84,8 @@ describe("formatWeight", () => {
     const expectedEnData = "2 centigrams (cg)";
 
     expect(formatWeight(2, { type: "centigram", withInternational: true })).toBe(expectedGrData);
-    expect(formatWeight(2, { type: "centigram", locale: "en", withInternational: true })).toBe(expectedEnData);
+    expect(formatWeight(2, { type: "centigram", locale: "en", withInternational: true })).toBe(
+      expectedEnData
+    );
   });
 });
