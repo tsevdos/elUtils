@@ -144,7 +144,12 @@ describe("getAdministrativeRegionById", () => {
     expect(getAdministrativeRegionById({ id: 1, level: "municipality" })).toEqual(expectedData);
     // all default options
     expect(
-      getAdministrativeRegionById({ id: 1, locale: "el", includeMountAthos: false, level: "municipality" }),
+      getAdministrativeRegionById({
+        id: 1,
+        locale: "el",
+        includeMountAthos: false,
+        level: "municipality",
+      }),
     ).toEqual(expectedData);
   });
 
@@ -154,7 +159,12 @@ describe("getAdministrativeRegionById", () => {
     expect(getAdministrativeRegionById({ id: 14, includeMountAthos: true })).toEqual(expectedData);
     expect(getAdministrativeRegionById({ id: 14, locale: "el", includeMountAthos: true })).toEqual(expectedData);
     expect(
-      getAdministrativeRegionById({ id: 14, locale: "el", includeMountAthos: true, level: "municipality" }),
+      getAdministrativeRegionById({
+        id: 14,
+        locale: "el",
+        includeMountAthos: true,
+        level: "municipality",
+      }),
     ).toEqual(expectedData);
   });
 
@@ -181,7 +191,12 @@ describe("getAdministrativeRegionById", () => {
     expect(getAdministrativeRegionById({ id: 4, locale: "en", level: "municipality" })).toEqual(expectedData);
     // all default options
     expect(
-      getAdministrativeRegionById({ id: 4, locale: "en", includeMountAthos: false, level: "municipality" }),
+      getAdministrativeRegionById({
+        id: 4,
+        locale: "en",
+        includeMountAthos: false,
+        level: "municipality",
+      }),
     ).toEqual(expectedData);
   });
 
@@ -190,7 +205,12 @@ describe("getAdministrativeRegionById", () => {
 
     expect(getAdministrativeRegionById({ id: 14, locale: "en", includeMountAthos: true })).toEqual(expectedData);
     expect(
-      getAdministrativeRegionById({ id: 14, locale: "en", includeMountAthos: true, level: "municipality" }),
+      getAdministrativeRegionById({
+        id: 14,
+        locale: "en",
+        includeMountAthos: true,
+        level: "municipality",
+      }),
     ).toEqual(expectedData);
   });
 
@@ -409,9 +429,14 @@ describe("getAdministrativeUnitById", () => {
     expect(getAdministrativeUnitById({ id: 1, includeMountAthos: false })).toEqual(expectedData);
     expect(getAdministrativeUnitById({ id: 1, level: "municipality" })).toEqual(expectedData);
     // all default options
-    expect(getAdministrativeUnitById({ id: 1, locale: "el", includeMountAthos: false, level: "municipality" })).toEqual(
-      expectedData,
-    );
+    expect(
+      getAdministrativeUnitById({
+        id: 1,
+        locale: "el",
+        includeMountAthos: false,
+        level: "municipality",
+      }),
+    ).toEqual(expectedData);
   });
 
   it("correctly returns Mount Athos region (in greek language)", () => {
@@ -419,9 +444,14 @@ describe("getAdministrativeUnitById", () => {
 
     expect(getAdministrativeUnitById({ id: 75, includeMountAthos: true })).toEqual(expectedData);
     expect(getAdministrativeUnitById({ id: 75, locale: "el", includeMountAthos: true })).toEqual(expectedData);
-    expect(getAdministrativeUnitById({ id: 75, locale: "el", includeMountAthos: true, level: "municipality" })).toEqual(
-      expectedData,
-    );
+    expect(
+      getAdministrativeUnitById({
+        id: 75,
+        locale: "el",
+        includeMountAthos: true,
+        level: "municipality",
+      }),
+    ).toEqual(expectedData);
   });
 
   it("correctly returns region data with correct level (in greek language)", () => {
@@ -443,18 +473,28 @@ describe("getAdministrativeUnitById", () => {
     expect(getAdministrativeUnitById({ id: 4, locale: "en", includeMountAthos: false })).toEqual(expectedData);
     expect(getAdministrativeUnitById({ id: 4, locale: "en", level: "municipality" })).toEqual(expectedData);
     // all default options
-    expect(getAdministrativeUnitById({ id: 4, locale: "en", includeMountAthos: false, level: "municipality" })).toEqual(
-      expectedData,
-    );
+    expect(
+      getAdministrativeUnitById({
+        id: 4,
+        locale: "en",
+        includeMountAthos: false,
+        level: "municipality",
+      }),
+    ).toEqual(expectedData);
   });
 
   it("correctly returns Mount Athos region (in english language)", () => {
     const expectedData = administrativeRegions.en.flatMap(({ units }) => [...units])[74];
 
     expect(getAdministrativeUnitById({ id: 75, locale: "en", includeMountAthos: true })).toEqual(expectedData);
-    expect(getAdministrativeUnitById({ id: 75, locale: "en", includeMountAthos: true, level: "municipality" })).toEqual(
-      expectedData,
-    );
+    expect(
+      getAdministrativeUnitById({
+        id: 75,
+        locale: "en",
+        includeMountAthos: true,
+        level: "municipality",
+      }),
+    ).toEqual(expectedData);
   });
 
   it("correctly returns region data with correct level (in english language)", () => {
@@ -680,19 +720,37 @@ describe("searchCityByName", () => {
         coordinates: [22.373097659208483, 37.50979512133838],
         id: 7,
         name: "Τρίπολη",
-        relations: { municipalityId: 244, prefectureId: 37, regionId: 10, regionIso31662: "GR-J", unitId: 49 },
+        relations: {
+          municipalityId: 244,
+          prefectureId: 37,
+          regionId: 10,
+          regionIso31662: "GR-J",
+          unitId: 49,
+        },
       },
       {
         coordinates: [25.87239676796922, 40.84840593655441],
         id: 36,
         name: "Αλεξανδρούπολη",
-        relations: { municipalityId: 6, prefectureId: 22, regionId: 1, regionIso31662: "GR-A", unitId: 2 },
+        relations: {
+          municipalityId: 6,
+          prefectureId: 22,
+          regionId: 1,
+          regionIso31662: "GR-A",
+          unitId: 2,
+        },
       },
       {
         coordinates: [24.940125388382246, 37.442430072377526],
         id: 40,
         name: "Ερμούπολη",
-        relations: { municipalityId: 290, prefectureId: 42, regionId: 12, regionIso31662: "GR-L", unitId: 64 },
+        relations: {
+          municipalityId: 290,
+          prefectureId: 42,
+          regionId: 12,
+          regionIso31662: "GR-L",
+          unitId: 64,
+        },
       },
     ];
 
@@ -1397,7 +1455,12 @@ describe("searchTaxOffice", () => {
           10437, 10444, 10556, 10560, 11741, 10447, 10438, 10555, 10553, 10440, 10558, 10552, 10441, 10559, 10564,
           10678, 10679, 10439, 17778,
         ],
-        relations: { municipalityIds: [193, 199, 187], regionId: 9, regionIso: "GR-I", unitIds: [42, 43, 41] },
+        relations: {
+          municipalityIds: [193, 199, 187],
+          regionId: 9,
+          regionIso: "GR-I",
+          unitIds: [42, 43, 41],
+        },
       },
       {
         id: 17,
@@ -1424,7 +1487,12 @@ describe("searchTaxOffice", () => {
         name: "ΙΖ' Αθηνών",
         officialName: "ΔΟΥ ΙΖ' Αθηνών",
         postalCodes: [11631, 11632, 11744, 11635, 11633, 11636, 11743, 11634, 11745, 16121, 16233, 16231, 16232, 16122],
-        relations: { municipalityIds: [193, 196, 197], regionId: 9, regionIso: "GR-I", unitIds: [42] },
+        relations: {
+          municipalityIds: [193, 196, 197],
+          regionId: 9,
+          regionIso: "GR-I",
+          unitIds: [42],
+        },
       },
       {
         id: 21,
@@ -1448,7 +1516,12 @@ describe("searchTaxOffice", () => {
           10437, 10444, 10556, 10560, 11741, 10447, 10438, 10555, 10553, 10440, 10558, 10552, 10441, 10559, 10564,
           10678, 10679, 10439, 17778,
         ],
-        relations: { municipalityIds: [193, 199, 187], regionId: 9, regionIso: "GR-I", unitIds: [42, 43, 41] },
+        relations: {
+          municipalityIds: [193, 199, 187],
+          regionId: 9,
+          regionIso: "GR-I",
+          unitIds: [42, 43, 41],
+        },
       },
       {
         id: 17,
@@ -1475,7 +1548,12 @@ describe("searchTaxOffice", () => {
         name: "IZ' Athens",
         officialName: "TAX OFFICE IZ' Athens",
         postalCodes: [11631, 11632, 11744, 11635, 11633, 11636, 11743, 11634, 11745, 16121, 16233, 16231, 16232, 16122],
-        relations: { municipalityIds: [193, 196, 197], regionId: 9, regionIso: "GR-I", unitIds: [42] },
+        relations: {
+          municipalityIds: [193, 196, 197],
+          regionId: 9,
+          regionIso: "GR-I",
+          unitIds: [42],
+        },
       },
       {
         id: 21,
@@ -1484,7 +1562,12 @@ describe("searchTaxOffice", () => {
         postalCodes: [11527, 11526, 11528, 15772, 15773, 15771],
         relations: { municipalityIds: [193, 198], regionId: 9, regionIso: "GR-I", unitIds: [42] },
       },
-      { id: 95, name: "FAE Athens (A1)", officialName: "TAX OFFICE FAE Athens (A1)", relations: {} },
+      {
+        id: 95,
+        name: "FAE Athens (A1)",
+        officialName: "TAX OFFICE FAE Athens (A1)",
+        relations: {},
+      },
     ]);
   });
 });

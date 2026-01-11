@@ -16,8 +16,9 @@
     "moduleResolution": "Bundler",
     "module": "ESNext",
     "noEmit": true,
-    "lib": ["esnext"]
+    "lib": ["esnext"],
+    "types": ["vitest/globals"]
   },
-  "exclude": ["node_modules", "dist", "**/*.test.ts"],
+  "exclude": ["node_modules", "dist"],
   "include": ["src"]
 }
