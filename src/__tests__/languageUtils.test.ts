@@ -1,3 +1,4 @@
+import { describe, it, expect } from "vitest";
 import { convertsGreekTextToComparableUpperCase, compareGreekStrings } from "../languageUtils";
 
 describe("convertsGreekTextToComparableUpperCase", () => {
@@ -30,19 +31,29 @@ describe("convertsGreekTextToComparableUpperCase", () => {
   });
 
   it("With Multiple hyphens", () => {
-    expect(compareGreekStrings("Η πρόταση αυτή είναι ίδια", "Η ΠΡΟΤΑΣΗ ΑΥΤΗ ΕΙΝΑΙ ΙΔΙΑ")).toBe(true);
+    expect(compareGreekStrings("Η πρόταση αυτή είναι ίδια", "Η ΠΡΟΤΑΣΗ ΑΥΤΗ ΕΙΝΑΙ ΙΔΙΑ")).toBe(
+      true
+    );
   });
 
   it("With Special character", () => {
-    expect(compareGreekStrings("Η-πρόταση_αυτή-είναι-ίδια", "Η ΠΡΟΤΑΣΗ ΑΥΤΗ ΕΙΝΑΙ ΙΔΙΑ")).toBe(true);
+    expect(compareGreekStrings("Η-πρόταση_αυτή-είναι-ίδια", "Η ΠΡΟΤΑΣΗ ΑΥΤΗ ΕΙΝΑΙ ΙΔΙΑ")).toBe(
+      true
+    );
   });
 
   it("correctly converts greek text to Uppercase, by removing accented and special characters", () => {
-    expect(convertsGreekTextToComparableUpperCase("Καλησπέρα σε όλους.")).toEqual("ΚΑΛΗΣΠΕΡΑΣΕΟΛΟΥΣ.");
+    expect(convertsGreekTextToComparableUpperCase("Καλησπέρα σε όλους.")).toEqual(
+      "ΚΑΛΗΣΠΕΡΑΣΕΟΛΟΥΣ."
+    );
     expect(convertsGreekTextToComparableUpperCase("ΔΟΥ Ξάνθης")).toEqual("ΔΟΥΞΑΝΘΗΣ");
     expect(convertsGreekTextToComparableUpperCase("Νομός Αθηνών")).toEqual("ΝΟΜΟΣΑΘΗΝΩΝ");
-    expect(convertsGreekTextToComparableUpperCase("@Θεσσαλία@ - #Λάρισα#")).toEqual("ΘΕΣΣΑΛΙΑΛΑΡΙΣΑ");
-    expect(convertsGreekTextToComparableUpperCase("Μακεδονία!! %%Θεσσαλονίκη%%")).toEqual("ΜΑΚΕΔΟΝΙΑΘΕΣΣΑΛΟΝΙΚΗ");
+    expect(convertsGreekTextToComparableUpperCase("@Θεσσαλία@ - #Λάρισα#")).toEqual(
+      "ΘΕΣΣΑΛΙΑΛΑΡΙΣΑ"
+    );
+    expect(convertsGreekTextToComparableUpperCase("Μακεδονία!! %%Θεσσαλονίκη%%")).toEqual(
+      "ΜΑΚΕΔΟΝΙΑΘΕΣΣΑΛΟΝΙΚΗ"
+    );
   });
 });
 
