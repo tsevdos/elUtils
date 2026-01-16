@@ -1,5 +1,13 @@
 # @tsevdos/el-utils
 
+## 0.9.0
+
+### Minor Changes
+
+- [`29481ff`](https://github.com/tsevdos/elUtils/commit/29481ff9e7b3b6dff3cf709899bb28a9570bb1c1) Thanks [@tsevdos](https://github.com/tsevdos)! - test: replace jest with vitest
+  ci: replace eslint and prettier with oxlint and oxfmt
+  build: replace tsup with tsdown for building and bundling
+
 ## 0.8.1
 
 ### Patch Changes
