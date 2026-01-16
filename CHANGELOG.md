@@ -1,5 +1,17 @@
 # @tsevdos/el-utils
 
+## 0.9.1
+
+### Patch Changes
+
+- [#112](https://github.com/tsevdos/elUtils/pull/112) [`45b2d09`](https://github.com/tsevdos/elUtils/commit/45b2d09fc574313617cd48bac72ce58b64b26c84) Thanks [@tsevdos](https://github.com/tsevdos)! - add copilot instructions
+
+- [`416e2ca`](https://github.com/tsevdos/elUtils/commit/416e2cac7cf310f4198ce6d9f9d2812f7615866f) Thanks [@tsevdos](https://github.com/tsevdos)! - fix: changeset release action
+
+- [#113](https://github.com/tsevdos/elUtils/pull/113) [`f818917`](https://github.com/tsevdos/elUtils/commit/f818917de0abe4d4b04f2dd37f334a57e0f9b381) Thanks [@tsevdos](https://github.com/tsevdos)! - fix gh actions permissions
+
+- [#111](https://github.com/tsevdos/elUtils/pull/111) [`e3c87d2`](https://github.com/tsevdos/elUtils/commit/e3c87d2a0d404b5d0e875f800a0f1d63e9df6141) Thanks [@tsevdos](https://github.com/tsevdos)! - fix release github action
+
 ## 0.9.0
 
 ### Minor Changes
