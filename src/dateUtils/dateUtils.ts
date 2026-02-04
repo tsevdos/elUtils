@@ -1,26 +1,5 @@
-import datesData from "../data/dates.json";
-
-type Format = "full" | "short" | "min";
-
-type BaseDateTimeOptions = {
-  locale?: "el" | "en";
-  format?: Format;
-};
-
-/**
- * Returns the days based on the provided options.
- *
- * @param {BaseDateTimeOptions} [options={}] - The options for locale and format.
- * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
- * @param {Format} [options.format="full"] - The format to use. Default is "full".
- *
- * @returns {string[]} The days in the specified locale and format.
- */
-export function getDays(options: BaseDateTimeOptions = {}) {
-  const { locale = "el", format = "full" } = options;
-
-  return datesData.days[locale][format];
-}
+import datesData from "./dates.json";
+import { BaseDateTimeOptions, Format } from "./types";
 
 type MonthsBaseDateTimeOptions = Omit<BaseDateTimeOptions, "format"> & {
   format?: Format | "alternative";

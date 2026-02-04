@@ -1,49 +1,5 @@
-import datesData from "../../data/dates.json";
-import { getDays, getMonths, getQuarters, getEras, getHolidays } from "../dateUtils";
-
-describe("getDays", () => {
-  it("in full format (greek language)", () => {
-    const expectedData = datesData.days.el.full;
-
-    expect(getDays()).toBe(expectedData);
-    expect(getDays({ locale: "el" })).toBe(expectedData);
-    expect(getDays({ format: "full" })).toBe(expectedData);
-    expect(getDays({ locale: "el", format: "full" })).toBe(expectedData);
-  });
-
-  it("in short format (greek language)", () => {
-    const expectedData = datesData.days.el.short;
-
-    expect(getDays({ format: "short" })).toBe(expectedData);
-    expect(getDays({ locale: "el", format: "short" })).toBe(expectedData);
-  });
-
-  it("in min format (greek language)", () => {
-    const expectedData = datesData.days.el.min;
-
-    expect(getDays({ format: "min" })).toBe(expectedData);
-    expect(getDays({ locale: "el", format: "min" })).toBe(expectedData);
-  });
-
-  it("in full format (english language)", () => {
-    const expectedData = datesData.days.en.full;
-
-    expect(getDays({ locale: "en" })).toBe(expectedData);
-    expect(getDays({ locale: "en", format: "full" })).toBe(expectedData);
-  });
-
-  it("in short format (english language)", () => {
-    const expectedData = datesData.days.en.short;
-
-    expect(getDays({ locale: "en", format: "short" })).toBe(expectedData);
-  });
-
-  it("in min format (english language)", () => {
-    const expectedData = datesData.days.en.min;
-
-    expect(getDays({ locale: "en", format: "min" })).toBe(expectedData);
-  });
-});
+import datesData from "./dates.json";
+import { getMonths, getQuarters, getEras, getHolidays } from "./dateUtils";
 
 describe("getMonths", () => {
   it("in full format (greek language)", () => {
