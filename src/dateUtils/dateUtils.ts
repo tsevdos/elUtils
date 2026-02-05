@@ -1,25 +1,6 @@
 import datesData from "./dates.json";
 import { BaseDateTimeOptions, Format } from "./types";
 
-type MonthsBaseDateTimeOptions = Omit<BaseDateTimeOptions, "format"> & {
-  format?: Format | "alternative";
-};
-
-/**
- * Returns the months based on the provided options.
- *
- * @param {MonthsBaseDateTimeOptions} [options={}] - The options for locale and format.
- * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
- * @param {Format | "alternative"} [options.format="full"] - The format to use. Default is "full".
- *
- * @returns {string[]} The months in the specified locale and format.
- */
-export function getMonths(options: MonthsBaseDateTimeOptions = {}) {
-  const { locale = "el", format = "full" } = options;
-
-  return datesData.months[locale][format];
-}
-
 type DateTimeOptionsWithoutMin = Omit<BaseDateTimeOptions, "format"> & {
   format?: Exclude<Format, "min">;
 };
