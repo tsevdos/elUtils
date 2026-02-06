@@ -26,10 +26,12 @@ export {
   searchCountryByName,
   getCountry,
 } from "./geoUtils";
-export { getQuarters, getEras, getHolidays } from "./dateUtils/dateUtils";
+export { getHolidays } from "./dateUtils/dateUtils";
 // Date utilities
 export { getDays } from "./dateUtils/getDays/getDays";
 export { getMonths } from "./dateUtils/getMonths/getMonths";
+export { getQuarters } from "./dateUtils/getQuarters/getQuarters";
+export { getEras } from "./dateUtils/getEras/getEras";
 
 export {
   validatePostalCode,

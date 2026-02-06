@@ -1,36 +1,4 @@
-import datesData from "./dates.json";
-import { getEras, getHolidays } from "./dateUtils";
-
-describe("getEras", () => {
-  it("in full format (greek language)", () => {
-    const expectedData = datesData.eras.el.full;
-
-    expect(getEras()).toBe(expectedData);
-    expect(getEras({ locale: "el" })).toBe(expectedData);
-    expect(getEras({ format: "full" })).toBe(expectedData);
-    expect(getEras({ locale: "el", format: "full" })).toBe(expectedData);
-  });
-
-  it("in short format (greek language)", () => {
-    const expectedData = datesData.eras.el.short;
-
-    expect(getEras({ format: "short" })).toBe(expectedData);
-    expect(getEras({ locale: "el", format: "short" })).toBe(expectedData);
-  });
-
-  it("in full format (english language)", () => {
-    const expectedData = datesData.eras.en.full;
-
-    expect(getEras({ locale: "en" })).toBe(expectedData);
-    expect(getEras({ locale: "en", format: "full" })).toBe(expectedData);
-  });
-
-  it("in short format (english language)", () => {
-    const expectedData = datesData.eras.en.short;
-
-    expect(getEras({ locale: "en", format: "short" })).toBe(expectedData);
-  });
-});
+import { getHolidays } from "./dateUtils";
 
 describe("getHolidays", () => {
   // Test for a year with known fixed and movable holiday dates

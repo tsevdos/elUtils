@@ -1,14 +1,4 @@
 {
-  "eras": {
-    "el": {
-      "full": ["προ Χριστού", "μετά Χριστόν"],
-      "short": ["π.Χ.", "μ.Χ."]
-    },
-    "en": {
-      "full": ["Before Christ", "Anno Domini"],
-      "short": ["BC", "AD"]
-    }
-  },
   "holidays": {
     "el": [
       { "date": "01-01", "name": "Πρωτοχρονιά", "moveable": false },

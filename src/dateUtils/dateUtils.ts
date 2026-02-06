@@ -1,24 +1,4 @@
 import datesData from "./dates.json";
-import { BaseDateTimeOptions, Format } from "./types";
-
-type DateTimeOptionsWithoutMin = Omit<BaseDateTimeOptions, "format"> & {
-  format?: Exclude<Format, "min">;
-};
-
-/**
- * Returns the eras based on the provided options.
- *
- * @param {DateTimeOptionsWithoutMin} [options={}] - The options for locale and format.
- * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
- * @param {Exclude<Format, "min">} [options.format="full"] - The format to use. Default is "full".
- *
- * @returns {string[]} The eras in the specified locale and format.
- */
-export function getEras(options: DateTimeOptionsWithoutMin = {}) {
-  const { locale = "el", format = "full" } = options;
-
-  return datesData.eras[locale][format];
-}
 
 type Holiday = {
   date: string;

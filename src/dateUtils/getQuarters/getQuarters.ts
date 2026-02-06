@@ -1,18 +1,15 @@
-import { BaseDateTimeOptions, Format } from "../types";
+import { DateTimeOptionsWithoutMin } from "../types";
 
 export const quartersData = {
-    "el": {
-      "full": ["1ο τρίμηνο", "2ο τρίμηνο", "3ο τρίμηνο", "4ο τρίμηνο"],
-      "short": ["Τ1", "Τ2", "Τ3", "Τ4"]
-    },
-    "en": {
-      "full": ["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"],
-      "short": ["Q1", "Q2", "Q3", "Q4"]
-    }
-  } as const;
-type DateTimeOptionsWithoutMin = Omit<BaseDateTimeOptions, "format"> & {
-  format?: Exclude<Format, "min">;
-};
+  el: {
+    full: ["1ο τρίμηνο", "2ο τρίμηνο", "3ο τρίμηνο", "4ο τρίμηνο"],
+    short: ["Τ1", "Τ2", "Τ3", "Τ4"],
+  },
+  en: {
+    full: ["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"],
+    short: ["Q1", "Q2", "Q3", "Q4"],
+  },
+} as const;
 
 /**
  * Returns the quarters based on the provided options.
