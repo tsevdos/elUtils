@@ -6,21 +6,6 @@ type DateTimeOptionsWithoutMin = Omit<BaseDateTimeOptions, "format"> & {
 };
 
 /**
- * Returns the quarters based on the provided options.
- *
- * @param {DateTimeOptionsWithoutMin} [options={}] - The options for locale and format.
- * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
- * @param {Exclude<Format, "min">} [options.format="full"] - The format to use. Default is "full".
- *
- * @returns {string[]} The quarters in the specified locale and format.
- */
-export function getQuarters(options: DateTimeOptionsWithoutMin = {}) {
-  const { locale = "el", format = "full" } = options;
-
-  return datesData.quarters[locale][format];
-}
-
-/**
  * Returns the eras based on the provided options.
  *
  * @param {DateTimeOptionsWithoutMin} [options={}] - The options for locale and format.

@@ -1,36 +1,5 @@
 import datesData from "./dates.json";
-import { getQuarters, getEras, getHolidays } from "./dateUtils";
-
-describe("getQuarters", () => {
-  it("in full format (greek language)", () => {
-    const expectedData = datesData.quarters.el.full;
-
-    expect(getQuarters()).toBe(expectedData);
-    expect(getQuarters({ locale: "el" })).toBe(expectedData);
-    expect(getQuarters({ format: "full" })).toBe(expectedData);
-    expect(getQuarters({ locale: "el", format: "full" })).toBe(expectedData);
-  });
-
-  it("in short format (greek language)", () => {
-    const expectedData = datesData.quarters.el.short;
-
-    expect(getQuarters({ format: "short" })).toBe(expectedData);
-    expect(getQuarters({ locale: "el", format: "short" })).toBe(expectedData);
-  });
-
-  it("in full format (english language)", () => {
-    const expectedData = datesData.quarters.en.full;
-
-    expect(getQuarters({ locale: "en" })).toBe(expectedData);
-    expect(getQuarters({ locale: "en", format: "full" })).toBe(expectedData);
-  });
-
-  it("in short format (english language)", () => {
-    const expectedData = datesData.quarters.en.short;
-
-    expect(getQuarters({ locale: "en", format: "short" })).toBe(expectedData);
-  });
-});
+import { getEras, getHolidays } from "./dateUtils";
 
 describe("getEras", () => {
   it("in full format (greek language)", () => {
