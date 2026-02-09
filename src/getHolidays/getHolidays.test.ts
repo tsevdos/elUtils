@@ -1,4 +1,4 @@
-import { getHolidays } from "./dateUtils";
+import { getHolidays } from "./getHolidays";
 
 describe("getHolidays", () => {
   // Test for a year with known fixed and movable holiday dates

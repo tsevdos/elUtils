@@ -1,4 +1,33 @@
-import datesData from "./dates.json";
+export const holidaysData = {
+  el: [
+    { date: "01-01", name: "Πρωτοχρονιά", moveable: false },
+    { date: "01-06", name: "Θεοφάνεια", moveable: false },
+    { date: "03-25", name: "Ευαγγελισμός της Θεοτόκου", moveable: false },
+    { date: "05-01", name: "Εργατική Πρωτομαγιά", moveable: false },
+    { date: "08-15", name: "Κοίμηση της Θεοτόκου", moveable: false },
+    { date: "10-28", name: "Ημέρα του Όχι", moveable: false },
+    { date: "12-25", name: "Χριστούγεννα", moveable: false },
+    { date: "12-26", name: "Επόμενη των Χριστουγέννων", moveable: false },
+    { date: "cleanMonday", name: "Καθαρά Δευτέρα", moveable: true },
+    { date: "goodFriday", name: "Μεγάλη Παρασκευή", moveable: true },
+    { date: "easterMonday", name: "Δευτέρα του Πάσχα", moveable: true },
+    { date: "pentecost", name: "Αγίου Πνεύματος", moveable: true },
+  ],
+  en: [
+    { date: "01-01", name: "New Year's Day", moveable: false },
+    { date: "01-06", name: "Epiphany", moveable: false },
+    { date: "03-25", name: "Annunciation", moveable: false },
+    { date: "05-01", name: "Labour Day", moveable: false },
+    { date: "08-15", name: "Assumption of Mary", moveable: false },
+    { date: "10-28", name: "Ohi Day", moveable: false },
+    { date: "12-25", name: "Christmas Day", moveable: false },
+    { date: "12-26", name: "Boxing Day", moveable: false },
+    { date: "cleanMonday", name: "Clean Monday", moveable: true },
+    { date: "goodFriday", name: "Good Friday", moveable: true },
+    { date: "easterMonday", name: "Easter Monday", moveable: true },
+    { date: "pentecost", name: "Pentecost", moveable: true },
+  ],
+};
 
 type Holiday = {
   date: string;
@@ -45,7 +74,7 @@ function calculateMovableGreekHolidays(year: number, locale: "el" | "en"): Holid
     pentecost: `${year}-${pentecost.substring(5, 7)}-${pentecost.substring(8, 10)}`,
   };
 
-  return datesData.holidays[locale]
+  return holidaysData[locale]
     .filter(({ moveable }) => moveable)
     .map(({ date, name }) => ({
       date: movableGreekHolidaysDates[date as keyof typeof movableGreekHolidaysDates],
@@ -69,7 +98,7 @@ type GetHolidaysOptions = {
 export function getHolidays(year: string, options: GetHolidaysOptions = {}): Holiday[] {
   const { locale = "el" } = options;
   const y = parseInt(year);
-  const nonMovableHolidays = datesData.holidays[locale]
+  const nonMovableHolidays = holidaysData[locale]
     .filter(({ moveable }) => !moveable)
     .map(({ date, name }) => ({ date: `${year}-${date}`, name }));
   const movableHolidays: Holiday[] = calculateMovableGreekHolidays(y, locale);
