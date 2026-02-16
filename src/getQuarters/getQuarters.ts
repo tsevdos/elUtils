@@ -15,13 +15,13 @@ export const quartersData = {
  * Returns the quarters based on the provided options.
  *
  * @param {DateTimeOptionsWithoutMin} [options={}] - The options for locale and format.
- * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
- * @param {Exclude<Format, "min">} [options.format="full"] - The format to use. Default is "full".
+ * @param {"el" | "en"} [options.locale="el"] - The locale to use for formatting. Default is "el".
+ * @param {"full" | "short"} [options.format="full"] - The format to use. Default is "full".
  *
  * @returns {string[]} The quarters in the specified locale and format.
  */
-export function getQuarters(options: DateTimeOptionsWithoutMin = {}) {
+export function getQuarters(options: DateTimeOptionsWithoutMin = {}): string[] {
   const { locale = "el", format = "full" } = options;
 
-  return quartersData[locale][format];
+  return [...quartersData[locale][format]];
 }

@@ -17,13 +17,13 @@ export const daysData = {
  * Returns the days based on the provided options.
  *
  * @param {BaseDateTimeOptions} [options={}] - The options for locale and format.
- * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
- * @param {Format} [options.format="full"] - The format to use. Default is "full".
+ * @param {"el" | "en"} [options.locale="el"] - The locale to use for formatting. Default is "el".
+ * @param {"full" | "short" | "min"} [options.format="full"] - The format to use. Default is "full".
  *
  * @returns {string[]} The days in the specified locale and format.
  */
-export function getDays(options: BaseDateTimeOptions = {}) {
+export function getDays(options: BaseDateTimeOptions = {}): string[] {
   const { locale = "el", format = "full" } = options;
 
-  return daysData[locale][format];
+  return [...daysData[locale][format]];
 }

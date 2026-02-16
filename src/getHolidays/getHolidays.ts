@@ -38,7 +38,7 @@ type Holiday = {
  * Calculates movable Greek holidays based on the given year and locale.
  *
  * @param {number} year - The year for which to calculate the holidays.
- * @param {string} [locale="el"] - The locale to use for holiday names. Default is "el".
+ * @param {"el" | "en"} [locale="el"] - The locale to use for holiday names. Default is "el".
  *
  * @returns {Holiday[]} An array of objects representing the movable holidays for the specified year and locale.
  */
@@ -91,7 +91,7 @@ type GetHolidaysOptions = {
  *
  * @param {string} year - The year for which to fetch the holidays.
  * @param {GetHolidaysOptions} [options={}] - The options for locale.
- * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
+ * @param {"el" | "en"} [options.locale="el"] - The locale to use for formatting. Default is "el".
  *
  * @returns {Holiday[]} An array of holiday objects.
  */
