@@ -3,10 +3,8 @@ import { getHolidays } from "./getHolidays";
 describe("getHolidays", () => {
   // Test for a year with known fixed and movable holiday dates
   it("returns correct Greek holidays for a specific year (greek language)", () => {
-    const year = "2023";
-    const holidays = getHolidays(year);
+    const holidays = getHolidays("2023");
 
-    // Expected holidays for the year 2023 - this is a sample and might need adjustments based on accurate holiday dates
     const expectedHolidays = [
       { date: "2023-01-01", name: "Πρωτοχρονιά" },
       { date: "2023-01-06", name: "Θεοφάνεια" },
@@ -25,11 +23,30 @@ describe("getHolidays", () => {
     expect(holidays).toEqual(expectedHolidays);
   });
 
-  it("returns correct Greek holidays for a specific year (english language)", () => {
-    const year = "2023";
-    const holidays = getHolidays(year, { locale: "en" });
+  it("returns correct Greek holidays for a specific year (greek language)", () => {
+    const holidays = getHolidays("2026");
 
-    // Expected holidays for the year 2023 - this is a sample and might need adjustments based on accurate holiday dates
+    const expectedHolidays = [
+      { date: "2026-01-01", name: "Πρωτοχρονιά" },
+      { date: "2026-01-06", name: "Θεοφάνεια" },
+      { date: "2026-02-23", name: "Καθαρά Δευτέρα" },
+      { date: "2026-03-25", name: "Ευαγγελισμός της Θεοτόκου" },
+      { date: "2026-04-10", name: "Μεγάλη Παρασκευή" },
+      { date: "2026-04-13", name: "Δευτέρα του Πάσχα" },
+      { date: "2026-05-01", name: "Εργατική Πρωτομαγιά" },
+      { date: "2026-06-01", name: "Αγίου Πνεύματος" },
+      { date: "2026-08-15", name: "Κοίμηση της Θεοτόκου" },
+      { date: "2026-10-28", name: "Ημέρα του Όχι" },
+      { date: "2026-12-25", name: "Χριστούγεννα" },
+      { date: "2026-12-26", name: "Επόμενη των Χριστουγέννων" },
+    ];
+
+    expect(holidays).toEqual(expectedHolidays);
+  });
+
+  it("returns correct Greek holidays for a specific year (english language)", () => {
+    const holidays = getHolidays("2023", { locale: "en" });
+
     const expectedHolidays = [
       { date: "2023-01-01", name: "New Year's Day" },
       { date: "2023-01-06", name: "Epiphany" },

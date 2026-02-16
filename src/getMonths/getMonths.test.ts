@@ -4,49 +4,49 @@ describe("getMonths", () => {
   it("in full format (greek language)", () => {
     const expectedData = monthsData.el.full;
 
-    expect(getMonths()).toBe(expectedData);
-    expect(getMonths({ locale: "el" })).toBe(expectedData);
-    expect(getMonths({ format: "full" })).toBe(expectedData);
-    expect(getMonths({ locale: "el", format: "full" })).toBe(expectedData);
+    expect(getMonths()).toEqual(expectedData);
+    expect(getMonths({ locale: "el" })).toEqual(expectedData);
+    expect(getMonths({ format: "full" })).toEqual(expectedData);
+    expect(getMonths({ locale: "el", format: "full" })).toEqual(expectedData);
   });
 
   it("in alternative format (greek language)", () => {
     const expectedData = monthsData.el.alternative;
 
-    expect(getMonths({ format: "alternative" })).toBe(expectedData);
-    expect(getMonths({ locale: "el", format: "alternative" })).toBe(expectedData);
+    expect(getMonths({ format: "alternative" })).toEqual(expectedData);
+    expect(getMonths({ locale: "el", format: "alternative" })).toEqual(expectedData);
   });
 
   it("in short format (greek language)", () => {
     const expectedData = monthsData.el.short;
 
-    expect(getMonths({ format: "short" })).toBe(expectedData);
-    expect(getMonths({ locale: "el", format: "short" })).toBe(expectedData);
+    expect(getMonths({ format: "short" })).toEqual(expectedData);
+    expect(getMonths({ locale: "el", format: "short" })).toEqual(expectedData);
   });
 
   it("in min format (greek language)", () => {
     const expectedData = monthsData.el.min;
 
-    expect(getMonths({ format: "min" })).toBe(expectedData);
-    expect(getMonths({ locale: "el", format: "min" })).toBe(expectedData);
+    expect(getMonths({ format: "min" })).toEqual(expectedData);
+    expect(getMonths({ locale: "el", format: "min" })).toEqual(expectedData);
   });
 
   it("in full format (english language)", () => {
     const expectedData = monthsData.en.full;
 
-    expect(getMonths({ locale: "en" })).toBe(expectedData);
-    expect(getMonths({ locale: "en", format: "full" })).toBe(expectedData);
+    expect(getMonths({ locale: "en" })).toEqual(expectedData);
+    expect(getMonths({ locale: "en", format: "full" })).toEqual(expectedData);
   });
 
   it("in short format (english language)", () => {
     const expectedData = monthsData.en.short;
 
-    expect(getMonths({ locale: "en", format: "short" })).toBe(expectedData);
+    expect(getMonths({ locale: "en", format: "short" })).toEqual(expectedData);
   });
 
   it("in min format (english language)", () => {
     const expectedData = monthsData.en.min;
 
-    expect(getMonths({ locale: "en", format: "min" })).toBe(expectedData);
+    expect(getMonths({ locale: "en", format: "min" })).toEqual(expectedData);
   });
 });
