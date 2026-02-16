@@ -9,7 +9,6 @@ export type DateTimeOptionsWithoutMin = Omit<BaseDateTimeOptions, "format"> & {
   format?: Exclude<Format, "min">;
 };
 
-
 // TODO: OLD TYPES!
 export type Region = {
   id: number;

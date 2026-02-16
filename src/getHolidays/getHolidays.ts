@@ -97,7 +97,7 @@ type GetHolidaysOptions = {
  */
 export function getHolidays(year: string, options: GetHolidaysOptions = {}): Holiday[] {
   const { locale = "el" } = options;
-  const y = parseInt(year);
+  const y = Number.parseInt(year);
   const nonMovableHolidays = holidaysData[locale]
     .filter(({ moveable }) => !moveable)
     .map(({ date, name }) => ({ date: `${year}-${date}`, name }));
