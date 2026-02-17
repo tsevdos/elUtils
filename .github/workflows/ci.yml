@@ -20,17 +20,8 @@ jobs:
       - name: Install dependencies 🔥
         run: npm i
 
-      - name: Check app types ⚠️
-        run: npm run tsc
-
-      - name: Lint app 👌
-        run: npm run lint
-
-      - name: Format app ☑️
-        run: npm run format
-
-      - name: Test app 🙏
-        run: npm test
+      - name: Check app types, lint, format, and test 🙏
+        run: npm run check
 
       - name: Build app 👷
         if: matrix.node >= 20
@@ -54,17 +45,8 @@ jobs:
       - name: Install dependencies 🔥
         run: bun install
 
-      - name: Check app types ⚠️
-        run: bun run tsc
-
-      - name: Lint app 👌
-        run: bun run lint
-
-      - name: Format app ☑️
-        run: bun run format
-
-      - name: Test app 🙏
-        run: bun run test
+      - name: Check app types, lint, format, and test 🙏
+        run: npm run check
 
       - name: Build app 👷
         run: bun run build
