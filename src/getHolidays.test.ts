@@ -2,7 +2,7 @@ import { getHolidays } from "./getHolidays";
 
 describe("getHolidays", () => {
   // Test for a year with known fixed and movable holiday dates
-  it("returns correct Greek holidays for a specific year (greek language)", () => {
+  it("returns correct Greek holidays for 2023 (greek language)", () => {
     const holidays = getHolidays("2023");
 
     const expectedHolidays = [
@@ -23,7 +23,7 @@ describe("getHolidays", () => {
     expect(holidays).toEqual(expectedHolidays);
   });
 
-  it("returns correct Greek holidays for a specific year (greek language)", () => {
+  it("returns correct Greek holidays for 2026 (greek language)", () => {
     const holidays = getHolidays("2026");
 
     const expectedHolidays = [
@@ -44,7 +44,7 @@ describe("getHolidays", () => {
     expect(holidays).toEqual(expectedHolidays);
   });
 
-  it("returns correct Greek holidays for a specific year (english language)", () => {
+  it("returns correct Greek holidays for 2023 (english language)", () => {
     const holidays = getHolidays("2023", { locale: "en" });
 
     const expectedHolidays = [

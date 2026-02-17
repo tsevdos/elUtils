@@ -38,7 +38,7 @@ type Holiday = {
  * Calculates movable Greek holidays based on the given year and locale.
  *
  * @param {number} year - The year for which to calculate the holidays.
- * @param {"el" | "en"} [locale="el"] - The locale to use for holiday names. Default is "el".
+ * @param {"el" | "en"} - The locale to use for holiday names.
  *
  * @returns {Holiday[]} An array of objects representing the movable holidays for the specified year and locale.
  */
@@ -68,10 +68,10 @@ function calculateMovableGreekHolidays(year: number, locale: "el" | "en"): Holid
   const easterMonday = new Date(easter.getTime() + oneDay).toISOString();
   const pentecost = new Date(easter.getTime() + oneDay * 50).toISOString();
   const movableGreekHolidaysDates = {
-    cleanMonday: `${year}-${cleanMonday.substring(5, 7)}-${cleanMonday.substring(8, 10)}`,
-    goodFriday: `${year}-${goodFriday.substring(5, 7)}-${goodFriday.substring(8, 10)}`,
-    easterMonday: `${year}-${easterMonday.substring(5, 7)}-${easterMonday.substring(8, 10)}`,
-    pentecost: `${year}-${pentecost.substring(5, 7)}-${pentecost.substring(8, 10)}`,
+    cleanMonday: `${year}-${cleanMonday.slice(5, 7)}-${cleanMonday.slice(8, 10)}`,
+    goodFriday: `${year}-${goodFriday.slice(5, 7)}-${goodFriday.slice(8, 10)}`,
+    easterMonday: `${year}-${easterMonday.slice(5, 7)}-${easterMonday.slice(8, 10)}`,
+    pentecost: `${year}-${pentecost.slice(5, 7)}-${pentecost.slice(8, 10)}`,
   };
 
   return holidaysData[locale]
@@ -102,7 +102,7 @@ export function getHolidays(year: string, options: GetHolidaysOptions = {}): Hol
     .filter(({ moveable }) => !moveable)
     .map(({ date, name }) => ({ date: `${year}-${date}`, name }));
   const movableHolidays: Holiday[] = calculateMovableGreekHolidays(y, locale);
-  const holidays = [...nonMovableHolidays, ...movableHolidays].sort((a, b) => a.date.localeCompare(b.date));
+  const holidays = [...nonMovableHolidays, ...movableHolidays].toSorted((a, b) => a.date.localeCompare(b.date));
 
   return holidays;
 }

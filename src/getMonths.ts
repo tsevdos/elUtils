@@ -1,4 +1,4 @@
-import { BaseDateTimeOptions, Format } from "./types";
+import type { BaseDateTimeOptions, Format } from "./types";
 
 export const monthsData = {
   el: {

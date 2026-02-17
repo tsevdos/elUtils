@@ -1,4 +1,4 @@
-import { BaseDateTimeOptions } from "./types";
+import type { BaseDateTimeOptions } from "./types";
 
 export const daysData = {
   el: {

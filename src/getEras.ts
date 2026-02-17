@@ -1,4 +1,4 @@
-import { DateTimeOptionsWithoutMin } from "./types";
+import type { DateTimeOptionsWithoutMin } from "./types";
 
 export const erasData = {
   el: {
