@@ -1,4 +1,4 @@
-import { DateTimeOptionsWithoutMin } from "../types";
+import { DateTimeOptionsWithoutMin } from "./types";
 
 export const quartersData = {
   el: {

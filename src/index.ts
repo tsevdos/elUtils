@@ -27,11 +27,11 @@ export {
   getCountry,
 } from "./geoUtils";
 // Date utilities
-export { getDays } from "./getDays/getDays";
-export { getMonths } from "./getMonths/getMonths";
-export { getQuarters } from "./getQuarters/getQuarters";
-export { getEras } from "./getEras/getEras";
-export { getHolidays } from "./getHolidays/getHolidays";
+export { getDays } from "./getDays";
+export { getMonths } from "./getMonths";
+export { getQuarters } from "./getQuarters";
+export { getEras } from "./getEras";
+export { getHolidays } from "./getHolidays";
 
 export {
   validatePostalCode,
