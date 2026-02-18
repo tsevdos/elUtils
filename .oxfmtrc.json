@@ -1,8 +1,14 @@
 {
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
   "printWidth": 120,
-  "tabWidth": 2,
   "singleQuote": false,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
   "trailingComma": "all",
+  "endOfLine": "lf",
   "arrowParens": "always",
+  "bracketSpacing": true,
+  "organizeImportsSkipDestructiveCodeActions": true,
   "ignorePatterns": ["*.md", "package.json"]
 }

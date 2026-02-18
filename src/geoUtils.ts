@@ -12,7 +12,7 @@ import taxOfficesEn from "../data/taxOffices-en.json";
 import { convertsGreekTextToComparableUpperCase } from "./languageUtils";
 import countriesEl from "../data/countries-el.json";
 import countriesEn from "../data/countries-en.json";
-import {
+import type {
   City,
   Country,
   GeographicRegion,

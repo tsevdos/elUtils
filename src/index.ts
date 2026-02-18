@@ -26,7 +26,13 @@ export {
   searchCountryByName,
   getCountry,
 } from "./geoUtils";
-export { getDays, getMonths, getQuarters, getEras, getHolidays } from "./dateUtils";
+// Date utilities
+export { getDays } from "./getDays";
+export { getMonths } from "./getMonths";
+export { getQuarters } from "./getQuarters";
+export { getEras } from "./getEras";
+export { getHolidays } from "./getHolidays";
+
 export {
   validatePostalCode,
   validateAMKA,
