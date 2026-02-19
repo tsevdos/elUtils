@@ -1,4 +1,4 @@
-import { formatWeight } from "../formatUtils";
+import { formatWeight } from "./formatWeight";
 
 describe("formatWeight", () => {
   //  Pounds
