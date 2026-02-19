@@ -1,5 +1,11 @@
 # @tsevdos/el-utils
 
+## 0.10.0
+
+### Minor Changes
+
+- [#115](https://github.com/tsevdos/elUtils/pull/115) [`1a265a7`](https://github.com/tsevdos/elUtils/commit/1a265a733eacf5442d8f1989a6d0016d0b18ed0a) Thanks [@tsevdos](https://github.com/tsevdos)! - make all the functions of DateUtils module tree shakable
+
 ## 0.9.1
 
 ### Patch Changes
