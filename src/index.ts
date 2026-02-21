@@ -32,7 +32,6 @@ export { getMonths } from "./getMonths";
 export { getQuarters } from "./getQuarters";
 export { getEras } from "./getEras";
 export { getHolidays } from "./getHolidays";
-
 export {
   validatePostalCode,
   validateAMKA,
@@ -41,5 +40,5 @@ export {
   isValidLandlinePhone,
   isValidPhone,
 } from "./validationUtils";
-export { formatWeight } from "./formatUtils";
+export { formatWeight } from "./formatWeight";
 export { convertsGreekTextToComparableUpperCase, compareGreekStrings } from "./languageUtils";
