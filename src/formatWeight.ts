@@ -170,27 +170,14 @@ const weightsData = {
   },
 } as const;
 
-type WeightTypes =
-  | "pound"
-  | "kilogram"
-  | "centigram"
-  | "carat"
-  | "dram"
-  | "gram"
-  | "grain"
-  | "hectogram"
-  | "kilonewton"
-  | "milligram"
-  | "nanogram"
-  | "ounce"
-  | "ton";
+type WeightTypes = keyof typeof weightsData;
 
 type FormatWeightsOptions = {
   locale?: "el" | "en";
   type?: WeightTypes;
 } & (
   | {
-      format?: "full" | "full_single";
+      format?: "full";
       withInternational?: boolean;
     }
   | {
@@ -207,11 +194,7 @@ type WithInternationalOptions = Pick<FormatWeightsOptions, "type">;
 const withInternationalSymbol = (value: string, options: WithInternationalOptions = {}): string => {
   const { type = "pound" } = options;
 
-  if (weightsData[type].international) {
-    return `${value} ${weightsData[type].international}`;
-  }
-
-  return value;
+  return `${value} ${weightsData[type].international}`;
 };
 
 /**
@@ -221,20 +204,21 @@ const withInternationalSymbol = (value: string, options: WithInternationalOption
  * @param {FormatWeightsOptions} [options={}] - The options for formatting the weight.
  * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
  * @param {WeightTypes} [options.type="pound"] - The type of weight to format. Default is "pound".
- * @param {"full" | "full_single" | "short"} [options.format="full"] - The format to use. Default is "full".
+ * @param {"full" | "short"} [options.format="full"] - The format to use. Default is "full".
  * @param {boolean} [options.withInternational=false] - Whether to include the international symbol. Default is false.
  *
  * @returns {string} - The formatted weight string.
  */
 export const formatWeight = (value: number, options: FormatWeightsOptions = {}): string => {
   const { locale = "el", format = "full", type = "pound", withInternational = false } = options;
-  let getFormat = format;
+  let resolvedFormat: FormatWeightsOptions["format"] | "full_single" = format;
 
-  if (getFormat !== "short") {
-    getFormat = value > 1 ? "full" : "full_single";
+  // handle the case where we want to use the full format but we have a single value, e.g 1 pound instead of 1 pounds
+  if (format !== "short") {
+    resolvedFormat = value === 1 ? "full_single" : "full";
   }
 
-  const result = `${value} ${weightsData[type][locale][getFormat]}`;
+  const result = `${value} ${weightsData[type][locale][resolvedFormat]}`;
 
   if (withInternational) {
     return withInternationalSymbol(result, { type });
