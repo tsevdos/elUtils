@@ -1,5 +1,11 @@
 # @tsevdos/el-utils
 
+## 0.11.0
+
+### Minor Changes
+
+- [#117](https://github.com/tsevdos/elUtils/pull/117) [`1459c84`](https://github.com/tsevdos/elUtils/commit/1459c8482f6911a430a053b7900de74f29df3164) Thanks [@tsevdos](https://github.com/tsevdos)! - makes all FormatUtils module functions tree-shakeable
+
 ## 0.10.0
 
 ### Minor Changes
