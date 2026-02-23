@@ -9,7 +9,7 @@ import prefecturesEl from "../data/prefectures-el.json";
 import prefecturesEn from "../data/prefectures-en.json";
 import taxOfficesEl from "../data/taxOffices-el.json";
 import taxOfficesEn from "../data/taxOffices-en.json";
-import { convertsGreekTextToComparableUpperCase } from "./languageUtils";
+import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
 import countriesEl from "../data/countries-el.json";
 import countriesEn from "../data/countries-en.json";
 import type {
@@ -232,7 +232,7 @@ export function searchCityByName({ searchTerm, locale = "el" }: CityBySearchTerm
 
   if (locale === "el") {
     citiesByName = cities.filter((city) =>
-      convertsGreekTextToComparableUpperCase(city.name).includes(convertsGreekTextToComparableUpperCase(searchTerm)),
+      normalizeAndUppercaseGreekString(city.name).includes(normalizeAndUppercaseGreekString(searchTerm)),
     );
   }
 
@@ -536,11 +536,9 @@ export function searchTaxOffice(options: TaxOfficeOptionsByTerm): TaxOffice[] {
 
   if (searchTerm.trim() === "") return [];
 
-  const normalizedTerm = convertsGreekTextToComparableUpperCase(searchTerm);
+  const normalizedTerm = normalizeAndUppercaseGreekString(searchTerm);
 
-  return allTaxOffices[locale].filter(({ name }) =>
-    convertsGreekTextToComparableUpperCase(name).includes(normalizedTerm),
-  );
+  return allTaxOffices[locale].filter(({ name }) => normalizeAndUppercaseGreekString(name).includes(normalizedTerm));
 }
 
 type CountriesOptions = {
@@ -580,13 +578,9 @@ export function searchCountryByName({ locale = "el", searchTerm }: SearchCountry
   if (locale === "el") {
     countriesByName = countries.filter(({ name, completeName, officialName }) => {
       return (
-        convertsGreekTextToComparableUpperCase(name).includes(convertsGreekTextToComparableUpperCase(searchTerm)) ||
-        convertsGreekTextToComparableUpperCase(completeName).includes(
-          convertsGreekTextToComparableUpperCase(searchTerm),
-        ) ||
-        convertsGreekTextToComparableUpperCase(officialName).includes(
-          convertsGreekTextToComparableUpperCase(searchTerm),
-        )
+        normalizeAndUppercaseGreekString(name).includes(normalizeAndUppercaseGreekString(searchTerm)) ||
+        normalizeAndUppercaseGreekString(completeName).includes(normalizeAndUppercaseGreekString(searchTerm)) ||
+        normalizeAndUppercaseGreekString(officialName).includes(normalizeAndUppercaseGreekString(searchTerm))
       );
     });
   }

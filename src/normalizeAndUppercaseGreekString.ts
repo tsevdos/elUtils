@@ -28,7 +28,7 @@ const GREEK_ACCENTED_CHARACTERS_REPLACEMENTS: { [key: string]: string } = {
  *
  * @returns {string} - The normalized and uppercased string.
  */
-export function convertsGreekTextToComparableUpperCase(input: string): string {
+export function normalizeAndUppercaseGreekString(input: string): string {
   const accentChars = /[άέήίόύώΆΈΉΊΌΎΏϊΐΪϋΰΫ]/g;
   const normalized = input
     .replace(accentChars, (match) => GREEK_ACCENTED_CHARACTERS_REPLACEMENTS[match] || match) // Replace accented characters
@@ -38,13 +38,14 @@ export function convertsGreekTextToComparableUpperCase(input: string): string {
 }
 
 /**
- * Compares two Greek strings by normalizing them (removing accents, spaces, and special characters) and converting them to uppercase.
+ * Removes accents, spaces, and special characters from the input string and converts it to uppercase.
  *
- * @param {string} stringA - The first Greek string to compare.
- * @param {string} stringB - The second Greek string to compare.
+ * @param {string} input - The Greek text to be converted.
  *
- * @returns {boolean} - `true` if the normalized strings are equal, `false` otherwise.
+ * @returns {string} - The normalized and uppercased string.
+ *
+ * @deprecated Use {@link normalizeAndUppercaseGreekString} instead. This function will be removed in a future version.
  */
-export function compareGreekStrings(stringA: string, stringB: string): boolean {
-  return convertsGreekTextToComparableUpperCase(stringA) === convertsGreekTextToComparableUpperCase(stringB);
+export function convertsGreekTextToComparableUpperCase(input: string): string {
+  return normalizeAndUppercaseGreekString(input);
 }
