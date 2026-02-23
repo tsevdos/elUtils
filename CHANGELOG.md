@@ -1,5 +1,11 @@
 # @tsevdos/el-utils
 
+## 0.12.0
+
+### Minor Changes
+
+- [#119](https://github.com/tsevdos/elUtils/pull/119) [`0721a60`](https://github.com/tsevdos/elUtils/commit/0721a60d6ca1ffe0c9ba6a5c9b43939c98085d74) Thanks [@tsevdos](https://github.com/tsevdos)! - Makes all LanguageUtils module functions tree-shakeable
+
 ## 0.11.0
 
 ### Minor Changes
