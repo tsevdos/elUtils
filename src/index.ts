@@ -41,4 +41,8 @@ export {
   isValidPhone,
 } from "./validationUtils";
 export { formatWeight } from "./formatWeight";
-export { convertsGreekTextToComparableUpperCase, compareGreekStrings } from "./languageUtils";
+export {
+  normalizeAndUppercaseGreekString,
+  convertsGreekTextToComparableUpperCase, // @deprecated Use {@link normalizeAndUppercaseGreekString} instead. This function will be removed in a future version.
+} from "./normalizeAndUppercaseGreekString";
+export { compareGreekStrings } from "./compareGreekStrings";

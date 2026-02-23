@@ -9,7 +9,7 @@ import prefecturesEl from "../data/prefectures-el.json";
 import prefecturesEn from "../data/prefectures-en.json";
 import taxOfficesEl from "../data/taxOffices-el.json";
 import taxOfficesEn from "../data/taxOffices-en.json";
-import { convertsGreekTextToComparableUpperCase } from "./languageUtils";
+import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
 import countriesEl from "../data/countries-el.json";
 import countriesEn from "../data/countries-en.json";
 import type {
@@ -228,12 +228,11 @@ type CityBySearchTermOptions = { searchTerm: string } & CitiesOptions;
  */
 export function searchCityByName({ searchTerm, locale = "el" }: CityBySearchTermOptions): City[] | null {
   const cities = getCities({ locale });
+  const normalizedSearchTerm = normalizeAndUppercaseGreekString(searchTerm);
   let citiesByName: City[] = [];
 
   if (locale === "el") {
-    citiesByName = cities.filter((city) =>
-      convertsGreekTextToComparableUpperCase(city.name).includes(convertsGreekTextToComparableUpperCase(searchTerm)),
-    );
+    citiesByName = cities.filter((city) => normalizeAndUppercaseGreekString(city.name).includes(normalizedSearchTerm));
   }
 
   if (locale === "en") {
@@ -536,11 +535,9 @@ export function searchTaxOffice(options: TaxOfficeOptionsByTerm): TaxOffice[] {
 
   if (searchTerm.trim() === "") return [];
 
-  const normalizedTerm = convertsGreekTextToComparableUpperCase(searchTerm);
+  const normalizedTerm = normalizeAndUppercaseGreekString(searchTerm);
 
-  return allTaxOffices[locale].filter(({ name }) =>
-    convertsGreekTextToComparableUpperCase(name).includes(normalizedTerm),
-  );
+  return allTaxOffices[locale].filter(({ name }) => normalizeAndUppercaseGreekString(name).includes(normalizedTerm));
 }
 
 type CountriesOptions = {
@@ -575,18 +572,15 @@ type SearchCountryByNameOptions = {
  */
 export function searchCountryByName({ locale = "el", searchTerm }: SearchCountryByNameOptions): Country[] | null {
   const countries = getCountries({ locale });
+  const normalizedSearchTerm = normalizeAndUppercaseGreekString(searchTerm);
   let countriesByName: Country[] = [];
 
   if (locale === "el") {
     countriesByName = countries.filter(({ name, completeName, officialName }) => {
       return (
-        convertsGreekTextToComparableUpperCase(name).includes(convertsGreekTextToComparableUpperCase(searchTerm)) ||
-        convertsGreekTextToComparableUpperCase(completeName).includes(
-          convertsGreekTextToComparableUpperCase(searchTerm),
-        ) ||
-        convertsGreekTextToComparableUpperCase(officialName).includes(
-          convertsGreekTextToComparableUpperCase(searchTerm),
-        )
+        normalizeAndUppercaseGreekString(name).includes(normalizedSearchTerm) ||
+        normalizeAndUppercaseGreekString(completeName).includes(normalizedSearchTerm) ||
+        normalizeAndUppercaseGreekString(officialName).includes(normalizedSearchTerm)
       );
     });
   }
