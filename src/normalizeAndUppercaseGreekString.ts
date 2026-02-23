@@ -31,7 +31,7 @@ const GREEK_ACCENTED_CHARACTERS_REPLACEMENTS: { [key: string]: string } = {
 export function normalizeAndUppercaseGreekString(input: string): string {
   const accentChars = /[άέήίόύώΆΈΉΊΌΎΏϊΐΪϋΰΫ]/g;
   const normalized = input
-    .replace(accentChars, (match) => GREEK_ACCENTED_CHARACTERS_REPLACEMENTS[match] || match) // Replace accented characters
+    .replaceAll(accentChars, (match) => GREEK_ACCENTED_CHARACTERS_REPLACEMENTS[match] || match) // Replace accented characters
     .replaceAll(/[ /\-_!@#$%^&*()]/g, ""); // Remove spaces and special characters
 
   return normalized.toUpperCase();
