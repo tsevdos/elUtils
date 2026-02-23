@@ -43,6 +43,6 @@ export {
 export { formatWeight } from "./formatWeight";
 export {
   normalizeAndUppercaseGreekString,
-  convertsGreekTextToComparableUpperCase,
+  convertsGreekTextToComparableUpperCase, // @deprecated Use {@link normalizeAndUppercaseGreekString} instead. This function will be removed in a future version.
 } from "./normalizeAndUppercaseGreekString";
 export { compareGreekStrings } from "./compareGreekStrings";
