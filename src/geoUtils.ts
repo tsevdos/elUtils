@@ -228,12 +228,11 @@ type CityBySearchTermOptions = { searchTerm: string } & CitiesOptions;
  */
 export function searchCityByName({ searchTerm, locale = "el" }: CityBySearchTermOptions): City[] | null {
   const cities = getCities({ locale });
+  const normalizedSearchTerm = normalizeAndUppercaseGreekString(searchTerm);
   let citiesByName: City[] = [];
 
   if (locale === "el") {
-    citiesByName = cities.filter((city) =>
-      normalizeAndUppercaseGreekString(city.name).includes(normalizeAndUppercaseGreekString(searchTerm)),
-    );
+    citiesByName = cities.filter((city) => normalizeAndUppercaseGreekString(city.name).includes(normalizedSearchTerm));
   }
 
   if (locale === "en") {
@@ -573,14 +572,15 @@ type SearchCountryByNameOptions = {
  */
 export function searchCountryByName({ locale = "el", searchTerm }: SearchCountryByNameOptions): Country[] | null {
   const countries = getCountries({ locale });
+  const normalizedSearchTerm = normalizeAndUppercaseGreekString(searchTerm);
   let countriesByName: Country[] = [];
 
   if (locale === "el") {
     countriesByName = countries.filter(({ name, completeName, officialName }) => {
       return (
-        normalizeAndUppercaseGreekString(name).includes(normalizeAndUppercaseGreekString(searchTerm)) ||
-        normalizeAndUppercaseGreekString(completeName).includes(normalizeAndUppercaseGreekString(searchTerm)) ||
-        normalizeAndUppercaseGreekString(officialName).includes(normalizeAndUppercaseGreekString(searchTerm))
+        normalizeAndUppercaseGreekString(name).includes(normalizedSearchTerm) ||
+        normalizeAndUppercaseGreekString(completeName).includes(normalizedSearchTerm) ||
+        normalizeAndUppercaseGreekString(officialName).includes(normalizedSearchTerm)
       );
     });
   }
