@@ -9,6 +9,17 @@ export type DateTimeOptionsWithoutMin = Omit<BaseDateTimeOptions, "format"> & {
   format?: Exclude<Format, "min">;
 };
 
+export type PostalCode = {
+  id: number;
+  regionAndUnit: {
+    regionId: number;
+    regionIso31662: string;
+    unitId: number;
+  };
+  prefectureId: number;
+  postalCodes: string[];
+};
+
 // TODO: OLD TYPES!
 export type Region = {
   id: number;
