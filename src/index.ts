@@ -33,8 +33,8 @@ export { getQuarters } from "./getQuarters";
 export { getEras } from "./getEras";
 export { getHolidays } from "./getHolidays";
 // Validation utilities
+export { validatePostalCode } from "./validatePostalCode";
 export {
-  validatePostalCode,
   validateAMKA,
   validateVATNumber,
   isValidMobilePhone,

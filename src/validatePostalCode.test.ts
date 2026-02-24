@@ -1,4 +1,4 @@
-import { validatePostalCode } from "./validationUtils";
+import { validatePostalCode } from "./validatePostalCode";
 
 describe("validatePostalCode", () => {
   it("returns true on existing postal codes", () => {
