@@ -32,15 +32,18 @@ export { getMonths } from "./getMonths";
 export { getQuarters } from "./getQuarters";
 export { getEras } from "./getEras";
 export { getHolidays } from "./getHolidays";
+// Validation utilities
+export { validatePostalCode } from "./validatePostalCode";
 export {
-  validatePostalCode,
   validateAMKA,
   validateVATNumber,
   isValidMobilePhone,
   isValidLandlinePhone,
   isValidPhone,
 } from "./validationUtils";
+// Format utilities
 export { formatWeight } from "./formatWeight";
+// Language utilities
 export {
   normalizeAndUppercaseGreekString,
   convertsGreekTextToComparableUpperCase, // @deprecated Use {@link normalizeAndUppercaseGreekString} instead. This function will be removed in a future version.

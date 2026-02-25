@@ -4,7 +4,7 @@ import citiesEl from "../../data/cities-el.json";
 import citiesEn from "../../data/cities-en.json";
 import geographicRegionsEl from "../../data/geographic-regions-el.json";
 import geographicRegionsEn from "../../data/geographic-regions-en.json";
-import postalCodes from "../../data/postal-codes.json";
+import postalCodes from "../data/postal-codes.json";
 import prefecturesEl from "../../data/prefectures-el.json";
 import prefecturesEn from "../../data/prefectures-en.json";
 import taxOfficesEl from "../../data/taxOffices-el.json";

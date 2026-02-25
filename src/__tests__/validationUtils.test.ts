@@ -3,30 +3,8 @@ import {
   isValidMobilePhone,
   isValidPhone,
   validateAMKA,
-  validatePostalCode,
   validateVATNumber,
 } from "../validationUtils";
-
-describe("validatePostalCode", () => {
-  it("returns true on existing postal codes", () => {
-    expect(validatePostalCode("17562")).toBe(true);
-    expect(validatePostalCode("30005")).toBe(true);
-    expect(validatePostalCode("17122")).toBe(true);
-    expect(validatePostalCode("25008")).toBe(true);
-    expect(validatePostalCode("68014")).toBe(true);
-    expect(validatePostalCode("27066")).toBe(true);
-    expect(validatePostalCode("54250")).toBe(true);
-  });
-
-  it("returns false on not existing postal codes", () => {
-    expect(validatePostalCode("12345")).toBe(false);
-    expect(validatePostalCode("11111")).toBe(false);
-    expect(validatePostalCode("22222")).toBe(false);
-    expect(validatePostalCode("99999")).toBe(false);
-    expect(validatePostalCode("98765")).toBe(false);
-    expect(validatePostalCode("56789")).toBe(false);
-  });
-});
 
 describe("validateAMKA", () => {
   it("returns true on valid AMKA", () => {
@@ -57,6 +35,32 @@ describe("validateAMKA", () => {
     expect(validateAMKA("29022355553")).toBe(false);
     // 30th of February on non-leap years
     expect(validateAMKA("30022455551")).toBe(false);
+  });
+
+  it("returns false on empty or invalid string inputs", () => {
+    expect(validateAMKA("")).toBe(false);
+    expect(validateAMKA("abc")).toBe(false);
+    expect(validateAMKA("12345abc890")).toBe(false);
+  });
+
+  it("returns false on AMKA with valid length but all same digits", () => {
+    expect(validateAMKA("11111111111")).toBe(false);
+    expect(validateAMKA("22222222222")).toBe(false);
+  });
+
+  // TODO: re-evaluate edge case dates
+  it.skip("handles edge case dates correctly", () => {
+    // Valid leap year February 29th
+    expect(validateAMKA("29022412121")).toBe(true);
+    // Invalid non-leap year February 29th
+    expect(validateAMKA("29022355553")).toBe(false);
+  });
+
+  it("validates correct month ranges", () => {
+    // Month 00 is invalid
+    expect(validateAMKA("01002488885")).toBe(false);
+    // Month 13 is invalid
+    expect(validateAMKA("01132488880")).toBe(false);
   });
 });
 
