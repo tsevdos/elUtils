@@ -34,13 +34,8 @@ export { getEras } from "./getEras";
 export { getHolidays } from "./getHolidays";
 // Validation utilities
 export { validatePostalCode } from "./validatePostalCode";
-export {
-  validateAMKA,
-  validateVATNumber,
-  isValidMobilePhone,
-  isValidLandlinePhone,
-  isValidPhone,
-} from "./validationUtils";
+export { validateAMKA } from "./validateAMKA";
+export { validateVATNumber, isValidMobilePhone, isValidLandlinePhone, isValidPhone } from "./validationUtils";
 // Format utilities
 export { formatWeight } from "./formatWeight";
 // Language utilities
