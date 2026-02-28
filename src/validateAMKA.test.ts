@@ -42,10 +42,9 @@ describe("validateAMKA", () => {
     expect(validateAMKA("22222222222")).toBe(false);
   });
 
-  // TODO: re-evaluate edge case dates
-  it.skip("handles edge case dates correctly", () => {
+  it("handles edge case dates correctly", () => {
     // Valid leap year February 29th
-    expect(validateAMKA("29022412121")).toBe(true);
+    expect(validateAMKA("29022412125")).toBe(true);
     // Invalid non-leap year February 29th
     expect(validateAMKA("29022355553")).toBe(false);
   });

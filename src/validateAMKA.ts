@@ -14,9 +14,9 @@ export function validateAMKA(amka: string | number): boolean {
   }
 
   // The first 6 digits is the date-of-birth in DDMMYY format
-  const day = Number.parseInt(strAmka.slice(0, 2));
-  const month = Number.parseInt(strAmka.slice(2, 4));
-  const year = Number.parseInt(strAmka.slice(4, 6));
+  const day = Number.parseInt(strAmka.slice(0, 2), 10);
+  const month = Number.parseInt(strAmka.slice(2, 4), 10);
+  const year = Number.parseInt(strAmka.slice(4, 6), 10);
 
   // Obvious checks
   if (day > 31) {
@@ -33,7 +33,7 @@ export function validateAMKA(amka: string | number): boolean {
   // For example, JS will translate 30/02/2024 to 01/03/2024 :S
   // To prevent this, we make sure that the month of the Date object
   // is the same as the input month
-  if (Number.parseInt(("0" + (dateObj.getUTCMonth() + 1)).slice(-2)) !== month) {
+  if (Number.parseInt(`0${dateObj.getUTCMonth() + 1}`.slice(-2), 10) !== month) {
     return false;
   }
 
@@ -42,7 +42,7 @@ export function validateAMKA(amka: string | number): boolean {
   // Go through every digit of the AMKA number
   const sum = strAmka.split("").reduce((acc, value, index) => {
     // Multiply every other digit by 2
-    let d = Number.parseInt(value) * ((index % 2) + 1);
+    let d = Number.parseInt(value, 10) * ((index % 2) + 1);
 
     // If it's a 2-digit number, sum its digits
     if (d > 9) {
