@@ -9,7 +9,7 @@ export function validateAMKA(amka: string | number): boolean {
   const strAmka = amka.toString();
 
   // AMKA should be 11 digits long
-  if (/^\d{11}$/.exec(strAmka) === null || strAmka == "00000000000") {
+  if (/^\d{11}$/.exec(strAmka) === null || strAmka === "00000000000") {
     return false;
   }
 
