@@ -5,7 +5,7 @@
  * - Cannot be all zeros.
  * - The last digit (checksum) must satisfy a specific calculation based on the preceding digits.
  *
- * @param {string | number} vatNumber - The VAT number to validate, provided as a string or a number.
+ * @param {string | number} vatNumberInput - The VAT number to validate, provided as a string or a number.
  * @returns {boolean} - Returns `true` if the VAT number is valid according to the specified rules; otherwise, `false`.
  *
  * Reference:{@link https://lytrax.io/blog/projects/greek-tin-validator-generator  Greek TIN Validator Generator}
@@ -36,7 +36,7 @@ export function isValidVATNumber(vatNumberInput: string | number): boolean {
  * - Cannot be all zeros.
  * - The last digit (checksum) must satisfy a specific calculation based on the preceding digits.
  *
- * @param {string | number} vatNumber - The VAT number to validate, provided as a string or a number.
+ * @param {string | number} vatNumberInput - The VAT number to validate, provided as a string or a number.
  * @returns {boolean} - Returns `true` if the VAT number is valid according to the specified rules; otherwise, `false`.
  *
  * @deprecated Use {@link isValidVATNumber} instead. This function will be removed in a future version.
