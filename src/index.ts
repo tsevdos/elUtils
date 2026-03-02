@@ -38,7 +38,7 @@ export { validateAMKA } from "./validateAMKA";
 export {
   isValidVATNumber,
   validateVATNumber, // @deprecated Use {@link isValidVATNumber} instead. This function will be removed in a future version.
-} from "./validateVATNumber";
+} from "./isValidVATNumber";
 export { isValidMobilePhone, isValidLandlinePhone, isValidPhone } from "./validationUtils";
 // Format utilities
 export { formatWeight } from "./formatWeight";
