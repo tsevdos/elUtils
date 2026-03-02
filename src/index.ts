@@ -35,7 +35,11 @@ export { getHolidays } from "./getHolidays";
 // Validation utilities
 export { validatePostalCode } from "./validatePostalCode";
 export { validateAMKA } from "./validateAMKA";
-export { validateVATNumber, isValidMobilePhone, isValidLandlinePhone, isValidPhone } from "./validationUtils";
+export {
+  isValidVATNumber,
+  validateVATNumber, // @deprecated Use {@link isValidVATNumber} instead. This function will be removed in a future version.
+} from "./isValidVATNumber";
+export { isValidMobilePhone, isValidLandlinePhone, isValidPhone } from "./validationUtils";
 // Format utilities
 export { formatWeight } from "./formatWeight";
 // Language utilities
