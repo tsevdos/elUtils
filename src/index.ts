@@ -33,8 +33,14 @@ export { getQuarters } from "./getQuarters";
 export { getEras } from "./getEras";
 export { getHolidays } from "./getHolidays";
 // Validation utilities
-export { validatePostalCode } from "./validatePostalCode";
-export { validateAMKA } from "./validateAMKA";
+export {
+  isValidPostalCode,
+  validatePostalCode, // @deprecated Use {@link isValidPostalCode} instead. This function will be removed in a future version.
+} from "./isValidPostalCode";
+export {
+  isValidAMKA,
+  validateAMKA, // @deprecated Use {@link isValidAMKA} instead. This function will be removed in a future version.
+} from "./isValidAMKA";
 export {
   isValidVATNumber,
   validateVATNumber, // @deprecated Use {@link isValidVATNumber} instead. This function will be removed in a future version.

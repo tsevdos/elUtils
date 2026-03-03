@@ -1,4 +1,4 @@
-import { validateAMKA } from "./validateAMKA";
+import { validateAMKA } from "./isValidAMKA";
 
 describe("validateAMKA", () => {
   it("returns true on valid AMKA", () => {
