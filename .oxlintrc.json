@@ -42,7 +42,7 @@
     "unicorn/prefer-array-flat-map": "error",
     "unicorn/prefer-date-now": "error",
     "unicorn/prefer-math-trunc": "warn",
-    "unicorn/no-array-reduce": "warn",
+    "unicorn/no-array-reduce": "off",
     "unicorn/no-array-for-each": "warn",
     "unicorn/no-instanceof-array": "error",
     "unicorn/no-useless-undefined": "error",

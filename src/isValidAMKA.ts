@@ -5,7 +5,7 @@
  *
  * @returns {boolean} `true` if the AMKA number is valid, `false` otherwise.
  */
-export function validateAMKA(amka: string | number): boolean {
+export function isValidAMKA(amka: string | number): boolean {
   const strAmka = amka.toString();
 
   // AMKA should be 11 digits long
@@ -54,4 +54,18 @@ export function validateAMKA(amka: string | number): boolean {
 
   // The sum should be divisible by 10
   return sum % 10 === 0;
+}
+
+/**
+ * Validates the given AMKA (Social Security Number in Greece).
+ *
+ * @param {string | number} amka - The AMKA to validate.
+ *
+ * @returns {boolean} `true` if the AMKA number is valid, `false` otherwise.
+ *
+ *
+ * @deprecated Use {@link isValidAMKA} instead. This function will be removed in a future version.
+ */
+export function validateAMKA(amka: string | number): boolean {
+  return isValidAMKA(amka);
 }
