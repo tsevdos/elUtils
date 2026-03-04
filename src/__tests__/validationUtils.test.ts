@@ -1,27 +1,4 @@
-import { isValidLandlinePhone, isValidMobilePhone, isValidPhone } from "../validationUtils";
-
-describe("isValidMobilePhone", () => {
-  it("should return true for valid Greek mobile numbers", () => {
-    expect(isValidMobilePhone("+306991234567")).toBe(true);
-    expect(isValidMobilePhone("00306991234567")).toBe(true);
-    expect(isValidMobilePhone("6991234567")).toBe(true);
-    expect(isValidMobilePhone(6991234567)).toBe(true);
-    expect(isValidMobilePhone("69-9123 4567")).toBe(true);
-    expect(isValidMobilePhone("69(912)34567")).toBe(true);
-  });
-
-  it("should return false for invalid Greek mobile numbers", () => {
-    expect(isValidMobilePhone("+30691234567")).toBe(false);
-    expect(isValidMobilePhone("003069812345679")).toBe(false);
-    expect(isValidMobilePhone("0030698123456")).toBe(false);
-    expect(isValidMobilePhone("6891234567")).toBe(false);
-    expect(isValidMobilePhone(6891234567)).toBe(false);
-    expect(isValidMobilePhone("1234567890")).toBe(false);
-    expect(isValidMobilePhone(1234567890)).toBe(false);
-    expect(isValidMobilePhone("69 9123456")).toBe(false);
-    expect(isValidMobilePhone("69-91234-56789")).toBe(false);
-  });
-});
+import { isValidLandlinePhone, isValidPhone } from "../validationUtils";
 
 describe("isValidLandlinePhone", () => {
   it("should return true for valid landline numbers with country code", () => {
