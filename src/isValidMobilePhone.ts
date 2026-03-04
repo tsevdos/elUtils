@@ -12,7 +12,7 @@ const PHONE_SANITIZE_REGEX = /[\s\-().]/g;
 export function isValidMobilePhone(mobilePhone: string | number): boolean {
   const mobilePhoneStr = typeof mobilePhone === "number" ? String(mobilePhone) : mobilePhone;
   const mobilePhoneRegex = /^(\+30|0030)?69\d{8}$/;
-  const mobilePhoneSanitized = mobilePhoneStr.replace(PHONE_SANITIZE_REGEX, "");
+  const mobilePhoneSanitized = mobilePhoneStr.replaceAll(PHONE_SANITIZE_REGEX, "");
 
   return mobilePhoneRegex.test(mobilePhoneSanitized);
 }
