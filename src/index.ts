@@ -46,7 +46,8 @@ export {
   validateVATNumber, // @deprecated Use {@link isValidVATNumber} instead. This function will be removed in a future version.
 } from "./isValidVATNumber";
 export { isValidMobilePhone } from "./isValidMobilePhone";
-export { isValidLandlinePhone, isValidPhone } from "./validationUtils";
+export { isValidLandlinePhone } from "./isValidLandlinePhone";
+export { isValidPhone } from "./validationUtils";
 // Format utilities
 export { formatWeight } from "./formatWeight";
 // Language utilities
