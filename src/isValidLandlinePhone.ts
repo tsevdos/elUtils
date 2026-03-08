@@ -1,4 +1,4 @@
-const areaCodes = {
+export const areaCodes = {
   Athens: "210",
   Thessaloniki: "231",
   Patras: "261",

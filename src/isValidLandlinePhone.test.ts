@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { isValidLandlinePhone } from "./isValidLandlinePhone";
+import { isValidLandlinePhone, areaCodes } from "./isValidLandlinePhone";
 
 describe("isValidLandlinePhone", () => {
   describe("valid landline numbers with country code (withPrefix=true)", () => {
@@ -337,7 +337,7 @@ describe("isValidLandlinePhone", () => {
     });
 
     it("should handle all valid area codes comprehensively", () => {
-      const validAreaCodes = ["210", "231", "261", "281", "241", "224", "282", "242", "266", "265"];
+      const validAreaCodes = Object.values(areaCodes);
 
       for (const areaCode of validAreaCodes) {
         expect(isValidLandlinePhone(`${areaCode}1234567`, false)).toBe(true);
