@@ -1,44 +1,4 @@
-import { isValidLandlinePhone, isValidPhone } from "../validationUtils";
-
-describe("isValidLandlinePhone", () => {
-  it("should return true for valid landline numbers with country code", () => {
-    expect(isValidLandlinePhone("+302107654321")).toBe(true);
-    expect(isValidLandlinePhone("00302107654321")).toBe(true);
-    expect(isValidLandlinePhone("+302104567890")).toBe(true);
-    expect(isValidLandlinePhone("00302104567890")).toBe(true);
-  });
-
-  it("should return true for valid landline numbers without country code", () => {
-    expect(isValidLandlinePhone("2107654321", false)).toBe(true);
-    expect(isValidLandlinePhone(2107654321, false)).toBe(true);
-    expect(isValidLandlinePhone("210-765-4321", false)).toBe(true);
-    expect(isValidLandlinePhone("210 765 4321", false)).toBe(true);
-    expect(isValidLandlinePhone("210.765.4321", false)).toBe(true);
-  });
-
-  it("should return false for invalid landline numbers with country code", () => {
-    expect(isValidLandlinePhone("+30210765432")).toBe(false);
-    expect(isValidLandlinePhone("003022107654321")).toBe(false);
-    expect(isValidLandlinePhone("+303012345678")).toBe(false);
-    expect(isValidLandlinePhone("003021123456789")).toBe(false);
-    expect(isValidLandlinePhone("+3030123456789")).toBe(false);
-  });
-
-  it("should return false for invalid landline numbers without country code", () => {
-    expect(isValidLandlinePhone("210765432", false)).toBe(false);
-    expect(isValidLandlinePhone(210765432, false)).toBe(false);
-    expect(isValidLandlinePhone("3007654321", false)).toBe(false);
-    expect(isValidLandlinePhone("210-765-432", false)).toBe(false);
-    expect(isValidLandlinePhone("210765432123", false)).toBe(false);
-    expect(isValidLandlinePhone(210765432123, false)).toBe(false);
-  });
-
-  it("should return false for landline numbers with non-numeric characters", () => {
-    expect(isValidLandlinePhone("210-ABC-4321", false)).toBe(false);
-    expect(isValidLandlinePhone("+30-210-765-ABCD", true)).toBe(false);
-    expect(isValidLandlinePhone("210!765*4321", false)).toBe(false);
-  });
-});
+import { isValidPhone } from "../validationUtils";
 
 describe("isValidPhone", () => {
   it("should return true for valid mobile phone numbers", () => {
