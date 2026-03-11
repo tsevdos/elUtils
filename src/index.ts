@@ -51,6 +51,7 @@ export { isValidLandlinePhone } from "./isValidLandlinePhone";
 export { isValidPhone } from "./isValidPhone";
 // Format utilities
 export { formatWeight } from "./formatWeight";
+export { formatNumber } from "./formatUtils";
 // Language utilities
 export {
   normalizeAndUppercaseGreekString,
