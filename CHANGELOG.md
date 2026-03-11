@@ -1,5 +1,11 @@
 # @tsevdos/el-utils
 
+## 0.13.0
+
+### Minor Changes
+
+- [#127](https://github.com/tsevdos/elUtils/pull/127) [`7e8195f`](https://github.com/tsevdos/elUtils/commit/7e8195fc788395dfc251d385eb98a58e1707e9cc) Thanks [@tsevdos](https://github.com/tsevdos)! - Makes all ValidationUtils module functions tree-shakeable
+
 ## 0.12.0
 
 ### Minor Changes
