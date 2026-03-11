@@ -47,7 +47,7 @@ export {
 } from "./isValidVATNumber";
 export { isValidMobilePhone } from "./isValidMobilePhone";
 export { isValidLandlinePhone } from "./isValidLandlinePhone";
-export { isValidPhone } from "./validationUtils";
+export { isValidPhone } from "./isValidPhone";
 // Format utilities
 export { formatWeight } from "./formatWeight";
 // Language utilities
