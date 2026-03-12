@@ -1,7 +1,9 @@
+type Locale = "el" | "en";
+
 export type Format = "full" | "short" | "min";
 
 export type BaseDateTimeOptions = {
-  locale?: "el" | "en";
+  locale?: Locale;
   format?: Format;
 };
 
@@ -20,7 +22,13 @@ export type PostalCode = {
   postalCodes: string[];
 };
 
-// TODO: OLD TYPES!
+// Geo types
+export type AdministrativeRegionsOptions = {
+  locale?: Locale;
+  includeMountAthos?: boolean;
+  level?: "region" | "unit" | "municipality";
+};
+
 export type Region = {
   id: number;
   iso31662: string;
