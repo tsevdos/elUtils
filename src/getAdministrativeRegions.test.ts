@@ -287,36 +287,27 @@ describe("getAdministrativeRegions", () => {
     });
 
     it("returns regions with matching IDs across locales", () => {
-      const elIds = getAdministrativeRegions({ locale: "el" })
-        .map((r) => r.id)
-        .toSorted();
-      const enIds = getAdministrativeRegions({ locale: "en" })
-        .map((r) => r.id)
-        .toSorted();
+      const elIds = getAdministrativeRegions({ locale: "el" }).map((r) => r.id);
+      const enIds = getAdministrativeRegions({ locale: "en" }).map((r) => r.id);
 
-      expect(elIds).toEqual(enIds);
+      expect(new Set(elIds)).toEqual(new Set(enIds));
+      expect(elIds.length).toBe(enIds.length);
     });
 
     it("returns regions with matching IDs across locales including Mount Athos", () => {
-      const elIds = getAdministrativeRegions({ locale: "el", includeMountAthos: true })
-        .map((r) => r.id)
-        .toSorted();
-      const enIds = getAdministrativeRegions({ locale: "en", includeMountAthos: true })
-        .map((r) => r.id)
-        .toSorted();
+      const elIds = getAdministrativeRegions({ locale: "el", includeMountAthos: true }).map((r) => r.id);
+      const enIds = getAdministrativeRegions({ locale: "en", includeMountAthos: true }).map((r) => r.id);
 
-      expect(elIds).toEqual(enIds);
+      expect(new Set(elIds)).toEqual(new Set(enIds));
+      expect(elIds.length).toBe(enIds.length);
     });
 
     it("returns regions with matching ISO codes across locales", () => {
-      const elIsoCodes = getAdministrativeRegions({ locale: "el" })
-        .map((r) => r.iso31662)
-        .toSorted();
-      const enIsoCodes = getAdministrativeRegions({ locale: "en" })
-        .map((r) => r.iso31662)
-        .toSorted();
+      const elIsoCodes = getAdministrativeRegions({ locale: "el" }).map((r) => r.iso31662);
+      const enIsoCodes = getAdministrativeRegions({ locale: "en" }).map((r) => r.iso31662);
 
-      expect(elIsoCodes).toEqual(enIsoCodes);
+      expect(new Set(elIsoCodes)).toEqual(new Set(enIsoCodes));
+      expect(elIsoCodes.length).toBe(enIsoCodes.length);
     });
   });
 
