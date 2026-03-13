@@ -47,7 +47,6 @@ export type Unit = {
     id: number;
     iso31662: string;
   };
-  postalCodePattern: string[];
   carPlatesPattern: string[];
   municipalities: Municipality[];
 };
