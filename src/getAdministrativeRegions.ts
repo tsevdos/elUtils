@@ -17,6 +17,9 @@ const administrativeRegionsWithoutMountAthos = {
 /**
  * Returns the administrative regions based on the provided options.
  *
+ * **Note**: The returned data should be treated as read-only.
+ * Mutating the returned objects or arrays may affect future calls and other consumers of this library.
+ *
  * @param {AdministrativeRegionsOptions} options - The options for locale, whether to include Mount Athos and the level area ("region" | "unit" | "municipality") to retrieve
  *
  * @returns {Region[] | RegionWithoutUnits[]} The administrative regions in the specified locale and the level area to retrieve.
@@ -35,7 +38,7 @@ export function getAdministrativeRegions({
   }
 
   if (level === "unit") {
-    return regionsData.flatMap((region) => ({
+    return regionsData.map((region) => ({
       ...region,
       units: region.units.map(({ municipalities: _municipalities, ...unit }) => unit),
     }));

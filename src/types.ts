@@ -1,4 +1,4 @@
-type Locale = "el" | "en";
+export type Locale = "el" | "en";
 
 export type Format = "full" | "short" | "min";
 
