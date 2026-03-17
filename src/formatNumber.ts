@@ -1,4 +1,4 @@
-export type FormatNumberOptions = Intl.NumberFormatOptions & { locale?: string | string[] };
+type FormatNumberOptions = Intl.NumberFormatOptions & { locale?: string | string[] };
 
 /**
  * Formats a number based on the provided options, defaulting to the Greek locale.
