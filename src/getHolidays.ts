@@ -102,7 +102,10 @@ export function getHolidays(year: string, options: GetHolidaysOptions = {}): Hol
     .filter(({ moveable }) => !moveable)
     .map(({ date, name }) => ({ date: `${year}-${date}`, name }));
   const movableHolidays: Holiday[] = calculateMovableGreekHolidays(y, locale);
-  const holidays = [...nonMovableHolidays, ...movableHolidays].toSorted((a, b) => a.date.localeCompare(b.date));
+  // toSorted() requires Node 20+; use sort() for CI compatibility with Node 18
+  const holidays = [...nonMovableHolidays, ...movableHolidays].sort((a, b) =>
+    a.date.localeCompare(b.date),
+  );
 
   return holidays;
 }

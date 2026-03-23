@@ -27,8 +27,7 @@ const translationsMap: TranslationsMap = {
 function getTense(duration: number): Tense {
   const tense = Math.sign(duration);
   if (tense > 0) return "future";
-  // eslint-disable-next-line no-compare-neg-zero
-  if (tense === 0 || tense === -0) return "present";
+  if (tense === 0) return "present";
   return "past";
 }
 
