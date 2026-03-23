@@ -33,6 +33,7 @@ export { getMonths } from "./getMonths";
 export { getQuarters } from "./getQuarters";
 export { getEras } from "./getEras";
 export { getHolidays } from "./getHolidays";
+export { relativeTimeFormat } from "./relativeTimeFormat";
 // Validation utilities
 export {
   isValidPostalCode,
