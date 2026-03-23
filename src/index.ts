@@ -1,7 +1,7 @@
 // Geo utilities
 export { getAdministrativeRegions } from "./getAdministrativeRegions";
+export { getAdministrativeRegionById } from "./getAdministrativeRegionById";
 export {
-  getAdministrativeRegionById,
   getAdministrativeRegionByIsoCode,
   getAdministrativeUnits,
   getAdministrativeUnitById,
