@@ -15,7 +15,6 @@ import {
   MOUNT_ATHOS_PREFECTURE_ID,
   MOUNT_ATHOS_REGION_ID,
   findByPostalCode,
-  getAdministrativeRegionByIsoCode,
   getAdministrativeUnitById,
   getAdministrativeUnits,
   getAllPostalCodes,
@@ -54,120 +53,6 @@ const prefecturesWithoutMountAthos = {
 };
 
 const allCountries = { el: countriesEl, en: countriesEn } as const;
-
-describe("getAdministrativeRegionByIsoCode", () => {
-  it("correctly returns region with default values (in greek language)", () => {
-    const expectedData = administrativeRegionsWithoutMountAthos.el[0];
-
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-A" })).toEqual(expectedData);
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-A", locale: "el" })).toEqual(expectedData);
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-A", includeMountAthos: false })).toEqual(expectedData);
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-A", level: "municipality" })).toEqual(expectedData);
-    // all default options
-    expect(
-      getAdministrativeRegionByIsoCode({
-        isocode: "GR-A",
-        locale: "el",
-        includeMountAthos: false,
-        level: "municipality",
-      }),
-    ).toEqual(expectedData);
-  });
-
-  it("correctly returns Mount Athos region (in greek language)", () => {
-    const expectedData = administrativeRegions.el[13];
-
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-69", includeMountAthos: true })).toEqual(expectedData);
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-69", locale: "el", includeMountAthos: true })).toEqual(
-      expectedData,
-    );
-    expect(
-      getAdministrativeRegionByIsoCode({
-        isocode: "GR-69",
-        locale: "el",
-        includeMountAthos: true,
-        level: "municipality",
-      }),
-    ).toEqual(expectedData);
-  });
-
-  it("correctly returns region data with correct level (in greek language)", () => {
-    const expectedRegionLevelData = administrativeRegionsWithoutMountAthos.el.map(
-      ({ units: _units, ...region }) => region,
-    )[7];
-    const expectedUnitLevelData = administrativeRegionsWithoutMountAthos.el.map((region) => ({
-      ...region,
-      units: region.units.map(({ municipalities: _municipalities, ...unit }) => unit),
-    }))[7];
-    const expectedMunicipalityLevelData = administrativeRegionsWithoutMountAthos.el[7];
-
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-H", level: "region" })).toStrictEqual(
-      expectedRegionLevelData,
-    );
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-H", level: "unit" })).toStrictEqual(expectedUnitLevelData);
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-H", level: "municipality" })).toStrictEqual(
-      expectedMunicipalityLevelData,
-    );
-  });
-
-  it("correctly returns region (in english language)", () => {
-    const expectedData = administrativeRegionsWithoutMountAthos.en[3];
-
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-D", locale: "en" })).toEqual(expectedData);
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-D", locale: "en", includeMountAthos: false })).toEqual(
-      expectedData,
-    );
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-D", locale: "en", level: "municipality" })).toEqual(
-      expectedData,
-    );
-    // all default options
-    expect(
-      getAdministrativeRegionByIsoCode({
-        isocode: "GR-D",
-        locale: "en",
-        includeMountAthos: false,
-        level: "municipality",
-      }),
-    ).toEqual(expectedData);
-  });
-
-  it("correctly returns Mount Athos region (in english language)", () => {
-    const expectedData = administrativeRegions.en[13];
-
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-69", locale: "en", includeMountAthos: true })).toEqual(
-      expectedData,
-    );
-    expect(
-      getAdministrativeRegionByIsoCode({
-        isocode: "GR-69",
-        locale: "en",
-        includeMountAthos: true,
-        level: "municipality",
-      }),
-    ).toEqual(expectedData);
-  });
-
-  it("correctly returns region data with correct level (in english language)", () => {
-    const expectedRegionLevelData = administrativeRegionsWithoutMountAthos.en.map(
-      ({ units: _units, ...region }) => region,
-    )[5];
-    const expectedUnitLevelData = administrativeRegionsWithoutMountAthos.en.map((region) => ({
-      ...region,
-      units: region.units.map(({ municipalities: _municipalities, ...unit }) => unit),
-    }))[5];
-    const expectedMunicipalityLevelData = administrativeRegionsWithoutMountAthos.en[5];
-
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-F", locale: "en", level: "region" })).toStrictEqual(
-      expectedRegionLevelData,
-    );
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-F", locale: "en", level: "unit" })).toStrictEqual(
-      expectedUnitLevelData,
-    );
-    expect(getAdministrativeRegionByIsoCode({ isocode: "GR-F", locale: "en", level: "municipality" })).toStrictEqual(
-      expectedMunicipalityLevelData,
-    );
-  });
-});
 
 describe("getAdministrativeUnits", () => {
   it("correctly returns data with default values (in greek language)", () => {
