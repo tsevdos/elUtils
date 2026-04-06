@@ -1,11 +1,5 @@
 import { getAdministrativeRegions } from "./getAdministrativeRegions";
-import { type Locale, type Region, type RegionWithoutUnits } from "./types";
-
-type AdministrativeRegionsOptions = {
-  locale?: Locale;
-  includeMountAthos?: boolean;
-  level?: "region" | "unit" | "municipality";
-};
+import { type AdministrativeRegionsOptions, type Region, type RegionWithoutUnits } from "./types";
 
 type AdministrativeRegionByIsoCodeOptions = { isocode: string } & AdministrativeRegionsOptions;
 
