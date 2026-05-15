@@ -1,5 +1,3 @@
-import administrativeRegionsEl from "../data/administrative-regions-el.json";
-import administrativeRegionsEn from "../data/administrative-regions-en.json";
 import citiesEl from "../../data/cities-el.json";
 import citiesEn from "../../data/cities-en.json";
 import geographicRegionsEl from "../../data/geographic-regions-el.json";
@@ -13,10 +11,8 @@ import countriesEl from "../../data/countries-el.json";
 import countriesEn from "../../data/countries-en.json";
 import {
   MOUNT_ATHOS_PREFECTURE_ID,
-  MOUNT_ATHOS_REGION_ID,
   findByPostalCode,
   getAdministrativeUnitById,
-  getAdministrativeUnits,
   getAllPostalCodes,
   getAllTaxOffices,
   getCities,
@@ -38,12 +34,9 @@ import {
   searchCountryByName,
   getCountry,
 } from "../geoUtils";
+import { getAdministrativeUnits } from "../getAdministrativeUnits";
+import type { Unit } from "../types";
 
-const administrativeRegions = { el: administrativeRegionsEl, en: administrativeRegionsEn };
-const administrativeRegionsWithoutMountAthos = {
-  el: administrativeRegions.el.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
-  en: administrativeRegions.en.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
-};
 const cities = { el: citiesEl, en: citiesEn };
 const geographicRegions = { el: geographicRegionsEl, en: geographicRegionsEn };
 const prefectures = { el: prefecturesEl, en: prefecturesEn };
@@ -56,7 +49,7 @@ const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 describe("getAdministrativeUnitById", () => {
   it("correctly returns region with default values (in greek language)", () => {
-    const expectedData = administrativeRegionsWithoutMountAthos.el.flatMap(({ units }) => [...units])[0];
+    const expectedData = getAdministrativeUnits()[0];
 
     expect(getAdministrativeUnitById({ id: 1 })).toEqual(expectedData);
     expect(getAdministrativeUnitById({ id: 1, locale: "el" })).toEqual(expectedData);
@@ -74,7 +67,7 @@ describe("getAdministrativeUnitById", () => {
   });
 
   it("correctly returns Mount Athos region (in greek language)", () => {
-    const expectedData = administrativeRegions.el.flatMap(({ units }) => [...units])[74];
+    const expectedData = getAdministrativeUnits({ includeMountAthos: true })[74];
 
     expect(getAdministrativeUnitById({ id: 75, includeMountAthos: true })).toEqual(expectedData);
     expect(getAdministrativeUnitById({ id: 75, locale: "el", includeMountAthos: true })).toEqual(expectedData);
@@ -89,19 +82,15 @@ describe("getAdministrativeUnitById", () => {
   });
 
   it("correctly returns region data with correct level (in greek language)", () => {
-    const expectedUnitLevelData = administrativeRegionsWithoutMountAthos.el
-      .flatMap(({ units }) => [...units])
-      .map(({ municipalities: _municipalities, ...unit }) => unit)[15];
-    const expectedMunicipalityLevelData = administrativeRegionsWithoutMountAthos.el.flatMap(({ units }) => [
-      ...units,
-    ])[15];
+    const expectedUnitLevelData = getAdministrativeUnits({ level: "unit" })[15];
+    const expectedMunicipalityLevelData = getAdministrativeUnits({ level: "municipality" })[15];
 
     expect(getAdministrativeUnitById({ id: 16, level: "unit" })).toEqual(expectedUnitLevelData);
     expect(getAdministrativeUnitById({ id: 16, level: "municipality" })).toEqual(expectedMunicipalityLevelData);
   });
 
   it("correctly returns region (in english language)", () => {
-    const expectedData = administrativeRegionsWithoutMountAthos.en.flatMap(({ units }) => [...units])[3];
+    const expectedData = getAdministrativeUnits({ locale: "en" })[3];
 
     expect(getAdministrativeUnitById({ id: 4, locale: "en" })).toEqual(expectedData);
     expect(getAdministrativeUnitById({ id: 4, locale: "en", includeMountAthos: false })).toEqual(expectedData);
@@ -118,7 +107,7 @@ describe("getAdministrativeUnitById", () => {
   });
 
   it("correctly returns Mount Athos region (in english language)", () => {
-    const expectedData = administrativeRegions.en.flatMap(({ units }) => [...units])[74];
+    const expectedData = getAdministrativeUnits({ locale: "en", includeMountAthos: true })[74];
 
     expect(getAdministrativeUnitById({ id: 75, locale: "en", includeMountAthos: true })).toEqual(expectedData);
     expect(
@@ -132,12 +121,8 @@ describe("getAdministrativeUnitById", () => {
   });
 
   it("correctly returns region data with correct level (in english language)", () => {
-    const expectedUnitLevelData = administrativeRegionsWithoutMountAthos.en
-      .flatMap(({ units }) => [...units])
-      .map(({ municipalities: _municipalities, ...unit }) => unit)[25];
-    const expectedMunicipalityLevelData = administrativeRegionsWithoutMountAthos.en.flatMap(({ units }) => [
-      ...units,
-    ])[25];
+    const expectedUnitLevelData = getAdministrativeUnits({ locale: "en", level: "unit" })[25];
+    const expectedMunicipalityLevelData = getAdministrativeUnits({ locale: "en", level: "municipality" })[25];
 
     expect(getAdministrativeUnitById({ id: 26, locale: "en", level: "unit" })).toStrictEqual(expectedUnitLevelData);
     expect(getAdministrativeUnitById({ id: 26, locale: "en", level: "municipality" })).toStrictEqual(
@@ -148,9 +133,7 @@ describe("getAdministrativeUnitById", () => {
 
 describe("getMunicipalities", () => {
   it("correctly returns data with default values (in greek language)", () => {
-    const expectedData = administrativeRegionsWithoutMountAthos.el
-      .flatMap(({ units }) => [...units])
-      .flatMap(({ municipalities }) => [...municipalities]);
+    const expectedData = (getAdministrativeUnits() as Unit[]).flatMap(({ municipalities }) => [...municipalities]);
 
     expect(getMunicipalities()).toStrictEqual(expectedData);
     // all default options
@@ -159,9 +142,9 @@ describe("getMunicipalities", () => {
   });
 
   it("correctly returns data (in english language)", () => {
-    const expectedData = administrativeRegionsWithoutMountAthos.en
-      .flatMap(({ units }) => [...units])
-      .flatMap(({ municipalities }) => [...municipalities]);
+    const expectedData = (getAdministrativeUnits({ locale: "en" }) as Unit[]).flatMap(({ municipalities }) => [
+      ...municipalities,
+    ]);
 
     expect(getMunicipalities({ locale: "en" })).toStrictEqual(expectedData);
     expect(getMunicipalities({ locale: "en" }).length).toBe(332);

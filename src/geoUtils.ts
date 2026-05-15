@@ -52,8 +52,6 @@ const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 type Locale = "el" | "en";
 
-
-
 type AdministrativeUnitByIdOptions = { id: number } & AdministrativeUnitsOptions;
 
 /**

@@ -35,7 +35,6 @@ export type AdministrativeUnitsOptions = {
   level?: "unit" | "municipality";
 };
 
-
 export type Region = {
   id: number;
   iso31662: string;

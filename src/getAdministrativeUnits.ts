@@ -1,5 +1,5 @@
 import { getAdministrativeRegions } from "./getAdministrativeRegions";
-import { AdministrativeUnitsOptions, Region, Unit, UnitWithoutMunicipalities } from "./types";
+import type { AdministrativeUnitsOptions, Region, Unit, UnitWithoutMunicipalities } from "./types";
 
 /**
  * Returns the administrative units based on the provided options.

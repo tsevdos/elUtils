@@ -69,7 +69,7 @@ describe("getAdministrativeRegionByIsoCode", () => {
   });
 
   it("correctly returns region (in english language)", () => {
-    const expectedData = englishAdministrativeRegionsWithMountAthos[3];
+    const expectedData = englishAdministrativeRegionsWithoutMountAthos[3];
 
     expect(getAdministrativeRegionByIsoCode({ isocode: "GR-D", locale: "en" })).toEqual(expectedData);
     expect(getAdministrativeRegionByIsoCode({ isocode: "GR-D", locale: "en", includeMountAthos: false })).toEqual(

@@ -1,17 +1,18 @@
 import { getAdministrativeRegions, MOUNT_ATHOS_REGION_ID } from "./getAdministrativeRegions";
 import { getAdministrativeUnits } from "./getAdministrativeUnits";
-import type { Unit, UnitWithoutMunicipalities } from "./types";
+import type { Region, Unit, UnitWithoutMunicipalities } from "./types";
 
 const greekAdministrativeRegionsWithMountAthos = getAdministrativeRegions({ includeMountAthos: true });
 const greekAdministrativeRegionsWithoutMountAthos = getAdministrativeRegions({ includeMountAthos: false });
 const englishAdministrativeRegionsWithMountAthos = getAdministrativeRegions({ locale: "en", includeMountAthos: true });
-const englishAdministrativeRegionsWithoutMountAthos = getAdministrativeRegions({ locale: "en", includeMountAthos: false });
-
-
+const englishAdministrativeRegionsWithoutMountAthos = getAdministrativeRegions({
+  locale: "en",
+  includeMountAthos: false,
+});
 
 describe("getAdministrativeUnits", () => {
   it("correctly returns data with default values (in greek language)", () => {
-    const expectedData = greekAdministrativeRegionsWithoutMountAthos.flatMap(({ units }) => [...units]);
+    const expectedData = (greekAdministrativeRegionsWithoutMountAthos as Region[]).flatMap(({ units }) => [...units]);
 
     expect(getAdministrativeUnits()).toStrictEqual(expectedData);
     expect(getAdministrativeUnits({ locale: "el" })).toStrictEqual(expectedData);
@@ -26,7 +27,7 @@ describe("getAdministrativeUnits", () => {
   });
 
   it("correctly returns data including Mount Athos (in greek language)", () => {
-    const expectedData = greekAdministrativeRegionsWithMountAthos.flatMap(({ units }) => [...units]);
+    const expectedData = (greekAdministrativeRegionsWithMountAthos as Region[]).flatMap(({ units }) => [...units]);
 
     expect(getAdministrativeUnits({ includeMountAthos: true })).toStrictEqual(expectedData);
     expect(getAdministrativeUnits({ locale: "el", includeMountAthos: true })).toStrictEqual(expectedData);
@@ -38,17 +39,19 @@ describe("getAdministrativeUnits", () => {
   });
 
   it("correctly returns data depending the level (in greek language)", () => {
-    const expectedUnitLevelData = greekAdministrativeRegionsWithoutMountAthos
-      .flatMap(({ units }) => [...units])
-      .map(({ municipalities: _municipalities, ...unit }) => unit);
-    const expectedMunicipalityLevelData = greekAdministrativeRegionsWithoutMountAthos.flatMap(({ units }) => [...units]);
+    const expectedUnitLevelData = (
+      (greekAdministrativeRegionsWithoutMountAthos as Region[]).flatMap(({ units }) => [...units]) as Unit[]
+    ).map(({ municipalities: _municipalities, ...unit }) => unit);
+    const expectedMunicipalityLevelData = (greekAdministrativeRegionsWithoutMountAthos as Region[]).flatMap(
+      ({ units }) => [...units],
+    );
 
     expect(getAdministrativeUnits({ level: "unit" })).toStrictEqual(expectedUnitLevelData);
     expect(getAdministrativeUnits({ level: "municipality" })).toStrictEqual(expectedMunicipalityLevelData);
   });
 
   it("correctly returns data (in english language)", () => {
-    const expectedData = englishAdministrativeRegionsWithoutMountAthos.flatMap(({ units }) => [...units]);
+    const expectedData = (englishAdministrativeRegionsWithoutMountAthos as Region[]).flatMap(({ units }) => [...units]);
 
     expect(getAdministrativeUnits({ locale: "en" })).toStrictEqual(expectedData);
     expect(getAdministrativeUnits({ locale: "en", includeMountAthos: false })).toStrictEqual(expectedData);
@@ -58,7 +61,7 @@ describe("getAdministrativeUnits", () => {
   });
 
   it("correctly returns data including Mount Athos (in english language)", () => {
-    const expectedData = englishAdministrativeRegionsWithMountAthos.flatMap(({ units }) => [...units]);
+    const expectedData = (englishAdministrativeRegionsWithMountAthos as Region[]).flatMap(({ units }) => [...units]);
 
     expect(getAdministrativeUnits({ locale: "en", includeMountAthos: true })).toStrictEqual(expectedData);
     expect(getAdministrativeUnits({ locale: "en", includeMountAthos: true, level: "municipality" })).toStrictEqual(
@@ -69,10 +72,12 @@ describe("getAdministrativeUnits", () => {
   });
 
   it("correctly returns data depending the level (in english language)", () => {
-    const expectedUnitLevelData = englishAdministrativeRegionsWithoutMountAthos
-      .flatMap(({ units }) => [...units])
-      .map(({ municipalities: _municipalities, ...unit }) => unit);
-    const expectedMunicipalityLevelData = englishAdministrativeRegionsWithoutMountAthos.flatMap(({ units }) => [...units]);
+    const expectedUnitLevelData = (
+      (englishAdministrativeRegionsWithoutMountAthos as Region[]).flatMap(({ units }) => [...units]) as Unit[]
+    ).map(({ municipalities: _municipalities, ...unit }) => unit);
+    const expectedMunicipalityLevelData = (englishAdministrativeRegionsWithoutMountAthos as Region[]).flatMap(
+      ({ units }) => [...units],
+    );
 
     expect(getAdministrativeUnits({ locale: "en", level: "unit" })).toStrictEqual(expectedUnitLevelData);
     expect(getAdministrativeUnits({ locale: "en", level: "municipality" })).toStrictEqual(
