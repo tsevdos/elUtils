@@ -29,6 +29,12 @@ export type AdministrativeRegionsOptions = {
   level?: "region" | "unit" | "municipality";
 };
 
+export type AdministrativeUnitsOptions = {
+  locale?: Locale;
+  includeMountAthos?: boolean;
+  level?: "unit" | "municipality";
+};
+
 export type Region = {
   id: number;
   iso31662: string;

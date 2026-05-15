@@ -11,8 +11,8 @@ import taxOfficesEn from "../data/taxOffices-en.json";
 import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
 import countriesEl from "../data/countries-el.json";
 import countriesEn from "../data/countries-en.json";
-import { getAdministrativeRegions } from "./getAdministrativeRegions";
 import type {
+  AdministrativeUnitsOptions,
   City,
   Country,
   GeographicRegion,
@@ -24,6 +24,7 @@ import type {
   Unit,
   UnitWithoutMunicipalities,
 } from "./types";
+import { getAdministrativeUnits } from "./getAdministrativeUnits";
 
 export const MOUNT_ATHOS_REGION_ID = 14;
 export const MOUNT_ATHOS_PREFECTURE_ID = 55;
@@ -50,35 +51,6 @@ const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
 const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 type Locale = "el" | "en";
-
-type AdministrativeUnitsOptions = {
-  locale?: Locale;
-  includeMountAthos?: boolean;
-  level?: "unit" | "municipality";
-};
-
-/**
- * Returns the administrative units based on the provided options.
- *
- * @param {AdministrativeUnitsOptions} options - The options for locale, whether to include Mount Athos, and the level area ("unit" | "municipality") to retrieve
- *
- * @returns {Unit[] | UnitWithoutMunicipalities[]} The administrative units in the specified locale and level.
- */
-export function getAdministrativeUnits({
-  locale = "el",
-  includeMountAthos = false,
-  level = "municipality",
-}: AdministrativeUnitsOptions = {}): Unit[] | UnitWithoutMunicipalities[] {
-  const administrativeUnits = (getAdministrativeRegions({ locale, includeMountAthos }) as Region[]).flatMap(
-    ({ units }) => [...units],
-  ) as Unit[];
-
-  if (level === "unit") {
-    return administrativeUnits.map(({ municipalities: _municipalities, ...unit }) => unit);
-  }
-
-  return administrativeUnits;
-}
 
 type AdministrativeUnitByIdOptions = { id: number } & AdministrativeUnitsOptions;
 

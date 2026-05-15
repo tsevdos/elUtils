@@ -2,8 +2,8 @@
 export { getAdministrativeRegions } from "./getAdministrativeRegions";
 export { getAdministrativeRegionById } from "./getAdministrativeRegionById";
 export { getAdministrativeRegionByIsoCode } from "./getAdministrativeRegionByIsoCode";
+export { getAdministrativeUnits } from "./getAdministrativeUnits";
 export {
-  getAdministrativeUnits,
   getAdministrativeUnitById,
   getMunicipalities,
   getCities,
