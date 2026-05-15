@@ -97,12 +97,12 @@ type GetHolidaysOptions = {
  */
 export function getHolidays(year: string, options: GetHolidaysOptions = {}): Holiday[] {
   const { locale = "el" } = options;
-  const y = Number.parseInt(year);
+  const y = Number.parseInt(year, 10);
   const nonMovableHolidays = holidaysData[locale]
     .filter(({ moveable }) => !moveable)
     .map(({ date, name }) => ({ date: `${year}-${date}`, name }));
   const movableHolidays: Holiday[] = calculateMovableGreekHolidays(y, locale);
-  const holidays = [...nonMovableHolidays, ...movableHolidays].toSorted((a, b) => a.date.localeCompare(b.date));
+  const holidays = [...nonMovableHolidays, ...movableHolidays].sort((a, b) => a.date.localeCompare(b.date));
 
   return holidays;
 }
