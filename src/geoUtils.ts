@@ -12,7 +12,6 @@ import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekSt
 import countriesEl from "../data/countries-el.json";
 import countriesEn from "../data/countries-en.json";
 import type {
-  AdministrativeUnitsOptions,
   City,
   Country,
   GeographicRegion,
@@ -25,6 +24,7 @@ import type {
   UnitWithoutMunicipalities,
 } from "./types";
 import { getAdministrativeUnits } from "./getAdministrativeUnits";
+import { getAdministrativeUnitById } from "./getAdministrativeUnitById";
 
 export const MOUNT_ATHOS_REGION_ID = 14;
 export const MOUNT_ATHOS_PREFECTURE_ID = 55;
@@ -51,24 +51,6 @@ const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
 const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 type Locale = "el" | "en";
-
-type AdministrativeUnitByIdOptions = { id: number } & AdministrativeUnitsOptions;
-
-/**
- * Returns the administrative unit with the provided ID.
- *
- * @param {AdministrativeUnitByIdOptions} options - The options for ID, locale, whether to include Mount Athos, and the level area ("unit" | "municipality") to retrieve
- *
- * @returns {Unit | UnitWithoutMunicipalities | undefined} The administrative unit with the specified ID, or `undefined` if no such unit exists.
- */
-export function getAdministrativeUnitById(
-  options: AdministrativeUnitByIdOptions,
-): Unit | UnitWithoutMunicipalities | undefined {
-  const { id, locale = "el", includeMountAthos = false, level = "municipality" } = options;
-  const unitsData = getAdministrativeUnits({ locale, includeMountAthos, level });
-
-  return unitsData.find((unit) => unit.id === id);
-}
 
 type MunicipalitiesOptions = { locale?: Locale };
 
