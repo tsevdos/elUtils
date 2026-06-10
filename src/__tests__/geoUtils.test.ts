@@ -1,5 +1,3 @@
-import citiesEl from "../../data/cities-el.json";
-import citiesEn from "../../data/cities-en.json";
 import geographicRegionsEl from "../../data/geographic-regions-el.json";
 import geographicRegionsEn from "../../data/geographic-regions-en.json";
 import postalCodes from "../data/postal-codes.json";
@@ -14,12 +12,9 @@ import {
   findByPostalCode,
   getAllPostalCodes,
   getAllTaxOffices,
-  getCities,
   getCityAdministrativeDivision,
-  getCityById,
   getGeographicRegionById,
   getGeographicRegions,
-  getMunicipalities,
   getPrefectureById,
   getPrefectures,
   getTaxOfficeById,
@@ -33,10 +28,7 @@ import {
   searchCountryByName,
   getCountry,
 } from "../geoUtils";
-import { getAdministrativeUnits } from "../getAdministrativeUnits";
-import type { Unit } from "../types";
 
-const cities = { el: citiesEl, en: citiesEn };
 const geographicRegions = { el: geographicRegionsEl, en: geographicRegionsEn };
 const prefectures = { el: prefecturesEl, en: prefecturesEn };
 const prefecturesWithoutMountAthos = {
@@ -45,39 +37,6 @@ const prefecturesWithoutMountAthos = {
 };
 
 const allCountries = { el: countriesEl, en: countriesEn } as const;
-
-describe("getMunicipalities", () => {
-  it("correctly returns data with default values (in greek language)", () => {
-    const expectedData = (getAdministrativeUnits() as Unit[]).flatMap(({ municipalities }) => [...municipalities]);
-
-    expect(getMunicipalities()).toStrictEqual(expectedData);
-    // all default options
-    expect(getMunicipalities({ locale: "el" })).toStrictEqual(expectedData);
-    expect(getMunicipalities().length).toBe(332);
-  });
-
-  it("correctly returns data (in english language)", () => {
-    const expectedData = (getAdministrativeUnits({ locale: "en" }) as Unit[]).flatMap(({ municipalities }) => [
-      ...municipalities,
-    ]);
-
-    expect(getMunicipalities({ locale: "en" })).toStrictEqual(expectedData);
-    expect(getMunicipalities({ locale: "en" }).length).toBe(332);
-  });
-});
-
-describe("getCities", () => {
-  it("correctly returns data with default values (in greek language)", () => {
-    expect(getCities()).toStrictEqual(cities.el);
-    expect(getCities({ locale: "el" })).toStrictEqual(cities.el);
-    expect(getCities().length).toBe(51);
-  });
-
-  it("correctly returns data (in english language)", () => {
-    expect(getCities({ locale: "en" })).toStrictEqual(cities.en);
-    expect(getCities({ locale: "en" }).length).toBe(51);
-  });
-});
 
 describe("searchCityByName", () => {
   it("should return 1 city that matches the search term 'Αθήνα' in Greek locale", () => {
@@ -288,17 +247,6 @@ describe("searchCityByName", () => {
 
     // Assertions
     expect(searchCityByName({ searchTerm: "πολη", locale: "el" })).toEqual(expectedData);
-  });
-});
-
-describe("getCityById", () => {
-  it("correctly returns city by id (in greek language)", () => {
-    expect(getCityById({ id: 24 })).toEqual(cities.el[23]);
-    expect(getCityById({ id: 24, locale: "el" })).toEqual(cities.el[23]);
-  });
-
-  it("correctly returns city by id (in english language)", () => {
-    expect(getCityById({ id: 24, locale: "en" })).toEqual(cities.en[23]);
   });
 });
 

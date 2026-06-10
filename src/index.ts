@@ -4,11 +4,11 @@ export { getAdministrativeRegionById } from "./getAdministrativeRegionById";
 export { getAdministrativeRegionByIsoCode } from "./getAdministrativeRegionByIsoCode";
 export { getAdministrativeUnits } from "./getAdministrativeUnits";
 export { getAdministrativeUnitById } from "./getAdministrativeUnitById";
+export { getMunicipalities } from "./getMunicipalities";
+export { getCities } from "./getCities";
+export { getCityById } from "./getCityById";
 export {
-  getMunicipalities,
-  getCities,
   searchCityByName,
-  getCityById,
   getCityAdministrativeDivision,
   getGeographicRegions,
   getGeographicRegionById,

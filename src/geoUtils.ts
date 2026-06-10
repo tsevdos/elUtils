@@ -1,6 +1,4 @@
 import { getAdministrativeRegionById } from "./getAdministrativeRegionById";
-import citiesEl from "../data/cities-el.json";
-import citiesEn from "../data/cities-en.json";
 import geographicRegionsEl from "../data/geographic-regions-el.json";
 import geographicRegionsEn from "../data/geographic-regions-en.json";
 import postalCodes from "./data/postal-codes.json";
@@ -11,11 +9,12 @@ import taxOfficesEn from "../data/taxOffices-en.json";
 import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
 import countriesEl from "../data/countries-el.json";
 import countriesEn from "../data/countries-en.json";
+import { getCities } from "./getCities";
+import { getCityById } from "./getCityById";
 import type {
   City,
   Country,
   GeographicRegion,
-  Municipality,
   Prefecture,
   Region,
   RegionWithoutUnits,
@@ -23,16 +22,10 @@ import type {
   Unit,
   UnitWithoutMunicipalities,
 } from "./types";
-import { getAdministrativeUnits } from "./getAdministrativeUnits";
 import { getAdministrativeUnitById } from "./getAdministrativeUnitById";
 
 export const MOUNT_ATHOS_REGION_ID = 14;
 export const MOUNT_ATHOS_PREFECTURE_ID = 55;
-
-const cities = {
-  el: citiesEl,
-  en: citiesEn,
-} as const;
 
 const geographicRegions = {
   el: geographicRegionsEl,
@@ -52,36 +45,7 @@ const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 type Locale = "el" | "en";
 
-type MunicipalitiesOptions = { locale?: Locale };
-
-/**
- * Returns the municipalities in the provided locale.
- *
- * @param {MunicipalitiesOptions} options - The options for locale.
- *
- * @returns {Municipality[]} The municipalities in the specified locale.
- */
-export function getMunicipalities({ locale = "el" }: MunicipalitiesOptions = {}): Municipality[] {
-  const municipalities = (getAdministrativeUnits({ locale }) as Unit[]).flatMap(({ municipalities }) => [
-    ...municipalities,
-  ]);
-
-  return municipalities;
-}
-
 type CitiesOptions = { locale?: Locale };
-
-/**
- * Returns a list of cities based on the provided locale.
- *
- * @param {CitiesOptions} [options={}] - Options for fetching cities.
- * @param {string} [options.locale="el"] - The locale to use when retrieving cities. Defaults to "el".
- *
- * @returns {City[]} - An array of cities for the specified locale.
- */
-export function getCities({ locale = "el" }: CitiesOptions = {}): City[] {
-  return cities[locale];
-}
 
 type CityBySearchTermOptions = { searchTerm: string } & CitiesOptions;
 
@@ -112,24 +76,6 @@ export function searchCityByName({ searchTerm, locale = "el" }: CityBySearchTerm
   }
 
   return citiesByName?.length ? citiesByName : null;
-}
-
-type CityByIdOptions = { id: number } & CitiesOptions;
-
-/**
- * Returns a city by its ID based on the provided options.
- *
- * @param {CityByIdOptions} options - The options for fetching the city by ID.
- * @param {number} options.id - The ID of the city to retrieve.
- * @param {string} [options.locale="el"] - The locale to use when retrieving cities. Defaults to "el".
- *
- * @returns {City|undefined} - The city with the specified ID, or `undefined` if not found.
- */
-export function getCityById(options: CityByIdOptions): City | undefined {
-  const { id, locale = "el" } = options;
-  const citiesData = getCities({ locale });
-
-  return citiesData.find((city) => city.id === id);
 }
 
 type CityAdministrativeDivisionOptions = {
