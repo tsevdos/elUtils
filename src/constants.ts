@@ -1,0 +1,2 @@
+export const MOUNT_ATHOS_REGION_ID = 14;
+export const MOUNT_ATHOS_PREFECTURE_ID = 55;
