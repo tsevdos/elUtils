@@ -7,13 +7,13 @@ export { getAdministrativeUnitById } from "./getAdministrativeUnitById";
 export { getMunicipalities } from "./getMunicipalities";
 export { getCities } from "./getCities";
 export { getCityById } from "./getCityById";
+export { searchCityByName } from "./searchCityByName";
+export { getCityAdministrativeDivision } from "./getCityAdministrativeDivision";
+export { getPrefectures } from "./getPrefectures";
+export { getPrefectureById } from "./getPrefectureById";
 export {
-  searchCityByName,
-  getCityAdministrativeDivision,
   getGeographicRegions,
   getGeographicRegionById,
-  getPrefectures,
-  getPrefectureById,
   getAllPostalCodes,
   findByPostalCode,
   getAllTaxOffices,

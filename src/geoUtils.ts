@@ -2,27 +2,14 @@ import { getAdministrativeRegionById } from "./getAdministrativeRegionById";
 import geographicRegionsEl from "../data/geographic-regions-el.json";
 import geographicRegionsEn from "../data/geographic-regions-en.json";
 import postalCodes from "./data/postal-codes.json";
-import prefecturesEl from "../data/prefectures-el.json";
-import prefecturesEn from "../data/prefectures-en.json";
 import taxOfficesEl from "../data/taxOffices-el.json";
 import taxOfficesEn from "../data/taxOffices-en.json";
 import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
 import countriesEl from "../data/countries-el.json";
 import countriesEn from "../data/countries-en.json";
-import { getCities } from "./getCities";
-import { getCityById } from "./getCityById";
-import type {
-  City,
-  Country,
-  GeographicRegion,
-  Prefecture,
-  Region,
-  RegionWithoutUnits,
-  TaxOffice,
-  Unit,
-  UnitWithoutMunicipalities,
-} from "./types";
+import type { Country, GeographicRegion, Prefecture, Region, TaxOffice, Unit } from "./types";
 import { getAdministrativeUnitById } from "./getAdministrativeUnitById";
+import { getPrefectureById } from "./getPrefectureById";
 
 export const MOUNT_ATHOS_REGION_ID = 14;
 export const MOUNT_ATHOS_PREFECTURE_ID = 55;
@@ -32,88 +19,11 @@ const geographicRegions = {
   en: geographicRegionsEn,
 } as const;
 
-const allPrefectures = { el: prefecturesEl, en: prefecturesEn } as const;
-
-const prefecturesWithoutMountAthos = {
-  el: allPrefectures.el.filter(({ id }) => id !== MOUNT_ATHOS_PREFECTURE_ID),
-  en: allPrefectures.en.filter(({ id }) => id !== MOUNT_ATHOS_PREFECTURE_ID),
-};
-
 const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
 
 const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 type Locale = "el" | "en";
-
-type CitiesOptions = { locale?: Locale };
-
-type CityBySearchTermOptions = { searchTerm: string } & CitiesOptions;
-
-/**
- * Searches for cities by name in a specified locale.
- *
- * This function filters cities based on the provided search term. For the Greek locale (`"el"`),
- * it uses a specialized string comparison function to handle Greek-specific comparisons.
- * For other locales, it performs a case-insensitive comparison.
- *
- * @param {CityBySearchTermOptions} options - The options for the search.
- * @param {string} options.searchTerm - The term to search for in the city names.
- * @param {string} [options.locale="el"] - The locale to search in (default is `"el"` for Greek).
- *
- * @returns {City[]|null} A list of cities that match the search term, or `null` if no matches are found.
- */
-export function searchCityByName({ searchTerm, locale = "el" }: CityBySearchTermOptions): City[] | null {
-  const cities = getCities({ locale });
-  const normalizedSearchTerm = normalizeAndUppercaseGreekString(searchTerm);
-  let citiesByName: City[] = [];
-
-  if (locale === "el") {
-    citiesByName = cities.filter((city) => normalizeAndUppercaseGreekString(city.name).includes(normalizedSearchTerm));
-  }
-
-  if (locale === "en") {
-    citiesByName = cities.filter((city) => city.name.toUpperCase().includes(searchTerm.toUpperCase()));
-  }
-
-  return citiesByName?.length ? citiesByName : null;
-}
-
-type CityAdministrativeDivisionOptions = {
-  cityId: number;
-  locale: Locale;
-  entity: "region" | "unit" | "prefecture";
-};
-
-/**
- * Retrieves related administrative entities for a given city based on the provided options.
- *
- * @param {CityAdministrativeDivisionOptions} options - The options for finding city relations.
- * @param {number} options.id - The ID of the city to retrieve relations for.
- * @param {string} [options.locale="el"] - The locale to use when retrieving related entities. Defaults to "el".
- * @param {("region"|"unit"|"municipality"|"prefecture")} options.entity - The type of related entity to retrieve.
- *
- * @returns {Region|Unit|RegionWithoutUnits|Prefecture|undefined} - The related entity based on the specified type, or `undefined` if not found.
- */
-export function getCityAdministrativeDivision(
-  options: CityAdministrativeDivisionOptions,
-): Region | RegionWithoutUnits | Unit | UnitWithoutMunicipalities | Prefecture | undefined {
-  const { cityId, locale = "el", entity } = options;
-  const city = getCityById({ id: cityId, locale });
-
-  if (entity === "region" && city) {
-    return getAdministrativeRegionById({ id: city.relations.regionId, locale, level: entity });
-  }
-
-  if (entity === "unit" && city) {
-    return getAdministrativeUnitById({ id: city.relations.unitId, locale, level: entity });
-  }
-
-  if (entity === "prefecture" && city) {
-    return getPrefectureById({ id: city.relations.prefectureId, locale });
-  }
-
-  return undefined;
-}
 
 type GeographicRegionOptions = { locale?: Locale };
 
@@ -141,37 +51,6 @@ export function getGeographicRegionById(options: GeographicRegionByIdOptions): G
   const { id, locale = "el" } = options;
 
   return geographicRegions[locale].find((region) => region.id === id);
-}
-
-type PrefecturesOptions = { locale?: Locale; includeMountAthos?: boolean };
-
-/**
- * Returns the prefectures based on the provided options.
- *
- * @param {PrefecturesOptions} options - The options for locale and whether to include Mount Athos.
- *
- * @returns {Prefecture[]} The prefectures in the specified locale.
- */
-export function getPrefectures({ locale = "el", includeMountAthos = false }: PrefecturesOptions = {}): Prefecture[] {
-  const prefectures = includeMountAthos ? allPrefectures[locale] : prefecturesWithoutMountAthos[locale];
-
-  return prefectures;
-}
-
-type PrefectureByIdOptions = { id: number } & PrefecturesOptions;
-
-/**
- * Returns the prefecture with the provided ID.
- *
- * @param {PrefectureByIdOptions} options - The options for ID, locale, and whether to include Mount Athos.
- *
- * @returns {Prefecture | undefined} The prefecture with the specified ID, or `undefined` if no such prefecture exists.
- */
-export function getPrefectureById(options: PrefectureByIdOptions): Prefecture | undefined {
-  const { id, locale = "el", includeMountAthos = false } = options;
-  const prefecturesData = getPrefectures({ locale, includeMountAthos });
-
-  return prefecturesData.find((region) => region.id === id);
 }
 
 /**
