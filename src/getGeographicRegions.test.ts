@@ -49,8 +49,8 @@ describe("getGeographicRegions:", () => {
   it("has consistent data between locales (same IDs)", () => {
     const elRegions = getGeographicRegions({ locale: "el" });
     const enRegions = getGeographicRegions({ locale: "en" });
-    const elIds = elRegions.map((r) => r.id).toSorted((a, b) => a - b);
-    const enIds = enRegions.map((r) => r.id).toSorted((a, b) => a - b);
+    const elIds = elRegions.map((r) => r.id).sort((a, b) => a - b);
+    const enIds = enRegions.map((r) => r.id).sort((a, b) => a - b);
 
     expect(elIds).toEqual(enIds);
   });
