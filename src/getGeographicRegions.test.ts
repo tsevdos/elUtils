@@ -1,4 +1,11 @@
-import { getGeographicRegions, geographicRegions } from "./getGeographicRegions";
+import { getGeographicRegions } from "./getGeographicRegions";
+import geographicRegionsEl from "./data/geographic-regions-el.json";
+import geographicRegionsEn from "./data/geographic-regions-en.json";
+
+const geographicRegions = {
+  el: geographicRegionsEl,
+  en: geographicRegionsEn,
+} as const;
 
 describe("getGeographicRegions:", () => {
   it("correctly returns all geographic regions in greek language", () => {
@@ -13,7 +20,7 @@ describe("getGeographicRegions:", () => {
     const expectedData = geographicRegions.en;
 
     expect(getGeographicRegions({ locale: "en" })).toEqual(expectedData);
-    expect(getGeographicRegions().length).toEqual(9);
+    expect(getGeographicRegions({ locale: "en" }).length).toEqual(9);
   });
 
   it("returns regions with correct data structure", () => {

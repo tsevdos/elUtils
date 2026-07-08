@@ -2,7 +2,7 @@ import geographicRegionsEl from "./data/geographic-regions-el.json";
 import geographicRegionsEn from "./data/geographic-regions-en.json";
 import { type Locale, type GeographicRegion } from "./types";
 
-export const geographicRegions = {
+const geographicRegions = {
   el: geographicRegionsEl,
   en: geographicRegionsEn,
 } as const;
