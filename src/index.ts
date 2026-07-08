@@ -11,8 +11,8 @@ export { searchCityByName } from "./searchCityByName";
 export { getCityAdministrativeDivision } from "./getCityAdministrativeDivision";
 export { getPrefectures } from "./getPrefectures";
 export { getPrefectureById } from "./getPrefectureById";
+export { getGeographicRegions } from "./getGeographicRegions";
 export {
-  getGeographicRegions,
   getGeographicRegionById,
   getAllPostalCodes,
   findByPostalCode,

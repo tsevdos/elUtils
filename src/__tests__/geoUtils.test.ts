@@ -1,5 +1,5 @@
-import geographicRegionsEl from "../../data/geographic-regions-el.json";
-import geographicRegionsEn from "../../data/geographic-regions-en.json";
+import geographicRegionsEl from "../data/geographic-regions-el.json";
+import geographicRegionsEn from "../data/geographic-regions-en.json";
 import postalCodes from "../data/postal-codes.json";
 import taxOfficesEl from "../../data/taxOffices-el.json";
 import taxOfficesEn from "../../data/taxOffices-en.json";
@@ -10,7 +10,6 @@ import {
   getAllPostalCodes,
   getAllTaxOffices,
   getGeographicRegionById,
-  getGeographicRegions,
   getTaxOfficeById,
   getTaxOfficesByMunicipalityId,
   getTaxOfficesByPostalCode,
@@ -25,23 +24,6 @@ import {
 const geographicRegions = { el: geographicRegionsEl, en: geographicRegionsEn };
 
 const allCountries = { el: countriesEl, en: countriesEn } as const;
-
-describe("getGeographicRegions:", () => {
-  it("correctly returns all geographic regions in greek language", () => {
-    const expectedData = geographicRegions.el;
-
-    expect(getGeographicRegions()).toEqual(expectedData);
-    expect(getGeographicRegions({ locale: "el" })).toEqual(expectedData);
-    expect(getGeographicRegions().length).toEqual(9);
-  });
-
-  it("correctly returns all geographic regions in english language", () => {
-    const expectedData = geographicRegions.en;
-
-    expect(getGeographicRegions({ locale: "en" })).toEqual(expectedData);
-    expect(getGeographicRegions().length).toEqual(9);
-  });
-});
 
 describe("getGeographicRegionById:", () => {
   it("correctly returns geographic region by id (in greek language)", () => {

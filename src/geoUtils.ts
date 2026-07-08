@@ -1,6 +1,6 @@
 import { getAdministrativeRegionById } from "./getAdministrativeRegionById";
-import geographicRegionsEl from "../data/geographic-regions-el.json";
-import geographicRegionsEn from "../data/geographic-regions-en.json";
+import geographicRegionsEl from "./data/geographic-regions-el.json";
+import geographicRegionsEn from "./data/geographic-regions-en.json";
 import postalCodes from "./data/postal-codes.json";
 import taxOfficesEl from "../data/taxOffices-el.json";
 import taxOfficesEn from "../data/taxOffices-en.json";
@@ -26,17 +26,6 @@ const allCountries = { el: countriesEl, en: countriesEn } as const;
 type Locale = "el" | "en";
 
 type GeographicRegionOptions = { locale?: Locale };
-
-/**
- * Returns the geographic regions in the provided locale.
- *
- * @param {GeographicRegionOptions} options - The options for locale.
- *
- * @returns {GeographicRegion[]} The geographic regions in the specified locale.
- */
-export function getGeographicRegions({ locale = "el" }: GeographicRegionOptions = {}): GeographicRegion[] {
-  return geographicRegions[locale];
-}
 
 type GeographicRegionByIdOptions = { id: number } & GeographicRegionOptions;
 
