@@ -1,3 +1,4 @@
+// TODO: don't export this
 export const areaCodes = {
   Athens: "210",
   Thessaloniki: "231",

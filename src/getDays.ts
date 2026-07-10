@@ -1,5 +1,6 @@
 import type { BaseDateTimeOptions } from "./types";
 
+// TODO: don't export this
 export const daysData = {
   el: {
     full: ["Δευτέρα", "Τρίτη", "Τετάρτη", "Πέμπτη", "Παρασκευή", "Σάββατο", "Κυριακή"],

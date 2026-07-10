@@ -1,5 +1,6 @@
 import type { DateTimeOptionsWithoutMin } from "./types";
 
+// TODO: don't export this
 export const erasData = {
   el: {
     full: ["προ Χριστού", "μετά Χριστόν"],
