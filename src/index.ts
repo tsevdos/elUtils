@@ -13,7 +13,7 @@ export { getPrefectures } from "./getPrefectures";
 export { getPrefectureById } from "./getPrefectureById";
 export { getGeographicRegions } from "./getGeographicRegions";
 export { getGeographicRegionById } from "./getGeographicRegionById";
-export { 
+export {
   getAllPostalCodes,
   findByPostalCode,
   getAllTaxOffices,

@@ -1,5 +1,5 @@
 import { type GeographicRegion, type Locale } from "./types";
-import {getGeographicRegions} from "./getGeographicRegions";
+import { getGeographicRegions } from "./getGeographicRegions";
 
 type GeographicRegionByIdOptions = { id: number; locale?: Locale };
 
