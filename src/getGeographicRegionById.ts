@@ -12,7 +12,7 @@ type GeographicRegionByIdOptions = { id: number; locale?: Locale };
  */
 export function getGeographicRegionById(options: GeographicRegionByIdOptions): GeographicRegion | undefined {
   const { id, locale = "el" } = options;
-  const geographicRegions = getGeographicRegions({ locale: locale });
+  const geographicRegions = getGeographicRegions({ locale });
 
   return geographicRegions.find((region) => region.id === id);
 }
