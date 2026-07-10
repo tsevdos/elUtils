@@ -25,20 +25,6 @@ const geographicRegions = { el: geographicRegionsEl, en: geographicRegionsEn };
 
 const allCountries = { el: countriesEl, en: countriesEn } as const;
 
-describe("getGeographicRegionById:", () => {
-  it("correctly returns geographic region by id (in greek language)", () => {
-    const expectedData = geographicRegions.el[4];
-
-    expect(getGeographicRegionById({ id: 5 })).toEqual(expectedData);
-    expect(getGeographicRegionById({ id: 5, locale: "el" })).toEqual(expectedData);
-  });
-
-  it("correctly returns geographic region by id (in english language)", () => {
-    const expectedData = geographicRegions.en[4];
-
-    expect(getGeographicRegionById({ id: 5, locale: "en" })).toEqual(expectedData);
-  });
-});
 
 describe("getAllPostalCodes", () => {
   it("correctly returns all available postal codes", () => {

@@ -1,46 +1,22 @@
 import { getAdministrativeRegionById } from "./getAdministrativeRegionById";
-import geographicRegionsEl from "./data/geographic-regions-el.json";
-import geographicRegionsEn from "./data/geographic-regions-en.json";
 import postalCodes from "./data/postal-codes.json";
 import taxOfficesEl from "../data/taxOffices-el.json";
 import taxOfficesEn from "../data/taxOffices-en.json";
 import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
 import countriesEl from "../data/countries-el.json";
 import countriesEn from "../data/countries-en.json";
-import type { Country, GeographicRegion, Prefecture, Region, TaxOffice, Unit } from "./types";
+import type { Country, Prefecture, Region, TaxOffice, Unit } from "./types";
 import { getAdministrativeUnitById } from "./getAdministrativeUnitById";
 import { getPrefectureById } from "./getPrefectureById";
 
 export const MOUNT_ATHOS_REGION_ID = 14;
 export const MOUNT_ATHOS_PREFECTURE_ID = 55;
 
-const geographicRegions = {
-  el: geographicRegionsEl,
-  en: geographicRegionsEn,
-} as const;
-
 const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
 
 const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 type Locale = "el" | "en";
-
-type GeographicRegionOptions = { locale?: Locale };
-
-type GeographicRegionByIdOptions = { id: number } & GeographicRegionOptions;
-
-/**
- * Returns the geographic region with the specific ID.
- *
- * @param {GeographicRegionByIdOptions} options - The options for ID and locale.
- *
- * @returns {GeographicRegion | undefined} The geographic region with the specified ID, or `undefined` if no such region exists.
- */
-export function getGeographicRegionById(options: GeographicRegionByIdOptions): GeographicRegion | undefined {
-  const { id, locale = "el" } = options;
-
-  return geographicRegions[locale].find((region) => region.id === id);
-}
 
 /**
  * Returns all postal codes.

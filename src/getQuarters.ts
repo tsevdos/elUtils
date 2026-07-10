@@ -1,5 +1,6 @@
 import type { DateTimeOptionsWithoutMin } from "./types";
 
+// TODO: don't export this
 export const quartersData = {
   el: {
     full: ["1ο τρίμηνο", "2ο τρίμηνο", "3ο τρίμηνο", "4ο τρίμηνο"],
