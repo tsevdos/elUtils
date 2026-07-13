@@ -1,15 +1,10 @@
-import { getAdministrativeRegionById } from "./getAdministrativeRegionById";
-import postalCodes from "./data/postal-codes.json";
 import taxOfficesEl from "../data/taxOffices-el.json";
 import taxOfficesEn from "../data/taxOffices-en.json";
 import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
 import countriesEl from "../data/countries-el.json";
 import countriesEn from "../data/countries-en.json";
-import type { Country, Prefecture, Region, TaxOffice, Unit } from "./types";
-import { getAdministrativeUnitById } from "./getAdministrativeUnitById";
-import { getPrefectureById } from "./getPrefectureById";
+import type { Country, TaxOffice } from "./types";
 
-export const MOUNT_ATHOS_REGION_ID = 14;
 export const MOUNT_ATHOS_PREFECTURE_ID = 55;
 
 const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
@@ -17,58 +12,6 @@ const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
 const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 type Locale = "el" | "en";
-
-/**
- * Returns all postal codes.
- *
- * @returns {string[]} An array of all postal codes.
- */
-export function getAllPostalCodes(): string[] {
-  return postalCodes.flatMap(({ postalCodes }) => postalCodes);
-}
-
-type FindByPostalCodeOptions = {
-  locale: Locale;
-  entity: "prefecture" | "region" | "unit";
-};
-
-/**
- * Returns the prefecture, region, or unit associated with the provided postal code.
- *
- * @param {string} postalCode - The postal code to search for.
- * @param {FindByPostalCodeOptions} options - The options for locale and entity type.
- *
- * @returns {Prefecture | Region | Unit | undefined} The prefecture, region, or unit associated with the postal code, or `undefined` if no such entity exists.
- */
-export function findByPostalCode(
-  postalCode: string,
-  options?: Partial<FindByPostalCodeOptions>,
-): Prefecture | Region | Unit | undefined {
-  const { locale, entity } = { locale: "el", entity: "prefecture", ...options } as FindByPostalCodeOptions;
-  const includeMountAthos = false; // never include Mount Athos. No postal codes there.
-  const postalCodeData = postalCodes.find((entry) => entry.postalCodes.includes(postalCode));
-
-  if (!postalCodeData) {
-    return undefined;
-  }
-
-  if (entity === "prefecture") {
-    const id = postalCodeData.prefectureId;
-    return getPrefectureById({ id, locale, includeMountAthos });
-  }
-
-  if (entity === "region") {
-    const id = postalCodeData.regionAndUnit.regionId;
-    return getAdministrativeRegionById({ id, locale, level: "region", includeMountAthos }) as Region;
-  }
-
-  if (entity === "unit") {
-    const id = postalCodeData.regionAndUnit.unitId;
-    return getAdministrativeUnitById({ id, locale, level: "unit", includeMountAthos }) as Unit;
-  }
-
-  return undefined;
-}
 
 type TaxOfficeOptions = { locale?: Locale };
 
