@@ -13,9 +13,9 @@ export { getPrefectures } from "./getPrefectures";
 export { getPrefectureById } from "./getPrefectureById";
 export { getGeographicRegions } from "./getGeographicRegions";
 export { getGeographicRegionById } from "./getGeographicRegionById";
+export { getAllPostalCodes } from "./getAllPostalCodes";
+export { findByPostalCode } from "./findByPostalCode";
 export {
-  getAllPostalCodes,
-  findByPostalCode,
   getAllTaxOffices,
   getTaxOfficeById,
   getTaxOfficesByRegionId,
