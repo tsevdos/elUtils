@@ -1,4 +1,5 @@
 import { findByPostalCode } from "./findByPostalCode";
+import { type Prefecture } from "./types";
 
 describe("findByPostalCode", () => {
   it("correctly returns undefined in case of invalid postal code", () => {
@@ -206,9 +207,11 @@ describe("findByPostalCode", () => {
   });
 
   it("returns the same IDs across different locales for the same postal code", () => {
-    const elResult = findByPostalCode("17562", { locale: "el", entity: "prefecture" }) as Region;
-    const enResult = findByPostalCode("17562", { locale: "en", entity: "prefecture" }) as Region;
-    expect(elResult?.id).toBe(enResult?.id);
-    expect(elResult?.regionAndUnit).toEqual(enResult?.regionAndUnit);
+    const elResult = findByPostalCode("17562", { locale: "el", entity: "prefecture" }) as Prefecture;
+    const enResult = findByPostalCode("17562", { locale: "en", entity: "prefecture" }) as Prefecture;
+
+    expect(elResult.id).toBe(enResult.id);
+    expect(elResult.regionAndUnit.regionId).toEqual(enResult.regionAndUnit.regionId);
+    expect(elResult.regionAndUnit.unitId).toEqual(enResult.regionAndUnit.unitId);
   });
 });
