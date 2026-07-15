@@ -15,8 +15,8 @@ export { getGeographicRegions } from "./getGeographicRegions";
 export { getGeographicRegionById } from "./getGeographicRegionById";
 export { getAllPostalCodes } from "./getAllPostalCodes";
 export { findByPostalCode } from "./findByPostalCode";
+export { getAllTaxOffices } from "./getAllTaxOffices";
 export {
-  getAllTaxOffices,
   getTaxOfficeById,
   getTaxOfficesByRegionId,
   getTaxOfficesByUnitId,

@@ -1,9 +1,6 @@
-import taxOfficesEl from "../../data/taxOffices-el.json";
-import taxOfficesEn from "../../data/taxOffices-en.json";
 import countriesEl from "../../data/countries-el.json";
 import countriesEn from "../../data/countries-en.json";
 import {
-  getAllTaxOffices,
   getTaxOfficeById,
   getTaxOfficesByMunicipalityId,
   getTaxOfficesByPostalCode,
@@ -16,16 +13,6 @@ import {
 } from "../geoUtils";
 
 const allCountries = { el: countriesEl, en: countriesEn } as const;
-
-describe("getAllTaxOffices", () => {
-  it("corectly returns all tax offices data (in greek)", () => {
-    expect(getAllTaxOffices()).toEqual(taxOfficesEl);
-  });
-
-  it("corectly returns all tax offices data (in english)", () => {
-    expect(getAllTaxOffices({ locale: "en" })).toEqual(taxOfficesEn);
-  });
-});
 
 describe("getTaxOfficeById", () => {
   it("returns undefined if tax office ID is invalid", () => {
