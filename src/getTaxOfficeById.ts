@@ -7,8 +7,8 @@ type GetTaxOfficeByIdOptions = { id: number; locale?: Locale };
  * This function returns a tax office based on the provided id and locale.
  *
  * @param {GetTaxOfficeByIdOptions} options - An object that contains the id and locale options.
- * @param {string} options.id - The id of the tax office to be returned.
- * @param {string} [options.locale="el"] - The locale based on which the tax office is returned. Default is "el".
+ * @param {number} options.id - The id of the tax office to be returned.
+ * @param {"el" | "en"} [options.locale="el"] - The locale based on which the tax office is returned. Default is "el".
  *
  * @returns {TaxOffice | undefined} - The tax office with the specified id for the specified locale, or undefined if no such tax office exists.
  */

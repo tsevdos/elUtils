@@ -5,11 +5,11 @@ import taxOfficesEn from "./data/taxOffices-en.json";
 // const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
 
 describe("getAllTaxOffices", () => {
-  it("corectly returns all tax offices data (in greek)", () => {
+  it("correctly returns all tax offices data (in greek)", () => {
     expect(getAllTaxOffices()).toEqual(taxOfficesEl);
   });
 
-  it("corectly returns all tax offices data (in english)", () => {
+  it("correctly returns all tax offices data (in english)", () => {
     expect(getAllTaxOffices({ locale: "en" })).toEqual(taxOfficesEn);
   });
 
