@@ -1,10 +1,6 @@
-import taxOfficesEl from "../../data/taxOffices-el.json";
-import taxOfficesEn from "../../data/taxOffices-en.json";
 import countriesEl from "../../data/countries-el.json";
 import countriesEn from "../../data/countries-en.json";
 import {
-  getAllTaxOffices,
-  getTaxOfficeById,
   getTaxOfficesByMunicipalityId,
   getTaxOfficesByPostalCode,
   getTaxOfficesByRegionId,
@@ -16,37 +12,6 @@ import {
 } from "../geoUtils";
 
 const allCountries = { el: countriesEl, en: countriesEn } as const;
-
-describe("getAllTaxOffices", () => {
-  it("corectly returns all tax offices data (in greek)", () => {
-    expect(getAllTaxOffices()).toEqual(taxOfficesEl);
-  });
-
-  it("corectly returns all tax offices data (in english)", () => {
-    expect(getAllTaxOffices({ locale: "en" })).toEqual(taxOfficesEn);
-  });
-});
-
-describe("getTaxOfficeById", () => {
-  it("returns undefined if tax office ID is invalid", () => {
-    expect(getTaxOfficeById({ id: 1120 })).toBeUndefined();
-  });
-
-  it("returns tax office data if tax office ID is valid", () => {
-    expect(getTaxOfficeById({ id: 1 })).toEqual({
-      id: 1,
-      name: "Ξάνθης",
-      officialName: "ΔΟΥ Ξάνθης",
-      relations: {
-        regionId: 1,
-        regionIso: "GR-A",
-        unitIds: [5],
-        municipalityIds: [15, 16, 17, 18],
-      },
-      postalCodes: [67064, 67150, 67300, 67131, 67133, 67132, 67062, 66035, 66150, 69200, 67200],
-    });
-  });
-});
 
 describe("getTaxOfficesByRegionId", () => {
   it("get tax offices with region id 1", () => {

@@ -1,6 +1,7 @@
-import taxOfficesEl from "../data/taxOffices-el.json";
-import taxOfficesEn from "../data/taxOffices-en.json";
 import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
+import { getAllTaxOffices } from "./getAllTaxOffices";
+import taxOfficesEl from "./data/taxOffices-el.json";
+import taxOfficesEn from "./data/taxOffices-en.json";
 import countriesEl from "../data/countries-el.json";
 import countriesEn from "../data/countries-en.json";
 import type { Country, TaxOffice } from "./types";
@@ -13,40 +14,7 @@ const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 type Locale = "el" | "en";
 
-type TaxOfficeOptions = { locale?: Locale };
-
-/**
- * This function returns all tax offices based on the provided locale.
- *
- * @param {TaxOfficeOptions} [options={}] - An object that contains the locale option.
- * @param {string} [options.locale="el"] - The locale based on which the tax offices are returned. Default is "el".
- *
- * @returns {TaxOffice[]} - An array of tax offices for the specified locale.
- */
-export function getAllTaxOffices({ locale = "el" }: TaxOfficeOptions = {}): TaxOffice[] {
-  return allTaxOffices[locale];
-}
-
-type GetTaxOfficeByIdOptions = { id: number } & TaxOfficeOptions;
-
-/**
- * This function returns a tax office based on the provided id and locale.
- *
- * @param {GetTaxOfficeByIdOptions} options - An object that contains the id and locale options.
- * @param {string} options.id - The id of the tax office to be returned.
- * @param {string} [options.locale="el"] - The locale based on which the tax office is returned. Default is "el".
- *
- * @returns {TaxOffice | undefined} - The tax office with the specified id for the specified locale, or undefined if no such tax office exists.
- */
-export function getTaxOfficeById(options: GetTaxOfficeByIdOptions): TaxOffice | undefined {
-  const { id, locale = "el" } = options;
-
-  return allTaxOffices[locale].find((taxOffice) => taxOffice.id === id);
-}
-
-type GetTaxOfficesByRegionIdOptions = {
-  id: number;
-} & TaxOfficeOptions;
+type GetTaxOfficesByRegionIdOptions = { id: number; locale?: Locale };
 
 /**
  * This function returns all tax offices in a specific region based on the provided region id and locale.
@@ -64,9 +32,7 @@ export function getTaxOfficesByRegionId(options: GetTaxOfficesByRegionIdOptions)
   return allTaxOffices.filter((taxOffice) => taxOffice.relations.regionId === id);
 }
 
-type GetTaxOfficesByUnitIdOptions = {
-  id: number;
-} & TaxOfficeOptions;
+type GetTaxOfficesByUnitIdOptions = { id: number; locale?: Locale };
 
 /**
  * This function returns all tax offices associated with a specific regional unit based on the provided unit id and locale.
@@ -84,9 +50,7 @@ export function getTaxOfficesByUnitId(options: GetTaxOfficesByUnitIdOptions): Ta
   return allTaxOffices.filter((taxOffice) => taxOffice.relations.unitIds?.includes(id));
 }
 
-type GetTaxOfficesByMunicipalityIdOptions = {
-  id: number;
-} & TaxOfficeOptions;
+type GetTaxOfficesByMunicipalityIdOptions = { id: number; locale?: Locale };
 
 /**
  * This function returns all tax offices associated with a specific municipality based on the provided municipality id and locale.
@@ -104,9 +68,7 @@ export function getTaxOfficesByMunicipalityId(options: GetTaxOfficesByMunicipali
   return allTaxOffices.filter((taxOffice) => taxOffice.relations.municipalityIds?.includes(id));
 }
 
-type GetTaxOfficesByPostalCodeOptions = {
-  postalCode: number;
-} & TaxOfficeOptions;
+type GetTaxOfficesByPostalCodeOptions = { postalCode: number; locale?: Locale };
 
 /**
  * This function returns the tax offices that match the given postal code.
@@ -124,7 +86,7 @@ export function getTaxOfficesByPostalCode(options: GetTaxOfficesByPostalCodeOpti
   return allTaxOffices.filter((taxOffice) => taxOffice.postalCodes?.includes(postalCode));
 }
 
-type TaxOfficeOptionsByTerm = { searchTerm: string } & TaxOfficeOptions;
+type TaxOfficeOptionsByTerm = { searchTerm: string; locale?: Locale };
 
 /**
  * This function returns the tax offices that match the given search term.
