@@ -1,7 +1,6 @@
 import countriesEl from "../../data/countries-el.json";
 import countriesEn from "../../data/countries-en.json";
 import {
-  getTaxOfficeById,
   getTaxOfficesByMunicipalityId,
   getTaxOfficesByPostalCode,
   getTaxOfficesByRegionId,
@@ -13,27 +12,6 @@ import {
 } from "../geoUtils";
 
 const allCountries = { el: countriesEl, en: countriesEn } as const;
-
-describe("getTaxOfficeById", () => {
-  it("returns undefined if tax office ID is invalid", () => {
-    expect(getTaxOfficeById({ id: 1120 })).toBeUndefined();
-  });
-
-  it("returns tax office data if tax office ID is valid", () => {
-    expect(getTaxOfficeById({ id: 1 })).toEqual({
-      id: 1,
-      name: "Ξάνθης",
-      officialName: "ΔΟΥ Ξάνθης",
-      relations: {
-        regionId: 1,
-        regionIso: "GR-A",
-        unitIds: [5],
-        municipalityIds: [15, 16, 17, 18],
-      },
-      postalCodes: [67064, 67150, 67300, 67131, 67133, 67132, 67062, 66035, 66150, 69200, 67200],
-    });
-  });
-});
 
 describe("getTaxOfficesByRegionId", () => {
   it("get tax offices with region id 1", () => {
