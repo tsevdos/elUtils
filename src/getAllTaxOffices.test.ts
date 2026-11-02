@@ -2,8 +2,6 @@ import { getAllTaxOffices } from "./getAllTaxOffices";
 import taxOfficesEl from "./data/taxOffices-el.json";
 import taxOfficesEn from "./data/taxOffices-en.json";
 
-// const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
-
 describe("getAllTaxOffices", () => {
   it("correctly returns all tax offices data (in greek)", () => {
     expect(getAllTaxOffices()).toEqual(taxOfficesEl);

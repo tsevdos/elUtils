@@ -106,6 +106,10 @@ If you like the project but just don't have time to contribute, that's fine. The
 - Refer this project in your project's readme
 - Mention the project at local meetups and tell your friends/colleagues
 
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=tsevdos/elUtils)](https://contrib.rocks/image?repo=tsevdos/elUtils)
+
 ## License
 
 MIT© [John Tsevdos](https://tsevdos.me)
