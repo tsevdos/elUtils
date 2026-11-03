@@ -17,8 +17,8 @@ export { getAllPostalCodes } from "./getAllPostalCodes";
 export { findByPostalCode } from "./findByPostalCode";
 export { getAllTaxOffices } from "./getAllTaxOffices";
 export { getTaxOfficeById } from "./getTaxOfficeById";
+export { getTaxOfficesByRegionId } from "./getTaxOfficesByRegionId";
 export {
-  getTaxOfficesByRegionId,
   getTaxOfficesByUnitId,
   getTaxOfficesByMunicipalityId,
   getTaxOfficesByPostalCode,
