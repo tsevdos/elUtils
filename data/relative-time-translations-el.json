@@ -1,0 +1,32 @@
+{
+  "in": "σε",
+  "ago": "πριν",
+  "seconds": {
+    "singular": "μόλις τώρα",
+    "plural": "δευτερόλεπτα"
+  },
+  "minutes": {
+    "singular": "λεπτό",
+    "plural": "λεπτά"
+  },
+  "hours": {
+    "singular": "ώρα",
+    "plural": "ώρες"
+  },
+  "days": {
+    "singular": "μέρα",
+    "plural": "μέρες"
+  },
+  "weeks": {
+    "singular": "εβδομάδα",
+    "plural": "εβδομάδες"
+  },
+  "months": {
+    "singular": "μήνα",
+    "plural": "μήνες"
+  },
+  "years": {
+    "singular": "χρόνο",
+    "plural": "χρόνια"
+  }
+}
