@@ -19,14 +19,8 @@ export { getAllTaxOffices } from "./getAllTaxOffices";
 export { getTaxOfficeById } from "./getTaxOfficeById";
 export { getTaxOfficesByRegionId } from "./getTaxOfficesByRegionId";
 export { getTaxOfficesByUnitId } from "./getTaxOfficesByUnitId";
-export {
-  getTaxOfficesByMunicipalityId,
-  getTaxOfficesByPostalCode,
-  searchTaxOffice,
-  getCountries,
-  searchCountryByName,
-  getCountry,
-} from "./geoUtils";
+export { getTaxOfficesByMunicipalityId } from "./getTaxOfficesByMunicipalityId";
+export { getTaxOfficesByPostalCode, searchTaxOffice, getCountries, searchCountryByName, getCountry } from "./geoUtils";
 // Date utilities
 export { getDays } from "./getDays";
 export { getMonths } from "./getMonths";
