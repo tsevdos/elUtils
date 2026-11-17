@@ -1,29 +1,10 @@
 import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
-import countriesEl from "../data/countries-el.json";
-import countriesEn from "../data/countries-en.json";
+import { getCountries } from "./getCountries";
 import type { Country } from "./types";
 
 export const MOUNT_ATHOS_PREFECTURE_ID = 55;
 
-const allCountries = { el: countriesEl, en: countriesEn } as const;
-
 type Locale = "el" | "en";
-
-type CountriesOptions = {
-  locale?: Locale;
-};
-
-/**
- * This function returns all the countries based on the provided options.
- *
- * @param {CountriesOptions} [options={}] - The options for the countries.
- * @param {string} [options.locale="el"] - The locale to use. Default is "el".
- *
- * @returns {Country[]} The countries that match the given options, or all countries if no options are provided.
- */
-export function getCountries({ locale = "el" }: CountriesOptions = {}): Country[] {
-  return allCountries[locale];
-}
 
 type SearchCountryByNameOptions = {
   locale?: Locale;

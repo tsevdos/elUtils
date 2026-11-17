@@ -20,15 +20,16 @@ export { getTaxOfficeById } from "./getTaxOfficeById";
 export { getTaxOfficesByRegionId } from "./getTaxOfficesByRegionId";
 export { getTaxOfficesByUnitId } from "./getTaxOfficesByUnitId";
 export { getTaxOfficesByMunicipalityId } from "./getTaxOfficesByMunicipalityId";
-export { getCountries, searchCountryByName, getCountry } from "./geoUtils";
+export { getTaxOfficesByPostalCode } from "./getTaxOfficesByPostalCode";
+export { searchTaxOffice } from "./searchTaxOffice";
+export { getCountries } from "./getCountries";
+export { searchCountryByName, getCountry } from "./geoUtils";
 // Date utilities
 export { getDays } from "./getDays";
 export { getMonths } from "./getMonths";
 export { getQuarters } from "./getQuarters";
 export { getEras } from "./getEras";
 export { getHolidays } from "./getHolidays";
-export { getTaxOfficesByPostalCode } from "./getTaxOfficesByPostalCode";
-export { searchTaxOffice } from "./searchTaxOffice";
 // Validation utilities
 export {
   isValidPostalCode,
