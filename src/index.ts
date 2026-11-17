@@ -23,7 +23,8 @@ export { getTaxOfficesByMunicipalityId } from "./getTaxOfficesByMunicipalityId";
 export { getTaxOfficesByPostalCode } from "./getTaxOfficesByPostalCode";
 export { searchTaxOffice } from "./searchTaxOffice";
 export { getCountries } from "./getCountries";
-export { searchCountryByName, getCountry } from "./geoUtils";
+export { searchCountryByName } from "./searchCountryByName";
+export { getCountry } from "./geoUtils";
 // Date utilities
 export { getDays } from "./getDays";
 export { getMonths } from "./getMonths";
