@@ -1,38 +1,13 @@
 import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
-import taxOfficesEl from "./data/taxOffices-el.json";
-import taxOfficesEn from "./data/taxOffices-en.json";
 import countriesEl from "../data/countries-el.json";
 import countriesEn from "../data/countries-en.json";
-import type { Country, TaxOffice } from "./types";
+import type { Country } from "./types";
 
 export const MOUNT_ATHOS_PREFECTURE_ID = 55;
-
-const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
 
 const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 type Locale = "el" | "en";
-
-type TaxOfficeOptionsByTerm = { searchTerm: string; locale?: Locale };
-
-/**
- * This function returns the tax offices that match the given search term.
- *
- * @param {TaxOfficeOptionsByTerm} [options={}] - The options for searching tax offices.
- * @param {string} options.searchTerm - The search term to match.
- * @param {string} [options.locale="el"] - The locale to use. Default is "el".
- *
- * @returns {TaxOffice[] | TaxOffice} The tax offices that match the given search term, or all tax offices if no search term is provided.
- */
-export function searchTaxOffice(options: TaxOfficeOptionsByTerm): TaxOffice[] {
-  const { searchTerm, locale = "el" } = options;
-
-  if (searchTerm.trim() === "") return [];
-
-  const normalizedTerm = normalizeAndUppercaseGreekString(searchTerm);
-
-  return allTaxOffices[locale].filter(({ name }) => normalizeAndUppercaseGreekString(name).includes(normalizedTerm));
-}
 
 type CountriesOptions = {
   locale?: Locale;
