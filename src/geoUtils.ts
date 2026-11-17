@@ -1,96 +1,9 @@
-import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
-import taxOfficesEl from "./data/taxOffices-el.json";
-import taxOfficesEn from "./data/taxOffices-en.json";
-import countriesEl from "../data/countries-el.json";
-import countriesEn from "../data/countries-en.json";
-import type { Country, TaxOffice } from "./types";
+import { getCountries } from "./getCountries";
+import type { Country } from "./types";
 
 export const MOUNT_ATHOS_PREFECTURE_ID = 55;
 
-const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
-
-const allCountries = { el: countriesEl, en: countriesEn } as const;
-
 type Locale = "el" | "en";
-
-type TaxOfficeOptionsByTerm = { searchTerm: string; locale?: Locale };
-
-/**
- * This function returns the tax offices that match the given search term.
- *
- * @param {TaxOfficeOptionsByTerm} [options={}] - The options for searching tax offices.
- * @param {string} options.searchTerm - The search term to match.
- * @param {string} [options.locale="el"] - The locale to use. Default is "el".
- *
- * @returns {TaxOffice[] | TaxOffice} The tax offices that match the given search term, or all tax offices if no search term is provided.
- */
-export function searchTaxOffice(options: TaxOfficeOptionsByTerm): TaxOffice[] {
-  const { searchTerm, locale = "el" } = options;
-
-  if (searchTerm.trim() === "") return [];
-
-  const normalizedTerm = normalizeAndUppercaseGreekString(searchTerm);
-
-  return allTaxOffices[locale].filter(({ name }) => normalizeAndUppercaseGreekString(name).includes(normalizedTerm));
-}
-
-type CountriesOptions = {
-  locale?: Locale;
-};
-
-/**
- * This function returns all the countries based on the provided options.
- *
- * @param {CountriesOptions} [options={}] - The options for the countries.
- * @param {string} [options.locale="el"] - The locale to use. Default is "el".
- *
- * @returns {Country[]} The countries that match the given options, or all countries if no options are provided.
- */
-export function getCountries({ locale = "el" }: CountriesOptions = {}): Country[] {
-  return allCountries[locale];
-}
-
-type SearchCountryByNameOptions = {
-  locale?: Locale;
-  searchTerm: string;
-};
-
-/**
- * This function searches for countries by name based on the provided options.
- *
- * @param {SearchCountryByNameOptions} options - The options for searching countries by name.
- * @param {string} [options.locale="el"] - The locale to use. Default is "el".
- * @param {string} options.searchTerm - The term to search for in country names.
- *
- * @returns {Country[] | null} The countries that match the search term, or null if no matches are found.
- */
-export function searchCountryByName({ locale = "el", searchTerm }: SearchCountryByNameOptions): Country[] | null {
-  const countries = getCountries({ locale });
-  const normalizedSearchTerm = normalizeAndUppercaseGreekString(searchTerm);
-  let countriesByName: Country[] = [];
-
-  if (locale === "el") {
-    countriesByName = countries.filter(({ name, completeName, officialName }) => {
-      return (
-        normalizeAndUppercaseGreekString(name).includes(normalizedSearchTerm) ||
-        normalizeAndUppercaseGreekString(completeName).includes(normalizedSearchTerm) ||
-        normalizeAndUppercaseGreekString(officialName).includes(normalizedSearchTerm)
-      );
-    });
-  }
-
-  if (locale === "en") {
-    countriesByName = countries.filter(({ name, completeName, officialName }) => {
-      return (
-        name.toUpperCase().includes(searchTerm.toUpperCase()) ||
-        completeName.toUpperCase().includes(searchTerm.toUpperCase()) ||
-        officialName.toUpperCase().includes(searchTerm.toUpperCase())
-      );
-    });
-  }
-
-  return countriesByName?.length ? countriesByName : null;
-}
 
 type GetCountryOptions = {
   locale?: Locale;
