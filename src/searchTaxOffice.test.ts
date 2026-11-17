@@ -5,6 +5,16 @@ describe("searchTaxOffice", () => {
     expect(searchTaxOffice({ searchTerm: "     " })).toEqual([]);
   });
 
+  it("returns empty array when no tax office matches the searchTerm", () => {
+    expect(searchTaxOffice({ searchTerm: "no matching tax office" })).toEqual([]);
+  });
+
+  it("matches Greek names regardless of accents, case, and spacing", () => {
+    expect(searchTaxOffice({ searchTerm: "νικαιας α β" }).map(({ id, name }) => ({ id, name }))).toEqual([
+      { id: 4, name: "Νίκαιας (Α-Β)" },
+    ]);
+  });
+
   it("returns tax office that has 'ΑΘ' in their names", () => {
     expect(searchTaxOffice({ searchTerm: "ΑΘ" })).toEqual([
       {
