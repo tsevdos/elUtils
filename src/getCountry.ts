@@ -1,9 +1,5 @@
 import { getCountries } from "./getCountries";
-import type { Country } from "./types";
-
-export const MOUNT_ATHOS_PREFECTURE_ID = 55;
-
-type Locale = "el" | "en";
+import type { Country, Locale } from "./types";
 
 type GetCountryOptions = {
   locale?: Locale;

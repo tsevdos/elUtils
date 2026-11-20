@@ -1,6 +1,6 @@
 import { getPrefectureById } from "./getPrefectureById";
 import { getPrefectures } from "./getPrefectures";
-import { MOUNT_ATHOS_PREFECTURE_ID } from "./geoUtils";
+import { MOUNT_ATHOS_PREFECTURE_ID } from "./constants";
 
 const greekPrefectures = getPrefectures({ locale: "el", includeMountAthos: true });
 const greekPrefecturesWithoutMountAthos = getPrefectures({ locale: "el" });
