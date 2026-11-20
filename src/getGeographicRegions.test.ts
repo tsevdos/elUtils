@@ -1,26 +1,29 @@
 import { getGeographicRegions } from "./getGeographicRegions";
-import geographicRegionsEl from "./data/geographic-regions-el.json";
-import geographicRegionsEn from "./data/geographic-regions-en.json";
-
-const geographicRegions = {
-  el: geographicRegionsEl,
-  en: geographicRegionsEn,
-} as const;
 
 describe("getGeographicRegions:", () => {
   it("correctly returns all geographic regions in greek language", () => {
-    const expectedData = geographicRegions.el;
+    const regions = getGeographicRegions();
 
-    expect(getGeographicRegions()).toEqual(expectedData);
-    expect(getGeographicRegions({ locale: "el" })).toEqual(expectedData);
-    expect(getGeographicRegions().length).toEqual(9);
+    expect(regions).toEqual(getGeographicRegions({ locale: "el" }));
+    expect(regions.length).toBe(9);
+    expect(regions[0]).toEqual({
+      id: 1,
+      name: "Ήπειρος",
+      seat: "Ιωάννινα",
+      administrativeRegions: [{ id: 4, iso31662: "GR-D" }],
+    });
   });
 
   it("correctly returns all geographic regions in english language", () => {
-    const expectedData = geographicRegions.en;
+    const regions = getGeographicRegions({ locale: "en" });
 
-    expect(getGeographicRegions({ locale: "en" })).toEqual(expectedData);
-    expect(getGeographicRegions({ locale: "en" }).length).toEqual(9);
+    expect(regions.length).toBe(9);
+    expect(regions[0]).toEqual({
+      id: 1,
+      name: "Epirus",
+      seat: "Ioannina",
+      administrativeRegions: [{ id: 4, iso31662: "GR-D" }],
+    });
   });
 
   it("returns regions with correct data structure", () => {

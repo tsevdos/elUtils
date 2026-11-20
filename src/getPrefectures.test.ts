@@ -1,20 +1,25 @@
-import { getPrefectures, allPrefectures, prefecturesWithoutMountAthos } from "./getPrefectures";
+import { getPrefectures } from "./getPrefectures";
 import { MOUNT_ATHOS_PREFECTURE_ID } from "./constants";
 
 describe("getPrefectures", () => {
   describe("default behavior", () => {
     it("correctly returns data with default values (in greek language)", () => {
-      const expectedData = prefecturesWithoutMountAthos.el;
+      const prefectures = getPrefectures();
 
-      expect(getPrefectures()).toEqual(expectedData);
-      expect(getPrefectures({ locale: "el" })).toEqual(expectedData);
-      expect(getPrefectures({ includeMountAthos: false })).toEqual(expectedData);
-      expect(getPrefectures({ locale: "el", includeMountAthos: false })).toEqual(expectedData);
-      expect(getPrefectures().length).toBe(54);
+      expect(prefectures.length).toBe(54);
+      expect(getPrefectures({ locale: "el" })).toEqual(prefectures);
+      expect(getPrefectures({ includeMountAthos: false })).toEqual(prefectures);
+      expect(getPrefectures({ locale: "el", includeMountAthos: false })).toEqual(prefectures);
+      expect(prefectures[0]).toEqual({
+        id: 1,
+        name: "Νομός Αθηνών",
+        seat: "Αθήνα",
+        regionAndUnit: { regionId: 9, regionIso31662: "GR-I", unitId: 42 },
+      });
     });
 
     it("should handle empty options object", () => {
-      expect(getPrefectures({})).toEqual(prefecturesWithoutMountAthos.el);
+      expect(getPrefectures({})).toEqual(getPrefectures());
     });
 
     it("should return array of prefectures", () => {
@@ -27,18 +32,24 @@ describe("getPrefectures", () => {
 
   describe("Mount Athos handling", () => {
     it("correctly returns data including Mount Athos (in greek language)", () => {
-      const expectedData = allPrefectures.el;
+      const prefectures = getPrefectures({ includeMountAthos: true });
 
-      expect(getPrefectures({ includeMountAthos: true })).toEqual(expectedData);
-      expect(getPrefectures({ locale: "el", includeMountAthos: true })).toEqual(expectedData);
-      expect(getPrefectures({ includeMountAthos: true }).length).toBe(55);
+      expect(getPrefectures({ locale: "el", includeMountAthos: true })).toEqual(prefectures);
+      expect(prefectures.length).toBe(55);
+      expect(prefectures.some(({ id }) => id === MOUNT_ATHOS_PREFECTURE_ID)).toBe(true);
     });
 
     it("correctly returns data including Mount Athos (in english language)", () => {
-      const expectedData = allPrefectures.en;
+      const prefectures = getPrefectures({ locale: "en", includeMountAthos: true });
 
-      expect(getPrefectures({ locale: "en", includeMountAthos: true })).toEqual(expectedData);
-      expect(getPrefectures({ locale: "en", includeMountAthos: true }).length).toBe(55);
+      expect(prefectures.length).toBe(55);
+      expect(prefectures.some(({ id }) => id === MOUNT_ATHOS_PREFECTURE_ID)).toBe(true);
+      expect(prefectures[0]).toEqual({
+        id: 1,
+        name: "Athens Prefecture",
+        seat: "Athens",
+        regionAndUnit: { regionId: 9, regionIso31662: "GR-I", unitId: 42 },
+      });
     });
 
     it("should exclude Mount Athos by default", () => {
@@ -73,11 +84,16 @@ describe("getPrefectures", () => {
 
   describe("locale handling", () => {
     it("correctly returns data (in english language)", () => {
-      const expectedData = prefecturesWithoutMountAthos.en;
+      const prefectures = getPrefectures({ locale: "en" });
 
-      expect(getPrefectures({ locale: "en" })).toEqual(expectedData);
-      expect(getPrefectures({ locale: "en", includeMountAthos: false })).toEqual(expectedData);
-      expect(getPrefectures({ locale: "en" }).length).toBe(54);
+      expect(prefectures.length).toBe(54);
+      expect(getPrefectures({ locale: "en", includeMountAthos: false })).toEqual(prefectures);
+      expect(prefectures[0]).toEqual({
+        id: 1,
+        name: "Athens Prefecture",
+        seat: "Athens",
+        regionAndUnit: { regionId: 9, regionIso31662: "GR-I", unitId: 42 },
+      });
     });
 
     it("should return same number of prefectures for both locales (without Mount Athos)", () => {

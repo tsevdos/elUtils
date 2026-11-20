@@ -1,12 +1,12 @@
-import postalCodes from "./data/postal-codes.json";
 import { getAllPostalCodes } from "./getAllPostalCodes";
 
 describe("getAllPostalCodes", () => {
   it("correctly returns all available postal codes", () => {
-    const expectedResult = postalCodes.flatMap(({ postalCodes }) => postalCodes);
+    const postalCodes = getAllPostalCodes();
 
-    expect(getAllPostalCodes()).toEqual(expectedResult);
-    expect(getAllPostalCodes().length).toBe(1290);
+    expect(postalCodes.length).toBe(1290);
+    expect(postalCodes.slice(0, 3)).toEqual(["30021", "30027", "30100"]);
+    expect(postalCodes).toContain("11526");
   });
 
   it("returns an array of strings", () => {

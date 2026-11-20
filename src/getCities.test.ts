@@ -1,27 +1,49 @@
-import citiesEl from "./data/cities-el.json";
-import citiesEn from "./data/cities-en.json";
 import { getCities } from "./getCities";
 import { MOUNT_ATHOS_REGION_ID } from "./getAdministrativeRegions";
-
-const cities = { el: citiesEl, en: citiesEn } as const;
 
 describe("getCities", () => {
   describe("default behavior", () => {
     it("correctly returns data with default values (in greek language)", () => {
-      expect(getCities()).toStrictEqual(cities.el);
-      expect(getCities({ locale: "el" })).toStrictEqual(cities.el);
-      expect(getCities().length).toBe(51);
+      const cities = getCities();
+
+      expect(cities).toEqual(getCities({ locale: "el" }));
+      expect(cities.length).toBe(51);
+      expect(cities[0]).toEqual({
+        id: 1,
+        name: "Αθήνα",
+        coordinates: [23.726247807017884, 37.97521056577561],
+        relations: {
+          regionId: 9,
+          regionIso31662: "GR-I",
+          unitId: 42,
+          municipalityId: 193,
+          prefectureId: 1,
+        },
+      });
     });
 
     it("handles empty options object explicitly", () => {
-      expect(getCities({})).toStrictEqual(cities.el);
+      expect(getCities({})).toEqual(getCities());
     });
   });
 
   describe("locale handling", () => {
     it("correctly returns data (in english language)", () => {
-      expect(getCities({ locale: "en" })).toStrictEqual(cities.en);
-      expect(getCities({ locale: "en" }).length).toBe(51);
+      const cities = getCities({ locale: "en" });
+
+      expect(cities.length).toBe(51);
+      expect(cities[0]).toEqual({
+        id: 1,
+        name: "Athens",
+        coordinates: [23.726247807017884, 37.97521056577561],
+        relations: {
+          regionId: 9,
+          regionIso31662: "GR-I",
+          unitId: 42,
+          municipalityId: 193,
+          prefectureId: 1,
+        },
+      });
     });
 
     it("returns same number of cities for both locales", () => {
