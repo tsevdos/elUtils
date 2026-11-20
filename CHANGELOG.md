@@ -1,5 +1,11 @@
 # @tsevdos/el-utils
 
+## 0.14.0
+
+### Minor Changes
+
+- [#131](https://github.com/tsevdos/elUtils/pull/131) [`1aedcc4`](https://github.com/tsevdos/elUtils/commit/1aedcc471ddb0bcfc6620becf90927fa4862b772) Thanks [@tsevdos](https://github.com/tsevdos)! - add formatNumber function
+
 ## 0.13.0
 
 ### Minor Changes
