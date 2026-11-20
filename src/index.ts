@@ -24,7 +24,7 @@ export { getTaxOfficesByPostalCode } from "./getTaxOfficesByPostalCode";
 export { searchTaxOffice } from "./searchTaxOffice";
 export { getCountries } from "./getCountries";
 export { searchCountryByName } from "./searchCountryByName";
-export { getCountry } from "./geoUtils";
+export { getCountry } from "./getCountry";
 // Date utilities
 export { getDays } from "./getDays";
 export { getMonths } from "./getMonths";

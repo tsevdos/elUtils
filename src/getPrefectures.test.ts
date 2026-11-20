@@ -1,5 +1,5 @@
 import { getPrefectures, allPrefectures, prefecturesWithoutMountAthos } from "./getPrefectures";
-import { MOUNT_ATHOS_PREFECTURE_ID } from "./geoUtils";
+import { MOUNT_ATHOS_PREFECTURE_ID } from "./constants";
 
 describe("getPrefectures", () => {
   describe("default behavior", () => {

@@ -51,4 +51,8 @@ describe("getTaxOfficesByPostalCode", () => {
   it("returns empty array on invalid postalcode", () => {
     expect(getTaxOfficesByPostalCode({ postalCode: 11111111111 })).toEqual([]);
   });
+
+  it("returns empty array when no tax office matches a valid-format postal code", () => {
+    expect(getTaxOfficesByPostalCode({ postalCode: 12345 })).toEqual([]);
+  });
 });
