@@ -191,6 +191,15 @@ type FormatWeightsOptions = {
 type WithInternationalOptions = Pick<FormatWeightsOptions, "type">;
 
 // helper to add international symbol
+/**
+ * Appends the international symbol for a weight unit.
+ *
+ * @param {string} value - The formatted weight value.
+ * @param {WithInternationalOptions} [options={}] - Options for selecting the weight unit.
+ * @param {WeightTypes} [options.type="pound"] - The weight unit whose symbol to append.
+ *
+ * @returns {string} The formatted value followed by the unit's international symbol.
+ */
 const withInternationalSymbol = (value: string, options: WithInternationalOptions = {}): string => {
   const { type = "pound" } = options;
 
@@ -202,12 +211,14 @@ const withInternationalSymbol = (value: string, options: WithInternationalOption
  *
  * @param {number} value - The weight value to format.
  * @param {FormatWeightsOptions} [options={}] - The options for formatting the weight.
- * @param {string} [options.locale="el"] - The locale to use for formatting. Default is "el".
+ * @param {"el" | "en"} [options.locale="el"] - The locale to use for formatting. Defaults to Greek.
  * @param {WeightTypes} [options.type="pound"] - The type of weight to format. Default is "pound".
  * @param {"full" | "short"} [options.format="full"] - The format to use. Default is "full".
  * @param {boolean} [options.withInternational=false] - Whether to include the international symbol. Default is false.
  *
- * @returns {string} - The formatted weight string.
+ * Full format uses the singular unit name when `value` is exactly `1`.
+ *
+ * @returns {string} The formatted weight string.
  */
 export const formatWeight = (value: number, options: FormatWeightsOptions = {}): string => {
   const { locale = "el", format = "full", type = "pound", withInternational = false } = options;

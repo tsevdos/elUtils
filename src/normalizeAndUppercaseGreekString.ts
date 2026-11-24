@@ -22,7 +22,8 @@ const GREEK_ACCENTED_CHARACTERS_REPLACEMENTS: { [key: string]: string } = {
 };
 
 /**
- * Removes accents, spaces, and special characters from the input string and converts it to uppercase.
+ * Removes Greek accents, spaces, and a defined set of punctuation characters, then converts the input to uppercase.
+ * Removed punctuation includes `/`, `-`, `_`, `!`, `@`, `#`, `$`, `%`, `^`, `&`, `*`, `(`, and `)`.
  *
  * @param {string} input - The Greek text to be converted.
  *
@@ -38,7 +39,8 @@ export function normalizeAndUppercaseGreekString(input: string): string {
 }
 
 /**
- * Removes accents, spaces, and special characters from the input string and converts it to uppercase.
+ * Removes Greek accents, spaces, and a defined set of punctuation characters, then converts the input to uppercase.
+ * Removed punctuation includes `/`, `-`, `_`, `!`, `@`, `#`, `$`, `%`, `^`, `&`, `*`, `(`, and `)`.
  *
  * @param {string} input - The Greek text to be converted.
  *

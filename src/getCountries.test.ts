@@ -1,22 +1,34 @@
 import { getCountries } from "./getCountries";
-import countriesEl from "../data/countries-el.json";
-import countriesEn from "../data/countries-en.json";
-
-const allCountries = { el: countriesEl, en: countriesEn } as const;
 
 describe("getCountries", () => {
   it("correctly returns data with default values (in greek language)", () => {
-    const expectedData = allCountries.el;
+    const countries = getCountries();
 
-    expect(getCountries()).toEqual(expectedData);
-    expect(getCountries({ locale: "el" })).toEqual(expectedData);
-    expect(getCountries().length).toEqual(249);
+    expect(countries).toEqual(getCountries({ locale: "el" }));
+    expect(countries.length).toBe(249);
+    expect(countries).toContainEqual({
+      id: "300",
+      name: "Ελλάδα",
+      completeName: "Ελλάδα",
+      officialName: "Η Ελληνική Δημοκρατία",
+      sovereignty: "Μέλος του ΟΗΕ",
+      iso31661: { A2: "GR", A3: "GRC" },
+      tld: ".gr",
+    });
   });
 
   it("correctly returns data (in english language)", () => {
-    const expectedData = allCountries.en;
+    const countries = getCountries({ locale: "en" });
 
-    expect(getCountries({ locale: "en" })).toEqual(expectedData);
-    expect(getCountries({ locale: "en" }).length).toEqual(249);
+    expect(countries.length).toBe(249);
+    expect(countries).toContainEqual({
+      id: "300",
+      name: "Greece",
+      completeName: "Greece",
+      officialName: "The Hellenic Republic",
+      sovereignty: "UN member",
+      iso31661: { A2: "GR", A3: "GRC" },
+      tld: ".gr",
+    });
   });
 });

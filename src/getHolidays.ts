@@ -1,5 +1,4 @@
-// TODO: don't export this
-export const holidaysData = {
+const holidaysData = {
   el: [
     { date: "01-01", name: "Πρωτοχρονιά", moveable: false },
     { date: "01-06", name: "Θεοφάνεια", moveable: false },
@@ -39,7 +38,7 @@ type Holiday = {
  * Calculates movable Greek holidays based on the given year and locale.
  *
  * @param {number} year - The year for which to calculate the holidays.
- * @param {"el" | "en"} - The locale to use for holiday names.
+ * @param {"el" | "en"} locale - The locale to use for holiday names.
  *
  * @returns {Holiday[]} An array of objects representing the movable holidays for the specified year and locale.
  */
@@ -88,13 +87,13 @@ type GetHolidaysOptions = {
 };
 
 /**
- * Gets Greek holidays for the given year, including both fixed and movable.
+ * Returns Greek fixed-date and movable holidays for the given year, sorted by date.
  *
- * @param {string} year - The year for which to fetch the holidays.
- * @param {GetHolidaysOptions} [options={}] - The options for locale.
- * @param {"el" | "en"} [options.locale="el"] - The locale to use for formatting. Default is "el".
+ * @param {string} year - The year for which to calculate holidays.
+ * @param {GetHolidaysOptions} [options={}] - Options for selecting the locale.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of holiday names. Defaults to Greek.
  *
- * @returns {Holiday[]} An array of holiday objects.
+ * @returns {Holiday[]} The holidays, with dates formatted as `YYYY-MM-DD`.
  */
 export function getHolidays(year: string, options: GetHolidaysOptions = {}): Holiday[] {
   const { locale = "el" } = options;

@@ -17,12 +17,15 @@ const administrativeRegionsWithoutMountAthos = {
 /**
  * Returns the administrative regions based on the provided options.
  *
- * **Note**: The returned data should be treated as read-only.
- * Mutating the returned objects or arrays may affect future calls and other consumers of this library.
+ * **Note**: Treat the returned data as read-only. Municipality-level results share data with future calls.
  *
- * @param {AdministrativeRegionsOptions} options - The options for locale, whether to include Mount Athos and the level area ("region" | "unit" | "municipality") to retrieve
+ * @param {AdministrativeRegionsOptions} [options={}] - Options for selecting the locale,
+ * Mount Athos inclusion, and data level.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of region, unit, and municipality names. Defaults to Greek.
+ * @param {boolean} [options.includeMountAthos=false] - Whether to include Mount Athos.
+ * @param {"region" | "unit" | "municipality"} [options.level="municipality"] - The nesting level to return.
  *
- * @returns {Region[] | RegionWithoutUnits[]} The administrative regions in the specified locale and the level area to retrieve.
+ * @returns {Region[] | RegionWithoutUnits[]} The administrative regions in the specified locale and data level.
  */
 export function getAdministrativeRegions({
   locale = "el",

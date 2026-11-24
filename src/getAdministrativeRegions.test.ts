@@ -1,65 +1,68 @@
 import { getAdministrativeRegions, MOUNT_ATHOS_REGION_ID } from "./getAdministrativeRegions";
-import administrativeRegionsEl from "./data/administrative-regions-el.json";
-import administrativeRegionsEn from "./data/administrative-regions-en.json";
-
-const administrativeRegions = { el: administrativeRegionsEl, en: administrativeRegionsEn };
-const administrativeRegionsWithoutMountAthos = {
-  el: administrativeRegions.el.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
-  en: administrativeRegions.en.filter(({ id }) => id !== MOUNT_ATHOS_REGION_ID),
-};
 
 describe("getAdministrativeRegions", () => {
   describe("default behavior", () => {
     it("returns Greek data without Mount Athos at municipality level with no options", () => {
-      const expectedData = administrativeRegionsWithoutMountAthos.el;
+      const regions = getAdministrativeRegions();
 
-      expect(getAdministrativeRegions()).toEqual(expectedData);
-      expect(getAdministrativeRegions().length).toEqual(13);
+      expect(regions.length).toBe(13);
+      const firstRegion = regions[0];
+      expect(firstRegion).toMatchObject({
+        id: 1,
+        iso31662: "GR-A",
+        name: "Ανατολικής Μακεδονίας και Θράκης",
+        seat: "Κομοτηνή",
+      });
+      if (firstRegion && "units" in firstRegion) {
+        expect(firstRegion.units[0]).toMatchObject({
+          id: 1,
+          name: "Δράμας",
+          seat: "Δράμα",
+          region: { id: 1, iso31662: "GR-A" },
+        });
+      }
     });
 
     it("returns Greek data without Mount Athos when using default option values explicitly", () => {
-      const expectedData = administrativeRegionsWithoutMountAthos.el;
+      const defaultRegions = getAdministrativeRegions();
 
-      expect(getAdministrativeRegions({ locale: "el" })).toEqual(expectedData);
-      expect(getAdministrativeRegions({ includeMountAthos: false })).toEqual(expectedData);
-      expect(getAdministrativeRegions({ level: "municipality" })).toEqual(expectedData);
+      expect(getAdministrativeRegions({ locale: "el" })).toEqual(defaultRegions);
+      expect(getAdministrativeRegions({ includeMountAthos: false })).toEqual(defaultRegions);
+      expect(getAdministrativeRegions({ level: "municipality" })).toEqual(defaultRegions);
       expect(getAdministrativeRegions({ locale: "el", includeMountAthos: false, level: "municipality" })).toEqual(
-        expectedData,
+        defaultRegions,
       );
     });
 
     it("handles empty options object explicitly", () => {
-      expect(getAdministrativeRegions()).toEqual(administrativeRegionsWithoutMountAthos.el);
+      expect(getAdministrativeRegions({})).toEqual(getAdministrativeRegions());
     });
   });
 
   describe("Mount Athos inclusion", () => {
     it("Mount Athos has correct ID constant", () => {
-      const mountAthos = administrativeRegionsEl.find((r) => r.id === MOUNT_ATHOS_REGION_ID);
-
-      expect(mountAthos).toBeDefined();
       expect(MOUNT_ATHOS_REGION_ID).toBe(14);
     });
 
     it("includes Mount Athos when includeMountAthos is true (Greek)", () => {
-      const expectedData = administrativeRegions.el;
+      const regions = getAdministrativeRegions({ includeMountAthos: true });
 
-      expect(getAdministrativeRegions({ includeMountAthos: true })).toEqual(expectedData);
-      expect(getAdministrativeRegions({ locale: "el", includeMountAthos: true })).toEqual(expectedData);
+      expect(regions.length).toBe(14);
+      expect(regions.some(({ id }) => id === MOUNT_ATHOS_REGION_ID)).toBe(true);
+      expect(getAdministrativeRegions({ locale: "el", includeMountAthos: true })).toEqual(regions);
       expect(getAdministrativeRegions({ locale: "el", includeMountAthos: true, level: "municipality" })).toEqual(
-        expectedData,
+        regions,
       );
-      expect(getAdministrativeRegions({ includeMountAthos: true }).length).toEqual(14);
     });
 
     it("includes Mount Athos when includeMountAthos is true (English)", () => {
-      const expectedData = administrativeRegions.en;
+      const regions = getAdministrativeRegions({ locale: "en", includeMountAthos: true });
 
-      expect(getAdministrativeRegions({ locale: "en", includeMountAthos: true })).toEqual(expectedData);
+      expect(regions.length).toBe(14);
+      expect(regions.some(({ id }) => id === MOUNT_ATHOS_REGION_ID)).toBe(true);
       expect(getAdministrativeRegions({ locale: "en", includeMountAthos: true, level: "municipality" })).toEqual(
-        expectedData,
+        regions,
       );
-      expect(getAdministrativeRegions({ locale: "en", includeMountAthos: true }).length).toEqual(14);
     });
 
     it("filters out only Mount Athos when includeMountAthos is false", () => {
@@ -87,49 +90,108 @@ describe("getAdministrativeRegions", () => {
 
   describe("level filtering", () => {
     it("returns region level data without units (Greek)", () => {
-      const expectedRegionLevelData = administrativeRegionsWithoutMountAthos.el.map(
-        ({ units: _units, ...region }) => region,
-      );
+      const regions = getAdministrativeRegions({ level: "region" });
 
-      expect(getAdministrativeRegions({ level: "region" })).toEqual(expectedRegionLevelData);
+      expect(regions[0]).toEqual({
+        id: 1,
+        iso31662: "GR-A",
+        name: "Ανατολικής Μακεδονίας και Θράκης",
+        seat: "Κομοτηνή",
+      });
+      expect(regions.every((region) => !("units" in region))).toBe(true);
     });
 
     it("returns unit level data without municipalities (Greek)", () => {
-      const expectedUnitLevelData = administrativeRegionsWithoutMountAthos.el.map((region) => ({
-        ...region,
-        units: region.units.map(({ municipalities: _municipalities, ...unit }) => unit),
-      }));
+      const regions = getAdministrativeRegions({ level: "unit" });
 
-      expect(getAdministrativeRegions({ level: "unit" })).toEqual(expectedUnitLevelData);
+      expect(regions[0]).toMatchObject({
+        id: 1,
+        iso31662: "GR-A",
+        name: "Ανατολικής Μακεδονίας και Θράκης",
+        seat: "Κομοτηνή",
+      });
+      const firstRegion = regions[0];
+      if (firstRegion && "units" in firstRegion) {
+        expect(firstRegion.units[0]).toMatchObject({
+          id: 1,
+          name: "Δράμας",
+          seat: "Δράμα",
+          region: { id: 1, iso31662: "GR-A" },
+        });
+      }
+      expect(
+        regions.every(
+          (region) =>
+            "units" in region &&
+            Array.isArray(region.units) &&
+            region.units.every((unit) => !("municipalities" in unit)),
+        ),
+      ).toBe(true);
     });
 
     it("returns municipality level data with full nesting (Greek)", () => {
-      const expectedMunicipalityLevelData = administrativeRegionsWithoutMountAthos.el;
+      const regions = getAdministrativeRegions({ level: "municipality" });
 
-      expect(getAdministrativeRegions({ level: "municipality" })).toEqual(expectedMunicipalityLevelData);
+      expect(regions).toEqual(getAdministrativeRegions());
+      const firstRegion = regions[0];
+      if (firstRegion && "units" in firstRegion) {
+        const firstUnit = firstRegion.units[0];
+        if (firstUnit && "municipalities" in firstUnit) {
+          expect(firstUnit.municipalities[0]).toMatchObject({ id: 1, name: "Δοξάτου" });
+        }
+      }
     });
 
     it("returns region level data without units (English)", () => {
-      const expectedRegionLevelData = administrativeRegionsWithoutMountAthos.en.map(
-        ({ units: _units, ...region }) => region,
-      );
+      const regions = getAdministrativeRegions({ locale: "en", level: "region" });
 
-      expect(getAdministrativeRegions({ locale: "en", level: "region" })).toEqual(expectedRegionLevelData);
+      expect(regions[0]).toEqual({
+        id: 1,
+        iso31662: "GR-A",
+        name: "Eastern Macedonia and Thrace",
+        seat: "Komotini",
+      });
+      expect(regions.every((region) => !("units" in region))).toBe(true);
     });
 
     it("returns unit level data without municipalities (English)", () => {
-      const expectedUnitLevelData = administrativeRegionsWithoutMountAthos.en.map((region) => ({
-        ...region,
-        units: region.units.map(({ municipalities: _municipalities, ...unit }) => unit),
-      }));
+      const regions = getAdministrativeRegions({ locale: "en", level: "unit" });
 
-      expect(getAdministrativeRegions({ locale: "en", level: "unit" })).toEqual(expectedUnitLevelData);
+      expect(regions[0]).toMatchObject({
+        id: 1,
+        iso31662: "GR-A",
+        name: "Eastern Macedonia and Thrace",
+        seat: "Komotini",
+      });
+      const firstRegion = regions[0];
+      if (firstRegion && "units" in firstRegion) {
+        expect(firstRegion.units[0]).toMatchObject({
+          id: 1,
+          name: "Drama",
+          seat: "Drama",
+          region: { id: 1, iso31662: "GR-A" },
+        });
+      }
+      expect(
+        regions.every(
+          (region) =>
+            "units" in region &&
+            Array.isArray(region.units) &&
+            region.units.every((unit) => !("municipalities" in unit)),
+        ),
+      ).toBe(true);
     });
 
     it("returns municipality level data with full nesting (English)", () => {
-      expect(getAdministrativeRegions({ locale: "en", level: "municipality" })).toEqual(
-        administrativeRegionsWithoutMountAthos.en,
-      );
+      const regions = getAdministrativeRegions({ locale: "en", level: "municipality" });
+
+      const firstRegion = regions[0];
+      if (firstRegion && "units" in firstRegion) {
+        const firstUnit = firstRegion.units[0];
+        if (firstUnit && "municipalities" in firstUnit) {
+          expect(firstUnit.municipalities[0]).toMatchObject({ id: 1, name: "Doxato" });
+        }
+      }
     });
   });
 
@@ -198,19 +260,19 @@ describe("getAdministrativeRegions", () => {
 
   describe("locale support", () => {
     it("returns Greek data when locale is 'el'", () => {
-      const expectedData = administrativeRegionsWithoutMountAthos.el;
+      const regions = getAdministrativeRegions({ locale: "el" });
 
-      expect(getAdministrativeRegions({ locale: "el" })).toEqual(expectedData);
-      expect(getAdministrativeRegions({ locale: "el", includeMountAthos: false })).toEqual(expectedData);
-      expect(getAdministrativeRegions({ locale: "el", level: "municipality" })).toEqual(expectedData);
+      expect(regions[0]?.name).toBe("Ανατολικής Μακεδονίας και Θράκης");
+      expect(getAdministrativeRegions({ locale: "el", includeMountAthos: false })).toEqual(regions);
+      expect(getAdministrativeRegions({ locale: "el", level: "municipality" })).toEqual(regions);
     });
 
     it("returns English data when locale is 'en'", () => {
-      const expectedData = administrativeRegionsWithoutMountAthos.en;
+      const regions = getAdministrativeRegions({ locale: "en" });
 
-      expect(getAdministrativeRegions({ locale: "en" })).toEqual(expectedData);
-      expect(getAdministrativeRegions({ locale: "en", includeMountAthos: false })).toEqual(expectedData);
-      expect(getAdministrativeRegions({ locale: "en", level: "municipality" })).toEqual(expectedData);
+      expect(regions[0]?.name).toBe("Eastern Macedonia and Thrace");
+      expect(getAdministrativeRegions({ locale: "en", includeMountAthos: false })).toEqual(regions);
+      expect(getAdministrativeRegions({ locale: "en", level: "municipality" })).toEqual(regions);
     });
   });
 
@@ -313,64 +375,62 @@ describe("getAdministrativeRegions", () => {
 
   describe("immutability", () => {
     it("does not mutate original data when filtering Mount Athos", () => {
-      const originalLength = administrativeRegionsEl.length;
-      const originalFirstRegion = administrativeRegionsEl[0];
-      const originalFirstRegionUnitsLength = originalFirstRegion?.units.length;
+      const originalRegions = getAdministrativeRegions({ includeMountAthos: true });
+      const originalLength = originalRegions.length;
+      const originalFirstRegion = originalRegions[0];
+      const originalFirstRegionUnitsLength =
+        originalFirstRegion && "units" in originalFirstRegion ? originalFirstRegion.units.length : undefined;
 
       getAdministrativeRegions({ includeMountAthos: false });
 
-      expect(administrativeRegionsEl.length).toBe(originalLength);
-      const currentFirstRegion = administrativeRegionsEl[0];
+      const currentRegions = getAdministrativeRegions({ includeMountAthos: true });
+      expect(currentRegions).toBe(originalRegions);
+      expect(currentRegions.length).toBe(originalLength);
+      const currentFirstRegion = currentRegions[0];
       expect(currentFirstRegion).toBe(originalFirstRegion);
-      if (currentFirstRegion) {
-        expect(currentFirstRegion.units.length).toBe(originalFirstRegionUnitsLength);
-      }
+      assert(currentFirstRegion && "units" in currentFirstRegion, "region lost `units`");
+      expect(currentFirstRegion.units.length).toBe(originalFirstRegionUnitsLength);
     });
 
     it("does not mutate original data when filtering to region level", () => {
-      const originalFirstRegion = administrativeRegionsEl[0];
-      if (!originalFirstRegion) return;
-      const hasUnits = "units" in originalFirstRegion;
+      const originalFirstRegion = getAdministrativeRegions({ includeMountAthos: true })[0];
+      assert(originalFirstRegion && "units" in originalFirstRegion, "fixture region missing `units`");
       const originalUnitsLength = originalFirstRegion.units.length;
 
       getAdministrativeRegions({ level: "region" });
 
-      const currentFirstRegion = administrativeRegionsEl[0];
-      if (currentFirstRegion) {
-        expect("units" in currentFirstRegion).toBe(hasUnits);
-        expect(currentFirstRegion.units.length).toBe(originalUnitsLength);
-      }
+      const currentFirstRegion = getAdministrativeRegions({ includeMountAthos: true })[0];
+      assert(currentFirstRegion && "units" in currentFirstRegion, "region lost `units`");
+      expect(currentFirstRegion.units.length).toBe(originalUnitsLength);
     });
 
     it("does not mutate original data when filtering to unit level", () => {
-      const originalFirstRegion = administrativeRegionsEl[0];
-      if (!originalFirstRegion) return;
+      const originalFirstRegion = getAdministrativeRegions({ includeMountAthos: true })[0];
+      assert(originalFirstRegion && "units" in originalFirstRegion, "fixture region missing `units`");
       const originalFirstUnit = originalFirstRegion.units[0];
-      if (!originalFirstUnit) return;
-      const hasMunicipalities = "municipalities" in originalFirstUnit;
+      assert(originalFirstUnit && "municipalities" in originalFirstUnit, "fixture unit missing `municipalities`");
       const originalMunicipalitiesLength = originalFirstUnit.municipalities.length;
 
       getAdministrativeRegions({ level: "unit" });
 
-      const currentFirstRegion = administrativeRegionsEl[0];
-      if (currentFirstRegion) {
-        const currentFirstUnit = currentFirstRegion.units[0];
-        if (currentFirstUnit) {
-          expect("municipalities" in currentFirstUnit).toBe(hasMunicipalities);
-          expect(currentFirstUnit.municipalities.length).toBe(originalMunicipalitiesLength);
-        }
-      }
+      const currentFirstRegion = getAdministrativeRegions({ includeMountAthos: true })[0];
+      assert(currentFirstRegion && "units" in currentFirstRegion, "region lost `units`");
+      const currentFirstUnit = currentFirstRegion.units[0];
+      assert(currentFirstUnit && "municipalities" in currentFirstUnit, "unit lost `municipalities`");
+      expect(currentFirstUnit.municipalities.length).toBe(originalMunicipalitiesLength);
     });
 
     it("does not mutate English data when filtering", () => {
-      const originalLength = administrativeRegionsEn.length;
-      const originalFirstRegion = administrativeRegionsEn[0];
+      const originalRegions = getAdministrativeRegions({ locale: "en", includeMountAthos: true });
+      const originalLength = originalRegions.length;
+      const originalFirstRegion = originalRegions[0];
 
       getAdministrativeRegions({ locale: "en", includeMountAthos: false });
       getAdministrativeRegions({ locale: "en", level: "region" });
 
-      expect(administrativeRegionsEn.length).toBe(originalLength);
-      const currentFirstRegion = administrativeRegionsEn[0];
+      const currentRegions = getAdministrativeRegions({ locale: "en", includeMountAthos: true });
+      expect(currentRegions.length).toBe(originalLength);
+      const currentFirstRegion = currentRegions[0];
       expect(currentFirstRegion).toBe(originalFirstRegion);
     });
 

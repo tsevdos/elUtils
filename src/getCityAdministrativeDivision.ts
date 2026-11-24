@@ -13,19 +13,20 @@ import {
 
 type CityAdministrativeDivisionOptions = {
   cityId: number;
-  locale: Locale;
+  locale?: Locale;
   entity: "region" | "unit" | "prefecture";
 };
 
 /**
- * Retrieves related administrative entities for a given city based on the provided options.
+ * Retrieves the requested administrative division associated with a city.
  *
- * @param {CityAdministrativeDivisionOptions} options - The options for finding city relations.
- * @param {number} options.id - The ID of the city to retrieve relations for.
- * @param {string} [options.locale="el"] - The locale to use when retrieving related entities. Defaults to "el".
- * @param {("region"|"unit"|"municipality"|"prefecture")} options.entity - The type of related entity to retrieve.
+ * @param {CityAdministrativeDivisionOptions} options - The city and division to look up.
+ * @param {number} options.cityId - The ID of the city whose division is requested.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of the returned division.
+ * @param {"region" | "unit" | "prefecture"} options.entity - The type of administrative division to return.
  *
- * @returns {Region|Unit|RegionWithoutUnits|Prefecture|undefined} - The related entity based on the specified type, or `undefined` if not found.
+ * @returns {Region | RegionWithoutUnits | Unit | UnitWithoutMunicipalities | Prefecture | undefined}
+ * The requested division, or `undefined` if the city or division is not found.
  */
 export function getCityAdministrativeDivision(
   options: CityAdministrativeDivisionOptions,

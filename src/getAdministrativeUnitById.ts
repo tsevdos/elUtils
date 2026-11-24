@@ -4,11 +4,16 @@ import { type Unit, type UnitWithoutMunicipalities, type AdministrativeUnitsOpti
 type AdministrativeUnitByIdOptions = { id: number } & AdministrativeUnitsOptions;
 
 /**
- * Returns the administrative unit with the provided ID.
+ * Returns an administrative unit by ID.
  *
- * @param {AdministrativeUnitByIdOptions} options - The options for ID, locale, whether to include Mount Athos, and the level area ("unit" | "municipality") to retrieve
+ * @param {AdministrativeUnitByIdOptions} options - The ID and optional unit lookup settings.
+ * @param {number} options.id - The administrative unit ID.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of unit names. Defaults to Greek.
+ * @param {boolean} [options.includeMountAthos=false] - Whether to include Mount Athos in the lookup.
+ * @param {"unit" | "municipality"} [options.level="municipality"] - Whether to return units with municipalities
+ * (`"municipality"`) or without them (`"unit"`).
  *
- * @returns {Unit | UnitWithoutMunicipalities | undefined} The administrative unit with the specified ID, or `undefined` if no such unit exists.
+ * @returns {Unit | UnitWithoutMunicipalities | undefined} The matching unit, or `undefined` if no unit has that ID.
  */
 export function getAdministrativeUnitById(
   options: AdministrativeUnitByIdOptions,

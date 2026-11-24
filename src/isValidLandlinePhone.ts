@@ -1,4 +1,3 @@
-// TODO: don't export this
 export const areaCodes = {
   Athens: "210",
   Thessaloniki: "231",
@@ -30,8 +29,8 @@ const LANDLINE_REGEX_WITHOUT_PREFIX = new RegExp(String.raw`^(${AREA_CODE_PATTER
  * @param {string | number} landLinePhone - The landline phone number to validate.
  * It may include special characters like spaces, dashes, parentheses, or dots, which will be ignored during validation.
  *
- * @param {boolean} [withPrefix=true] - Whether to require the country prefix (`+30` or `0030`).
- * When `true` (default), the prefix is optional. When `false`, validates without checking for a prefix.
+ * @param {boolean} [withPrefix=true] - Whether to allow an optional country prefix (`+30` or `0030`).
+ * When `false`, a country prefix is not accepted.
  *
  * @returns {boolean} Returns `true` if the phone number is a valid Greek landline number; otherwise, `false`.
  *

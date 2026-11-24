@@ -4,7 +4,11 @@ import type { AdministrativeUnitsOptions, Region, Unit, UnitWithoutMunicipalitie
 /**
  * Returns the administrative units based on the provided options.
  *
- * @param {AdministrativeUnitsOptions} options - The options for locale, whether to include Mount Athos, and the level area ("unit" | "municipality") to retrieve
+ * @param {AdministrativeUnitsOptions} [options={}] - Options for selecting the locale,
+ * Mount Athos inclusion, and unit data level.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of unit and municipality names. Defaults to Greek.
+ * @param {boolean} [options.includeMountAthos=false] - Whether to include Mount Athos.
+ * @param {"unit" | "municipality"} [options.level="municipality"] - Whether to include municipalities in each unit.
  *
  * @returns {Unit[] | UnitWithoutMunicipalities[]} The administrative units in the specified locale and level.
  */

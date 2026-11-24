@@ -4,11 +4,15 @@ import { type AdministrativeRegionsOptions, type Region, type RegionWithoutUnits
 type AdministrativeRegionByIsoCodeOptions = { isocode: string } & AdministrativeRegionsOptions;
 
 /**
- * Returns the administrative region with the provided ISO code.
+ * Returns an administrative region by its ISO 3166-2 code.
  *
- * @param {AdministrativeRegionByIsoCodeOptions} options - The options for ISO code, locale, whether to include Mount Athos and the level area ("region" | "unit" | "municipality") to retrieve
+ * @param {AdministrativeRegionByIsoCodeOptions} options - The ISO code and optional region lookup settings.
+ * @param {string} options.isocode - The ISO 3166-2 code to match (for example, `"GR-A"`).
+ * @param {"el" | "en"} [options.locale="el"] - The locale of region names. Defaults to Greek.
+ * @param {boolean} [options.includeMountAthos=false] - Whether to include Mount Athos in the lookup.
+ * @param {"region" | "unit" | "municipality"} [options.level="municipality"] - The level of region data to retrieve.
  *
- * @returns {Region | RegionWithoutUnits | undefined} The administrative region with the specified ISO code, or `undefined` if no such region exists.
+ * @returns {Region | RegionWithoutUnits | undefined} The matching region, or `undefined` if no region has that code.
  */
 export function getAdministrativeRegionByIsoCode(
   options: AdministrativeRegionByIsoCodeOptions,
