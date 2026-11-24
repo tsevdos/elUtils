@@ -1,7 +1,9 @@
 import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
 
 /**
- * Compares two Greek strings by normalizing them (removing accents, spaces, and special characters) and converting them to uppercase.
+ * Compares two Greek strings after removing Greek accents, spaces, and selected punctuation,
+ * then converting them to uppercase.
+ * The removed punctuation includes `/`, `-`, `_`, `!`, `@`, `#`, `$`, `%`, `^`, `&`, `*`, `(`, and `)`.
  *
  * @param {string} stringA - The first Greek string to compare.
  * @param {string} stringB - The second Greek string to compare.

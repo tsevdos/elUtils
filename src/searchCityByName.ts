@@ -5,17 +5,16 @@ import { type Locale, type City } from "./types";
 type CityBySearchTermOptions = { searchTerm: string; locale?: Locale };
 
 /**
- * Searches for cities by name in a specified locale.
+ * Searches city names in the specified locale.
  *
- * This function filters cities based on the provided search term. For the Greek locale (`"el"`),
- * it uses a specialized string comparison function to handle Greek-specific comparisons.
- * For other locales, it performs a case-insensitive comparison.
+ * Greek searches ignore accents and selected punctuation; English searches are case-insensitive.
+ * An empty search term matches all cities in the selected locale.
  *
  * @param {CityBySearchTermOptions} options - The options for the search.
  * @param {string} options.searchTerm - The term to search for in the city names.
- * @param {string} [options.locale="el"] - The locale to search in (default is `"el"` for Greek).
+ * @param {"el" | "en"} [options.locale="el"] - The locale to search. Defaults to Greek.
  *
- * @returns {City[]|null} A list of cities that match the search term, or `null` if no matches are found.
+ * @returns {City[] | null} The matching cities, or `null` if there are no matches.
  */
 export function searchCityByName({ searchTerm, locale = "el" }: CityBySearchTermOptions): City[] | null {
   const cities = getCities({ locale });

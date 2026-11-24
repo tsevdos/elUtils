@@ -12,7 +12,11 @@ type GeographicRegionOptions = { locale?: Locale };
 /**
  * Returns the geographic regions in the provided locale.
  *
- * @param {GeographicRegionOptions} options - The options for locale.
+ * **Note**: The returned array and its objects are shared data and should be treated as read-only.
+ * Mutating them may affect future calls and other consumers of this library.
+ *
+ * @param {GeographicRegionOptions} [options={}] - Options for selecting the locale.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of region names. Defaults to Greek.
  *
  * @returns {GeographicRegion[]} The geographic regions in the specified locale.
  */

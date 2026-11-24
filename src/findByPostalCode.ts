@@ -12,10 +12,13 @@ type FindByPostalCodeOptions = {
 /**
  * Returns the prefecture, region, or unit associated with the provided postal code.
  *
- * @param {string} postalCode - The postal code to search for.
- * @param {FindByPostalCodeOptions} options - The options for locale and entity type.
+ * @param {string} postalCode - The postal code to look up.
+ * @param {Partial<FindByPostalCodeOptions>} [options] - Options for selecting the locale and entity type.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of the returned entity.
+ * @param {"prefecture" | "region" | "unit"} [options.entity="prefecture"] - The type of entity to return.
  *
- * @returns {Prefecture | RegionWithoutUnits | UnitWithouUnitWithoutMunicipalitiestMunicipalities | undefined} The prefecture, region, or unit associated with the postal code, or `undefined` if no such entity exists.
+ * @returns {Prefecture | RegionWithoutUnits | UnitWithoutMunicipalities | undefined} The matching entity,
+ * or `undefined` if the postal code has no associated entity.
  */
 export function findByPostalCode(
   postalCode: string,

@@ -9,12 +9,15 @@ type CountriesOptions = {
 };
 
 /**
- * This function returns all the countries based on the provided options.
+ * Returns all countries in the selected locale.
  *
- * @param {CountriesOptions} [options={}] - The options for the countries.
- * @param {string} [options.locale="el"] - The locale to use. Default is "el".
+ * **Note**: The returned array and its objects are shared data and should be treated as read-only.
+ * Mutating them may affect future calls and other consumers of this library.
  *
- * @returns {Country[]} The countries that match the given options, or all countries if no options are provided.
+ * @param {CountriesOptions} [options={}] - Options for selecting the locale.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of the country names. Defaults to Greek.
+ *
+ * @returns {Country[]} All countries in the selected locale.
  */
 export function getCountries({ locale = "el" }: CountriesOptions = {}): Country[] {
   return allCountries[locale];

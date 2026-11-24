@@ -4,11 +4,13 @@ import { getGeographicRegions } from "./getGeographicRegions";
 type GeographicRegionByIdOptions = { id: number; locale?: Locale };
 
 /**
- * Returns the geographic region with the specific ID.
+ * Returns a geographic region by ID.
  *
- * @param {GeographicRegionByIdOptions} options - The options for ID and locale.
+ * @param {GeographicRegionByIdOptions} options - The ID and optional locale.
+ * @param {number} options.id - The geographic region ID.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of region names. Defaults to Greek.
  *
- * @returns {GeographicRegion | undefined} The geographic region with the specified ID, or `undefined` if no such region exists.
+ * @returns {GeographicRegion | undefined} The matching region, or `undefined` if no region has that ID.
  */
 export function getGeographicRegionById(options: GeographicRegionByIdOptions): GeographicRegion | undefined {
   const { id, locale = "el" } = options;

@@ -7,6 +7,16 @@ type GetCountryOptions = {
   value: string;
 };
 
+/**
+ * Finds a country by its ID, ISO 3166-1 code, or top-level domain.
+ *
+ * @param {GetCountryOptions} options - The lookup criteria.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of the returned country.
+ * @param {"id" | "iso31661-a2" | "iso31661-a3" | "tld"} options.type - The country identifier to search by.
+ * @param {string} options.value - The identifier value to match.
+ *
+ * @returns {Country | null} The matching country, or `null` if no country matches.
+ */
 export function getCountry({ locale = "el", type = "id", value = "" }: GetCountryOptions): Country | null {
   const countries = getCountries({ locale });
 

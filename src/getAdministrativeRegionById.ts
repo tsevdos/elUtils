@@ -4,11 +4,15 @@ import type { AdministrativeRegionsOptions, Region, RegionWithoutUnits } from ".
 type AdministrativeRegionByIdOptions = { id: number } & AdministrativeRegionsOptions;
 
 /**
- * Returns the administrative region with the provided ID.
+ * Returns an administrative region by ID.
  *
- * @param {AdministrativeRegionByIdOptions} options - The options for ID, locale, whether to include Mount Athos and the level area ("region" | "unit" | "municipality") to retrieve
+ * @param {AdministrativeRegionByIdOptions} options - The ID and optional region lookup settings.
+ * @param {number} options.id - The administrative region ID.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of region names. Defaults to Greek.
+ * @param {boolean} [options.includeMountAthos=false] - Whether to include Mount Athos in the lookup.
+ * @param {"region" | "unit" | "municipality"} [options.level="municipality"] - The level of region data to retrieve.
  *
- * @returns {Region | RegionWithoutUnits | undefined} The administrative region with the specified ID, or `undefined` if no such region exists.
+ * @returns {Region | RegionWithoutUnits | undefined} The matching region, or `undefined` if no region has that ID.
  */
 export function getAdministrativeRegionById(
   options: AdministrativeRegionByIdOptions,

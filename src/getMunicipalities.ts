@@ -6,7 +6,8 @@ type MunicipalitiesOptions = { locale?: Locale };
 /**
  * Returns the municipalities in the provided locale.
  *
- * @param {MunicipalitiesOptions} options - The options for locale.
+ * @param {MunicipalitiesOptions} [options={}] - Options for selecting the locale.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of municipality names. Defaults to Greek.
  *
  * @returns {Municipality[]} The municipalities in the specified locale.
  */

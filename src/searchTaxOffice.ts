@@ -8,13 +8,14 @@ const allTaxOffices = { el: taxOfficesEl, en: taxOfficesEn } as const;
 type TaxOfficeOptionsByTerm = { searchTerm: string; locale?: Locale };
 
 /**
- * This function returns the tax offices that match the given search term.
+ * Searches tax office names for the given term in the selected locale.
  *
- * @param {TaxOfficeOptionsByTerm} [options={}] - The options for searching tax offices.
- * @param {string} options.searchTerm - The search term to match.
- * @param {string} [options.locale="el"] - The locale to use. Default is "el".
+ * @param {TaxOfficeOptionsByTerm} options - The search term and optional locale.
+ * @param {string} options.searchTerm - The term to find in tax office names.
+ * A blank or whitespace-only term returns an empty array.
+ * @param {"el" | "en"} [options.locale="el"] - The locale in which to search. Defaults to Greek.
  *
- * @returns {TaxOffice[] | TaxOffice} The tax offices that match the given search term, or all tax offices if no search term is provided.
+ * @returns {TaxOffice[]} The matching tax offices, or an empty array if none match.
  */
 export function searchTaxOffice(options: TaxOfficeOptionsByTerm): TaxOffice[] {
   const { searchTerm, locale = "el" } = options;

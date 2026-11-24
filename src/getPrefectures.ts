@@ -13,9 +13,14 @@ export const prefecturesWithoutMountAthos = {
 type PrefecturesOptions = { locale?: Locale; includeMountAthos?: boolean };
 
 /**
- * Returns the prefectures based on the provided options.
+ * Returns the prefectures in the selected locale, optionally including Mount Athos.
  *
- * @param {PrefecturesOptions} options - The options for locale and whether to include Mount Athos.
+ * **Note**: The returned array and its objects are shared data and should be treated as read-only.
+ * Mutating them may affect future calls and other consumers of this library.
+ *
+ * @param {PrefecturesOptions} [options={}] - Options for selecting the locale and Mount Athos inclusion.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of prefecture names. Defaults to Greek.
+ * @param {boolean} [options.includeMountAthos=false] - Whether to include Mount Athos.
  *
  * @returns {Prefecture[]} The prefectures in the specified locale.
  */

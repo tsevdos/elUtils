@@ -4,11 +4,14 @@ import { type Locale, type Prefecture } from "./types";
 type PrefectureByIdOptions = { id: number; locale?: Locale; includeMountAthos?: boolean };
 
 /**
- * Returns the prefecture with the provided ID.
+ * Returns a prefecture by ID.
  *
- * @param {PrefectureByIdOptions} options - The options for ID, locale, and whether to include Mount Athos.
+ * @param {PrefectureByIdOptions} options - The ID and optional prefecture lookup settings.
+ * @param {number} options.id - The prefecture ID.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of the prefecture name. Defaults to Greek.
+ * @param {boolean} [options.includeMountAthos=false] - Whether to include Mount Athos in the lookup.
  *
- * @returns {Prefecture | undefined} The prefecture with the specified ID, or `undefined` if no such prefecture exists.
+ * @returns {Prefecture | undefined} The matching prefecture, or `undefined` if no prefecture has that ID.
  */
 export function getPrefectureById(options: PrefectureByIdOptions): Prefecture | undefined {
   const { id, locale = "el", includeMountAthos = false } = options;

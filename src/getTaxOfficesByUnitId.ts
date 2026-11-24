@@ -4,11 +4,11 @@ import type { Locale, TaxOffice } from "./types";
 type GetTaxOfficesByUnitIdOptions = { id: number; locale?: Locale };
 
 /**
- * This function returns all tax offices associated with a specific regional unit based on the provided unit id and locale.
+ * Returns all tax offices associated with a regional unit.
  *
  * @param {GetTaxOfficesByUnitIdOptions} options - An object that contains the unit id and locale options.
- * @param {string} options.id - The id of the unit for which tax offices are to be returned.
- * @param {string} [options.locale="el"] - The locale based on which the tax offices are returned. Default is "el".
+ * @param {number} options.id - The ID of the regional unit.
+ * @param {"el" | "en"} [options.locale="el"] - The locale of returned tax office names. Defaults to Greek.
  *
  * @returns {TaxOffice[]} - An array of tax offices associated with the specified unit for the specified locale.
  */
