@@ -3,7 +3,6 @@ import prefecturesEn from "./data/prefectures-en.json";
 import { MOUNT_ATHOS_PREFECTURE_ID } from "./constants";
 import { type Locale, type Prefecture } from "./types";
 
-// TODO: don't export this
 export const allPrefectures = { el: prefecturesEl, en: prefecturesEn } as const;
 export const prefecturesWithoutMountAthos = {
   el: allPrefectures.el.filter(({ id }) => id !== MOUNT_ATHOS_PREFECTURE_ID),

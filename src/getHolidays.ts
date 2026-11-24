@@ -1,5 +1,4 @@
-// TODO: don't export this
-export const holidaysData = {
+const holidaysData = {
   el: [
     { date: "01-01", name: "Πρωτοχρονιά", moveable: false },
     { date: "01-06", name: "Θεοφάνεια", moveable: false },
