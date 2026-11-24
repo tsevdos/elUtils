@@ -388,41 +388,36 @@ describe("getAdministrativeRegions", () => {
       expect(currentRegions.length).toBe(originalLength);
       const currentFirstRegion = currentRegions[0];
       expect(currentFirstRegion).toBe(originalFirstRegion);
-      if (currentFirstRegion && "units" in currentFirstRegion) {
-        expect(currentFirstRegion.units.length).toBe(originalFirstRegionUnitsLength);
-      }
+      assert(currentFirstRegion && "units" in currentFirstRegion, "region lost `units`");
+      expect(currentFirstRegion.units.length).toBe(originalFirstRegionUnitsLength);
     });
 
     it("does not mutate original data when filtering to region level", () => {
       const originalFirstRegion = getAdministrativeRegions({ includeMountAthos: true })[0];
-      if (!originalFirstRegion || !("units" in originalFirstRegion)) return;
+      assert(originalFirstRegion && "units" in originalFirstRegion, "fixture region missing `units`");
       const originalUnitsLength = originalFirstRegion.units.length;
 
       getAdministrativeRegions({ level: "region" });
 
       const currentFirstRegion = getAdministrativeRegions({ includeMountAthos: true })[0];
-      if (currentFirstRegion && "units" in currentFirstRegion) {
-        expect(currentFirstRegion.units.length).toBe(originalUnitsLength);
-      }
+      assert(currentFirstRegion && "units" in currentFirstRegion, "region lost `units`");
+      expect(currentFirstRegion.units.length).toBe(originalUnitsLength);
     });
 
     it("does not mutate original data when filtering to unit level", () => {
       const originalFirstRegion = getAdministrativeRegions({ includeMountAthos: true })[0];
-      if (!originalFirstRegion || !("units" in originalFirstRegion)) return;
+      assert(originalFirstRegion && "units" in originalFirstRegion, "fixture region missing `units`");
       const originalFirstUnit = originalFirstRegion.units[0];
-      if (!originalFirstUnit) return;
-      if (!("municipalities" in originalFirstUnit)) return;
+      assert(originalFirstUnit && "municipalities" in originalFirstUnit, "fixture unit missing `municipalities`");
       const originalMunicipalitiesLength = originalFirstUnit.municipalities.length;
 
       getAdministrativeRegions({ level: "unit" });
 
       const currentFirstRegion = getAdministrativeRegions({ includeMountAthos: true })[0];
-      if (currentFirstRegion && "units" in currentFirstRegion) {
-        const currentFirstUnit = currentFirstRegion.units[0];
-        if (currentFirstUnit && "municipalities" in currentFirstUnit) {
-          expect(currentFirstUnit.municipalities.length).toBe(originalMunicipalitiesLength);
-        }
-      }
+      assert(currentFirstRegion && "units" in currentFirstRegion, "region lost `units`");
+      const currentFirstUnit = currentFirstRegion.units[0];
+      assert(currentFirstUnit && "municipalities" in currentFirstUnit, "unit lost `municipalities`");
+      expect(currentFirstUnit.municipalities.length).toBe(originalMunicipalitiesLength);
     });
 
     it("does not mutate English data when filtering", () => {
