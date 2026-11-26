@@ -45,7 +45,7 @@ Please submit your enhancement idea in this [discussions area](https://github.co
 
 Please don't make any pull request before finalizing all the requested changes in a descriptive/detailed issue. Pull requests that change only documentation (`.md` files) do not need an issue.
 
-To set up the environment is really easy and straight-forward. You just need the latest node version 16 or above (I personally use the latest LTS version), to write and test your code. After that, you only need to complete the below steps:
+To set up the development environment, use Node.js 22.18 or later in the 22.x line, 24.11 or later in the 24.x line, or Node.js 26 or later. These versions are required by the development tools. After that, you only need to complete the below steps:
 
 1. Fork the repository
 2. Clone your fork
