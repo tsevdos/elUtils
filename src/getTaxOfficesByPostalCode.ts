@@ -1,4 +1,5 @@
 import { getAllTaxOffices } from "./getAllTaxOffices";
+import { deepFreeze } from "./helpers/immutable";
 import type { Locale, TaxOffice } from "./types";
 
 type GetTaxOfficesByPostalCodeOptions = { postalCode: number; locale?: Locale };
@@ -10,11 +11,11 @@ type GetTaxOfficesByPostalCodeOptions = { postalCode: number; locale?: Locale };
  * @param {number} options.postalCode - The numeric postal code to match.
  * @param {"el" | "en"} [options.locale="el"] - The locale of returned tax office names. Defaults to Greek.
  *
- * @returns {TaxOffice[]} The tax offices that match the given postal code.
+ * @returns {readonly TaxOffice[]} The deeply immutable tax offices that match the given postal code.
  */
-export function getTaxOfficesByPostalCode(options: GetTaxOfficesByPostalCodeOptions): TaxOffice[] {
+export function getTaxOfficesByPostalCode(options: GetTaxOfficesByPostalCodeOptions): readonly TaxOffice[] {
   const { postalCode, locale = "el" } = options;
   const allTaxOffices = getAllTaxOffices({ locale });
 
-  return allTaxOffices.filter((taxOffice) => taxOffice.postalCodes?.includes(postalCode));
+  return deepFreeze(allTaxOffices.filter((taxOffice) => taxOffice.postalCodes?.includes(postalCode)));
 }

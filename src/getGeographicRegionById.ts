@@ -10,7 +10,7 @@ type GeographicRegionByIdOptions = { id: number; locale?: Locale };
  * @param {number} options.id - The geographic region ID.
  * @param {"el" | "en"} [options.locale="el"] - The locale of region names. Defaults to Greek.
  *
- * @returns {GeographicRegion | undefined} The matching region, or `undefined` if no region has that ID.
+ * @returns {GeographicRegion | undefined} The deeply immutable matching region, or `undefined` if not found.
  */
 export function getGeographicRegionById(options: GeographicRegionByIdOptions): GeographicRegion | undefined {
   const { id, locale = "el" } = options;

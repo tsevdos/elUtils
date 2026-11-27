@@ -1,5 +1,6 @@
 import { getAdministrativeRegions } from "./getAdministrativeRegions";
 import type { AdministrativeUnitsOptions, Region, Unit, UnitWithoutMunicipalities } from "./types";
+import { deepFreeze } from "./helpers/immutable";
 
 /**
  * Returns the administrative units based on the provided options.
@@ -10,20 +11,23 @@ import type { AdministrativeUnitsOptions, Region, Unit, UnitWithoutMunicipalitie
  * @param {boolean} [options.includeMountAthos=false] - Whether to include Mount Athos.
  * @param {"unit" | "municipality"} [options.level="municipality"] - Whether to include municipalities in each unit.
  *
- * @returns {Unit[] | UnitWithoutMunicipalities[]} The administrative units in the specified locale and level.
+ * @returns {readonly Unit[] | readonly UnitWithoutMunicipalities[]} The deeply immutable units in the specified locale and level.
  */
 export function getAdministrativeUnits({
   locale = "el",
   includeMountAthos = false,
   level = "municipality",
-}: AdministrativeUnitsOptions = {}): Unit[] | UnitWithoutMunicipalities[] {
-  const administrativeUnits = (getAdministrativeRegions({ locale, includeMountAthos }) as Region[]).flatMap(
-    ({ units }) => [...units],
-  ) as Unit[];
+}: AdministrativeUnitsOptions = {}): readonly Unit[] | readonly UnitWithoutMunicipalities[] {
+  const administrativeUnits = (
+    getAdministrativeRegions({
+      locale,
+      includeMountAthos,
+    }) as readonly Region[]
+  ).flatMap(({ units }) => [...units]) as Unit[];
 
   if (level === "unit") {
-    return administrativeUnits.map(({ municipalities: _municipalities, ...unit }) => unit);
+    return deepFreeze(administrativeUnits.map(({ municipalities: _municipalities, ...unit }) => unit));
   }
 
-  return administrativeUnits;
+  return deepFreeze(administrativeUnits);
 }

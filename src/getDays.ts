@@ -20,10 +20,10 @@ export const daysData = {
  * @param {"el" | "en"} [options.locale="el"] - The locale to use for formatting. Default is "el".
  * @param {"full" | "short" | "min"} [options.format="full"] - The format to use. Default is "full".
  *
- * @returns {string[]} The days in the specified locale and format.
+ * @returns {readonly string[]} The immutable days in the specified locale and format.
  */
-export function getDays(options: BaseDateTimeOptions = {}): string[] {
+export function getDays(options: BaseDateTimeOptions = {}): readonly string[] {
   const { locale = "el", format = "full" } = options;
 
-  return [...daysData[locale][format]];
+  return Object.freeze([...daysData[locale][format]]);
 }

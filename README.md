@@ -32,6 +32,9 @@ const { getAdministrativeRegions, getDays, ... } = require("@tsevdos/el-utils");
 console.log(getAdministrativeRegions());
 ```
 
+Geographic and date results are deeply frozen and readonly. Create copies before modifying returned arrays or nested
+objects; see the [geographic](docs/geoUtils.md) and [date](docs/dateUtils.md) documentation for examples.
+
 ## Demo
 
 Check **all the available functions** on this [**code sandbox**](https://codesandbox.io/p/sandbox/elutils-demo-r8sphg).

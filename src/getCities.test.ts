@@ -366,12 +366,12 @@ describe("getCities", () => {
       });
     });
 
-    it("returns direct reference to data (not a copy)", () => {
+    it("returns deeply frozen city data", () => {
       const first = getCities();
-      const second = getCities();
-
-      // Should be the same reference
-      expect(first).toBe(second);
+      expect(Object.isFrozen(first)).toBe(true);
+      expect(Object.isFrozen(first[0])).toBe(true);
+      expect(Object.isFrozen(first[0]?.relations)).toBe(true);
+      expect(Object.isFrozen(first[0]?.coordinates)).toBe(true);
     });
   });
 });

@@ -1,5 +1,7 @@
 export type Locale = "el" | "en";
 
+export type DeepReadonly<T> = T extends object ? { readonly [K in keyof T]: DeepReadonly<T[K]> } : T;
+
 export type Format = "full" | "short" | "min";
 
 export type BaseDateTimeOptions = {
@@ -35,17 +37,17 @@ export type AdministrativeUnitsOptions = {
   level?: "unit" | "municipality";
 };
 
-export type Region = {
+export type Region = DeepReadonly<{
   id: number;
   iso31662: string;
   name: string;
   seat: string;
   units: Unit[] | UnitWithoutMunicipalities[];
-};
+}>;
 
 export type RegionWithoutUnits = Omit<Region, "units">;
 
-export type Unit = {
+export type Unit = DeepReadonly<{
   id: number;
   name: string;
   seat: string;
@@ -55,11 +57,11 @@ export type Unit = {
   };
   carPlatesPattern: string[];
   municipalities: Municipality[];
-};
+}>;
 
 export type UnitWithoutMunicipalities = Omit<Unit, "municipalities">;
 
-export type Municipality = {
+export type Municipality = DeepReadonly<{
   id: number;
   name: string;
   seat: string;
@@ -68,9 +70,9 @@ export type Municipality = {
     regionIso31662: string;
     unitId: number | null; // Null is  only in Mount Athos
   };
-};
+}>;
 
-export type GeographicRegion = {
+export type GeographicRegion = DeepReadonly<{
   id: number;
   name: string;
   seat: string;
@@ -78,9 +80,9 @@ export type GeographicRegion = {
     id: number;
     iso31662: string;
   }[];
-};
+}>;
 
-export type Prefecture = {
+export type Prefecture = DeepReadonly<{
   id: number;
   name: string;
   seat: string;
@@ -89,9 +91,9 @@ export type Prefecture = {
     regionIso31662: string;
     unitId: number | null; // Null is  only in Mount Athos
   };
-};
+}>;
 
-export type TaxOffice = {
+export type TaxOffice = DeepReadonly<{
   id: number;
   name: string;
   officialName: string;
@@ -102,9 +104,9 @@ export type TaxOffice = {
     municipalityIds?: number[];
   };
   postalCodes?: number[];
-};
+}>;
 
-export type City = {
+export type City = DeepReadonly<{
   id: number;
   name: string;
   coordinates: number[];
@@ -115,9 +117,9 @@ export type City = {
     municipalityId: number;
     prefectureId: number;
   };
-};
+}>;
 
-export type Country = {
+export type Country = DeepReadonly<{
   id: string;
   name: string;
   completeName: string;
@@ -128,4 +130,4 @@ export type Country = {
     A3: string;
   };
   tld: string;
-};
+}>;

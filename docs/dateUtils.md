@@ -2,6 +2,10 @@
 
 > The **`dateUtils`** module provides functions for retrieving date-related data such as days, months, quarters, and eras. It also includes a function for fetching Greek holidays for a specific year.
 
+Returned arrays and holiday objects are frozen at runtime and readonly in TypeScript. To modify a result,
+make a copy first: use `[...getDays()]` for day names or `getHolidays("2026").map((holiday) => ({ ...holiday }))`
+for holidays.
+
 ## Table of Contents
 
 - [**getDays()**](#getDays)

@@ -1,6 +1,7 @@
 import { getCities } from "./getCities";
 import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
 import { type Locale, type City } from "./types";
+import { deepFreeze } from "./helpers/immutable";
 
 type CityBySearchTermOptions = { searchTerm: string; locale?: Locale };
 
@@ -14,9 +15,9 @@ type CityBySearchTermOptions = { searchTerm: string; locale?: Locale };
  * @param {string} options.searchTerm - The term to search for in the city names.
  * @param {"el" | "en"} [options.locale="el"] - The locale to search. Defaults to Greek.
  *
- * @returns {City[] | null} The matching cities, or `null` if there are no matches.
+ * @returns {readonly City[] | null} The deeply immutable matching cities, or `null` if there are no matches.
  */
-export function searchCityByName({ searchTerm, locale = "el" }: CityBySearchTermOptions): City[] | null {
+export function searchCityByName({ searchTerm, locale = "el" }: CityBySearchTermOptions): readonly City[] | null {
   const cities = getCities({ locale });
   const normalizedSearchTerm = normalizeAndUppercaseGreekString(searchTerm);
   let citiesByName: City[] = [];
@@ -29,5 +30,5 @@ export function searchCityByName({ searchTerm, locale = "el" }: CityBySearchTerm
     citiesByName = cities.filter((city) => city.name.toUpperCase().includes(searchTerm.toUpperCase()));
   }
 
-  return citiesByName?.length ? citiesByName : null;
+  return citiesByName?.length ? deepFreeze(citiesByName) : null;
 }

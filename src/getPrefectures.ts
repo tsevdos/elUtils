@@ -2,28 +2,34 @@ import prefecturesEl from "./data/prefectures-el.json";
 import prefecturesEn from "./data/prefectures-en.json";
 import { MOUNT_ATHOS_PREFECTURE_ID } from "./constants";
 import { type Locale, type Prefecture } from "./types";
+import { deepFreeze, immutableSnapshot } from "./helpers/immutable";
 
-export const allPrefectures = { el: prefecturesEl, en: prefecturesEn } as const;
-export const prefecturesWithoutMountAthos = {
+export const allPrefectures = immutableSnapshot({
+  el: prefecturesEl,
+  en: prefecturesEn,
+});
+export const prefecturesWithoutMountAthos = deepFreeze({
   el: allPrefectures.el.filter(({ id }) => id !== MOUNT_ATHOS_PREFECTURE_ID),
   en: allPrefectures.en.filter(({ id }) => id !== MOUNT_ATHOS_PREFECTURE_ID),
-};
+});
 
 type PrefecturesOptions = { locale?: Locale; includeMountAthos?: boolean };
 
 /**
  * Returns the prefectures in the selected locale, optionally including Mount Athos.
  *
- * **Note**: The returned array and its objects are shared data and should be treated as read-only.
- * Mutating them may affect future calls and other consumers of this library.
+ * The returned data is deeply immutable.
  *
  * @param {PrefecturesOptions} [options={}] - Options for selecting the locale and Mount Athos inclusion.
  * @param {"el" | "en"} [options.locale="el"] - The locale of prefecture names. Defaults to Greek.
  * @param {boolean} [options.includeMountAthos=false] - Whether to include Mount Athos.
  *
- * @returns {Prefecture[]} The prefectures in the specified locale.
+ * @returns {readonly Prefecture[]} The deeply immutable prefectures in the specified locale.
  */
-export function getPrefectures({ locale = "el", includeMountAthos = false }: PrefecturesOptions = {}): Prefecture[] {
+export function getPrefectures({
+  locale = "el",
+  includeMountAthos = false,
+}: PrefecturesOptions = {}): readonly Prefecture[] {
   const prefectures = includeMountAthos ? allPrefectures[locale] : prefecturesWithoutMountAthos[locale];
 
   return prefectures;

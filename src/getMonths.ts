@@ -78,10 +78,10 @@ type MonthsBaseDateTimeOptions = Omit<BaseDateTimeOptions, "format"> & {
  * @param {"el" | "en"} [options.locale="el"] - The locale to use for formatting. Default is "el".
  * @param {"full" | "short" | "min" | "alternative"} [options.format="full"] - The format to use. Default is "full".
  *
- * @returns {string[]} The months in the specified locale and format.
+ * @returns {readonly string[]} The immutable months in the specified locale and format.
  */
-export function getMonths(options: MonthsBaseDateTimeOptions = {}): string[] {
+export function getMonths(options: MonthsBaseDateTimeOptions = {}): readonly string[] {
   const { locale = "el", format = "full" } = options;
 
-  return [...monthsData[locale][format]];
+  return Object.freeze([...monthsData[locale][format]]);
 }

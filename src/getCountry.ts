@@ -15,7 +15,7 @@ type GetCountryOptions = {
  * @param {"id" | "iso31661-a2" | "iso31661-a3" | "tld"} options.type - The country identifier to search by.
  * @param {string} options.value - The identifier value to match.
  *
- * @returns {Country | null} The matching country, or `null` if no country matches.
+ * @returns {Country | null} The deeply immutable matching country, or `null` if no country matches.
  */
 export function getCountry({ locale = "el", type = "id", value = "" }: GetCountryOptions): Country | null {
   const countries = getCountries({ locale });

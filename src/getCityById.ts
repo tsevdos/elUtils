@@ -10,7 +10,7 @@ type CityByIdOptions = { id: number; locale?: Locale };
  * @param {number} options.id - The ID of the city to retrieve.
  * @param {string} [options.locale="el"] - The locale to use when retrieving cities. Defaults to "el".
  *
- * @returns {City|undefined} - The city with the specified ID, or `undefined` if not found.
+ * @returns {City|undefined} The deeply immutable city with the specified ID, or `undefined` if not found.
  */
 export function getCityById(options: CityByIdOptions): City | undefined {
   const { id, locale = "el" } = options;
