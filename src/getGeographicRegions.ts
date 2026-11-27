@@ -1,25 +1,25 @@
 import geographicRegionsEl from "./data/geographic-regions-el.json";
 import geographicRegionsEn from "./data/geographic-regions-en.json";
 import { type Locale, type GeographicRegion } from "./types";
+import { immutableSnapshot } from "./helpers/immutable";
 
-const geographicRegions = {
+const geographicRegions = immutableSnapshot({
   el: geographicRegionsEl,
   en: geographicRegionsEn,
-} as const;
+});
 
 type GeographicRegionOptions = { locale?: Locale };
 
 /**
  * Returns the geographic regions in the provided locale.
  *
- * **Note**: The returned array and its objects are shared data and should be treated as read-only.
- * Mutating them may affect future calls and other consumers of this library.
+ * The returned data is deeply immutable.
  *
  * @param {GeographicRegionOptions} [options={}] - Options for selecting the locale.
  * @param {"el" | "en"} [options.locale="el"] - The locale of region names. Defaults to Greek.
  *
- * @returns {GeographicRegion[]} The geographic regions in the specified locale.
+ * @returns {readonly GeographicRegion[]} The deeply immutable geographic regions in the specified locale.
  */
-export function getGeographicRegions({ locale = "el" }: GeographicRegionOptions = {}): GeographicRegion[] {
+export function getGeographicRegions({ locale = "el" }: GeographicRegionOptions = {}): readonly GeographicRegion[] {
   return geographicRegions[locale];
 }

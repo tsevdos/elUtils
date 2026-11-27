@@ -13,7 +13,7 @@ type AdministrativeUnitByIdOptions = { id: number } & AdministrativeUnitsOptions
  * @param {"unit" | "municipality"} [options.level="municipality"] - Whether to return units with municipalities
  * (`"municipality"`) or without them (`"unit"`).
  *
- * @returns {Unit | UnitWithoutMunicipalities | undefined} The matching unit, or `undefined` if no unit has that ID.
+ * @returns {Unit | UnitWithoutMunicipalities | undefined} The deeply immutable matching unit, or `undefined` if not found.
  */
 export function getAdministrativeUnitById(
   options: AdministrativeUnitByIdOptions,

@@ -1,4 +1,5 @@
 import { getAllTaxOffices } from "./getAllTaxOffices";
+import { deepFreeze } from "./helpers/immutable";
 import type { Locale, TaxOffice } from "./types";
 
 type GetTaxOfficesByUnitIdOptions = { id: number; locale?: Locale };
@@ -10,11 +11,11 @@ type GetTaxOfficesByUnitIdOptions = { id: number; locale?: Locale };
  * @param {number} options.id - The ID of the regional unit.
  * @param {"el" | "en"} [options.locale="el"] - The locale of returned tax office names. Defaults to Greek.
  *
- * @returns {TaxOffice[]} - An array of tax offices associated with the specified unit for the specified locale.
+ * @returns {readonly TaxOffice[]} A deeply immutable array of tax offices associated with the specified unit and locale.
  */
-export function getTaxOfficesByUnitId(options: GetTaxOfficesByUnitIdOptions): TaxOffice[] {
+export function getTaxOfficesByUnitId(options: GetTaxOfficesByUnitIdOptions): readonly TaxOffice[] {
   const { id, locale = "el" } = options;
   const allTaxOffices = getAllTaxOffices({ locale });
 
-  return allTaxOffices.filter((taxOffice) => taxOffice.relations.unitIds?.includes(id));
+  return deepFreeze(allTaxOffices.filter((taxOffice) => taxOffice.relations.unitIds?.includes(id)));
 }

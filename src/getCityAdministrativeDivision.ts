@@ -26,7 +26,7 @@ type CityAdministrativeDivisionOptions = {
  * @param {"region" | "unit" | "prefecture"} options.entity - The type of administrative division to return.
  *
  * @returns {Region | RegionWithoutUnits | Unit | UnitWithoutMunicipalities | Prefecture | undefined}
- * The requested division, or `undefined` if the city or division is not found.
+ * The deeply immutable requested division, or `undefined` if the city or division is not found.
  */
 export function getCityAdministrativeDivision(
   options: CityAdministrativeDivisionOptions,

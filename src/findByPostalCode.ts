@@ -17,7 +17,7 @@ type FindByPostalCodeOptions = {
  * @param {"el" | "en"} [options.locale="el"] - The locale of the returned entity.
  * @param {"prefecture" | "region" | "unit"} [options.entity="prefecture"] - The type of entity to return.
  *
- * @returns {Prefecture | RegionWithoutUnits | UnitWithoutMunicipalities | undefined} The matching entity,
+ * @returns {Prefecture | RegionWithoutUnits | UnitWithoutMunicipalities | undefined} The deeply immutable matching entity,
  * or `undefined` if the postal code has no associated entity.
  */
 export function findByPostalCode(

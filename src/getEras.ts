@@ -18,10 +18,10 @@ export const erasData = {
  * @param {"el" | "en"} [options.locale="el"] - The locale to use for formatting. Default is "el".
  * @param {"full" | "short"} [options.format="full"] - The format to use. Default is "full".
  *
- * @returns {string[]} The eras in the specified locale and format.
+ * @returns {readonly string[]} The immutable eras in the specified locale and format.
  */
-export function getEras(options: DateTimeOptionsWithoutMin = {}): string[] {
+export function getEras(options: DateTimeOptionsWithoutMin = {}): readonly string[] {
   const { locale = "el", format = "full" } = options;
 
-  return [...erasData[locale][format]];
+  return Object.freeze([...erasData[locale][format]]);
 }

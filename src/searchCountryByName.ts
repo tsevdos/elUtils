@@ -1,6 +1,7 @@
 import { getCountries } from "./getCountries";
 import { normalizeAndUppercaseGreekString } from "./normalizeAndUppercaseGreekString";
 import type { Country, Locale } from "./types";
+import { deepFreeze } from "./helpers/immutable";
 
 type SearchCountryByNameOptions = {
   locale?: Locale;
@@ -18,9 +19,12 @@ type SearchCountryByNameOptions = {
  * @param {"el" | "en"} [options.locale="el"] - The locale to search. Defaults to Greek.
  * @param {string} options.searchTerm - The term to search for in country names.
  *
- * @returns {Country[] | null} The matching countries, or `null` if there are no matches.
+ * @returns {readonly Country[] | null} The deeply immutable matching countries, or `null` if there are no matches.
  */
-export function searchCountryByName({ locale = "el", searchTerm }: SearchCountryByNameOptions): Country[] | null {
+export function searchCountryByName({
+  locale = "el",
+  searchTerm,
+}: SearchCountryByNameOptions): readonly Country[] | null {
   const countries = getCountries({ locale });
   const normalizedSearchTerm = normalizeAndUppercaseGreekString(searchTerm);
   let countriesByName: Country[] = [];
@@ -45,5 +49,5 @@ export function searchCountryByName({ locale = "el", searchTerm }: SearchCountry
     });
   }
 
-  return countriesByName?.length ? countriesByName : null;
+  return countriesByName?.length ? deepFreeze(countriesByName) : null;
 }

@@ -384,10 +384,10 @@ describe("getAdministrativeRegions", () => {
       getAdministrativeRegions({ includeMountAthos: false });
 
       const currentRegions = getAdministrativeRegions({ includeMountAthos: true });
-      expect(currentRegions).toBe(originalRegions);
+      expect(currentRegions).toEqual(originalRegions);
       expect(currentRegions.length).toBe(originalLength);
       const currentFirstRegion = currentRegions[0];
-      expect(currentFirstRegion).toBe(originalFirstRegion);
+      expect(currentFirstRegion).toEqual(originalFirstRegion);
       assert(currentFirstRegion && "units" in currentFirstRegion, "region lost `units`");
       expect(currentFirstRegion.units.length).toBe(originalFirstRegionUnitsLength);
     });
@@ -431,15 +431,15 @@ describe("getAdministrativeRegions", () => {
       const currentRegions = getAdministrativeRegions({ locale: "en", includeMountAthos: true });
       expect(currentRegions.length).toBe(originalLength);
       const currentFirstRegion = currentRegions[0];
-      expect(currentFirstRegion).toBe(originalFirstRegion);
+      expect(currentFirstRegion).toEqual(originalFirstRegion);
     });
 
-    it("returns same reference for municipality level (performance optimization)", () => {
+    it("returns immutable data at municipality level", () => {
       const result1 = getAdministrativeRegions();
       const result2 = getAdministrativeRegions();
 
-      // Municipality level returns same reference for performance (documented as read-only)
-      expect(result1).toBe(result2);
+      expect(Object.isFrozen(result1)).toBe(true);
+      expect(Object.isFrozen(result1[0])).toBe(true);
       expect(result1).toEqual(result2);
     });
 

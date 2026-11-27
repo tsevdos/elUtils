@@ -1,3 +1,5 @@
+import { deepFreeze } from "./helpers/immutable";
+
 const holidaysData = {
   el: [
     { date: "01-01", name: "Πρωτοχρονιά", moveable: false },
@@ -30,8 +32,8 @@ const holidaysData = {
 };
 
 type Holiday = {
-  date: string;
-  name: string;
+  readonly date: string;
+  readonly name: string;
 };
 
 /**
@@ -93,9 +95,9 @@ type GetHolidaysOptions = {
  * @param {GetHolidaysOptions} [options={}] - Options for selecting the locale.
  * @param {"el" | "en"} [options.locale="el"] - The locale of holiday names. Defaults to Greek.
  *
- * @returns {Holiday[]} The holidays, with dates formatted as `YYYY-MM-DD`.
+ * @returns {readonly Holiday[]} The deeply immutable holidays, with dates formatted as `YYYY-MM-DD`.
  */
-export function getHolidays(year: string, options: GetHolidaysOptions = {}): Holiday[] {
+export function getHolidays(year: string, options: GetHolidaysOptions = {}): readonly Holiday[] {
   const { locale = "el" } = options;
   const y = Number.parseInt(year, 10);
   const nonMovableHolidays = holidaysData[locale]
@@ -104,5 +106,5 @@ export function getHolidays(year: string, options: GetHolidaysOptions = {}): Hol
   const movableHolidays: Holiday[] = calculateMovableGreekHolidays(y, locale);
   const holidays = [...nonMovableHolidays, ...movableHolidays].sort((a, b) => a.date.localeCompare(b.date));
 
-  return holidays;
+  return deepFreeze(holidays);
 }

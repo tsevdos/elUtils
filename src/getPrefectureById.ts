@@ -11,7 +11,7 @@ type PrefectureByIdOptions = { id: number; locale?: Locale; includeMountAthos?: 
  * @param {"el" | "en"} [options.locale="el"] - The locale of the prefecture name. Defaults to Greek.
  * @param {boolean} [options.includeMountAthos=false] - Whether to include Mount Athos in the lookup.
  *
- * @returns {Prefecture | undefined} The matching prefecture, or `undefined` if no prefecture has that ID.
+ * @returns {Prefecture | undefined} The deeply immutable matching prefecture, or `undefined` if not found.
  */
 export function getPrefectureById(options: PrefectureByIdOptions): Prefecture | undefined {
   const { id, locale = "el", includeMountAthos = false } = options;

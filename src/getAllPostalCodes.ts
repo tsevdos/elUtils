@@ -3,8 +3,8 @@ import postalCodes from "./data/postal-codes.json";
 /**
  * Returns all postal codes.
  *
- * @returns {string[]} An array of all postal codes.
+ * @returns {readonly string[]} An immutable array of all postal codes.
  */
-export function getAllPostalCodes(): string[] {
-  return postalCodes.flatMap(({ postalCodes }) => postalCodes);
+export function getAllPostalCodes(): readonly string[] {
+  return Object.freeze(postalCodes.flatMap(({ postalCodes }) => postalCodes));
 }

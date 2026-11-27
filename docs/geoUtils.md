@@ -2,6 +2,17 @@
 
 > The **`geoUtils`** module provides functions for accessing geographic and administrative data. All these data are available **both in greek and english languages**.
 
+All returned arrays and objects, including nested data, are deeply frozen at runtime and readonly in TypeScript.
+Results may share immutable snapshots. To modify data, create a mutable copy of every array and object you intend to change:
+
+```ts
+const cities = getCities().map((city) => ({
+  ...city,
+  coordinates: [...city.coordinates],
+  relations: { ...city.relations },
+}));
+```
+
 ## Table of Contents
 
 - [**getAdministrativeRegions()**](#getAdministrativeRegions)

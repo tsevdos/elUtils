@@ -18,10 +18,10 @@ export const quartersData = {
  * @param {"el" | "en"} [options.locale="el"] - The locale to use for formatting. Default is "el".
  * @param {"full" | "short"} [options.format="full"] - The format to use. Default is "full".
  *
- * @returns {string[]} The quarters in the specified locale and format.
+ * @returns {readonly string[]} The immutable quarters in the specified locale and format.
  */
-export function getQuarters(options: DateTimeOptionsWithoutMin = {}): string[] {
+export function getQuarters(options: DateTimeOptionsWithoutMin = {}): readonly string[] {
   const { locale = "el", format = "full" } = options;
 
-  return [...quartersData[locale][format]];
+  return Object.freeze([...quartersData[locale][format]]);
 }

@@ -309,12 +309,11 @@ describe("getPrefectures", () => {
       });
     });
 
-    it("should return direct reference to data (not a copy)", () => {
+    it("returns deeply frozen prefecture data", () => {
       const first = getPrefectures();
-      const second = getPrefectures();
-
-      // Should be the same reference
-      expect(first).toBe(second);
+      expect(Object.isFrozen(first)).toBe(true);
+      expect(Object.isFrozen(first[0])).toBe(true);
+      expect(Object.isFrozen(first[0]?.regionAndUnit)).toBe(true);
     });
   });
 

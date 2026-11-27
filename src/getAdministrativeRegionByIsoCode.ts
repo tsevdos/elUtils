@@ -12,7 +12,7 @@ type AdministrativeRegionByIsoCodeOptions = { isocode: string } & Administrative
  * @param {boolean} [options.includeMountAthos=false] - Whether to include Mount Athos in the lookup.
  * @param {"region" | "unit" | "municipality"} [options.level="municipality"] - The level of region data to retrieve.
  *
- * @returns {Region | RegionWithoutUnits | undefined} The matching region, or `undefined` if no region has that code.
+ * @returns {Region | RegionWithoutUnits | undefined} The deeply immutable matching region, or `undefined` if not found.
  */
 export function getAdministrativeRegionByIsoCode(
   options: AdministrativeRegionByIsoCodeOptions,
